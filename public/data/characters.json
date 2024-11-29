@@ -1,0 +1,501 @@
+[
+    {
+        "name": "Groza",
+        "rarity": "SR",
+        "skinID": [
+            "01",
+            "03",
+            "05"
+        ],
+        "class": "Bulwark",
+        "weapon": "AR",
+        "basicAttack": "",
+        "element": "",
+        "hp": "1981",
+        "atk": "539",
+        "def": "553",
+        "move": "6",
+        "stability": "12",
+        "weakness": "heavy,burn"
+    },
+    {
+        "name": "Nemesis",
+        "rarity": "SR",
+        "skinID": [
+            "03",
+            "04",
+            "05"
+        ],
+        "class": "Sentinel",
+        "weapon": "RF",
+        "basicAttack": "",
+        "element": "Corrosion",
+        "hp": "1656",
+        "atk": "703",
+        "def": "463",
+        "move": "4",
+        "stability": "9",
+        "weakness": "light,turbid"
+    },
+    {
+        "name": "Krolik",
+        "internalName": "Charolic",
+        "rarity": "SR",
+        "skinID": [
+            "01",
+            "03"
+        ],
+        "class": "Vanguard",
+        "weapon": "BLD",
+        "basicAttack": "",
+        "element": "Burn",
+        "hp": "1932",
+        "atk": "519",
+        "def": "802",
+        "move": "9",
+        "stability": "8",
+        "weakness": "shotgun,corrosion"
+    },
+    {
+        "name": "Colphne",
+        "rarity": "SR",
+        "skinID": [
+            "03"
+        ],
+        "class": "Support",
+        "weapon": "HG",
+        "basicAttack": "",
+        "element": "Turbid",
+        "hp": "1787",
+        "atk": "515",
+        "def": "503",
+        "move": "7",
+        "stability": "10",
+        "weakness": "shotgun,corrosion"
+    },
+    {
+        "name": "Cheeta",
+        "rarity": "SR",
+        "skinID": [
+            "01"
+        ],
+        "class": "Support",
+        "weapon": "SMG",
+        "basicAttack": "",
+        "element": "Burn",
+        "hp": "1842",
+        "atk": "591",
+        "def": "494",
+        "move": "6",
+        "stability": "10",
+        "weakness": "medium,turbid"
+    },
+    {
+        "name": "Sharkry",
+        "rarity": "SR",
+        "class": "Sentinel",
+        "weapon": "AR",
+        "basicAttack": "",
+        "element": "Burn",
+        "hp": "1706",
+        "atk": "679",
+        "def": "463",
+        "move": "5",
+        "stability": "9",
+        "weakness": "medium,corrosion"
+    },
+    {
+        "name": "Ksenia",
+        "rarity": "SR",
+        "class": "Support",
+        "weapon": "HG",
+        "basicAttack": "",
+        "element": "Burn",
+        "hp": "1842",
+        "atk": "539",
+        "def": "463",
+        "move": "6",
+        "stability": "10",
+        "weakness": "shotgun,burn"
+    },
+    {
+        "name": "Nagant",
+        "rarity": "SR",
+        "skinID": [
+            "01"
+        ],
+        "class": "Support",
+        "weapon": "HG",
+        "basicAttack": "",
+        "element": "Corrosion",
+        "hp": "1656",
+        "atk": "609",
+        "def": "512",
+        "move": "6",
+        "stability": "10",
+        "weakness": "shotgun,burn"
+    },
+    {
+        "name": "Littara",
+        "rarity": "SR",
+        "class": "Sentinel",
+        "weapon": "MG",
+        "basicAttack": "",
+        "element": "",
+        "hp": "1656",
+        "atk": "670",
+        "def": "487",
+        "move": "5",
+        "stability": "9",
+        "weakness": "light,burn"
+    },
+    {
+        "name": "Vepley",
+        "rarity": "SSR",
+        "skinID": [
+            "01",
+            "02"
+        ],
+        "class": "Vanguard",
+        "weapon": "SG",
+        "basicAttack": "",
+        "element": "",
+        "hp": "1851",
+        "atk": "696",
+        "def": "528",
+        "move": "8",
+        "stability": "8",
+        "weakness": "heavy,turbid"
+    },
+    {
+        "name": "Qiongjiu",
+        "rarity": "SSR",
+        "class": "Sentinel",
+        "weapon": "AR",
+        "basicAttack": "",
+        "element": "Burn",
+        "hp": "1893",
+        "atk": "802",
+        "def": "528",
+        "move": "5",
+        "stability": "9",
+        "weakness": "heavy,ice"
+    },
+    {
+        "name": "Peritya",
+        "rarity": "SSR",
+        "skinID": [
+            "01"
+        ],
+        "class": "Sentinel",
+        "weapon": "MG",
+        "basicAttack": "",
+        "element": "Corrosion",
+        "hp": "1948",
+        "atk": "765",
+        "def": "536",
+        "move": "5",
+        "stability": "9",
+        "weakness": "light,turbid"
+    },
+    {
+        "name": "Mosin-Nagant",
+        "internalName": "Mosinnagant",
+        "rarity": "SSR",
+        "class": "Sentinel",
+        "weapon": "RF",
+        "basicAttack": "",
+        "element": "Electric",
+        "hp": "1859",
+        "atk": "820",
+        "def": "528",
+        "move": "4",
+        "stability": "9",
+        "weakness": "light,corrosion"
+    },
+    {
+        "name": "Sabrina",
+        "rarity": "SSR",
+        "skinID": [
+            "01"
+        ],
+        "class": "Bulwark",
+        "weapon": "SG",
+        "basicAttack": "",
+        "element": "Turbid",
+        "hp": "2249",
+        "atk": "609",
+        "def": "642",
+        "move": "6",
+        "stability": "12",
+        "weakness": "heavy,electric"
+    },
+    {
+        "name": "Tololo",
+        "rarity": "SSR",
+        "skinID": [
+            "01"
+        ],
+        "class": "Sentinel",
+        "weapon": "AR",
+        "basicAttack": "",
+        "element": "Turbid",
+        "hp": "1819",
+        "atk": "836",
+        "def": "528",
+        "move": "5",
+        "stability": "9",
+        "weakness": "heavy,electric"
+    },
+    {
+        "name": "Daiyan",
+        "rarity": "SSR",
+        "skinID": [
+            "03"
+        ],
+        "class": "Vanguard",
+        "weapon": "AR",
+        "basicAttack": "",
+        "element": "",
+        "hp": "1616",
+        "atk": "722",
+        "def": "504",
+        "move": "9",
+        "stability": "8",
+        "weakness": "medium,burn"
+    },
+    {
+        "name": "Centaureissi",
+        "rarity": "SSR",
+        "class": "Support",
+        "weapon": "AR",
+        "basicAttack": "",
+        "element": "Burn",
+        "hp": "1893",
+        "atk": "696",
+        "def": "585",
+        "move": "6",
+        "stability": "10",
+        "weakness": "heavy,turbid"
+    },
+    {
+        "name": "Lenna",
+        "rarity": "SSR",
+        "skinID": [
+            "05"
+        ],
+        "class": "Support",
+        "weapon": "SMG",
+        "basicAttack": "",
+        "element": "Electric",
+        "hp": "2081",
+        "atk": "689",
+        "def": "550",
+        "move": "7",
+        "stability": "10",
+        "weakness": "medium,ice"
+    },
+    {
+        "name": "Jiangyu",
+        "rarity": "SSR",
+        "class": "Sentinel",
+        "weapon": "AR",
+        "basicAttack": "",
+        "element": "Electric",
+        "hp": "1932",
+        "atk": "802",
+        "def": "519",
+        "move": "5",
+        "stability": "9",
+        "weakness": "heavy,turbid"
+    },
+    {
+        "name": "Macchiato",
+        "internalName": "Macqiato",
+        "rarity": "SSR",
+        "skinID": [
+            "01"
+        ],
+        "class": "Sentinel",
+        "weapon": "RF",
+        "basicAttack": "",
+        "element": "Ice",
+        "hp": "2138",
+        "atk": "1051",
+        "def": "592",
+        "move": "4",
+        "stability": "9",
+        "weakness": "light,burn"
+    },
+    {
+        "name": "Ullrid",
+        "rarity": "SSR",
+        "class": "Vanguard",
+        "weapon": "BLD",
+        "basicAttack": "Bow",
+        "element": "",
+        "hp": "1786",
+        "atk": "921",
+        "def": "620",
+        "move": "9",
+        "stability": "8",
+        "weakness": "heavy,ice"
+    },
+    {
+        "name": "Lotta",
+        "rarity": "SR",
+        "class": "Sentinel",
+        "weapon": "SG",
+        "basicAttack": "",
+        "element": "Ice",
+        "hp": "1880",
+        "atk": "866",
+        "def": "573",
+        "move": "5",
+        "stability": "9",
+        "weakness": "medium,burn"
+    },
+    {
+        "name": "Suomi",
+        "rarity": "SSR",
+        "skinID": [
+            "01"
+        ],
+        "class": "Support",
+        "weapon": "SMG",
+        "basicAttack": "",
+        "element": "Ice",
+        "hp": "2298",
+        "atk": "837",
+        "def": "725",
+        "move": "6",
+        "stability": "10",
+        "weakness": "heavy,corrosion"
+    },
+    {
+        "name": "Dushevnaya",
+        "internalName": "Dusevnyj",
+        "rarity": "SSR",
+        "class": "Support",
+        "weapon": "RF",
+        "basicAttack": "",
+        "element": "Ice",
+        "hp": "2176",
+        "atk": "943",
+        "def": "688",
+        "move": "6",
+        "stability": "10",
+        "weakness": "light,electric"
+    },
+    {
+        "name": "Zhaohui",
+        "rarity": "SSR",
+        "skinID": [
+            "01"
+        ],
+        "class": "Vanguard",
+        "weapon": "SMG",
+        "basicAttack": "",
+        "element": "Turbid",
+        "hp": "1975",
+        "atk": "943",
+        "def": "590",
+        "move": "9",
+        "stability": "8",
+        "weakness": "heavy,burn"
+    },
+    {
+        "name": "Papasha",
+        "rarity": "SSR",
+        "class": "Sentinel",
+        "weapon": "SMG",
+        "basicAttack": "",
+        "element": "",
+        "hp": "2226",
+        "atk": "998",
+        "def": "620",
+        "move": "5",
+        "stability": "9",
+        "weakness": "shotgun,corrosion"
+    },
+    {
+        "name": "Klukai",
+        "internalName": "Clukay",
+        "rarity": "SSR",
+        "skinID": [
+            "01",
+            "02"
+        ],
+        "class": "Sentinel",
+        "weapon": "AR",
+        "basicAttack": "",
+        "element": "Corrosion",
+        "hp": "2226",
+        "atk": "1031",
+        "def": "592",
+        "move": "6",
+        "stability": "10",
+        "weakness": "shotgun,electric"
+    },
+    {
+        "name": "Mechty",
+        "internalName": "Mishty",
+        "rarity": "SSR",
+        "class": "Support",
+        "weapon": "AR",
+        "basicAttack": "",
+        "element": "Corrosion",
+        "hp": "2206",
+        "atk": "901",
+        "def": "678",
+        "move": "6",
+        "stability": "10",
+        "weakness": "heavy,turbid"
+    },
+    {
+        "name": "Vector",
+        "rarity": "SSR",
+        "class": "Support",
+        "weapon": "SMG",
+        "basicAttack": "",
+        "element": "Burn",
+        "hp": "2138",
+        "atk": "931",
+        "def": "669",
+        "move": "6",
+        "stability": "10",
+        "weakness": "medium,turbid"
+    },
+    {
+        "name": "Belka",
+        "internalName": "Biyoca",
+        "rarity": "SSR",
+        "skinID": [
+            "01"
+        ],
+        "class": "Vanguard",
+        "weapon": "AR",
+        "basicAttack": "",
+        "element": "Electric",
+        "hp": "2079",
+        "atk": "943",
+        "def": "620",
+        "move": "9",
+        "stability": "8",
+        "weakness": "shotgun,ice"
+    },
+    {
+        "name": "Andoris",
+        "rarity": "SSR",
+        "class": "Bulwark",
+        "weapon": "AR",
+        "basicAttack": "",
+        "element": "Electric",
+        "hp": "2690",
+        "atk": "736",
+        "def": "755",
+        "move": "6",
+        "stability": "12",
+        "weakness": "heavy,corrosion"
+    }
+]
