@@ -1,1 +1,0 @@
-# Girls' Frontline 2: Exilium Database and Tools

@@ -1,0 +1,43 @@
+MUI Components
+
+
+Typography - any text, such as heading, paragraph
+--Forms--
+Button - button
+ButtonGroup - multiple related buttons
+ToggleButton - buttons with on/off behavior
+TextField - text input, can also be used as selection
+Radio - radio buttons for XOR choices
+Checkbox - checkbox
+Switch - on/off switch (such as dark mode)
+Rating - 1 to 5 star rating
+Autocomplete - similar to TextField select, better with many options
+--Layout--
+Box - div
+Stack - 1 dimensional display (row/col)
+Grid - 2 dimensional display
+Paper - provides visual elevation (hierarchy)
+Card - contain content/actions about a single topic
+Accordion - show/hide related content
+ImageList - collection of images (such as artworks/recipes)
+--Navigation--
+AppBar/Toolbar - navigation (Navbar)
+Menu - expand choices temporarily
+Link - link
+Breadcrumbs - navigation scheme that shows location (such as directory route)
+Drawer - sidebar (account info/navigation)
+SpeedDial - mobile navigation option
+BottomNavigation - mobile navigation option
+--Data Display--
+Avatar - Google style pfp
+Badge - generates badge in top right of child component (such as notification)
+List - list
+Chip - tags/filter
+Tooltip - info on hover
+Table - simple tables (not too much functionality)
+--Feedback--
+Alert - displays short important message
+Snackbar - temporary information of a finished or expected action
+Dialog - modal to display important message, disables app functionality until addressed
+Progress - circular/linear (in/)determinate progress bars, such as loading/saving
+Skeleton - display placeholder preview prior to complete loading
