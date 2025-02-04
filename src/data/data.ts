@@ -2,7 +2,7 @@ import gunData from "./Tables/GunData.json";
 import gunDutyData from "./Tables/GunDutyData.json";
 import gunWeaponTypeData from "./Tables/GunWeaponTypeData.json";
 import gunGradeData from "./Tables/GunGradeData.json";
-import { Chr, Duty, WeaponType, Skill, GunGrade } from "../types";
+import { Chr, Duty, WeaponType, GunGrade } from "../types";
 
 export const gunDuties: Duty[] = gunDutyData["data"].map((duty: any) => ({
   ...duty,

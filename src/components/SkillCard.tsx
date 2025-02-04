@@ -1,15 +1,13 @@
-import { useState } from "react";
 import {
   Box,
   Grid2,
   Typography,
-  Button,
   Chip,
   Stack,
   Tooltip,
   Divider,
 } from "@mui/material";
-import { Chr, Skill, Table, TableItem } from "../types";
+import { Skill } from "../types";
 import SkillGrid from "./SkillGrid";
 
 const RichTextComponent: React.FC<{ content: string | undefined }> = ({
@@ -43,9 +41,9 @@ const parseUnityRichText = (content: string): React.ReactNode => {
   return elements;
 };
 
-const SkillCard = ({ character, skill }: { character: Chr; skill: Skill }) => {
+const SkillCard = ({ skill }: { skill: Skill }) => {
   if (!skill) return;
-  const [currentUpgrade, setCurrentUpgrade] = useState(0);
+  //const [currentUpgrade, setCurrentUpgrade] = useState(0);
   const stabExists = skill.result
     .split(";")
     .find((element) => element[0] === "2");

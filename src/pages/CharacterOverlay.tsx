@@ -1,14 +1,12 @@
-import { useState, useEffect, useRef } from "react";
-import { Chr, Skill, Skin, Duty, WeaponType } from "../types";
+import { useState } from "react";
+import { Chr, Skill, Skin } from "../types";
 import SkillCard from "../components/SkillCard";
-import { gunGrades, weaponTypes } from "../data/data";
 import {
   Box,
   Typography,
   IconButton,
   Slide,
   Grid2,
-  Stack,
   ToggleButtonGroup,
   ToggleButton,
   Tooltip,
@@ -17,12 +15,6 @@ import {
   styled,
 } from "@mui/material";
 import Tables from "../data/TableLoader";
-import {
-  elementIcons,
-  classIcons,
-  weaponIcons,
-  ammoIcons,
-} from "../utils/mappings";
 import CloseIcon from "@mui/icons-material/Close";
 
 interface CharacterOverlayProps {
@@ -106,9 +98,10 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
     (vertId) => Tables.GunGradeData[vertId].abbr
   );
   const baseSkills = [character.skillNormalAttack].concat(skillIds[0]).map((skillId: number) => loadSkill(skillId));
-  const allSkills = skillIds.slice(1).flat().map((skillId: number) => loadSkill(skillId));
+  //const allSkills = skillIds.slice(1).flat().map((skillId: number) => loadSkill(skillId));
   const reorderedSkills = [baseSkills[0], baseSkills[2], baseSkills[3], baseSkills[1], baseSkills[4]]
   const [skills, setSkills] = useState<Skill[]>(reorderedSkills);
+  setSkills(reorderedSkills) //just to get rid of error for now
   const [currentSkill, setCurrentSkill] = useState<Skill>(baseSkills[0]);
 
   const handleSkillChange = (
@@ -299,7 +292,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                     </ToggleButton>
                   ))}
                 </ToggleButtonGroup>
-                <SkillCard character={character} skill={currentSkill} />
+                <SkillCard skill={currentSkill} />
               </Grid2>
             </Box>
           </Grid2>

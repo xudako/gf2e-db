@@ -8,7 +8,6 @@ const SkillGrid: React.FC<GridProps> = ({
   range,
   shape,
   shapeParam,
-  skillRange,
 }) => {
   function processInput(input: string) {
     const parts = input.split(",").map(Number);
