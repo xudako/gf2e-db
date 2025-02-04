@@ -1,66 +1,78 @@
-import React, { useEffect, useState } from "react";
-import CharacterModal from "../components/CharacterModal";
+import React, { useState } from "react";
 import { Chr } from "../types";
+import { characters } from "../data/data";
+import { useNavigate } from "react-router-dom";
 import { Box, Grid2 } from "@mui/material";
 
 const CharacterGrid: React.FC = () => {
-  const [characters, setCharacters] = useState<Chr[]>([]);
-
-  useEffect(() => {
-    fetch("data/characters.json")
-      .then((response) => response.json())
-      .then((data) => setCharacters(data));
-  }, []);
-
   const [selectedCharacter, setSelectedCharacter] = useState<Chr | null>(null);
+  const navigate = useNavigate();
 
-  const closeModal = () => {
-    setSelectedCharacter(null);
+  const handleCharacterSelect = (character: Chr) => {
+    setSelectedCharacter(character);
+    navigate(`/dolls/${character.name}`);
   };
 
+  const sortedCharacters = characters.sort((a, b) => {
+    if (a.rank != b.rank) {
+      return b.rank - a.rank
+    }
+    return a.name.localeCompare(b.name)
+  });
+
   return (
-    <Grid2 container spacing={2}>
-      {characters.map((character) => (
-        <Grid2
-          size={{ xs: 3, lg: 2, xl: 1 }}
-          key={character.name}
-          className="character-card"
-          onClick={() => setSelectedCharacter(character)}
-        >
-          <Box
-            component="img"
-            src={`/dolls/Avatar_Bust_${
-              character.internalName ?? character.name
-            }${character.rarity}.png`}
-            alt={character.name}
-            onError={(e) => (e.currentTarget.src = "/images/default.png")}
+    <Box>
+      <Grid2 container spacing={2}>
+        {sortedCharacters.map((character) => (
+          <Grid2
+            size={{ xs: 3, lg: 2, xl: 1 }}
+            key={character.name}
+            onClick={() => handleCharacterSelect(character)}
             sx={{
-              maxHeight: "400",
-              maxWidth: "100%",
-              objectFit: "contain",
-              borderRadius: "8",
-            }}
-          />
-          <Box
-            sx={{
-              position: "relative",
-              bottom: "20px",
-              backgroundColor: "rgba(0, 0, 0, 0.6)",
-              color: "white",
-              px: "10",
-              textAlign: "center",
-              borderRadius: "4px",
-              fontSize: "14px",
+              p: 1,
+              backgroundColor:
+                selectedCharacter?.name === character.name
+                  ? "primary.light"
+                  : "transparent",
+              "&:hover": { backgroundColor: "secondary.main", color: "white" },
             }}
           >
-            {character.name}
-          </Box>
-        </Grid2>
-      ))}
-      {selectedCharacter && (
-        <CharacterModal character={selectedCharacter} onClose={closeModal} />
-      )}
-    </Grid2>
+            <Box
+              component="img"
+              src={`/dolls/Avatar_Head_${
+                character.code}_Spine.png`}
+              alt={character.name}
+              onError={(e) => (e.currentTarget.src = "/images/default.png")}
+              sx={{
+                bgcolor:
+                  character.rank === 5 ? "raritySSR.main" : "raritySR.main",
+                maxHeight: "400",
+                maxWidth: "100%",
+                objectFit: "contain",
+                borderRadius: "8",
+                cursor: "pointer",
+                // add hover effect
+              }}
+            />
+            <Box
+              sx={{
+                position: "relative",
+                bottom: "20px",
+                backgroundColor: "rgba(0, 0, 0, 0.6)",
+                color: "white",
+                px: "10",
+                textAlign: "center",
+                borderRadius: "4px",
+                fontSize: "14px",
+                cursor: "pointer",
+              }}
+            >
+              {character.name}
+            </Box>
+          </Grid2>
+        ))}
+      </Grid2>
+    </Box>
   );
 };
 

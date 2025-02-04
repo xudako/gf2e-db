@@ -1,2 +1,5 @@
-learn/use MUI for UI
-set up rotating BG/CG as bg of site
+change grid img bg to have some gradient
+voicelines
+chibis
+tools - gacha tracker
+prancing bnuuy

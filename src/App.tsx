@@ -1,16 +1,25 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  useParams,
+  useNavigate,
+} from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import CharacterGrid from "./pages/CharacterGrid";
+import CharacterOverlay from "./pages/CharacterOverlay";
 import WeaponGrid from "./pages/WeaponGrid";
 import { GlobalStyles } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+import { Chr } from "./types";
+import { characters } from "./data/data";
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#444444",
+      main: "#373e44",
       contrastText: "#ffffff",
     },
     secondary: {
@@ -18,12 +27,21 @@ const theme = createTheme({
       contrastText: "#ffffff",
     },
     background: {
-      default: "#888888",
-      paper: "#ffffff",
+      default: "#999999",
+      paper: "#dddddd",
     },
     text: {
-      primary: "#444444",
+      primary: "#373e44",
       secondary: "#666666",
+    },
+    raritySSR: {
+      main: "#de9e01",
+    },
+    raritySR: {
+      main: "#7967ba",
+    },
+    info: {
+      main: "#6979d9",
     },
   },
   typography: {
@@ -41,6 +59,23 @@ const theme = createTheme({
     },
   },
 });
+
+const CharacterOverlayWrapper: React.FC = () => {
+  const { name } = useParams<{ name: string }>();
+  const navigate = useNavigate();
+
+  const character: Chr | undefined = characters.find(
+    (gun: Chr) => gun.name === name
+  );
+
+  return (
+    <CharacterOverlay
+      open={!!character}
+      onClose={() => navigate("/dolls")}
+      character={character}
+    />
+  );
+};
 
 const App: React.FC = () => {
   return (
@@ -62,6 +97,7 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dolls" element={<CharacterGrid />} />
+            <Route path="/dolls/:name" element={<CharacterOverlayWrapper />} />
             <Route path="/weapons" element={<WeaponGrid />} />
           </Routes>
         </Layout>
