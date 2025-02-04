@@ -97,11 +97,18 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   const skillIds = vertebraeIds.map(
     (vertId) => Tables.GunGradeData[vertId].abbr
   );
-  const baseSkills = [character.skillNormalAttack].concat(skillIds[0]).map((skillId: number) => loadSkill(skillId));
+  const baseSkills = [character.skillNormalAttack]
+    .concat(skillIds[0])
+    .map((skillId: number) => loadSkill(skillId));
   //const allSkills = skillIds.slice(1).flat().map((skillId: number) => loadSkill(skillId));
-  const reorderedSkills = [baseSkills[0], baseSkills[2], baseSkills[3], baseSkills[1], baseSkills[4]]
-  const [skills, setSkills] = useState<Skill[]>(reorderedSkills);
-  setSkills(reorderedSkills) //just to get rid of error for now
+  const reorderedSkills = [
+    baseSkills[0],
+    baseSkills[2],
+    baseSkills[3],
+    baseSkills[1],
+    baseSkills[4],
+  ];
+  const [skills, _setSkills] = useState<Skill[]>(reorderedSkills);
   const [currentSkill, setCurrentSkill] = useState<Skill>(baseSkills[0]);
 
   const handleSkillChange = (

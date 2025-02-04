@@ -55,7 +55,7 @@ const SkillGrid: React.FC<GridProps> = ({
 
         let backgroundColor = "background.default"; // Default for out-of-range squares
 
-        console.log("range", gridRange, 'shape', shape, 'sP', gridShape);
+        //console.log("range", gridRange, 'shape', shape, 'sP', gridShape);
 
         if (distanceFromCenter <= gridRange[0]) { // blue (range)
           backgroundColor = "info.main";
