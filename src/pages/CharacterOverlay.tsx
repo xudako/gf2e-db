@@ -110,6 +110,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   ];
   const [skills, _setSkills] = useState<Skill[]>(reorderedSkills);
   const [currentSkill, setCurrentSkill] = useState<Skill>(baseSkills[0]);
+  const skillButtonNames = ["Basic", "Skill 1", "Skill 2", "Ultimate", "Passive"];
 
   const handleSkillChange = (
     _event: React.MouseEvent<HTMLElement>,
@@ -293,9 +294,9 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                     <ToggleButton
                       key={skill.id}
                       value={index}
-                      sx={{ p: "5px", typography: "subtitle2" }}
+                      sx={{ p: "5px", typography: "subtitle2", minWidth: "6rem" }}
                     >
-                      {`Skill ${index + 1}`}
+                      {skillButtonNames[index]}
                     </ToggleButton>
                   ))}
                 </ToggleButtonGroup>
