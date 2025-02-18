@@ -6,7 +6,7 @@ import Footer from "./Footer";
 const getRandomBackground = () => {
   const totalImages = 5;
   const randomIndex = Math.floor(Math.random() * totalImages) + 1;
-  return `/bg/BG_None_Carriage_03_0${randomIndex}.png`;
+  return `${import.meta.env.BASE_URL}bg/BG_None_Carriage_03_0${randomIndex}.png`;
 };
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {

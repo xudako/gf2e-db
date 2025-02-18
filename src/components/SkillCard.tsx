@@ -93,7 +93,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
           </Typography>
           <Box
             component="img"
-            src={`/skills/${skill.icon}.png`}
+            src={`${import.meta.env.BASE_URL}skills/${skill.icon}.png`}
             alt="Skill Name"
             mt={2}
             sx={{ width: "50%", bgcolor: "primary.main", borderRadius: "8px" }}

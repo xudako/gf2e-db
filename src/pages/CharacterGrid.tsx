@@ -39,10 +39,10 @@ const CharacterGrid: React.FC = () => {
           >
             <Box
               component="img"
-              src={`/dolls/Avatar_Head_${
+              src={`${import.meta.env.BASE_URL}dolls/Avatar_Head_${
                 character.code}_Spine.png`}
               alt={character.name}
-              onError={(e) => (e.currentTarget.src = "/images/default.png")}
+              onError={(e) => (e.currentTarget.src = `${import.meta.env.BASE_URL}images/default.png`)}
               sx={{
                 bgcolor:
                   character.rank === 5 ? "raritySSR.main" : "raritySR.main",

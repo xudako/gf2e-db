@@ -59,7 +59,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
     };
   });
   const [currentSkin, setCurrentSkin] = useState<Skin>(skinData[0]);
-  const displayedImage = `dolls/Avatar_Whole_${currentSkin.code}.png`;
+  const displayedImage = `${import.meta.env.BASE_URL}dolls/Avatar_Whole_${currentSkin.code}.png`;
   const handleSkinChange = (
     _event: React.MouseEvent<HTMLElement>,
     updatedCurrentSkinId: number | null
@@ -159,7 +159,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                   <HoverInfo title={Tables.GunDutyData[character.duty].name}>
                     <Box
                       component="img"
-                      src={`/icons/${
+                      src={`${import.meta.env.BASE_URL}icons/${
                         Tables.GunDutyData[character.duty].icon
                       }_W.png`}
                       alt={`${Tables.GunDutyData[character.duty].name} icon`}
@@ -178,7 +178,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                   >
                     <Box
                       component="img"
-                      src={`/icons/${
+                      src={`${import.meta.env.BASE_URL}icons/${
                         Tables.GunWeaponTypeData[character.weaponType][
                           "skinIcon"
                         ]
