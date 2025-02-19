@@ -46,7 +46,7 @@ const Header = () => {
           disableRipple
         >
           <img
-            src="/images/default.png"
+            src={`${import.meta.env.BASE_URL}images/default.png`}
             alt="Logo"
             style={{ height: 40, width: 40 }}
           />
