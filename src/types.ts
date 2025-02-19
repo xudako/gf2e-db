@@ -51,6 +51,7 @@ export interface Skill {
 
     //display
     description: string;
+    descriptionTips: string;
     //rangeDisplayParam: string;
     //shapeDisplay: number;
     //shapeDisplayParam: string;

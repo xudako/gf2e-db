@@ -1,7 +1,7 @@
-import gunData from "./Tables/GunData.json";
-import gunDutyData from "./Tables/GunDutyData.json";
-import gunWeaponTypeData from "./Tables/GunWeaponTypeData.json";
-import gunGradeData from "./Tables/GunGradeData.json";
+import gunData from "./tables/GunData.json";
+import gunDutyData from "./tables/GunDutyData.json";
+import gunWeaponTypeData from "./tables/GunWeaponTypeData.json";
+import gunGradeData from "./tables/GunGradeData.json";
 import { Chr, Duty, WeaponType, GunGrade } from "../types";
 
 export const gunDuties: Duty[] = gunDutyData["data"].map((duty: any) => ({
