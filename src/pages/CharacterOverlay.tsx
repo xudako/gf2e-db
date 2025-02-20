@@ -23,6 +23,19 @@ interface CharacterOverlayProps {
   character?: Chr;
 }
 
+interface SkillType {
+  id: number;
+  name: string;
+}
+
+const skillTypes: SkillType[] = [
+  { id: 1, name: "Basic" },
+  { id: 5, name: "Skill 1" },
+  { id: 7, name: "Skill 2" },
+  { id: 4, name: "Ultimate" },
+  { id: 8, name: "Passive" },
+]
+
 //custom HoverInfo Tooltip
 const HoverInfo = styled(({ className, ...props }: TooltipProps) => (
   <Tooltip
@@ -101,13 +114,6 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
     .concat(skillIds[0].toSorted())
     .map((skillId: number) => loadSkill(skillId));
   // const allSkills = [character.skillNormalAttack].concat(skillIds.flat().map((skillId: number) => loadSkill(skillId)));
-  // const skillTypes = new Map([
-  //   ["01", "Basic"],
-  //   ["05", "Skill 1"],
-  //   ["07", "Skill 2"],
-  //   ["04", "Ultimate"],
-  //   ["08", "Passive"],
-  // ]);
 
   const reorderedSkills = [
     baseSkills[0],
@@ -118,7 +124,6 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   ];
   const [skills, _setSkills] = useState<Skill[]>(reorderedSkills);
   const [currentSkill, setCurrentSkill] = useState<Skill>(baseSkills[0]);
-  const skillButtonNames = ["Basic", "Skill 1", "Skill 2", "Ultimate", "Passive"];
 
   const handleSkillChange = (
     _event: React.MouseEvent<HTMLElement>,
@@ -304,7 +309,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                       value={index}
                       sx={{ p: "5px", typography: "subtitle2", minWidth: "6rem" }}
                     >
-                      {skillButtonNames[index]}
+                      {skillTypes.map((type) => type.name)[index]}
                     </ToggleButton>
                   ))}
                 </ToggleButtonGroup>
