@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Chr, Skill, Skin } from "../types";
 import SkillCard from "../components/SkillCard";
 import {
@@ -24,17 +24,25 @@ interface CharacterOverlayProps {
 }
 
 interface SkillType {
-  id: number;
+  id: string;
   name: string;
 }
 
 const skillTypes: SkillType[] = [
-  { id: 1, name: "Basic" },
-  { id: 5, name: "Skill 1" },
-  { id: 7, name: "Skill 2" },
-  { id: 4, name: "Ultimate" },
-  { id: 8, name: "Passive" },
-]
+  { id: "01", name: "Basic" },
+  { id: "05", name: "Skill 1" },
+  { id: "07", name: "Skill 2" },
+  { id: "04", name: "Ultimate" },
+  { id: "08", name: "Passive" },
+];
+
+interface SByLevel {
+  [level: string]: Skill;
+}
+
+interface ParsedSkills {
+  [sType: string]: SByLevel;
+}
 
 //custom HoverInfo Tooltip
 const HoverInfo = styled(({ className, ...props }: TooltipProps) => (
@@ -72,7 +80,9 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
     };
   });
   const [currentSkin, setCurrentSkin] = useState<Skin>(skinData[0]);
-  const displayedImage = `${import.meta.env.BASE_URL}dolls/Avatar_Whole_${currentSkin.code}.png`;
+  const displayedImage = `${import.meta.env.BASE_URL}dolls/Avatar_Whole_${
+    currentSkin.code
+  }.png`;
   const handleSkinChange = (
     _event: React.MouseEvent<HTMLElement>,
     updatedCurrentSkinId: number | null
@@ -110,10 +120,25 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   const skillIds = vertebraeIds.map(
     (vertId) => Tables.GunGradeData[vertId].abbr
   );
+  
   const baseSkills = [character.skillNormalAttack]
     .concat(skillIds[0].toSorted())
     .map((skillId: number) => loadSkill(skillId));
-  // const allSkills = [character.skillNormalAttack].concat(skillIds.flat().map((skillId: number) => loadSkill(skillId)));
+
+  //const allSkillIds = [character.skillNormalAttack].concat(skillIds.flat());
+  const allSkills: ParsedSkills = {};
+
+  [character.skillNormalAttack].concat(skillIds.flat()).forEach((id) => {
+    const idString = id.toString();
+    const skillType = idString.substring(4, 6);
+    const level = idString.substring(6, 8);
+
+    if (!allSkills[skillType]) {
+      allSkills[skillType] = {};
+    }
+
+    allSkills[skillType][level] = loadSkill(id);
+  });
 
   const reorderedSkills = [
     baseSkills[0],
@@ -123,7 +148,23 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
     baseSkills[4],
   ];
   const [skills, _setSkills] = useState<Skill[]>(reorderedSkills);
-  const [currentSkill, setCurrentSkill] = useState<Skill>(baseSkills[0]);
+  const [currentSkillType, setCurrentSkillType] = useState<string>(
+    skillTypes[0].id
+  );
+  const [currentSkillLevel, setCurrentSkillLevel] = useState<string>("01");
+  const [currentSkill, setCurrentSkill] = useState<Skill>(
+    allSkills[currentSkillType][currentSkillLevel]
+  );
+
+  useEffect(() => {
+    if (
+      currentSkillType &&
+      currentSkillLevel &&
+      allSkills[currentSkillType] &&
+      allSkills[currentSkillType][currentSkillLevel]
+    )
+      setCurrentSkill(allSkills[currentSkillType][currentSkillLevel]);
+  }, [currentSkillType, currentSkillLevel, allSkills]);
 
   const handleSkillChange = (
     _event: React.MouseEvent<HTMLElement>,
@@ -307,7 +348,11 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                     <ToggleButton
                       key={skill.id}
                       value={index}
-                      sx={{ p: "5px", typography: "subtitle2", minWidth: "6rem" }}
+                      sx={{
+                        p: "5px",
+                        typography: "subtitle2",
+                        minWidth: "6rem",
+                      }}
                     >
                       {skillTypes.map((type) => type.name)[index]}
                     </ToggleButton>
