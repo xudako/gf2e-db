@@ -60,16 +60,16 @@ const SkillGrid: React.FC<GridProps> = ({
 
         let backgroundColor = "background.default"; // Default for out-of-range squares
 
-        console.log(
-          "skillRange",
-          skillRange,
-          "gridRange",
-          gridRange,
-          "shape",
-          shape,
-          "gridShape",
-          gridShape
-        );
+        // console.log(
+        //   "skillRange",
+        //   skillRange,
+        //   "gridRange",
+        //   gridRange,
+        //   "shape",
+        //   shape,
+        //   "gridShape",
+        //   gridShape
+        // );
 
         let inRange = false;
         switch (
@@ -96,10 +96,13 @@ const SkillGrid: React.FC<GridProps> = ({
                 break;
             }
             if (
-              row == center && Math.abs(center - col) <= range7  || col == center && Math.abs(center - row) <= range7
+              (row == center && Math.abs(center - col) <= range7) ||
+              (col == center && Math.abs(center - row) <= range7)
             )
-            inRange = true;
+              inRange = true;
             break;
+          case 8:
+            inRange = true;
         }
         if (inRange) backgroundColor = "info.main";
         let inShape = false;
@@ -119,6 +122,14 @@ const SkillGrid: React.FC<GridProps> = ({
               Math.abs(center - col) <= Math.floor(gridShape[0] / 2)
             )
               inShape = true;
+            if (gridShape[1]) {
+              if (
+                Math.abs(center - row - gridRange[0]) <=
+                  Math.floor(gridShape[1] / 2) &&
+                Math.abs(center - col) <= Math.floor(gridShape[1] / 2)
+              )
+                inShape = false;
+            }
             break;
           case 3:
             if (

@@ -24,5 +24,5 @@ export const gunGrades: GunGrade[] = gunGradeData["data"].map(
 
 export const characters: Chr[] = gunData["data"].map((gun: any) => ({
   ...gun,
-  skins: gun.costumeReplace
+  skins: gun.costumeReplace,
 }));

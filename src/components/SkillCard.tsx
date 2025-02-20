@@ -55,7 +55,24 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
   }
   const gridRange = processInput(skill.range);
   const gridShape = processInput(skill.shapeParam);
-  const dispRange = skill.skillRange != 8 ? gridRange[0].toString() : "Map";
+  let dispRange;
+  switch (skill.skillRange) {
+    case 1:
+      dispRange = "Self";
+      break;
+    case 2:
+      dispRange = "i x i";
+      break;
+    case 3:
+      dispRange = gridRange[0];
+      break;
+    case 7:
+      dispRange = "--";
+      break;
+    case 8:
+      dispRange = "Map";
+      break;
+  }
   let dispShape;
   switch (skill.shape) {
     case 1:
@@ -63,6 +80,9 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
       break;
     case 2:
       dispShape = `${gridShape[0]} x ${gridShape[0]}`;
+      break;
+    case 3:
+      dispShape = gridShape[0];
       break;
     case 7:
       dispShape = "--";
@@ -161,16 +181,16 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
           />
           <Stack direction="row" justifyContent="space-between">
             <Typography mt={2}>Range</Typography>
-            {<Typography mt={2} align="right">
-              {dispRange}
-            </Typography>}
+            {
+              <Typography mt={2} align="right">
+                {dispRange}
+              </Typography>
+            }
           </Stack>
           <Divider sx={{ borderBottomWidth: 5 }} />
           <Stack direction="row" justifyContent="space-between">
             <Typography mt={2}>Area of Effect</Typography>
-            {<Typography mt={2}>
-              {dispShape}
-            </Typography>}
+            {<Typography mt={2}>{dispShape}</Typography>}
           </Stack>
           <Divider sx={{ borderBottomWidth: 5 }} />
         </Grid2>

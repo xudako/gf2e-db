@@ -98,9 +98,17 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
     (vertId) => Tables.GunGradeData[vertId].abbr
   );
   const baseSkills = [character.skillNormalAttack]
-    .concat(skillIds[0])
+    .concat(skillIds[0].toSorted())
     .map((skillId: number) => loadSkill(skillId));
-  //const allSkills = skillIds.slice(1).flat().map((skillId: number) => loadSkill(skillId));
+  // const allSkills = [character.skillNormalAttack].concat(skillIds.flat().map((skillId: number) => loadSkill(skillId)));
+  // const skillTypes = new Map([
+  //   ["01", "Basic"],
+  //   ["05", "Skill 1"],
+  //   ["07", "Skill 2"],
+  //   ["04", "Ultimate"],
+  //   ["08", "Passive"],
+  // ]);
+
   const reorderedSkills = [
     baseSkills[0],
     baseSkills[2],
