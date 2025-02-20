@@ -36,12 +36,12 @@ const skillTypes: SkillType[] = [
   { id: "08", name: "Passive" },
 ];
 
-interface SByLevel {
+interface SkillsByLevel {
   [level: string]: Skill;
 }
 
-interface ParsedSkills {
-  [sType: string]: SByLevel;
+interface SkillTree {
+  [sType: string]: SkillsByLevel;
 }
 
 //custom HoverInfo Tooltip
@@ -85,14 +85,12 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   }.png`;
   const handleSkinChange = (
     _event: React.MouseEvent<HTMLElement>,
-    updatedCurrentSkinId: number | null
+    newCurrentSkinId: number | null
   ) => {
-    if (updatedCurrentSkinId) {
-      const updatedSkin = skinData.find(
-        (skin) => skin.id === updatedCurrentSkinId
-      );
-      if (updatedSkin) {
-        setCurrentSkin(updatedSkin);
+    if (newCurrentSkinId) {
+      const newSkin = skinData.find((skin) => skin.id === newCurrentSkinId);
+      if (newSkin) {
+        setCurrentSkin(newSkin);
       }
     }
   };
@@ -120,13 +118,9 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   const skillIds = vertebraeIds.map(
     (vertId) => Tables.GunGradeData[vertId].abbr
   );
-  
-  const baseSkills = [character.skillNormalAttack]
-    .concat(skillIds[0].toSorted())
-    .map((skillId: number) => loadSkill(skillId));
 
   //const allSkillIds = [character.skillNormalAttack].concat(skillIds.flat());
-  const allSkills: ParsedSkills = {};
+  const allSkills: SkillTree = {};
 
   [character.skillNormalAttack].concat(skillIds.flat()).forEach((id) => {
     const idString = id.toString();
@@ -140,14 +134,6 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
     allSkills[skillType][level] = loadSkill(id);
   });
 
-  const reorderedSkills = [
-    baseSkills[0],
-    baseSkills[2],
-    baseSkills[3],
-    baseSkills[1],
-    baseSkills[4],
-  ];
-  const [skills, _setSkills] = useState<Skill[]>(reorderedSkills);
   const [currentSkillType, setCurrentSkillType] = useState<string>(
     skillTypes[0].id
   );
@@ -164,15 +150,30 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
       allSkills[currentSkillType][currentSkillLevel]
     )
       setCurrentSkill(allSkills[currentSkillType][currentSkillLevel]);
-  }, [currentSkillType, currentSkillLevel, allSkills]);
+  }, [currentSkillType, currentSkillLevel]);
 
-  const handleSkillChange = (
+  const handleSkillTypeChange = (
     _event: React.MouseEvent<HTMLElement>,
-    newSkillIndex: number | null
+    newSkillTypeId: string | null
   ) => {
-    if (newSkillIndex !== null) {
-      setCurrentSkill(skills[newSkillIndex]);
+    if (newSkillTypeId !== null) {
+      setCurrentSkillType(newSkillTypeId);
     }
+    console.log("newSkillTypeId", newSkillTypeId);
+  };
+
+  const getLevels = (skillType: string): string[] => {
+    const levels = allSkills[skillType]
+      ? Object.keys(allSkills[skillType]).sort()
+      : [];
+    return levels;
+  };
+
+  const handleSkillLevelChange = (
+    _event: React.MouseEvent<HTMLElement>,
+    newLevel: string
+  ) => {
+    setCurrentSkillLevel(newLevel);
   };
 
   return (
@@ -335,29 +336,53 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                   </Stack>
                 </Grid2> */}
               </Grid2>
+
               {/* Skills Info */}
               <Grid2 container spacing={1} sx={{ border: "1px solid blue" }}>
                 <ToggleButtonGroup
-                  value={currentSkill}
+                  value={currentSkillType}
                   exclusive
-                  onChange={handleSkillChange}
+                  onChange={handleSkillTypeChange}
                   size="small"
                   sx={{ mb: 2 }}
                 >
-                  {skills.map((skill, index) => (
+                  {skillTypes.map((skillType) => (
                     <ToggleButton
-                      key={skill.id}
-                      value={index}
+                      key={skillType.id}
+                      value={skillType.id}
                       sx={{
                         p: "5px",
                         typography: "subtitle2",
                         minWidth: "6rem",
                       }}
                     >
-                      {skillTypes.map((type) => type.name)[index]}
+                      {skillType.name}
                     </ToggleButton>
                   ))}
                 </ToggleButtonGroup>
+                {currentSkillType && getLevels(currentSkillType).length > 1 && (
+                  <ToggleButtonGroup
+                    value={currentSkillLevel}
+                    exclusive
+                    onChange={handleSkillLevelChange}
+                    size="small"
+                    sx={{ mb: 2 }}
+                  >
+                    {getLevels(currentSkillType).map(level => (
+                      <ToggleButton
+                        key={level}
+                        value={level}
+                        sx={{
+                          p: "5px",
+                          typography: "subtitle2",
+                          minWidth: "6rem",
+                        }}
+                        >
+                          {level}
+                        </ToggleButton>
+                    ))}
+                  </ToggleButtonGroup>
+                )}
                 <SkillCard skill={currentSkill} />
               </Grid2>
             </Box>
