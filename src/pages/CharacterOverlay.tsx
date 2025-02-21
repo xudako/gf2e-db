@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Chr, Skill, Skin } from "../types";
 import SkillCard from "../components/SkillCard";
 import {
@@ -13,6 +13,8 @@ import {
   TooltipProps,
   tooltipClasses,
   styled,
+  Slider,
+  SliderProps,
 } from "@mui/material";
 import Tables from "../data/TableLoader";
 import CloseIcon from "@mui/icons-material/Close";
@@ -64,6 +66,16 @@ const HoverInfo = styled(({ className, ...props }: TooltipProps) => (
       margin: "0px",
     },
 }));
+
+const levelMarks = [
+  { value: 1, label: "1" },
+  { value: 10, label: "10" },
+  { value: 20, label: "20" },
+  { value: 30, label: "30" },
+  { value: 40, label: "40" },
+  { value: 50, label: "50" },
+  { value: 60, label: "60" },
+];
 
 const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   open,
@@ -145,7 +157,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   const [currentSkill, setCurrentSkill] = useState<Skill>(
     allSkills["01"]["01"]
   );
-  console.log(currentSkillLevels, currentSkillLevel);
+  //console.log(currentSkillLevels, currentSkillLevel);
 
   useEffect(() => {
     setCurrentSkillLevels((prevLevels) =>
@@ -176,7 +188,6 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
     if (newSkillTypeId !== null) {
       setCurrentSkillType(newSkillTypeId);
     }
-    console.log("newSkillTypeId", newSkillTypeId);
   };
 
   const getLevels = (skillType: string): string[] => {
@@ -192,6 +203,17 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   ) => {
     setCurrentSkillLevel(newLevel);
   };
+
+  //level and stats
+  const [currentLevel, setCurrentLevel] = useState<number>(60);
+
+  const handleLevelChange: SliderProps["onChange"] = (
+    _event: Event,
+    newLevel: number | number[]
+  ) => {
+    setCurrentLevel(typeof newLevel === "number" ? newLevel : newLevel[0]);
+  };
+  console.log(currentLevel);
 
   return (
     <Slide direction="up" in={open} mountOnEnter unmountOnExit>
@@ -352,6 +374,19 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                     <Typography>Move: {character.move}</Typography>
                   </Stack>
                 </Grid2> */}
+                <Grid2>
+                  <Box sx={{ width: 300 }}>
+                    <Typography>Level:</Typography>
+                    <Slider
+                      value={currentLevel}
+                      step={null}
+                      marks={levelMarks}
+                      min={1}
+                      max={60}
+                      onChange={handleLevelChange}
+                    />{" "}
+                  </Box>
+                </Grid2>
               </Grid2>
 
               {/* Skills Info */}

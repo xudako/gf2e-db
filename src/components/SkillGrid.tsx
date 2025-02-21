@@ -60,16 +60,16 @@ const SkillGrid: React.FC<GridProps> = ({
 
         let backgroundColor = "background.default"; // Default for out-of-range squares
 
-        console.log(
-          "skillRange",
-          skillRange,
-          "gridRange",
-          gridRange,
-          "shape",
-          shape,
-          "gridShape",
-          gridShape
-        );
+        // console.log(
+        //   "skillRange",
+        //   skillRange,
+        //   "gridRange",
+        //   gridRange,
+        //   "shape",
+        //   shape,
+        //   "gridShape",
+        //   gridShape
+        // );
 
         let inRange = false;
         switch (
