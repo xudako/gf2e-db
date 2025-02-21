@@ -60,16 +60,16 @@ const SkillGrid: React.FC<GridProps> = ({
 
         let backgroundColor = "background.default"; // Default for out-of-range squares
 
-        // console.log(
-        //   "skillRange",
-        //   skillRange,
-        //   "gridRange",
-        //   gridRange,
-        //   "shape",
-        //   shape,
-        //   "gridShape",
-        //   gridShape
-        // );
+        console.log(
+          "skillRange",
+          skillRange,
+          "gridRange",
+          gridRange,
+          "shape",
+          shape,
+          "gridShape",
+          gridShape
+        );
 
         let inRange = false;
         switch (
@@ -88,8 +88,11 @@ const SkillGrid: React.FC<GridProps> = ({
           case 7:
             let range7 = 0;
             switch (gridRange[0]) {
-              case 30: //Ullrid
+              case 30: //Ullrid/LennaLv2
                 range7 = 5;
+                break;
+              case 32: //UllridLv2
+                range7 = 7;
                 break;
               case 71: //Lenna
                 range7 = 3;
@@ -137,6 +140,12 @@ const SkillGrid: React.FC<GridProps> = ({
               gridShape[0]
             )
               inShape = true;
+              if (gridRange[0] === 30 || gridRange[0] === 32) { //Ullrid
+                const offset = gridRange[0] === 30 ? 5 : 7;
+                if (Math.abs(row - center + offset) + Math.abs(col - center) <= gridShape[0]) {
+                  inShape = true;
+                }
+              }
             break;
           case 5:
             if (
@@ -155,14 +164,17 @@ const SkillGrid: React.FC<GridProps> = ({
               case 67: //Sabrina
                 shape7 = [3, 6];
                 break;
-              case 68: //Vepley S1
+              case 68: //Vepley
               case 38: //Lotta
                 shape7 = [3, 5];
                 break;
-              case 69: //Vepley S1 Key
+              case 69: //VepleyKey
                 shape7 = [5, 3];
                 break;
               case 78: //Littara
+                shape7 = [3, 8];
+                break;
+              case 80: //LittaraLv2
                 shape7 = [3, 8];
                 break;
             }
@@ -172,6 +184,10 @@ const SkillGrid: React.FC<GridProps> = ({
               Math.abs(center - col) <= Math.floor(shape7[0] / 2)
             )
               inShape = true;
+            if (gridShape[0] == 78) {
+              //Littara
+              if (Math.abs(center - row) <= Math.floor(5 / 2)) inShape = false;
+            }
             break;
         }
         if (inShape) backgroundColor = "secondary.main";

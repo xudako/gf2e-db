@@ -23,8 +23,10 @@ interface CharacterOverlayProps {
   character?: Chr;
 }
 
+type SkillTypeId = "01" | "05" | "07" | "04" | "08";
+
 interface SkillType {
-  id: string;
+  id: SkillTypeId;
   name: string;
 }
 
@@ -119,42 +121,57 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
     (vertId) => Tables.GunGradeData[vertId].abbr
   );
 
-  //const allSkillIds = [character.skillNormalAttack].concat(skillIds.flat());
   const allSkills: SkillTree = {};
 
   [character.skillNormalAttack].concat(skillIds.flat()).forEach((id) => {
     const idString = id.toString();
-    const skillType = idString.substring(4, 6);
+    const type = idString.substring(4, 6);
     const level = idString.substring(6, 8);
 
-    if (!allSkills[skillType]) {
-      allSkills[skillType] = {};
+    if (!allSkills[type]) {
+      allSkills[type] = {};
     }
 
-    allSkills[skillType][level] = loadSkill(id);
+    allSkills[type][level] = loadSkill(id);
   });
 
-  const [currentSkillType, setCurrentSkillType] = useState<string>(
+  const [currentSkillType, setCurrentSkillType] = useState<SkillTypeId>(
     skillTypes[0].id
   );
+  const [currentSkillLevels, setCurrentSkillLevels] = useState<
+    Map<SkillTypeId, string>
+  >(new Map(skillTypes.map((type) => [type.id, "01"])));
   const [currentSkillLevel, setCurrentSkillLevel] = useState<string>("01");
   const [currentSkill, setCurrentSkill] = useState<Skill>(
-    allSkills[currentSkillType][currentSkillLevel]
+    allSkills["01"]["01"]
   );
+  console.log(currentSkillLevels, currentSkillLevel);
 
   useEffect(() => {
+    setCurrentSkillLevels((prevLevels) =>
+      new Map(prevLevels).set(currentSkillType, currentSkillLevel)
+    );
+  }, [currentSkillLevel]);
+
+  useEffect(() => {
+    setCurrentSkillLevel(currentSkillLevels.get(currentSkillType) ?? "01");
+  }, [currentSkillType]);
+
+  useEffect(() => {
+    const level = currentSkillLevels.get(currentSkillType);
     if (
       currentSkillType &&
-      currentSkillLevel &&
+      currentSkillLevels &&
       allSkills[currentSkillType] &&
-      allSkills[currentSkillType][currentSkillLevel]
+      level &&
+      allSkills[currentSkillType][level]
     )
-      setCurrentSkill(allSkills[currentSkillType][currentSkillLevel]);
-  }, [currentSkillType, currentSkillLevel]);
+      setCurrentSkill(allSkills[currentSkillType][level]);
+  }, [currentSkillType, currentSkillLevels]);
 
   const handleSkillTypeChange = (
     _event: React.MouseEvent<HTMLElement>,
-    newSkillTypeId: string | null
+    newSkillTypeId: SkillTypeId | null
   ) => {
     if (newSkillTypeId !== null) {
       setCurrentSkillType(newSkillTypeId);
@@ -368,7 +385,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                     size="small"
                     sx={{ mb: 2 }}
                   >
-                    {getLevels(currentSkillType).map(level => (
+                    {getLevels(currentSkillType).map((level) => (
                       <ToggleButton
                         key={level}
                         value={level}
@@ -377,9 +394,9 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                           typography: "subtitle2",
                           minWidth: "6rem",
                         }}
-                        >
-                          {level}
-                        </ToggleButton>
+                      >
+                        {level}
+                      </ToggleButton>
                     ))}
                   </ToggleButtonGroup>
                 )}
