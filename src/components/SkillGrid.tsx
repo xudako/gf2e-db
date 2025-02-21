@@ -97,12 +97,22 @@ const SkillGrid: React.FC<GridProps> = ({
               case 71: //Lenna
                 range7 = 3;
                 break;
+              case 107:
+                range7 = 8;
+                break;
             }
             if (
               (row == center && Math.abs(center - col) <= range7) ||
               (col == center && Math.abs(center - row) <= range7)
             )
               inRange = true;
+            if (gridRange[0] == 107) {
+              if (
+                (row == center && Math.abs(center - col) < 4) ||
+                (col == center && Math.abs(center - row) < 4)
+              )
+                inRange = false;
+            }
             break;
           case 8:
             inRange = true;
