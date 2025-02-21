@@ -16,13 +16,13 @@ function Footer() {
           This site is a fan project and is not affiliated with or endorsed by MICA Team. All game assets © MICA Team (Sunborn Network Technology).
         </Typography>
         <Typography variant="body2">
-          Developed by Xuda. Powered by{' '}
+          Powered by{' '}
           <Link href="https://react.dev" target="_blank" rel="noopener noreferrer" sx={{ color: 'inherit', textDecoration: 'underline' }}>
             React
           </Link>{' '}
           &{' '}
-          <Link href="https://mui.com" target="_blank" rel="noopener noreferrer" sx={{ color: 'inherit', textDecoration: 'underline' }}>
-            MUI
+          <Link href="https://vite.dev" target="_blank" rel="noopener noreferrer" sx={{ color: 'inherit', textDecoration: 'underline' }}>
+            Vite
           </Link>.
         </Typography>
       </Container>
