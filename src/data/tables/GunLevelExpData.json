@@ -1,60 +1,6 @@
 {
     "data": [
         {
-            "level": 1,
-            "propertyId": 100001,
-            "exp": 0,
-            "gold": 0
-        },
-        {
-            "level": 2,
-            "exp": 2,
-            "propertyId": 100002,
-            "gold": 0
-        },
-        {
-            "level": 3,
-            "exp": 2,
-            "propertyId": 100003,
-            "gold": 0
-        },
-        {
-            "level": 4,
-            "exp": 5,
-            "propertyId": 100004,
-            "gold": 0
-        },
-        {
-            "level": 5,
-            "exp": 5,
-            "propertyId": 100005,
-            "gold": 0
-        },
-        {
-            "level": 6,
-            "exp": 5,
-            "propertyId": 100006,
-            "gold": 0
-        },
-        {
-            "level": 7,
-            "exp": 5,
-            "propertyId": 100007,
-            "gold": 0
-        },
-        {
-            "level": 8,
-            "exp": 5,
-            "propertyId": 100008,
-            "gold": 0
-        },
-        {
-            "level": 9,
-            "exp": 5,
-            "propertyId": 100009,
-            "gold": 0
-        },
-        {
             "level": 10,
             "exp": 60,
             "propertyId": 100010,
@@ -358,6 +304,60 @@
             "level": 60,
             "exp": 31360,
             "propertyId": 100060,
+            "gold": 0
+        },
+        {
+            "level": 1,
+            "propertyId": 100001,
+            "exp": 0,
+            "gold": 0
+        },
+        {
+            "level": 2,
+            "exp": 2,
+            "propertyId": 100002,
+            "gold": 0
+        },
+        {
+            "level": 3,
+            "exp": 2,
+            "propertyId": 100003,
+            "gold": 0
+        },
+        {
+            "level": 4,
+            "exp": 5,
+            "propertyId": 100004,
+            "gold": 0
+        },
+        {
+            "level": 5,
+            "exp": 5,
+            "propertyId": 100005,
+            "gold": 0
+        },
+        {
+            "level": 6,
+            "exp": 5,
+            "propertyId": 100006,
+            "gold": 0
+        },
+        {
+            "level": 7,
+            "exp": 5,
+            "propertyId": 100007,
+            "gold": 0
+        },
+        {
+            "level": 8,
+            "exp": 5,
+            "propertyId": 100008,
+            "gold": 0
+        },
+        {
+            "level": 9,
+            "exp": 5,
+            "propertyId": 100009,
             "gold": 0
         }
     ]

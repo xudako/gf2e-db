@@ -20,7 +20,6 @@
             "rank": 4,
             "roleTemplateId": 1001,
             "coreItemId": 4001,
-            "upgradeSpeech": "10012001",
             "skillNormalAttack": 10010101,
             "skillTalentExtra": [
                 10000
@@ -61,13 +60,10 @@
             "weight": 2,
             "shieldType": 1,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200001,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/CharolicSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -95,8 +91,8 @@
             "gachaGetAudio": 1050078,
             "gachaGetVoice": 71100106,
             "weakWeaponTag": 32,
-            "ICAMPDMLGAG": "Hey, I'm heading out. I won't be long, I'll be back soon.",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Hey, I'm heading out. I won't be long, I'll be back soon.",
+            "KJLGGIDKCEM": [
                 104,
                 201,
                 305,
@@ -113,9 +109,6 @@
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -143,7 +136,6 @@
             "rank": 4,
             "roleTemplateId": 1008,
             "coreItemId": 4008,
-            "upgradeSpeech": "10082001",
             "skillNormalAttack": 10080101,
             "skillTalentExtra": [
                 10000
@@ -177,13 +169,10 @@
             "weight": 2,
             "shieldType": 2,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200002,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/NemesisSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -210,8 +199,8 @@
             "guardRadiusShow": 1,
             "gachaGetAudio": 1050084,
             "weakWeaponTag": 2,
-            "ICAMPDMLGAG": "...Order... Thunder and burning... Shattering the slimy dreamscape...",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "...Order... Thunder and burning... Shattering the slimy dreamscape...",
+            "KJLGGIDKCEM": [
                 101,
                 204,
                 303,
@@ -227,9 +216,6 @@
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -258,7 +244,6 @@
             "rank": 4,
             "roleTemplateId": 1009,
             "coreItemId": 4009,
-            "upgradeSpeech": "10092001",
             "skillNormalAttack": 10090101,
             "skillTalentExtra": [
                 10000
@@ -299,13 +284,10 @@
             "weight": 2,
             "shieldType": 1,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200001,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/ColphneSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -333,8 +315,8 @@
             "gachaGetAudio": 1050080,
             "gachaGetVoice": 71100904,
             "weakWeaponTag": 32,
-            "ICAMPDMLGAG": "Relax, Commander, I'll make sure I take this job reeeaal seriously~",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Relax, Commander, I'll make sure I take this job reeeaal seriously~",
+            "KJLGGIDKCEM": [
                 102,
                 202,
                 301,
@@ -348,9 +330,6 @@
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -379,7 +358,6 @@
             "rank": 5,
             "roleTemplateId": 1013,
             "coreItemId": 4013,
-            "upgradeSpeech": "10132001",
             "skillNormalAttack": 10130101,
             "skillTalentExtra": [
                 10000
@@ -417,6 +395,7 @@
             "costumeId": 1101300,
             "costumeReplace": [
                 1101300,
+                1101301,
                 1101305
             ],
             "propertyId": 11013,
@@ -425,18 +404,12 @@
                 101303
             ],
             "weight": 2,
-            "clothesEffectId": [
-                101301
-            ],
             "shieldType": 2,
             "maxGrade": 6,
-            "shieldEffectId": 100003,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200002,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/LennaSSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -464,8 +437,8 @@
             "gachaGetAudio": 1050109,
             "gachaGetVoice": 71101312,
             "weakWeaponTag": 4,
-            "ICAMPDMLGAG": "Wow, I was just thinking of going out for a walk♪ Here we go, here we go~",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Wow, I was just thinking of going out for a walk♪ Here we go, here we go~",
+            "KJLGGIDKCEM": [
                 102,
                 203,
                 301,
@@ -479,8 +452,6 @@
             "defaultGrade": 0,
             "avatar": 0,
             "barrackAudioId": 0,
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -509,7 +480,6 @@
             "rank": 5,
             "roleTemplateId": 1015,
             "coreItemId": 4015,
-            "upgradeSpeech": "10152001",
             "skillNormalAttack": 10150101,
             "skillTalentExtra": [
                 10000
@@ -555,13 +525,10 @@
             "weight": 2,
             "shieldType": 2,
             "maxGrade": 6,
-            "shieldEffectId": 100003,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200002,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/VepleySSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -589,8 +556,8 @@
             "gachaGetAudio": 1050090,
             "gachaGetVoice": 71101506,
             "weakWeaponTag": 8,
-            "ICAMPDMLGAG": "Vepley's travelling live show☆ is about to start!",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Vepley's travelling live show☆ is about to start!",
+            "KJLGGIDKCEM": [
                 104,
                 304,
                 401,
@@ -603,9 +570,6 @@
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -633,7 +597,6 @@
             "rank": 4,
             "roleTemplateId": 1017,
             "coreItemId": 4017,
-            "upgradeSpeech": "10172001",
             "skillNormalAttack": 10170101,
             "skillTalentExtra": [
                 10000
@@ -676,13 +639,10 @@
             "weight": 2,
             "shieldType": 1,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200001,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/GrozaSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -710,8 +670,8 @@
             "gachaGetAudio": 1050082,
             "gachaGetVoice": 71101704,
             "weakWeaponTag": 8,
-            "ICAMPDMLGAG": "Target confirmed. Commander, I can set out at any time.",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Target confirmed. Commander, I can set out at any time.",
+            "KJLGGIDKCEM": [
                 103,
                 302,
                 402,
@@ -724,9 +684,6 @@
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -755,7 +712,6 @@
             "rank": 5,
             "roleTemplateId": 1021,
             "coreItemId": 4021,
-            "upgradeSpeech": "10212001",
             "skillNormalAttack": 10210101,
             "skillTalentExtra": [
                 10000
@@ -793,19 +749,17 @@
             "avatar": 21005,
             "costumeId": 1102100,
             "costumeReplace": [
-                1102100
+                1102100,
+                1102101
             ],
             "propertyId": 11021,
             "weight": 2,
             "shieldType": 1,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200001,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/PerityaSSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -833,8 +787,8 @@
             "gachaGetAudio": 1050085,
             "gachaGetVoice": 71102107,
             "weakWeaponTag": 2,
-            "ICAMPDMLGAG": "I wonder what new and interesting things I'll encounter... Mm, sounds exciting.",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "I wonder what new and interesting things I'll encounter... Mm, sounds exciting.",
+            "KJLGGIDKCEM": [
                 101,
                 204,
                 303,
@@ -849,9 +803,6 @@
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -879,7 +830,6 @@
             "rank": 4,
             "roleTemplateId": 1022,
             "coreItemId": 4022,
-            "upgradeSpeech": "10072001",
             "skillNormalAttack": 10220101,
             "skillTalentExtra": [
                 10000
@@ -919,13 +869,10 @@
             "weight": 2,
             "shieldType": 2,
             "maxGrade": 6,
-            "shieldEffectId": 100003,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200002,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/SharkrySR01_GunGetShow",
             "beSuppressedConfig": [
@@ -953,8 +900,8 @@
             "gachaGetAudio": 1050088,
             "gachaGetVoice": 71102204,
             "weakWeaponTag": 4,
-            "ICAMPDMLGAG": "Hehe, now behold Sharkry's greatness! Commander, make sure you watch Sharkry closely, okay♥",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Hehe, now behold Sharkry's greatness! Commander, make sure you watch Sharkry closely, okay♥",
+            "KJLGGIDKCEM": [
                 101,
                 201,
                 302,
@@ -969,9 +916,6 @@
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -985,7 +929,7 @@
             "firstName": "Dushevnaya",
             "secondName": "白宇宙",
             "enName": "DusevnyjSSR",
-            "introduce": "A highly sensitive doll who has lost her neural records, persistently searching for her past and wholeheartedly fulfilling the requests of others. The way she expresses her emotions can be both somewhat exaggerated and immature, often leaving others puzzled in her wake. In truth, these mannerisms are simply a way to mask her own awkwardness and insecurities.",
+            "introduce": "A highly sensitive Doll who has lost her neural records, persistently searching for her past and wholeheartedly fulfilling the requests of others. The way she expresses her emotions can be both somewhat exaggerated and immature, often leaving others puzzled in her wake. In truth, these mannerisms are simply a way to mask her own awkwardness and insecurities.",
             "dialogue": "Do you see it? Flames are bursting forth from the darkness, and here I stand.",
             "code": "DusevnyjSSR",
             "type": 3,
@@ -1000,7 +944,6 @@
             "rank": 5,
             "roleTemplateId": 1023,
             "coreItemId": 4023,
-            "upgradeSpeech": "10082001",
             "skillNormalAttack": 10230101,
             "skillTalentExtra": [
                 10000
@@ -1043,13 +986,10 @@
             "weight": 2,
             "shieldType": 2,
             "maxGrade": 6,
-            "shieldEffectId": 100003,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200002,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/DusevnyjSSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -1077,8 +1017,8 @@
             "gachaGetAudio": 12102305,
             "gachaGetVoice": 71102305,
             "weakWeaponTag": 2,
-            "ICAMPDMLGAG": "A new journey... It calls to me. I shall shatter the darkness and return triumphant.",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "A new journey... It calls to me. I shall shatter the darkness and return triumphant.",
+            "KJLGGIDKCEM": [
                 102,
                 205,
                 303,
@@ -1093,9 +1033,6 @@
             "avatar": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -1124,7 +1061,6 @@
             "rank": 4,
             "roleTemplateId": 1024,
             "coreItemId": 4024,
-            "upgradeSpeech": "10082001",
             "skillNormalAttack": 10240101,
             "skillTalentExtra": [
                 10000
@@ -1158,25 +1094,20 @@
             "avatar": 21009,
             "costumeId": 1102400,
             "costumeReplace": [
-                1102400
+                1102400,
+                1102401
             ],
             "propertyId": 11024,
             "barrackEffectId": [
                 102401
             ],
             "weight": 2,
-            "clothesEffectId": [
-                102401
-            ],
             "shieldType": 2,
             "maxGrade": 6,
-            "shieldEffectId": 100003,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200002,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/CheetaSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -1204,8 +1135,8 @@
             "gachaGetAudio": 1050079,
             "gachaGetVoice": 71102403,
             "weakWeaponTag": 4,
-            "ICAMPDMLGAG": "Hehehe, to think my new invention would see use so soon.",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Hehehe, to think my new invention would see use so soon.",
+            "KJLGGIDKCEM": [
                 102,
                 201,
                 301,
@@ -1219,8 +1150,6 @@
             "weaponPrivate": [],
             "defaultGrade": 0,
             "barrackAudioId": 0,
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -1248,7 +1177,6 @@
             "rank": 5,
             "roleTemplateId": 1025,
             "coreItemId": 4025,
-            "upgradeSpeech": "10082001",
             "skillNormalAttack": 10250101,
             "skillTalentExtra": [
                 10000
@@ -1293,13 +1221,10 @@
             "weight": 2,
             "shieldType": 2,
             "maxGrade": 6,
-            "shieldEffectId": 100003,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200002,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/TololoSSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -1326,8 +1251,8 @@
             "guardRadiusShow": 1,
             "gachaGetAudio": 1050089,
             "weakWeaponTag": 8,
-            "ICAMPDMLGAG": "Understood. I'd like to bring a camera along, if I could.",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Understood. I'd like to bring a camera along, if I could.",
+            "KJLGGIDKCEM": [
                 101,
                 202,
                 302,
@@ -1340,9 +1265,6 @@
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -1371,7 +1293,6 @@
             "rank": 4,
             "roleTemplateId": 1026,
             "coreItemId": 4026,
-            "upgradeSpeech": "10082001",
             "skillNormalAttack": 10260101,
             "skillTalentExtra": [
                 10000
@@ -1412,13 +1333,10 @@
             "weight": 2,
             "shieldType": 2,
             "maxGrade": 6,
-            "shieldEffectId": 100003,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200002,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/NagantSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -1446,8 +1364,8 @@
             "gachaGetAudio": 1050083,
             "gachaGetVoice": 71102605,
             "weakWeaponTag": 32,
-            "ICAMPDMLGAG": "Whether it's a mission or taking care of my juniors, you can leave it all to little ol' me.",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Whether it's a mission or taking care of my juniors, you can leave it all to little ol' me.",
+            "KJLGGIDKCEM": [
                 102,
                 204,
                 301,
@@ -1461,9 +1379,6 @@
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -1491,7 +1406,6 @@
             "rank": 5,
             "roleTemplateId": 1027,
             "coreItemId": 4027,
-            "upgradeSpeech": "10132001",
             "skillNormalAttack": 10270101,
             "skillTalentExtra": [
                 10000
@@ -1535,13 +1449,10 @@
             "weight": 2,
             "shieldType": 2,
             "maxGrade": 6,
-            "shieldEffectId": 100003,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200002,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/QiongjiuSSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -1569,8 +1480,8 @@
             "gachaGetAudio": 1050086,
             "gachaGetVoice": 71102706,
             "weakWeaponTag": 8,
-            "ICAMPDMLGAG": "Let me handle the planned tasks.",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Let me handle the planned tasks.",
+            "KJLGGIDKCEM": [
                 101,
                 201,
                 302,
@@ -1585,9 +1496,6 @@
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -1616,7 +1524,6 @@
             "rank": 5,
             "roleTemplateId": 1028,
             "coreItemId": 4028,
-            "upgradeSpeech": "10072001",
             "skillNormalAttack": 10280101,
             "skillTalentExtra": [
                 10000
@@ -1651,6 +1558,7 @@
             "grade": 1028,
             "gunClass": 12,
             "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "avatar": 21013,
             "costumeId": 1102800,
             "costumeReplace": [
                 1102800
@@ -1659,13 +1567,10 @@
             "weight": 2,
             "shieldType": 2,
             "maxGrade": 6,
-            "shieldEffectId": 100003,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200002,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/CentaureissiSSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -1693,8 +1598,8 @@
             "gachaGetAudio": 1050077,
             "gachaGetVoice": 71102813,
             "weakWeaponTag": 8,
-            "ICAMPDMLGAG": "I will assiduously carry out your orders. You will not be disappointed, Commander.",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "I will assiduously carry out your orders. You will not be disappointed, Commander.",
+            "KJLGGIDKCEM": [
                 102,
                 201,
                 302,
@@ -1707,12 +1612,8 @@
             "skillActiveExtra": [],
             "element": 0,
             "defaultGrade": 0,
-            "avatar": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -1741,7 +1642,6 @@
             "rank": 5,
             "roleTemplateId": 1029,
             "coreItemId": 4029,
-            "upgradeSpeech": "10082001",
             "skillNormalAttack": 10290101,
             "skillTalentExtra": [
                 10000
@@ -1787,18 +1687,12 @@
                 102901
             ],
             "weight": 2,
-            "clothesEffectId": [
-                102901
-            ],
             "shieldType": 2,
             "maxGrade": 6,
-            "shieldEffectId": 100003,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200002,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/SabrinaSSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -1826,8 +1720,8 @@
             "gachaGetAudio": 1050087,
             "gachaGetVoice": 71102907,
             "weakWeaponTag": 8,
-            "ICAMPDMLGAG": "Let's pack some extra snacks and food. It's for the sake of a successful mission, after all.",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Let's pack some extra snacks and food. It's for the sake of a successful mission, after all.",
+            "KJLGGIDKCEM": [
                 103,
                 202,
                 304,
@@ -1841,8 +1735,6 @@
             "element": 0,
             "defaultGrade": 0,
             "barrackAudioId": 0,
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -1856,8 +1748,8 @@
             "firstName": "Daiyan",
             "secondName": "特化型",
             "enName": "DaiyanSSR",
-            "introduce": "A gentle and reserved Doll, she roams the lands with her guzheng and her bandmates from \"Monsoon\". When she plucks the strings, she evokes the deepest desires buried in the hearts of her listeners—listening to all, and embracing all.",
-            "dialogue": "What kind of melody will be born out of my reunion with the Commander? I look forward to it.",
+            "introduce": "A gentle and reserved Doll who roams the lands with her guzheng and her bandmates from \"Monsoon\". When she plucks the strings, she evokes the deepest desires buried in the hearts of her listeners—listening to all, and embracing all.",
+            "dialogue": "When I meet you again, Commander, what melody will be composed? I look forward to it.",
             "code": "DaiyanSSR",
             "type": 4,
             "characterId": 16,
@@ -1870,7 +1762,6 @@
             "rank": 5,
             "roleTemplateId": 1032,
             "coreItemId": 4032,
-            "upgradeSpeech": "10082001",
             "skillNormalAttack": 10320101,
             "skillTalentExtra": [
                 10000
@@ -1915,13 +1806,10 @@
             "weight": 2,
             "shieldType": 2,
             "maxGrade": 6,
-            "shieldEffectId": 100003,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200002,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/DaiyanSSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -1949,8 +1837,8 @@
             "gachaGetAudio": 1050081,
             "gachaGetVoice": 71103206,
             "weakWeaponTag": 4,
-            "ICAMPDMLGAG": "All preparations are complete, Commander. There's no need to worry.",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "All preparations are complete, Commander. There's no need to worry.",
+            "KJLGGIDKCEM": [
                 104,
                 301,
                 302,
@@ -1964,9 +1852,6 @@
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -1995,7 +1880,6 @@
             "rank": 5,
             "roleTemplateId": 1033,
             "coreItemId": 4033,
-            "upgradeSpeech": "10172001",
             "skillNormalAttack": 10330101,
             "skillTalentExtra": [
                 10000
@@ -2040,18 +1924,12 @@
                 103301
             ],
             "weight": 2,
-            "clothesEffectId": [
-                103301
-            ],
             "shieldType": 1,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200001,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/MosinnagantSSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -2079,8 +1957,8 @@
             "gachaGetAudio": 1050094,
             "gachaGetVoice": 71103303,
             "weakWeaponTag": 2,
-            "ICAMPDMLGAG": "Leave it to me, I'll get it done! Nothing can possibly go wrong! Hahaha!",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Leave it to me, I'll get it done! Nothing can possibly go wrong! Hahaha!",
+            "KJLGGIDKCEM": [
                 101,
                 203,
                 303,
@@ -2094,8 +1972,6 @@
             "element": 0,
             "defaultGrade": 0,
             "barrackAudioId": 0,
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -2110,7 +1986,7 @@
             "secondName": "-",
             "enName": "MacqiatoSSR",
             "introduce": "A calm, proud, yet awkward Doll who isn't good at expressing herself. She loves fluffy little animals and overly sweet macchiatos. Always a loner, her gaze often lingers somewhere. When will she finally get the response she's been longing for?",
-            "dialogue": "Ha... ha... I finally... found you. Hurry, let me into the car!",
+            "dialogue": "Ha... ha... I finally... found you. Hurry, let me in!",
             "code": "MacqiatoSSR",
             "type": 3,
             "characterId": 19,
@@ -2123,7 +1999,6 @@
             "rank": 5,
             "roleTemplateId": 1034,
             "coreItemId": 4034,
-            "upgradeSpeech": "10172001",
             "skillNormalAttack": 10340101,
             "skillTalentExtra": [
                 10000
@@ -2167,13 +2042,10 @@
             "weight": 2,
             "shieldType": 1,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200001,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/MacqiatoSSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -2201,8 +2073,8 @@
             "gachaGetAudio": 12103405,
             "gachaGetVoice": 71103405,
             "weakWeaponTag": 2,
-            "ICAMPDMLGAG": "Hmph, I can't believe you actually gave me a mission like this... No, wait, I, I never said I wouldn't do it!",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Hmph, I can't believe you actually gave me a mission like this... No, wait, I, I never said I wouldn't do it!",
+            "KJLGGIDKCEM": [
                 101,
                 205,
                 303,
@@ -2219,9 +2091,6 @@
             "avatar": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -2249,7 +2118,6 @@
             "rank": 5,
             "roleTemplateId": 1035,
             "coreItemId": 4035,
-            "upgradeSpeech": "10172001",
             "skillNormalAttack": 10350101,
             "skillTalentExtra": [
                 10000
@@ -2292,13 +2160,10 @@
             "weight": 2,
             "shieldType": 1,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200001,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/JiangyuSSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -2326,8 +2191,8 @@
             "gachaGetAudio": 12103505,
             "gachaGetVoice": 71103505,
             "weakWeaponTag": 8,
-            "ICAMPDMLGAG": "Yo, I'll make sure I do a good job this time!",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Yo, I'll make sure I do a good job this time!",
+            "KJLGGIDKCEM": [
                 101,
                 203,
                 302,
@@ -2343,9 +2208,6 @@
             "avatar": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -2373,7 +2235,6 @@
             "rank": 4,
             "roleTemplateId": 1036,
             "coreItemId": 4036,
-            "upgradeSpeech": "10172001",
             "skillNormalAttack": 10360101,
             "skillTalentExtra": [
                 10000
@@ -2413,13 +2274,10 @@
             "weight": 2,
             "shieldType": 1,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200001,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/KseniaSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -2447,8 +2305,8 @@
             "gachaGetAudio": 1050093,
             "gachaGetVoice": 71103610,
             "weakWeaponTag": 32,
-            "ICAMPDMLGAG": "Hmm, can I request extra overtime pay?",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Hmm, can I request extra overtime pay?",
+            "KJLGGIDKCEM": [
                 102,
                 201,
                 301,
@@ -2465,9 +2323,6 @@
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -2496,7 +2351,6 @@
             "rank": 5,
             "roleTemplateId": 1037,
             "coreItemId": 4037,
-            "upgradeSpeech": "10172001",
             "skillNormalAttack": 10370101,
             "skillTalentExtra": [
                 10000
@@ -2539,13 +2393,10 @@
             "weight": 2,
             "shieldType": 1,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200001,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/UllridSSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -2573,8 +2424,8 @@
             "gachaGetAudio": 12103705,
             "gachaGetVoice": 71103705,
             "weakWeaponTag": 8,
-            "ICAMPDMLGAG": "Hunting, is it? Alright, I'm in.",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Hunting, is it? Alright, I'm in.",
+            "KJLGGIDKCEM": [
                 104,
                 301,
                 305,
@@ -2589,9 +2440,6 @@
             "avatar": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -2619,7 +2467,6 @@
             "rank": 4,
             "roleTemplateId": 1038,
             "coreItemId": 4038,
-            "upgradeSpeech": "10172001",
             "skillNormalAttack": 10380101,
             "skillTalentExtra": [
                 10000
@@ -2657,16 +2504,12 @@
             ],
             "propertyId": 11038,
             "weight": 2,
-            "clothesAudioId": 1050011,
             "shieldType": 1,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200001,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/LittaraSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -2694,8 +2537,8 @@
             "gachaGetAudio": 1050107,
             "gachaGetVoice": 71103808,
             "weakWeaponTag": 2,
-            "ICAMPDMLGAG": "[Mission data has been logged. Please sit back and wait for my good news.] - Littara",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "[Mission data has been logged. Please sit back and wait for my good news.] - Littara",
+            "KJLGGIDKCEM": [
                 101,
                 303,
                 402,
@@ -2708,8 +2551,6 @@
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -2737,7 +2578,6 @@
             "rank": 5,
             "roleTemplateId": 1039,
             "coreItemId": 4039,
-            "upgradeSpeech": "10172001",
             "skillNormalAttack": 10390101,
             "skillTalentExtra": [
                 10000
@@ -2779,16 +2619,12 @@
             ],
             "propertyId": 11039,
             "weight": 2,
-            "clothesAudioId": 1050011,
             "shieldType": 1,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200001,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/SuomiSSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -2816,8 +2652,8 @@
             "gachaGetAudio": 12103905,
             "gachaGetVoice": 71103905,
             "weakWeaponTag": 8,
-            "ICAMPDMLGAG": "Yes! I... I'm ready! All for the mission.",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Yes! I... I'm ready! All for the mission.",
+            "KJLGGIDKCEM": [
                 102,
                 205,
                 301,
@@ -2833,8 +2669,6 @@
             "avatar": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -2862,7 +2696,6 @@
             "rank": 5,
             "roleTemplateId": 1040,
             "coreItemId": 4040,
-            "upgradeSpeech": "10172001",
             "skillNormalAttack": 10400101,
             "skillTalentExtra": [
                 10000
@@ -2903,16 +2736,12 @@
             ],
             "propertyId": 11040,
             "weight": 2,
-            "clothesAudioId": 1050011,
             "shieldType": 1,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200001,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/PapashaSSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -2940,8 +2769,8 @@
             "gachaGetAudio": 12104005,
             "gachaGetVoice": 71104005,
             "weakWeaponTag": 32,
-            "ICAMPDMLGAG": "Order received! For honor and mission!",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Order received! For honor and mission!",
+            "KJLGGIDKCEM": [
                 101,
                 301,
                 401,
@@ -2956,8 +2785,6 @@
             "avatar": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -2986,7 +2813,6 @@
             "rank": 4,
             "roleTemplateId": 1041,
             "coreItemId": 4041,
-            "upgradeSpeech": "10172001",
             "skillNormalAttack": 10410101,
             "skillTalentExtra": [
                 10000
@@ -3019,20 +2845,17 @@
             "barrackCameraSetting": "0.3,0,0.5,1.9",
             "costumeId": 1104100,
             "costumeReplace": [
-                1104100
+                1104100,
+                1104101
             ],
             "propertyId": 11041,
             "weight": 2,
-            "clothesAudioId": 1050011,
             "shieldType": 1,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200001,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/LottaSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -3060,8 +2883,8 @@
             "gachaGetAudio": 12104105,
             "gachaGetVoice": 71104105,
             "weakWeaponTag": 4,
-            "ICAMPDMLGAG": "Aiiieee?! Are... Are you talking to me? I... I'll do my best!",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Aiiieee?! Are... Are you talking to me? I... I'll do my best!",
+            "KJLGGIDKCEM": [
                 101,
                 205,
                 304,
@@ -3078,8 +2901,595 @@
             "avatar": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "extraSkill": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
+            "id": 1042,
+            "name": "Andoris",
+            "firstName": "Andoris",
+            "secondName": "-",
+            "enName": "AndorisSSR",
+            "introduce": "A gentle, approachable Doll. Although she has performance limitations, she does not indulge in self pity, but instead proactively searches for a place she can call home. A Doll who embraces and accomodates everyone around her, she has become a source of refuge for others without realizing it.",
+            "dialogue": "We've finally met, Commander. Everyone at 404 spoke of you. I look forward... to our partnership.",
+            "code": "AndorisSSR",
+            "type": 4,
+            "characterId": 27,
+            "getAudio": 7104241,
+            "duty": 1,
+            "secondDuty": [
+                8,
+                38,
+                32
+            ],
+            "rank": 5,
+            "roleTemplateId": 1042,
+            "coreItemId": 4042,
+            "skillNormalAttack": 10420101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "weaponType": 4,
+            "weaponPrivate": [
+                10423
+            ],
+            "weaponPrivateShow": [
+                10421,
+                10422,
+                10423
+            ],
+            "weaponDefault": 10421,
+            "moveCode": 27,
+            "soldGet1": {
+                "4042": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1042,
+            "gunClass": 31,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1104200,
+            "costumeReplace": [
+                1104200
+            ],
+            "propertyId": 11042,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/AndorisSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "4",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44042
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12104205,
+            "gachaGetVoice": 71104205,
+            "weakWeaponTag": 8,
+            "BGEOPIAGBKE": "Are you certain you want to entrust it to me? I'm delighted... I will ensure it gets done.",
+            "KJLGGIDKCEM": [
+                103,
+                203,
+                302,
+                402,
+                603,
+                705,
+                902
+            ],
+            "extra": "",
+            "skillActiveExtra": [],
+            "element": 0,
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
+            "id": 1043,
+            "name": "Faye",
+            "firstName": "Faye",
+            "secondName": "-",
+            "enName": "FayeSSR",
+            "introduce": "A Doll whose appearance contrasts greatly with her personality. Small in stature yet imposing, she carries a gun on one hand and an axe in another, creating a presence that would scare off most people. However, if you are willing to look past her appearance and get to understand her better, you will find that, behind her intolerant expression and irritable tone lies a delicate, sensitive soul. She too, is awaiting your warmth.",
+            "dialogue": "",
+            "code": "FayeSSR",
+            "type": 4,
+            "characterId": 28,
+            "getAudio": 7104341,
+            "duty": 2,
+            "secondDuty": [
+                11,
+                40,
+                41
+            ],
+            "rank": 5,
+            "roleTemplateId": 1043,
+            "coreItemId": 4043,
+            "skillNormalAttack": 10430101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "weaponType": 1,
+            "weaponPrivate": [
+                10433
+            ],
+            "weaponPrivateShow": [
+                10431,
+                10432,
+                10433
+            ],
+            "weaponDefault": 10431,
+            "moveCode": 27,
+            "soldGet1": {
+                "4043": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1043,
+            "gunClass": 33,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1104300,
+            "costumeReplace": [
+                1104300
+            ],
+            "propertyId": 11043,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/FayeSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "5",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160044,
+            "unlockDorm": [
+                44043
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12104305,
+            "gachaGetVoice": 71104305,
+            "weakWeaponTag": 32,
+            "BGEOPIAGBKE": "Tsk. If you've got something to say, hurry... Ahem, I mean—I'm listening.",
+            "KJLGGIDKCEM": [
+                104,
+                301,
+                305,
+                401,
+                802,
+                902
+            ],
+            "extra": "",
+            "skillActiveExtra": [],
+            "element": 0,
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
+            "id": 1044,
+            "name": "Vector",
+            "firstName": "Vector",
+            "secondName": "-",
+            "enName": "VectorSSR",
+            "introduce": "A regularly pessimistic Doll. However, as the leader of H.I.D.E 404's second squad, Vector will absolutely push through and endure till the very last moment with her squadmates in the face of adversity, no matter how depressing the outcomes she calculates are.",
+            "dialogue": "C-Commander? Didn't expect our paths would cross once more. Still... I'm glad to see you again.",
+            "code": "VectorSSR",
+            "type": 4,
+            "characterId": 29,
+            "getAudio": 7104441,
+            "duty": 3,
+            "secondDuty": [
+                36,
+                23,
+                22
+            ],
+            "rank": 5,
+            "roleTemplateId": 1044,
+            "coreItemId": 4044,
+            "skillNormalAttack": 10440101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "weaponType": 2,
+            "weaponPrivate": [
+                10443
+            ],
+            "weaponPrivateShow": [
+                10441,
+                10442,
+                10443
+            ],
+            "weaponDefault": 10441,
+            "moveCode": 27,
+            "soldGet1": {
+                "4044": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1044,
+            "gunClass": 29,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1104400,
+            "costumeReplace": [
+                1104400
+            ],
+            "propertyId": 11044,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/VectorSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "5",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44044
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12104405,
+            "gachaGetVoice": 71104405,
+            "weakWeaponTag": 4,
+            "BGEOPIAGBKE": "Me? Are you sure?... Well, with the Commander's blessing, maybe even I could survive...",
+            "KJLGGIDKCEM": [
+                102,
+                201,
+                301,
+                402,
+                601
+            ],
+            "extra": "",
+            "skillActiveExtra": [],
+            "element": 0,
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
+            "id": 1045,
+            "name": "Belka",
+            "firstName": "Belka",
+            "secondName": "-",
+            "enName": "BiyocaSSR",
+            "introduce": "Her innocence, liveliness and considerate personality is written on her face. Absolutely loyal to the Commander and her big sister, she is a Doll who strives to become an elite Doll loved by everyone. With her around, awkward silences are no longer a thing!",
+            "dialogue": "Hi, Commander~ Remember me? I'm... hehe. Big sis gave me a new name, you can call me Belka now~!",
+            "code": "BiyocaSSR",
+            "type": 4,
+            "characterId": 30,
+            "getAudio": 7104541,
+            "duty": 2,
+            "secondDuty": [
+                37,
+                19
+            ],
+            "rank": 5,
+            "roleTemplateId": 1045,
+            "coreItemId": 4045,
+            "skillNormalAttack": 10450101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "weaponType": 4,
+            "weaponPrivate": [
+                10453
+            ],
+            "weaponPrivateShow": [
+                10451,
+                10452,
+                10453
+            ],
+            "weaponDefault": 10451,
+            "moveCode": 27,
+            "soldGet1": {
+                "4045": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1045,
+            "gunClass": 30,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1104500,
+            "costumeReplace": [
+                1104500,
+                1104501
+            ],
+            "propertyId": 11045,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/BiyocaSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "3",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44045
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12104505,
+            "gachaGetVoice": 71104505,
+            "weakWeaponTag": 32,
+            "BGEOPIAGBKE": "Wait, you don't believe I can handle it? Guess I'll have to prove myself with my actions!",
+            "KJLGGIDKCEM": [
+                104,
+                203,
+                302,
+                402,
+                603,
+                801,
+                902
+            ],
+            "extra": "",
+            "skillActiveExtra": [],
+            "element": 0,
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
+            "id": 1047,
+            "name": "Springfield",
+            "firstName": "Springfield",
+            "secondName": "-",
+            "enName": "SpringfieldSSR",
+            "introduce": "Gentle, strong and understanding of others, she is a tactful abd witty Doll who mingles well with different groups of people without allowing anyone to take advantage of her. Behind her tolerance lies an adherence to principles, that being Springfield's one and only principle— She shall always protect her friends and those who are important to her.",
+            "dialogue": "",
+            "code": "SpringfieldSSR",
+            "type": 4,
+            "characterId": 32,
+            "getAudio": 7104741,
+            "duty": 3,
+            "secondDuty": [
+                3,
+                32,
+                39
+            ],
+            "rank": 5,
+            "roleTemplateId": 1047,
+            "coreItemId": 4047,
+            "skillNormalAttack": 10470101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "weaponType": 3,
+            "weaponPrivate": [
+                10473
+            ],
+            "weaponPrivateShow": [
+                10471,
+                10472,
+                10473
+            ],
+            "weaponDefault": 10471,
+            "moveCode": 27,
+            "soldGet1": {
+                "4047": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1047,
+            "gunClass": 32,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1104700,
+            "costumeReplace": [
+                1104700,
+                1104701
+            ],
+            "propertyId": 11047,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/SpringfieldSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "2",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44047
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12104705,
+            "gachaGetVoice": 71104705,
+            "weakWeaponTag": 2,
+            "BGEOPIAGBKE": "Oh my, do you require my assistance? Rest assured, I will not disappoint you.",
+            "KJLGGIDKCEM": [
+                102,
+                202,
+                303,
+                402,
+                501,
+                602,
+                704,
+                902
+            ],
+            "extra": "",
+            "skillActiveExtra": [],
+            "element": 0,
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -3107,7 +3517,6 @@
             "rank": 5,
             "roleTemplateId": 1050,
             "coreItemId": 4050,
-            "upgradeSpeech": "10172001",
             "skillNormalAttack": 10500101,
             "skillTalentExtra": [
                 10000
@@ -3152,13 +3561,10 @@
             "weight": 2,
             "shieldType": 1,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200001,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/ZhaohuiSSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -3186,8 +3592,8 @@
             "gachaGetAudio": 12105005,
             "gachaGetVoice": 71105005,
             "weakWeaponTag": 8,
-            "ICAMPDMLGAG": "Understood.",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Understood.",
+            "KJLGGIDKCEM": [
                 104,
                 202,
                 301,
@@ -3202,9 +3608,123 @@
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
+            "id": 1051,
+            "name": "Mechty",
+            "firstName": "Mechty",
+            "secondName": "-",
+            "enName": "MishtySSR",
+            "introduce": "A Doll who does everything in a lazy manner with the exceptions being gaming and reading manga. She has the ultimate ability of being able to sleep at any moment, anywhere, and in any situation. Although she seems to embody the philosophy of \"lie flat\" to the extreme, she reveals her dependable side in times of crisis— Although she herself carries the opinion of \"It's best if we don't run into any 'crisis' at all...\".",
+            "dialogue": "Yes, yes. The temperless and ever-so-handy Mechty is here... Commander, my luggage must've arrived, right?",
+            "code": "MishtySSR",
+            "type": 4,
+            "characterId": 36,
+            "getAudio": 7105141,
+            "duty": 3,
+            "secondDuty": [
+                34,
+                23,
+                35
+            ],
+            "rank": 5,
+            "roleTemplateId": 1051,
+            "coreItemId": 4051,
+            "skillNormalAttack": 10510101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "weaponType": 4,
+            "weaponPrivate": [
+                10513
+            ],
+            "weaponPrivateShow": [
+                10511,
+                10512,
+                10513
+            ],
+            "weaponDefault": 10511,
+            "moveCode": 27,
+            "soldGet1": {
+                "4051": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1051,
+            "gunClass": 28,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "avatar": 21004,
+            "costumeId": 1105100,
+            "costumeReplace": [
+                1105100
+            ],
+            "propertyId": 11051,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/MishtySSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "5",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44051
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12105105,
+            "gachaGetVoice": 71105105,
+            "weakWeaponTag": 8,
+            "BGEOPIAGBKE": "Eh...? I can't take a day off this time? Sure...",
+            "KJLGGIDKCEM": [
+                102,
+                204,
+                302,
+                402,
+                604,
+                703
+            ],
+            "extra": "",
+            "skillActiveExtra": [],
+            "element": 0,
+            "defaultGrade": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",
@@ -3233,7 +3753,6 @@
             "rank": 5,
             "roleTemplateId": 1052,
             "coreItemId": 4052,
-            "upgradeSpeech": "10172001",
             "skillNormalAttack": 10520101,
             "skillTalentExtra": [
                 10000
@@ -3272,19 +3791,17 @@
             "costumeId": 1105200,
             "costumeReplace": [
                 1105200,
-                1105201
+                1105201,
+                1105202
             ],
             "propertyId": 11052,
             "weight": 2,
             "shieldType": 1,
             "maxGrade": 6,
-            "shieldEffectId": 100002,
-            "baseSupply": 80011,
             "supplyTypeBanList": [
                 0,
                 2
             ],
-            "shieldBrokenEffectId": 200001,
             "attackType": 1,
             "gachaGetTimeline": "GunGet/ClukaySSR01_GunGetShow",
             "beSuppressedConfig": [
@@ -3312,13 +3829,14 @@
             "gachaGetAudio": 12105205,
             "gachaGetVoice": 71105205,
             "weakWeaponTag": 32,
-            "ICAMPDMLGAG": "Just watch me. I'll show you how a true elite Doll perfectly completes a mission.",
-            "LMACPDGODDB": [
+            "BGEOPIAGBKE": "Just watch me. I'll show you how a true elite Doll perfectly completes a mission.",
+            "KJLGGIDKCEM": [
                 101,
                 204,
                 302,
                 402,
                 604,
+                801,
                 901
             ],
             "extra": "",
@@ -3327,9 +3845,6 @@
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
-            "clothesEffectId": [],
-            "clothesAudioId": 0,
-            "extraSkill": 0,
             "shape": 0,
             "shapeParam": "",
             "shapeIcon": "",

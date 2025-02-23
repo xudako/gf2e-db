@@ -2901,7 +2901,8 @@
             ],
             "addAbbr": [
                 102705001,
-                102704011
+                102704011,
+                102704033
             ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
@@ -2918,7 +2919,8 @@
             ],
             "addAbbr": [
                 102705001,
-                102704011
+                102704011,
+                102704033
             ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
@@ -4090,7 +4092,8 @@
                 103905011,
                 103907011,
                 103907021,
-                103908011
+                103908011,
+                10399999
             ],
             "icon": "Combat_GunTypeIcon_1",
             "btPath": "BT/GunBT/1039/MainBT_1039.bt",
@@ -4110,7 +4113,8 @@
                 103905011,
                 103907011,
                 103907021,
-                103908011
+                103908011,
+                10399999
             ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
@@ -4130,7 +4134,8 @@
                 103905011,
                 103907011,
                 103907021,
-                103908011
+                103908011,
+                10399999
             ],
             "icon": "Combat_GunTypeIcon_3",
             "costPiece": 30,
@@ -4150,7 +4155,8 @@
                 103905011,
                 103907011,
                 103907021,
-                103908011
+                103908011,
+                10399999
             ],
             "icon": "Combat_GunTypeIcon_4",
             "costPiece": 30,
@@ -4170,7 +4176,8 @@
                 103905021,
                 103907011,
                 103907021,
-                103908011
+                103908011,
+                10399999
             ],
             "icon": "Combat_GunTypeIcon_1",
             "costPiece": 30,
@@ -4190,7 +4197,8 @@
                 103905021,
                 103907011,
                 103907021,
-                103908011
+                103908011,
+                10399999
             ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
@@ -4518,9 +4526,15 @@
                 10420701,
                 10420801
             ],
+            "addAbbr": [
+                104208041,
+                10420511,
+                10420711,
+                10420821,
+                10420411
+            ],
             "icon": "Combat_GunTypeIcon_1",
-            "btPath": "BT/GunBT_skill1.bt",
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1042/MainBT_1042.bt",
             "description": "",
             "costPiece": 0,
             "capacity": 0.0
@@ -4529,72 +4543,131 @@
             "id": 104202,
             "grade": 1042,
             "name": "Level 1",
+            "abbr": [
+                10420502
+            ],
+            "addAbbr": [
+                104208041,
+                10420511,
+                10420711,
+                10420821,
+                10420411
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.05,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1042/MainBT_1042.bt",
             "description": ""
         },
         {
             "id": 104203,
             "grade": 1042,
             "name": "Level 2",
+            "abbr": [
+                10420402
+            ],
+            "addAbbr": [
+                104208041,
+                10420511,
+                10420711,
+                10420821,
+                10420411,
+                10420412
+            ],
             "icon": "Combat_GunTypeIcon_3",
             "costPiece": 30,
             "capacity": 0.1,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1042/MainBT_1042.bt",
             "description": ""
         },
         {
             "id": 104204,
             "grade": 1042,
             "name": "Level 3",
+            "abbr": [
+                10420802
+            ],
+            "addAbbr": [
+                104208041,
+                10420511,
+                10420711,
+                10420821,
+                10420411,
+                10420412,
+                10420812
+            ],
             "icon": "Combat_GunTypeIcon_4",
             "costPiece": 30,
             "capacity": 0.15,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1042/MainBT_1042.bt",
             "description": ""
         },
         {
             "id": 104205,
             "grade": 1042,
             "name": "Level 4",
+            "abbr": [
+                10420803
+            ],
+            "addAbbr": [
+                104208141,
+                10420511,
+                10420711,
+                10420821,
+                10420411,
+                10420412,
+                10420812
+            ],
             "icon": "Combat_GunTypeIcon_1",
             "costPiece": 30,
             "capacity": 0.2,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1042/MainBT_1042.bt",
             "description": ""
         },
         {
             "id": 104206,
             "grade": 1042,
             "name": "Level 5",
+            "abbr": [
+                10420702
+            ],
+            "addAbbr": [
+                104208141,
+                10420511,
+                10420741,
+                10420821,
+                10420411,
+                10420412,
+                10420812
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.25,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1042/MainBT_1042.bt",
             "description": ""
         },
         {
             "id": 104207,
             "grade": 1042,
             "name": "Level 6",
+            "abbr": [
+                10420503
+            ],
+            "addAbbr": [
+                104208141,
+                10420511,
+                10420741,
+                10420821,
+                10420411,
+                10420412,
+                10420812,
+                10420541,
+                10420551
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.3,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1042/MainBT_1042.bt",
             "description": ""
         },
         {
@@ -4607,9 +4680,12 @@
                 10430701,
                 10430801
             ],
+            "addAbbr": [
+                10430411,
+                10430431
+            ],
             "icon": "Combat_GunTypeIcon_1",
-            "btPath": "BT/GunBT_skill1.bt",
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1043/MainBT_1043.bt",
             "description": "",
             "costPiece": 0,
             "capacity": 0.0
@@ -4618,72 +4694,119 @@
             "id": 104302,
             "grade": 1043,
             "name": "Level 1",
+            "abbr": [
+                10430802
+            ],
+            "addAbbr": [
+                10430411,
+                10430431,
+                10430812
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.05,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1043/MainBT_1043.bt",
             "description": ""
         },
         {
             "id": 104303,
             "grade": 1043,
             "name": "Level 2",
+            "abbr": [
+                10430702
+            ],
+            "addAbbr": [
+                10430411,
+                10430431,
+                10430812,
+                10430712
+            ],
             "icon": "Combat_GunTypeIcon_3",
             "costPiece": 30,
             "capacity": 0.1,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1043/MainBT_1043.bt",
             "description": ""
         },
         {
             "id": 104304,
             "grade": 1043,
             "name": "Level 3",
+            "abbr": [
+                10430803
+            ],
+            "addAbbr": [
+                10430411,
+                10430431,
+                10430812,
+                10430813,
+                10430712
+            ],
             "icon": "Combat_GunTypeIcon_4",
             "costPiece": 30,
             "capacity": 0.15,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1043/MainBT_1043.bt",
             "description": ""
         },
         {
             "id": 104305,
             "grade": 1043,
             "name": "Level 4",
+            "abbr": [
+                10430402
+            ],
+            "addAbbr": [
+                10430411,
+                10430432,
+                10430812,
+                10430813,
+                10430712
+            ],
             "icon": "Combat_GunTypeIcon_1",
             "costPiece": 30,
             "capacity": 0.2,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1043/MainBT_1043.bt",
             "description": ""
         },
         {
             "id": 104306,
             "grade": 1043,
             "name": "Level 5",
+            "abbr": [
+                10430502
+            ],
+            "addAbbr": [
+                10430411,
+                10430432,
+                10430812,
+                10430512,
+                10430813,
+                10430712
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.25,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1043/MainBT_1043.bt",
             "description": ""
         },
         {
             "id": 104307,
             "grade": 1043,
             "name": "Level 6",
+            "abbr": [
+                10430403
+            ],
+            "addAbbr": [
+                10430413,
+                10430432,
+                10430812,
+                10430512,
+                10430813,
+                10430712
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.3,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1043/MainBT_1043.bt",
             "description": ""
         },
         {
@@ -4697,7 +4820,7 @@
                 10440801
             ],
             "icon": "Combat_GunTypeIcon_1",
-            "btPath": "BT/GunBT_skill1.bt",
+            "btPath": "BT/GunBT/1044/MainBT_1044.bt",
             "addAbbr": [],
             "description": "",
             "costPiece": 0,
@@ -4707,11 +4830,13 @@
             "id": 104402,
             "grade": 1044,
             "name": "Level 1",
+            "abbr": [
+                10440802
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.05,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
+            "btPath": "BT/GunBT/1044/MainBT_1044.bt",
             "addAbbr": [],
             "description": ""
         },
@@ -4719,11 +4844,13 @@
             "id": 104403,
             "grade": 1044,
             "name": "Level 2",
+            "abbr": [
+                10440402
+            ],
             "icon": "Combat_GunTypeIcon_3",
             "costPiece": 30,
             "capacity": 0.1,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
+            "btPath": "BT/GunBT/1044/MainBT_1044.bt",
             "addAbbr": [],
             "description": ""
         },
@@ -4731,11 +4858,13 @@
             "id": 104404,
             "grade": 1044,
             "name": "Level 3",
+            "abbr": [
+                10440502
+            ],
             "icon": "Combat_GunTypeIcon_4",
             "costPiece": 30,
             "capacity": 0.15,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
+            "btPath": "BT/GunBT/1044/MainBT_1044.bt",
             "addAbbr": [],
             "description": ""
         },
@@ -4743,11 +4872,13 @@
             "id": 104405,
             "grade": 1044,
             "name": "Level 4",
+            "abbr": [
+                10440702
+            ],
             "icon": "Combat_GunTypeIcon_1",
             "costPiece": 30,
             "capacity": 0.2,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
+            "btPath": "BT/GunBT/1044/MainBT_1044.bt",
             "addAbbr": [],
             "description": ""
         },
@@ -4755,11 +4886,13 @@
             "id": 104406,
             "grade": 1044,
             "name": "Level 5",
+            "abbr": [
+                10440803
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.25,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
+            "btPath": "BT/GunBT/1044/MainBT_1044.bt",
             "addAbbr": [],
             "description": ""
         },
@@ -4767,11 +4900,13 @@
             "id": 104407,
             "grade": 1044,
             "name": "Level 6",
+            "abbr": [
+                10440403
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.3,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
+            "btPath": "BT/GunBT/1044/MainBT_1044.bt",
             "addAbbr": [],
             "description": ""
         },
@@ -4785,9 +4920,14 @@
                 10450701,
                 10450801
             ],
+            "addAbbr": [
+                104505011,
+                104505012,
+                104507011,
+                104504013
+            ],
             "icon": "Combat_GunTypeIcon_1",
-            "btPath": "BT/GunBT_skill1.bt",
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1045/MainBT_1045.bt",
             "description": "",
             "costPiece": 0,
             "capacity": 0.0
@@ -4796,72 +4936,114 @@
             "id": 104502,
             "grade": 1045,
             "name": "Level 1",
+            "abbr": [
+                10450702
+            ],
+            "addAbbr": [
+                104505011,
+                104505012,
+                104507021,
+                104504013
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.05,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1045/MainBT_1045.bt",
             "description": ""
         },
         {
             "id": 104503,
             "grade": 1045,
             "name": "Level 2",
+            "abbr": [
+                10450402
+            ],
+            "addAbbr": [
+                104505011,
+                104505012,
+                104507021,
+                104504023
+            ],
             "icon": "Combat_GunTypeIcon_3",
             "costPiece": 30,
             "capacity": 0.1,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1045/MainBT_1045.bt",
             "description": ""
         },
         {
             "id": 104504,
             "grade": 1045,
             "name": "Level 3",
+            "abbr": [
+                10450802
+            ],
+            "addAbbr": [
+                104505011,
+                104505012,
+                104507021,
+                104504023
+            ],
             "icon": "Combat_GunTypeIcon_4",
             "costPiece": 30,
             "capacity": 0.15,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1045/MainBT_1045.bt",
             "description": ""
         },
         {
             "id": 104505,
             "grade": 1045,
             "name": "Level 4",
+            "abbr": [
+                10450803
+            ],
+            "addAbbr": [
+                104505011,
+                104505012,
+                104507021,
+                104504023
+            ],
             "icon": "Combat_GunTypeIcon_1",
             "costPiece": 30,
             "capacity": 0.2,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1045/MainBT_1045.bt",
             "description": ""
         },
         {
             "id": 104506,
             "grade": 1045,
             "name": "Level 5",
+            "abbr": [
+                10450502
+            ],
+            "addAbbr": [
+                104505021,
+                104505012,
+                104507021,
+                104504023
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.25,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1045/MainBT_1045.bt",
             "description": ""
         },
         {
             "id": 104507,
             "grade": 1045,
             "name": "Level 6",
+            "abbr": [
+                10450403
+            ],
+            "addAbbr": [
+                104505021,
+                104505012,
+                104507021,
+                104504033
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.3,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1045/MainBT_1045.bt",
             "description": ""
         },
         {
@@ -4963,9 +5145,11 @@
                 10470701,
                 10470801
             ],
+            "addAbbr": [
+                104705011
+            ],
             "icon": "Combat_GunTypeIcon_1",
-            "btPath": "BT/GunBT_skill1.bt",
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1047/MainBT_1047.bt",
             "description": "",
             "costPiece": 0,
             "capacity": 0.0
@@ -4974,72 +5158,96 @@
             "id": 104702,
             "grade": 1047,
             "name": "Level 1",
+            "abbr": [
+                10470702
+            ],
+            "addAbbr": [
+                104705011
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.05,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1047/MainBT_1047.bt",
             "description": ""
         },
         {
             "id": 104703,
             "grade": 1047,
             "name": "Level 2",
+            "abbr": [
+                10470402
+            ],
+            "addAbbr": [
+                104705011
+            ],
             "icon": "Combat_GunTypeIcon_3",
             "costPiece": 30,
             "capacity": 0.1,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1047/MainBT_1047.bt",
             "description": ""
         },
         {
             "id": 104704,
             "grade": 1047,
             "name": "Level 3",
+            "abbr": [
+                10470802
+            ],
+            "addAbbr": [
+                104705011
+            ],
             "icon": "Combat_GunTypeIcon_4",
             "costPiece": 30,
             "capacity": 0.15,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1047/MainBT_1047.bt",
             "description": ""
         },
         {
             "id": 104705,
             "grade": 1047,
             "name": "Level 4",
+            "abbr": [
+                10470502
+            ],
+            "addAbbr": [
+                104705011
+            ],
             "icon": "Combat_GunTypeIcon_1",
             "costPiece": 30,
             "capacity": 0.2,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1047/MainBT_1047.bt",
             "description": ""
         },
         {
             "id": 104706,
             "grade": 1047,
             "name": "Level 5",
+            "abbr": [
+                10470403
+            ],
+            "addAbbr": [
+                104705011
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.25,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1047/MainBT_1047.bt",
             "description": ""
         },
         {
             "id": 104707,
             "grade": 1047,
             "name": "Level 6",
+            "abbr": [
+                10470803
+            ],
+            "addAbbr": [
+                104705011
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.3,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
-            "addAbbr": [],
+            "btPath": "BT/GunBT/1047/MainBT_1047.bt",
             "description": ""
         },
         {
@@ -5232,7 +5440,8 @@
             ],
             "addAbbr": [
                 105005011,
-                10500811
+                10500811,
+                105008111
             ],
             "icon": "Combat_GunTypeIcon_1",
             "btPath": "BT/GunBT/1050/MainBT_1050.bt",
@@ -5249,7 +5458,8 @@
             ],
             "addAbbr": [
                 105005011,
-                10500811
+                10500811,
+                105008111
             ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
@@ -5266,7 +5476,8 @@
             ],
             "addAbbr": [
                 105005011,
-                10500811
+                10500811,
+                105008111
             ],
             "icon": "Combat_GunTypeIcon_3",
             "costPiece": 30,
@@ -5284,7 +5495,8 @@
             "addAbbr": [
                 105005011,
                 10500811,
-                105004021
+                105004021,
+                105008111
             ],
             "icon": "Combat_GunTypeIcon_4",
             "costPiece": 30,
@@ -5301,7 +5513,8 @@
             ],
             "addAbbr": [
                 10500811,
-                105004021
+                105004021,
+                105008111
             ],
             "icon": "Combat_GunTypeIcon_1",
             "costPiece": 30,
@@ -5318,12 +5531,13 @@
             ],
             "addAbbr": [
                 10500812,
+                105008121,
                 105004021
             ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.25,
-            "btPath": "BT/GunBT/1050/MainBT_1050.bt",
+            "btPath": "BT/GunBT/1050/MainBT_10505.bt",
             "description": ""
         },
         {
@@ -5335,12 +5549,13 @@
             ],
             "addAbbr": [
                 10500812,
+                105008121,
                 105004031
             ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.3,
-            "btPath": "BT/GunBT/1050/MainBT_1050.bt",
+            "btPath": "BT/GunBT/1050/MainBT_10505.bt",
             "description": ""
         },
         {
@@ -5354,7 +5569,7 @@
                 10510801
             ],
             "icon": "Combat_GunTypeIcon_1",
-            "btPath": "BT/GunBT_skill1.bt",
+            "btPath": "BT/GunBT/1051/MainBT_1051.bt",
             "addAbbr": [],
             "description": "",
             "costPiece": 0,
@@ -5364,11 +5579,13 @@
             "id": 105102,
             "grade": 1051,
             "name": "Level 1",
+            "abbr": [
+                10510402
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.05,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
+            "btPath": "BT/GunBT/1051/MainBT_1051.bt",
             "addAbbr": [],
             "description": ""
         },
@@ -5376,11 +5593,13 @@
             "id": 105103,
             "grade": 1051,
             "name": "Level 2",
+            "abbr": [
+                10510802
+            ],
             "icon": "Combat_GunTypeIcon_3",
             "costPiece": 30,
             "capacity": 0.1,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
+            "btPath": "BT/GunBT/1051/MainBT_1051.bt",
             "addAbbr": [],
             "description": ""
         },
@@ -5388,11 +5607,13 @@
             "id": 105104,
             "grade": 1051,
             "name": "Level 3",
+            "abbr": [
+                10510702
+            ],
             "icon": "Combat_GunTypeIcon_4",
             "costPiece": 30,
             "capacity": 0.15,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
+            "btPath": "BT/GunBT/1051/MainBT_1051.bt",
             "addAbbr": [],
             "description": ""
         },
@@ -5400,11 +5621,13 @@
             "id": 105105,
             "grade": 1051,
             "name": "Level 4",
+            "abbr": [
+                10510502
+            ],
             "icon": "Combat_GunTypeIcon_1",
             "costPiece": 30,
             "capacity": 0.2,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
+            "btPath": "BT/GunBT/1051/MainBT_1051.bt",
             "addAbbr": [],
             "description": ""
         },
@@ -5412,11 +5635,13 @@
             "id": 105106,
             "grade": 1051,
             "name": "Level 5",
+            "abbr": [
+                10510403
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.25,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
+            "btPath": "BT/GunBT/1051/MainBT_1051.bt",
             "addAbbr": [],
             "description": ""
         },
@@ -5424,11 +5649,13 @@
             "id": 105107,
             "grade": 1051,
             "name": "Level 6",
+            "abbr": [
+                10510803
+            ],
             "icon": "Combat_GunTypeIcon_2",
             "costPiece": 30,
             "capacity": 0.3,
-            "btPath": "BT/GunBT_skill1.bt",
-            "abbr": [],
+            "btPath": "BT/GunBT/1051/MainBT_1051.bt",
             "addAbbr": [],
             "description": ""
         },

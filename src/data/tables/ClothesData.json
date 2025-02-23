@@ -23,16 +23,18 @@
             "ultraskillAssets": "CharolicSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchTimeline": "",
             "displayArg": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1100101,
-            "order": 1,
+            "order": 100,
             "clothesType": 2,
             "type": 1,
             "modelId": 100101,
@@ -44,7 +46,7 @@
             "rare": 4,
             "unlockType": 3,
             "unlockArg": 2004,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 4
             ],
             "unlockDescription": "Purchase",
@@ -60,11 +62,13 @@
             "audioClothes": 0,
             "audioFoot": 0,
             "skillSuffix": "",
-            "cameraReplaceId": 0
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1100103,
-            "order": 1,
+            "order": 100,
             "clothesType": 1,
             "type": 1,
             "modelId": 100103,
@@ -75,7 +79,7 @@
             "rare": 4,
             "unlockType": 2,
             "unlockArg": 20001,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 4
             ],
             "unlockDescription": "Appraisal Objectives Reward",
@@ -92,7 +96,9 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1100800,
@@ -117,16 +123,18 @@
             "ultraskillAssets": "NemesisSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchTimeline": "",
             "displayArg": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1100803,
-            "order": 1,
+            "order": 100,
             "clothesType": 1,
             "type": 1,
             "modelId": 100803,
@@ -137,7 +145,7 @@
             "rare": 4,
             "unlockType": 2,
             "unlockArg": 20002,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 4
             ],
             "unlockDescription": "Appraisal Objectives Reward",
@@ -154,11 +162,13 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1100804,
-            "order": 1,
+            "order": 100,
             "clothesType": 2,
             "type": 1,
             "modelId": 100804,
@@ -169,7 +179,7 @@
             "rare": 4,
             "unlockType": 2,
             "unlockArg": 20003,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 4
             ],
             "unlockDescription": "Appraisal Objectives Reward",
@@ -186,11 +196,13 @@
             "audioClothes": 0,
             "audioFoot": 0,
             "skillSuffix": "",
-            "cameraReplaceId": 0
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1100805,
-            "order": 1,
+            "order": 100,
             "clothesType": 1,
             "type": 1,
             "modelId": 100805,
@@ -202,7 +214,7 @@
             "rare": 4,
             "unlockType": 3,
             "unlockArg": 2005,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 4
             ],
             "unlockDescription": "Purchase",
@@ -218,7 +230,9 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1100900,
@@ -243,16 +257,18 @@
             "ultraskillAssets": "ColphneSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchTimeline": "",
             "displayArg": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1100903,
-            "order": 1,
+            "order": 100,
             "clothesType": 1,
             "type": 1,
             "modelId": 100903,
@@ -263,7 +279,7 @@
             "rare": 4,
             "unlockType": 2,
             "unlockArg": 20004,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 4
             ],
             "unlockDescription": "Appraisal Objectives Reward",
@@ -280,7 +296,9 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1101300,
@@ -301,20 +319,61 @@
             "timelineAssets": "LennaSSR01",
             "animAssets": "LennaSSR01",
             "ultraskillAssets": "LennaSSR01",
+            "barrackEffectId": [
+                101301,
+                101303
+            ],
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchTimeline": "",
             "displayArg": 0,
             "audioClothes": 0,
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0
+        },
+        {
+            "id": 1101301,
+            "order": 100,
+            "clothesType": 2,
+            "type": 1,
+            "modelId": 101301,
+            "color": "996720",
+            "code": "LennaSSR01",
+            "gunCode": "LennaSSR01",
+            "name": "Flying Phantom",
+            "description": "She hides her form and secrets in the night, protecting everything she loves with her silent guardianship.",
+            "rare": 4,
+            "unlockType": 3,
+            "unlockArg": 2024,
+            "KIIJLOAPGKB": [
+                4
+            ],
+            "unlockDescription": "Purchase",
+            "displayConfig": 1,
+            "gun": 1013,
+            "timelineAssets": "LennaSSR01",
+            "animAssets": "LennaSSR0101",
+            "ultraskillAssets": "LennaSSR01",
+            "dormanimAssets": "LennaSSR0101",
+            "barrackEffectId": [
+                101303
+            ],
+            "switchAnim": "",
+            "switchTimeline": "",
+            "displayArg": 0,
+            "audioClothes": 0,
+            "audioFoot": 0,
+            "skillSuffix": "",
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0
         },
         {
             "id": 1101305,
-            "order": 1,
+            "order": 100,
             "clothesType": 1,
             "type": 1,
             "modelId": 101305,
@@ -326,7 +385,7 @@
             "rare": 4,
             "unlockType": 3,
             "unlockArg": 2009,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 4
             ],
             "unlockDescription": "Unknown",
@@ -335,6 +394,10 @@
             "timelineAssets": "LennaSSR01",
             "animAssets": "LennaSSR0105",
             "ultraskillAssets": "LennaSSR01",
+            "barrackEffectId": [
+                101301,
+                101303
+            ],
             "switchTimeline": "",
             "displayConfig": 0,
             "displayArg": 0,
@@ -342,7 +405,8 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0
         },
         {
             "id": 1101500,
@@ -367,16 +431,18 @@
             "ultraskillAssets": "VepleySSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchTimeline": "",
             "displayArg": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1101501,
-            "order": 1,
+            "order": 100,
             "clothesType": 1,
             "type": 1,
             "modelId": 101501,
@@ -388,7 +454,7 @@
             "rare": 4,
             "unlockType": 3,
             "unlockArg": 2006,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 4
             ],
             "unlockDescription": "Purchase",
@@ -404,11 +470,13 @@
             "displayArg": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1101502,
-            "order": 1,
+            "order": 100,
             "clothesType": 2,
             "type": 1,
             "modelId": 101502,
@@ -420,7 +488,7 @@
             "rare": 5,
             "unlockType": 3,
             "unlockArg": 2010,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 1,
                 2,
                 3,
@@ -439,7 +507,9 @@
             "switchTimeline": "",
             "displayConfig": 0,
             "displayArg": 0,
-            "cameraReplaceId": 0
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1101700,
@@ -464,16 +534,18 @@
             "ultraskillAssets": "GrozaSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchTimeline": "",
             "displayArg": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1101701,
-            "order": 1,
+            "order": 100,
             "clothesType": 1,
             "type": 1,
             "modelId": 101701,
@@ -485,7 +557,7 @@
             "rare": 4,
             "unlockType": 3,
             "unlockArg": 2001,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 4
             ],
             "unlockDescription": "Purchase",
@@ -501,11 +573,13 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1101703,
-            "order": 1,
+            "order": 100,
             "clothesType": 1,
             "type": 1,
             "modelId": 101703,
@@ -516,7 +590,7 @@
             "rare": 4,
             "unlockType": 2,
             "unlockArg": 20005,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 4
             ],
             "unlockDescription": "Appraisal Objectives Reward",
@@ -533,11 +607,13 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1101705,
-            "order": 1,
+            "order": 100,
             "clothesType": 2,
             "type": 1,
             "modelId": 101705,
@@ -549,7 +625,7 @@
             "rare": 5,
             "unlockType": 3,
             "unlockArg": 2007,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 1,
                 2,
                 3,
@@ -568,7 +644,9 @@
             "displayArg": 0,
             "audioClothes": 0,
             "audioFoot": 0,
-            "cameraReplaceId": 0
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1102100,
@@ -593,12 +671,48 @@
             "ultraskillAssets": "PerityaSSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchTimeline": "",
             "displayArg": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
+        },
+        {
+            "id": 1102101,
+            "order": 100,
+            "clothesType": 2,
+            "type": 1,
+            "modelId": 102101,
+            "color": "c8d732",
+            "code": "PerityaSSR01",
+            "gunCode": "PerityaSSR01",
+            "name": "Born Huntress",
+            "description": "Peritya's sportswear. Light, slim-fitting and doused in bright, showy colors, it adds a touch of liveliness and energy to the otherwise languid Peritya.",
+            "rare": 4,
+            "unlockType": 3,
+            "unlockArg": 2021,
+            "KIIJLOAPGKB": [
+                4
+            ],
+            "unlockDescription": "Purchase",
+            "gun": 1021,
+            "timelineAssets": "PerityaSSR01",
+            "animAssets": "PerityaSSR0101",
+            "ultraskillAssets": "PerityaSSR01",
+            "dormanimAssets": "PerityaSSR0101",
+            "switchAnim": "",
+            "switchTimeline": "",
+            "displayConfig": 0,
+            "displayArg": 0,
+            "audioClothes": 0,
+            "audioFoot": 0,
+            "skillSuffix": "",
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1102200,
@@ -623,12 +737,14 @@
             "ultraskillAssets": "SharkrySR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchTimeline": "",
             "displayArg": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1102300,
@@ -651,14 +767,16 @@
             "ultraskillAssets": "DusevnyjSSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchTimeline": "",
             "displayArg": 0,
             "audioClothes": 0,
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1102400,
@@ -681,14 +799,54 @@
             "timelineAssets": "CheetaSR01",
             "animAssets": "CheetaSR01",
             "ultraskillAssets": "CheetaSR01",
+            "barrackEffectId": [
+                102401
+            ],
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchTimeline": "",
             "displayArg": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0
+        },
+        {
+            "id": 1102401,
+            "order": 100,
+            "clothesType": 2,
+            "type": 1,
+            "modelId": 102401,
+            "color": "ab344f",
+            "code": "CheetaSR01",
+            "gunCode": "CheetaSR01",
+            "name": "Sparks on the Circuit",
+            "description": "This is Cheeta's race queen outfit, a form-fitting but cool-looking outfit. In a race of speed, there is no need to adhere to the usual rules. She shall ignite the passion of racing with you.",
+            "rare": 4,
+            "unlockType": 3,
+            "unlockArg": 2017,
+            "KIIJLOAPGKB": [
+                4
+            ],
+            "unlockDescription": "Purchase",
+            "gun": 1024,
+            "timelineAssets": "CheetaSR01",
+            "animAssets": "CheetaSR0101",
+            "ultraskillAssets": "CheetaSR01",
+            "dormanimAssets": "CheetaSR0101",
+            "barrackEffectId": [
+                102401
+            ],
+            "switchAnim": "",
+            "switchTimeline": "",
+            "displayConfig": 0,
+            "displayArg": 0,
+            "audioClothes": 0,
+            "audioFoot": 0,
+            "skillSuffix": "",
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0
         },
         {
             "id": 1102500,
@@ -713,16 +871,18 @@
             "ultraskillAssets": "TololoSSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchTimeline": "",
             "displayArg": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1102501,
-            "order": 1,
+            "order": 100,
             "clothesType": 2,
             "type": 1,
             "modelId": 102501,
@@ -734,7 +894,7 @@
             "rare": 5,
             "unlockType": 3,
             "unlockArg": 2012,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 1,
                 2,
                 3,
@@ -753,7 +913,9 @@
             "switchTimeline": "",
             "displayConfig": 0,
             "displayArg": 0,
-            "cameraReplaceId": 0
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1102600,
@@ -777,17 +939,19 @@
             "ultraskillAssets": "NagantSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1102601,
-            "order": 1,
+            "order": 100,
             "clothesType": 2,
             "type": 1,
             "modelId": 102601,
@@ -799,7 +963,7 @@
             "rare": 4,
             "unlockType": 2,
             "unlockArg": 20006,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 4
             ],
             "unlockDescription": "Regular Check-Ins Reward",
@@ -815,7 +979,9 @@
             "displayArg": 0,
             "audioClothes": 0,
             "audioFoot": 0,
-            "cameraReplaceId": 0
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1102700,
@@ -839,13 +1005,15 @@
             "ultraskillAssets": "QiongjiuSSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1102800,
@@ -869,13 +1037,15 @@
             "ultraskillAssets": "CentaureissiSSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1102900,
@@ -897,31 +1067,35 @@
             "timelineAssets": "SabrinaSSR01",
             "animAssets": "SabrinaSSR01",
             "ultraskillAssets": "SabrinaSSR01",
+            "barrackEffectId": [
+                102901
+            ],
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0
         },
         {
             "id": 1102901,
-            "order": 1,
+            "order": 100,
             "clothesType": 2,
             "type": 1,
             "modelId": 102901,
             "color": "be2d4e",
             "code": "SabrinaSSR01",
             "gunCode": "SabrinaSSR01",
-            "name": "Berry Zabaione",
+            "name": "Strawberry Zabaione",
             "description": "The fragrance of berries rests on the soft cream and sweet liquor. It is Sabrina's highly-recommended secret weapon for beating the heat; it's a unique piece of lovely scenery in the scorching summer winds even moreso.",
             "rare": 5,
             "unlockType": 3,
             "unlockArg": 2014,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 1,
                 2,
                 3,
@@ -934,13 +1108,17 @@
             "skillSuffix": "SabrinaSSR0101",
             "ultraskillAssets": "SabrinaSSR0101",
             "dormanimAssets": "SabrinaSSR0101",
+            "barrackEffectId": [
+                102901
+            ],
             "switchAnim": "",
             "switchTimeline": "",
             "displayConfig": 0,
             "displayArg": 0,
             "audioClothes": 0,
             "audioFoot": 0,
-            "cameraReplaceId": 0
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0
         },
         {
             "id": 1103200,
@@ -964,17 +1142,19 @@
             "ultraskillAssets": "DaiyanSSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1103203,
-            "order": 1,
+            "order": 100,
             "clothesType": 2,
             "type": 1,
             "modelId": 103203,
@@ -986,7 +1166,7 @@
             "rare": 5,
             "unlockType": 3,
             "unlockArg": 2008,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 1,
                 2,
                 3,
@@ -1005,7 +1185,9 @@
             "switchTimeline": "",
             "displayConfig": 0,
             "displayArg": 0,
-            "cameraReplaceId": 0
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1103300,
@@ -1025,9 +1207,12 @@
             "timelineAssets": "MosinnagantSSR01",
             "animAssets": "MosinnagantSSR01",
             "ultraskillAssets": "MosinnagantSSR01",
+            "barrackEffectId": [
+                103301
+            ],
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
@@ -1035,7 +1220,8 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0
         },
         {
             "id": 1103400,
@@ -1057,7 +1243,7 @@
             "ultraskillAssets": "MacqiatoSSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
@@ -1065,11 +1251,13 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1103401,
-            "order": 1,
+            "order": 100,
             "clothesType": 2,
             "type": 1,
             "modelId": 103401,
@@ -1081,7 +1269,7 @@
             "rare": 5,
             "unlockType": 3,
             "unlockArg": 2011,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 1,
                 2,
                 3,
@@ -1100,7 +1288,9 @@
             "displayArg": 0,
             "audioClothes": 0,
             "audioFoot": 0,
-            "cameraReplaceId": 0
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1103500,
@@ -1122,7 +1312,7 @@
             "ultraskillAssets": "JiangyuSSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
@@ -1130,7 +1320,9 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1103600,
@@ -1152,7 +1344,7 @@
             "ultraskillAssets": "KseniaSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
@@ -1160,7 +1352,9 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1103700,
@@ -1182,7 +1376,7 @@
             "ultraskillAssets": "UllridSSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
@@ -1190,7 +1384,9 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1103800,
@@ -1212,7 +1408,7 @@
             "ultraskillAssets": "LittaraSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
@@ -1220,7 +1416,9 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1103900,
@@ -1242,7 +1440,7 @@
             "ultraskillAssets": "SuomiSSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
@@ -1250,11 +1448,13 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1103901,
-            "order": 1,
+            "order": 100,
             "clothesType": 2,
             "type": 1,
             "modelId": 103901,
@@ -1266,7 +1466,7 @@
             "rare": 5,
             "unlockType": 3,
             "unlockArg": 2013,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 1,
                 2,
                 3,
@@ -1285,7 +1485,9 @@
             "displayArg": 0,
             "audioClothes": 0,
             "audioFoot": 0,
-            "cameraReplaceId": 0
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1104000,
@@ -1307,7 +1509,7 @@
             "ultraskillAssets": "PapashaSSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
@@ -1315,7 +1517,9 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1104100,
@@ -1337,7 +1541,7 @@
             "ultraskillAssets": "LottaSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
@@ -1345,7 +1549,276 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
+        },
+        {
+            "id": 1104101,
+            "order": 100,
+            "clothesType": 2,
+            "type": 1,
+            "modelId": 104101,
+            "color": "9b2858",
+            "code": "LottaSR01",
+            "gunCode": "LottaSR01",
+            "name": "Athletics Rookie",
+            "description": "Lotta's sportswear. Inconspicuous and usable in all sorts of sport competitions, it ensures Lotta's comfort and agility in exercise.",
+            "rare": 4,
+            "unlockType": 3,
+            "unlockArg": 2023,
+            "KIIJLOAPGKB": [
+                4
+            ],
+            "unlockDescription": "Purchase",
+            "displayConfig": 1,
+            "gun": 1041,
+            "timelineAssets": "LottaSR01",
+            "animAssets": "LottaSR0101",
+            "ultraskillAssets": "LottaSR01",
+            "dormanimAssets": "LottaSR0101",
+            "switchAnim": "",
+            "switchTimeline": "",
+            "displayArg": 0,
+            "audioClothes": 0,
+            "audioFoot": 0,
+            "skillSuffix": "",
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
+        },
+        {
+            "id": 1104200,
+            "order": 1,
+            "clothesType": 1,
+            "type": 1,
+            "modelId": 1042,
+            "code": "AndorisSSR",
+            "gunCode": "AndorisSSR01",
+            "name": "Leisurely Patroller",
+            "description": "Andoris's usual outfit. With a rather unique design and tailoring, this outfit complements her gentle and accomodating temperament, yet possesses a futuristic sense of fashion.",
+            "rare": 5,
+            "unlockType": 1,
+            "unlockDescription": "",
+            "displayConfig": 1,
+            "gun": 1042,
+            "timelineAssets": "AndorisSSR01",
+            "animAssets": "AndorisSSR01",
+            "ultraskillAssets": "AndorisSSR01",
+            "color": "",
+            "unlockArg": 0,
+            "KIIJLOAPGKB": [],
+            "switchAnim": "",
+            "switchTimeline": "",
+            "displayArg": 0,
+            "audioClothes": 0,
+            "audioFoot": 0,
+            "skillSuffix": "",
+            "cameraReplaceId": 0,
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
+        },
+        {
+            "id": 1104300,
+            "order": 1,
+            "clothesType": 1,
+            "type": 1,
+            "modelId": 1043,
+            "code": "FayeSSR",
+            "gunCode": "FayeSSR01",
+            "name": "Red Hot Bell Pepper",
+            "description": "Faye's usual outfit. This clean cut of bright red makes her look like a bolt of leaping flame.",
+            "rare": 5,
+            "unlockType": 1,
+            "unlockDescription": "",
+            "displayConfig": 1,
+            "gun": 1043,
+            "timelineAssets": "FayeSSR01",
+            "animAssets": "FayeSSR01",
+            "ultraskillAssets": "FayeSSR01",
+            "color": "",
+            "unlockArg": 0,
+            "KIIJLOAPGKB": [],
+            "switchAnim": "",
+            "switchTimeline": "",
+            "displayArg": 0,
+            "audioClothes": 0,
+            "audioFoot": 0,
+            "skillSuffix": "",
+            "cameraReplaceId": 0,
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
+        },
+        {
+            "id": 1104400,
+            "order": 1,
+            "clothesType": 1,
+            "type": 1,
+            "modelId": 1044,
+            "code": "VectorSSR",
+            "gunCode": "VectorSSR01",
+            "name": "Concealment Gear",
+            "description": "Vector's usual outfit. The discreet color scheme allows her to easily hide traces of her activity, allowing Vector to perpetually gain an advantage by always staying ahead in combat.",
+            "rare": 5,
+            "unlockType": 1,
+            "unlockDescription": "",
+            "displayConfig": 1,
+            "gun": 1044,
+            "timelineAssets": "VectorSSR01",
+            "animAssets": "VectorSSR01",
+            "ultraskillAssets": "VectorSSR01",
+            "color": "",
+            "unlockArg": 0,
+            "KIIJLOAPGKB": [],
+            "switchAnim": "",
+            "switchTimeline": "",
+            "displayArg": 0,
+            "audioClothes": 0,
+            "audioFoot": 0,
+            "skillSuffix": "",
+            "cameraReplaceId": 0,
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
+        },
+        {
+            "id": 1104500,
+            "order": 1,
+            "clothesType": 1,
+            "type": 1,
+            "modelId": 1045,
+            "code": "BiyocaSSR",
+            "gunCode": "BiyocaSSR01",
+            "name": "Leaping Signal",
+            "description": "Belka's usual outfit. A highly saturated high-contrast combat uniform ensures that her spirited figure is a presence on the battlefield that cannot be ignored.",
+            "rare": 5,
+            "unlockType": 1,
+            "unlockDescription": "",
+            "displayConfig": 1,
+            "gun": 1045,
+            "timelineAssets": "BiyocaSSR01",
+            "animAssets": "BiyocaSSR01",
+            "ultraskillAssets": "BiyocaSSR01",
+            "color": "",
+            "unlockArg": 0,
+            "KIIJLOAPGKB": [],
+            "switchAnim": "",
+            "switchTimeline": "",
+            "displayArg": 0,
+            "audioClothes": 0,
+            "audioFoot": 0,
+            "skillSuffix": "",
+            "cameraReplaceId": 0,
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
+        },
+        {
+            "id": 1104501,
+            "order": 100,
+            "clothesType": 2,
+            "type": 1,
+            "modelId": 104501,
+            "color": "f6b448",
+            "code": "BiyocaSSR01",
+            "gunCode": "BiyocaSSR01",
+            "name": "Enchanting Imp",
+            "description": "Belka's Halloween outfit. Slightly revealing, it makes the onlooker more embarassed than the wearer. This is all in the name of capturing the Commander's heart!",
+            "rare": 4,
+            "unlockType": 3,
+            "unlockArg": 2018,
+            "KIIJLOAPGKB": [
+                4
+            ],
+            "unlockDescription": "Purchase",
+            "gun": 1045,
+            "timelineAssets": "BiyocaSSR01",
+            "animAssets": "BiyocaSSR0101",
+            "ultraskillAssets": "BiyocaSSR01",
+            "dormanimAssets": "BiyocaSSR0101",
+            "switchAnim": "",
+            "switchTimeline": "",
+            "displayConfig": 0,
+            "displayArg": 0,
+            "audioClothes": 0,
+            "audioFoot": 0,
+            "skillSuffix": "",
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
+        },
+        {
+            "id": 1104700,
+            "order": 1,
+            "clothesType": 1,
+            "type": 1,
+            "modelId": 1047,
+            "code": "SpringfieldSSR",
+            "gunCode": "SpringfieldSSR01",
+            "name": "Clean Military Uniform",
+            "description": "Springfield's usual outfit. The elegant colors bring out the regal qualities of the outfit, subconsciously inducing those around Springfield to treat her with respect. Her warm smile however, dissipates any sense of awkwardness or need for formality.",
+            "rare": 5,
+            "unlockType": 1,
+            "unlockDescription": "",
+            "displayConfig": 1,
+            "gun": 1047,
+            "timelineAssets": "SpringfieldSSR01",
+            "animAssets": "SpringfieldSSR01",
+            "ultraskillAssets": "SpringfieldSSR01",
+            "color": "",
+            "unlockArg": 0,
+            "KIIJLOAPGKB": [],
+            "switchAnim": "",
+            "switchTimeline": "",
+            "displayArg": 0,
+            "audioClothes": 0,
+            "audioFoot": 0,
+            "skillSuffix": "",
+            "cameraReplaceId": 0,
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
+        },
+        {
+            "id": 1104701,
+            "order": 100,
+            "clothesType": 2,
+            "type": 1,
+            "modelId": 104701,
+            "color": "3f3a87",
+            "code": "SpringfieldSSR01",
+            "gunCode": "SpringfieldSSR01",
+            "name": "Queen in Radiance",
+            "description": "She is more dazzling and eye-catching than any jewel under the lamplight. A single gentle smile from her was enough to capture the gazes of everyone in front of her.",
+            "rare": 5,
+            "unlockType": 3,
+            "unlockArg": 2020,
+            "KIIJLOAPGKB": [
+                6,
+                5,
+                11,
+                1,
+                2,
+                3
+            ],
+            "unlockDescription": "Purchase",
+            "displayConfig": 1,
+            "gun": 1047,
+            "timelineAssets": "SpringfieldSSR01",
+            "animAssets": "SpringfieldSSR0101",
+            "skillSuffix": "SpringfieldSSR0101",
+            "ultraskillAssets": "SpringfieldSSR0101",
+            "dormanimAssets": "SpringfieldSSR0101",
+            "switchAnim": "",
+            "switchTimeline": "",
+            "displayArg": 0,
+            "audioClothes": 0,
+            "audioFoot": 0,
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1105000,
@@ -1367,7 +1840,7 @@
             "ultraskillAssets": "ZhaohuiSSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
@@ -1375,11 +1848,13 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1105001,
-            "order": 1,
+            "order": 100,
             "clothesType": 2,
             "type": 1,
             "modelId": 105001,
@@ -1391,7 +1866,7 @@
             "rare": 4,
             "unlockType": 3,
             "unlockArg": 2015,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 4
             ],
             "unlockDescription": "Purchase",
@@ -1407,7 +1882,41 @@
             "audioClothes": 0,
             "audioFoot": 0,
             "skillSuffix": "",
-            "cameraReplaceId": 0
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
+        },
+        {
+            "id": 1105100,
+            "order": 1,
+            "clothesType": 1,
+            "type": 1,
+            "modelId": 1051,
+            "code": "MishtySSR",
+            "gunCode": "MishtySSR01",
+            "name": "Dreamland War",
+            "description": "Mechty's usual outfit. The weatherproof coat becomes a nice sleeping bag if you just wrap it around you...",
+            "rare": 5,
+            "unlockType": 1,
+            "unlockDescription": "",
+            "displayConfig": 1,
+            "gun": 1051,
+            "timelineAssets": "MishtySSR01",
+            "animAssets": "MishtySSR01",
+            "ultraskillAssets": "MishtySSR01",
+            "color": "",
+            "unlockArg": 0,
+            "KIIJLOAPGKB": [],
+            "switchAnim": "",
+            "switchTimeline": "",
+            "displayArg": 0,
+            "audioClothes": 0,
+            "audioFoot": 0,
+            "skillSuffix": "",
+            "cameraReplaceId": 0,
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1105200,
@@ -1429,7 +1938,7 @@
             "ultraskillAssets": "ClukaySSR01",
             "color": "",
             "unlockArg": 0,
-            "KELAGOPOGLG": [],
+            "KIIJLOAPGKB": [],
             "switchAnim": "",
             "switchTimeline": "",
             "displayArg": 0,
@@ -1437,39 +1946,77 @@
             "audioFoot": 0,
             "skillSuffix": "",
             "cameraReplaceId": 0,
-            "dormanimAssets": ""
+            "dormanimAssets": "",
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         },
         {
             "id": 1105201,
-            "order": 1,
+            "order": 100,
             "clothesType": 2,
             "type": 1,
             "modelId": 105201,
+            "color": "0060de",
             "code": "ClukaySSR01",
             "gunCode": "ClukaySSR01",
             "name": "Speed Star",
             "description": "This is Klukai's riding outfit. Her pure white bodysuit hugs her lovely curves. Like a zephyr or a tempest, this shining knight extends an invitation to you. Mount up, ride out!",
             "rare": 4,
-            "unlockType": 2,
+            "unlockType": 3,
             "unlockArg": 2016,
-            "KELAGOPOGLG": [
+            "KIIJLOAPGKB": [
                 4
             ],
-            "unlockDescription": "Obtained through Limited-Time Event",
-            "displayConfig": 1,
+            "unlockDescription": "Purchase",
             "gun": 1052,
             "timelineAssets": "ClukaySSR01",
             "animAssets": "ClukaySSR0101",
             "ultraskillAssets": "ClukaySSR01",
             "dormanimAssets": "ClukaySSR0101",
-            "color": "",
             "switchAnim": "",
             "switchTimeline": "",
+            "displayConfig": 0,
             "displayArg": 0,
             "audioClothes": 0,
             "audioFoot": 0,
             "skillSuffix": "",
-            "cameraReplaceId": 0
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
+        },
+        {
+            "id": 1105202,
+            "order": 100,
+            "clothesType": 2,
+            "type": 1,
+            "modelId": 105202,
+            "color": "7282bc",
+            "code": "ClukaySSR02",
+            "gunCode": "ClukaySSR01",
+            "name": "Astral Luminous",
+            "description": "Klukai's tactical rider outfit. It combines protective features with combat assisting capabilities, allowing Klukai to weave through the frontlines like a blue streak of lightning.",
+            "rare": 4,
+            "unlockType": 3,
+            "unlockArg": 2019,
+            "KIIJLOAPGKB": [
+                4
+            ],
+            "unlockDescription": "Purchase",
+            "gun": 1052,
+            "timelineAssets": "ClukaySSR01",
+            "animAssets": "ClukaySSR0102",
+            "ultraskillAssets": "ClukaySSR01",
+            "dormanimAssets": "ClukaySSR0102",
+            "switchAnim": "",
+            "switchTimeline": "",
+            "displayConfig": 0,
+            "displayArg": 0,
+            "audioClothes": 0,
+            "audioFoot": 0,
+            "skillSuffix": "",
+            "cameraReplaceId": 0,
+            "MDCABMOJFIN": 0,
+            "barrackEffectId": []
         }
     ]
 }
