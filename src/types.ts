@@ -65,7 +65,14 @@ export interface Skill {
     shape: number;
     shapeParam: string;
   }
-  
+
+export interface Buff {
+    id: number;
+    name: string;
+    description: string;
+    descriptionTips: string;
+    iconName: string;
+}
 
 export interface GunGrade {
     id: number;

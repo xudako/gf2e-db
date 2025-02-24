@@ -213,7 +213,6 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   ) => {
     setCurrentLevel(typeof newLevel === "number" ? newLevel : newLevel[0]);
   };
-  console.log(currentLevel);
 
   return (
     <Slide direction="up" in={open} mountOnEnter unmountOnExit>

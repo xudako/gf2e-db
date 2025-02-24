@@ -7,31 +7,97 @@ import {
   Tooltip,
   Divider,
 } from "@mui/material";
-import { Skill } from "../types";
+import { Skill, Buff } from "../types";
 import SkillGrid from "./SkillGrid";
+import Tables from "../data/TableLoader";
 
-const RichTextComponent: React.FC<{ content: string | undefined }> = ({
+interface RichTextProps {
+  content: string | undefined;
+  descriptionTips?: string;
+  variant?: import("@mui/material").TypographyProps["variant"];
+}
+
+const RichTextComponent: React.FC<RichTextProps> = ({
   content,
+  descriptionTips,
+  variant,
 }) => {
   if (!content) {
-    return <div>No description available.</div>;
+    return (
+      <Typography variant={variant ?? "body1"}>
+        No description available.
+      </Typography>
+    );
   }
-  return <div>{parseUnityRichText(content)}</div>;
+  const buffs = descriptionTips ? parseBuffs(descriptionTips) : [];
+  console.log(buffs);
+  return (
+    <Typography variant={variant ?? "body1"}>
+      {parseUnityRichText(content, buffs)}
+    </Typography>
+  );
 };
 
-const parseUnityRichText = (content: string): React.ReactNode => {
+const parseBuffs = (tips: string): Buff[] => {
+  if (!tips) return [];
+  const buffIds = tips.split(";").map((buffId) => buffId.split(":"));
+  return buffIds.map(
+    (buffId) => Tables.BattleBuffPerformData[parseInt(buffId[1])]
+  );
+};
+
+const parseUnityRichText = (
+  content: string,
+  buffs: Buff[]
+): React.ReactNode => {
   const regex = /<color=([#a-fA-F0-9]+)>(.*?)<\/color>/g;
   const elements: React.ReactNode[] = [];
   let lastIndex = 0;
+
   content.replace(regex, (match, color, text, index) => {
     if (lastIndex < index) {
       elements.push(content.slice(lastIndex, index));
     }
-    elements.push(
-      <span key={index} style={{ color }}>
-        {text}
-      </span>
-    );
+
+    if (text.match(/^\{\d+\}$/)) {
+      const buffIndex = parseInt(text.slice(1, -1));
+      const buff = buffs[buffIndex];
+
+      elements.push(
+        <Tooltip
+          key={index}
+          title={
+            <Box>
+              <Stack direction="row" alignItems="center" spacing={1} pb={0.5}>
+                  <Box
+                    component="img"
+                    src={`${import.meta.env.BASE_URL}buffs/${
+                      buff.iconName
+                    }.png`}
+                    alt={buff.name}
+                    width={32}
+                  />
+                <Typography variant="subtitle1" color={color} fontWeight="bold">
+                  {buff.name}
+                </Typography>
+              </Stack>
+              <Divider />
+              <RichTextComponent content={buff.description} descriptionTips={buff.descriptionTips} variant="caption" />
+            </Box>
+          }
+        >
+          <span style={{ color, cursor: "help" }}>
+            <u>{buff.name}</u>
+          </span>
+        </Tooltip>
+      );
+    } else {
+      elements.push(
+        <span key={index} style={{ color }}>
+          {text}
+        </span>
+      );
+    }
     lastIndex = index + match.length;
     return match;
   });
@@ -126,48 +192,21 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
 
           {/* Stability/Cost/Cooldown Info */}
           <Stack direction="row" justifyContent="space-around" mt={2}>
-            {stability && (
-              <Tooltip title="Stability">
-                <Typography>{`Stability: ${stability}`}</Typography>
-              </Tooltip>
-            )}
-            {skill.potentialCost && (
-              <Tooltip title="Cost">
-                <Typography>{`Cost: ${skill.potentialCost}`}</Typography>
-              </Tooltip>
-            )}
-            {skill.cdTime && (
-              <Tooltip title="Cooldown">
-                <Typography>{`Cooldown: ${skill.cdTime}`}</Typography>
-              </Tooltip>
-            )}
+            <Typography>{`Stability: ${stability}`}</Typography>
+            <Typography>{`Cost: ${skill.potentialCost}`}</Typography>
+            <Typography>{`Cooldown: ${skill.cdTime}`}</Typography>
           </Stack>
         </Grid2>
 
         {/* Center Section: Description & Upgrade Buttons */}
 
         <Grid2 size={{ xs: 4 }} sx={{ textAlign: "center" }}>
-          {skill.description && (
-            <Stack direction="row" spacing={1} justifyContent="center">
-              {/* <Button
-                variant="outlined"
-                disabled={currentUpgrade === 0}
-                onClick={() => setCurrentUpgrade((prev) => prev - 1)}
-              >
-                Previous Upgrade
-              </Button>
-              <Button
-                variant="outlined"
-                disabled={currentUpgrade === skill.descriptionID.length - 1}
-                onClick={() => setCurrentUpgrade((prev) => prev + 1)}
-              >
-                Next Upgrade
-              </Button> */}
-            </Stack>
-          )}
-          <Typography mt={2}>
-            <RichTextComponent content={skill.description} />
-          </Typography>
+          <Box mt={2}>
+            <RichTextComponent
+              content={skill.description}
+              descriptionTips={skill.descriptionTips}
+            />
+          </Box>
         </Grid2>
 
         {/* Right Section: Range, Target & Indicators */}
