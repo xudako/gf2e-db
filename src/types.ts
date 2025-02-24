@@ -74,6 +74,11 @@ export interface Buff {
     iconName: string;
 }
 
+export interface Hint {
+    id: number;
+    chars: string;
+}
+
 export interface GunGrade {
     id: number;
     skillIds: number[];

@@ -7,7 +7,7 @@ import {
   Tooltip,
   Divider,
 } from "@mui/material";
-import { Skill, Buff } from "../types";
+import { Skill, Buff, Hint } from "../types";
 import SkillGrid from "./SkillGrid";
 import Tables from "../data/TableLoader";
 
@@ -29,27 +29,23 @@ const RichTextComponent: React.FC<RichTextProps> = ({
       </Typography>
     );
   }
-  const buffs = descriptionTips ? parseBuffs(descriptionTips) : [];
-  console.log(buffs);
   return (
     <Typography variant={variant ?? "body1"}>
-      {parseUnityRichText(content, buffs)}
+      {parseUnityRichText(content, descriptionTips ?? "")}
     </Typography>
   );
 };
 
-const parseBuffs = (tips: string): Buff[] => {
-  if (!tips) return [];
-  const buffIds = tips.split(";").map((buffId) => buffId.split(":"));
-  return buffIds.map(
-    (buffId) => Tables.BattleBuffPerformData[parseInt(buffId[1])]
-  );
-};
+function isBuff(item: Buff | Hint): item is Buff {
+  return "name" in item && "iconName" in item && "description" in item;
+}
 
 const parseUnityRichText = (
   content: string,
-  buffs: Buff[]
+  descriptionTips: string
 ): React.ReactNode => {
+  const buffIds = descriptionTips.split(";").map((buffId) => buffId.split(":"));
+
   const regex = /<color=([#a-fA-F0-9]+)>(.*?)<\/color>/g;
   const elements: React.ReactNode[] = [];
   let lastIndex = 0;
@@ -61,14 +57,19 @@ const parseUnityRichText = (
 
     if (text.match(/^\{\d+\}$/)) {
       const buffIndex = parseInt(text.slice(1, -1));
-      const buff = buffs[buffIndex];
+      const buffId = buffIds[buffIndex];
+      const buff: Buff | Hint =
+        buffId[0] == "0"
+          ? Tables.BattleBuffPerformData[parseInt(buffId[1])]
+          : Tables.HintData[parseInt(buffId[1])];
 
       elements.push(
-        <Tooltip
-          key={index}
-          title={
-            <Box>
-              <Stack direction="row" alignItems="center" spacing={1} pb={0.5}>
+        isBuff(buff) ? ( //Buff
+          <Tooltip
+            key={index}
+            title={
+              <Box>
+                <Stack direction="row" alignItems="center" spacing={1} pb={0.5}>
                   <Box
                     component="img"
                     src={`${import.meta.env.BASE_URL}buffs/${
@@ -77,19 +78,47 @@ const parseUnityRichText = (
                     alt={buff.name}
                     width={32}
                   />
-                <Typography variant="subtitle1" color={color} fontWeight="bold">
-                  {buff.name}
-                </Typography>
-              </Stack>
-              <Divider />
-              <RichTextComponent content={buff.description} descriptionTips={buff.descriptionTips} variant="caption" />
-            </Box>
-          }
-        >
-          <span style={{ color, cursor: "help" }}>
-            <u>{buff.name}</u>
-          </span>
-        </Tooltip>
+                  <Typography
+                    variant="subtitle1"
+                    color={color}
+                    fontWeight="bold"
+                  >
+                    {buff.name}
+                  </Typography>
+                </Stack>
+                <Divider />
+                <RichTextComponent
+                  content={buff.description}
+                  descriptionTips={buff.descriptionTips}
+                  variant="caption"
+                />
+              </Box>
+            }
+          >
+            <span style={{ color, cursor: "help" }}>
+              <u>{buff.name}</u>
+            </span>
+          </Tooltip>
+        ) : ( //Hint
+          <Tooltip
+            key={index}
+            title={
+              <Box>
+                <RichTextComponent content={buff.chars} />
+                <Divider />
+                <RichTextComponent
+                  content={buff.chars}
+                  descriptionTips={""}
+                  variant="caption"
+                />
+              </Box>
+            }
+          >
+            <span style={{ color, cursor: "help" }}>
+              <u>{buff.chars}</u>
+            </span>
+          </Tooltip>
+        )
       );
     } else {
       elements.push(
