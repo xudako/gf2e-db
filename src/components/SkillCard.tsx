@@ -81,7 +81,6 @@ const parseUnityRichText = (
                   <Typography
                     variant="subtitle1"
                     color={color}
-                    fontWeight="bold"
                   >
                     {buff.name}
                   </Typography>
@@ -104,10 +103,10 @@ const parseUnityRichText = (
             key={index}
             title={
               <Box>
-                <RichTextComponent content={buff.chars} />
+                <RichTextComponent content={buff.chars.split(":")[0]} variant="subtitle1" />
                 <Divider />
                 <RichTextComponent
-                  content={buff.chars}
+                  content={buff.chars.split(":")[1]}
                   descriptionTips={""}
                   variant="caption"
                 />
@@ -115,7 +114,7 @@ const parseUnityRichText = (
             }
           >
             <span style={{ color, cursor: "help" }}>
-              <u>{buff.chars}</u>
+              <u><RichTextComponent content={buff.chars.split(":")[0]} /></u>
             </span>
           </Tooltip>
         )
