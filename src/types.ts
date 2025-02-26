@@ -71,12 +71,7 @@ export interface Buff {
     name: string;
     description: string;
     descriptionTips: string;
-    iconName: string;
-}
-
-export interface Hint {
-    id: number;
-    chars: string;
+    iconName?: string;
 }
 
 export interface GunGrade {

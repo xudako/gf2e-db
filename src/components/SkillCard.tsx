@@ -7,7 +7,7 @@ import {
   Tooltip,
   Divider,
 } from "@mui/material";
-import { Skill, Buff, Hint } from "../types";
+import { Skill, Buff } from "../types";
 import SkillGrid from "./SkillGrid";
 import Tables from "../data/TableLoader";
 
@@ -36,10 +36,6 @@ const RichTextComponent: React.FC<RichTextProps> = ({
   );
 };
 
-function isBuff(item: Buff | Hint): item is Buff {
-  return "name" in item && "iconName" in item && "description" in item;
-}
-
 const parseUnityRichText = (
   content: string,
   descriptionTips: string
@@ -58,26 +54,25 @@ const parseUnityRichText = (
     if (text.match(/^\{\d+\}$/)) {
       const buffIndex = parseInt(text.slice(1, -1));
       const buffId = buffIds[buffIndex];
-      const buff: Buff | Hint =
+      const buff: Buff =
         buffId[0] == "0"
           ? Tables.BattleBuffPerformData[parseInt(buffId[1])]
-          : Tables.HintData[parseInt(buffId[1])];
+          : Tables.BattleDictionaryData[parseInt(buffId[1])];
 
       elements.push(
-        isBuff(buff) ? ( //Buff
           <Tooltip
             key={index}
             title={
               <Box>
                 <Stack direction="row" alignItems="center" spacing={1} pb={0.5}>
-                  <Box
+                  {buff.iconName && <Box
                     component="img"
                     src={`${import.meta.env.BASE_URL}buffs/${
                       buff.iconName
                     }.png`}
                     alt={buff.name}
                     width={32}
-                  />
+                  />}
                   <Typography
                     variant="subtitle1"
                     color={color}
@@ -98,26 +93,6 @@ const parseUnityRichText = (
               <u>{buff.name}</u>
             </span>
           </Tooltip>
-        ) : ( //Hint
-          <Tooltip
-            key={index}
-            title={
-              <Box>
-                <RichTextComponent content={buff.chars.split(":")[0]} variant="subtitle1" />
-                <Divider />
-                <RichTextComponent
-                  content={buff.chars.split(":")[1]}
-                  descriptionTips={""}
-                  variant="caption"
-                />
-              </Box>
-            }
-          >
-            <span style={{ color, cursor: "help" }}>
-              <u><RichTextComponent content={buff.chars.split(":")[0]} /></u>
-            </span>
-          </Tooltip>
-        )
       );
     } else {
       elements.push(

@@ -3158,8 +3158,8 @@
         },
         {
             "id": 105107,
-            "name": "",
-            "description": "",
+            "name": "Dream Guardian",
+            "description": "AoE damage dealt by Support Actions is increased by <color=#f26c1c>30%</color>. Buff, cannot be dispelled.",
             "buffEffect": "Skill/10510701_dmgup",
             "effectPlayTime": [
                 1
@@ -3182,8 +3182,8 @@
         },
         {
             "id": 105108,
-            "name": "",
-            "description": "",
+            "name": "Nightmare Form",
+            "description": "AoE damage dealt is increased by <color=#f26c1c>10%</color>,  additionally increased by <color=#f26c1c>50%</color> for Support Actions. <color=#3487e0>{0}</color>'s damage type is changed to <color=#8679e8>Corrosion</color>. Corrosion buff, cannot be dispelled.",
             "descriptionTips": "1:90222",
             "iconName": "Buff_PoisonUP",
             "isShow": true,
@@ -10034,6 +10034,28 @@
             "showPriorityIcon": 0
         },
         {
+            "id": 301400,
+            "name": "Boojum's Dread",
+            "description": "Passive skills are disabled, and basic attacks and active skills cannot be used.",
+            "iconName": "Buff_Weak",
+            "isShow": true,
+            "buffHeadShow": 1,
+            "descriptionTips": "",
+            "buffEffect": "",
+            "effectPlayTime": [],
+            "effectFadeTime": "",
+            "shaderType": 0,
+            "cameraPlayTime": [],
+            "cameraTime": [],
+            "effectFollowType": "",
+            "effectBirthType": "",
+            "effectTypeGroup": "",
+            "showPriorityEffect": 0,
+            "buffFix": 0,
+            "showPriorityIcon": 0,
+            "isLoop": ""
+        },
+        {
             "id": 301500,
             "name": "Insight",
             "description": "Increases the Range of Ultimate Skills by <color=#f26c1c>1 tile</color>. Considered a buff.",
@@ -10722,7 +10744,7 @@
         {
             "id": 310301,
             "name": "Heat Recovery",
-            "description": "",
+            "description": "Before being attacked, recovers own HP equal to <color=#f26c1c>30%</color> of attack, recovers <color=#f26c1c>2 points</color> of stability, and randomly cleanses <color=#f26c1c>1</color> buff from the attacker. Triggers <color=#f26c1c>once</color>. Considered a Burn buff.",
             "buffEffect": "Buff/Fire|Buff/Fire",
             "effectPlayTime": [
                 1,
@@ -10843,8 +10865,8 @@
         },
         {
             "id": 310452,
-            "name": "",
-            "description": "",
+            "name": "Overheat Combustion",
+            "description": "Upon gaining this effect and at the start of this unit's action, all allies in a <color=#f26c1c>1 tile radius</color> take fixed damage equal to <color=#f26c1c>20%</color> of the applier's ATK. Burn debuff.",
             "buffEffect": "Buff/Dot_burn|Buff/Dot_burn_break",
             "effectPlayTime": [
                 1,
@@ -10874,8 +10896,8 @@
         },
         {
             "id": 310462,
-            "name": "",
-            "description": "",
+            "name": "Overheat Combustion",
+            "description": "Burn damage taken is increased by <color=#f26c1c>30%</color>. Upon gaining this effect and at the start of this unit's action, all allies within a <color=#f26c1c>3×3</color> area centered on this unit take fixed damage equal to <color=#f26c1c>20%</color> of the applier's attack. Burn debuff.",
             "buffEffect": "Buff/Dot_burn|Buff/Dot_burn_break",
             "effectPlayTime": [
                 1,
@@ -10905,8 +10927,8 @@
         },
         {
             "id": 310472,
-            "name": "",
-            "description": "",
+            "name": "Overheat Combustion",
+            "description": "Burn damage taken is increased by <color=#f26c1c>30%</color>. Upon gaining this effect and at the start of this unit's action, all allies within a <color=#f26c1c>3×3</color> area centered on this unit take fixed damage equal to <color=#f26c1c>30%</color> of the applier's attack. Burn debuff. When this unit's action ends, create <color=#3487e0>{0}</color> tiles in a <color=#f26c1c>1 tile radius</color> centered on this unit. Burn debuff.",
             "descriptionTips": "1:51015",
             "buffEffect": "Buff/Dot_burn|Buff/Dot_burn_break",
             "effectPlayTime": [
@@ -12364,8 +12386,8 @@
         },
         {
             "id": 341101,
-            "name": "",
-            "description": "",
+            "name": "Toxin Inundation",
+            "description": "<color=#8679e8>Corrosion damage</color> taken is increased by <color=#f26c1c>25%</color>. Corrosion defensive debuff.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
                 1,
@@ -12393,8 +12415,8 @@
         },
         {
             "id": 341102,
-            "name": "",
-            "description": "",
+            "name": "Toxin Inundation",
+            "description": "<color=#8679e8>Corrosion damage</color> taken is increased by <color=#f26c1c>25%</color>. Corrosion defensive debuff.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
                 1,
@@ -12507,7 +12529,7 @@
         {
             "id": 350402,
             "name": "Ionic Shield",
-            "description": "",
+            "description": "Before receiving targeted damage, deals <color=#f26c1c>5%</color> received damage as fixed damage and <color=#f26c1c>2</color> points of true stability damage to attacker.",
             "buffEffect": "Buff/6706201_Buff",
             "effectPlayTime": [
                 1
@@ -12817,7 +12839,7 @@
         {
             "id": 351701,
             "name": "Negative Charge",
-            "description": "",
+            "description": "Upon receiving a targeted Electric attack, all targets with <color=#3487e0>Anion</color> take fixed damage equal to <color=#f26c1c>30%</color> of that damage. When <color=#3487e0>Anion</color>is applied again, additionally take <color=#f26c1c>1 instance</color> of fixed damage equal to <color=#f26c1c>3%</color> of the applier's ATK. Upon being attacked by units with <color=#3487e0>Cation</color>, <color=#d4ae08>Electric</color> damage taken is increased. Electric debuff.",
             "buffEffect": "Other/BattleFX/Negative",
             "effectPlayTime": [
                 1
@@ -12845,7 +12867,7 @@
         {
             "id": 351702,
             "name": "Negative Charge",
-            "description": "",
+            "description": "Upon receiving a targeted Electric attack, all targets with <color=#3487e0>Anion</color> take fixed damage equal to <color=#f26c1c>30%</color> of that damage. When <color=#3487e0>Anion</color>is applied again, additionally take <color=#f26c1c>1 instance</color> of fixed damage equal to <color=#f26c1c>3%</color> of the applier's ATK. Upon being attacked by units with <color=#3487e0>Cation</color>, <color=#d4ae08>Electric</color> damage taken is increased. Electric debuff.",
             "buffEffect": "Other/BattleFX/Negative",
             "effectPlayTime": [
                 1
@@ -12901,7 +12923,7 @@
         {
             "id": 351802,
             "name": "Positive Charge",
-            "description": "",
+            "description": "At the end of this unit's action, gain HP equal to 20% of max HP. If another ally <color=#f26c1c>within a 3-tile radius</color> has <color=#3487e0>Cation</color>, additionally heal 15% HP. When attacking an enemy with <color=#3487e0>{0}</color>, <color=#d4ae08>Electric damage</color> dealt is increased by <color=#f26c1c>35%</color>. Triggers on each target at most <color=#f26c1c>3 times</color> per turn. Electric buff.",
             "descriptionTips": "0:351701",
             "buffEffect": "Other/BattleFX/Positive",
             "effectPlayTime": [
@@ -12929,7 +12951,7 @@
         {
             "id": 351803,
             "name": "Positive Charge",
-            "description": "",
+            "description": "At the end of this unit's action, gain HP equal to 20% of max HP. If another ally <color=#f26c1c>within a 3-tile radius</color> has <color=#3487e0>Cation</color>, additionally heal 15% HP. When attacking an enemy with <color=#3487e0>{0}</color>, <color=#d4ae08>Electric damage</color> dealt is increased by <color=#f26c1c>35%</color> for every target that has <color=#3487e0>Cation</color>. Triggers on each target at most <color=#f26c1c>3 times</color> per turn. Electric buff.",
             "descriptionTips": "0:351701",
             "buffEffect": "Other/BattleFX/Positive",
             "effectPlayTime": [
@@ -14014,8 +14036,8 @@
         },
         {
             "id": 510154,
-            "name": "",
-            "description": "",
+            "name": "Self-Immolation",
+            "description": "Burn damage taken is increased by <color=#f26c1c>20%</color>. Burn debuff.",
             "iconName": "Buff_EnemyHurtUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -14058,8 +14080,8 @@
         },
         {
             "id": 510521,
-            "name": "",
-            "description": "",
+            "name": "Putrefaction",
+            "description": "Mobility is decreased by <color=#f26c1c>2</color>. Take fixed damage equal to <color=#f26c1c>50%</color> of Nemertea - Xenotype's ATK at the end of action.",
             "iconName": "Buff_PoisonDefDown",
             "isShow": true,
             "buffHeadShow": 1,
@@ -14104,8 +14126,8 @@
         },
         {
             "id": 511030,
-            "name": "",
-            "description": "",
+            "name": "Miasma",
+            "description": "ATK is decreased by <color=#f26c1c>5%</color> and Stability damage taken is increased by <color=#f26c1c>1</color>, max <color=#f26c1c>3 stacks</color>. Cannot be dispelled.",
             "iconName": "Buff_PoisonDefDownNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -14856,7 +14878,7 @@
         },
         {
             "id": 1051081,
-            "name": "",
+            "name": "Low Power",
             "description": "",
             "buffEffect": "Skill/AttackUp_Halo",
             "effectPlayTime": [
@@ -14884,8 +14906,8 @@
         },
         {
             "id": 1051083,
-            "name": "",
-            "description": "",
+            "name": "Nightmare Form",
+            "description": "AoE damage dealt is increased by <color=#f26c1c>20%</color>,  additionally increased by <color=#f26c1c>80%</color> for Support Actions. Stability damage dealt is increased by <color=#f26c1c>1</color>, and <color=#3487e0>{0}</color>'s damage type is changed to <color=#8679e8>Corrosion</color>. Corrosion buff, cannot be dispelled.",
             "descriptionTips": "1:90222",
             "iconName": "Buff_PoisonUP",
             "isShow": true,
@@ -14906,8 +14928,8 @@
         },
         {
             "id": 1051087,
-            "name": "",
-            "description": "",
+            "name": "Patch Mode - ATK Down",
+            "description": "ATK is decreased by <color=#f26c1c>20%</color>. Debuff, cannot be dispelled.",
             "iconName": "Buff_AtkDown",
             "isShow": true,
             "buffHeadShow": 1,
@@ -16977,8 +16999,8 @@
         },
         {
             "id": 6167111,
-            "name": "",
-            "description": "",
+            "name": "Scythe's Mark",
+            "description": "Prioritized by <color=#3487e0>Relentless Assault - War Scythe</color>. Cannot be dispelled.",
             "iconName": "Buff_Hammer1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -16999,8 +17021,8 @@
         },
         {
             "id": 6167112,
-            "name": "",
-            "description": "",
+            "name": "Cannon's Mark",
+            "description": "Prioritized by <color=#3487e0>Relentless Assault - Cannon</color>. Cannot be dispelled.",
             "iconName": "Buff_Hammer2",
             "isShow": true,
             "buffHeadShow": 1,
@@ -17022,7 +17044,7 @@
         {
             "id": 6167201,
             "name": "Sonic Shield",
-            "description": "",
+            "description": "If not destroyed at end of turn, uses <color=#3487e0>Malicious Outburst</color> 1 time. Cannot be dispelled.",
             "buffEffect": "Skill/6166301_Shield",
             "effectPlayTime": [
                 1
@@ -17045,8 +17067,8 @@
         },
         {
             "id": 6167331,
-            "name": "",
-            "description": "",
+            "name": "Lethargy",
+            "description": "Mobility is decreased by <color=#f26c1c>2</color>, can stack. Mobility debuff, can be dispelled.",
             "buffEffect": "Buff/SpeedD|Buff/SpeedD",
             "effectPlayTime": [
                 1,
@@ -17074,8 +17096,8 @@
         },
         {
             "id": 6167402,
-            "name": "",
-            "description": "",
+            "name": "Suppression",
+            "description": "ATK is decreased by <color=#f26c1c>30%</color>， Debuff, cannot be dispelled.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
                 1,
@@ -17103,8 +17125,8 @@
         },
         {
             "id": 6167501,
-            "name": "",
-            "description": "",
+            "name": "Transfiguration",
+            "description": "Upon reaching <color=#f26c1c>4 stacks</color> of this effect, damage taken this turn is increased by <color=#f26c1c>10%</color>, and dealt damage is decreased by <color=#f26c1c>10%</color>.",
             "iconName": "Buff_Tank7Neutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -20801,7 +20823,7 @@
         {
             "id": 6483001,
             "name": "Dual Defense",
-            "description": "",
+            "description": "Defense is increased by <color=#f26c1c>100%</color>, damage taken is decreased by <color=#f26c1c>70%</color>. Considered a Buff, cannot be cleansed.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -21362,7 +21384,7 @@
         },
         {
             "id": 6641101,
-            "name": "",
+            "name": "Anode",
             "description": "Reduce attack by <color=#f26c1c>60%</color>. If allies with <color=#3487e0>{0}</color> are within <color=#f26c1c>3 tiles</color> at the end of the action, this effect is nullified. Simultaneously, remove the closest <color=#3487e0>{0}</color> within <color=#f26c1c>3 tiles</color>. This debuff cannot be cleansed.",
             "descriptionTips": "0:6641201",
             "buffEffect": "Skill/6641101_Buff",
@@ -21386,7 +21408,7 @@
         },
         {
             "id": 6641201,
-            "name": "",
+            "name": "Polarity",
             "description": "For <color=#f26c1c>each tile</color> moved, take fixed damage equal to <color=#f26c1c>5%</color> of the applier's attack. If <color=#3487e0>{0}</color> allies are within <color=#f26c1c>3 tiles</color> at the end of the movement, the effect is removed. Simultaneously, remove the closest <color=#3487e0>{0}</color> within <color=#f26c1c>3 tiles</color>.",
             "descriptionTips": "0:6641101",
             "buffEffect": "Skill/6641201_Buff",
@@ -21435,7 +21457,7 @@
         {
             "id": 6703001,
             "name": "Mark of the Hunt",
-            "description": "",
+            "description": "When the enemy turn begins, if a target has <color=#f26c1c>3 stacks</color> of <color=#3487e0>Mark of the Hunt</color>, the Machinist's targeted attack range is increased to the entire map; If there is no such target, the Machinist's range is restored to the original <color=#f26c1c>5 tiles</color>. Max <color=#f26c1c>3 stacks</color>. Cannot be dispelled.",
             "buffEffect": "Skill/6703301_Buff|Skill/6703301_Buff",
             "effectPlayTime": [
                 1,
@@ -21460,7 +21482,7 @@
         {
             "id": 6703002,
             "name": "Mark of the Hunt",
-            "description": "",
+            "description": "When the enemy turn begins, if a target has <color=#f26c1c>3 stacks</color> of <color=#3487e0>Mark of the Hunt</color>, the Machinist's targeted attack range is increased to the entire map; If there is no such target, the Machinist's range is restored to the original <color=#f26c1c>5 tiles</color>. Max <color=#f26c1c>3 stacks</color>. Cannot be dispelled.",
             "buffEffect": "Skill/6703302_Buff",
             "effectPlayTime": [
                 1
@@ -21510,7 +21532,7 @@
         {
             "id": 6704401,
             "name": "Explosive Expertise",
-            "description": "",
+            "description": "If <color=#3487e0>Explosive Expertise</color> reaches <color=#f26c1c>4 stacks</color>, gain <color=#3487e0>{0}</color>.",
             "descriptionTips": "0:6704411",
             "iconName": "Buff_ExecutionSquadBlaster1",
             "isShow": true,
@@ -23966,8 +23988,8 @@
         },
         {
             "id": 6963003,
-            "name": "",
-            "description": "",
+            "name": "Nightmarish Reenactment",
+            "description": "ATK is decreased by <color=#f26c1c>3%</color>m, can stack. Debuff, cannot be dispelled.",
             "iconName": "Buff_AtkDown",
             "isShow": true,
             "buffHeadShow": 1,
@@ -24745,7 +24767,7 @@
         {
             "id": 10040701,
             "name": "Anode",
-            "description": "",
+            "description": "Test if Groza ETS can redirect 70% damage away",
             "descriptionTips": "1:90118;0:330201",
             "buffEffect": "Skill/gun_Ice_shield|Skill/gun_Ice_shield_2",
             "effectPlayTime": [
@@ -27085,8 +27107,8 @@
         },
         {
             "id": 10420401,
-            "name": "",
-            "description": "",
+            "name": "Fortified Stance",
+            "description": "No longer receives the protective effects of cover. Damage taken is decreased by <color=#f26c1c>20%</color>, Stability damage taken is decreased by <color=#f26c1c>2</color>. Upon receiving damage, if the attacker has an Electric debuff, damage taken is further decreased by <color=#f26c1c>15%</color>. Cannot be dispelled.",
             "buffEffect": "Skill/AndorisSSR01/10420401_Halo_loop",
             "effectPlayTime": [
                 1
@@ -27109,8 +27131,8 @@
         },
         {
             "id": 10420405,
-            "name": "",
-            "description": "",
+            "name": "Fortified Stance",
+            "description": "Gain Stability protection, reducing this unit's Stability damage taken by 2; Lose 1 stack upon each instance of Stability damage taken, max 3 stacks. Buff.",
             "buffEffect": "Skill/AndorisSSR01/10420401_Halo_get",
             "effectPlayTime": [
                 1
@@ -27133,8 +27155,8 @@
         },
         {
             "id": 10420406,
-            "name": "",
-            "description": "",
+            "name": "Fortified Stance",
+            "description": "Gain Stability protection, reducing this unit's Stability damage taken by 2; Lose 1 stack upon each instance of Stability damage taken, max 3 stacks. Buff.",
             "buffEffect": "Skill/AndorisSSR01/10420401_Halo_get",
             "effectPlayTime": [
                 1
@@ -27157,8 +27179,8 @@
         },
         {
             "id": 10420701,
-            "name": "",
-            "description": "",
+            "name": "Electro Charge",
+            "description": "Upon receiving a targeted Electric attack, Stability damage taken is increased by <color=#f26c1c>1</color> and the attacker gains HP equal to <color=#f26c1c>20%</color> of damage dealt.Electric debuff, cannot be dispelled.",
             "iconName": "Buff_ElectricContinuehurt",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27179,8 +27201,8 @@
         },
         {
             "id": 10420721,
-            "name": "",
-            "description": "",
+            "name": "Electro Charge",
+            "description": "Upon receiving a targeted Electric attack, Stability damage taken is increased by <color=#f26c1c>1</color>, and the attacker regains HP equal to <color=#f26c1c>20%</color> of the damage dealt. <color=#d4ae08>Electric damage</color> taken is increased by <color=#f26c1c>15%</color>. At the end of this unit's action, apply <color=#3487e0>Electro Charge</color> for <color=#f26c1c>2 turns</color> to allies without the effect within a <color=#f26c1c>3-tile radius</color>.Electric debuff, cannot be dispelled.",
             "iconName": "Buff_ElectricContinuehurt",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27201,8 +27223,8 @@
         },
         {
             "id": 10420801,
-            "name": "",
-            "description": "",
+            "name": "Blunted Nerves",
+            "description": "DEF is increased by <color=#f26c1c>10%</color>, max 5 stacks. Buff, cannot be dispelled.",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -27230,8 +27252,8 @@
         },
         {
             "id": 10420802,
-            "name": "",
-            "description": "",
+            "name": "Self-Diagnosis",
+            "description": "Does not die upon taking lethal damage, instead dispelling all debuffs and gaining HP equal to <color=#f26c1c>30%</color> max HP and <color=#f26c1c>5</color>Stability. Activates <color=#f26c1c>1 time</color>. Cannot be dispelled.",
             "buffEffect": "Buff/10420401_avoid_death",
             "effectPlayTime": [
                 1
@@ -27258,8 +27280,8 @@
         },
         {
             "id": 10420803,
-            "name": "",
-            "description": "",
+            "name": "Self-Diagnosis",
+            "description": "Self-Diagnosis on cooldown.",
             "iconName": "Buff_CooldownNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27280,8 +27302,8 @@
         },
         {
             "id": 10420831,
-            "name": "",
-            "description": "",
+            "name": "Blunted Nerves",
+            "description": "DEF is increased by <color=#f26c1c>20%</color>,max 8 stacks.Buff, cannot be dispelled.",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -27309,8 +27331,8 @@
         },
         {
             "id": 10420832,
-            "name": "",
-            "description": "",
+            "name": "Self-Diagnosis",
+            "description": "Does not die upon taking fatal damage, instead dispels all debuffs, gaining HP equal to <color=#f26c1c>60%</color> of max HP and regaining all Stability. Gains <color=#3487e0>{0}</color> for <color=#f26c1c>2 rounds</color>. Only activates <color=#f26c1c>1 time</color>. Cannot be dispelled.",
             "descriptionTips": "0:10420401",
             "buffEffect": "Buff/10420401_avoid_death",
             "effectPlayTime": [
@@ -27337,7 +27359,7 @@
         },
         {
             "id": 10430401,
-            "name": "",
+            "name": "Abrasion",
             "description": "",
             "buffEffect": "Skill/FayeSSR01/10430501_buff",
             "effectPlayTime": [
@@ -27366,7 +27388,7 @@
         },
         {
             "id": 10430501,
-            "name": "",
+            "name": "Gasj",
             "description": "",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
@@ -27395,8 +27417,8 @@
         },
         {
             "id": 10430511,
-            "name": "",
-            "description": "",
+            "name": "Bypass",
+            "description": "This unit can move through tiles occupied by enemies.Buff, cannot be dispelled.",
             "iconName": "Buff_SpeedUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27417,8 +27439,8 @@
         },
         {
             "id": 10430512,
-            "name": "",
-            "description": "",
+            "name": "Bypass",
+            "description": "This unit can move through tiles occupied by enemies.Buff, cannot be dispelled.",
             "iconName": "Buff_SpeedUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27468,8 +27490,8 @@
         },
         {
             "id": 10440401,
-            "name": "",
-            "description": "",
+            "name": "Oil to the Fire",
+            "description": "Burn damage dealt is increased by <color=#f26c1c>10%</color>. When dealing burn damage, additionally deal 1 instance of fixed damage equal to <color=#f26c1c>20%</color> ATK. Burn buff,cannot be dispelled.",
             "iconName": "Buff_FireUP",
             "isShow": true,
             "buffHeadShow": 9,
@@ -27490,8 +27512,8 @@
         },
         {
             "id": 10440402,
-            "name": "",
-            "description": "",
+            "name": "Oil to the Fire",
+            "description": "Burn damage dealt is increased by <color=#f26c1c>30%</color>. When dealing burn damage, additionally deal 1 instance of fixed damage equal to <color=#f26c1c>20%</color> ATK. Burn buff,cannot be dispelled.",
             "iconName": "Buff_FireUP",
             "isShow": true,
             "buffHeadShow": 9,
@@ -27512,8 +27534,8 @@
         },
         {
             "id": 10440403,
-            "name": "",
-            "description": "",
+            "name": "Oil to the Fire",
+            "description": "For every Burn buff on this unit, damage dealt is increased by <color=#f26c1c>5%</color>. When an attack deals Burn damage, damage dealt is increased by <color=#f26c1c>30%</color> crit rate is increased by <color=#f26c1c>15%</color>, and additionally deal 1 instance of fixed damage equal to <color=#f26c1c>20%</color> ATK. Burn buff, cannot be dispelled.",
             "iconName": "Buff_FireUP",
             "isShow": true,
             "buffHeadShow": 9,
@@ -27534,8 +27556,8 @@
         },
         {
             "id": 10440701,
-            "name": "",
-            "description": "",
+            "name": "Burning Disquiet",
+            "description": "Upon taking Burn damage, generate <color=#3487e0>{0}</color> tiles in a <color=#f26c1c>3-tile radius around this unit</color> for <color=#f26c1c>2 turns</color>. Burn debuff, cannot be dispelled.",
             "descriptionTips": "1:51015",
             "buffEffect": "Skill/10440701_knife1|Skill/10440701_explosion",
             "effectPlayTime": [
@@ -27565,8 +27587,8 @@
         },
         {
             "id": 10440702,
-            "name": "",
-            "description": "",
+            "name": "Burning Disquiet",
+            "description": "For every Burn debuff, damage taken is increased <color=#f26c1c>3%</color>. Burn damage, generate <color=#3487e0>{0}</color> tiles in a <color=#f26c1c>3-tile radius around this unit</color> for <color=#f26c1c>2 turns</color>. Burn debuff, cannot be dispelled. Burn debuff, cannot be dispelled.",
             "descriptionTips": "1:51015",
             "buffEffect": "Skill/10440701_knife1|Skill/10440701_explosion",
             "effectPlayTime": [
@@ -27596,8 +27618,8 @@
         },
         {
             "id": 10450401,
-            "name": "",
-            "description": "",
+            "name": "Continual Release",
+            "description": "When this unit's action ends, deal <color=#f26c1c>1 instance</color> of <color=#d4ae08>Electric damage</color> equal to <color=#f26c1c>80%</color> ATK and <color=#f26c1c>2</color> Stability damage to the closest enemy in a <color=#f26c1c>8-tile radius</color>. Cannot be dispelled.",
             "iconName": "Buff_BiyocaSSR1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27618,8 +27640,8 @@
         },
         {
             "id": 10450402,
-            "name": "",
-            "description": "",
+            "name": "Continual Release",
+            "description": "When Belka's action ends, deals <color=#f26c1c>1 instance</color> of <color=#d4ae08>Electric damage</color> equal to <color=#f26c1c>80%</color> attack and <color=#f26c1c>2</color> stability damage to the closest enemy within <color=#f26c1c>8 tiles</color>. Cannot be cleansed. If the target of this skill is the same as that of the Ultimate Skill <color=#3487e0>Dancing Solstice</color>, then before the attack resolves, Belka applies <color=#3487e0>{0}</color> to the target for <color=#f26c1c>2 turns</color>. Cannot be cleansed.",
             "descriptionTips": "0:1045040221",
             "iconName": "Buff_BiyocaSSR1",
             "isShow": true,
@@ -27640,8 +27662,8 @@
         },
         {
             "id": 10450403,
-            "name": "",
-            "description": "",
+            "name": "Continual Release",
+            "description": "When this unit's action ends, deal <color=#f26c1c>1 instance</color> of <color=#d4ae08>Electric damage</color> equal to <color=#f26c1c>80%</color> ATK and <color=#f26c1c>2</color> Stability damage to the closest enemy in a <color=#f26c1c>8-tile radius</color>. If this target is also targeted by Ultimate <color=#3487e0>Leaping Arclight</color>, apply <color=#3487e0>{0}</color> for <color=#f26c1c>2 turns</color> before the attack is made. Cannot be dispelled.",
             "descriptionTips": "0:1045040321",
             "iconName": "Buff_BiyocaSSR1",
             "isShow": true,
@@ -27662,8 +27684,8 @@
         },
         {
             "id": 10470501,
-            "name": "",
-            "description": "",
+            "name": "False Intelligence",
+            "description": "Stability damage taken is increased by <color=#f26c1c>2</color>. If this unit's Stability is broken, <color=#2caadb>Hydro damage</color> taken is increased by <color=#f26c1c>10%</color>.Hydro debuff, cannot be dispelled.",
             "iconName": "Buff_WillSub",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27684,8 +27706,8 @@
         },
         {
             "id": 10470502,
-            "name": "",
-            "description": "",
+            "name": "False Intelligence",
+            "description": "Stability damage taken is increased by <color=#f26c1c>2</color>. If this unit's Stability is broken, <color=#2caadb>Hydro damage</color> taken is increased by <color=#f26c1c>20%</color>.Hydro debuff, cannot be dispelled.",
             "iconName": "Buff_WillSub",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27752,7 +27774,7 @@
         },
         {
             "id": 10510711,
-            "name": "",
+            "name": "High-Power",
             "description": "",
             "buffEffect": "Skill/10510701_High,Skill/10510701_High2",
             "effectPlayTime": [
@@ -27776,8 +27798,8 @@
         },
         {
             "id": 10510712,
-            "name": "",
-            "description": "",
+            "name": "Dream Guardian",
+            "description": "AoE damage dealt by Support Actions is increased by <color=#f26c1c>30%</color>. Buff, cannot be dispelled.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27798,8 +27820,8 @@
         },
         {
             "id": 10510822,
-            "name": "",
-            "description": "",
+            "name": "Patch Mode - Damage Increase",
+            "description": "AoE damage dealt is increased by <color=#f26c1c>10%</color>. Buff, cannot be dispelled.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -29241,7 +29263,7 @@
         {
             "id": 51045211,
             "name": "Coquettish Art",
-            "description": "",
+            "description": "Damage dealt is increased by <color=#f26c1c>5%</color>, max <color=#f26c1c>2 stacks</color>. Buff, cannot be dispelled.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -29263,7 +29285,7 @@
         {
             "id": 51045221,
             "name": "Coquettish Art",
-            "description": "",
+            "description": "Damage dealt is increased by <color=#f26c1c>6%</color>, max <color=#f26c1c>2 stacks</color>. Buff, cannot be dispelled.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -29285,7 +29307,7 @@
         {
             "id": 51045231,
             "name": "Coquettish Art",
-            "description": "",
+            "description": "Damage dealt is increased by <color=#f26c1c>7%</color>, max <color=#f26c1c>2 stacks</color>. Buff, cannot be dispelled.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -29307,7 +29329,7 @@
         {
             "id": 51045241,
             "name": "Coquettish Art",
-            "description": "",
+            "description": "Damage dealt is increased by <color=#f26c1c>8%</color>, max <color=#f26c1c>2 stacks</color>. Buff, cannot be dispelled.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -29372,7 +29394,7 @@
         },
         {
             "id": 51051210,
-            "name": "",
+            "name": "Bizarre Dream-Realm",
             "description": "Increase damage by <color=#f26c1c>5%</color>.",
             "iconName": "Buff_AtkUpNeutral",
             "isShow": true,
@@ -29394,7 +29416,7 @@
         },
         {
             "id": 51051220,
-            "name": "",
+            "name": "Bizarre Dream-Realm",
             "description": "Increase damage by <color=#f26c1c>6%</color>.",
             "iconName": "Buff_AtkUpNeutral",
             "isShow": true,
@@ -29416,8 +29438,8 @@
         },
         {
             "id": 51051230,
-            "name": "",
-            "description": "",
+            "name": "Bizarre Dream-Realm",
+            "description": "Damage dealt is increased by <color=#f26c1c>7%</color>.",
             "iconName": "Buff_AtkUpNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -29438,8 +29460,8 @@
         },
         {
             "id": 51051240,
-            "name": "",
-            "description": "",
+            "name": "Bizarre Dream-Realm",
+            "description": "Damage dealt is increased by <color=#f26c1c>8%</color>.",
             "iconName": "Buff_AtkUpNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -29460,8 +29482,8 @@
         },
         {
             "id": 51051250,
-            "name": "",
-            "description": "",
+            "name": "Bizarre Dream-Realm",
+            "description": "Damage dealt is increased by <color=#f26c1c>9%</color>.",
             "iconName": "Buff_AtkUpNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -29482,8 +29504,8 @@
         },
         {
             "id": 51051260,
-            "name": "",
-            "description": "",
+            "name": "Bizarre Dream-Realm",
+            "description": "Damage dealt is increased by <color=#f26c1c>10%</color>.",
             "iconName": "Buff_AtkUpNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -33595,8 +33617,8 @@
         },
         {
             "id": 60005503,
-            "name": "",
-            "description": "",
+            "name": "Fortress",
+            "description": "Damage taken is decreased by <color=#f26c1c>5%</color>. <color=#f26c1c>1 stack</color> is removed when this unit is affected by Stability break or its action ends, max <color=#f26c1c>10 stacks</color>. Buff, cannot be dispelled.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -33617,8 +33639,8 @@
         },
         {
             "id": 60005605,
-            "name": "",
-            "description": "",
+            "name": "Eroded",
+            "description": "Taken damage is increased by <color=#f26c1c>5%</color>, max <color=#f26c1c>3 stacks</color>. Debuff, can be dispelled.",
             "iconName": "Buff_DefLow",
             "isShow": true,
             "buffHeadShow": 1,
@@ -33683,8 +33705,8 @@
         },
         {
             "id": 60006002,
-            "name": "",
-            "description": "",
+            "name": "No Going Slow",
+            "description": "At the end of this unit's next action, if it has travelled less than or equal to <color=#f26c1c>3 tiles</color>, it is <color=#3487e0>{0}</color> for <color=#f26c1c>1 turn</color>. Debuff, cannot be dispelled.",
             "descriptionTips": "0:401041",
             "iconName": "Buff_SpeedLow",
             "isShow": true,
@@ -33705,8 +33727,8 @@
         },
         {
             "id": 60006102,
-            "name": "",
-            "description": "",
+            "name": "Multi-Channel Engagement",
+            "description": "Mobility is decreased by <color=#f26c1c>2</color>. Debuff, cannot be dispelled.",
             "iconName": "Buff_SpeedLow",
             "isShow": true,
             "buffHeadShow": 1,
@@ -33727,8 +33749,8 @@
         },
         {
             "id": 60006504,
-            "name": "",
-            "description": "",
+            "name": "Meltdown",
+            "description": "Damage taken is increased by <color=#f26c1c>30%</color>, cannot stack. Debuff, can be dispelled.",
             "iconName": "Buff_DefLow",
             "isShow": true,
             "buffHeadShow": 1,
@@ -33749,8 +33771,8 @@
         },
         {
             "id": 60006702,
-            "name": "",
-            "description": "",
+            "name": "Stability Reflection",
+            "description": "Upon dealing Stability damage, taken fixed Stability damage equal to the amount dealt. Debuff, can be dispelled.",
             "iconName": "Buff_WillSub",
             "isShow": true,
             "buffHeadShow": 1,
@@ -33771,7 +33793,7 @@
         },
         {
             "id": 60006901,
-            "name": "",
+            "name": "Electrocution Injury",
             "description": "Damage taken is increased by <color=#f26c1c>10%</color>, stackable up to <color=#f26c1c>3 times</color>. Considered a defense buff.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
@@ -33800,8 +33822,8 @@
         },
         {
             "id": 60007004,
-            "name": "",
-            "description": "",
+            "name": "Oppressive Voltage",
+            "description": "Damage taken is increased by <color=#f26c1c>30%</color>, cannot stack. Debuff, can be dispelled.",
             "iconName": "Buff_DefLow",
             "isShow": true,
             "buffHeadShow": 1,
@@ -33889,7 +33911,7 @@
         {
             "id": 61000040,
             "name": "Spike Surge",
-            "description": "",
+            "description": "Vanguard Dolls gain <color=#f26c1c>25%</color> crit rate.",
             "iconName": "Buff_Guild_13",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -33911,7 +33933,7 @@
         {
             "id": 61000070,
             "name": "Quake Strike",
-            "description": "",
+            "description": "Stability damage dealt by Support Dolls is increased by <color=#f26c1c>2</color>.",
             "iconName": "Buff_Guild_15",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -34021,7 +34043,7 @@
         {
             "id": 61000170,
             "name": "Enhanced Corrosion",
-            "description": "",
+            "description": "Corrosion damage is increased by <color=#f26c1c>20%</color>.",
             "iconName": "Buff_Guild_23",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -34153,7 +34175,7 @@
         {
             "id": 61000230,
             "name": "Enhanced Interception",
-            "description": "",
+            "description": "Damage dealt by Return Fire is increased by <color=#f26c1c>15%</color>.",
             "iconName": "Buff_Guild_26",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -34219,7 +34241,7 @@
         {
             "id": 61000260,
             "name": "Chained Spark",
-            "description": "",
+            "description": "Crit damage against targets with Burn debuffs is increased by <color=#f26c1c>25%</color>.",
             "iconName": "Buff_Guild_28",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -34438,8 +34460,8 @@
         },
         {
             "id": 61001040,
-            "name": "",
-            "description": "",
+            "name": "Corrupting Spark",
+            "description": "Corrosion and Burn damage dealt & crit rate are increased by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_42",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -34460,8 +34482,8 @@
         },
         {
             "id": 61001050,
-            "name": "",
-            "description": "",
+            "name": "Igniting Voltage",
+            "description": "Electric & Burn damage dealt and crit rate are increased by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_43",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -34504,8 +34526,8 @@
         },
         {
             "id": 61001070,
-            "name": "",
-            "description": "",
+            "name": "Field Aflame",
+            "description": "Hydro and Burn damage dealt & crit rate are increased by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_46",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -35288,8 +35310,8 @@
         },
         {
             "id": 61751401,
-            "name": "",
-            "description": "",
+            "name": "Forcefield",
+            "description": "Stability damage taken is decreased by 4, DEF is increased by 20%, and Mobility is increased by 2. Buff, cannot be dispelled.",
             "buffEffect": "Skill/6175401_Loop",
             "effectPlayTime": [
                 1
@@ -35772,8 +35794,8 @@
         },
         {
             "id": 62833700,
-            "name": "",
-            "description": "",
+            "name": "Trembling",
+            "description": "DEF is decreased by <color=#f26c1c>1%</color>. Cannot be dispelled.",
             "iconName": "Buff_SheepsheadDinosaur1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -35794,8 +35816,8 @@
         },
         {
             "id": 62833802,
-            "name": "",
-            "description": "",
+            "name": "Reinforced Carapace",
+            "description": "Taken damage is decreased by <color=#f26c1c>100%</color> and DEF is increased by <color=#f26c1c>150%</color>. Buff, cannot be dispelled.",
             "iconName": "Buff_EnemyRedHurt",
             "isShow": true,
             "buffHeadShow": 1,
@@ -35817,7 +35839,7 @@
         {
             "id": 62834302,
             "name": "Retinopathy",
-            "description": "",
+            "description": "ATK is decreased by <color=#f26c1c>50%</color> and incoming healing is decreased by <color=#f26c1c>50%</color>. Debuff, can be dispelled.",
             "iconName": "Buff_AtkDown",
             "isShow": true,
             "buffHeadShow": 1,
@@ -35839,7 +35861,7 @@
         {
             "id": 62834303,
             "name": "Suppress",
-            "description": "",
+            "description": "DEF is decreased by <color=#f26c1c>50%</color> and Stability damage taken is increased by <color=#f26c1c>5</color>. Debuff, can be dispelled.",
             "iconName": "Buff_DefLow",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36381,8 +36403,8 @@
         },
         {
             "id": 67122011,
-            "name": "",
-            "description": "",
+            "name": "Emergency Repair I",
+            "description": "Upon receiving an active attack, regain HP equal to <color=#f26c1c>60%</color> of the applier's ATK. When the applier dies, remove this effect. When this unit dies, reset the applier's <color=#f26c1c>Full Maintenance</color> cooldown. Buff, cannot be dispelled.",
             "buffEffect": "Buff/6712201_Buff",
             "effectPlayTime": [
                 1
@@ -36409,8 +36431,8 @@
         },
         {
             "id": 67122021,
-            "name": "",
-            "description": "",
+            "name": "Emergency Repair II",
+            "description": "Before receiving an active attack, gain <color=#3487e0>{0}</color>. Upon receiving an active attack, regain HP equal to <color=#f26c1c>60%</color> of the applier's ATK. When the applier dies, remove this effect. When this unit dies, reset the applier's <color=#f26c1c>Full Maintenance</color> cooldown. Buff, cannot be dispelled.",
             "descriptionTips": "0:67122024",
             "buffEffect": "Buff/6712201_Buff",
             "effectPlayTime": [
@@ -36437,8 +36459,8 @@
         },
         {
             "id": 67122024,
-            "name": "",
-            "description": "",
+            "name": "Reinforced Carapace",
+            "description": "Skill damage taken is reduced by <color=#f26c1c>40%</color>. Activates <color=#f26c1c>1 time</color>. Buff.",
             "iconName": "Buff_EnemyRedHurt",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36459,8 +36481,8 @@
         },
         {
             "id": 67132011,
-            "name": "",
-            "description": "",
+            "name": "Resistance",
+            "description": "Damage taken is decreased by <color=#f26c1c>80%</color>. Gain a Shield equal to <color=#f26c1c>120%</color> of this unit's ATK. Buff, cannot be dispelled.",
             "buffEffect": "Buff/6713201_Buff",
             "effectPlayTime": [
                 1
@@ -36487,8 +36509,8 @@
         },
         {
             "id": 67132021,
-            "name": "",
-            "description": "",
+            "name": "Resistance",
+            "description": "Damage taken is decreased by <color=#f26c1c>80%</color>. Gain a Shield equal to <color=#f26c1c>120%</color> of this unit's ATK. Buff, cannot be dispelled.",
             "buffEffect": "Buff/6713201_Buff",
             "effectPlayTime": [
                 1
@@ -36516,7 +36538,7 @@
         {
             "id": 67620101,
             "name": "",
-            "description": "",
+            "description": "Damage taken is increased by <color=#f26c1c>10%</color>, can stack. Debuff, cannot be dispelled.",
             "iconName": "Buff_EnemyHurtUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36538,7 +36560,7 @@
         {
             "id": 67620306,
             "name": "",
-            "description": "",
+            "description": "Next skill's damage is increased by <color=#f26c1c>100%</color> and Stability damage is increased by <color=#f26c1c>4</color>. Cannot be dispelled.",
             "iconName": "Buff_AtkUpNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36605,7 +36627,7 @@
         },
         {
             "id": 68635015,
-            "name": "",
+            "name": "Neural Stimulation",
             "description": "",
             "buffEffect": "Buff/68630501_Damage,Buff/68630501_Break",
             "effectPlayTime": [
@@ -36629,8 +36651,8 @@
         },
         {
             "id": 68648037,
-            "name": "",
-            "description": "",
+            "name": "Remnant Mutterings",
+            "description": "ATK is decreased by <color=#f26c1c>5%</color>, max <color=#f26c1c>10</color> stacks. Debuff, can be cleansed.",
             "iconName": "Buff_AtkDown",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36651,8 +36673,8 @@
         },
         {
             "id": 68648039,
-            "name": "",
-            "description": "",
+            "name": "Frigid Gale's Protection",
+            "description": "DEF is increased by <color=#f26c1c>20%</color>, max <color=#f26c1c>4</color> stacks. Buff, can be dispelled.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36723,8 +36745,8 @@
         },
         {
             "id": 68902013,
-            "name": "",
-            "description": "",
+            "name": "Emergency Defenses",
+            "description": "Damage taken is decreased by <color=#f26c1c>10%</color>, can stack. Buff, cannot be dispelled.",
             "iconName": "Buff_EnemyRedHurt",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36745,8 +36767,8 @@
         },
         {
             "id": 68903011,
-            "name": "",
-            "description": "",
+            "name": "Formation Reinforcement",
+            "description": "When a Fortress Equipment is summoned, convert the same amount of <color=#3487e0>{0}</color> stacks and apply it to the Fortress Equipment. Cannot be dispelled.",
             "descriptionTips": "0:68905022",
             "iconName": "Buff_MechaGuard3",
             "isShow": true,
@@ -36767,8 +36789,8 @@
         },
         {
             "id": 68904013,
-            "name": "",
-            "description": "",
+            "name": "Aggressive Protection",
+            "description": "DEF is decreased by <color=#f26c1c>30%</color>, can stack. Debuff, cannot be dispelled.",
             "iconName": "Buff_DefLow",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36789,8 +36811,8 @@
         },
         {
             "id": 68905022,
-            "name": "",
-            "description": "",
+            "name": "Reflective Barrier",
+            "description": "Cancels out taken damage(including fixed damage). <color=#f26c1c>1 stack</color> is lost for each instance of damage cancelled out. The Fortress Equipment is destroyed when this effect is removed. Cannot be dispelled.",
             "iconName": "Buff_InvincibleNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36811,8 +36833,8 @@
         },
         {
             "id": 68905034,
-            "name": "",
-            "description": "",
+            "name": "Offensive Momentum",
+            "description": "ATK is increased by <color=#f26c1c>20%</color>, can stack. Buff, cannot be dispelled.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36833,8 +36855,8 @@
         },
         {
             "id": 68905041,
-            "name": "",
-            "description": "",
+            "name": "Core Enhanecment",
+            "description": "DEF is increased by <color=#f26c1c>20%</color>, can stack. Buff, cannot be dispelled.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36855,8 +36877,8 @@
         },
         {
             "id": 68920012,
-            "name": "",
-            "description": "",
+            "name": "Relaxation",
+            "description": "Converted to <color=#3487e0>{0}</color> with an equal number of stacks for <color=#f26c1c>1 turn</color> at the start of this unit's action.",
             "descriptionTips": "0:68920014",
             "iconName": "Buff_CountHit",
             "isShow": true,
@@ -36877,7 +36899,7 @@
         },
         {
             "id": 68920014,
-            "name": "",
+            "name": "Fragile Membrane",
             "description": "",
             "iconName": "Buff_EnemyHurtUp",
             "isShow": true,
@@ -36899,8 +36921,8 @@
         },
         {
             "id": 68922011,
-            "name": "",
-            "description": "",
+            "name": "Digestive Saliva",
+            "description": "Damage taken is increased by <color=#f26c1c>20%</color> for <color=#f26c1c>2 turns</color>, can stack. Debuff. If dispelled, all allies gain <color=#f26c1c>1 stack</color> of <color=#3487e0>{0}</color> for <color=#f26c1c>1 turn</color>.",
             "descriptionTips": "0:68922012",
             "iconName": "Buff_EnemyHurtUp",
             "isShow": true,
@@ -36921,7 +36943,7 @@
         },
         {
             "id": 68922012,
-            "name": "",
+            "name": "Saliva-Dipped",
             "description": "",
             "iconName": "Buff_AtkUp",
             "isShow": true,
@@ -36943,8 +36965,8 @@
         },
         {
             "id": 68923031,
-            "name": "",
-            "description": "",
+            "name": "Parasitic Seed",
+            "description": "ATK is decreased by <color=#f26c1c>20%</color>, can stack. Debuff, cannot be dispelled.",
             "iconName": "Buff_AtkDown",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36965,8 +36987,8 @@
         },
         {
             "id": 68923042,
-            "name": "",
-            "description": "",
+            "name": "Brambles",
+            "description": "ATK is increased by <color=#f26c1c>10%</color>. Buff, cannot be dispelled.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36987,7 +37009,7 @@
         },
         {
             "id": 68924013,
-            "name": "",
+            "name": "Trepidation",
             "description": "",
             "iconName": "Buff_DefLow",
             "isShow": true,
@@ -37204,7 +37226,7 @@
         {
             "id": 69340156,
             "name": "Sufficient Energy",
-            "description": "",
+            "description": "Stability damage dealt is permanently increased by <color=#f26c1c>1</color>, can stack. Buff, cannot be dispelled.",
             "buffEffect": "Buff/AtkU|Buff/AtkU",
             "effectPlayTime": [
                 1,
@@ -37435,8 +37457,8 @@
         },
         {
             "id": 69630012,
-            "name": "",
-            "description": "",
+            "name": "Interminable Veil",
+            "description": "Cannot be selected. Immune to non-fixed damage. Cannot be dispelled.",
             "buffEffect": "Skill/6963_barrier",
             "effectPlayTime": [
                 1
@@ -37459,8 +37481,8 @@
         },
         {
             "id": 69630017,
-            "name": "",
-            "description": "",
+            "name": "Self-Protection",
+            "description": "Taken damage is decreased by <color=#f26c1c>90%</color>, DEF is increased by <color=#f26c1c>200%</color>. Buff, cannot be dispelled.",
             "iconName": "Buff_EnemyRedHurt",
             "isShow": true,
             "buffHeadShow": 1,
@@ -37505,8 +37527,8 @@
         },
         {
             "id": 69630023,
-            "name": "",
-            "description": "",
+            "name": "Mental Destruction",
+            "description": "ATK and damage dealt are increased by <color=#f26c1c>20%</color>. Stability damage taken is reduced by <color=#f26c1c>2</color>. Buff, cannot be dispelled.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -37623,8 +37645,8 @@
         },
         {
             "id": 69631021,
-            "name": "",
-            "description": "",
+            "name": "Special Teachings",
+            "description": "Stability damage taken is increased by <color=#f26c1c>1</color>. <color=#f26c1c>1 stack</color> is removed for every instance of Stability damage taken. Max <color=#f26c1c>3 stacks</color>. Debuff, cannot be dispelled.",
             "iconName": "Buff_WillSub",
             "isShow": true,
             "buffHeadShow": 1,
@@ -38929,7 +38951,7 @@
         },
         {
             "id": 101709081,
-            "name": "",
+            "name": "Absolute Defence",
             "description": "Immune to basic attacks and skill damage. The immunity is removed after receiving <color=#f26c1c>1</color> basic attack or skill attack. This is considered a buff.",
             "buffEffect": "Buff/61152201_Invincible2|Buff/61152201_Invincible",
             "effectPlayTime": [
@@ -40264,8 +40286,8 @@
         },
         {
             "id": 103409082,
-            "name": "",
-            "description": "",
+            "name": "Sugar Overdose",
+            "description": "Damage taken from Macchiato is increased by <color=#f26c1c>15%</color>. Debuff, cannot be dispelled.",
             "iconName": "Buff_EnemyHurtUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41237,8 +41259,8 @@
         },
         {
             "id": 104404032,
-            "name": "",
-            "description": "",
+            "name": "Apathetic Resistance",
+            "description": "Crit damage is increased by <color=#f26c1c>25%</color>. Buff, cannot be dispelled.",
             "iconName": "Buff_CriDamUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41259,8 +41281,8 @@
         },
         {
             "id": 104408001,
-            "name": "",
-            "description": "",
+            "name": "Confectance Count",
+            "description": "Confectance Count",
             "iconName": "Buff_AtkUp",
             "descriptionTips": "",
             "buffEffect": "",
@@ -41281,8 +41303,8 @@
         },
         {
             "id": 104408031,
-            "name": "",
-            "description": "",
+            "name": "Perception Block - ATK Up",
+            "description": "For every <color=#f26c1c>1</color> overflowing Confectance, ATK is additionally increased by <color=#f26c1c>10%</color>, max <color=#f26c1c>20%</color>.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41304,7 +41326,7 @@
         {
             "id": 104507011,
             "name": "Active Engagement",
-            "description": "",
+            "description": "Attacks deal Electric damage. Damage dealt is increased by <color=#f26c1c>30%</color>. Activates <color=#f26c1c>1</color> time.Buff, cannot be dispelled.",
             "iconName": "Buff_MosinnaganSSR1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41325,8 +41347,8 @@
         },
         {
             "id": 104508021,
-            "name": "",
-            "description": "",
+            "name": "Stored Charge",
+            "description": "<color=#d4ae08>Electric damage</color> dealt is increased by <color=#f26c1c>5%</color>, max <color=#f26c1c>6 stacks</color>. Electric debuff, cannot be dispelled.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41347,7 +41369,7 @@
         },
         {
             "id": 104509011,
-            "name": "",
+            "name": "Belka Talent 1 Healing",
             "description": "",
             "buffEffect": "Buff/StableHPRecover",
             "effectPlayTime": [
@@ -41401,7 +41423,7 @@
         },
         {
             "id": 104704012,
-            "name": "",
+            "name": "Buried Friendship",
             "description": "",
             "iconName": "Buff_SpringfieldSSR1",
             "isShow": true,
@@ -41475,7 +41497,7 @@
         },
         {
             "id": 104704032,
-            "name": "",
+            "name": "Buried Friendship",
             "description": "",
             "iconName": "Buff_SpringfieldSSR1",
             "isShow": true,
@@ -41941,8 +41963,8 @@
         },
         {
             "id": 105009080,
-            "name": "",
-            "description": "",
+            "name": "Critical Counter",
+            "description": "Number of times this unit has crit. Cannot be dispelled.",
             "iconName": "Buff_CountHit",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41964,7 +41986,7 @@
         {
             "id": 105104021,
             "name": "Nightmarish Shroud",
-            "description": "",
+            "description": "Before being attacked, decrease the attacker's ATK by <color=#f26c1c>10%</color> and dispel <color=#f26c1c>2</color> random debuffs. If this unit's weakness is exploited, damage taken is reduced by <color=#f26c1c>30%</color>. Activates <color=#f26c1c>1 time</color>. Corrosion buff.",
             "buffEffect": "Buff/PoisonDef",
             "effectPlayTime": [
                 1
@@ -41987,8 +42009,8 @@
         },
         {
             "id": 105105026,
-            "name": "",
-            "description": "",
+            "name": "Pre-Bed Warmup - Enhanced",
+            "description": "Normal attacks deals <color=#f26c1c>100%</color>. Activates <color=#f26c1c>1 time</color>. Cannot be dispelled.",
             "iconName": "Buff_AtkUpNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42009,8 +42031,8 @@
         },
         {
             "id": 105107001,
-            "name": "",
-            "description": "",
+            "name": "Brawl Mode",
+            "description": "ATK and DEF are increased by <color=#f26c1c>30%</color>. At the end of this unit's action, gain <color=#f26c1c>2</color> Confectance Index. Cannot be dispelled.",
             "iconName": "Buff_MishtySSR1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42031,8 +42053,8 @@
         },
         {
             "id": 105107002,
-            "name": "",
-            "description": "",
+            "name": "Brawl Mode",
+            "description": "ATK, DEF, and normal attack crit rate are increased by <color=#f26c1c>30%</color>. At the end of this unit's action, gain <color=#f26c1c>2</color> Confectance Index. Cannot be dispelled.",
             "iconName": "Buff_MishtySSR1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42053,8 +42075,8 @@
         },
         {
             "id": 105107003,
-            "name": "",
-            "description": "",
+            "name": "Brawl Mode",
+            "description": "ATK, DEF, and normal attack crit rate are increased by <color=#f26c1c>30%</color>, and Mobility is increased by <color=#f26c1c>2</color>. At the end of this unit's action, gain <color=#f26c1c>2</color> Confectance Index, and apply <color=#3487e0>{0}</color> to allies without it. Cannot be dispelled.",
             "descriptionTips": "0:105104021",
             "iconName": "Buff_MishtySSR1",
             "isShow": true,
@@ -42075,8 +42097,8 @@
         },
         {
             "id": 105107011,
-            "name": "",
-            "description": "",
+            "name": "Sleep Aid Kit",
+            "description": "Damage dealt is increased by <color=#f26c1c>10%</color>, max <color=#f26c1c>2 stacks</color>. Buff, cannot be dispelled.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42097,8 +42119,8 @@
         },
         {
             "id": 105107021,
-            "name": "",
-            "description": "",
+            "name": "Sleep Aid Kit",
+            "description": "Damage dealt is increased by <color=#f26c1c>10%</color>, max <color=#f26c1c>3 stacks</color>. Buff, cannot be dispelled.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42119,8 +42141,8 @@
         },
         {
             "id": 105108001,
-            "name": "",
-            "description": "",
+            "name": "Patch Mode",
+            "description": "Damage taken is decreased by <color=#f26c1c>30%</color>. Stability damage taken is decreased by <color=#f26c1c>2</color>. Cannot be dispelled.",
             "iconName": "Buff_MishtySSR2",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42141,8 +42163,8 @@
         },
         {
             "id": 105108002,
-            "name": "",
-            "description": "",
+            "name": "Patch Mode",
+            "description": "Damage taken is decreased by <color=#f26c1c>30%</color>. Stability damage taken is decreased by <color=#f26c1c>2</color>. Normal attacks deal <color=#f26c1c>50%</color> more damage. At the start of the turn, dispel <color=#f26c1c>2</color> debuffs on this unit.Cannot be dispelled.",
             "iconName": "Buff_MishtySSR2",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42163,8 +42185,8 @@
         },
         {
             "id": 105108003,
-            "name": "",
-            "description": "",
+            "name": "Patch Mode",
+            "description": "Damage taken is decreased by <color=#f26c1c>30%</color>. Stability damage taken is decreased by <color=#f26c1c>2</color>. Normal attacks gain <color=#f26c1c>80%</color> crit damage and deal <color=#f26c1c>50%</color> more damage. Corrosion damage dealt by all allies is increased by <color=#f26c1c>25%</color>. At the start of the turn, dispel <color=#f26c1c>2</color> debuffs on this unit. Cannot be dispelled.",
             "iconName": "Buff_MishtySSR2",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42185,7 +42207,7 @@
         },
         {
             "id": 201000041,
-            "name": "",
+            "name": "Incessant Balefire",
             "description": "",
             "iconName": "Buff_SuppressAdd",
             "isShow": true,
@@ -42207,7 +42229,7 @@
         },
         {
             "id": 201000051,
-            "name": "",
+            "name": "Incessant Balefire",
             "description": "",
             "iconName": "Buff_AtkUp",
             "isShow": true,
@@ -42251,7 +42273,7 @@
         },
         {
             "id": 201000121,
-            "name": "",
+            "name": "Flammable I",
             "description": "",
             "iconName": "Buff_Fire",
             "isShow": true,
@@ -42273,7 +42295,7 @@
         },
         {
             "id": 201000131,
-            "name": "",
+            "name": "Flammable II",
             "description": "",
             "iconName": "Buff_Fire",
             "isShow": true,
@@ -42295,7 +42317,7 @@
         },
         {
             "id": 201000141,
-            "name": "",
+            "name": "Flammable III",
             "description": "",
             "iconName": "Buff_Fire",
             "isShow": true,
@@ -42317,7 +42339,7 @@
         },
         {
             "id": 201100011,
-            "name": "",
+            "name": "Thermogenesis",
             "description": "",
             "iconName": "Buff_AtkUp",
             "isShow": true,
@@ -42339,7 +42361,7 @@
         },
         {
             "id": 202000001,
-            "name": "",
+            "name": "Crystalline Stability I",
             "description": "",
             "iconName": "Buff_AtkUp",
             "isShow": true,
@@ -42361,7 +42383,7 @@
         },
         {
             "id": 202000011,
-            "name": "",
+            "name": "Crystalline Stability II",
             "description": "",
             "iconName": "Buff_AtkUp",
             "isShow": true,
@@ -42383,7 +42405,7 @@
         },
         {
             "id": 202000021,
-            "name": "",
+            "name": "Crystalline Stability III",
             "description": "",
             "iconName": "Buff_AtkUp",
             "isShow": true,
@@ -42405,7 +42427,7 @@
         },
         {
             "id": 202000031,
-            "name": "",
+            "name": "Cold Tide I",
             "description": "",
             "iconName": "Buff_AtkUp",
             "isShow": true,
@@ -42427,7 +42449,7 @@
         },
         {
             "id": 202000041,
-            "name": "",
+            "name": "Cold Tide II",
             "description": "",
             "iconName": "Buff_DefUp",
             "isShow": true,
@@ -42449,7 +42471,7 @@
         },
         {
             "id": 202000051,
-            "name": "",
+            "name": "Frost Shackles",
             "description": "",
             "iconName": "Buff_DefUp",
             "isShow": true,
@@ -42471,7 +42493,7 @@
         },
         {
             "id": 202000081,
-            "name": "",
+            "name": "Winter Warriors",
             "description": "",
             "iconName": "Buff_AllUp",
             "isShow": true,
@@ -42493,7 +42515,7 @@
         },
         {
             "id": 202000091,
-            "name": "",
+            "name": "Aurora Guardian",
             "description": "",
             "descriptionTips": "0:330701",
             "buffEffect": "Skill/gun_Ice_shield|Skill/gun_Ice_shield_2",
@@ -42522,7 +42544,7 @@
         },
         {
             "id": 202000151,
-            "name": "",
+            "name": "Snowfall Soldiers",
             "description": "",
             "iconName": "Buff_CriUp",
             "isShow": true,
@@ -42617,7 +42639,7 @@
         },
         {
             "id": 203000041,
-            "name": "",
+            "name": "Electromagnetic Charge",
             "description": "",
             "iconName": "Buff_AtkUp",
             "isShow": true,
@@ -42639,7 +42661,7 @@
         },
         {
             "id": 203000051,
-            "name": "",
+            "name": "Electromagnetic Charge",
             "description": "",
             "iconName": "Buff_Guild_22",
             "isShow": true,
@@ -42661,7 +42683,7 @@
         },
         {
             "id": 203100022,
-            "name": "",
+            "name": "Conductor",
             "description": "",
             "iconName": "Buff_ElectricHurtUP",
             "isShow": true,
@@ -42683,7 +42705,7 @@
         },
         {
             "id": 203100031,
-            "name": "",
+            "name": "Superconductivity",
             "description": "",
             "iconName": "Buff_MosinnaganSSR1",
             "isShow": true,
@@ -42705,7 +42727,7 @@
         },
         {
             "id": 203100034,
-            "name": "",
+            "name": "Photovoltaic Guard",
             "description": "",
             "buffEffect": "Buff/61152201_Invincible2|Buff/61152201_Invincible",
             "effectPlayTime": [
@@ -42734,7 +42756,7 @@
         },
         {
             "id": 204000041,
-            "name": "",
+            "name": "Chain Reaction",
             "description": "",
             "iconName": "Buff_DamageUp",
             "isShow": true,
@@ -42756,7 +42778,7 @@
         },
         {
             "id": 204000051,
-            "name": "",
+            "name": "Chain Reaction",
             "description": "",
             "iconName": "Buff_DamageUp",
             "isShow": true,
@@ -42778,7 +42800,7 @@
         },
         {
             "id": 204100011,
-            "name": "",
+            "name": "Diffuse Resonance",
             "description": "",
             "iconName": "Buff_Eber2",
             "isShow": true,
@@ -42800,7 +42822,7 @@
         },
         {
             "id": 204100033,
-            "name": "",
+            "name": "Wide-Area Condensation",
             "description": "",
             "descriptionTips": "0:503000",
             "iconName": "Buff_Signal",
@@ -42822,7 +42844,7 @@
         },
         {
             "id": 205000011,
-            "name": "",
+            "name": "Tidal Resonance",
             "description": "",
             "iconName": "Buff_DamageUp",
             "isShow": true,
@@ -42844,7 +42866,7 @@
         },
         {
             "id": 205000021,
-            "name": "",
+            "name": "Tidal Resonance",
             "description": "",
             "iconName": "Buff_SelfHeal",
             "isShow": true,
@@ -42866,7 +42888,7 @@
         },
         {
             "id": 205000051,
-            "name": "",
+            "name": "Tide of Battle",
             "description": "",
             "iconName": "Buff_AtkUp",
             "isShow": true,
@@ -42888,7 +42910,7 @@
         },
         {
             "id": 205000061,
-            "name": "",
+            "name": "Tide of Battle",
             "description": "",
             "iconName": "Buff_AtkUp",
             "isShow": true,
@@ -42910,7 +42932,7 @@
         },
         {
             "id": 205000171,
-            "name": "",
+            "name": "Flow of Life",
             "description": "",
             "iconName": "Buff_SelfHeal",
             "isShow": true,
@@ -42932,7 +42954,7 @@
         },
         {
             "id": 205100011,
-            "name": "",
+            "name": "Vortex",
             "description": "",
             "iconName": "Buff_WaterUP",
             "isShow": true,
@@ -42998,7 +43020,7 @@
         },
         {
             "id": 206000101,
-            "name": "",
+            "name": "Fire Control Sharing I",
             "description": "",
             "iconName": "Buff_DamageUp",
             "isShow": true,
@@ -43020,7 +43042,7 @@
         },
         {
             "id": 206000111,
-            "name": "",
+            "name": "Fire Control Sharing II",
             "description": "",
             "iconName": "Buff_DamageUp",
             "isShow": true,
@@ -43042,7 +43064,7 @@
         },
         {
             "id": 206000121,
-            "name": "",
+            "name": "Trajectory Synchronization I",
             "description": "",
             "iconName": "Buff_DamageUp",
             "isShow": true,
@@ -43064,7 +43086,7 @@
         },
         {
             "id": 206000131,
-            "name": "",
+            "name": "Trajectory Synchronization II",
             "description": "",
             "iconName": "Buff_DamageUp",
             "isShow": true,
@@ -43086,7 +43108,7 @@
         },
         {
             "id": 206000171,
-            "name": "",
+            "name": "Courage In Conflict",
             "description": "",
             "iconName": "Buff_AtkUp",
             "isShow": true,
@@ -43108,7 +43130,7 @@
         },
         {
             "id": 206000181,
-            "name": "",
+            "name": "Mounting Barricade",
             "description": "",
             "iconName": "Buff_DefUp",
             "isShow": true,
@@ -43130,7 +43152,7 @@
         },
         {
             "id": 206000211,
-            "name": "",
+            "name": "Tactical Drive - Defense",
             "description": "",
             "iconName": "Buff_DefUp",
             "isShow": true,
@@ -43152,7 +43174,7 @@
         },
         {
             "id": 206000221,
-            "name": "",
+            "name": "Tactical Drive - Assault",
             "description": "Damage dealt is increased by <color=#f26c1c>10%</color>. This buff cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
@@ -43174,7 +43196,7 @@
         },
         {
             "id": 206000231,
-            "name": "",
+            "name": "Tactical Drive - Overwhelm",
             "description": "",
             "iconName": "Buff_AtkUp",
             "isShow": true,
@@ -43218,8 +43240,8 @@
         },
         {
             "id": 617514012,
-            "name": "",
-            "description": "",
+            "name": "Elemental Nullification",
+            "description": "DEF is decreased by 15%. Debuff, cannot be dispelled.",
             "isShow": true,
             "buffHeadShow": 1,
             "descriptionTips": "",
@@ -43240,8 +43262,8 @@
         },
         {
             "id": 617515011,
-            "name": "",
-            "description": "",
+            "name": "Laceration",
+            "description": "For every tile moved, take fixed damage equal to 25% of the applier's ATK and 2 Stability damage. Debuff, cannot be dispelled. If this unit gains a Shield, this effect is removed.",
             "isShow": true,
             "buffHeadShow": 1,
             "descriptionTips": "",
@@ -43329,7 +43351,7 @@
         {
             "id": 620019012,
             "name": "Frost Shield",
-            "description": "",
+            "description": "If the ice shield has not been destroyed when this effect expires, the Horn Beasteel gains 1 stack of <color=#3487e0>{0}</color>. Cannot be dispelled.",
             "descriptionTips": "0:696221021",
             "buffEffect": "Skill/6952701_Icebuff",
             "effectPlayTime": [
@@ -43353,7 +43375,7 @@
         {
             "id": 620019022,
             "name": "Frost Shield",
-            "description": "",
+            "description": "If the ice shield has not been destroyed when this effect expires, the Horn Beasteel gains 1 stack of <color=#3487e0>{0}</color>. Cannot be dispelled.",
             "descriptionTips": "0:696221021",
             "buffEffect": "Skill/6952701_Icebuff",
             "effectPlayTime": [
@@ -43377,7 +43399,7 @@
         {
             "id": 620019032,
             "name": "Frost Shield",
-            "description": "",
+            "description": "If the ice shield has not been destroyed when this effect expires, the Horn Beasteel gains 1 stack of <color=#3487e0>{0}</color>. Cannot be dispelled.",
             "descriptionTips": "0:696221021",
             "buffEffect": "Skill/6952701_Icebuff",
             "effectPlayTime": [
@@ -43444,8 +43466,8 @@
         },
         {
             "id": 628338011,
-            "name": "",
-            "description": "",
+            "name": "Sturdy Scales",
+            "description": "Ignores damage from normal attacks and Skills. Removed after receiving two normal or Skill attacks. Buff, cannot be dispelled.",
             "buffEffect": "Buff/61152201_Invincible2|Buff/61152201_Invincible",
             "effectPlayTime": [
                 1,
@@ -43473,8 +43495,8 @@
         },
         {
             "id": 628338031,
-            "name": "",
-            "description": "",
+            "name": "Survivalism",
+            "description": "Gain a Shield equal to <color=#f26c1c>50%</color> max HP. Damage dealt is increased by <color=#f26c1c>50%</color> while this unit has a Shield. Buff, cannot be dispelled.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43495,8 +43517,8 @@
         },
         {
             "id": 628345022,
-            "name": "",
-            "description": "",
+            "name": "Enervated",
+            "description": "DEF is decreased by <color=#f26c1c>60%</color>, damage taken is increased by <color=#f26c1c>50%</color>. Debuff, can be dispelled.",
             "iconName": "Buff_EnemyHurtUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43517,8 +43539,8 @@
         },
         {
             "id": 628346012,
-            "name": "",
-            "description": "",
+            "name": "Herd Senses",
+            "description": "Damage dealt is increased by <color=#f26c1c>25%</color>, and damage taken is decreased by <color=#f26c1c>50%</color>. Stability damage dealt is increased by <color=#f26c1c>2</color>, and Stability damage taken is decreased by<color=#f26c1c>1</color>. Cannot be dispelled.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43540,7 +43562,7 @@
         {
             "id": 628348031,
             "name": "Concentration",
-            "description": "",
+            "description": "Damage dealt is increased by <color=#f26c1c>25%</color>, max 4 stacks. Buff, cannot be dispelled.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43633,7 +43655,7 @@
         },
         {
             "id": 686350151,
-            "name": "",
+            "name": "Neural Stimulation",
             "description": "",
             "buffEffect": "Buff/68630501_Damage,Buff/68630501_Break",
             "effectPlayTime": [
@@ -43657,7 +43679,7 @@
         },
         {
             "id": 686350152,
-            "name": "",
+            "name": "Neural Stimulation",
             "description": "Increase damage by <color=#f26c1c>30%</color>. This effect cannot be cleansed.",
             "buffEffect": "Buff/68630501_Damage,Buff/68630501_Break",
             "effectPlayTime": [
@@ -43770,7 +43792,7 @@
         {
             "id": 693601012,
             "name": "Chassis Destruction Alert",
-            "description": "",
+            "description": "When <color=#ff8236>Ship Destruction Alert</color> reaches <color=#f26c1c>5 stacks</color>, <color=#3487e0>Krasnaya Avrora</color> uses <color=#3487e0>Ship Destruction I</color>. Cannot be dispelled.",
             "iconName": "Buff_Tank5",
             "isShow": true,
             "buffHeadShow": 10,
@@ -43792,7 +43814,7 @@
         {
             "id": 693601022,
             "name": "Chassis Destruction Alert",
-            "description": "",
+            "description": "When <color=#ff8236>Ship Destruction Alert</color> reaches <color=#f26c1c>6 stacks</color>, <color=#3487e0>Krasnaya Avrora</color> uses <color=#3487e0>Ship Destruction II</color>. Cannot be dispelled.",
             "iconName": "Buff_Tank5",
             "isShow": true,
             "buffHeadShow": 10,
@@ -43814,7 +43836,7 @@
         {
             "id": 693801012,
             "name": "Chassis Destruction Alert",
-            "description": "",
+            "description": "When <color=#ff8236>Ship Destruction Alert</color> reaches <color=#f26c1c>8 stacks</color>, <color=#3487e0>Krasnaya Avrora</color> uses <color=#3487e0>Ship Destruction I</color>. Cannot be dispelled.",
             "iconName": "Buff_Tank5",
             "isShow": true,
             "buffHeadShow": 10,
@@ -43836,7 +43858,7 @@
         {
             "id": 696220013,
             "name": "Negative Temperature Boost",
-            "description": "",
+            "description": "Damage dealt is increased by <color=#f26c1c>10%</color> and Stability damage dealt is increased by <color=#f26c1c>1</color>, can stack. Buff, cannot be dispelled.",
             "iconName": "Buff_DefUpNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43858,7 +43880,7 @@
         {
             "id": 696221011,
             "name": "Frost Shield",
-            "description": "",
+            "description": "If the ice shield has not been destroyed when this effect expires, the Horn Beasteel gains 1 stack of <color=#3487e0>{0}</color>. Cannot be dispelled.",
             "descriptionTips": "0:696221021",
             "buffEffect": "Skill/6952701_Icebuff",
             "effectPlayTime": [
@@ -43881,8 +43903,8 @@
         },
         {
             "id": 696221021,
-            "name": "",
-            "description": "",
+            "name": "Icy Spikes",
+            "description": "DEF is increased by <color=#f26c1c>100%</color>, can stack. Buff, cannot be dispelled.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43903,8 +43925,8 @@
         },
         {
             "id": 696223011,
-            "name": "",
-            "description": "",
+            "name": "Icicle",
+            "description": "Explodes at the end of this unit's side's turn, dealing AoE Freeze damage equal to <color=#f26c1c>70%</color> of the Horn Beasteel's ATK and <color=#f26c1c>2</color> Stability damage to all units in a <color=#f26c1c>5×5 tile area</color> and applying 1 stack of <color=#3487e0>{0}</color>. This explosion deals an extra <color=#f26c1c>4</color> fixed Stability damage to the Horn Beasteel. Cannot be dispelled.",
             "descriptionTips": "0:696223012",
             "buffEffect": "Skill/6761401_Ice",
             "effectPlayTime": [
@@ -43931,8 +43953,8 @@
         },
         {
             "id": 696223012,
-            "name": "",
-            "description": "",
+            "name": "Deep Freeze",
+            "description": "ATK is decreased by <color=#f26c1c>10%</color>, can stack. Debuff, cannot be dispelled.",
             "iconName": "Buff_AtkDown",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43953,8 +43975,8 @@
         },
         {
             "id": 696300102,
-            "name": "",
-            "description": "",
+            "name": "Crisis Awareness",
+            "description": "Damage dealt is increased by <color=#f26c1c>5%</color>, can stack. Buff, cannot be dispelled.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -44551,8 +44573,8 @@
         },
         {
             "id": 1045040221,
-            "name": "",
-            "description": "",
+            "name": "Overflowing Electrons",
+            "description": "Upon taking <color=#3487e0>{0}</color> damage, take <color=#f26c1c>1 instance</color> of additional fixed damage equal to <color=#f26c1c>100%</color> ATK.Cannot be dispelled.",
             "descriptionTips": "0:10450402",
             "iconName": "Buff_ElectricNeutral",
             "isShow": true,
@@ -44573,8 +44595,8 @@
         },
         {
             "id": 1045040321,
-            "name": "",
-            "description": "",
+            "name": "Overflowing Electrons",
+            "description": "Upon taking <color=#3487e0>{0}</color> damage, take <color=#f26c1c>1 instance</color> of additional fixed damage equal to <color=#f26c1c>100%</color> ATK.Cannot be dispelled.",
             "descriptionTips": "0:10450403",
             "iconName": "Buff_ElectricNeutral",
             "isShow": true,
@@ -44595,8 +44617,8 @@
         },
         {
             "id": 1045080132,
-            "name": "",
-            "description": "",
+            "name": "Concealment",
+            "description": "Cannot be selected by enemy normal attacks and active Skills.Buff,  cannot be dispelled.",
             "shaderType": 1,
             "iconName": "Buff_Nogoal",
             "isShow": true,
@@ -44617,8 +44639,8 @@
         },
         {
             "id": 1045080321,
-            "name": "",
-            "description": "",
+            "name": "Stored Charge",
+            "description": "<color=#d4ae08>Electric damage</color> dealt is increased by <color=#f26c1c>5%</color>, max <color=#f26c1c>10 stacks</color>. Electric buff, cannot be dispelled.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -44639,7 +44661,7 @@
         },
         {
             "id": 1047040301,
-            "name": "",
+            "name": "Vulnerability ANalysis",
             "description": "",
             "iconName": "Buff_EnemyHurtUp",
             "isShow": true,
@@ -44686,7 +44708,7 @@
         {
             "id": 1047070114,
             "name": "Reached maximum limit",
-            "description": "",
+            "description": "Special effect increasing Hydro damage dealt by at most 50%",
             "buffEffect": "Buff/AtkU",
             "effectPlayTime": [
                 1

@@ -1,0 +1,844 @@
+{
+    "data": [
+        {
+            "id": 51015,
+            "name": "Icineration",
+            "description": "Inflicts Burn Weakness to enemy units. Inflict <color=#3487e0>{0}</color>and<color=#3487e0>{1}</color>to enemy units that remain within the area at the end of their turn, lasting 2 turns. Considered a Burn tile.",
+            "descriptionTips": "0:310402;0:510154"
+        },
+        {
+            "id": 51100,
+            "name": "Toxic Mist",
+            "description": "Inflicts <color=#8679e8>Corrosion</color> weakness to enemy units. Deals fixed damage equal to <color=#f26c1c>50%</color> of the Inflictor's attack and inflict <color=#3487e0>{0}</color> to enemy units that remain within the area at the end of their turn. lasting <color=#f26c1c>lasting 2 turns</color>. Considered a Corrosion tile.",
+            "descriptionTips": "0:262102"
+        },
+        {
+            "id": 90001,
+            "name": "Extra Action",
+            "description": "Can move multiple times in an allied turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90002,
+            "name": "Taunt",
+            "description": "Units affected by Taunt attempt to move toward the unit which applied the effect and attack it.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90003,
+            "name": "Out of Hand",
+            "description": "Units affected by Lost Control attempt to move away from the unit which applied the effect and stand by.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90004,
+            "name": "Assist",
+            "description": "If an enemy unit attempts an attack within this unit's attack range or within a specific area, perform an attack on the enemy unit.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90005,
+            "name": "Counterattack",
+            "description": "If attacked by an enemy unit within this unit's attack range or within a specific area, perform an attack on the enemy unit.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90006,
+            "name": "Pursuit",
+            "description": "If an enemy unit attempts to move within this unit's attack range or within a specific area, perform an attack on the enemy unit.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90007,
+            "name": "Surveillance",
+            "description": "Lock onto 1 enemy unit. If the unit attempts to move, perform an attack on the enemy unit. If an enemy unit under the effects of Surveillance is attacked in this way, remove that status.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90008,
+            "name": "Convert",
+            "description": "After dealing damage to an enemy target, heal for a percentage of that damage.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90009,
+            "name": "Self-Destruct",
+            "description": "After HP reaches 0, deal damage to all units within a radius around self.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90010,
+            "name": "Self-Repair",
+            "description": "Recover HP of self at the end of the turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90011,
+            "name": "Vulnerable",
+            "description": "Damage taken increases.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90012,
+            "name": "Air Dominance",
+            "description": "If this unit is a flying unit, it is not affected by terrain effects while moving and is not protected by terrain effects when attacked.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90013,
+            "name": "Electric Shock",
+            "description": "Units affected by Electric Shock deal damage to allied units within 1.5 tiles at the end of their action and apply Electric Shock to them.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90014,
+            "name": "Movement Denied",
+            "description": "Units affected by Movement Denied cannot move but can perform basic attacks and active skills.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90015,
+            "name": "Stun",
+            "description": "Units affected by Stun cannot take any action.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90016,
+            "name": "Attack Failed",
+            "description": "Units affected by Attack Denied cannot do anything apart from moving or standing by.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90017,
+            "name": "Hot Zone",
+            "description": "If a tile has a damaging effect, enemy units that enter it will lose a portion of their maximum HP at the end of their turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90018,
+            "name": "Advance Warning",
+            "description": "The area indicated in this turn will be attacked next turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90019,
+            "name": "Forcefield",
+            "description": "Damage applied to units with Forcefields will first deplete the Forcefield's Deflection Value.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90020,
+            "name": "Assault",
+            "description": "When an enemy unit ends its movement within the indicated area, perform an attack on it.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90021,
+            "name": "Extreme Recovery",
+            "description": "If current HP is below 30% of maximum HP, recover HP to max. This effect can trigger once per battle.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90022,
+            "name": "Quick Movement",
+            "description": "Increase dodge by 75% for self.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90023,
+            "name": "Fragile Defense",
+            "description": "Units affected by <color=#3487e0>Vulnerable</color> take 50% more damage.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90024,
+            "name": "Double Increase",
+            "description": "Increase Accuracy and Damage dealt by 50% for self.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90025,
+            "name": "Special Target",
+            "description": "Attacking this target grants 3 points of Confectance Index.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90026,
+            "name": "Gun Control",
+            "description": "Reduce damage dealt by 50%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90027,
+            "name": "Maintain Focus",
+            "description": "Increase critical rate for self. Upon being attacked in any way, remove this status effect.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90028,
+            "name": "Focused Offensive",
+            "description": "If current HP is greater than 80% of maximum HP, increase damage dealt by 40%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90029,
+            "name": "Damage Burst",
+            "description": "Increase damage dealt by 20%. Stacks up to 5 times.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90030,
+            "name": "Vision Increase I",
+            "description": "Increase Accuracy by 15% for all allied units.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90031,
+            "name": "Vision Increase II",
+            "description": "Increase Accuracy by 30% for all allied units.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90032,
+            "name": "Varjager",
+            "description": "This unit is a member of the Varjagers. Killing him grants an additional 2 points of Confectance Index.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90033,
+            "name": "ELID",
+            "description": "This unit is an ELID. Killing it grants an additional 1 point of Confectance Index.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90034,
+            "name": "P.M.C.",
+            "description": "This unit is a mechanical unit from a P.M.C. Killing it grants an additional 3 points of Confectance Index.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90035,
+            "name": "Powerful Unit",
+            "description": "This is a powerful combat unit from an unknown faction. Killing it grants an additional 10 points of Confectance Index.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90036,
+            "name": "Unknown",
+            "description": "This unit's data cannot be analyzed.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90037,
+            "name": "Battlefield Monitoring",
+            "description": "If there is an enemy unit within 6 tiles, use <color=#3487e0>Assault</color> on it. This effect can trigger up to 3 times per turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90038,
+            "name": "Accurate Aim I",
+            "description": "Increase Accuracy by 25% for self.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90039,
+            "name": "Accurate Aim II",
+            "description": "Increase Accuracy by 50% for self.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90040,
+            "name": "Mobile Support",
+            "description": "Thus unit performs an <color=#3487e0>Assist</color> on an enemy unit within 2 tiles. This <color=#3487e0>Assist</color> deals damage equal to attack of self. This effect can trigger up to 3 times per turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90041,
+            "name": "Second Action",
+            "description": "Upon killing an enemy target, gain 1 instance of <color=#3487e0>Extra Action</color>. This effect can trigger up to 1 time per turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90042,
+            "name": "Continuous Damage",
+            "description": "At the end of the turn, each stack of Continuous Damage causes the affected unit to lose part of its maximum HP. Stacks up to 5 times.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90043,
+            "name": "Joint Boost",
+            "description": "Increase damage dealt by 30% if there are 2 or more allied units on the battlefield.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90044,
+            "name": "Reboot Pause",
+            "description": "Before recovering to 100% HP, Darture immediately returns to the battlefield and cannot take any action.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90045,
+            "name": "Mobile Dodge",
+            "description": "Increase dodge by 50% for self. If attacked by any enemy unit within 1.5 tiles, further increase dodge by 25%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90046,
+            "name": "Full Court Press",
+            "description": "Increase all allied units' damage dealt by 50%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90047,
+            "name": "Death Proof",
+            "description": "HP will not go below 1.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90048,
+            "name": "Extra Command",
+            "description": "May perform multiple actions on an allied turn that are not movement. The number of actions depends on the skill being used or buff effects.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90049,
+            "name": "Targeted",
+            "description": "Attacks are guaranteed to hit.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90050,
+            "name": "Stability Break",
+            "description": "Mobility of self is reduced to 0 and cannot perform any actions. For the duration of this effect, stability index of self is set to 0 and Overbearing Suppression cannot be re-established.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90051,
+            "name": "Negative Control Effect",
+            "description": "This unit is affected by Stun, Lost Control, Taunt, or Stability Break.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90052,
+            "name": "Assist Boost I",
+            "description": "Increase damage done by Assists. Damage is increased by 40% of Krolik's attack.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90053,
+            "name": "Assist Boost II",
+            "description": "Increase damage done by Assists. Damage is increased by 50% of Krolik's attack.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90054,
+            "name": "Visual Restriction",
+            "description": "Accuracy of self is reduced by 100%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90055,
+            "name": "Firepower Expansion I",
+            "description": "Increase Accuracy of self by 15%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90056,
+            "name": "Vector Boost I",
+            "description": "Increases attack of self by 15% of Nemesis - ETs's attack.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90057,
+            "name": "Firepower Expansion II",
+            "description": "Increase Accuracy by 25% for self.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90058,
+            "name": "Vector Boost II",
+            "description": "Increases attack of self by 25% of Nemesis - ETs's attack.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90059,
+            "name": "Double Demolition",
+            "description": "After using Steel Rain, gain 1 instance of <color=#3487e0>Extra Action</color>. This effect can trigger up to 1 time per turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90060,
+            "name": "Double Increase",
+            "description": "Increase Accuracy and damage dealt of self by 15%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90061,
+            "name": "Power Accumulation",
+            "description": "Every stack of this status effect increases dodge of self by 10% and the damage of Gale Slash by 5%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90062,
+            "name": "Follow-Up Shot I",
+            "description": "If an allied unit damages an enemy unit within 9 tiles, perform 1 Assist on said enemy unit. This Assist deals damage equal to 75% of own attack. If this allied unit is Krolik, the Assist's accuracy and critical rate is increased to 100%. This effect can trigger 1 time per turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90063,
+            "name": "Follow-Up Shot II",
+            "description": "If an allied unit damages an enemy unit within 9 tiles, perform 1 Assist on said enemy unit. This Assist deals damage equal to 100% of own attack. If this allied unit is Krolik, the Assist's accuracy and critical rate is increased to 100%. This effect can trigger 1 time per turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90064,
+            "name": "Weakpoint Sensing I",
+            "description": "If current HP is 100%, increase damage dealt by 40%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90065,
+            "name": "Weakpoint Sensing II",
+            "description": "If current HP is greater than 80% of maximum HP, increase damage dealt by 40%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90066,
+            "name": "Minimum Load",
+            "description": "Units with the <color=#3487e0>Minimum Load</color> have their minimum HP set to 1 for the duration of the effect. When this effect expires and if the unit's HP is 1, it gains 5 points of Confectance Index.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90067,
+            "name": "Damage Control I",
+            "description": "Damage received is reduced by 60%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90068,
+            "name": "Damage Control II",
+            "description": "Damage received is reduced by 80%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90069,
+            "name": "Agility Assurance I",
+            "description": "Dodge of self is increased by 15%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90070,
+            "name": "Agility Assurance II",
+            "description": "Dodge of self is increased by 20%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90071,
+            "name": "Quick Movement",
+            "description": "Increase dodge by 75% for self.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90072,
+            "name": "Orderless Operation",
+            "description": "Units with the <color=#3487e0>Orderless Operation</color> status grant Vepley 5 points of Confectance Index at the start of their turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90073,
+            "name": "Fragile Defense I",
+            "description": "Increase damage received by 20%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90074,
+            "name": "Fragile Defense II",
+            "description": "Increase damage received by 40%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90075,
+            "name": "Mobile Support I",
+            "description": "The damage of the next Assist is increased by 80% of Krolik - ETs' attack.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90076,
+            "name": "Mobile Support II",
+            "description": "The damage of the next Assist is increased by 100% of Krolik - ETs' attack.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90077,
+            "name": "Damage Burst",
+            "description": "Every stack of this effect increases critical rate of self by 20%. Stacks up to 5 times.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90078,
+            "name": "Defense Control",
+            "description": "This unit gains 30% <color=#3487e0>Vulnerability</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90079,
+            "name": "Hidden",
+            "description": "Increase dodge of self by 50%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90080,
+            "name": "Alert I",
+            "description": "After killing an enemy target, gain 1 instance of <color=#3487e0>Extra Action</color>. This effect can trigger up to 1 time per turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90081,
+            "name": "Alert II",
+            "description": "After killing an enemy target or causing an enemy target to enter <color=#3487e0>Stability Break</color>, gain 1 instance of <color=#3487e0>Extra Action</color>. This effect can trigger up to 1 time per turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90082,
+            "name": "Visual Interference I",
+            "description": "Each stack of this condition decreases Accuracy by 15% for self. Stacks infinitely.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90083,
+            "name": "Visual Interference II",
+            "description": "Each stack of this condition decreases Accuracy by 12% for self. Stacks infinitely.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90084,
+            "name": "Charge",
+            "description": "Each stack of this condition increases damage dealt by 5% for self. Stacks up to 40 times.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90085,
+            "name": "Continuous Damage",
+            "description": "At the end of the turn, each stack of <color=#3487e0>Continuous Damage</color> causes the affected unit to lose 5% of their maximum HP as <r<kinetic>> damage. Stacks up to 5 times.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90086,
+            "name": "Area Counterattack",
+            "description": "Upon taking an attack from an enemy unit within a 3 to 6 tile radius around self, trigger 1 instance of <color=#3487e0>Counterattack</color>. <color=#3487e0>Counterattack</color> deals damage equal to 100% of attack. This effect can trigger up to 1 time per turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90087,
+            "name": "Double Pierce",
+            "description": "When hit by a Thorn Shot, take damage equal to 50% of the Mishap Thorn's attack.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90088,
+            "name": "Power Up I",
+            "description": "Increase damage dealt by 30%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90089,
+            "name": "Power Up II",
+            "description": "Increase damage dealt by 80%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90090,
+            "name": "Power Up III",
+            "description": "Increase damage dealt by 150%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90091,
+            "name": "All Ahead Full",
+            "description": "Mobility increased by 150.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90092,
+            "name": "Multiphase Enhancement",
+            "description": "Increase attack of self by 50%.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90093,
+            "name": "Extreme Recovery I",
+            "description": "At the start of the turn, if current HP is greater than 1 and less than or equal to 30% of maximum HP, cleanses all debuffs on self. This effect can trigger once per battle. As long as this effect has not triggered, Vepley - ETs is under the Death Proof status.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90094,
+            "name": "Extreme Recovery II",
+            "description": "At the start of the turn, if current HP is less than or equal to 30% of maximum HP, recover 30% of maximum HP and dispel all debuffs on self. This effect can trigger once per battle. As long as this effect has not triggered, Vepley - ETs is under the Death Proof status.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90095,
+            "name": "Quick Draw",
+            "description": "If an enemy unit attempts an attack within this unit's attack range or within a specific area, perform an attack on the enemy unit.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90096,
+            "name": "Pack Tactics",
+            "description": "If an enemy unit is attacked by a monster of the same type within this unit's range, perform an attack on the enemy unit in question.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90097,
+            "name": "Immobilized",
+            "description": "Unable to move.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90098,
+            "name": "Afraid",
+            "description": "Cannot be controlled and attempts to move away from the unit that inflicted this condition.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90099,
+            "name": "Seduced",
+            "description": "Cannot be controlled and attempts to move toward from the unit that inflicted this condition.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90100,
+            "name": "Burning II",
+            "description": "At the end of this unit's action, this unit is damaged for 50% of the attack of the attacker. If this unit's stability index is being drained, it is immediately damaged for 150% of the attack of the attacker and its stability index is additionally decreased by 50% of the attacker's Suppression Strength.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90101,
+            "name": "Burning Area",
+            "description": "At the end of both allied and enemy turns, all units within this area take damage equal to 50% of the inflictor's attack and have Burning II applied to them.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90102,
+            "name": "Paralysis",
+            "description": "Can only move or Stand By.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90103,
+            "name": "Lava",
+            "description": "Applies <color=#3487e0>{0}</color> to units which end their movement in this area for <color=#f26c1c>2 turns</color>. Enemy units in this area gain a weakness to <color=#e67129>Burning</color> damage and Burning tiles.",
+            "descriptionTips": "0:310602"
+        },
+        {
+            "id": 90104,
+            "name": "Tideway",
+            "description": "Applies <color=#3487e0>{0}</color> to units which end their movement in this area for <color=#f26c1c>2 turns</color>. Enemy units in this area gain a weakness to <color=#e67129>Hydro</color> damage and Hydro tiles.",
+            "descriptionTips": "0:320001"
+        },
+        {
+            "id": 90105,
+            "name": "Frost",
+            "description": "Applies <color=#3487e0>{0}</color> to units which end their movement in this area for <color=#f26c1c>2 turns</color>. Enemy units in this area gain a weakness to <color=#e67129>Freeze</color> damage and Freeze tiles.",
+            "descriptionTips": "0:330101"
+        },
+        {
+            "id": 90106,
+            "name": "Swamp",
+            "description": "Deal fixed damage equal to <color=#f26c1c>20%</color> of own attack to enemy units which end their turn in this area. Apply a weakness to <color=#8679e8>Corrosion</color> to enemy units in this area. At the start of every <color=#f26c1c>2nd turn</color>, the <color=#3487e0>Swamp</color> spreads <color=#f26c1c>1 tile in each direction</color>. This is considered a Corrosion tile.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90107,
+            "name": "Electrified",
+            "description": "Applies <color=#3487e0>{0}</color> to units which end their movement in this area for <color=#f26c1c>2 turns</color>. Enemy units in this area gain a weakness to <color=#e67129>Electric</color> damage and Electric tiles.",
+            "descriptionTips": "0:350301"
+        },
+        {
+            "id": 90108,
+            "name": "Flesh Vine",
+            "description": "Can act immediately after summoning.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90109,
+            "name": "Action Support",
+            "description": "Performs a Support Attack; cannot be triggered by another Support Attack.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90110,
+            "name": "Counterattack",
+            "description": "Performs an attack; cannot be triggered by Interceptions, Counterattacks or Action Supports.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90111,
+            "name": "Interception",
+            "description": "Performs an attack; cannot be triggered by Interceptions, Counterattacks or Action Supports.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90112,
+            "name": "Wise Support",
+            "description": "Performs a Support Attack.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90113,
+            "name": "Secret Armor",
+            "description": "When the armor is spawned and at the start of the enemy's turn, deals AoE Physical damage equal to <color=#f26c1c>50%</color> of attack to all enemy units within a <color=#f26c1c>3×3 area</color> and randomly applies <color=#f26c1c>1</color> debuff for <color=#f26c1c>1 turn</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90114,
+            "name": "Standard Armor",
+            "description": "Disappears immediately upon being hit by <color=#3487e0>Control II</color> and absorbs the obtained <color=#3487e0>{0}</color>.",
+            "descriptionTips": "0:6901302"
+        },
+        {
+            "id": 90115,
+            "name": "Voltage",
+            "description": "Adds <color=#d4ae08>Electric</color> weakness to enemy units in the area. When enemy units on the affected tiles suffer AoE damage, it triggers a reaction, dealing fixed damage equal to <color=#f26c1c>30%</color> of Attack, and clears the tile. If the damage is <color=#d4ae08>Electric</color> or <color=#2caadb>Hydro</color>, the fixed damage increases to <color=#f26c1c>60%</color> of attack. Deals <color=#f26c1c>double</color> damage to large targets. This is an Electric tile.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90116,
+            "name": "Stop-Hit",
+            "description": "Performs an attack which ends the target's movement. Cannot trigger Action Supports, Interceptions, or Counterattacks.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90117,
+            "name": "Extra Action",
+            "description": "Includes <color=#3487e0>{0}</color>, <color=#3487e0>Extra Movement</color> and <color=#3487e0>{1}</color>.",
+            "descriptionTips": "0:503000;0:502000"
+        },
+        {
+            "id": 90118,
+            "name": "Shield",
+            "description": "Absorbs a certain amount of damage. Shields do not stack, but they can overlap. When the most recently-applied shield expires or takes more damage than the previous one(s), they overlap. Shields include <color=#3487e0>Frost Barrier</color> and other effects.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90119,
+            "name": "Hole",
+            "description": "At the start of the turn, Sneaker Crysmoles will always emerge from their <color=#3487e0>caves</color>; positioning a unit on top of a <color=#3487e0>cave</color> entrance prevents Sneaker Crysmoles from emerging through it. For every <color=#3487e0>cave</color> that is not blocked by a unit, Sneaker Crysmoles gain <color=#f26c1c>1 stack</color> of <color=#3487e0>{0}</color> for <color=#f26c1c>1 turn</color>.",
+            "descriptionTips": "0:6242700"
+        },
+        {
+            "id": 90210,
+            "name": "Flame",
+            "description": "Applies a weakness to <color=#e67129>Burning</color> to enemy units within the area. Deal <color=#f26c1c>99,998 points</color> of fixed damage to enemy units which end their movement within this area. This effect is considered a Burning tile.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90211,
+            "name": "Willpower Drain",
+            "description": "At the end of the action, the afflicted unit takes <color=#f26c1c>4 points</color> of fixed stability damage and reduces max HP by <color=#f26c1c>20%</color>. When the unit that applies this status dies, <color=#3487e0>Willpower Drain</color> is nullified and the max HP reduced by <color=#3487e0>Willpower Drain</color> is restored. This effect cannot be cleansed.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90212,
+            "name": "Flesh Vine",
+            "description": "Stands by for <color=#f26c1c>1</color> turn after being born, acts normally thereafter.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90213,
+            "name": "Multi-Cell Grid",
+            "description": "Applies <color=#f26c1c>2</color> random elemental debuffs to enemy units which end their turn in the area for <color=#f26c1c>2 turns</color>. Enemy units on this terrain gain weakness to all elements.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90214,
+            "name": "Security Monitoring",
+            "description": "At the end of this unit's action, perform Surveillance on the entire map. When an enemy unit uses a basic attack or an active attack, damage them for <color=#f26c1c>40%</color> of own attack. This effect can trigger <color=#f26c1c>1 time</color> per turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90215,
+            "name": "Arthrorhynchus",
+            "description": "Recover HP of self at the end of the turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90216,
+            "name": "Fetumor",
+            "description": "Periodically applies a shield to all allied units, try killing it first.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90217,
+            "name": "Retorhynchus",
+            "description": "Splits off another Snakethorn at the end of the turn.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90218,
+            "name": "Raditumor",
+            "description": "Periodically damages all allied units, try killing it first.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90219,
+            "name": "Mucus",
+            "description": "When an enemy unit is damaged while standing on a <color=#3487e0>Slime</color> tile, apply <color=#3487e0>{0}</color> to that unit for <color=#f26c1c>1 turn</color>. If the Goatzard is damaged while standing on a <color=#3487e0>Slime</color> tile, that damage is increased by <color=#f26c1c>40%</color>.",
+            "descriptionTips": "0:300601"
+        },
+        {
+            "id": 90220,
+            "name": "Control-type",
+            "description": "Includes the effects <color=#3487e0>Taunt</color>, <color=#3487e0>Fear</color>, <color=#3487e0>Attract</color> and <color=#3487e0>Stun</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90221,
+            "name": "Fortress Device",
+            "description": "Unable to move. Inflicts <color=#3487e0>{0}</color> on all enemy units upon death. If still active after 1 turn, it will be absorbed by Fortress Titan, removing all its debuffs and apply <color=#3487e0>{2}</color> equal to the stacks of <color=#3487e0>{1}</color> on self.",
+            "descriptionTips": "0:68905034;0:68905022;0:68905041"
+        },
+        {
+            "id": 90222,
+            "name": "AOE Support Attack",
+            "description": "Includes <color=#3487e0>{0}</color> and <color=#3487e0>{1}</color> that deal AOE damage.",
+            "descriptionTips": "1:90109;1:90112"
+        },
+        {
+            "id": 90223,
+            "name": "Auto-Turret",
+            "description": "Summon. Inherits <color=#f26c1c>50%</color> of Andoris' initial HP, <color=#f26c1c>50%</color> of initial attack, and <color=#f26c1c>100%</color> of initial defense. Cannot move. Can apply <color=#3487e0>Negative Charge</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90224,
+            "name": "Initial Damage",
+            "description": "Damage before shield protection and cover mitigation.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90225,
+            "name": "Mucus",
+            "description": "Inflicts <color=#8679e8>Corrosion</color> weakness to enemy units within the area. Enemy units that remain on <color=#3487e0>Mucus</color> at the end of their turn deal <color=#f26c1c>30%</color> less damage. Damage taken by Terrorhorn Chimera on <color=#3487e0>Mucus</color> is increased by <color=#f26c1c>40%</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90226,
+            "name": "Toxic Bubble",
+            "description": "Cannot die. At the end of the round, triggers a self detonation and deals <color=#f26c1c>40%</color> of HP lost to all allied units as AOE <color=#8679e8>Corrosion Damage</color> that ignores cover.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90227,
+            "name": "Swamp",
+            "description": "Inflicts <color=#3487e0>{0}</color> to enemy units that remain within the area at the end of their turn, lasting 1 turn. Considered a Corrosion tile.",
+            "descriptionTips": "0:510521"
+        },
+        {
+            "id": 90228,
+            "name": "Out-of-Turn Attack",
+            "description": "Includes <color=#3487e0>{0}</color>, <color=#3487e0>{1}</color>, <color=#3487e0>{2}</color>, <color=#3487e0>{3}</color> and other such attacks made outside of this unit's turn.",
+            "descriptionTips": "1:90109;1:90112;1:90111;1:90110"
+        }
+    ]
+}
