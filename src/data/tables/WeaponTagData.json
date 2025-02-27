@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "id": 2,
+            "name": "Light Ammo",
+            "icon": "Icon_BulletHit_Light"
+        },
+        {
+            "id": 4,
+            "name": "Medium Ammo",
+            "icon": "Icon_BulletHit_Middle"
+        },
+        {
+            "id": 8,
+            "name": "Heavy Ammo",
+            "icon": "Icon_BulletHit_Heavy"
+        },
+        {
+            "id": 16,
+            "name": "Melee",
+            "icon": "Icon_BulletHit_Melee"
+        },
+        {
+            "id": 32,
+            "name": "Shotgun Ammo",
+            "icon": "Icon_BulletHit_Shot"
+        }
+    ]
+}
