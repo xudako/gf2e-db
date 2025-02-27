@@ -48,6 +48,16 @@ interface SkillTree {
   [sType: string]: SkillsByLevel;
 }
 
+const ammoType = new Map([
+  [1, 2],
+  [2, 2],
+  [3, 8],
+  [4, 4],
+  [5, 8],
+  [6, 32],
+  [7, 16],
+]);
+
 //custom HoverInfo Tooltip
 const HoverInfo = styled(({ className, ...props }: TooltipProps) => (
   <Tooltip
@@ -127,6 +137,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
       range: display.rangeDisplayParam || data.skillRangeParam,
       shape: display.shapeDisplay || data.shape,
       shapeParam: display.shapeDisplayParam || data.shapeParam,
+      weaponTag: data.weaponTag == 1 ? ammoType.get(character.weaponType) : data.weaponTag,
     };
   };
   const skillIds = vertebraeIds.map(

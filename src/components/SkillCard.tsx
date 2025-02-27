@@ -17,6 +17,63 @@ interface RichTextProps {
   variant?: import("@mui/material").TypographyProps["variant"];
 }
 
+interface SkillIconProps {
+  skill: string;
+  element: number;
+  weapon: number;
+}
+
+const dynamicBuffs = new Map([
+  [1022, 102204013], //Sharkry
+  [103209, 10320981], //Daiyan
+  [104400, 310452], //Vector
+  [340600, 340601], //Klukai
+  [340700, 340701], //Klukai
+  [10520800, 10520801], //Klukai
+  [10510700, 105107001], //Mechty
+  [10510800, 105108001], //Mechty
+]);
+
+const SkillIcon: React.FC<SkillIconProps> = ({ skill, element, weapon }) => {
+  return (
+    <Box sx={{ position: "relative", display: "inline-block" }}>
+      <Box
+        component="img"
+        src={`${import.meta.env.BASE_URL}skills/${skill}.png`}
+        alt="Skill Icon"
+        sx={{
+          display: "block",
+          mt: 2,
+          width: 128,
+          maxWidth: "100%",
+          bgcolor: "primary.main",
+          borderRadius: "8px",
+        }}
+      />
+      {element > 0 && (
+        <Box
+          component="img"
+          src={`${import.meta.env.BASE_URL}icons/${
+            Tables.LanguageElementData[element].icon
+          }_Weakpoint.png`}
+          alt="Element Icon"
+          sx={{ width: 52, position: "absolute", bottom: -6, left: -6 }}
+        />
+      )}
+      {weapon > 0 && (
+        <Box
+          component="img"
+          src={`${import.meta.env.BASE_URL}icons/${
+            Tables.WeaponTagData[weapon].icon
+          }_Weakpoint.png`}
+          alt="Weapon Icon"
+          sx={{ width: 52, position: "absolute", top: 10, left: -6 }}
+        />
+      )}
+    </Box>
+  );
+};
+
 const RichTextComponent: React.FC<RichTextProps> = ({
   content,
   descriptionTips,
@@ -56,43 +113,48 @@ const parseUnityRichText = (
       const buffId = buffIds[buffIndex];
       const buff: Buff =
         buffId[0] == "0"
-          ? Tables.BattleBuffPerformData[parseInt(buffId[1])]
+          ? buffId[1][0] == "-" &&
+            parseInt(buffId[1].slice(3)) &&
+            dynamicBuffs.has(parseInt(buffId[1].slice(3)))
+            ? Tables.BattleBuffPerformData[
+                dynamicBuffs.get(parseInt(buffId[1].slice(3)))!
+              ]
+            : Tables.BattleBuffPerformData[parseInt(buffId[1])]
           : Tables.BattleDictionaryData[parseInt(buffId[1])];
 
       elements.push(
-          <Tooltip
-            key={index}
-            title={
-              <Box>
-                <Stack direction="row" alignItems="center" spacing={1} pb={0.5}>
-                  {buff.iconName && <Box
+        <Tooltip
+          key={index}
+          title={
+            <Box>
+              <Stack direction="row" alignItems="center" spacing={1} pb={0.5}>
+                {buff.iconName && (
+                  <Box
                     component="img"
                     src={`${import.meta.env.BASE_URL}buffs/${
                       buff.iconName
                     }.png`}
                     alt={buff.name}
                     width={32}
-                  />}
-                  <Typography
-                    variant="subtitle1"
-                    color={color}
-                  >
-                    {buff.name}
-                  </Typography>
-                </Stack>
-                <Divider />
-                <RichTextComponent
-                  content={buff.description}
-                  descriptionTips={buff.descriptionTips}
-                  variant="caption"
-                />
-              </Box>
-            }
-          >
-            <span style={{ color, cursor: "help" }}>
-              <u>{buff.name}</u>
-            </span>
-          </Tooltip>
+                  />
+                )}
+                <Typography variant="subtitle1" color={color}>
+                  {buff.name}
+                </Typography>
+              </Stack>
+              <Divider />
+              <RichTextComponent
+                content={buff.description}
+                descriptionTips={buff.descriptionTips}
+                variant="caption"
+              />
+            </Box>
+          }
+        >
+          <span style={{ color, cursor: "help" }}>
+            <u>{buff.name}</u>
+          </span>
+        </Tooltip>
       );
     } else {
       elements.push(
@@ -112,7 +174,6 @@ const parseUnityRichText = (
 
 const SkillCard = ({ skill }: { skill: Skill }) => {
   if (!skill) return;
-  //const [currentUpgrade, setCurrentUpgrade] = useState(0);
   const stabExists = skill.result
     .split(";")
     .find((element) => element[0] === "2");
@@ -130,7 +191,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
       dispRange = "Self";
       break;
     case 2:
-      dispRange = "i x i";
+      dispRange = `${gridRange[0]} × ${gridRange[0]}`;
       break;
     case 3:
       dispRange = gridRange[0];
@@ -148,7 +209,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
       dispShape = "Target";
       break;
     case 2:
-      dispShape = `${gridShape[0]} x ${gridShape[0]}`;
+      dispShape = `${gridShape[0]} × ${gridShape[0]}`;
       break;
     case 3:
       dispShape = gridShape[0];
@@ -180,15 +241,13 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
           <Typography variant="h5" color="secondary.main">
             {skill.name}
           </Typography>
-          <Box
-            component="img"
-            src={`${import.meta.env.BASE_URL}skills/${skill.icon}.png`}
-            alt="Skill Name"
-            mt={2}
-            sx={{ width: "50%", bgcolor: "primary.main", borderRadius: "8px" }}
+          <SkillIcon
+            skill={skill.icon}
+            element={skill.elementTag}
+            weapon={skill.weaponTag}
           />
           <Stack direction="row" spacing={1} mt={1} justifyContent="center">
-            {skill.skillTag.split(" / ").map((tag) => (
+            {skill.skillTag.split("/").map((tag) => (
               <Chip key={tag} label={tag} color="primary" />
             ))}
           </Stack>

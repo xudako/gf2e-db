@@ -79,16 +79,7 @@ export interface GunGrade {
     skillIds: number[];
 }
 
-export interface Effect {
-    name: string;
-    descriptionID: number;
-}
-
 export interface Wpn {
-    name: string;
-    rarity: 3 | 4 | 5;
-    type: 'AR' | 'SMG' | 'RF' | 'HG' | 'MG' | 'SG' | 'ME';
-    internalName?: string;
 }
 
 export interface TableItem {
