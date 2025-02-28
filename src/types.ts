@@ -7,6 +7,7 @@ export interface Chr {
     duty: number; //'Bulwark' | 'Vanguard' | 'Support' | 'Sentinel'; //GunDutyData[doll['duty']]['name']
     weaponType: number; //'AR' | 'SMG' | 'RF' | 'HG' | 'MG' | 'SG' | 'ME'; //GunWeaponTypeData[doll['weaponType']]['name']
     skillNormalAttack: number; 
+    region: number;
     // element: 'Burn' | 'Corrosion' | 'Turbid' | 'Electric' | 'Ice' | ''; //
     // move: number;
     // stability: number;
@@ -24,13 +25,13 @@ export interface Duty {
     id: number;
     name: string;
     abbr: string;
-    description: string;
+    //description: string;
     icon: string;
 }
 
 export interface WeaponType {
     id: number;
-    name: string;
+    abbr: string;
     icon: string;
     skinIcon: string;
 }

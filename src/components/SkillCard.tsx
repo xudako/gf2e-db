@@ -113,7 +113,7 @@ const parseUnityRichText = (
       const buffId = buffIds[buffIndex];
       const buff: Buff =
         buffId[0] == "0"
-          ? buffId[1][0] == "-" &&
+          ? buffId[1].startsWith("-") &&
             parseInt(buffId[1].slice(3)) &&
             dynamicBuffs.has(parseInt(buffId[1].slice(3)))
             ? Tables.BattleBuffPerformData[
