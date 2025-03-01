@@ -238,7 +238,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
           left: 0,
           width: "100vw",
           height: "100vh",
-          bgcolor: "background.default",
+          bgcolor: "#2b2b2b",
           zIndex: 1300,
           p: 4,
           overflow: "auto",
@@ -254,9 +254,28 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
           {/* Character Info */}
           <Grid2 size={{ xs: 12, sm: 8, md: 6 }}>
             <Box sx={{ padding: 2 }}>
-              <Typography variant="h2">{character.name}</Typography>
+              <Typography
+                variant="h2"
+                sx={{
+                  color: `#${Tables.LanguageElementData[character.element][
+                    "color"
+                  ].slice(0, -2)}`,
+                }}
+              >
+                {character.name}
+              </Typography>
               {/* Stats Info */}
-              <Grid2 container spacing={1} sx={{mt: 2, border: "1px solid blue"}}>
+              <Grid2
+                container
+                spacing={1}
+                sx={{
+                  mt: 2,
+                  p: 3,
+                  "& .MuiTypography-root": {
+                    color: "whitesmoke",
+                  },
+                }}
+              >
                 <Grid2 size={{ xs: 2 }}>
                   <Typography>Class:</Typography>
                 </Grid2>
@@ -408,7 +427,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                     <Typography>Move: {character.move}</Typography>
                   </Stack>
                 </Grid2> */}
-                <Grid2 size={{ xs: 6 }}>
+                <Grid2 size={{ md: 12, xl: 6 }}>
                   <Box sx={{ width: 300 }}>
                     <Typography>Level:</Typography>
                     <Slider
@@ -418,19 +437,25 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                       min={1}
                       max={60}
                       onChange={handleLevelChange}
+                      sx={{ maxWidth: 300 }}
                     />{" "}
                   </Box>
                 </Grid2>
               </Grid2>
 
               {/* Skills Info */}
-              <Grid2 container spacing={1} sx={{mt: 2}}>
+              <Grid2 container spacing={1} sx={{ mt: 2 }}>
                 <ToggleButtonGroup
                   value={currentSkillType}
                   exclusive
                   onChange={handleSkillTypeChange}
                   size="small"
-                  sx={{ mb: 2 }}
+                  sx={{
+                    mb: 2,
+                    "& .MuiToggleButton-root": {
+                      color: "whitesmoke",
+                    },
+                  }}
                 >
                   {skillTypes.map((skillType) => (
                     <ToggleButton
@@ -452,7 +477,12 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                     exclusive
                     onChange={handleSkillLevelChange}
                     size="small"
-                    sx={{ mb: 2 }}
+                    sx={{
+                      mb: 2,
+                      "& .MuiToggleButton-root": {
+                        color: "whitesmoke",
+                      },
+                    }}
                   >
                     {getLevels(currentSkillType).map((level) => (
                       <ToggleButton
@@ -483,6 +513,11 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                   onChange={handleSkinChange}
                   size="small"
                   exclusive
+                  sx={{
+                    "& .MuiToggleButton-root": {
+                      color: "whitesmoke",
+                    },
+                  }}
                 >
                   {skinData.map((skin) => (
                     <ToggleButton
