@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import { Chr } from "../types";
 import { characters, gunDuties, weaponTypes, elementTypes } from "../data/data";
 import { useNavigate } from "react-router-dom";
-import { Box, Grid2, ToggleButtonGroup, ToggleButton } from "@mui/material";
+import {
+  Box,
+  Grid2,
+  ToggleButtonGroup,
+  ToggleButton,
+  Button,
+} from "@mui/material";
 
 function stripCode(input: string): string {
   return input.replace(/ssr$/i, "").replace(/sr$/i, "");
@@ -82,75 +88,75 @@ const CharacterGrid: React.FC = () => {
 
   return (
     <Box>
-      <Box 
-  sx={{ 
-    display: 'flex', 
-    flexWrap: 'wrap',
-    columnGap: 2,
-  }}
->
-      <ToggleButtonGroup //Region Filter
-        value={filterRegion}
-        exclusive
-        onChange={handleRegionFilter}
-        size="small"
+      <Box
         sx={{
-          mb: 2,
-          bgcolor: "primary.main",
-          border: "1px solid",
-          borderColor: 'divider',
-          "& .MuiToggleButton-root": {
-            color: "grey.300",
-            "&.Mui-selected": {
-              color: "secondary.main",
-              backgroundColor: "rgba(255, 255, 255, 0.08)",
-            },
-          },
+          display: "flex",
+          flexWrap: "wrap",
+          columnGap: 2,
         }}
       >
-        <ToggleButton
-          key={0}
-          value={0}
+        <ToggleButtonGroup //Region Filter
+          value={filterRegion}
+          exclusive
+          onChange={handleRegionFilter}
+          size="small"
           sx={{
-            p: "5px",
-            typography: "subtitle2",
-            minWidth: "4rem",
-          }}
-        >
-          CN
-        </ToggleButton>
-        <ToggleButton
-          key={1}
-          value={1}
-          sx={{
-            p: "5px",
-            typography: "subtitle2",
-            minWidth: "4rem",
-          }}
-        >
-          EN
-        </ToggleButton>
-      </ToggleButtonGroup>
-      <ToggleButtonGroup //Rarity Filter
-        value={filterRarity}
-        exclusive
-        onChange={handleRarityFilter}
-        size="small"
-        sx={{
-          mb: 2,
-          bgcolor: "primary.main",
-          border: "1px solid",
-          borderColor: 'divider',
-          "& .MuiToggleButton-root": {
-            color: "grey.300",
-            "&.Mui-selected": {
-              color: "secondary.main",
-              backgroundColor: "rgba(255, 255, 255, 0.08)",
+            mb: 2,
+            bgcolor: "primary.main",
+            border: "1px solid",
+            borderColor: "divider",
+            "& .MuiToggleButton-root": {
+              color: "grey.300",
+              "&.Mui-selected": {
+                color: "secondary.main",
+                backgroundColor: "rgba(255, 255, 255, 0.08)",
+              },
             },
-          },
-        }}
-      >
-        {/* <ToggleButton
+          }}
+        >
+          <ToggleButton
+            key={0}
+            value={0}
+            sx={{
+              p: "5px",
+              typography: "subtitle2",
+              minWidth: "4rem",
+            }}
+          >
+            CN
+          </ToggleButton>
+          <ToggleButton
+            key={1}
+            value={1}
+            sx={{
+              p: "5px",
+              typography: "subtitle2",
+              minWidth: "4rem",
+            }}
+          >
+            EN
+          </ToggleButton>
+        </ToggleButtonGroup>
+        <ToggleButtonGroup //Rarity Filter
+          value={filterRarity}
+          exclusive
+          onChange={handleRarityFilter}
+          size="small"
+          sx={{
+            mb: 2,
+            bgcolor: "primary.main",
+            border: "1px solid",
+            borderColor: "divider",
+            "& .MuiToggleButton-root": {
+              color: "grey.300",
+              "&.Mui-selected": {
+                color: "secondary.main",
+                backgroundColor: "rgba(255, 255, 255, 0.08)",
+              },
+            },
+          }}
+        >
+          {/* <ToggleButton
           key={-1}
           value={-1}
           sx={{
@@ -161,128 +167,149 @@ const CharacterGrid: React.FC = () => {
         >
           All
         </ToggleButton> */}
-        <ToggleButton
-          key={4}
-          value={4}
-          sx={{
-            p: "5px",
-            typography: "subtitle2",
-            minWidth: "4rem",
-          }}
-        >
-          SR
-        </ToggleButton>
-        <ToggleButton
-          key={5}
-          value={5}
-          sx={{
-            p: "5px",
-            typography: "subtitle2",
-            minWidth: "4rem",
-          }}
-        >
-          SSR
-        </ToggleButton>
-      </ToggleButtonGroup>
-      <ToggleButtonGroup //Role Filter
-        value={filterRole}
-        exclusive
-        onChange={handleRoleFilter}
-        size="small"
-        sx={{
-          mb: 2,
-          bgcolor: "primary.main",
-          border: "1px solid",
-          borderColor: 'divider',
-          "& .MuiToggleButton-root": {
-            color: "grey.300",
-            "&.Mui-selected": {
-              color: "secondary.main",
-              backgroundColor: "rgba(255, 255, 255, 0.08)",
-            },
-          },
-        }}
-      >
-        {gunDuties.map((role) => (
           <ToggleButton
-            key={role.id}
-            value={role.id}
-            sx={{
-              p: "5px",
-              typography: "subtitle2",
-              minWidth: "6rem",
-            }}
-          >
-            {role.name}
-          </ToggleButton>
-        ))}
-      </ToggleButtonGroup>
-      <ToggleButtonGroup //Weapon Filter
-        value={filterWeapon}
-        exclusive
-        onChange={handleWeaponFilter}
-        size="small"
-        sx={{
-          mb: 2,
-          bgcolor: "primary.main",
-          border: "1px solid",
-          borderColor: 'divider',
-          "& .MuiToggleButton-root": {
-            color: "grey.300",
-            "&.Mui-selected": {
-              color: "secondary.main",
-              backgroundColor: "rgba(255, 255, 255, 0.08)",
-            },
-          },
-        }}
-      >
-        {weaponTypes.map((weapon) => (
-          <ToggleButton
-            key={weapon.id}
-            value={weapon.id}
+            key={4}
+            value={4}
             sx={{
               p: "5px",
               typography: "subtitle2",
               minWidth: "4rem",
             }}
           >
-            {weapon.abbr}
+            SR
           </ToggleButton>
-        ))}
-      </ToggleButtonGroup>
-      <ToggleButtonGroup //Element Filter
-        value={filterElement}
-        exclusive
-        onChange={handleElementFilter}
-        size="small"
-        sx={{
-          mb: 2,
-          bgcolor: "primary.main",
-          border: "1px solid",
-          borderColor: 'divider',
-          "& .MuiToggleButton-root": {
-            color: "grey.300",
-            "&.Mui-selected": {
-              color: "secondary.main",
-              backgroundColor: "rgba(255, 255, 255, 0.08)",
-            },
-          },
-        }}
-      >
-        {elementTypes.slice(0, -2).map((element) => (
           <ToggleButton
-            key={element.id}
-            value={element.id}
+            key={5}
+            value={5}
             sx={{
               p: "5px",
               typography: "subtitle2",
-              minWidth: "6rem",
+              minWidth: "4rem",
             }}
           >
-            {element.name}
+            SSR
           </ToggleButton>
-        ))}
-      </ToggleButtonGroup>
+        </ToggleButtonGroup>
+        <ToggleButtonGroup //Role Filter
+          value={filterRole}
+          exclusive
+          onChange={handleRoleFilter}
+          size="small"
+          sx={{
+            mb: 2,
+            bgcolor: "primary.main",
+            border: "1px solid",
+            borderColor: "divider",
+            "& .MuiToggleButton-root": {
+              color: "grey.300",
+              "&.Mui-selected": {
+                color: "secondary.main",
+                backgroundColor: "rgba(255, 255, 255, 0.08)",
+              },
+            },
+          }}
+        >
+          {gunDuties.map((role) => (
+            <ToggleButton
+              key={role.id}
+              value={role.id}
+              sx={{
+                p: "5px",
+                typography: "subtitle2",
+                minWidth: "6rem",
+              }}
+            >
+              {role.name}
+            </ToggleButton>
+          ))}
+        </ToggleButtonGroup>
+        <ToggleButtonGroup //Weapon Filter
+          value={filterWeapon}
+          exclusive
+          onChange={handleWeaponFilter}
+          size="small"
+          sx={{
+            mb: 2,
+            bgcolor: "primary.main",
+            border: "1px solid",
+            borderColor: "divider",
+            "& .MuiToggleButton-root": {
+              color: "grey.300",
+              "&.Mui-selected": {
+                color: "secondary.main",
+                backgroundColor: "rgba(255, 255, 255, 0.08)",
+              },
+            },
+          }}
+        >
+          {weaponTypes.map((weapon) => (
+            <ToggleButton
+              key={weapon.id}
+              value={weapon.id}
+              sx={{
+                p: "5px",
+                typography: "subtitle2",
+                minWidth: "4rem",
+              }}
+            >
+              {weapon.abbr}
+            </ToggleButton>
+          ))}
+        </ToggleButtonGroup>
+        <ToggleButtonGroup //Element Filter
+          value={filterElement}
+          exclusive
+          onChange={handleElementFilter}
+          size="small"
+          sx={{
+            mb: 2,
+            bgcolor: "primary.main",
+            border: "1px solid",
+            borderColor: "divider",
+            "& .MuiToggleButton-root": {
+              color: "grey.300",
+              "&.Mui-selected": {
+                color: "secondary.main",
+                backgroundColor: "rgba(255, 255, 255, 0.08)",
+              },
+            },
+          }}
+        >
+          {elementTypes.slice(0, -2).map((element) => (
+            <ToggleButton
+              key={element.id}
+              value={element.id}
+              sx={{
+                p: "5px",
+                typography: "subtitle2",
+                minWidth: "6rem",
+              }}
+            >
+              {element.name}
+            </ToggleButton>
+          ))}
+        </ToggleButtonGroup>
+        <Button
+          onClick={() => {
+            setFilterRegion(-1);
+            setFilterRarity(-1);
+            setFilterRole(-1);
+            setFilterWeapon(-1);
+            setFilterElement(-1);
+          }}
+          sx={{
+            mb: 2,
+            bgcolor: "primary.main",
+            border: "1px solid",
+            borderColor: "divider",
+            p: "5px",
+            typography: "subtitle2",
+            minWidth: "6rem",
+            color: "grey.300",
+          }}
+        >
+          Reset
+        </Button>
       </Box>
       <Grid2 container spacing={2} columns={8}>
         {filteredCharacters.map((character) => (
