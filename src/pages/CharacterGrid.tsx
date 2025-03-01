@@ -82,12 +82,31 @@ const CharacterGrid: React.FC = () => {
 
   return (
     <Box>
+      <Box 
+  sx={{ 
+    display: 'flex', 
+    flexWrap: 'wrap',
+    columnGap: 2,
+  }}
+>
       <ToggleButtonGroup //Region Filter
         value={filterRegion}
         exclusive
         onChange={handleRegionFilter}
         size="small"
-        sx={{ mb: 2 }}
+        sx={{
+          mb: 2,
+          bgcolor: "primary.main",
+          border: "1px solid",
+          borderColor: 'divider',
+          "& .MuiToggleButton-root": {
+            color: "grey.300",
+            "&.Mui-selected": {
+              color: "secondary.main",
+              backgroundColor: "rgba(255, 255, 255, 0.08)",
+            },
+          },
+        }}
       >
         <ToggleButton
           key={0}
@@ -117,7 +136,19 @@ const CharacterGrid: React.FC = () => {
         exclusive
         onChange={handleRarityFilter}
         size="small"
-        sx={{ mb: 2 }}
+        sx={{
+          mb: 2,
+          bgcolor: "primary.main",
+          border: "1px solid",
+          borderColor: 'divider',
+          "& .MuiToggleButton-root": {
+            color: "grey.300",
+            "&.Mui-selected": {
+              color: "secondary.main",
+              backgroundColor: "rgba(255, 255, 255, 0.08)",
+            },
+          },
+        }}
       >
         {/* <ToggleButton
           key={-1}
@@ -158,7 +189,19 @@ const CharacterGrid: React.FC = () => {
         exclusive
         onChange={handleRoleFilter}
         size="small"
-        sx={{ mb: 2 }}
+        sx={{
+          mb: 2,
+          bgcolor: "primary.main",
+          border: "1px solid",
+          borderColor: 'divider',
+          "& .MuiToggleButton-root": {
+            color: "grey.300",
+            "&.Mui-selected": {
+              color: "secondary.main",
+              backgroundColor: "rgba(255, 255, 255, 0.08)",
+            },
+          },
+        }}
       >
         {gunDuties.map((role) => (
           <ToggleButton
@@ -167,7 +210,7 @@ const CharacterGrid: React.FC = () => {
             sx={{
               p: "5px",
               typography: "subtitle2",
-              minWidth: "4rem",
+              minWidth: "6rem",
             }}
           >
             {role.name}
@@ -179,7 +222,19 @@ const CharacterGrid: React.FC = () => {
         exclusive
         onChange={handleWeaponFilter}
         size="small"
-        sx={{ mb: 2 }}
+        sx={{
+          mb: 2,
+          bgcolor: "primary.main",
+          border: "1px solid",
+          borderColor: 'divider',
+          "& .MuiToggleButton-root": {
+            color: "grey.300",
+            "&.Mui-selected": {
+              color: "secondary.main",
+              backgroundColor: "rgba(255, 255, 255, 0.08)",
+            },
+          },
+        }}
       >
         {weaponTypes.map((weapon) => (
           <ToggleButton
@@ -200,26 +255,39 @@ const CharacterGrid: React.FC = () => {
         exclusive
         onChange={handleElementFilter}
         size="small"
-        sx={{ mb: 2 }}
+        sx={{
+          mb: 2,
+          bgcolor: "primary.main",
+          border: "1px solid",
+          borderColor: 'divider',
+          "& .MuiToggleButton-root": {
+            color: "grey.300",
+            "&.Mui-selected": {
+              color: "secondary.main",
+              backgroundColor: "rgba(255, 255, 255, 0.08)",
+            },
+          },
+        }}
       >
-        {elementTypes.slice(0,-2).map((element) => (
+        {elementTypes.slice(0, -2).map((element) => (
           <ToggleButton
             key={element.id}
             value={element.id}
             sx={{
               p: "5px",
               typography: "subtitle2",
-              minWidth: "4rem",
+              minWidth: "6rem",
             }}
           >
             {element.name}
           </ToggleButton>
         ))}
       </ToggleButtonGroup>
-      <Grid2 container spacing={2}>
+      </Box>
+      <Grid2 container spacing={2} columns={8}>
         {filteredCharacters.map((character) => (
           <Grid2
-            size={{ xs: 3, lg: 2, xl: 1 }}
+            size={{ xs: 4, lg: 2, xl: 1 }}
             key={character.name}
             onClick={() => handleCharacterSelect(character)}
             onMouseEnter={() => setHoveredCharacter(character)}

@@ -1,14 +1,14 @@
 {
     "data": [
         {
+            "id": 0,
             "name": "Physical",
             "nameEn": "Physical",
             "icon": "Icon_BulletHit_Physical",
             "color": "c9c8ceFF",
             "barrackAvailable": 1,
             "increase": 40,
-            "resist": 48,
-            "id": 0
+            "resist": 48
         },
         {
             "id": 1,

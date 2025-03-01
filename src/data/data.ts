@@ -58,5 +58,5 @@ export const characters: Chr[] = gunData["data"].map((gun: any) => ({
   ...gun,
   skins: gun.costumeReplace,
   region: enDolls.includes(gun.name) ? 1 : 0,
-  element: Math.max(...Tables.GunGradeData[gun.id*100+1].abbr.map((skill: any) => (Tables.BattleSkillData[skill].elementTag)))
+  element: gun.name == 'Mosin-Nagant' ? 2 : Math.max(...Tables.GunGradeData[gun.id*100+1].abbr.map((skill: any) => (Tables.BattleSkillData[skill].elementTag)))
 }));

@@ -297,18 +297,18 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                 <Grid2 size={{ xs: 2 }}>
                   <Typography>Element:</Typography>
                 </Grid2>
-                {/* <Grid2 size={{ xs: 4 }}>
-                  {character.element && (
+                <Grid2 size={{ xs: 4 }}>
                     <HoverInfo title={character.element}>
                       <Box
                         component="img"
-                        src={elementIcons[character.element]}
-                        alt={`${character.element} icon`}
+                        src={`${import.meta.env.BASE_URL}icons/${
+                        Tables.LanguageElementData[character.element]["icon"]
+                      }_S.png`}
+                        alt={`${Tables.LanguageElementData[character.element]["name"]} icon`}
                         sx={{ verticalAlign: "middle", height: "4rem" }}
                       />
                     </HoverInfo>
-                  )}
-                </Grid2> */}
+                </Grid2>
                 <Grid2 size={{ xs: 2 }}>
                   <Typography sx={{ verticalAlign: "middle" }}>
                     Weakness:
