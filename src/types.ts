@@ -9,6 +9,7 @@ export interface Chr {
     skillNormalAttack: number; 
     region: number;
     element: number;
+    weak: number[];
     // move: number;
     // stability: number;
     // weakness: string[];

@@ -15,6 +15,7 @@ import {
   styled,
   Slider,
   SliderProps,
+  Stack,
 } from "@mui/material";
 import Tables from "../data/TableLoader";
 import CloseIcon from "@mui/icons-material/Close";
@@ -298,7 +299,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                   <Typography>Element:</Typography>
                 </Grid2>
                 <Grid2 size={{ xs: 4 }}>
-                    <HoverInfo title={character.element}>
+                    <HoverInfo title={Tables.LanguageElementData[character.element]["name"]}>
                       <Box
                         component="img"
                         src={`${import.meta.env.BASE_URL}icons/${
@@ -314,27 +315,31 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                     Weakness:
                   </Typography>
                 </Grid2>
-                {/* <Grid2 size={{ xs: 4 }}>
+                <Grid2 size={{ xs: 4 }}>
                   <Stack direction="row">
-                    <HoverInfo title={character.weakness[0]}>
+                    <HoverInfo title={Tables.WeaponTagData[character.weak[0]]["name"]}>
                       <Box
                         component="img"
-                        src={ammoIcons[character.weakness[0]]}
-                        alt={`${character.weakness[0]} icon`}
+                        src={`${import.meta.env.BASE_URL}icons/${
+                        Tables.WeaponTagData[character.weak[0]]["icon"]
+                      }_S.png`}
+                        alt={`${Tables.WeaponTagData[character.weak[0]]["name"]} icon`}
                         sx={{ verticalAlign: "middle", height: "4rem" }}
                       />
                     </HoverInfo>
-                    <HoverInfo title={character.weakness[1]}>
+                    <HoverInfo title={Tables.LanguageElementData[character.weak[1]]["name"]}>
                       <Box
                         component="img"
-                        src={elementIcons[character.weakness[1]]}
-                        alt={`${character.weakness[1]} icon`}
+                        src={`${import.meta.env.BASE_URL}icons/${
+                        Tables.LanguageElementData[character.weak[1]]["icon"]
+                      }_S.png`}
+                        alt={`${Tables.LanguageElementData[character.weak[1]]["name"]} icon`}
                         sx={{ verticalAlign: "middle", height: "4rem" }}
                       />
                     </HoverInfo>
                   </Stack>
                 </Grid2>
-                <Grid2 size={{ xs: 4 }}>
+                {/* <Grid2 size={{ xs: 4 }}>
                   <Stack direction="row">
                     <Box
                       component="img"
