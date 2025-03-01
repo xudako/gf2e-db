@@ -138,7 +138,10 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
       range: display.rangeDisplayParam || data.skillRangeParam,
       shape: display.shapeDisplay || data.shape,
       shapeParam: display.shapeDisplayParam || data.shapeParam,
-      weaponTag: data.weaponTag == 1 ? ammoType.get(character.weaponType) : data.weaponTag,
+      weaponTag:
+        data.weaponTag == 1
+          ? ammoType.get(character.weaponType)
+          : data.weaponTag,
     };
   };
   const skillIds = vertebraeIds.map(
@@ -247,20 +250,17 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
         >
           <CloseIcon />
         </IconButton>
-        <Grid2 container spacing={2} sx={{ border: "1px solid red" }}>
+        <Grid2 container spacing={2}>
           {/* Character Info */}
-          <Grid2
-            size={{ xs: 12, sm: 8, md: 6 }}
-            sx={{ border: "1px solid orange" }}
-          >
+          <Grid2 size={{ xs: 12, sm: 8, md: 6 }}>
             <Box sx={{ padding: 2 }}>
-              <Typography variant="h6">{character.name}</Typography>
+              <Typography variant="h2">{character.name}</Typography>
               {/* Stats Info */}
-              <Grid2 container spacing={1} sx={{ border: "1px solid yellow" }}>
-                <Grid2 size={{ xs: 2 }} sx={{ border: "1px solid green" }}>
+              <Grid2 container spacing={1} sx={{mt: 2, border: "1px solid blue"}}>
+                <Grid2 size={{ xs: 2 }}>
                   <Typography>Class:</Typography>
                 </Grid2>
-                <Grid2 size={{ xs: 4 }} sx={{ border: "1px solid green" }}>
+                <Grid2 size={{ xs: 4 }}>
                   <HoverInfo title={Tables.GunDutyData[character.duty].name}>
                     <Box
                       component="img"
@@ -299,16 +299,22 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                   <Typography>Element:</Typography>
                 </Grid2>
                 <Grid2 size={{ xs: 4 }}>
-                    <HoverInfo title={Tables.LanguageElementData[character.element]["name"]}>
-                      <Box
-                        component="img"
-                        src={`${import.meta.env.BASE_URL}icons/${
+                  <HoverInfo
+                    title={
+                      Tables.LanguageElementData[character.element]["name"]
+                    }
+                  >
+                    <Box
+                      component="img"
+                      src={`${import.meta.env.BASE_URL}icons/${
                         Tables.LanguageElementData[character.element]["icon"]
                       }_S.png`}
-                        alt={`${Tables.LanguageElementData[character.element]["name"]} icon`}
-                        sx={{ verticalAlign: "middle", height: "4rem" }}
-                      />
-                    </HoverInfo>
+                      alt={`${
+                        Tables.LanguageElementData[character.element]["name"]
+                      } icon`}
+                      sx={{ verticalAlign: "middle", height: "4rem" }}
+                    />
+                  </HoverInfo>
                 </Grid2>
                 <Grid2 size={{ xs: 2 }}>
                   <Typography sx={{ verticalAlign: "middle" }}>
@@ -317,27 +323,40 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                 </Grid2>
                 <Grid2 size={{ xs: 4 }}>
                   <Stack direction="row">
-                    <HoverInfo title={Tables.WeaponTagData[character.weak[0]]["name"]}>
+                    <HoverInfo
+                      title={Tables.WeaponTagData[character.weak[0]]["name"]}
+                    >
                       <Box
                         component="img"
                         src={`${import.meta.env.BASE_URL}icons/${
-                        Tables.WeaponTagData[character.weak[0]]["icon"]
-                      }_S.png`}
-                        alt={`${Tables.WeaponTagData[character.weak[0]]["name"]} icon`}
+                          Tables.WeaponTagData[character.weak[0]]["icon"]
+                        }_S.png`}
+                        alt={`${
+                          Tables.WeaponTagData[character.weak[0]]["name"]
+                        } icon`}
                         sx={{ verticalAlign: "middle", height: "4rem" }}
                       />
                     </HoverInfo>
-                    <HoverInfo title={Tables.LanguageElementData[character.weak[1]]["name"]}>
+                    <HoverInfo
+                      title={
+                        Tables.LanguageElementData[character.weak[1]]["name"]
+                      }
+                    >
                       <Box
                         component="img"
                         src={`${import.meta.env.BASE_URL}icons/${
-                        Tables.LanguageElementData[character.weak[1]]["icon"]
-                      }_S.png`}
-                        alt={`${Tables.LanguageElementData[character.weak[1]]["name"]} icon`}
+                          Tables.LanguageElementData[character.weak[1]]["icon"]
+                        }_S.png`}
+                        alt={`${
+                          Tables.LanguageElementData[character.weak[1]]["name"]
+                        } icon`}
                         sx={{ verticalAlign: "middle", height: "4rem" }}
                       />
                     </HoverInfo>
                   </Stack>
+                </Grid2>
+                <Grid2 size={{ xs: 6 }}>
+                  <Typography>Stats:</Typography>
                 </Grid2>
                 {/* <Grid2 size={{ xs: 4 }}>
                   <Stack direction="row">
@@ -389,7 +408,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                     <Typography>Move: {character.move}</Typography>
                   </Stack>
                 </Grid2> */}
-                <Grid2>
+                <Grid2 size={{ xs: 6 }}>
                   <Box sx={{ width: 300 }}>
                     <Typography>Level:</Typography>
                     <Slider
@@ -405,7 +424,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
               </Grid2>
 
               {/* Skills Info */}
-              <Grid2 container spacing={1} sx={{ border: "1px solid blue" }}>
+              <Grid2 container spacing={1} sx={{mt: 2}}>
                 <ToggleButtonGroup
                   value={currentSkillType}
                   exclusive
@@ -456,10 +475,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
           </Grid2>
 
           {/* Character Image */}
-          <Grid2
-            size={{ xs: 12, sm: 4, md: 6 }}
-            sx={{ border: "1px solid purple" }}
-          >
+          <Grid2 size={{ xs: 12, sm: 4, md: 6 }}>
             <Box sx={{ padding: 2 }}>
               {character.skins.length > 1 ? (
                 <ToggleButtonGroup
