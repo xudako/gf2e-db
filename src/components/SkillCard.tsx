@@ -246,7 +246,13 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
             element={skill.elementTag}
             weapon={skill.weaponTag}
           />
-          <Stack direction="row" spacing={1} mt={1} justifyContent="center">
+          <Stack
+            direction="row"
+            spacing={1}
+            mt={1}
+            justifyContent="center"
+            sx={{ display: "flex", flexWrap: "wrap", rowGap: 1 }}
+          >
             {skill.skillTag.split("/").map((tag) => (
               <Chip key={tag} label={tag} color="primary" />
             ))}
