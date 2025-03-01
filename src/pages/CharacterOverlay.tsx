@@ -515,7 +515,11 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                   exclusive
                   sx={{
                     "& .MuiToggleButton-root": {
-                      color: "whitesmoke",
+                      color: "grey.300",
+                      "&.Mui-selected": {
+                        color: "secondary.main",
+                        backgroundColor: "rgba(255, 255, 255, 0.08)",
+                      },
                     },
                   }}
                 >
