@@ -8,7 +8,7 @@ export interface Chr {
     weaponType: number; //'AR' | 'SMG' | 'RF' | 'HG' | 'MG' | 'SG' | 'ME'; //GunWeaponTypeData[doll['weaponType']]['name']
     skillNormalAttack: number; 
     region: number;
-    // element: 'Burn' | 'Corrosion' | 'Turbid' | 'Electric' | 'Ice' | ''; //
+    element: number;
     // move: number;
     // stability: number;
     // weakness: string[];
@@ -34,6 +34,12 @@ export interface WeaponType {
     abbr: string;
     icon: string;
     skinIcon: string;
+}
+
+export interface ElementType {
+    id: number;
+    name: string;
+    icon: string;
 }
 
 export interface Skill {

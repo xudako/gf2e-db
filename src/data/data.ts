@@ -2,7 +2,9 @@ import gunData from "./tables/GunData.json";
 import gunDutyData from "./tables/GunDutyData.json";
 import gunWeaponTypeData from "./tables/GunWeaponTypeData.json";
 import gunGradeData from "./tables/GunGradeData.json";
-import { Chr, Duty, WeaponType, GunGrade } from "../types";
+import elementTypeData from "./tables/LanguageElementData.json"
+import { Chr, Duty, WeaponType, ElementType, GunGrade } from "../types";
+import Tables from "./TableLoader";
 
 const enDolls: string[] = [
   "Groza",
@@ -41,6 +43,12 @@ export const weaponTypes: WeaponType[] = gunWeaponTypeData["data"].map(
   })
 );
 
+export const elementTypes: ElementType[] = elementTypeData["data"].map(
+  (etype: any) => ({
+    ...etype,
+  })
+);
+
 export const gunGrades: GunGrade[] = gunGradeData["data"].map((grade: any) => ({
   ...grade,
   skillIds: grade.abbr,
@@ -50,4 +58,5 @@ export const characters: Chr[] = gunData["data"].map((gun: any) => ({
   ...gun,
   skins: gun.costumeReplace,
   region: enDolls.includes(gun.name) ? 1 : 0,
+  element: Math.max(...Tables.GunGradeData[gun.id*100+1].abbr.map((skill: any) => (Tables.BattleSkillData[skill].elementTag)))
 }));

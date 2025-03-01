@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Chr } from "../types";
-import { characters, gunDuties, weaponTypes } from "../data/data";
+import { characters, gunDuties, weaponTypes, elementTypes } from "../data/data";
 import { useNavigate } from "react-router-dom";
 import { Box, Grid2, ToggleButtonGroup, ToggleButton } from "@mui/material";
 
@@ -15,7 +15,7 @@ const CharacterGrid: React.FC = () => {
   const [filterRarity, setFilterRarity] = useState<number>(-1);
   const [filterRole, setFilterRole] = useState<number>(-1);
   const [filterWeapon, setFilterWeapon] = useState<number>(-1);
-  //const [filterElement, setFilterElement] = useState<number>(-1);
+  const [filterElement, setFilterElement] = useState<number>(-1);
   const navigate = useNavigate();
 
   const handleCharacterSelect = (character: Chr) => {
@@ -51,6 +51,13 @@ const CharacterGrid: React.FC = () => {
     newWeapon === null ? setFilterWeapon(-1) : setFilterWeapon(newWeapon);
   };
 
+  const handleElementFilter = (
+    _event: React.MouseEvent<HTMLElement>,
+    newElement: number | null
+  ) => {
+    newElement === null ? setFilterElement(-1) : setFilterElement(newElement);
+  };
+
   const sortedCharacters = characters.sort((a, b) => {
     if (a.rank != b.rank) {
       return b.rank - a.rank;
@@ -59,14 +66,18 @@ const CharacterGrid: React.FC = () => {
   });
 
   const filteredCharacters = sortedCharacters.filter((character) => {
-    const regionMatch = filterRegion === -1 || filterRegion === character.region;
+    const regionMatch =
+      filterRegion === -1 || filterRegion === character.region;
     const rarityMatch = filterRarity === -1 || filterRarity === character.rank;
     const roleMatch = filterRole === -1 || filterRole === character.duty;
     const weaponMatch =
       filterWeapon === -1 || filterWeapon === character.weaponType;
-    //const elementMatch = filterElement === -1 || filterElement === character.element;
+    const elementMatch =
+      filterElement === -1 || filterElement === character.element;
 
-    return regionMatch && rarityMatch && roleMatch && weaponMatch;
+    return (
+      regionMatch && rarityMatch && roleMatch && weaponMatch && elementMatch
+    );
   });
 
   return (
@@ -181,6 +192,27 @@ const CharacterGrid: React.FC = () => {
             }}
           >
             {weapon.abbr}
+          </ToggleButton>
+        ))}
+      </ToggleButtonGroup>
+      <ToggleButtonGroup //Element Filter
+        value={filterElement}
+        exclusive
+        onChange={handleElementFilter}
+        size="small"
+        sx={{ mb: 2 }}
+      >
+        {elementTypes.slice(0,-2).map((element) => (
+          <ToggleButton
+            key={element.id}
+            value={element.id}
+            sx={{
+              p: "5px",
+              typography: "subtitle2",
+              minWidth: "4rem",
+            }}
+          >
+            {element.name}
           </ToggleButton>
         ))}
       </ToggleButtonGroup>
