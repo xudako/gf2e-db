@@ -2,17 +2,30 @@ import React, { useState } from "react";
 import { Chr } from "../types";
 import { characters, gunDuties, weaponTypes, elementTypes } from "../data/data";
 import { useNavigate } from "react-router-dom";
-import {
-  Box,
-  Grid2,
-  ToggleButtonGroup,
-  ToggleButton,
-  Button,
-} from "@mui/material";
 
 function stripCode(input: string): string {
   return input.replace(/ssr$/i, "").replace(/sr$/i, "");
 }
+
+interface ToggleButtonProps {
+  selected: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+  className?: string;
+}
+
+const ToggleButton: React.FC<ToggleButtonProps> = ({ selected, onClick, children, className = "" }) => (
+  <button
+    onClick={onClick}
+    className={`px-2 py-1 min-w-[4rem] text-sm border border-filter-button-border transition-colors
+      ${selected 
+        ? "bg-background-hover text-filter-button-selected" 
+        : "text-filter-button-text hover:bg-background-hover"
+      } ${className}`}
+  >
+    {children}
+  </button>
+);
 
 const CharacterGrid: React.FC = () => {
   const [selectedCharacter, setSelectedCharacter] = useState<Chr | null>(null);
@@ -29,267 +42,109 @@ const CharacterGrid: React.FC = () => {
     navigate(`/dolls/${character.name}`);
   };
 
-  const handleRegionFilter = (
-    _event: React.MouseEvent<HTMLElement>,
-    newRegion: number | null
-  ) => {
-    newRegion === null ? setFilterRegion(-1) : setFilterRegion(newRegion);
+  const handleRegionFilter = (newRegion: number) => {
+    setFilterRegion(filterRegion === newRegion ? -1 : newRegion);
   };
 
-  const handleRarityFilter = (
-    _event: React.MouseEvent<HTMLElement>,
-    newRarity: number | null
-  ) => {
-    newRarity === null ? setFilterRarity(-1) : setFilterRarity(newRarity);
+  const handleRarityFilter = (newRarity: number) => {
+    setFilterRarity(filterRarity === newRarity ? -1 : newRarity);
   };
 
-  const handleRoleFilter = (
-    _event: React.MouseEvent<HTMLElement>,
-    newRole: number | null
-  ) => {
-    newRole === null ? setFilterRole(-1) : setFilterRole(newRole);
+  const handleRoleFilter = (newRole: number) => {
+    setFilterRole(filterRole === newRole ? -1 : newRole);
   };
 
-  const handleWeaponFilter = (
-    _event: React.MouseEvent<HTMLElement>,
-    newWeapon: number | null
-  ) => {
-    newWeapon === null ? setFilterWeapon(-1) : setFilterWeapon(newWeapon);
+  const handleWeaponFilter = (newWeapon: number) => {
+    setFilterWeapon(filterWeapon === newWeapon ? -1 : newWeapon);
   };
 
-  const handleElementFilter = (
-    _event: React.MouseEvent<HTMLElement>,
-    newElement: number | null
-  ) => {
-    newElement === null ? setFilterElement(-1) : setFilterElement(newElement);
+  const handleElementFilter = (newElement: number) => {
+    setFilterElement(filterElement === newElement ? -1 : newElement);
   };
 
   const sortedCharacters = characters.sort((a, b) => {
-    if (a.rank != b.rank) {
+    if (a.rank !== b.rank) {
       return b.rank - a.rank;
     }
     return a.name.localeCompare(b.name);
   });
 
   const filteredCharacters = sortedCharacters.filter((character) => {
-    const regionMatch =
-      filterRegion === -1 || filterRegion === character.region;
+    const regionMatch = filterRegion === -1 || filterRegion === character.region;
     const rarityMatch = filterRarity === -1 || filterRarity === character.rank;
     const roleMatch = filterRole === -1 || filterRole === character.duty;
-    const weaponMatch =
-      filterWeapon === -1 || filterWeapon === character.weaponType;
-    const elementMatch =
-      filterElement === -1 || filterElement === character.element;
+    const weaponMatch = filterWeapon === -1 || filterWeapon === character.weaponType;
+    const elementMatch = filterElement === -1 || filterElement === character.element;
 
-    return (
-      regionMatch && rarityMatch && roleMatch && weaponMatch && elementMatch
-    );
+    return regionMatch && rarityMatch && roleMatch && weaponMatch && elementMatch;
   });
 
   return (
-    <Box>
-      <Box
-        sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          columnGap: 2,
-        }}
-      >
-        <ToggleButtonGroup //Region Filter
-          value={filterRegion}
-          exclusive
-          onChange={handleRegionFilter}
-          size="small"
-          sx={{
-            mb: 2,
-            bgcolor: "primary.main",
-            border: "1px solid",
-            borderColor: "divider",
-            "& .MuiToggleButton-root": {
-              color: "grey.300",
-              "&.Mui-selected": {
-                color: "secondary.main",
-                backgroundColor: "rgba(255, 255, 255, 0.08)",
-              },
-            },
-          }}
-        >
-          <ToggleButton
-            key={0}
-            value={0}
-            sx={{
-              p: "5px",
-              typography: "subtitle2",
-              minWidth: "4rem",
-            }}
-          >
+    <div>
+      <div className="flex flex-wrap gap-4 mb-4">
+        {/* Region Filter */}
+        <div className="flex bg-primary-main border border-filter-button-border">
+          <ToggleButton selected={filterRegion === 0} onClick={() => handleRegionFilter(0)}>
             CN
           </ToggleButton>
-          <ToggleButton
-            key={1}
-            value={1}
-            sx={{
-              p: "5px",
-              typography: "subtitle2",
-              minWidth: "4rem",
-            }}
-          >
+          <ToggleButton selected={filterRegion === 1} onClick={() => handleRegionFilter(1)}>
             EN
           </ToggleButton>
-        </ToggleButtonGroup>
-        <ToggleButtonGroup //Rarity Filter
-          value={filterRarity}
-          exclusive
-          onChange={handleRarityFilter}
-          size="small"
-          sx={{
-            mb: 2,
-            bgcolor: "primary.main",
-            border: "1px solid",
-            borderColor: "divider",
-            "& .MuiToggleButton-root": {
-              color: "grey.300",
-              "&.Mui-selected": {
-                color: "secondary.main",
-                backgroundColor: "rgba(255, 255, 255, 0.08)",
-              },
-            },
-          }}
-        >
-          {/* <ToggleButton
-          key={-1}
-          value={-1}
-          sx={{
-            p: "5px",
-            typography: "subtitle2",
-            minWidth: "6rem",
-          }}
-        >
-          All
-        </ToggleButton> */}
-          <ToggleButton
-            key={4}
-            value={4}
-            sx={{
-              p: "5px",
-              typography: "subtitle2",
-              minWidth: "4rem",
-            }}
-          >
+        </div>
+
+        {/* Rarity Filter */}
+        <div className="flex bg-primary-main border border-filter-button-border">
+          <ToggleButton selected={filterRarity === 4} onClick={() => handleRarityFilter(4)}>
             SR
           </ToggleButton>
-          <ToggleButton
-            key={5}
-            value={5}
-            sx={{
-              p: "5px",
-              typography: "subtitle2",
-              minWidth: "4rem",
-            }}
-          >
+          <ToggleButton selected={filterRarity === 5} onClick={() => handleRarityFilter(5)}>
             SSR
           </ToggleButton>
-        </ToggleButtonGroup>
-        <ToggleButtonGroup //Role Filter
-          value={filterRole}
-          exclusive
-          onChange={handleRoleFilter}
-          size="small"
-          sx={{
-            mb: 2,
-            bgcolor: "primary.main",
-            border: "1px solid",
-            borderColor: "divider",
-            "& .MuiToggleButton-root": {
-              color: "grey.300",
-              "&.Mui-selected": {
-                color: "secondary.main",
-                backgroundColor: "rgba(255, 255, 255, 0.08)",
-              },
-            },
-          }}
-        >
+        </div>
+
+        {/* Role Filter */}
+        <div className="flex bg-primary-main border border-filter-button-border">
           {gunDuties.map((role) => (
             <ToggleButton
               key={role.id}
-              value={role.id}
-              sx={{
-                p: "5px",
-                typography: "subtitle2",
-                minWidth: "6rem",
-              }}
+              selected={filterRole === role.id}
+              onClick={() => handleRoleFilter(role.id)}
+              className="min-w-[6rem]"
             >
               {role.name}
             </ToggleButton>
           ))}
-        </ToggleButtonGroup>
-        <ToggleButtonGroup //Weapon Filter
-          value={filterWeapon}
-          exclusive
-          onChange={handleWeaponFilter}
-          size="small"
-          sx={{
-            mb: 2,
-            bgcolor: "primary.main",
-            border: "1px solid",
-            borderColor: "divider",
-            "& .MuiToggleButton-root": {
-              color: "grey.300",
-              "&.Mui-selected": {
-                color: "secondary.main",
-                backgroundColor: "rgba(255, 255, 255, 0.08)",
-              },
-            },
-          }}
-        >
+        </div>
+
+        {/* Weapon Filter */}
+        <div className="flex bg-primary-main border border-filter-button-border">
           {weaponTypes.map((weapon) => (
             <ToggleButton
               key={weapon.id}
-              value={weapon.id}
-              sx={{
-                p: "5px",
-                typography: "subtitle2",
-                minWidth: "4rem",
-              }}
+              selected={filterWeapon === weapon.id}
+              onClick={() => handleWeaponFilter(weapon.id)}
             >
               {weapon.abbr}
             </ToggleButton>
           ))}
-        </ToggleButtonGroup>
-        <ToggleButtonGroup //Element Filter
-          value={filterElement}
-          exclusive
-          onChange={handleElementFilter}
-          size="small"
-          sx={{
-            mb: 2,
-            bgcolor: "primary.main",
-            border: "1px solid",
-            borderColor: "divider",
-            "& .MuiToggleButton-root": {
-              color: "grey.300",
-              "&.Mui-selected": {
-                color: "secondary.main",
-                backgroundColor: "rgba(255, 255, 255, 0.08)",
-              },
-            },
-          }}
-        >
+        </div>
+
+        {/* Element Filter */}
+        <div className="flex bg-primary-main border border-filter-button-border">
           {elementTypes.slice(0, -2).map((element) => (
             <ToggleButton
               key={element.id}
-              value={element.id}
-              sx={{
-                p: "5px",
-                typography: "subtitle2",
-                minWidth: "6rem",
-              }}
+              selected={filterElement === element.id}
+              onClick={() => handleElementFilter(element.id)}
+              className="min-w-[6rem]"
             >
               {element.name}
             </ToggleButton>
           ))}
-        </ToggleButtonGroup>
-        <Button
+        </div>
+
+        {/* Reset Button */}
+        <button
           onClick={() => {
             setFilterRegion(-1);
             setFilterRarity(-1);
@@ -297,83 +152,40 @@ const CharacterGrid: React.FC = () => {
             setFilterWeapon(-1);
             setFilterElement(-1);
           }}
-          sx={{
-            mb: 2,
-            bgcolor: "primary.main",
-            border: "1px solid",
-            borderColor: "divider",
-            p: "5px",
-            typography: "subtitle2",
-            minWidth: "6rem",
-            color: "grey.300",
-          }}
+          className="px-2 py-1 min-w-[6rem] text-sm bg-primary-main border border-filter-button-border text-filter-button-text hover:bg-background-hover transition-colors"
         >
           Reset
-        </Button>
-      </Box>
-      <Grid2 container spacing={2} columns={8}>
+        </button>
+      </div>
+
+      {/* Character Grid */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 gap-4">
         {filteredCharacters.map((character) => (
-          <Grid2
-            size={{ xs: 4, lg: 2, xl: 1 }}
+          <div
             key={character.name}
             onClick={() => handleCharacterSelect(character)}
             onMouseEnter={() => setHoveredCharacter(character)}
             onMouseLeave={() => setHoveredCharacter(null)}
-            sx={{
-              p: 1,
-              backgroundColor:
-                selectedCharacter?.name === character.name
-                  ? "primary.light"
-                  : "transparent",
-              "&:hover": { backgroundColor: "secondary.main", color: "white" },
-            }}
+            className={`p-4 transition-colors cursor-pointer
+              ${selectedCharacter?.name === character.name ? "bg-primary-light" : ""}
+              hover:bg-secondary-main hover:text-white`}
           >
-            <Box
-              component="img"
+            <img
               src={
-                character == hoveredCharacter
-                  ? `${
-                      import.meta.env.BASE_URL
-                    }dolls/Img_KittyCafe_Cat_${stripCode(character.code)}.png`
-                  : `${import.meta.env.BASE_URL}dolls/Avatar_Head_${
-                      character.code
-                    }_Spine.png`
+                character === hoveredCharacter
+                  ? `${import.meta.env.BASE_URL}dolls/Img_KittyCafe_Cat_${stripCode(character.code)}.png`
+                  : `${import.meta.env.BASE_URL}dolls/Avatar_Head_${character.code}_Spine.png`
               }
               alt={character.name}
-              onError={(e) =>
-                (e.currentTarget.src = `${
-                  import.meta.env.BASE_URL
-                }images/default.png`)
-              }
-              sx={{
-                bgcolor:
-                  character.rank === 5 ? "raritySSR.main" : "raritySR.main",
-                maxHeight: "400",
-                maxWidth: "100%",
-                objectFit: "contain",
-                borderRadius: "8",
-                cursor: "pointer",
-              }}
+              onError={(e) => (e.currentTarget.src = `${import.meta.env.BASE_URL}images/default.png`)}
+              className={`w-full aspect-square object-cover rounded-lg 
+                ${character.rank === 5 ? "bg-rarity-ssr" : "bg-rarity-sr"}`}
             />
-            <Box
-              sx={{
-                position: "relative",
-                bottom: "20px",
-                backgroundColor: "rgba(0, 0, 0, 0.6)",
-                color: "white",
-                px: "10",
-                textAlign: "center",
-                borderRadius: "4px",
-                fontSize: "14px",
-                cursor: "pointer",
-              }}
-            >
-              {character.name}
-            </Box>
-          </Grid2>
+            <div className="mt-2 text-center font-medium">{character.name}</div>
+          </div>
         ))}
-      </Grid2>
-    </Box>
+      </div>
+    </div>
   );
 };
 

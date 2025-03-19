@@ -14,10 +14,10 @@ const Header = () => {
   );
 
   const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
-    `text-white hover:text-gray-300 transition-colors ${isActive ? "text-orange-500 font-bold" : ""}`;
+    `text-primary-text hover:text-link-hover transition-colors ${isActive ? "text-secondary-main font-bold" : ""}`;
 
   return (
-    <header className="bg-gray-800 text-white">
+    <header className="bg-primary-main text-primary-text">
       <nav className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Home */}
@@ -46,8 +46,8 @@ const Header = () => {
             <div className="relative">
               <button
                 onClick={handleMenuToggle}
-                className={`flex items-center text-white hover:text-gray-300 transition-colors ${
-                  isMenuActive ? "text-orange-500 font-bold" : ""
+                className={`flex items-center text-primary-text hover:text-link-hover transition-colors ${
+                  isMenuActive ? "text-secondary-main font-bold" : ""
                 }`}
               >
                 Tools
@@ -65,11 +65,11 @@ const Header = () => {
 
               {/* Tools Dropdown */}
               {menuOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg py-1">
+                <div className="absolute right-0 mt-2 w-48 bg-primary-main rounded-md shadow-lg py-1">
                   <NavLink
                     to="/calculator"
                     className={({ isActive }) =>
-                      `block px-4 py-2 hover:bg-gray-700 ${isActive ? "bg-gray-700" : ""}`
+                      `block px-4 py-2 hover:bg-nav-hover ${isActive ? "bg-nav-hover text-secondary-main" : ""}`
                     }
                     onClick={() => setMenuOpen(false)}
                   >
@@ -78,7 +78,7 @@ const Header = () => {
                   <NavLink
                     to="/stages"
                     className={({ isActive }) =>
-                      `block px-4 py-2 hover:bg-gray-700 ${isActive ? "bg-gray-700" : ""}`
+                      `block px-4 py-2 hover:bg-nav-hover ${isActive ? "bg-nav-hover text-secondary-main" : ""}`
                     }
                     onClick={() => setMenuOpen(false)}
                   >
@@ -87,7 +87,7 @@ const Header = () => {
                   <NavLink
                     to="/story"
                     className={({ isActive }) =>
-                      `block px-4 py-2 hover:bg-gray-700 ${isActive ? "bg-gray-700" : ""}`
+                      `block px-4 py-2 hover:bg-nav-hover ${isActive ? "bg-nav-hover text-secondary-main" : ""}`
                     }
                     onClick={() => setMenuOpen(false)}
                   >
@@ -101,7 +101,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={handleMobileToggle}
-            className="sm:hidden p-2 rounded-md hover:bg-gray-700 focus:outline-none"
+            className="sm:hidden p-2 rounded-md hover:bg-nav-hover focus:outline-none"
           >
             <svg
               className="h-6 w-6"
@@ -117,13 +117,13 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="sm:hidden bg-gray-800">
+        <div className="sm:hidden bg-primary-main">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <NavLink
               to="/dolls"
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md ${
-                  isActive ? "bg-gray-700 text-orange-500" : "hover:bg-gray-700"
+                  isActive ? "bg-nav-hover text-secondary-main" : "hover:bg-nav-hover"
                 }`
               }
               onClick={() => setMobileOpen(false)}
@@ -134,7 +134,7 @@ const Header = () => {
               to="/weapons"
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md ${
-                  isActive ? "bg-gray-700 text-orange-500" : "hover:bg-gray-700"
+                  isActive ? "bg-nav-hover text-secondary-main" : "hover:bg-nav-hover"
                 }`
               }
               onClick={() => setMobileOpen(false)}
@@ -145,7 +145,7 @@ const Header = () => {
               to="/enemies"
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md ${
-                  isActive ? "bg-gray-700 text-orange-500" : "hover:bg-gray-700"
+                  isActive ? "bg-nav-hover text-secondary-main" : "hover:bg-nav-hover"
                 }`
               }
               onClick={() => setMobileOpen(false)}
@@ -156,7 +156,7 @@ const Header = () => {
               to="/calculator"
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md ${
-                  isActive ? "bg-gray-700 text-orange-500" : "hover:bg-gray-700"
+                  isActive ? "bg-nav-hover text-secondary-main" : "hover:bg-nav-hover"
                 }`
               }
               onClick={() => setMobileOpen(false)}
@@ -167,7 +167,7 @@ const Header = () => {
               to="/stages"
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md ${
-                  isActive ? "bg-gray-700 text-orange-500" : "hover:bg-gray-700"
+                  isActive ? "bg-nav-hover text-secondary-main" : "hover:bg-nav-hover"
                 }`
               }
               onClick={() => setMobileOpen(false)}
@@ -178,7 +178,7 @@ const Header = () => {
               to="/story"
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md ${
-                  isActive ? "bg-gray-700 text-orange-500" : "hover:bg-gray-700"
+                  isActive ? "bg-nav-hover text-secondary-main" : "hover:bg-nav-hover"
                 }`
               }
               onClick={() => setMobileOpen(false)}

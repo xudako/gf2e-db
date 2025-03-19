@@ -1,30 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Chr, Skill, Skin } from "../types";
 import SkillCard from "../components/SkillCard";
-import {
-  Box,
-  Typography,
-  IconButton,
-  Slide,
-  Grid2,
-  ToggleButtonGroup,
-  ToggleButton,
-  Tooltip,
-  TooltipProps,
-  tooltipClasses,
-  styled,
-  Slider,
-  SliderProps,
-  Stack,
-} from "@mui/material";
 import Tables from "../data/TableLoader";
-import CloseIcon from "@mui/icons-material/Close";
-
-interface CharacterOverlayProps {
-  open: boolean;
-  onClose: () => void;
-  character?: Chr;
-}
+import ToggleButton from "../components/ToggleButton";
+import Tooltip from "../components/Tooltip";
 
 type SkillTypeId = "01" | "05" | "07" | "04" | "08";
 
@@ -59,25 +38,6 @@ const ammoType = new Map([
   [7, 16],
 ]);
 
-//custom HoverInfo Tooltip
-const HoverInfo = styled(({ className, ...props }: TooltipProps) => (
-  <Tooltip
-    {...props}
-    classes={{ popper: className }}
-    enterDelay={500}
-    leaveDelay={100}
-  />
-))(() => ({
-  [`& .${tooltipClasses.tooltip}`]: {
-    fontSize: "0.75rem",
-    padding: "8px",
-  },
-  [`&.${tooltipClasses.popper}[data-popper-placement*="bottom"] .${tooltipClasses.tooltip}`]:
-    {
-      margin: "0px",
-    },
-}));
-
 const levelMarks = [
   { value: 1, label: "1" },
   { value: 10, label: "10" },
@@ -88,15 +48,22 @@ const levelMarks = [
   { value: 60, label: "60" },
 ];
 
+interface CharacterOverlayProps {
+  open: boolean;
+  onClose: () => void;
+  character?: Chr;
+}
+
 const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   open,
   onClose,
   character,
 }) => {
   if (!character) {
-    return <Typography variant="h6">404</Typography>;
+    return <div className="text-2xl">404</div>;
   }
-  //skins
+
+  // Skins
   const skinData = character.skins.map((skinId) => {
     const skin = Tables.ClothesData[skinId];
     if (!skin) throw new Error(`Skin with ID ${skinId} not found`);
@@ -104,23 +71,18 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
       ...skin,
     };
   });
+
   const [currentSkin, setCurrentSkin] = useState<Skin>(skinData[0]);
-  const displayedImage = `${import.meta.env.BASE_URL}dolls/Avatar_Whole_${
-    currentSkin.code
-  }.png`;
-  const handleSkinChange = (
-    _event: React.MouseEvent<HTMLElement>,
-    newCurrentSkinId: number | null
-  ) => {
-    if (newCurrentSkinId) {
-      const newSkin = skinData.find((skin) => skin.id === newCurrentSkinId);
-      if (newSkin) {
-        setCurrentSkin(newSkin);
-      }
+  const displayedImage = `${import.meta.env.BASE_URL}dolls/Avatar_Whole_${currentSkin.code}.png`;
+
+  const handleSkinChange = (newSkinId: number) => {
+    const newSkin = skinData.find((skin) => skin.id === newSkinId);
+    if (newSkin) {
+      setCurrentSkin(newSkin);
     }
   };
 
-  //skills
+  // Skills
   const vertebraeIds = [...Array.from({ length: 7 }, (_, i) => i + 1)].map(
     (x) => character.id * 100 + x
   );
@@ -139,11 +101,12 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
       shape: display.shapeDisplay || data.shape,
       shapeParam: display.shapeDisplayParam || data.shapeParam,
       weaponTag:
-        data.weaponTag == 1
+        data.weaponTag === 1
           ? ammoType.get(character.weaponType)
           : data.weaponTag,
     };
   };
+
   const skillIds = vertebraeIds.map(
     (vertId) => Tables.GunGradeData[vertId].abbr
   );
@@ -162,17 +125,12 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
     allSkills[type][level] = loadSkill(id);
   });
 
-  const [currentSkillType, setCurrentSkillType] = useState<SkillTypeId>(
-    skillTypes[0].id
+  const [currentSkillType, setCurrentSkillType] = useState<SkillTypeId>(skillTypes[0].id);
+  const [currentSkillLevels, setCurrentSkillLevels] = useState<Map<SkillTypeId, string>>(
+    new Map(skillTypes.map((type) => [type.id, "01"]))
   );
-  const [currentSkillLevels, setCurrentSkillLevels] = useState<
-    Map<SkillTypeId, string>
-  >(new Map(skillTypes.map((type) => [type.id, "01"])));
   const [currentSkillLevel, setCurrentSkillLevel] = useState<string>("01");
-  const [currentSkill, setCurrentSkill] = useState<Skill>(
-    allSkills["01"]["01"]
-  );
-  //console.log(currentSkillLevels, currentSkillLevel);
+  const [currentSkill, setCurrentSkill] = useState<Skill>(allSkills["01"]["01"]);
 
   useEffect(() => {
     setCurrentSkillLevels((prevLevels) =>
@@ -196,13 +154,8 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
       setCurrentSkill(allSkills[currentSkillType][level]);
   }, [currentSkillType, currentSkillLevels]);
 
-  const handleSkillTypeChange = (
-    _event: React.MouseEvent<HTMLElement>,
-    newSkillTypeId: SkillTypeId | null
-  ) => {
-    if (newSkillTypeId !== null) {
-      setCurrentSkillType(newSkillTypeId);
-    }
+  const handleSkillTypeChange = (newSkillTypeId: SkillTypeId) => {
+    setCurrentSkillType(newSkillTypeId);
   };
 
   const getLevels = (skillType: string): string[] => {
@@ -212,354 +165,182 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
     return levels;
   };
 
-  const handleSkillLevelChange = (
-    _event: React.MouseEvent<HTMLElement>,
-    newLevel: string
-  ) => {
+  const handleSkillLevelChange = (newLevel: string) => {
     setCurrentSkillLevel(newLevel);
   };
 
-  //level and stats
+  // Level and stats
   const [currentLevel, setCurrentLevel] = useState<number>(60);
 
-  const handleLevelChange: SliderProps["onChange"] = (
-    _event: Event,
-    newLevel: number | number[]
-  ) => {
-    setCurrentLevel(typeof newLevel === "number" ? newLevel : newLevel[0]);
+  const handleLevelChange = (newLevel: number) => {
+    setCurrentLevel(newLevel);
   };
 
+  if (!open) return null;
+
   return (
-    <Slide direction="up" in={open} mountOnEnter unmountOnExit>
-      <Box
-        sx={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "100vw",
-          height: "100vh",
-          bgcolor: "#2b2b2b",
-          zIndex: 1300,
-          p: 4,
-          overflow: "auto",
-        }}
+    <div className={`fixed inset-0 bg-background-overlay z-50 p-8 overflow-auto transition-transform transform ${open ? 'translate-y-0' : 'translate-y-full'}`}>
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 p-2 text-primary-text hover:text-secondary-main transition-colors"
       >
-        <IconButton
-          onClick={onClose}
-          sx={{ position: "absolute", top: 16, right: 16 }}
-        >
-          <CloseIcon />
-        </IconButton>
-        <Grid2 container spacing={2}>
-          {/* Character Info */}
-          <Grid2 size={{ xs: 12, sm: 8, md: 6 }}>
-            <Box sx={{ padding: 2 }}>
-              <Typography
-                variant="h2"
-                sx={{
-                  color: `#${Tables.LanguageElementData[character.element][
-                    "color"
-                  ].slice(0, -2)}`,
-                }}
-              >
-                {character.name}
-              </Typography>
-              {/* Stats Info */}
-              <Grid2
-                container
-                spacing={1}
-                sx={{
-                  mt: 2,
-                  p: 3,
-                  "& .MuiTypography-root": {
-                    color: "whitesmoke",
-                  },
-                }}
-              >
-                <Grid2 size={{ xs: 2 }}>
-                  <Typography>Class:</Typography>
-                </Grid2>
-                <Grid2 size={{ xs: 4 }}>
-                  <HoverInfo title={Tables.GunDutyData[character.duty].name}>
-                    <Box
-                      component="img"
-                      src={`${import.meta.env.BASE_URL}icons/${
-                        Tables.GunDutyData[character.duty].icon
-                      }_W.png`}
-                      alt={`${Tables.GunDutyData[character.duty].name} icon`}
-                      sx={{ verticalAlign: "middle", height: "4rem" }}
-                    />
-                  </HoverInfo>
-                </Grid2>
-                <Grid2 size={{ xs: 2 }}>
-                  <Typography>Weapon:</Typography>
-                </Grid2>
-                <Grid2 size={{ xs: 4 }}>
-                  <HoverInfo
-                    title={
-                      Tables.GunWeaponTypeData[character.weaponType]["name"]
-                    }
-                  >
-                    <Box
-                      component="img"
-                      src={`${import.meta.env.BASE_URL}icons/${
-                        Tables.GunWeaponTypeData[character.weaponType][
-                          "skinIcon"
-                        ]
-                      }.png`}
-                      alt={`${
-                        Tables.GunWeaponTypeData[character.weaponType]["name"]
-                      } icon`}
-                      sx={{ verticalAlign: "middle", height: "4rem" }}
-                    />
-                  </HoverInfo>
-                </Grid2>
-                <Grid2 size={{ xs: 2 }}>
-                  <Typography>Element:</Typography>
-                </Grid2>
-                <Grid2 size={{ xs: 4 }}>
-                  <HoverInfo
-                    title={
-                      Tables.LanguageElementData[character.element]["name"]
-                    }
-                  >
-                    <Box
-                      component="img"
-                      src={`${import.meta.env.BASE_URL}icons/${
-                        Tables.LanguageElementData[character.element]["icon"]
-                      }_S.png`}
-                      alt={`${
-                        Tables.LanguageElementData[character.element]["name"]
-                      } icon`}
-                      sx={{ verticalAlign: "middle", height: "4rem" }}
-                    />
-                  </HoverInfo>
-                </Grid2>
-                <Grid2 size={{ xs: 2 }}>
-                  <Typography sx={{ verticalAlign: "middle" }}>
-                    Weakness:
-                  </Typography>
-                </Grid2>
-                <Grid2 size={{ xs: 4 }}>
-                  <Stack direction="row">
-                    <HoverInfo
-                      title={Tables.WeaponTagData[character.weak[0]]["name"]}
-                    >
-                      <Box
-                        component="img"
-                        src={`${import.meta.env.BASE_URL}icons/${
-                          Tables.WeaponTagData[character.weak[0]]["icon"]
-                        }_S.png`}
-                        alt={`${
-                          Tables.WeaponTagData[character.weak[0]]["name"]
-                        } icon`}
-                        sx={{ verticalAlign: "middle", height: "4rem" }}
-                      />
-                    </HoverInfo>
-                    <HoverInfo
-                      title={
-                        Tables.LanguageElementData[character.weak[1]]["name"]
-                      }
-                    >
-                      <Box
-                        component="img"
-                        src={`${import.meta.env.BASE_URL}icons/${
-                          Tables.LanguageElementData[character.weak[1]]["icon"]
-                        }_S.png`}
-                        alt={`${
-                          Tables.LanguageElementData[character.weak[1]]["name"]
-                        } icon`}
-                        sx={{ verticalAlign: "middle", height: "4rem" }}
-                      />
-                    </HoverInfo>
-                  </Stack>
-                </Grid2>
-                <Grid2 size={{ xs: 6 }}>
-                  <Typography>Stats:</Typography>
-                </Grid2>
-                {/* <Grid2 size={{ xs: 4 }}>
-                  <Stack direction="row">
-                    <Box
-                      component="img"
-                      src="./icons/Icon_Hp_64.png"
-                      sx={{ verticalAlign: "middle", height: "1.5rem" }}
-                    />
-                    <Typography>HP: {character.hp}</Typography>
-                  </Stack>
-                </Grid2>
-                <Grid2 size={{ xs: 4 }}>
-                  <Stack direction="row">
-                    <Box
-                      component="img"
-                      src="./icons/Icon_Pow_64.png"
-                      sx={{ verticalAlign: "middle", height: "1.5rem" }}
-                    />
-                    <Typography>ATK: {character.atk}</Typography>
-                  </Stack>
-                </Grid2>
-                <Grid2 size={{ xs: 4 }}>
-                  <Stack direction="row">
-                    <Box
-                      component="img"
-                      src="./icons/Icon_Armor_64.png"
-                      sx={{ verticalAlign: "middle", height: "1.5rem" }}
-                    />
-                    <Typography>DEF: {character.def}</Typography>
-                  </Stack>
-                </Grid2>
-                <Grid2 size={{ xs: 6 }}>
-                  <Stack direction="row">
-                    <Box
-                      component="img"
-                      src="./icons/Icon_Will_64.png"
-                      sx={{ verticalAlign: "middle", height: "1.5rem" }}
-                    />
-                    <Typography>Stability: {character.stability}</Typography>
-                  </Stack>
-                </Grid2>
-                <Grid2 size={{ xs: 6 }}>
-                  <Stack direction="row">
-                    <Box
-                      component="img"
-                      src="./icons/Icon_Max_Ap_64.png"
-                      sx={{ verticalAlign: "middle", height: "1.5rem" }}
-                    />
-                    <Typography>Move: {character.move}</Typography>
-                  </Stack>
-                </Grid2> */}
-                <Grid2 size={{ md: 12, xl: 6 }}>
-                  <Box sx={{ width: 300 }}>
-                    <Typography>Level:</Typography>
-                    <Slider
-                      value={currentLevel}
-                      step={null}
-                      marks={levelMarks}
-                      min={1}
-                      max={60}
-                      onChange={handleLevelChange}
-                      sx={{ maxWidth: 300 }}
-                    />{" "}
-                  </Box>
-                </Grid2>
-              </Grid2>
+        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
 
-              {/* Skills Info */}
-              <Grid2 container spacing={1} sx={{ mt: 2 }}>
-                <ToggleButtonGroup
-                  value={currentSkillType}
-                  exclusive
-                  onChange={handleSkillTypeChange}
-                  size="small"
-                  sx={{
-                    mb: 2,
-                    "& .MuiToggleButton-root": {
-                      color: "whitesmoke",
-                      "&.Mui-selected": {
-                        color: "secondary.main",
-                        backgroundColor: "rgba(255, 255, 255, 0.08)",
-                      },
-                    },
-                  }}
-                >
-                  {skillTypes.map((skillType) => (
-                    <ToggleButton
-                      key={skillType.id}
-                      value={skillType.id}
-                      sx={{
-                        p: "5px",
-                        typography: "subtitle2",
-                        minWidth: "6rem",
-                      }}
-                    >
-                      {skillType.name}
-                    </ToggleButton>
-                  ))}
-                </ToggleButtonGroup>
-                {currentSkillType && getLevels(currentSkillType).length > 1 && (
-                  <ToggleButtonGroup
-                    value={currentSkillLevel}
-                    exclusive
-                    onChange={handleSkillLevelChange}
-                    size="small"
-                    sx={{
-                      mb: 2,
-                      "& .MuiToggleButton-root": {
-                        color: "whitesmoke",
-                        "&.Mui-selected": {
-                          color: "secondary.main",
-                          backgroundColor: "rgba(255, 255, 255, 0.08)",
-                        },
-                      },
-                    }}
-                  >
-                    {getLevels(currentSkillType).map((level) => (
-                      <ToggleButton
-                        key={level}
-                        value={level}
-                        sx={{
-                          p: "5px",
-                          typography: "subtitle2",
-                          minWidth: "6rem",
-                        }}
-                      >
-                        {level}
-                      </ToggleButton>
+      <div className="grid grid-cols-1 sm:grid-cols-8 md:grid-cols-12 gap-4">
+        {/* Character Info */}
+        <div className="sm:col-span-6 md:col-span-6">
+          <div className="p-4">
+            <h1 
+              className="text-4xl" 
+              style={{ color: `#${Tables.LanguageElementData[character.element]["color"].slice(0, -2)}` }}
+            >
+              {character.name}
+            </h1>
+
+            {/* Stats Info */}
+            <div className="mt-4 p-6 grid grid-cols-6 gap-4 text-primary-text">
+              <div className="col-span-2">
+                <span>Class:</span>
+              </div>
+              <div className="col-span-4">
+                <Tooltip title={Tables.GunDutyData[character.duty].name}>
+                  <img
+                    src={`${import.meta.env.BASE_URL}icons/${Tables.GunDutyData[character.duty].icon}_W.png`}
+                    alt={`${Tables.GunDutyData[character.duty].name} icon`}
+                    className="h-16 align-middle"
+                  />
+                </Tooltip>
+              </div>
+
+              <div className="col-span-2">
+                <span>Weapon:</span>
+              </div>
+              <div className="col-span-4">
+                <Tooltip title={Tables.GunWeaponTypeData[character.weaponType]["name"]}>
+                  <img
+                    src={`${import.meta.env.BASE_URL}icons/${Tables.GunWeaponTypeData[character.weaponType]["skinIcon"]}.png`}
+                    alt={`${Tables.GunWeaponTypeData[character.weaponType]["name"]} icon`}
+                    className="h-16 align-middle"
+                  />
+                </Tooltip>
+              </div>
+
+              <div className="col-span-2">
+                <span>Element:</span>
+              </div>
+              <div className="col-span-4">
+                <Tooltip title={Tables.LanguageElementData[character.element]["name"]}>
+                  <img
+                    src={`${import.meta.env.BASE_URL}icons/${Tables.LanguageElementData[character.element]["icon"]}_S.png`}
+                    alt={`${Tables.LanguageElementData[character.element]["name"]} icon`}
+                    className="h-16 align-middle"
+                  />
+                </Tooltip>
+              </div>
+
+              <div className="col-span-2">
+                <span>Weakness:</span>
+              </div>
+              <div className="col-span-4 flex space-x-2">
+                <Tooltip title={Tables.WeaponTagData[character.weak[0]]["name"]}>
+                  <img
+                    src={`${import.meta.env.BASE_URL}icons/${Tables.WeaponTagData[character.weak[0]]["icon"]}_S.png`}
+                    alt={`${Tables.WeaponTagData[character.weak[0]]["name"]} icon`}
+                    className="h-16 align-middle"
+                  />
+                </Tooltip>
+                <Tooltip title={Tables.LanguageElementData[character.weak[1]]["name"]}>
+                  <img
+                    src={`${import.meta.env.BASE_URL}icons/${Tables.LanguageElementData[character.weak[1]]["icon"]}_S.png`}
+                    alt={`${Tables.LanguageElementData[character.weak[1]]["name"]} icon`}
+                    className="h-16 align-middle"
+                  />
+                </Tooltip>
+              </div>
+
+              <div className="col-span-6">
+                <span>Level:</span>
+                <div className="mt-2 max-w-sm">
+                  <input
+                    type="range"
+                    min="1"
+                    max="60"
+                    value={currentLevel}
+                    onChange={(e) => handleLevelChange(Number(e.target.value))}
+                    className="w-full"
+                    list="level-marks"
+                  />
+                  <datalist id="level-marks">
+                    {levelMarks.map((mark) => (
+                      <option key={mark.value} value={mark.value} label={mark.label} />
                     ))}
-                  </ToggleButtonGroup>
-                )}
-                <SkillCard skill={currentSkill} />
-              </Grid2>
-            </Box>
-          </Grid2>
+                  </datalist>
+                </div>
+              </div>
+            </div>
 
-          {/* Character Image */}
-          <Grid2 size={{ xs: 12, sm: 4, md: 6 }}>
-            <Box sx={{ padding: 2 }}>
-              {character.skins.length > 1 ? (
-                <ToggleButtonGroup
-                  value={currentSkin.id}
-                  onChange={handleSkinChange}
-                  size="small"
-                  exclusive
-                  sx={{
-                    "& .MuiToggleButton-root": {
-                      color: "whitesmoke",
-                      "&.Mui-selected": {
-                        color: "secondary.main",
-                        backgroundColor: "rgba(255, 255, 255, 0.08)",
-                      },
-                    },
-                  }}
-                >
-                  {skinData.map((skin) => (
+            {/* Skills Info */}
+            <div className="mt-4 space-y-4">
+              <div className="flex flex-wrap gap-2">
+                {skillTypes.map((skillType) => (
+                  <ToggleButton
+                    key={skillType.id}
+                    selected={currentSkillType === skillType.id}
+                    onClick={() => handleSkillTypeChange(skillType.id)}
+                  >
+                    {skillType.name}
+                  </ToggleButton>
+                ))}
+              </div>
+
+              {currentSkillType && getLevels(currentSkillType).length > 1 && (
+                <div className="flex flex-wrap gap-2">
+                  {getLevels(currentSkillType).map((level) => (
                     <ToggleButton
-                      key={skin.id}
-                      value={skin.id}
-                      sx={{ p: "5px", textTransform: "none" }}
+                      key={level}
+                      selected={currentSkillLevel === level}
+                      onClick={() => handleSkillLevelChange(level)}
                     >
-                      {skin.name}
+                      {level}
                     </ToggleButton>
                   ))}
-                </ToggleButtonGroup>
-              ) : null}
-            </Box>
-            <Box
-              component="img"
+                </div>
+              )}
+
+              <SkillCard skill={currentSkill} />
+            </div>
+          </div>
+        </div>
+
+        {/* Character Image */}
+        <div className="sm:col-span-2 md:col-span-6">
+          <div className="p-4">
+            {character.skins.length > 1 && (
+              <div className="flex flex-wrap gap-2 mb-4">
+                {skinData.map((skin) => (
+                  <ToggleButton
+                    key={skin.id}
+                    selected={currentSkin.id === skin.id}
+                    onClick={() => handleSkinChange(skin.id)}
+                    className="normal-case"
+                  >
+                    {skin.name}
+                  </ToggleButton>
+                ))}
+              </div>
+            )}
+            <img
               src={displayedImage}
               alt={character.name}
-              sx={{
-                padding: 2,
-                mx: "auto",
-                display: "block",
-                maxWidth: "100%",
-                maxHeight: "85vh",
-                objectFit: "contain",
-              }}
-            ></Box>
-          </Grid2>
-        </Grid2>
-      </Box>
-    </Slide>
+              className="w-full object-contain max-h-[80vh]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
