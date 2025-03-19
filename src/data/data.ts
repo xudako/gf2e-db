@@ -3,7 +3,8 @@ import gunDutyData from "./tables/GunDutyData.json";
 import gunWeaponTypeData from "./tables/GunWeaponTypeData.json";
 import gunGradeData from "./tables/GunGradeData.json";
 import elementTypeData from "./tables/LanguageElementData.json";
-import { Chr, Duty, WeaponType, ElementType, GunGrade } from "../types";
+import gunWeaponData from "./tables/GunWeaponData.json";
+import { Chr, Wpn, Duty, WeaponType, ElementType, GunGrade } from "../types";
 import Tables from "./TableLoader";
 
 const enDolls: string[] = [
@@ -30,6 +31,7 @@ const enDolls: string[] = [
   "Suomi",
   "Dushevnaya",
   "Papasha",
+  "Klukai",
 ];
 
 export const gunDuties: Duty[] = gunDutyData["data"].map((duty: any) => ({
@@ -67,4 +69,10 @@ export const characters: Chr[] = gunData["data"].map((gun: any) => ({
           )
         ),
   weak: [gun.weakWeaponTag, parseInt(gun.weakTag)],
+}));
+
+export const weapons: Wpn[] = gunWeaponData["data"].map((weapon: any) => ({
+  ...weapon,
+  imprint: weapon.privateSkill,
+  trait: weapon.weaponSkill[0],
 }));

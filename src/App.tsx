@@ -40,6 +40,9 @@ const theme = createTheme({
     raritySR: {
       main: "#7967ba",
     },
+    rarityR: {
+      main: "#45b6fe",
+    },
     info: {
       main: "#6979d9",
     },

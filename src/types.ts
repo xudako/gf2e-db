@@ -88,6 +88,14 @@ export interface GunGrade {
 }
 
 export interface Wpn {
+    id: number;
+    name: string;
+    type: number;
+    resCode: string;
+    rank: number;
+    skill: number;
+    imprint?: number; //privateSkill
+    trait?: number; //weaponSkill
 }
 
 export interface TableItem {
