@@ -5,7 +5,7 @@ import {
   useParams,
   useNavigate,
 } from "react-router-dom";
-import Layout from "./components/Layout";
+import Layout from "./layouts/Layout";
 import Home from "./pages/Home";
 import CharacterGrid from "./pages/CharacterGrid";
 import CharacterOverlay from "./pages/CharacterOverlay";

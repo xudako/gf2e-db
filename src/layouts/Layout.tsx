@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Container, Box } from "@mui/material";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -18,22 +17,16 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   }, []);
 
   return (
-    <Box
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        minHeight: "100vh",
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+    <div 
+      className="flex flex-col min-h-screen bg-cover bg-center"
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <Header />
-      <Container maxWidth="lg" sx={{ mt: 4, p: 2, flex: 1 }}>
+      <main className="flex-1 container mx-auto px-4 mt-8 lg:max-w-7xl">
         {children}
-      </Container>
+      </main>
       <Footer />
-    </Box>
+    </div>
   );
 };
 
