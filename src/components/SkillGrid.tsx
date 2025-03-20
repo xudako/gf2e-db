@@ -10,10 +10,10 @@ const SkillGrid: React.FC<GridProps> = ({
   shapeParam,
   skillRange,
 }) => {
-  function processInput(input: string) {
+  const processInput = (input: string) => {
     const parts = input.split(",").map(Number);
     return parts.map((val) => (val % 100 ? val : val / 100));
-  }
+  };
   const gridRange = processInput(range);
   const gridShape = processInput(shapeParam);
 
@@ -41,7 +41,7 @@ const SkillGrid: React.FC<GridProps> = ({
 
   // Determine grid size (accommodates both range and AoE)
   const gridSize =
-    shape == 8 || skillRange == 8
+    shape === 8 || skillRange === 8
       ? 21
       : [9, 17, 21].find((val) => val > 2 * (gridRange[0] + gridShape[0])) ??
         21;
@@ -102,14 +102,14 @@ const SkillGrid: React.FC<GridProps> = ({
                 break;
             }
             if (
-              (row == center && Math.abs(center - col) <= range7) ||
-              (col == center && Math.abs(center - row) <= range7)
+              (row === center && Math.abs(center - col) <= range7) ||
+              (col === center && Math.abs(center - row) <= range7)
             )
               inRange = true;
-            if (gridRange[0] == 107) {
+            if (gridRange[0] === 107) {
               if (
-                (row == center && Math.abs(center - col) < 4) ||
-                (col == center && Math.abs(center - row) < 4)
+                (row === center && Math.abs(center - col) < 4) ||
+                (col === center && Math.abs(center - row) < 4)
               )
                 inRange = false;
             }
@@ -123,7 +123,7 @@ const SkillGrid: React.FC<GridProps> = ({
           shape // orange (aoe)
         ) {
           case 1:
-            if (!targetFlag && inRange && col == center) {
+            if (!targetFlag && inRange && col === center) {
               targetFlag = true;
               inShape = true;
             }
@@ -161,7 +161,7 @@ const SkillGrid: React.FC<GridProps> = ({
             if (
               center - row > 1 &&
               center - row <= gridShape[0] &&
-              col == center
+              col === center
             )
               inShape = true;
             break;
@@ -194,7 +194,7 @@ const SkillGrid: React.FC<GridProps> = ({
               Math.abs(center - col) <= Math.floor(shape7[0] / 2)
             )
               inShape = true;
-            if (gridShape[0] == 78) {
+            if (gridShape[0] === 78) {
               //Littara
               if (Math.abs(center - row) <= Math.floor(5 / 2)) inShape = false;
             }

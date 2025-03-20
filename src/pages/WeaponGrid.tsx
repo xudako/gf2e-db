@@ -6,7 +6,6 @@ import ToggleButton from "../components/ToggleButton";
 
 const WeaponGrid: React.FC = () => {
   const [selectedWeapon, setSelectedWeapon] = useState<Wpn | null>(null);
-  //const [filterRegion, setFilterRegion] = useState<number>(-1);
   const [filterRarity, setFilterRarity] = useState<number>(-1);
   const [filterWeapon, setFilterWeapon] = useState<number>(-1);
   const navigate = useNavigate();
@@ -15,13 +14,6 @@ const WeaponGrid: React.FC = () => {
     setSelectedWeapon(weapon);
     navigate(`/weapons/${weapon.name.replace(" ", "_")}`);
   };
-
-  // const handleRegionFilter = (
-  //   _event: React.MouseEvent<HTMLElement>,
-  //   newRegion: number | null
-  // ) => {
-  //   newRegion === null ? setFilterRegion(-1) : setFilterRegion(newRegion);
-  // };
 
   const handleRarityFilter = (newRarity: number) => {
     setFilterRarity(filterRarity === newRarity ? -1 : newRarity);
@@ -39,7 +31,6 @@ const WeaponGrid: React.FC = () => {
   });
 
   const filteredWeapons = sortedWeapons.filter((weapon) => {
-    //const regionMatch = filterRegion === -1 || filterRegion === weapon.region;
     const rarityMatch = filterRarity === -1 || filterRarity === weapon.rank;
     const weaponMatch = filterWeapon === -1 || filterWeapon === weapon.type;
 
@@ -51,48 +42,7 @@ const WeaponGrid: React.FC = () => {
   return (
     <div>
       <div className="flex flex-wrap gap-4 mb-4">
-        {/* <ToggleButtonGroup //Region Filter
-          value={filterRegion}
-          exclusive
-          onChange={handleRegionFilter}
-          size="small"
-          sx={{
-            mb: 2,
-            bgcolor: "primary.main",
-            border: "1px solid",
-            borderColor: "divider",
-            "& .MuiToggleButton-root": {
-              color: "grey.300",
-              "&.Mui-selected": {
-                color: "secondary.main",
-                backgroundColor: "rgba(255, 255, 255, 0.08)",
-              },
-            },
-          }}
-        >
-          <ToggleButton
-            key={0}
-            value={0}
-            sx={{
-              p: "5px",
-              typography: "subtitle2",
-              minWidth: "4rem",
-            }}
-          >
-            CN
-          </ToggleButton>
-          <ToggleButton
-            key={1}
-            value={1}
-            sx={{
-              p: "5px",
-              typography: "subtitle2",
-              minWidth: "4rem",
-            }}
-          >
-            EN
-          </ToggleButton>
-        </ToggleButtonGroup> */}
+        {/* Rarity Filter */}
         <div className="flex bg-primary-main border border-filter-button-border">
         <ToggleButton selected={filterRarity === 3} onClick={() => handleRarityFilter(3)}>
             R
@@ -104,6 +54,8 @@ const WeaponGrid: React.FC = () => {
             SSR
           </ToggleButton>
         </div>
+
+        {/* Weapon Filter */}
         <div className="flex bg-primary-main border border-filter-button-border">
           {weaponTypes.map((weapon) => (
             <ToggleButton
