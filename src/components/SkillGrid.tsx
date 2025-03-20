@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Skill } from "../types";
-import { Box } from "@mui/material";
 
 type GridProps = Pick<Skill, "range" | "shape" | "shapeParam" | "skillRange">;
 
@@ -10,6 +9,9 @@ const SkillGrid: React.FC<GridProps> = ({
   shapeParam,
   skillRange,
 }) => {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
   const processInput = (input: string) => {
     const parts = input.split(",").map(Number);
     return parts.map((val) => (val % 100 ? val : val / 100));
@@ -46,19 +48,52 @@ const SkillGrid: React.FC<GridProps> = ({
       : [9, 17, 21].find((val) => val > 2 * (gridRange[0] + gridShape[0])) ??
         21;
 
-  // Grid rendering logic
-  const renderGrid = () => {
-    const gridElements = [];
-    const center = Math.floor(gridSize / 2); // Center of the grid (keep in mind 0-indexing)
+  const RANGE_COLOR = "#6979d9"; // info color
+  const SHAPE_COLOR = "#f58c1f"; // secondary.main color
+  const BG_COLOR = "#dddddd";
+  const CENTER_COLOR = "#ffffff";
+  const CELL_GAP = 1; // Gap between cells in pixels
+  const GRID_BG = "#999999"; // Default grid cell color
 
-    let targetFlag = false;
+  useEffect(() => {
+    const container = containerRef.current;
+    const canvas = canvasRef.current;
+    if (!canvas || !container) return;
+
+    // Make canvas size match container size
+    const size = container.clientWidth;
+    canvas.width = size;
+    canvas.height = size;
+    
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const CELL_SIZE = size / gridSize;
+    const center = Math.floor(gridSize / 2);
+
+    // Clear canvas with background color
+    ctx.fillStyle = BG_COLOR;
+    ctx.fillRect(0, 0, size, size);
+
+    // Draw grid cells with gaps
     for (let row = 0; row < gridSize; row++) {
       for (let col = 0; col < gridSize; col++) {
-        // Calculate distance from the center square
-        const distanceFromCenter =
-          Math.abs(row - center) + Math.abs(col - center);
+        ctx.fillStyle = row === center && col === center ? CENTER_COLOR : GRID_BG;
+        ctx.fillRect(
+          col * CELL_SIZE + CELL_GAP,
+          row * CELL_SIZE + CELL_GAP,
+          CELL_SIZE - CELL_GAP * 2,
+          CELL_SIZE - CELL_GAP * 2
+        );
+      }
+    }
 
-        let backgroundColor = "background.default"; // Default for out-of-range squares
+    let targetFlag = false;
+    // Fill colored cells
+    for (let row = 0; row < gridSize; row++) {
+      for (let col = 0; col < gridSize; col++) {
+        const distanceFromCenter = Math.abs(row - center) + Math.abs(col - center);
+        let fillColor = null;
 
         // console.log(
         //   "skillRange",
@@ -71,10 +106,9 @@ const SkillGrid: React.FC<GridProps> = ({
         //   gridShape
         // );
 
+        // Range check (blue)
         let inRange = false;
-        switch (
-          skillRange // blue (range)
-        ) {
+        switch (skillRange) {
           case 2:
             if (
               Math.abs(center - row) <= Math.floor(gridRange[0] / 2) &&
@@ -117,11 +151,14 @@ const SkillGrid: React.FC<GridProps> = ({
           case 8:
             inRange = true;
         }
-        if (inRange) backgroundColor = "info.main";
+
+        if (inRange && !(row === center && col === center)) {
+          fillColor = RANGE_COLOR;
+        }
+
+        // Shape check (orange)
         let inShape = false;
-        switch (
-          shape // orange (aoe)
-        ) {
+        switch (shape) {
           case 1:
             if (!targetFlag && inRange && col === center) {
               targetFlag = true;
@@ -194,47 +231,36 @@ const SkillGrid: React.FC<GridProps> = ({
               Math.abs(center - col) <= Math.floor(shape7[0] / 2)
             )
               inShape = true;
-            if (gridShape[0] === 78) {
-              //Littara
+            if (gridShape[0] === 78) { //Littara
               if (Math.abs(center - row) <= Math.floor(5 / 2)) inShape = false;
             }
             break;
         }
-        if (inShape) backgroundColor = "secondary.main";
-        if (distanceFromCenter === 0) {
-          backgroundColor = "white";
+
+        if (inShape && !(row === center && col === center)) {
+          fillColor = SHAPE_COLOR;
         }
 
-        gridElements.push(
-          <Box
-            key={`${row}-${col}`}
-            sx={{
-              width: "100%",
-              paddingBottom: `${100 / gridSize}%`,
-              backgroundColor,
-              border: "1px solid #dddddd",
-              boxSizing: "border-box",
-              position: "relative",
-            }}
-          />
-        );
+        if (fillColor) {
+          ctx.fillStyle = fillColor;
+          ctx.fillRect(
+            col * CELL_SIZE + CELL_GAP,
+            row * CELL_SIZE + CELL_GAP,
+            CELL_SIZE - CELL_GAP * 2,
+            CELL_SIZE - CELL_GAP * 2
+          );
+        }
       }
     }
-    return gridElements;
-  };
+  }, [range, shape, shapeParam, skillRange]);
 
   return (
-    <Box
-      sx={{
-        display: "grid",
-        gridTemplateColumns: `repeat(${gridSize}, 1fr)`,
-        maxWidth: "100%",
-        aspectRatio: "1",
-        position: "relative",
-      }}
-    >
-      {renderGrid()}
-    </Box>
+    <div ref={containerRef} className="inline-block aspect-square">
+      <canvas
+        ref={canvasRef}
+        className="w-full h-full"
+      />
+    </div>
   );
 };
 

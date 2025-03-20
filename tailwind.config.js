@@ -34,6 +34,11 @@ export default {
           r: "#45b6fe",
         },
         info: "#6979d9",
+        grid: {
+          background: "#999999",
+          range: "#6979d9",
+          shape: "#f58c1f"
+        }
       },
     },
   },
