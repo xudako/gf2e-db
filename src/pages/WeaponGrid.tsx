@@ -2,24 +2,18 @@ import React, { useState } from "react";
 import { Wpn } from "../types";
 import { weapons, weaponTypes } from "../data/data";
 import { useNavigate } from "react-router-dom";
-import {
-  Box,
-  Grid2,
-  ToggleButtonGroup,
-  ToggleButton,
-  Button,
-} from "@mui/material";
+import ToggleButton from "../components/ToggleButton";
 
 const WeaponGrid: React.FC = () => {
   const [selectedWeapon, setSelectedWeapon] = useState<Wpn | null>(null);
   //const [filterRegion, setFilterRegion] = useState<number>(-1);
   const [filterRarity, setFilterRarity] = useState<number>(-1);
-  const [filterType, setFilterType] = useState<number>(-1);
+  const [filterWeapon, setFilterWeapon] = useState<number>(-1);
   const navigate = useNavigate();
 
   const handleWeaponSelect = (weapon: Wpn) => {
     setSelectedWeapon(weapon);
-    navigate(`/weapons/${weapon.name}`);
+    navigate(`/weapons/${weapon.name.replace(" ", "_")}`);
   };
 
   // const handleRegionFilter = (
@@ -29,18 +23,12 @@ const WeaponGrid: React.FC = () => {
   //   newRegion === null ? setFilterRegion(-1) : setFilterRegion(newRegion);
   // };
 
-  const handleRarityFilter = (
-    _event: React.MouseEvent<HTMLElement>,
-    newRarity: number | null
-  ) => {
-    newRarity === null ? setFilterRarity(-1) : setFilterRarity(newRarity);
+  const handleRarityFilter = (newRarity: number) => {
+    setFilterRarity(filterRarity === newRarity ? -1 : newRarity);
   };
 
-  const handleTypeFilter = (
-    _event: React.MouseEvent<HTMLElement>,
-    newType: number | null
-  ) => {
-    newType === null ? setFilterType(-1) : setFilterType(newType);
+  const handleWeaponFilter = (newWeapon: number) => {
+    setFilterWeapon(filterWeapon === newWeapon ? -1 : newWeapon);
   };
 
   const sortedWeapons = weapons.sort((a, b) => {
@@ -53,22 +41,16 @@ const WeaponGrid: React.FC = () => {
   const filteredWeapons = sortedWeapons.filter((weapon) => {
     //const regionMatch = filterRegion === -1 || filterRegion === weapon.region;
     const rarityMatch = filterRarity === -1 || filterRarity === weapon.rank;
-    const typeMatch = filterType === -1 || filterType === weapon.type;
+    const weaponMatch = filterWeapon === -1 || filterWeapon === weapon.type;
 
     return (
-      rarityMatch && typeMatch
+      rarityMatch && weaponMatch
     );
   });
 
   return (
-    <Box>
-      <Box
-        sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          columnGap: 2,
-        }}
-      >
+    <div>
+      <div className="flex flex-wrap gap-4 mb-4">
         {/* <ToggleButtonGroup //Region Filter
           value={filterRegion}
           exclusive
@@ -111,128 +93,52 @@ const WeaponGrid: React.FC = () => {
             EN
           </ToggleButton>
         </ToggleButtonGroup> */}
-        <ToggleButtonGroup //Rarity Filter
-          value={filterRarity}
-          exclusive
-          onChange={handleRarityFilter}
-          size="small"
-          sx={{
-            mb: 2,
-            bgcolor: "primary.main",
-            border: "1px solid",
-            borderColor: "divider",
-            "& .MuiToggleButton-root": {
-              color: "grey.300",
-              "&.Mui-selected": {
-                color: "secondary.main",
-                backgroundColor: "rgba(255, 255, 255, 0.08)",
-              },
-            },
-          }}
-        >
-          <ToggleButton
-            key={3}
-            value={3}
-            sx={{
-              p: "5px",
-              typography: "subtitle2",
-              minWidth: "4rem",
-            }}
-          >
+        <div className="flex bg-primary-main border border-filter-button-border">
+        <ToggleButton selected={filterRarity === 3} onClick={() => handleRarityFilter(3)}>
             R
           </ToggleButton>
-          <ToggleButton
-            key={4}
-            value={4}
-            sx={{
-              p: "5px",
-              typography: "subtitle2",
-              minWidth: "4rem",
-            }}
-          >
+          <ToggleButton selected={filterRarity === 4} onClick={() => handleRarityFilter(4)}>
             SR
           </ToggleButton>
-          <ToggleButton
-            key={5}
-            value={5}
-            sx={{
-              p: "5px",
-              typography: "subtitle2",
-              minWidth: "4rem",
-            }}
-          >
+          <ToggleButton selected={filterRarity === 5} onClick={() => handleRarityFilter(5)}>
             SSR
           </ToggleButton>
-        </ToggleButtonGroup>
-        <ToggleButtonGroup //Type Filter
-          value={filterType}
-          exclusive
-          onChange={handleTypeFilter}
-          size="small"
-          sx={{
-            mb: 2,
-            bgcolor: "primary.main",
-            border: "1px solid",
-            borderColor: "divider",
-            "& .MuiToggleButton-root": {
-              color: "grey.300",
-              "&.Mui-selected": {
-                color: "secondary.main",
-                backgroundColor: "rgba(255, 255, 255, 0.08)",
-              },
-            },
-          }}
-        >
+        </div>
+        <div className="flex bg-primary-main border border-filter-button-border">
           {weaponTypes.map((weapon) => (
             <ToggleButton
               key={weapon.id}
-              value={weapon.id}
-              sx={{
-                p: "5px",
-                typography: "subtitle2",
-                minWidth: "4rem",
-              }}
+              selected={filterWeapon === weapon.id}
+              onClick={() => handleWeaponFilter(weapon.id)}
             >
               {weapon.abbr}
             </ToggleButton>
           ))}
-        </ToggleButtonGroup>
-        <Button
+        </div>
+
+        {/* Reset Button */}
+        <button
           onClick={() => {
             setFilterRarity(-1);
-            setFilterType(-1);
+            setFilterWeapon(-1);
           }}
-          sx={{
-            mb: 2,
-            bgcolor: "primary.main",
-            border: "1px solid",
-            borderColor: "divider",
-            p: "5px",
-            typography: "subtitle2",
-            minWidth: "6rem",
-            color: "grey.300",
-          }}
+          className="px-2 py-1 min-w-[6rem] text-sm border border-filter-button-border transition-colors bg-primary-main text-primary-text hover:bg-primary-light"
         >
           Reset
-        </Button>
-      </Box>
-      <Grid2 container spacing={2} columns={8}>
+        </button>
+      </div>
+
+      {/* Weapon Grid */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 gap-4">
         {filteredWeapons.map((weapon) => (
-          <Grid2
-            size={{ xs: 4, lg: 2, xl: 1 }}
-            key={weapon.name}
-            onClick={() => handleWeaponSelect(weapon)}
-            sx={{
-              p: 1,
-              backgroundColor:
-                selectedWeapon?.name === weapon.name
-                  ? "primary.light"
-                  : "transparent",
-              "&:hover": { backgroundColor: "secondary.main", color: "white" },
-            }}
-          >
-            <Box
-              component="img"
+          <div
+          key={weapon.name}
+          onClick={() => handleWeaponSelect(weapon)}
+          className={`p-4 transition-colors cursor-pointer
+            ${selectedWeapon?.name === weapon.name ? "bg-primary-light" : ""}
+            hover:bg-secondary-main hover:text-white`}
+        >
+            <img
               src={
                 `${import.meta.env.BASE_URL}weapons/${
                       weapon.resCode
@@ -244,35 +150,14 @@ const WeaponGrid: React.FC = () => {
                   import.meta.env.BASE_URL
                 }images/default.png`)
               }
-              sx={{
-                bgcolor:
-                  weapon.rank === 5 ? "raritySSR.main" : weapon.rank === 4 ? "raritySR.main" : "rarityR.main",
-                maxHeight: "400",
-                maxWidth: "100%",
-                objectFit: "contain",
-                borderRadius: "8",
-                cursor: "pointer",
-              }}
+              className={`w-full aspect-square object-cover rounded-lg 
+                ${weapon.rank === 5 ? "bg-rarity-ssr" : weapon.rank === 4 ? "bg-rarity-sr" : "bg-rarity-r"}`}
             />
-            <Box
-              sx={{
-                position: "relative",
-                bottom: "20px",
-                backgroundColor: "rgba(0, 0, 0, 0.6)",
-                color: "white",
-                px: "10",
-                textAlign: "center",
-                borderRadius: "4px",
-                fontSize: "14px",
-                cursor: "pointer",
-              }}
-            >
-              {weapon.name}
-            </Box>
-          </Grid2>
+            <div className="mt-2 text-center font-medium">{weapon.name}</div>
+          </div>
         ))}
-      </Grid2>
-    </Box>
+      </div>
+    </div>
   );
 }
 

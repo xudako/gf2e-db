@@ -189,9 +189,9 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
         </svg>
       </button>
 
-      <div className="grid grid-cols-1 sm:grid-cols-8 md:grid-cols-12 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-6 md:grid-cols-12 gap-4">
         {/* Character Info */}
-        <div className="sm:col-span-6 md:col-span-6">
+        <div className="col-span-6">
           <div className="p-4">
             <h1 
               className="text-4xl" 
@@ -201,7 +201,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
             </h1>
 
             {/* Stats Info */}
-            <div className="mt-4 p-6 grid grid-cols-6 gap-4 text-primary-text">
+            <div className="mt-4 p-6 grid grid-cols-6 lg:grid-cols-12 gap-4 text-primary-text">
               <div className="col-span-2">
                 <span>Class:</span>
               </div>

@@ -2,30 +2,11 @@ import React, { useState } from "react";
 import { Chr } from "../types";
 import { characters, gunDuties, weaponTypes, elementTypes } from "../data/data";
 import { useNavigate } from "react-router-dom";
+import ToggleButton from "../components/ToggleButton";
 
 function stripCode(input: string): string {
   return input.replace(/ssr$/i, "").replace(/sr$/i, "");
 }
-
-interface ToggleButtonProps {
-  selected: boolean;
-  onClick: () => void;
-  children: React.ReactNode;
-  className?: string;
-}
-
-const ToggleButton: React.FC<ToggleButtonProps> = ({ selected, onClick, children, className = "" }) => (
-  <button
-    onClick={onClick}
-    className={`px-2 py-1 min-w-[4rem] text-sm border border-filter-button-border transition-colors
-      ${selected 
-        ? "bg-background-hover text-filter-button-selected" 
-        : "text-filter-button-text hover:bg-background-hover"
-      } ${className}`}
-  >
-    {children}
-  </button>
-);
 
 const CharacterGrid: React.FC = () => {
   const [selectedCharacter, setSelectedCharacter] = useState<Chr | null>(null);
@@ -102,20 +83,6 @@ const CharacterGrid: React.FC = () => {
           </ToggleButton>
         </div>
 
-        {/* Role Filter */}
-        <div className="flex bg-primary-main border border-filter-button-border">
-          {gunDuties.map((role) => (
-            <ToggleButton
-              key={role.id}
-              selected={filterRole === role.id}
-              onClick={() => handleRoleFilter(role.id)}
-              className="min-w-[6rem]"
-            >
-              {role.name}
-            </ToggleButton>
-          ))}
-        </div>
-
         {/* Weapon Filter */}
         <div className="flex bg-primary-main border border-filter-button-border">
           {weaponTypes.map((weapon) => (
@@ -143,6 +110,20 @@ const CharacterGrid: React.FC = () => {
           ))}
         </div>
 
+        {/* Role Filter */}
+        <div className="flex bg-primary-main border border-filter-button-border">
+          {gunDuties.map((role) => (
+            <ToggleButton
+              key={role.id}
+              selected={filterRole === role.id}
+              onClick={() => handleRoleFilter(role.id)}
+              className="min-w-[6rem]"
+            >
+              {role.name}
+            </ToggleButton>
+          ))}
+        </div>
+
         {/* Reset Button */}
         <button
           onClick={() => {
@@ -152,7 +133,7 @@ const CharacterGrid: React.FC = () => {
             setFilterWeapon(-1);
             setFilterElement(-1);
           }}
-          className="px-2 py-1 min-w-[6rem] text-sm bg-primary-main border border-filter-button-border text-filter-button-text hover:bg-background-hover transition-colors"
+          className="px-2 py-1 min-w-[6rem] text-sm border border-filter-button-border transition-colors bg-primary-main text-primary-text hover:bg-primary-light"
         >
           Reset
         </button>
