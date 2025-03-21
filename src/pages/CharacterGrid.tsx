@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Chr } from "../types";
 import { characters, gunDuties, weaponTypes, elementTypes } from "../data/data";
 import { useNavigate } from "react-router-dom";
+import ToggleButtonGroup from "../components/ToggleButtonGroup";
 import ToggleButton from "../components/ToggleButton";
 
 function stripCode(input: string): string {
@@ -64,27 +65,27 @@ const CharacterGrid: React.FC = () => {
     <div>
       <div className="flex flex-wrap gap-4 mb-4">
         {/* Region Filter */}
-        <div className="flex bg-primary-main border border-filter-button-border">
+        <ToggleButtonGroup>
           <ToggleButton selected={filterRegion === 0} onClick={() => handleRegionFilter(0)}>
             CN
           </ToggleButton>
           <ToggleButton selected={filterRegion === 1} onClick={() => handleRegionFilter(1)}>
             EN
           </ToggleButton>
-        </div>
+        </ToggleButtonGroup>
 
         {/* Rarity Filter */}
-        <div className="flex bg-primary-main border border-filter-button-border">
+        <ToggleButtonGroup>
           <ToggleButton selected={filterRarity === 4} onClick={() => handleRarityFilter(4)}>
             SR
           </ToggleButton>
           <ToggleButton selected={filterRarity === 5} onClick={() => handleRarityFilter(5)}>
             SSR
           </ToggleButton>
-        </div>
+        </ToggleButtonGroup>
 
         {/* Weapon Filter */}
-        <div className="flex bg-primary-main border border-filter-button-border">
+        <ToggleButtonGroup>
           {weaponTypes.map((weapon) => (
             <ToggleButton
               key={weapon.id}
@@ -94,10 +95,10 @@ const CharacterGrid: React.FC = () => {
               {weapon.abbr}
             </ToggleButton>
           ))}
-        </div>
+        </ToggleButtonGroup>
 
         {/* Element Filter */}
-        <div className="flex bg-primary-main border border-filter-button-border">
+        <ToggleButtonGroup>
           {elementTypes.slice(0, -2).map((element) => (
             <ToggleButton
               key={element.id}
@@ -108,10 +109,10 @@ const CharacterGrid: React.FC = () => {
               {element.name}
             </ToggleButton>
           ))}
-        </div>
+        </ToggleButtonGroup>
 
         {/* Role Filter */}
-        <div className="flex bg-primary-main border border-filter-button-border">
+        <ToggleButtonGroup>
           {gunDuties.map((role) => (
             <ToggleButton
               key={role.id}
@@ -122,7 +123,7 @@ const CharacterGrid: React.FC = () => {
               {role.name}
             </ToggleButton>
           ))}
-        </div>
+        </ToggleButtonGroup>
 
         {/* Reset Button */}
         <button

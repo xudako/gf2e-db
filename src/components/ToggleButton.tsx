@@ -1,7 +1,6 @@
 import React from "react";
 
 interface ToggleButtonProps {
-  value?: string | number;  // Optional since it's not used internally
   selected: boolean;
   onClick: () => void;
   children: React.ReactNode;
