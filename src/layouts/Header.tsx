@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,12 +9,12 @@ const Header = () => {
   const handleMenuToggle = () => setMenuOpen(!menuOpen);
   const handleMobileToggle = () => setMobileOpen(!mobileOpen);
 
-  const isMenuActive = ["/calculator", "/stages", "/story"].some((path) =>
+  const isMenuActive = ['/calculator', '/stages', '/story'].some((path) =>
     location.pathname.startsWith(path)
   );
 
   const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
-    `text-primary-text hover:text-link-hover transition-colors ${isActive ? "text-secondary-main font-bold" : ""}`;
+    `text-primary-text hover:text-link-hover transition-colors ${isActive ? 'text-secondary-main font-bold' : ''}`;
 
   return (
     <header className="bg-primary-main text-primary-text">
@@ -47,19 +47,24 @@ const Header = () => {
               <button
                 onClick={handleMenuToggle}
                 className={`flex items-center text-primary-text hover:text-link-hover transition-colors ${
-                  isMenuActive ? "text-secondary-main font-bold" : ""
+                  isMenuActive ? 'text-secondary-main font-bold' : ''
                 }`}
               >
                 Tools
                 <svg
                   className={`ml-1 h-5 w-5 transform transition-transform ${
-                    menuOpen ? "rotate-180" : ""
+                    menuOpen ? 'rotate-180' : ''
                   }`}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
                 </svg>
               </button>
 
@@ -69,7 +74,7 @@ const Header = () => {
                   <NavLink
                     to="/calculator"
                     className={({ isActive }) =>
-                      `block px-4 py-2 hover:bg-nav-hover ${isActive ? "bg-nav-hover text-secondary-main" : ""}`
+                      `block px-4 py-2 hover:bg-nav-hover ${isActive ? 'bg-nav-hover text-secondary-main' : ''}`
                     }
                     onClick={() => setMenuOpen(false)}
                   >
@@ -78,7 +83,7 @@ const Header = () => {
                   <NavLink
                     to="/stages"
                     className={({ isActive }) =>
-                      `block px-4 py-2 hover:bg-nav-hover ${isActive ? "bg-nav-hover text-secondary-main" : ""}`
+                      `block px-4 py-2 hover:bg-nav-hover ${isActive ? 'bg-nav-hover text-secondary-main' : ''}`
                     }
                     onClick={() => setMenuOpen(false)}
                   >
@@ -87,7 +92,7 @@ const Header = () => {
                   <NavLink
                     to="/story"
                     className={({ isActive }) =>
-                      `block px-4 py-2 hover:bg-nav-hover ${isActive ? "bg-nav-hover text-secondary-main" : ""}`
+                      `block px-4 py-2 hover:bg-nav-hover ${isActive ? 'bg-nav-hover text-secondary-main' : ''}`
                     }
                     onClick={() => setMenuOpen(false)}
                   >
@@ -103,13 +108,13 @@ const Header = () => {
             onClick={handleMobileToggle}
             className="sm:hidden p-2 rounded-md hover:bg-nav-hover focus:outline-none"
           >
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </button>
         </div>
@@ -123,7 +128,7 @@ const Header = () => {
               to="/dolls"
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md ${
-                  isActive ? "bg-nav-hover text-secondary-main" : "hover:bg-nav-hover"
+                  isActive ? 'bg-nav-hover text-secondary-main' : 'hover:bg-nav-hover'
                 }`
               }
               onClick={() => setMobileOpen(false)}
@@ -134,7 +139,7 @@ const Header = () => {
               to="/weapons"
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md ${
-                  isActive ? "bg-nav-hover text-secondary-main" : "hover:bg-nav-hover"
+                  isActive ? 'bg-nav-hover text-secondary-main' : 'hover:bg-nav-hover'
                 }`
               }
               onClick={() => setMobileOpen(false)}
@@ -145,7 +150,7 @@ const Header = () => {
               to="/enemies"
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md ${
-                  isActive ? "bg-nav-hover text-secondary-main" : "hover:bg-nav-hover"
+                  isActive ? 'bg-nav-hover text-secondary-main' : 'hover:bg-nav-hover'
                 }`
               }
               onClick={() => setMobileOpen(false)}
@@ -156,7 +161,7 @@ const Header = () => {
               to="/calculator"
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md ${
-                  isActive ? "bg-nav-hover text-secondary-main" : "hover:bg-nav-hover"
+                  isActive ? 'bg-nav-hover text-secondary-main' : 'hover:bg-nav-hover'
                 }`
               }
               onClick={() => setMobileOpen(false)}
@@ -167,7 +172,7 @@ const Header = () => {
               to="/stages"
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md ${
-                  isActive ? "bg-nav-hover text-secondary-main" : "hover:bg-nav-hover"
+                  isActive ? 'bg-nav-hover text-secondary-main' : 'hover:bg-nav-hover'
                 }`
               }
               onClick={() => setMobileOpen(false)}
@@ -178,7 +183,7 @@ const Header = () => {
               to="/story"
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md ${
-                  isActive ? "bg-nav-hover text-secondary-main" : "hover:bg-nav-hover"
+                  isActive ? 'bg-nav-hover text-secondary-main' : 'hover:bg-nav-hover'
                 }`
               }
               onClick={() => setMobileOpen(false)}

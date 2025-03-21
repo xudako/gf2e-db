@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface ToggleButtonProps {
   selected: boolean;
@@ -7,22 +7,20 @@ interface ToggleButtonProps {
   className?: string;
 }
 
-const ToggleButton: React.FC<ToggleButtonProps> = ({ 
-  selected, 
-  onClick, 
-  children, 
-  className = ""
+const ToggleButton: React.FC<ToggleButtonProps> = ({
+  selected,
+  onClick,
+  children,
+  className = '',
 }) => {
-  const baseClasses = "px-2 py-1 min-w-[6rem] text-sm border border-primary-light transition-colors";
-  const stateClasses = selected 
-    ? "bg-primary-main text-primary-selected" 
-    : "text-primary-text hover:bg-primary-light";
+  const baseClasses =
+    'px-2 py-1 min-w-[6rem] text-sm border border-primary-light transition-colors';
+  const stateClasses = selected
+    ? 'bg-primary-main text-primary-selected'
+    : 'text-primary-text hover:bg-primary-light';
 
   return (
-    <button
-      onClick={onClick}
-      className={`${baseClasses} ${stateClasses} ${className}`}
-    >
+    <button onClick={onClick} className={`${baseClasses} ${stateClasses} ${className}`}>
       {children}
     </button>
   );

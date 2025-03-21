@@ -1,19 +1,14 @@
-import React, { useEffect, useRef } from "react";
-import { Skill } from "../types";
+import React, { useEffect, useRef } from 'react';
+import { Skill } from '../types';
 
-type GridProps = Pick<Skill, "range" | "shape" | "shapeParam" | "skillRange">;
+type GridProps = Pick<Skill, 'range' | 'shape' | 'shapeParam' | 'skillRange'>;
 
-const SkillGrid: React.FC<GridProps> = ({
-  range,
-  shape,
-  shapeParam,
-  skillRange,
-}) => {
+const SkillGrid: React.FC<GridProps> = ({ range, shape, shapeParam, skillRange }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const processInput = (input: string) => {
-    const parts = input.split(",").map(Number);
+    const parts = input.split(',').map(Number);
     return parts.map((val) => (val % 100 ? val : val / 100));
   };
   const gridRange = processInput(range);
@@ -45,15 +40,14 @@ const SkillGrid: React.FC<GridProps> = ({
   const gridSize =
     shape === 8 || skillRange === 8
       ? 21
-      : [9, 17, 21].find((val) => val > 2 * (gridRange[0] + gridShape[0])) ??
-        21;
+      : [9, 17, 21].find((val) => val > 2 * (gridRange[0] + gridShape[0])) ?? 21;
 
-  const RANGE_COLOR = "#6979d9"; // info color
-  const SHAPE_COLOR = "#f26c1c"; // secondary.main color
-  const BG_COLOR = "#dddddd";
-  const CENTER_COLOR = "#ffffff";
+  const RANGE_COLOR = '#6979d9'; // info color
+  const SHAPE_COLOR = '#f26c1c'; // secondary.main color
+  const BG_COLOR = '#dddddd';
+  const CENTER_COLOR = '#ffffff';
   const CELL_GAP = 1; // Gap between cells in pixels
-  const GRID_BG = "#999999"; // Default grid cell color
+  const GRID_BG = '#999999'; // Default grid cell color
 
   useEffect(() => {
     const container = containerRef.current;
@@ -64,8 +58,8 @@ const SkillGrid: React.FC<GridProps> = ({
     const size = container.clientWidth;
     canvas.width = size;
     canvas.height = size;
-    
-    const ctx = canvas.getContext("2d");
+
+    const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
     const CELL_SIZE = size / gridSize;
@@ -167,40 +161,31 @@ const SkillGrid: React.FC<GridProps> = ({
             break;
           case 2:
             if (
-              Math.abs(center - row - gridRange[0]) <=
-                Math.floor(gridShape[0] / 2) &&
+              Math.abs(center - row - gridRange[0]) <= Math.floor(gridShape[0] / 2) &&
               Math.abs(center - col) <= Math.floor(gridShape[0] / 2)
             )
               inShape = true;
             if (gridShape[1]) {
               if (
-                Math.abs(center - row - gridRange[0]) <=
-                  Math.floor(gridShape[1] / 2) &&
+                Math.abs(center - row - gridRange[0]) <= Math.floor(gridShape[1] / 2) &&
                 Math.abs(center - col) <= Math.floor(gridShape[1] / 2)
               )
                 inShape = false;
             }
             break;
           case 3:
-            if (
-              Math.abs(row - center + gridRange[0]) + Math.abs(col - center) <=
-              gridShape[0]
-            )
+            if (Math.abs(row - center + gridRange[0]) + Math.abs(col - center) <= gridShape[0])
               inShape = true;
-              if (gridRange[0] === 30 || gridRange[0] === 32) { //Ullrid
-                const offset = gridRange[0] === 30 ? 5 : 7;
-                if (Math.abs(row - center + offset) + Math.abs(col - center) <= gridShape[0]) {
-                  inShape = true;
-                }
+            if (gridRange[0] === 30 || gridRange[0] === 32) {
+              //Ullrid
+              const offset = gridRange[0] === 30 ? 5 : 7;
+              if (Math.abs(row - center + offset) + Math.abs(col - center) <= gridShape[0]) {
+                inShape = true;
               }
+            }
             break;
           case 5:
-            if (
-              center - row > 1 &&
-              center - row <= gridShape[0] &&
-              col === center
-            )
-              inShape = true;
+            if (center - row > 1 && center - row <= gridShape[0] && col === center) inShape = true;
             break;
           case 8:
             inShape = true;
@@ -231,7 +216,8 @@ const SkillGrid: React.FC<GridProps> = ({
               Math.abs(center - col) <= Math.floor(shape7[0] / 2)
             )
               inShape = true;
-            if (gridShape[0] === 78) { //Littara
+            if (gridShape[0] === 78) {
+              //Littara
               if (Math.abs(center - row) <= Math.floor(5 / 2)) inShape = false;
             }
             break;
@@ -256,10 +242,7 @@ const SkillGrid: React.FC<GridProps> = ({
 
   return (
     <div ref={containerRef} className="inline-block aspect-square">
-      <canvas
-        ref={canvasRef}
-        className="w-full h-full"
-      />
+      <canvas ref={canvasRef} className="w-full h-full" />
     </div>
   );
 };

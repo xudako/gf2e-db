@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Wpn } from "../types";
-import { weapons, weaponTypes } from "../data/data";
-import { useNavigate } from "react-router-dom";
-import ToggleButton from "../components/ToggleButton";
+import React, { useState } from 'react';
+import { Wpn } from '../types';
+import { weapons, weaponTypes } from '../data/data';
+import { useNavigate } from 'react-router-dom';
+import ToggleButton from '../components/ToggleButton';
 
 const WeaponGrid: React.FC = () => {
   const [selectedWeapon, setSelectedWeapon] = useState<Wpn | null>(null);
@@ -12,7 +12,7 @@ const WeaponGrid: React.FC = () => {
 
   const handleWeaponSelect = (weapon: Wpn) => {
     setSelectedWeapon(weapon);
-    navigate(`/weapons/${weapon.name.replace(" ", "_")}`);
+    navigate(`/weapons/${weapon.name.replace(' ', '_')}`);
   };
 
   const handleRarityFilter = (newRarity: number) => {
@@ -34,9 +34,7 @@ const WeaponGrid: React.FC = () => {
     const rarityMatch = filterRarity === -1 || filterRarity === weapon.rank;
     const weaponMatch = filterWeapon === -1 || filterWeapon === weapon.type;
 
-    return (
-      rarityMatch && weaponMatch
-    );
+    return rarityMatch && weaponMatch;
   });
 
   return (
@@ -44,7 +42,7 @@ const WeaponGrid: React.FC = () => {
       <div className="flex flex-wrap gap-4 mb-4">
         {/* Rarity Filter */}
         <div className="flex bg-primary-main border border-filter-button-border">
-        <ToggleButton selected={filterRarity === 3} onClick={() => handleRarityFilter(3)}>
+          <ToggleButton selected={filterRarity === 3} onClick={() => handleRarityFilter(3)}>
             R
           </ToggleButton>
           <ToggleButton selected={filterRarity === 4} onClick={() => handleRarityFilter(4)}>
@@ -84,26 +82,20 @@ const WeaponGrid: React.FC = () => {
       <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 gap-4">
         {filteredWeapons.map((weapon) => (
           <div
-          key={weapon.name}
-          onClick={() => handleWeaponSelect(weapon)}
-          className={`p-4 transition-colors cursor-pointer
-            ${selectedWeapon?.name === weapon.name ? "bg-primary-light" : ""}
+            key={weapon.name}
+            onClick={() => handleWeaponSelect(weapon)}
+            className={`p-4 transition-colors cursor-pointer
+            ${selectedWeapon?.name === weapon.name ? 'bg-primary-light' : ''}
             hover:bg-secondary-main hover:text-white`}
-        >
+          >
             <img
-              src={
-                `${import.meta.env.BASE_URL}weapons/${
-                      weapon.resCode
-                    }_256.png`
-              }
+              src={`${import.meta.env.BASE_URL}weapons/${weapon.resCode}_256.png`}
               alt={weapon.name}
               onError={(e) =>
-                (e.currentTarget.src = `${
-                  import.meta.env.BASE_URL
-                }images/default.png`)
+                (e.currentTarget.src = `${import.meta.env.BASE_URL}images/default.png`)
               }
               className={`w-full aspect-square object-cover rounded-lg 
-                ${weapon.rank === 5 ? "bg-rarity-ssr" : weapon.rank === 4 ? "bg-rarity-sr" : "bg-rarity-r"}`}
+                ${weapon.rank === 5 ? 'bg-rarity-ssr' : weapon.rank === 4 ? 'bg-rarity-sr' : 'bg-rarity-r'}`}
             />
             <div className="mt-2 text-center font-medium">{weapon.name}</div>
           </div>
@@ -111,6 +103,6 @@ const WeaponGrid: React.FC = () => {
       </div>
     </div>
   );
-}
+};
 
 export default WeaponGrid;

@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { Chr } from "../types";
-import { characters, gunDuties, weaponTypes, elementTypes } from "../data/data";
-import { useNavigate } from "react-router-dom";
-import ToggleButtonGroup from "../components/ToggleButtonGroup";
-import ToggleButton from "../components/ToggleButton";
+import React, { useState } from 'react';
+import { Chr } from '../types';
+import { characters, gunDuties, weaponTypes, elementTypes } from '../data/data';
+import { useNavigate } from 'react-router-dom';
+import ToggleButtonGroup from '../components/ToggleButtonGroup';
+import ToggleButton from '../components/ToggleButton';
 
 function stripCode(input: string): string {
-  return input.replace(/ssr$/i, "").replace(/sr$/i, "");
+  return input.replace(/ssr$/i, '').replace(/sr$/i, '');
 }
 
 const CharacterGrid: React.FC = () => {
@@ -149,7 +149,7 @@ const CharacterGrid: React.FC = () => {
             onMouseEnter={() => setHoveredCharacter(character)}
             onMouseLeave={() => setHoveredCharacter(null)}
             className={`p-4 transition-colors cursor-pointer
-              ${selectedCharacter?.name === character.name ? "bg-primary-light" : ""}
+              ${selectedCharacter?.name === character.name ? 'bg-primary-light' : ''}
               hover:bg-secondary-main hover:text-white`}
           >
             <img
@@ -159,9 +159,11 @@ const CharacterGrid: React.FC = () => {
                   : `${import.meta.env.BASE_URL}dolls/Avatar_Head_${character.code}_Spine.png`
               }
               alt={character.name}
-              onError={(e) => (e.currentTarget.src = `${import.meta.env.BASE_URL}images/default.png`)}
+              onError={(e) =>
+                (e.currentTarget.src = `${import.meta.env.BASE_URL}images/default.png`)
+              }
               className={`w-full aspect-square object-cover rounded-lg 
-                ${character.rank === 5 ? "bg-rarity-ssr" : "bg-rarity-sr"}`}
+                ${character.rank === 5 ? 'bg-rarity-ssr' : 'bg-rarity-sr'}`}
             />
             <div className="mt-2 text-center font-medium">{character.name}</div>
           </div>

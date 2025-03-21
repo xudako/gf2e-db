@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { Chr, Skill, Skin } from "../types";
-import SkillCard from "../components/SkillCard";
-import Tables from "../data/TableLoader";
-import ToggleButton from "../components/ToggleButton";
-import Tooltip from "../components/Tooltip";
+import React, { useState, useEffect } from 'react';
+import { Chr, Skill, Skin } from '../types';
+import SkillCard from '../components/SkillCard';
+import Tables from '../data/TableLoader';
+import ToggleButton from '../components/ToggleButton';
+import Tooltip from '../components/Tooltip';
 
-type SkillTypeId = "01" | "05" | "07" | "04" | "08";
+type SkillTypeId = '01' | '05' | '07' | '04' | '08';
 
 interface SkillType {
   id: SkillTypeId;
@@ -13,11 +13,11 @@ interface SkillType {
 }
 
 const skillTypes: SkillType[] = [
-  { id: "01", name: "Basic" },
-  { id: "05", name: "Skill 1" },
-  { id: "07", name: "Skill 2" },
-  { id: "04", name: "Ultimate" },
-  { id: "08", name: "Passive" },
+  { id: '01', name: 'Basic' },
+  { id: '05', name: 'Skill 1' },
+  { id: '07', name: 'Skill 2' },
+  { id: '04', name: 'Ultimate' },
+  { id: '08', name: 'Passive' },
 ];
 
 interface SkillsByLevel {
@@ -39,13 +39,13 @@ const ammoType = new Map([
 ]);
 
 const levelMarks = [
-  { value: 1, label: "1" },
-  { value: 10, label: "10" },
-  { value: 20, label: "20" },
-  { value: 30, label: "30" },
-  { value: 40, label: "40" },
-  { value: 50, label: "50" },
-  { value: 60, label: "60" },
+  { value: 1, label: '1' },
+  { value: 10, label: '10' },
+  { value: 20, label: '20' },
+  { value: 30, label: '30' },
+  { value: 40, label: '40' },
+  { value: 50, label: '50' },
+  { value: 60, label: '60' },
 ];
 
 interface CharacterOverlayProps {
@@ -54,11 +54,7 @@ interface CharacterOverlayProps {
   character?: Chr;
 }
 
-const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
-  open,
-  onClose,
-  character,
-}) => {
+const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, character }) => {
   if (!character) {
     return <div className="text-2xl">404</div>;
   }
@@ -92,24 +88,18 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
       Tables.BattleSkillData[skillId],
       Tables.BattleSkillDisplayData[skillId],
     ];
-    if (!data || !display)
-      throw new Error(`Skill with ID ${skillId} not found`);
+    if (!data || !display) throw new Error(`Skill with ID ${skillId} not found`);
     return {
       ...data,
       ...display,
       range: display.rangeDisplayParam || data.skillRangeParam,
       shape: display.shapeDisplay || data.shape,
       shapeParam: display.shapeDisplayParam || data.shapeParam,
-      weaponTag:
-        data.weaponTag === 1
-          ? ammoType.get(character.weaponType)
-          : data.weaponTag,
+      weaponTag: data.weaponTag === 1 ? ammoType.get(character.weaponType) : data.weaponTag,
     };
   };
 
-  const skillIds = vertebraeIds.map(
-    (vertId) => Tables.GunGradeData[vertId].abbr
-  );
+  const skillIds = vertebraeIds.map((vertId) => Tables.GunGradeData[vertId].abbr);
 
   const allSkills: SkillTree = {};
 
@@ -127,10 +117,10 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
 
   const [currentSkillType, setCurrentSkillType] = useState<SkillTypeId>(skillTypes[0].id);
   const [currentSkillLevels, setCurrentSkillLevels] = useState<Map<SkillTypeId, string>>(
-    new Map(skillTypes.map((type) => [type.id, "01"]))
+    new Map(skillTypes.map((type) => [type.id, '01']))
   );
-  const [currentSkillLevel, setCurrentSkillLevel] = useState<string>("01");
-  const [currentSkill, setCurrentSkill] = useState<Skill>(allSkills["01"]["01"]);
+  const [currentSkillLevel, setCurrentSkillLevel] = useState<string>('01');
+  const [currentSkill, setCurrentSkill] = useState<Skill>(allSkills['01']['01']);
 
   useEffect(() => {
     setCurrentSkillLevels((prevLevels) =>
@@ -139,7 +129,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   }, [currentSkillLevel]);
 
   useEffect(() => {
-    setCurrentSkillLevel(currentSkillLevels.get(currentSkillType) ?? "01");
+    setCurrentSkillLevel(currentSkillLevels.get(currentSkillType) ?? '01');
   }, [currentSkillType]);
 
   useEffect(() => {
@@ -159,9 +149,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   };
 
   const getLevels = (skillType: string): string[] => {
-    const levels = allSkills[skillType]
-      ? Object.keys(allSkills[skillType]).sort()
-      : [];
+    const levels = allSkills[skillType] ? Object.keys(allSkills[skillType]).sort() : [];
     return levels;
   };
 
@@ -179,13 +167,20 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   if (!open) return null;
 
   return (
-    <div className={`fixed inset-0 bg-background-overlay z-50 p-8 overflow-auto transition-transform transform ${open ? 'translate-y-0' : 'translate-y-full'}`}>
+    <div
+      className={`fixed inset-0 bg-background-overlay z-50 p-8 overflow-auto transition-transform transform ${open ? 'translate-y-0' : 'translate-y-full'}`}
+    >
       <button
         onClick={onClose}
         className="absolute top-4 right-4 p-2 text-primary-text hover:text-secondary-main transition-colors"
       >
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M6 18L18 6M6 6l12 12"
+          />
         </svg>
       </button>
 
@@ -193,9 +188,11 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
         {/* Character Info */}
         <div className="col-span-6">
           <div className="p-4">
-            <h1 
-              className="text-4xl" 
-              style={{ color: `#${Tables.LanguageElementData[character.element]["color"].slice(0, -2)}` }}
+            <h1
+              className="text-4xl"
+              style={{
+                color: `#${Tables.LanguageElementData[character.element]['color'].slice(0, -2)}`,
+              }}
             >
               {character.name}
             </h1>
@@ -219,10 +216,10 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                 <span>Weapon:</span>
               </div>
               <div className="col-span-4">
-                <Tooltip title={Tables.GunWeaponTypeData[character.weaponType]["name"]}>
+                <Tooltip title={Tables.GunWeaponTypeData[character.weaponType]['name']}>
                   <img
-                    src={`${import.meta.env.BASE_URL}icons/${Tables.GunWeaponTypeData[character.weaponType]["skinIcon"]}.png`}
-                    alt={`${Tables.GunWeaponTypeData[character.weaponType]["name"]} icon`}
+                    src={`${import.meta.env.BASE_URL}icons/${Tables.GunWeaponTypeData[character.weaponType]['skinIcon']}.png`}
+                    alt={`${Tables.GunWeaponTypeData[character.weaponType]['name']} icon`}
                     className="h-16 align-middle"
                   />
                 </Tooltip>
@@ -232,10 +229,10 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                 <span>Element:</span>
               </div>
               <div className="col-span-4">
-                <Tooltip title={Tables.LanguageElementData[character.element]["name"]}>
+                <Tooltip title={Tables.LanguageElementData[character.element]['name']}>
                   <img
-                    src={`${import.meta.env.BASE_URL}icons/${Tables.LanguageElementData[character.element]["icon"]}_S.png`}
-                    alt={`${Tables.LanguageElementData[character.element]["name"]} icon`}
+                    src={`${import.meta.env.BASE_URL}icons/${Tables.LanguageElementData[character.element]['icon']}_S.png`}
+                    alt={`${Tables.LanguageElementData[character.element]['name']} icon`}
                     className="h-16 align-middle"
                   />
                 </Tooltip>
@@ -245,17 +242,17 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                 <span>Weakness:</span>
               </div>
               <div className="col-span-4 flex space-x-2">
-                <Tooltip title={Tables.WeaponTagData[character.weak[0]]["name"]}>
+                <Tooltip title={Tables.WeaponTagData[character.weak[0]]['name']}>
                   <img
-                    src={`${import.meta.env.BASE_URL}icons/${Tables.WeaponTagData[character.weak[0]]["icon"]}_S.png`}
-                    alt={`${Tables.WeaponTagData[character.weak[0]]["name"]} icon`}
+                    src={`${import.meta.env.BASE_URL}icons/${Tables.WeaponTagData[character.weak[0]]['icon']}_S.png`}
+                    alt={`${Tables.WeaponTagData[character.weak[0]]['name']} icon`}
                     className="h-16 align-middle"
                   />
                 </Tooltip>
-                <Tooltip title={Tables.LanguageElementData[character.weak[1]]["name"]}>
+                <Tooltip title={Tables.LanguageElementData[character.weak[1]]['name']}>
                   <img
-                    src={`${import.meta.env.BASE_URL}icons/${Tables.LanguageElementData[character.weak[1]]["icon"]}_S.png`}
-                    alt={`${Tables.LanguageElementData[character.weak[1]]["name"]} icon`}
+                    src={`${import.meta.env.BASE_URL}icons/${Tables.LanguageElementData[character.weak[1]]['icon']}_S.png`}
+                    alt={`${Tables.LanguageElementData[character.weak[1]]['name']} icon`}
                     className="h-16 align-middle"
                   />
                 </Tooltip>

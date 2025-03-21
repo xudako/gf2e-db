@@ -1,17 +1,15 @@
-import { Skill } from "../types";
-import SkillGrid from "./SkillGrid";
-import RichText from "./RichText";
-import SkillIcon from "./SkillIcon";
+import { Skill } from '../types';
+import SkillGrid from './SkillGrid';
+import RichText from './RichText';
+import SkillIcon from './SkillIcon';
 
 const SkillCard = ({ skill }: { skill: Skill }) => {
   if (!skill) return;
-  const stabExists = skill.result
-    .split(";")
-    .find((element) => element[0] === "2");
+  const stabExists = skill.result.split(';').find((element) => element[0] === '2');
   const stability = stabExists ? stabExists[2] : 0;
 
   function processInput(input: string) {
-    const parts = input.split(",").map(Number);
+    const parts = input.split(',').map(Number);
     return parts.map((val) => (val % 100 ? val : val / 100));
   }
   const gridRange = processInput(skill.range);
@@ -19,7 +17,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
   let dispRange;
   switch (skill.skillRange) {
     case 1:
-      dispRange = "Self";
+      dispRange = 'Self';
       break;
     case 2:
       dispRange = `${gridRange[0]} × ${gridRange[0]}`;
@@ -28,16 +26,16 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
       dispRange = gridRange[0];
       break;
     case 7:
-      dispRange = "--";
+      dispRange = '--';
       break;
     case 8:
-      dispRange = "Map";
+      dispRange = 'Map';
       break;
   }
   let dispShape;
   switch (skill.shape) {
     case 1:
-      dispShape = "Target";
+      dispShape = 'Target';
       break;
     case 2:
       dispShape = `${gridShape[0]} × ${gridShape[0]}`;
@@ -46,10 +44,10 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
       dispShape = gridShape[0];
       break;
     case 7:
-      dispShape = "--";
+      dispShape = '--';
       break;
     case 8:
-      dispShape = "Map";
+      dispShape = 'Map';
       break;
   }
 
@@ -58,16 +56,10 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
       <div className="grid grid-cols-4 gap-8">
         {/* Left Section: Image, Name, and Tags */}
         <div className="text-center">
-          <h5 className="text-secondary text-lg font-medium">
-            {skill.name}
-          </h5>
-          <SkillIcon
-            skill={skill.icon}
-            element={skill.elementTag}
-            weapon={skill.weaponTag}
-          />
+          <h5 className="text-secondary text-lg font-medium">{skill.name}</h5>
+          <SkillIcon skill={skill.icon} element={skill.elementTag} weapon={skill.weaponTag} />
           <div className="flex flex-wrap justify-center gap-2 mt-4">
-            {skill.skillTag.split("/").map((tag) => (
+            {skill.skillTag.split('/').map((tag) => (
               <span key={tag} className="px-3 py-1 rounded-full bg-skill-bg text-white text-sm">
                 {tag}
               </span>
@@ -85,10 +77,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
         {/* Center Section: Description & Upgrade Buttons */}
         <div className="text-center col-span-2">
           <div className="mt-8">
-            <RichText
-              content={skill.description}
-              descriptionTips={skill.descriptionTips}
-            />
+            <RichText content={skill.description} descriptionTips={skill.descriptionTips} />
           </div>
         </div>
 
@@ -103,9 +92,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
           />
           <div className="flex justify-between">
             <p className="mt-8">Range</p>
-            <p className="mt-8 text-right">
-              {dispRange}
-            </p>
+            <p className="mt-8 text-right">{dispRange}</p>
           </div>
           <hr className="border-b-[5px] border-grid-bg my-2" />
           <div className="flex justify-between">

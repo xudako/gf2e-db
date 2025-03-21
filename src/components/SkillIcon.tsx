@@ -1,4 +1,4 @@
-import Tables from "../data/TableLoader";
+import Tables from '../data/TableLoader';
 
 interface SkillIconProps {
   skill: string;

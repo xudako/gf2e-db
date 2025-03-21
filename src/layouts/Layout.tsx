@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import React, { useEffect, useState } from 'react';
+import Header from './Header';
+import Footer from './Footer';
 
 const getRandomBackground = () => {
   const totalImages = 5;
@@ -9,7 +9,7 @@ const getRandomBackground = () => {
 };
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [backgroundImage, setBackgroundImage] = useState<string>("");
+  const [backgroundImage, setBackgroundImage] = useState<string>('');
 
   useEffect(() => {
     const randomImage = getRandomBackground();
@@ -17,14 +17,12 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   }, []);
 
   return (
-    <div 
+    <div
       className="flex flex-col min-h-screen bg-cover bg-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <Header />
-      <main className="flex-1 container mx-auto px-4 mt-8 lg:max-w-7xl">
-        {children}
-      </main>
+      <main className="flex-1 container mx-auto px-4 mt-8 lg:max-w-7xl">{children}</main>
       <Footer />
     </div>
   );

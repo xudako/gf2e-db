@@ -6,7 +6,7 @@ interface TooltipProps {
   className?: string;
 }
 
-const Tooltip: React.FC<TooltipProps> = ({ title, children, className = "" }) => {
+const Tooltip: React.FC<TooltipProps> = ({ title, children, className = '' }) => {
   const [isVisible, setIsVisible] = useState(false);
   let timeout: NodeJS.Timeout;
 
@@ -22,7 +22,7 @@ const Tooltip: React.FC<TooltipProps> = ({ title, children, className = "" }) =>
   };
 
   return (
-    <div 
+    <div
       className={`relative inline-block ${className}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

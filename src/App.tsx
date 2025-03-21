@@ -1,33 +1,21 @@
-import {
-  HashRouter as Router,
-  Routes,
-  Route,
-  useParams,
-  useNavigate,
-} from "react-router-dom";
-import Layout from "./layouts/Layout";
-import Home from "./pages/Home";
-import CharacterGrid from "./pages/CharacterGrid";
-import CharacterOverlay from "./pages/CharacterOverlay";
-import WeaponGrid from "./pages/WeaponGrid";
-import { Chr } from "./types";
-import { characters } from "./data/data";
-import "./index.css";
+import { HashRouter as Router, Routes, Route, useParams, useNavigate } from 'react-router-dom';
+import Layout from './layouts/Layout';
+import Home from './pages/Home';
+import CharacterGrid from './pages/CharacterGrid';
+import CharacterOverlay from './pages/CharacterOverlay';
+import WeaponGrid from './pages/WeaponGrid';
+import { Chr } from './types';
+import { characters } from './data/data';
+import './index.css';
 
 const CharacterOverlayWrapper: React.FC = () => {
   const { name } = useParams<{ name: string }>();
   const navigate = useNavigate();
 
-  const character: Chr | undefined = characters.find(
-    (gun: Chr) => gun.name === name
-  );
+  const character: Chr | undefined = characters.find((gun: Chr) => gun.name === name);
 
   return (
-    <CharacterOverlay
-      open={!!character}
-      onClose={() => navigate("/dolls")}
-      character={character}
-    />
+    <CharacterOverlay open={!!character} onClose={() => navigate('/dolls')} character={character} />
   );
 };
 

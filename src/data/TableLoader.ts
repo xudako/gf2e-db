@@ -1,13 +1,13 @@
 class TableLoader {
   private cache: Record<string, any> = {};
 
-  private tables: Record<string, any> = import.meta.glob("./tables/*.json", {
+  private tables: Record<string, any> = import.meta.glob('./tables/*.json', {
     eager: true,
   });
 
   constructor() {
     Object.entries(this.tables).forEach(([key, value]) => {
-      const tableName = key.replace("./tables/", "").replace(".json", "");
+      const tableName = key.replace('./tables/', '').replace('.json', '');
       this.cache[tableName] = this.transformData(value);
     });
   }
