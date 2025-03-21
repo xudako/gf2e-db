@@ -47,17 +47,19 @@ const getTextClass = (variant: RichTextProps['variant'] = 'body1') => {
 const parseUnityRichText = (content: string, descriptionTips: string): React.ReactNode => {
   const buffIds = descriptionTips.split(';').map((buffId) => buffId.split(':'));
 
-  const regex = /<color=([#a-fA-F0-9]+)>(.*?)<\/color>/g;
+  const regex = /<color=([#a-fA-F0-9]+)>(\{(\d+)\}(?:\([^)]*\))?|.*?)<\/color>/g;
   const elements: React.ReactNode[] = [];
   let lastIndex = 0;
 
-  content.replace(regex, (match, color, text, index) => {
+  content.replace(regex, (match, color, text, _buffIndexStr, index) => {
     if (lastIndex < index) {
       elements.push(content.slice(lastIndex, index));
     }
 
-    if (text.match(/^\{\d+\}$/)) {
-      const buffIndex = parseInt(text.slice(1, -1));
+    const buffIndexMatch = text.match(/^\{(\d+)\}/);
+    if (buffIndexMatch) {
+      const buffIndex = parseInt(buffIndexMatch[1]);
+      const suffix = text.slice(buffIndexMatch[0].length);
       const buffId = buffIds[buffIndex];
       const buff: Buff =
         buffId[0] == '0'
@@ -97,6 +99,7 @@ const parseUnityRichText = (content: string, descriptionTips: string): React.Rea
           <span style={{ color }} className="underline cursor-help">
             {buff.name}
           </span>
+          <span style={{ color }}>{suffix}</span>
         </Tooltip>
       );
     } else {

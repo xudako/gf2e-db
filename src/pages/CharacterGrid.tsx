@@ -17,6 +17,7 @@ const CharacterGrid: React.FC = () => {
   const [filterRole, setFilterRole] = useState<number>(-1);
   const [filterWeapon, setFilterWeapon] = useState<number>(-1);
   const [filterElement, setFilterElement] = useState<number>(-1);
+  const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
 
   const handleCharacterSelect = (character: Chr) => {
@@ -57,13 +58,23 @@ const CharacterGrid: React.FC = () => {
     const roleMatch = filterRole === -1 || filterRole === character.duty;
     const weaponMatch = filterWeapon === -1 || filterWeapon === character.weaponType;
     const elementMatch = filterElement === -1 || filterElement === character.element;
+    const searchMatch =
+      searchQuery === '' || character.name.toLowerCase().includes(searchQuery.toLowerCase());
 
-    return regionMatch && rarityMatch && roleMatch && weaponMatch && elementMatch;
+    return regionMatch && rarityMatch && roleMatch && weaponMatch && elementMatch && searchMatch;
   });
 
   return (
     <div>
       <div className="flex flex-wrap gap-4 mb-4">
+        <input
+          type="text"
+          placeholder="Search"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-main bg-white/90"
+        />
+
         {/* Region Filter */}
         <ToggleButtonGroup>
           <ToggleButton selected={filterRegion === 0} onClick={() => handleRegionFilter(0)}>
@@ -104,7 +115,6 @@ const CharacterGrid: React.FC = () => {
               key={element.id}
               selected={filterElement === element.id}
               onClick={() => handleElementFilter(element.id)}
-              className="min-w-[6rem]"
             >
               {element.name}
             </ToggleButton>
@@ -118,7 +128,6 @@ const CharacterGrid: React.FC = () => {
               key={role.id}
               selected={filterRole === role.id}
               onClick={() => handleRoleFilter(role.id)}
-              className="min-w-[6rem]"
             >
               {role.name}
             </ToggleButton>
@@ -133,6 +142,7 @@ const CharacterGrid: React.FC = () => {
             setFilterRole(-1);
             setFilterWeapon(-1);
             setFilterElement(-1);
+            setSearchQuery('');
           }}
           className="px-2 py-1 min-w-[6rem] text-sm border border-filter-button-border transition-colors bg-primary-main text-primary-text hover:bg-primary-light"
         >
@@ -165,7 +175,9 @@ const CharacterGrid: React.FC = () => {
               className={`w-full aspect-square object-cover rounded-lg 
                 ${character.rank === 5 ? 'bg-rarity-ssr' : 'bg-rarity-sr'}`}
             />
-            <div className="mt-2 text-center font-medium">{character.name}</div>
+            <div className="mt-2 text-center font-medium bg-black/50 text-white rounded">
+              {character.name}
+            </div>
           </div>
         ))}
       </div>
