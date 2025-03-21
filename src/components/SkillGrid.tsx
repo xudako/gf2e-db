@@ -49,7 +49,7 @@ const SkillGrid: React.FC<GridProps> = ({
         21;
 
   const RANGE_COLOR = "#6979d9"; // info color
-  const SHAPE_COLOR = "#f58c1f"; // secondary.main color
+  const SHAPE_COLOR = "#f26c1c"; // secondary.main color
   const BG_COLOR = "#dddddd";
   const CENTER_COLOR = "#ffffff";
   const CELL_GAP = 1; // Gap between cells in pixels

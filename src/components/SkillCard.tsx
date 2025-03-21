@@ -1,176 +1,7 @@
-import {
-  Box,
-  Grid2,
-  Typography,
-  Chip,
-  Stack,
-  Tooltip,
-  Divider,
-} from "@mui/material";
-import { Skill, Buff } from "../types";
+import { Skill } from "../types";
 import SkillGrid from "./SkillGrid";
-import Tables from "../data/TableLoader";
-
-interface RichTextProps {
-  content: string | undefined;
-  descriptionTips?: string;
-  variant?: import("@mui/material").TypographyProps["variant"];
-}
-
-interface SkillIconProps {
-  skill: string;
-  element: number;
-  weapon: number;
-}
-
-const dynamicBuffs = new Map([
-  [1022, 102204013], //Sharkry
-  [103209, 10320981], //Daiyan
-  [104400, 310452], //Vector
-  [340600, 340601], //Klukai
-  [340700, 340701], //Klukai
-  [10520800, 10520801], //Klukai
-  [10510700, 105107001], //Mechty
-  [10510800, 105108001], //Mechty
-]);
-
-const SkillIcon: React.FC<SkillIconProps> = ({ skill, element, weapon }) => {
-  return (
-    <Box sx={{ position: "relative", display: "inline-block" }}>
-      <Box
-        component="img"
-        src={`${import.meta.env.BASE_URL}skills/${skill}.png`}
-        alt="Skill Icon"
-        sx={{
-          display: "block",
-          mt: 2,
-          width: 128,
-          maxWidth: "100%",
-          bgcolor: "primary.main",
-          borderRadius: "8px",
-        }}
-      />
-      {element > 0 && (
-        <Box
-          component="img"
-          src={`${import.meta.env.BASE_URL}icons/${
-            Tables.LanguageElementData[element].icon
-          }_Weakpoint.png`}
-          alt="Element Icon"
-          sx={{ width: 52, position: "absolute", bottom: -6, left: -6 }}
-        />
-      )}
-      {weapon > 0 && (
-        <Box
-          component="img"
-          src={`${import.meta.env.BASE_URL}icons/${
-            Tables.WeaponTagData[weapon].icon
-          }_Weakpoint.png`}
-          alt="Weapon Icon"
-          sx={{ width: 52, position: "absolute", top: 10, left: -6 }}
-        />
-      )}
-    </Box>
-  );
-};
-
-const RichTextComponent: React.FC<RichTextProps> = ({
-  content,
-  descriptionTips,
-  variant,
-}) => {
-  if (!content) {
-    return (
-      <Typography variant={variant ?? "body1"}>
-        No description available.
-      </Typography>
-    );
-  }
-  return (
-    <Typography variant={variant ?? "body1"}>
-      {parseUnityRichText(content, descriptionTips ?? "")}
-    </Typography>
-  );
-};
-
-const parseUnityRichText = (
-  content: string,
-  descriptionTips: string
-): React.ReactNode => {
-  const buffIds = descriptionTips.split(";").map((buffId) => buffId.split(":"));
-
-  const regex = /<color=([#a-fA-F0-9]+)>(.*?)<\/color>/g;
-  const elements: React.ReactNode[] = [];
-  let lastIndex = 0;
-
-  content.replace(regex, (match, color, text, index) => {
-    if (lastIndex < index) {
-      elements.push(content.slice(lastIndex, index));
-    }
-
-    if (text.match(/^\{\d+\}$/)) {
-      const buffIndex = parseInt(text.slice(1, -1));
-      const buffId = buffIds[buffIndex];
-      const buff: Buff =
-        buffId[0] == "0"
-          ? buffId[1].startsWith("-") &&
-            parseInt(buffId[1].slice(3)) &&
-            dynamicBuffs.has(parseInt(buffId[1].slice(3)))
-            ? Tables.BattleBuffPerformData[
-                dynamicBuffs.get(parseInt(buffId[1].slice(3)))!
-              ]
-            : Tables.BattleBuffPerformData[parseInt(buffId[1])]
-          : Tables.BattleDictionaryData[parseInt(buffId[1])];
-
-      elements.push(
-        <Tooltip
-          key={index}
-          title={
-            <Box>
-              <Stack direction="row" alignItems="center" spacing={1} pb={0.5}>
-                {buff.iconName && (
-                  <Box
-                    component="img"
-                    src={`${import.meta.env.BASE_URL}buffs/${
-                      buff.iconName
-                    }.png`}
-                    alt={buff.name}
-                    width={32}
-                  />
-                )}
-                <Typography variant="subtitle1" color={color}>
-                  {buff.name}
-                </Typography>
-              </Stack>
-              <Divider />
-              <RichTextComponent
-                content={buff.description}
-                descriptionTips={buff.descriptionTips}
-                variant="caption"
-              />
-            </Box>
-          }
-        >
-          <span style={{ color, cursor: "help" }}>
-            <u>{buff.name}</u>
-          </span>
-        </Tooltip>
-      );
-    } else {
-      elements.push(
-        <span key={index} style={{ color }}>
-          {text}
-        </span>
-      );
-    }
-    lastIndex = index + match.length;
-    return match;
-  });
-  if (lastIndex < content.length) {
-    elements.push(content.slice(lastIndex));
-  }
-  return elements;
-};
+import RichText from "./RichText";
+import SkillIcon from "./SkillIcon";
 
 const SkillCard = ({ skill }: { skill: Skill }) => {
   if (!skill) return;
@@ -223,62 +54,46 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
   }
 
   return (
-    <Box
-      sx={{
-        p: 3,
-        borderRadius: 2,
-        bgcolor: "background.paper",
-        boxShadow: 3,
-        display: "flex",
-        flexDirection: "column",
-        gap: 2,
-        width: "100%",
-      }}
-    >
-      <Grid2 container spacing={2}>
+    <div className="p-12 rounded-lg bg-background-paper flex flex-col gap-8 w-full">
+      <div className="grid grid-cols-4 gap-8">
         {/* Left Section: Image, Name, and Tags */}
-        <Grid2 size={{ xs: 4 }} sx={{ textAlign: "center" }}>
-          <Typography variant="h5" color="secondary.main">
+        <div className="text-center">
+          <h5 className="text-secondary text-lg font-medium">
             {skill.name}
-          </Typography>
+          </h5>
           <SkillIcon
             skill={skill.icon}
             element={skill.elementTag}
             weapon={skill.weaponTag}
           />
-          <Stack
-            direction="row"
-            spacing={1}
-            mt={1}
-            justifyContent="center"
-            sx={{ display: "flex", flexWrap: "wrap", rowGap: 1 }}
-          >
+          <div className="flex flex-wrap justify-center gap-2 mt-4">
             {skill.skillTag.split("/").map((tag) => (
-              <Chip key={tag} label={tag} color="primary" />
+              <span key={tag} className="px-3 py-1 rounded-full bg-skill-bg text-white text-sm">
+                {tag}
+              </span>
             ))}
-          </Stack>
+          </div>
 
           {/* Stability/Cost/Cooldown Info */}
-          <Stack direction="row" justifyContent="space-around" mt={2}>
-            <Typography>{`Stability: ${stability}`}</Typography>
-            <Typography>{`Cost: ${skill.potentialCost}`}</Typography>
-            <Typography>{`Cooldown: ${skill.cdTime}`}</Typography>
-          </Stack>
-        </Grid2>
+          <div className="flex justify-around mt-8">
+            <p>{`Stability: ${stability}`}</p>
+            <p>{`Cost: ${skill.potentialCost}`}</p>
+            <p>{`Cooldown: ${skill.cdTime}`}</p>
+          </div>
+        </div>
 
         {/* Center Section: Description & Upgrade Buttons */}
-
-        <Grid2 size={{ xs: 4 }} sx={{ textAlign: "center" }}>
-          <Box mt={2}>
-            <RichTextComponent
+        <div className="text-center col-span-2">
+          <div className="mt-8">
+            <RichText
               content={skill.description}
               descriptionTips={skill.descriptionTips}
             />
-          </Box>
-        </Grid2>
+          </div>
+        </div>
 
         {/* Right Section: Range, Target & Indicators */}
-        <Grid2 size={{ xs: 4 }} sx={{ textAlign: "center" }}>
+        <div className="text-center">
           {/* Visual Indicator Placeholder */}
           <SkillGrid
             range={skill.range}
@@ -286,23 +101,21 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
             shapeParam={skill.shapeParam}
             skillRange={skill.skillRange}
           />
-          <Stack direction="row" justifyContent="space-between">
-            <Typography mt={2}>Range</Typography>
-            {
-              <Typography mt={2} align="right">
-                {dispRange}
-              </Typography>
-            }
-          </Stack>
-          <Divider sx={{ borderBottomWidth: 5 }} />
-          <Stack direction="row" justifyContent="space-between">
-            <Typography mt={2}>Area of Effect</Typography>
-            {<Typography mt={2}>{dispShape}</Typography>}
-          </Stack>
-          <Divider sx={{ borderBottomWidth: 5 }} />
-        </Grid2>
-      </Grid2>
-    </Box>
+          <div className="flex justify-between">
+            <p className="mt-8">Range</p>
+            <p className="mt-8 text-right">
+              {dispRange}
+            </p>
+          </div>
+          <hr className="border-b-[5px] border-grid-bg my-2" />
+          <div className="flex justify-between">
+            <p className="mt-8">Area of Effect</p>
+            <p className="mt-8">{dispShape}</p>
+          </div>
+          <hr className="border-b-[5px] border-grid-bg my-2" />
+        </div>
+      </div>
+    </div>
   );
 };
 

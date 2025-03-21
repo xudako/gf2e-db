@@ -22,6 +22,16 @@ export default {
         nav: {
           hover: colors.gray[700],
         },
+        skill: {
+          bg: "#373e44",
+        },
+        grid: {
+          bg: "#aaaaaa",
+          base: "#dddddd",
+          range: "#6979d9",
+          shape: "#f26c1c",
+          center: "#ffffff",
+        },
         background: {
           default: "#999999",
           paper: "#dddddd",
@@ -34,11 +44,6 @@ export default {
           r: "#45b6fe",
         },
         info: "#6979d9",
-        grid: {
-          background: "#999999",
-          range: "#6979d9",
-          shape: "#f58c1f"
-        }
       },
     },
   },
