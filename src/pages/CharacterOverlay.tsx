@@ -56,7 +56,7 @@ interface CharacterOverlayProps {
 
 const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, character }) => {
   if (!character) {
-    return <div className="text-2xl">404</div>;
+    return <div className="text-2xl text-center">404</div>;
   }
 
   // Skins
@@ -168,7 +168,9 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, char
 
   return (
     <div
-      className={`fixed inset-0 bg-background-overlay z-50 p-8 overflow-auto transition-transform transform ${open ? 'translate-y-0' : 'translate-y-full'}`}
+      className={`fixed inset-0 bg-background-overlay z-50 p-8 overflow-auto transition-transform transform duration-300 ease-in-out ${
+        open ? 'translate-y-0' : 'translate-y-full'
+      }`}
     >
       <button
         onClick={onClose}

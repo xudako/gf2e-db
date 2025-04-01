@@ -4,8 +4,9 @@ import Home from './pages/Home';
 import CharacterGrid from './pages/CharacterGrid';
 import CharacterOverlay from './pages/CharacterOverlay';
 import WeaponGrid from './pages/WeaponGrid';
-import { Chr } from './types';
-import { characters } from './data/data';
+import WeaponOverlay from './pages/WeaponOverlay';
+import { Chr, Wpn } from './types';
+import { characters, weapons } from './data/data';
 import './index.css';
 
 const CharacterOverlayWrapper: React.FC = () => {
@@ -19,6 +20,17 @@ const CharacterOverlayWrapper: React.FC = () => {
   );
 };
 
+const WeaponOverlayWrapper: React.FC = () => {
+  const { name } = useParams<{ name: string }>();
+  const navigate = useNavigate();
+
+  const weapon: Wpn | undefined = weapons.find((wpn: Wpn) => wpn.name === name);
+
+  return (
+    <WeaponOverlay open={!!weapon} onClose={() => navigate('/weapons')} weapon={weapon} />
+  );
+};
+
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-neutral-200 text-neutral-700">
@@ -29,6 +41,7 @@ const App: React.FC = () => {
             <Route path="/dolls" element={<CharacterGrid />} />
             <Route path="/dolls/:name" element={<CharacterOverlayWrapper />} />
             <Route path="/weapons" element={<WeaponGrid />} />
+            <Route path="/weapons/:name" element={<WeaponOverlayWrapper />} />
           </Routes>
         </Layout>
       </Router>

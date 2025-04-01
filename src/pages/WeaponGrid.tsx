@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Wpn } from '../types';
 import { weapons, weaponTypes } from '../data/data';
-import { useNavigate } from 'react-router-dom';
 import ToggleButton from '../components/ToggleButton';
 
 const WeaponGrid: React.FC = () => {
-  const [selectedWeapon, setSelectedWeapon] = useState<Wpn | null>(null);
   const [filterRarity, setFilterRarity] = useState<number>(-1);
   const [filterWeapon, setFilterWeapon] = useState<number>(-1);
+  const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
 
   const handleWeaponSelect = (weapon: Wpn) => {
-    setSelectedWeapon(weapon);
-    navigate(`/weapons/${weapon.name.replace(' ', '_')}`);
+    navigate(`/weapons/${weapon.name}`);
   };
 
   const handleRarityFilter = (newRarity: number) => {
@@ -33,13 +32,22 @@ const WeaponGrid: React.FC = () => {
   const filteredWeapons = sortedWeapons.filter((weapon) => {
     const rarityMatch = filterRarity === -1 || filterRarity === weapon.rank;
     const weaponMatch = filterWeapon === -1 || filterWeapon === weapon.type;
+    const searchMatch =
+      searchQuery === '' || weapon.name.toLowerCase().includes(searchQuery.toLowerCase());
 
-    return rarityMatch && weaponMatch;
+    return rarityMatch && weaponMatch && searchMatch;
   });
 
   return (
     <div>
       <div className="flex flex-wrap gap-4 mb-4">
+        <input
+          type="text"
+          placeholder="Search"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-main bg-white/90"
+        />
         {/* Rarity Filter */}
         <div className="flex bg-primary-main border border-filter-button-border">
           <ToggleButton selected={filterRarity === 3} onClick={() => handleRarityFilter(3)}>
@@ -84,9 +92,7 @@ const WeaponGrid: React.FC = () => {
           <div
             key={weapon.name}
             onClick={() => handleWeaponSelect(weapon)}
-            className={`p-4 transition-colors cursor-pointer
-            ${selectedWeapon?.name === weapon.name ? 'bg-primary-light' : ''}
-            hover:bg-secondary-main hover:text-white`}
+            className={`relative p-4 transition-colors cursor-pointer hover:bg-secondary-main hover:text-white group`}
           >
             <img
               src={`${import.meta.env.BASE_URL}weapons/${weapon.resCode}_256.png`}
@@ -97,7 +103,9 @@ const WeaponGrid: React.FC = () => {
               className={`w-full aspect-square object-cover rounded-lg 
                 ${weapon.rank === 5 ? 'bg-rarity-ssr' : weapon.rank === 4 ? 'bg-rarity-sr' : 'bg-rarity-r'}`}
             />
-            <div className="mt-2 text-center font-medium">{weapon.name}</div>
+            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-2 text-center">
+              <p className="text-white text-sm truncate">{weapon.name}</p>
+            </div>
           </div>
         ))}
       </div>
