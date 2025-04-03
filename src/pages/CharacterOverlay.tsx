@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Chr, Skill, Skin } from '../types';
+import { loadChrSkill } from '../utils/skill-utils';
 import SkillCard from '../components/SkillCard';
 import Tables from '../data/TableLoader';
 import ToggleButton from '../components/ToggleButton';
@@ -28,16 +29,6 @@ interface SkillsByLevel {
 interface SkillTree {
   [sType: string]: SkillsByLevel;
 }
-
-const ammoType = new Map([
-  [1, 2],
-  [2, 2],
-  [3, 8],
-  [4, 4],
-  [5, 8],
-  [6, 32],
-  [7, 16],
-]);
 
 const levelMarks = [
   { value: 1, label: '1' },
@@ -84,22 +75,6 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, char
     (x) => character.id * 100 + x
   );
 
-  const loadSkill = (skillId: number) => {
-    const [data, display] = [
-      Tables.BattleSkillData[skillId],
-      Tables.BattleSkillDisplayData[skillId],
-    ];
-    if (!data || !display) throw new Error(`Skill with ID ${skillId} not found`);
-    return {
-      ...data,
-      ...display,
-      range: display.rangeDisplayParam || data.skillRangeParam,
-      shape: display.shapeDisplay || data.shape,
-      shapeParam: display.shapeDisplayParam || data.shapeParam,
-      weaponTag: data.weaponTag === 1 ? ammoType.get(character.weaponType) : data.weaponTag,
-    };
-  };
-
   const skillIds = vertebraeIds.map((vertId) => Tables.GunGradeData[vertId].abbr);
 
   const allSkills: SkillTree = {};
@@ -113,7 +88,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, char
       allSkills[type] = {};
     }
 
-    allSkills[type][level] = loadSkill(id);
+    allSkills[type][level] = loadChrSkill(id, character);
   });
 
   const [currentSkillType, setCurrentSkillType] = useState<SkillTypeId>(skillTypes[0].id);
@@ -317,7 +292,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, char
         </div>
 
         {/* Character Image */}
-        <div className="sm:col-span-2 md:col-span-6">
+        <div className="col-span-6">
           <div className="p-4">
             {character.skins.length > 1 && (
               <div className="flex flex-wrap gap-2 mb-4">

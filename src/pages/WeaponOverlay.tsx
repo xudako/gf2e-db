@@ -1,6 +1,9 @@
-import React from 'react';
-import { Wpn } from '../types';
+import React, { useState, useEffect } from 'react';
+import { Skill, Wpn } from '../types';
+import { loadSkill } from '../utils/skill-utils';
 import Slide from '../components/Slide';
+import ToggleButton from '../components/ToggleButton';
+import RichText from '../components/RichText';
 
 interface WeaponOverlayProps {
   open: boolean;
@@ -12,6 +15,18 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
   if (!weapon) {
     return <div className="text-2xl text-center">404</div>;
   }
+  const trait = weapon.trait ? loadSkill(weapon.trait) : undefined;
+  const imprint = weapon.imprint ? loadSkill(weapon.imprint) : undefined;
+  const [currentSkillLevel, setCurrentSkillLevel] = useState<number>(1);
+  const [currentSkill, setCurrentSkill] = useState<Skill>(loadSkill(weapon.skill));
+
+  useEffect(() => {
+    setCurrentSkill(loadSkill(weapon.skill + currentSkillLevel - 1));
+  }, [currentSkillLevel]);
+
+  const handleSkillLevelChange = (newLevel: number) => {
+    setCurrentSkillLevel(newLevel);
+  };
 
   return (
     <Slide
@@ -35,7 +50,62 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
           />
         </svg>
       </button>
-      <div className="text-2xl text-center">WIP</div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-6 md:grid-cols-12 gap-4">
+        <div className="col-span-6">
+          <div className="p-4">
+            <h1
+              className={`text-4xl
+                ${weapon.rank === 5 ? 'text-rarity-ssr' : weapon.rank === 4 ? 'text-rarity-sr' : 'text-rarity-r'}`}
+            >
+              {weapon.name}
+            </h1>
+          </div>
+
+          
+
+          {(trait || imprint) && <div className="mt-8 p-12 rounded-lg bg-background-paper flex flex-col gap-8 w-full">
+            {trait && <RichText
+              content={`Trait: ${trait.description}`}
+              descriptionTips={trait.descriptionTips}
+            />}
+            {imprint && <RichText
+              content={`${imprint.name}: ${imprint.description}`}
+              descriptionTips={imprint.descriptionTips}
+            />}
+          </div>}
+
+          <div className="mt-8 space-y-4">
+            <div className="flex flex-wrap gap-2">
+              {[1, 2, 3, 4, 5, 6].map((skillLevel) => (
+                <ToggleButton
+                  key={skillLevel}
+                  selected={currentSkillLevel === skillLevel}
+                  onClick={() => handleSkillLevelChange(skillLevel)}
+                >
+                  {skillLevel}
+                </ToggleButton>
+              ))}
+            </div>
+          </div>
+          <div className="mt-4 p-12 rounded-lg bg-background-paper flex flex-col gap-8 w-full">
+            <RichText
+              content={`${currentSkill.name}: ${currentSkill.description}`}
+              descriptionTips={currentSkill.descriptionTips}
+            />
+          </div>
+        </div>
+
+        <div className="col-span-6">
+          <div className="p-4">
+            <img
+              src={`${import.meta.env.BASE_URL}weapons/${weapon.resCode}_1024.png`}
+              alt={weapon.name}
+              className="w-full object-contain max-h-[80vh]"
+            />
+          </div>
+        </div>
+      </div>
     </Slide>
   );
 };
