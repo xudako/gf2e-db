@@ -1,5 +1,6 @@
 import React from 'react';
 import { Wpn } from '../types';
+import Slide from '../components/Slide';
 
 interface WeaponOverlayProps {
   open: boolean;
@@ -13,10 +14,13 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
   }
 
   return (
-    <div
-      className={`fixed inset-0 bg-background-overlay z-50 p-8 overflow-auto transition-transform transform duration-300 ease-in-out ${
-        open ? 'translate-y-0' : 'translate-y-full'
-      }`}
+    <Slide
+      in={open}
+      direction="up"
+      mountOnEnter
+      unmountOnExit
+      className="p-8 overflow-auto"
+      containerClassName="fixed inset-0 bg-background-overlay z-50"
     >
       <button
         onClick={onClose}
@@ -32,7 +36,7 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
         </svg>
       </button>
       <div className="text-2xl text-center">WIP</div>
-    </div>
+    </Slide>
   );
 };
 

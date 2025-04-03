@@ -4,6 +4,7 @@ import SkillCard from '../components/SkillCard';
 import Tables from '../data/TableLoader';
 import ToggleButton from '../components/ToggleButton';
 import Tooltip from '../components/Tooltip';
+import Slide from '../components/Slide';
 
 type SkillTypeId = '01' | '05' | '07' | '04' | '08';
 
@@ -164,13 +165,14 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, char
     setCurrentLevel(newLevel);
   };
 
-  if (!open) return null;
-
   return (
-    <div
-      className={`fixed inset-0 bg-background-overlay z-50 p-8 overflow-auto transition-transform transform duration-300 ease-in-out ${
-        open ? 'translate-y-0' : 'translate-y-full'
-      }`}
+    <Slide
+      in={open}
+      direction="up"
+      mountOnEnter
+      unmountOnExit
+      className="p-8 overflow-auto"
+      containerClassName="fixed inset-0 bg-background-overlay z-50"
     >
       <button
         onClick={onClose}
@@ -339,7 +341,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, char
           </div>
         </div>
       </div>
-    </div>
+    </Slide>
   );
 };
 
