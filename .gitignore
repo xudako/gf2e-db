@@ -24,4 +24,5 @@ dist-ssr
 *.sw?
 
 # Other
+TODO.md
 not_code/
