@@ -36,7 +36,7 @@ const Tooltip: React.FC<TooltipProps> = ({ title, children, className = '' }) =>
     >
       {children}
       {isVisible && (
-        <div 
+        <div
           className="absolute z-50 p-2 min-w-[16rem] bg-background-overlay text-primary-text rounded shadow-lg -translate-x-1/2 left-1/2 bottom-full mb-2"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}

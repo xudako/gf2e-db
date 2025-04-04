@@ -10,14 +10,14 @@ interface SlideProps {
   children: ReactNode;
 }
 
-const Slide: React.FC<SlideProps> = ({ 
-  in: isVisible = false, 
-  direction = "up", 
+const Slide: React.FC<SlideProps> = ({
+  in: isVisible = false,
+  direction = 'up',
   mountOnEnter = true,
   unmountOnExit = true,
-  className = "",
-  containerClassName = "",
-  children 
+  className = '',
+  containerClassName = '',
+  children,
 }) => {
   const [isMounted, setIsMounted] = useState(!mountOnEnter || isVisible);
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -37,20 +37,20 @@ const Slide: React.FC<SlideProps> = ({
       const timeout = setTimeout(() => {
         setIsMounted(false);
       }, 300);
-      
+
       return () => clearTimeout(timeout);
     }
   }, [isVisible, isMounted, unmountOnExit]);
 
   const getTransformClass = (isVisible: boolean): string => {
     switch (direction) {
-      case "up":
+      case 'up':
         return isVisible ? 'translate-y-0' : 'translate-y-full';
-      case "down":
+      case 'down':
         return isVisible ? 'translate-y-0' : '-translate-y-full';
-      case "left":
+      case 'left':
         return isVisible ? 'translate-x-0' : 'translate-x-full';
-      case "right":
+      case 'right':
         return isVisible ? 'translate-x-0' : '-translate-x-full';
       default:
         return isVisible ? 'translate-y-0' : 'translate-y-full';
@@ -63,7 +63,7 @@ const Slide: React.FC<SlideProps> = ({
 
   return (
     <div className={`overflow-hidden ${containerClassName}`}>
-      <div 
+      <div
         className={`transform transition-transform duration-300 ease-in-out ${getTransformClass(isTransitioning)} ${className}`}
       >
         {children}

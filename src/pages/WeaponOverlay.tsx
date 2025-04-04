@@ -62,18 +62,22 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
             </h1>
           </div>
 
-          
-
-          {(trait || imprint) && <div className="mt-8 p-12 rounded-lg bg-background-paper flex flex-col gap-8 w-full">
-            {trait && <RichText
-              content={`Trait: ${trait.description}`}
-              descriptionTips={trait.descriptionTips}
-            />}
-            {imprint && <RichText
-              content={`${imprint.name}: ${imprint.description}`}
-              descriptionTips={imprint.descriptionTips}
-            />}
-          </div>}
+          {(trait || imprint) && (
+            <div className="mt-8 p-12 rounded-lg bg-background-paper flex flex-col gap-8 w-full">
+              {trait && (
+                <RichText
+                  content={`Trait: ${trait.description}`}
+                  descriptionTips={trait.descriptionTips}
+                />
+              )}
+              {imprint && (
+                <RichText
+                  content={`${imprint.name}: ${imprint.description}`}
+                  descriptionTips={imprint.descriptionTips}
+                />
+              )}
+            </div>
+          )}
 
           <div className="mt-8 space-y-4">
             <div className="flex flex-wrap gap-2">

@@ -13,21 +13,21 @@ const Home: React.FC = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-        <div 
+        <div
           className="p-6 bg-background-paper rounded-lg shadow-md cursor-pointer hover:bg-background-default transition-colors"
           onClick={() => navigate('/dolls')}
         >
           <h2 className="text-xl font-semibold text-primary-main mb-3">Dolls</h2>
           <p className="text-primary-main">Browse and compare all available dolls</p>
         </div>
-        <div 
+        <div
           className="p-6 bg-background-paper rounded-lg shadow-md cursor-pointer hover:bg-background-default transition-colors"
           onClick={() => navigate('/weapons')}
         >
           <h2 className="text-xl font-semibold text-primary-main mb-3">Weapons</h2>
           <p className="text-primary-main">Explore weapon stats and details</p>
         </div>
-        <div 
+        <div
           className="p-6 bg-background-paper rounded-lg shadow-md cursor-pointer hover:bg-background-default transition-colors"
           onClick={() => navigate('/tools')}
         >

@@ -26,9 +26,7 @@ const WeaponOverlayWrapper: React.FC = () => {
 
   const weapon: Wpn | undefined = weapons.find((wpn: Wpn) => wpn.name === name);
 
-  return (
-    <WeaponOverlay open={!!weapon} onClose={() => navigate('/weapons')} weapon={weapon} />
-  );
+  return <WeaponOverlay open={!!weapon} onClose={() => navigate('/weapons')} weapon={weapon} />;
 };
 
 const App: React.FC = () => {
