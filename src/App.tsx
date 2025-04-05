@@ -10,9 +10,14 @@ import { characters, weapons } from './data/data';
 import './index.css';
 
 const CharacterOverlayWrapper: React.FC = () => {
-  const { name } = useParams<{ name: string }>();
+  const { url } = useParams<{ url: string }>();
   const navigate = useNavigate();
 
+  if (!url) {
+    return null;
+  }
+
+  const name = url.replace(/\b\w/g, (char) => char.toUpperCase());
   const character: Chr | undefined = characters.find((gun: Chr) => gun.name === name);
 
   return (
@@ -21,9 +26,14 @@ const CharacterOverlayWrapper: React.FC = () => {
 };
 
 const WeaponOverlayWrapper: React.FC = () => {
-  const { name } = useParams<{ name: string }>();
+  const { url } = useParams<{ url: string }>();
   const navigate = useNavigate();
 
+  if (!url) {
+    return null;
+  }
+
+  const name = url.replace(/-/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase());
   const weapon: Wpn | undefined = weapons.find((wpn: Wpn) => wpn.name === name);
 
   return <WeaponOverlay open={!!weapon} onClose={() => navigate('/weapons')} weapon={weapon} />;
@@ -37,9 +47,9 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dolls" element={<CharacterGrid />} />
-            <Route path="/dolls/:name" element={<CharacterOverlayWrapper />} />
+            <Route path="/dolls/:url" element={<CharacterOverlayWrapper />} />
             <Route path="/weapons" element={<WeaponGrid />} />
-            <Route path="/weapons/:name" element={<WeaponOverlayWrapper />} />
+            <Route path="/weapons/:url" element={<WeaponOverlayWrapper />} />
           </Routes>
         </Layout>
       </Router>

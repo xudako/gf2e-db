@@ -22,7 +22,8 @@ const CharacterGrid: React.FC = () => {
 
   const handleCharacterSelect = (character: Chr) => {
     setSelectedCharacter(character);
-    navigate(`/dolls/${character.name}`);
+    const url = character.name.toLowerCase();
+    navigate(`/dolls/${url}`);
   };
 
   const handleRegionFilter = (newRegion: number) => {

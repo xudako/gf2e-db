@@ -11,7 +11,8 @@ const WeaponGrid: React.FC = () => {
   const navigate = useNavigate();
 
   const handleWeaponSelect = (weapon: Wpn) => {
-    navigate(`/weapons/${weapon.name}`);
+    const url = weapon.name.toLowerCase().replace(/\s+/g, '-');
+    navigate(`/weapons/${url}`);
   };
 
   const handleRarityFilter = (newRarity: number) => {
