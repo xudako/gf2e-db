@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Chr, Skill, Skin } from '../types';
 import { loadChrSkill } from '../utils/skill-utils';
+import { getDollStats } from '../utils/stat-utils';
 import SkillCard from '../components/SkillCard';
 import Tables from '../data/TableLoader';
 import ToggleButton from '../components/ToggleButton';
@@ -236,6 +237,20 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, char
                   />
                 </Tooltip>
               </div>
+
+              <div className="col-span-2">
+                <img src={`${import.meta.env.BASE_URL}icons/Icon_Pow_64.png`} />
+                <span>{getDollStats(character.id)[currentLevel - 1][1]}</span>
+              </div>
+              <div className="col-span-2">
+                <img src={`${import.meta.env.BASE_URL}icons/Icon_Armor_64.png`} />
+                <span>{getDollStats(character.id)[currentLevel - 1][2]}</span>
+              </div>
+              <div className="col-span-2">
+                <img src={`${import.meta.env.BASE_URL}icons/Icon_Hp_64.png`} />
+                <span>{getDollStats(character.id)[currentLevel - 1][3]}</span>
+              </div>
+              
 
               <div className="col-span-6">
                 <span>Level:</span>
