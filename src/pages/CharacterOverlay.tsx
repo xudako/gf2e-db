@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Chr, Skill, Skin } from '../types';
 import { loadChrSkill } from '../utils/skill-utils';
-import { getDollStats } from '../utils/stat-utils';
+//import { getDollStats } from '../utils/stat-utils';
 import SkillCard from '../components/SkillCard';
 import Tables from '../data/TableLoader';
 import ToggleButton from '../components/ToggleButton';
 import Tooltip from '../components/Tooltip';
 import Slide from '../components/Slide';
+import { LevelSlider } from '../components/ChrLevelSlider';
 
 type SkillTypeId = '01' | '05' | '07' | '04' | '08';
 
@@ -30,16 +31,6 @@ interface SkillsByLevel {
 interface SkillTree {
   [sType: string]: SkillsByLevel;
 }
-
-const levelMarks = [
-  { value: 1, label: '1' },
-  { value: 10, label: '10' },
-  { value: 20, label: '20' },
-  { value: 30, label: '30' },
-  { value: 40, label: '40' },
-  { value: 50, label: '50' },
-  { value: 60, label: '60' },
-];
 
 interface CharacterOverlayProps {
   open: boolean;
@@ -132,13 +123,6 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, char
 
   const handleSkillLevelChange = (newLevel: string) => {
     setCurrentSkillLevel(newLevel);
-  };
-
-  // Level and stats
-  const [currentLevel, setCurrentLevel] = useState<number>(60);
-
-  const handleLevelChange = (newLevel: number) => {
-    setCurrentLevel(newLevel);
   };
 
   return (
@@ -238,7 +222,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, char
                 </Tooltip>
               </div>
 
-              <div className="col-span-2">
+              {/* <div className="col-span-2">
                 <img src={`${import.meta.env.BASE_URL}icons/Icon_Pow_64.png`} />
                 <span>{getDollStats(character.id)[currentLevel - 1][1]}</span>
               </div>
@@ -249,28 +233,8 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, char
               <div className="col-span-2">
                 <img src={`${import.meta.env.BASE_URL}icons/Icon_Hp_64.png`} />
                 <span>{getDollStats(character.id)[currentLevel - 1][3]}</span>
-              </div>
-              
-
-              <div className="col-span-6">
-                <span>Level:</span>
-                <div className="mt-2 max-w-sm">
-                  <input
-                    type="range"
-                    min="1"
-                    max="60"
-                    value={currentLevel}
-                    onChange={(e) => handleLevelChange(Number(e.target.value))}
-                    className="w-full"
-                    list="level-marks"
-                  />
-                  <datalist id="level-marks">
-                    {levelMarks.map((mark) => (
-                      <option key={mark.value} value={mark.value} label={mark.label} />
-                    ))}
-                  </datalist>
-                </div>
-              </div>
+              </div> */}
+              <LevelSlider />
             </div>
 
             {/* Skills Info */}

@@ -32,7 +32,7 @@ export function getDollStats(dollId: number): number[][] {
             breakStats[i] += breakProp[attrs[i]];
             stats[i] += breakProp[attrs[i]];
           }
-          finalStats.push([...stats]);
+          finalStats.push([level, ...stats]);
         }
       }
     }
