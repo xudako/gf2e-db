@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 interface LevelSliderProps {
-  initialLevel?: number;
-  initialRange?: number;
-  onChange?: (level: number, formattedLabel: string) => void;
+  currentLevel: number;
+  currentRange: number;
+  onLevelChange: (level: number) => void;
+  onRangeChange: (range: number) => void;
 }
 
 interface LevelRange {
@@ -11,18 +12,15 @@ interface LevelRange {
   maxLevel: number;
 }
 
-export const LevelSlider: React.FC<LevelSliderProps> = ({
-  initialLevel = 60,
-  initialRange = 60,
-  onChange,
+const LevelSlider: React.FC<LevelSliderProps> = ({
+  currentLevel,
+  currentRange,
+  onLevelChange,
+  onRangeChange,
 }) => {
-  // Track both the level and the current range separately
-  const [currentLevel, setCurrentLevel] = useState(initialLevel);
-  const [currentRange, setCurrentRange] = useState(initialRange);
-  const [sliderValue, setSliderValue] = useState(0); // A value from 0 to totalSteps
+  const [sliderValue, setSliderValue] = useState(0);
   const [formattedLabel, setFormattedLabel] = useState('');
   
-  // Define all the ranges
   const ranges: LevelRange[] = [
     { level: 1, maxLevel: 20 },
     { level: 20, maxLevel: 30 },
@@ -31,17 +29,14 @@ export const LevelSlider: React.FC<LevelSliderProps> = ({
     { level: 50, maxLevel: 60 }
   ];
   
-  // Create mapping from slider position to level and range
   const createSliderMapping = (): { level: number; range: number }[] => {
     const mapping: { level: number; range: number }[] = [];
     
     ranges.forEach((range, rangeIndex) => {
-      // Regular steps within the range
       for (let lvl = range.level; lvl <= range.maxLevel; lvl++) {
         mapping.push({ level: lvl, range: range.maxLevel });
       }
       
-      // Add transition step if it's not the last range
       if (rangeIndex < ranges.length - 1) {
         const nextRange = ranges[rangeIndex + 1];
         mapping.push({ level: nextRange.level, range: nextRange.maxLevel });
@@ -53,46 +48,33 @@ export const LevelSlider: React.FC<LevelSliderProps> = ({
   
   const sliderMapping = createSliderMapping();
   
-  // Convert level and range to slider position
   useEffect(() => {
-    // Find the slider position for the current level and range
     const position = sliderMapping.findIndex(
       item => item.level === currentLevel && item.range === currentRange
     );
     
     if (position !== -1) {
       setSliderValue(position);
-    } else {
-      // Fallback if not found
-      setSliderValue(0);
     }
     
-    // Update formatted label
     setFormattedLabel(`${currentLevel}/${currentRange}`);
-    
-    // Call onChange if provided
-    if (onChange) {
-      onChange(currentLevel, `${currentLevel}/${currentRange}`);
-    }
   }, [currentLevel, currentRange]);
   
-  // Handle slider change
   const handleSliderChange = (position: number) => {
     const mappingItem = sliderMapping[position];
     if (mappingItem) {
-      setCurrentLevel(mappingItem.level);
-      setCurrentRange(mappingItem.range);
+      onLevelChange(mappingItem.level);
+      onRangeChange(mappingItem.range);
     }
   };
   
-  // Calculate positions for the visual marks as percentages
   const markPositions = [
-    { value: 1, position: '2.125%' },
-    { value: 20, position: '30.875%' },
+    { value: 1, position: '2.5%' },
+    { value: 20, position: '31.125%' },
     { value: 30, position: '48%' },
-    { value: 40, position: '65.125%' },
-    { value: 50, position: '82.25%' },
-    { value: 60, position: '97.875%' }
+    { value: 40, position: '64.875%' },
+    { value: 50, position: '81.75%' },
+    { value: 60, position: '97.5%' }
   ];
 
   return (
@@ -126,3 +108,5 @@ export const LevelSlider: React.FC<LevelSliderProps> = ({
     </div>
   );
 };
+
+export default LevelSlider;

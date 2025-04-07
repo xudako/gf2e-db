@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Chr, Skill, Skin } from '../types';
 import { loadChrSkill } from '../utils/skill-utils';
-//import { getDollStats } from '../utils/stat-utils';
+import { getDollStats } from '../utils/stat-utils';
 import SkillCard from '../components/SkillCard';
 import Tables from '../data/TableLoader';
 import ToggleButton from '../components/ToggleButton';
 import Tooltip from '../components/Tooltip';
 import Slide from '../components/Slide';
-import { LevelSlider } from '../components/ChrLevelSlider';
+import LevelSlider from '../components/ChrLevelSlider';
 
 type SkillTypeId = '01' | '05' | '07' | '04' | '08';
 
@@ -89,6 +89,8 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, char
   );
   const [currentSkillLevel, setCurrentSkillLevel] = useState<string>('01');
   const [currentSkill, setCurrentSkill] = useState<Skill>(allSkills['01']['01']);
+  const [currentLevel, setCurrentLevel] = useState(60);
+  const [currentRange, setCurrentRange] = useState(60);
 
   useEffect(() => {
     setCurrentSkillLevels((prevLevels) =>
@@ -222,19 +224,24 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, char
                 </Tooltip>
               </div>
 
-              {/* <div className="col-span-2">
+              <div className="col-span-2">
                 <img src={`${import.meta.env.BASE_URL}icons/Icon_Pow_64.png`} />
-                <span>{getDollStats(character.id)[currentLevel - 1][1]}</span>
+                <span>{getDollStats(character.id)[currentLevel + currentRange / 10 - 3][1]}</span>
               </div>
               <div className="col-span-2">
                 <img src={`${import.meta.env.BASE_URL}icons/Icon_Armor_64.png`} />
-                <span>{getDollStats(character.id)[currentLevel - 1][2]}</span>
+                <span>{getDollStats(character.id)[currentLevel + currentRange / 10 - 3][2]}</span>
               </div>
               <div className="col-span-2">
                 <img src={`${import.meta.env.BASE_URL}icons/Icon_Hp_64.png`} />
-                <span>{getDollStats(character.id)[currentLevel - 1][3]}</span>
-              </div> */}
-              <LevelSlider />
+                <span>{getDollStats(character.id)[currentLevel + currentRange / 10 - 3][3]}</span>
+              </div>
+              <LevelSlider 
+                currentLevel={currentLevel}
+                currentRange={currentRange}
+                onLevelChange={setCurrentLevel}
+                onRangeChange={setCurrentRange}
+              />
             </div>
 
             {/* Skills Info */}
