@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Skill, Wpn } from '../types';
-import { loadSkill } from '../utils/skill-utils';
+import { loadSkill } from '../utils/utils';
 import Slide from '../components/Slide';
 import ToggleButton from '../components/ToggleButton';
 import RichText from '../components/RichText';
