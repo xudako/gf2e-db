@@ -32,15 +32,10 @@ interface SkillTree {
   [sType: string]: SkillsByLevel;
 }
 
-const StatDisplay = ({ img, stat }: { img: string, stat: number }) => (
+const StatDisplay = ({ img, stat }: { img: string; stat: number }) => (
   <div className="col-span-1 flex flex-col items-center">
-    <img
-      src={`${import.meta.env.BASE_URL}icons/${img}_64.png`}
-      className="w-12 h-12"
-    />
-    <span className="text-center mt-1">
-      {stat}
-    </span>
+    <img src={`${import.meta.env.BASE_URL}icons/${img}_64.png`} className="w-12 h-12" />
+    <span className="text-center mt-1">{stat}</span>
   </div>
 );
 
@@ -50,7 +45,11 @@ interface CharacterOverlayProps {
   character?: Chr;
 }
 
-const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, character }): JSX.Element => {
+const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
+  open,
+  onClose,
+  character,
+}): JSX.Element => {
   if (!character) {
     return <div className="text-2xl text-center">404</div>;
   }
@@ -148,170 +147,189 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, char
       direction="up"
       mountOnEnter
       unmountOnExit
-      className="p-8 overflow-auto"
+      className="p-8"
       containerClassName="fixed inset-0 bg-background-overlay z-50"
     >
-      <button
-        onClick={onClose}
-        className="absolute top-4 right-4 p-2 text-primary-text hover:text-secondary-main transition-colors"
-      >
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
-      </button>
+      <div className="max-h-[calc(100vh-2rem)] overflow-auto">
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 p-2 text-primary-text hover:text-secondary-main transition-colors"
+        >
+          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
 
-      <div className="grid grid-cols-1 sm:grid-cols-6 md:grid-cols-12 gap-4">
-        {/* Character Info */}
-        <div className="col-span-6">
-          <div className="p-4">
-            <h1
-              className="text-4xl"
-              style={{
-                color: `#${Tables.LanguageElementData[character.element]['color'].slice(0, -2)}`,
-              }}
-            >
-              {character.name}
-            </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-6 md:grid-cols-12 gap-4">
+          {/* Character Info */}
+          <div className="col-span-6">
+            <div className="p-4">
+              <h1
+                className="text-4xl"
+                style={{
+                  color: `#${Tables.LanguageElementData[character.element]['color'].slice(0, -2)}`,
+                }}
+              >
+                {character.name}
+              </h1>
 
-            {/* Stats Info */}
-            <div className="mt-4 p-6 grid grid-cols-6 lg:grid-cols-12 gap-4 text-primary-text">
-              <div className="col-span-2">
-                <span>Class:</span>
-              </div>
-              <div className="col-span-4">
-                <Tooltip title={Tables.GunDutyData[character.duty].name}>
-                  <img
-                    src={`${import.meta.env.BASE_URL}icons/${Tables.GunDutyData[character.duty].icon}_W.png`}
-                    alt={`${Tables.GunDutyData[character.duty].name} icon`}
-                    className="h-16 align-middle"
-                  />
-                </Tooltip>
+              {/* Stats Info */}
+              <div className="mt-4 p-6 grid grid-cols-6 lg:grid-cols-12 gap-4 text-primary-text">
+                <div className="col-span-2">
+                  <span>Class:</span>
+                </div>
+                <div className="col-span-4">
+                  <Tooltip title={Tables.GunDutyData[character.duty].name}>
+                    <img
+                      src={`${import.meta.env.BASE_URL}icons/${Tables.GunDutyData[character.duty].icon}_W.png`}
+                      alt={`${Tables.GunDutyData[character.duty].name} icon`}
+                      className="h-16 align-middle"
+                    />
+                  </Tooltip>
+                </div>
+
+                <div className="col-span-2">
+                  <span>Weapon:</span>
+                </div>
+                <div className="col-span-4">
+                  <Tooltip title={Tables.GunWeaponTypeData[character.weaponType]['name']}>
+                    <img
+                      src={`${import.meta.env.BASE_URL}icons/${Tables.GunWeaponTypeData[character.weaponType]['skinIcon']}.png`}
+                      alt={`${Tables.GunWeaponTypeData[character.weaponType]['name']} icon`}
+                      className="h-16 align-middle"
+                    />
+                  </Tooltip>
+                </div>
+
+                <div className="col-span-2">
+                  <span>Element:</span>
+                </div>
+                <div className="col-span-4">
+                  <Tooltip title={Tables.LanguageElementData[character.element]['name']}>
+                    <img
+                      src={`${import.meta.env.BASE_URL}icons/${Tables.LanguageElementData[character.element]['icon']}_S.png`}
+                      alt={`${Tables.LanguageElementData[character.element]['name']} icon`}
+                      className="h-16 align-middle"
+                    />
+                  </Tooltip>
+                </div>
+
+                <div className="col-span-2">
+                  <span>Weakness:</span>
+                </div>
+                <div className="col-span-4 flex space-x-2">
+                  <Tooltip title={Tables.WeaponTagData[character.weak[0]]['name']}>
+                    <img
+                      src={`${import.meta.env.BASE_URL}icons/${Tables.WeaponTagData[character.weak[0]]['icon']}_S.png`}
+                      alt={`${Tables.WeaponTagData[character.weak[0]]['name']} icon`}
+                      className="h-16 align-middle"
+                    />
+                  </Tooltip>
+                  <Tooltip title={Tables.LanguageElementData[character.weak[1]]['name']}>
+                    <img
+                      src={`${import.meta.env.BASE_URL}icons/${Tables.LanguageElementData[character.weak[1]]['icon']}_S.png`}
+                      alt={`${Tables.LanguageElementData[character.weak[1]]['name']} icon`}
+                      className="h-16 align-middle"
+                    />
+                  </Tooltip>
+                </div>
+
+                <StatDisplay
+                  img="Icon_Pow"
+                  stat={levelStats[currentLevel + currentRange / 10 - 3][1]}
+                />
+                <StatDisplay
+                  img="Icon_Armor"
+                  stat={levelStats[currentLevel + currentRange / 10 - 3][2]}
+                />
+                <StatDisplay
+                  img="Icon_Hp"
+                  stat={levelStats[currentLevel + currentRange / 10 - 3][3]}
+                />
+                <StatDisplay
+                  img="Icon_Will"
+                  stat={
+                    Tables.PropertyData[Tables.GunData[character.id].propertyId]['maxWillValue']
+                  }
+                />
+                <StatDisplay
+                  img="Icon_Max_Ap"
+                  stat={Tables.PropertyData[Tables.GunData[character.id].propertyId]['maxAp'] / 100}
+                />
+                <div className="col-span-1"></div>
+                <LevelSlider
+                  currentLevel={currentLevel}
+                  currentRange={currentRange}
+                  onLevelChange={setCurrentLevel}
+                  onRangeChange={setCurrentRange}
+                />
               </div>
 
-              <div className="col-span-2">
-                <span>Weapon:</span>
-              </div>
-              <div className="col-span-4">
-                <Tooltip title={Tables.GunWeaponTypeData[character.weaponType]['name']}>
-                  <img
-                    src={`${import.meta.env.BASE_URL}icons/${Tables.GunWeaponTypeData[character.weaponType]['skinIcon']}.png`}
-                    alt={`${Tables.GunWeaponTypeData[character.weaponType]['name']} icon`}
-                    className="h-16 align-middle"
-                  />
-                </Tooltip>
-              </div>
-
-              <div className="col-span-2">
-                <span>Element:</span>
-              </div>
-              <div className="col-span-4">
-                <Tooltip title={Tables.LanguageElementData[character.element]['name']}>
-                  <img
-                    src={`${import.meta.env.BASE_URL}icons/${Tables.LanguageElementData[character.element]['icon']}_S.png`}
-                    alt={`${Tables.LanguageElementData[character.element]['name']} icon`}
-                    className="h-16 align-middle"
-                  />
-                </Tooltip>
-              </div>
-
-              <div className="col-span-2">
-                <span>Weakness:</span>
-              </div>
-              <div className="col-span-4 flex space-x-2">
-                <Tooltip title={Tables.WeaponTagData[character.weak[0]]['name']}>
-                  <img
-                    src={`${import.meta.env.BASE_URL}icons/${Tables.WeaponTagData[character.weak[0]]['icon']}_S.png`}
-                    alt={`${Tables.WeaponTagData[character.weak[0]]['name']} icon`}
-                    className="h-16 align-middle"
-                  />
-                </Tooltip>
-                <Tooltip title={Tables.LanguageElementData[character.weak[1]]['name']}>
-                  <img
-                    src={`${import.meta.env.BASE_URL}icons/${Tables.LanguageElementData[character.weak[1]]['icon']}_S.png`}
-                    alt={`${Tables.LanguageElementData[character.weak[1]]['name']} icon`}
-                    className="h-16 align-middle"
-                  />
-                </Tooltip>
-              </div>
-
-              <StatDisplay img="Icon_Pow" stat={levelStats[currentLevel + currentRange / 10 - 3][1]} />
-              <StatDisplay img="Icon_Armor" stat={levelStats[currentLevel + currentRange / 10 - 3][2]} />
-              <StatDisplay img="Icon_Hp" stat={levelStats[currentLevel + currentRange / 10 - 3][3]} />
-              <StatDisplay img="Icon_Will" stat={Tables.PropertyData[Tables.GunData[character.id].propertyId]["maxWillValue"]} />
-              <StatDisplay img="Icon_Max_Ap" stat={Tables.PropertyData[Tables.GunData[character.id].propertyId]["maxAp"] / 100} />
-              <div className="col-span-1"></div>
-              <LevelSlider
-                currentLevel={currentLevel}
-                currentRange={currentRange}
-                onLevelChange={setCurrentLevel}
-                onRangeChange={setCurrentRange}
-              />
-            </div>
-
-            {/* Skills Info */}
-            <div className="mt-4 space-y-4">
-              <div className="flex flex-wrap gap-2">
-                {skillTypes.map((skillType) => (
-                  <ToggleButton
-                    key={skillType.id}
-                    selected={currentSkillType === skillType.id}
-                    onClick={() => handleSkillTypeChange(skillType.id)}
-                  >
-                    {skillType.name}
-                  </ToggleButton>
-                ))}
-              </div>
-
-              {currentSkillType && getLevels(currentSkillType).length > 1 && (
+              {/* Skills Info */}
+              <div className="mt-4 space-y-4">
                 <div className="flex flex-wrap gap-2">
-                  {getLevels(currentSkillType).map((level) => (
+                  {skillTypes.map((skillType) => (
                     <ToggleButton
-                      key={level}
-                      selected={currentSkillLevel === level}
-                      onClick={() => handleSkillLevelChange(level)}
+                      key={skillType.id}
+                      selected={currentSkillType === skillType.id}
+                      onClick={() => handleSkillTypeChange(skillType.id)}
                     >
-                      {level}
+                      {skillType.name}
+                    </ToggleButton>
+                  ))}
+                </div>
+
+                {currentSkillType && getLevels(currentSkillType).length > 1 && (
+                  <div className="flex flex-wrap gap-2">
+                    {getLevels(currentSkillType).map((level) => (
+                      <ToggleButton
+                        key={level}
+                        selected={currentSkillLevel === level}
+                        onClick={() => handleSkillLevelChange(level)}
+                      >
+                        {level}
+                      </ToggleButton>
+                    ))}
+                  </div>
+                )}
+
+                <SkillCard skill={currentSkill} />
+              </div>
+
+              <div className="mt-4 space-y-4">
+                <TalentTree talents={getTalents(character.id).flat()} />
+              </div>
+            </div>
+          </div>
+
+          {/* Character Image */}
+          <div className="col-span-6">
+            <div className="p-4">
+              {character.skins.length > 1 && (
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {skinData.map((skin) => (
+                    <ToggleButton
+                      key={skin.id}
+                      selected={currentSkin.id === skin.id}
+                      onClick={() => handleSkinChange(skin.id)}
+                      className="normal-case"
+                    >
+                      {skin.name}
                     </ToggleButton>
                   ))}
                 </div>
               )}
-
-              <SkillCard skill={currentSkill} />
+              <img
+                src={displayedImage}
+                alt={character.name}
+                className="w-full object-contain max-h-[80vh]"
+              />
             </div>
-
-            <div className="mt-4 space-y-4">
-              <TalentTree talents={getTalents(character.id).flat()} />
-            </div>
-          </div>
-        </div>
-
-        {/* Character Image */}
-        <div className="col-span-6">
-          <div className="p-4">
-            {character.skins.length > 1 && (
-              <div className="flex flex-wrap gap-2 mb-4">
-                {skinData.map((skin) => (
-                  <ToggleButton
-                    key={skin.id}
-                    selected={currentSkin.id === skin.id}
-                    onClick={() => handleSkinChange(skin.id)}
-                    className="normal-case"
-                  >
-                    {skin.name}
-                  </ToggleButton>
-                ))}
-              </div>
-            )}
-            <img
-              src={displayedImage}
-              alt={character.name}
-              className="w-full object-contain max-h-[80vh]"
-            />
           </div>
         </div>
       </div>

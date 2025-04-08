@@ -1,18 +1,43 @@
 import { useState } from 'react';
+import RichText from './RichText';
 
-const gridAreas = ['A2', 'C2', 'E2', 'G2', 'I2', 'K2', 'D1', 'D3', 'H1', 'H3', 'L1', 'L3', 'N2', 'P2'];
+const gridAreas = [
+  'A2',
+  'C2',
+  'E2',
+  'G2',
+  'I2',
+  'K2',
+  'D1',
+  'D3',
+  'H1',
+  'H3',
+  'L1',
+  'L3',
+  'N2',
+  'P2',
+];
+const statIcons = ['Pow', 'Hp', 'Pow', 'Hp', 'Pow', 'Pow'];
+const statNames: Record<string, string> = {
+  pow: 'Attack',
+  shieldArmor: 'Defense',
+  maxHp: 'Health',
+  crit: 'Crit Rate',
+  critMult: 'Crit DMG',
+  powPercent: 'Attack Boost',
+  shieldArmorPercent: 'Defense Boost',
+  maxHpPercent: 'Health Boost',
+};
 
 interface TalentTreeProps {
   talents: Record<string, any>[];
 }
 
-const TalentTree = ({
-  talents,
-}: TalentTreeProps) => {
-  const [selectedTalent, setSelectedTalent] = useState(talents[talents.length - 1]);
+const TalentTree = ({ talents }: TalentTreeProps) => {
+  const [currentTalent, setcurrentTalent] = useState(talents[talents.length - 1]);
 
   const handleTalentClick = (talent: Record<string, any>) => {
-    setSelectedTalent(talent);
+    setcurrentTalent(talent);
   };
 
   const convertToGridArea = (area: string) => {
@@ -47,23 +72,50 @@ const TalentTree = ({
                 onClick={() => handleTalentClick(talent)}
                 className={`w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center text-xs md:text-sm
                            border-2 transition-all duration-300
+                           md:aspect-square
                            ${
-                             selectedTalent === talent
-                               ? 'border-blue-500 bg-blue-100 scale-110'
-                               : 'border-gray-300 bg-white hover:bg-gray-100'
+                             currentTalent === talent
+                               ? 'border-primary-selected bg-primary-light scale-110'
+                               : 'border-gray-300 bg-primary-main hover:bg-primary-light'
                            }`}
               >
-                <img src={`${import.meta.env.BASE_URL}keys/${talent.image}.png` || `${import.meta.env.BASE_URL}icons/${talent[0]}.png`} alt={talent.image} />
+                {talent.icon ? (
+                  <img src={`${import.meta.env.BASE_URL}keys/${talent.icon}.png`} alt={'talent'} />
+                ) : (
+                  <img
+                    src={`${import.meta.env.BASE_URL}icons/Icon_${statIcons[index]}_64.png`}
+                    alt={'talent'}
+                  />
+                )}
               </button>
             </div>
           );
         })}
       </div>
 
-      <div className="p-6 border-2 border-gray-300 rounded-lg min-h-32 bg-white">
+      <div className="p-6 border-2 border-gray-300 rounded-lg min-h-32 bg-background-paper">
         <div>
-          <h3 className="text-lg font-semibold mb-2">{selectedTalent.image}</h3>
-          <p>{selectedTalent.content.map((content: Record<string, any>) => content.name)}</p>
+          {currentTalent.name && (
+            <h3 className="text-lg font-semibold mb-2">{currentTalent.name}</h3>
+          )}
+          {currentTalent.stats && (
+            <>
+              {Object.entries(currentTalent.stats).map(([name, value]) => {
+                const isPercent = name.includes('crit') || name.includes('Percent');
+                const displayValue = isPercent
+                  ? `${(value as number) / 10}.0%`
+                  : `${value as number}.0`;
+                return (
+                  <p key={name}>
+                    {statNames[name]}: {displayValue}
+                  </p>
+                );
+              })}
+            </>
+          )}
+          {currentTalent.desc && (
+            <RichText content={currentTalent.desc} descriptionTips={currentTalent.descTips} />
+          )}
         </div>
       </div>
 
@@ -82,7 +134,7 @@ const TalentTree = ({
               onClick={() => handleTalentClick(talent)}
               className={`p-3 border rounded-lg text-left transition-all
                         ${
-                          selectedTalent?.id === talent.id
+                          currentTalent?.id === talent.id
                             ? 'border-blue-500 bg-blue-100'
                             : 'border-gray-300 bg-white'
                         }`}
