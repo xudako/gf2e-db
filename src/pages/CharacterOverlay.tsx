@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Chr, Skill, Skin } from '../types';
-import { loadDollSkill, getDollStats } from '../utils/utils';
+import { loadDollSkill, getDollStats, getTalents } from '../utils/utils';
 import SkillCard from '../components/SkillCard';
 import Tables from '../data/TableLoader';
 import ToggleButton from '../components/ToggleButton';
 import Tooltip from '../components/Tooltip';
 import Slide from '../components/Slide';
 import LevelSlider from '../components/ChrLevelSlider';
+import TalentTree from '../components/TalentTree';
 
 type SkillTypeId = '01' | '05' | '07' | '04' | '08';
 
@@ -49,7 +50,7 @@ interface CharacterOverlayProps {
   character?: Chr;
 }
 
-const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, character }) => {
+const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, character }): JSX.Element => {
   if (!character) {
     return <div className="text-2xl text-center">404</div>;
   }
@@ -129,6 +130,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, char
     setCurrentSkillType(newSkillTypeId);
   };
 
+  // Stats
   const getLevels = (skillType: string): string[] => {
     const levels = allSkills[skillType] ? Object.keys(allSkills[skillType]).sort() : [];
     return levels;
@@ -280,6 +282,10 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, onClose, char
               )}
 
               <SkillCard skill={currentSkill} />
+            </div>
+
+            <div className="mt-4 space-y-4">
+              <TalentTree talents={getTalents(character.id).flat()} />
             </div>
           </div>
         </div>

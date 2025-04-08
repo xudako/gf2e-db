@@ -74,7 +74,7 @@ export function getDollStats(dollId: number): number[][] {
   return finalStats;
 }
 
-function buildTalent(keyId: number | null = null, propId: number | null = null): Record<string, any> {
+function loadTalent(keyId: number | null = null, propId: number | null = null): Record<string, any> {
   const talent: Record<string, any> = {};
   
   if (keyId) {
@@ -94,20 +94,13 @@ function buildTalent(keyId: number | null = null, propId: number | null = null):
   
   if (propId) {
     const stats = { ...Tables.PropertyData[propId] };
-    delete stats.id;
-    
+
     const orderedStats: Record<string, any> = {};
     for (const k in attrs) {
-      const v = stats[k];
-      delete stats[k];
-      
-      if (v) {
-        orderedStats[k] = v;
+      if (stats[attrs[k]]) {
+        orderedStats[attrs[k]] = stats[attrs[k]];
       }
     }
-    
-    // Assert equivalent in TypeScript - check that no values remain in stats
-    console.assert(Object.values(stats).every(v => !v), stats);
     
     talent['stats'] = orderedStats;
   }
@@ -115,7 +108,7 @@ function buildTalent(keyId: number | null = null, propId: number | null = null):
   return talent;
 }
 
-export function getTalents(dollId: number): [Array<Record<string, any>>, Array<Record<string, any>>, Record<string, any>] {
+export function getTalents(dollId: number): [Array<Record<string, any>>, Array<Record<string, any>>] {
   const talentsData = Tables.SquadTalentGunData[dollId];
   const treeIds = talentsData['traverseSquadTalentTreeId'].map(Number);
   const treeData = treeIds.map((tid: number) => Tables.SquadTalentTreeData[tid]);
@@ -137,14 +130,14 @@ export function getTalents(dollId: number): [Array<Record<string, any>>, Array<R
     
     const gene = Tables.GroupTalentEffectGeneData[geneId];
     if (gene['itemId']) {
-      const talent = buildTalent(gene['itemId'], null);
+      const talent = loadTalent(gene['itemId'], null);
       skillNodes.push(talent);
     } else {
-      const talent = buildTalent(null, gene['propertyId']);
+      const talent = loadTalent(null, gene['propertyId']);
       statNodes.push(talent);
     }
   }
   
-  const finalNode = buildTalent(talentsData['fullyActiveItemId'], null);
-  return [statNodes, skillNodes, finalNode];
+  //const finalNode = loadTalent(talentsData['fullyActiveItemId'], null);
+  return [statNodes, skillNodes];
 }
