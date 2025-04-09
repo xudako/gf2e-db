@@ -1,9 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { Skill, Wpn } from '../types';
-import { loadSkill } from '../utils/utils';
+import { Skill, Wpn, Chr } from '../types';
+import { getWeaponStats, loadSkill } from '../utils/utils';
 import Slide from '../components/Slide';
 import ToggleButton from '../components/ToggleButton';
 import RichText from '../components/RichText';
+import Tables from '../data/TableLoader';
+import StatDisplay from '../components/StatDisplay';
+import { useNavigate } from 'react-router-dom';
+import { characters } from '../data/data';
+
+const statIcon: Record<string, string> = {
+  powPercent: 'Pow',
+  crit: 'Crit',
+  critMult: 'Mult',
+  potentialDam: 'PotentialDam',
+};
 
 interface WeaponOverlayProps {
   open: boolean;
@@ -15,6 +26,8 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
   if (!weapon) {
     return <div className="text-2xl text-center">404</div>;
   }
+  const navigate = useNavigate();
+
   const trait = weapon.trait ? loadSkill(weapon.trait) : undefined;
   const imprint = weapon.imprint ? loadSkill(weapon.imprint) : undefined;
   const [currentSkillLevel, setCurrentSkillLevel] = useState<number>(1);
@@ -27,6 +40,11 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
   const handleSkillLevelChange = (newLevel: number) => {
     setCurrentSkillLevel(newLevel);
   };
+
+  const stats = getWeaponStats(weapon.id);
+  const code = Tables.GunWeaponData[weapon.id].resPath.match(/(?<=Player\/)(.*?)(?=SSR|SR|R)/)?.[0] || 'null';
+  console.log(weapon.resCode)
+  const imprintDoll: Chr | undefined = characters.find((chr: Chr) => chr.code.startsWith(code));
 
   return (
     <Slide
@@ -60,6 +78,31 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
             >
               {weapon.name}
             </h1>
+          </div>
+          
+          <div className="mt-4 p-6 grid grid-cols-6 gap-4 text-primary-text">
+            <StatDisplay
+              img="Icon_Pow"
+               stat={stats.pow}
+            />
+            {weapon.rank === 5 && <StatDisplay
+              img={`Icon_${statIcon[Object.keys(stats)[1]]}`}
+              stat={`${Object.values(stats)[1]/10}.0%`}
+            />}
+            <div className="mt-4 space-y-4 col-span-1 col-start-6 justify-self-end">
+            {imprintDoll && (
+              <div>
+                <img
+                  src={`${import.meta.env.BASE_URL}dolls/Avatar_Bust_${imprintDoll?.code}.png`}
+                  alt="Imprinted doll"
+                  onClick={() =>
+                    navigate(`/dolls/${imprintDoll?.name.toLowerCase().replace(/\s+/g, '-')}`)
+                  }
+                  className="cursor-pointer hover:opacity-80"
+                />
+              </div>
+            )}
+            </div>
           </div>
 
           {(trait || imprint) && (

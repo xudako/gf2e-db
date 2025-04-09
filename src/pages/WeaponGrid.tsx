@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Wpn } from '../types';
 import { weapons, weaponTypes } from '../data/data';
 import ToggleButton from '../components/ToggleButton';
+import { formatWeaponUrl } from '../utils/utils';
 
 const WeaponGrid: React.FC = () => {
   const [filterRarity, setFilterRarity] = useState<number>(-1);
@@ -11,7 +12,7 @@ const WeaponGrid: React.FC = () => {
   const navigate = useNavigate();
 
   const handleWeaponSelect = (weapon: Wpn) => {
-    const url = weapon.name.toLowerCase().replace(/\s+/g, '-');
+    const url = formatWeaponUrl(weapon.name);
     navigate(`/weapons/${url}`);
   };
 

@@ -83,6 +83,19 @@ export function getDollStats(dollId: number): number[][] {
   return finalStats;
 }
 
+export function getWeaponStats(weaponId: number): Record<string, any> {
+  const weapon = Tables.GunWeaponData[weaponId];
+  const baseProp = Tables.PropertyData[weapon.propertyId];
+  const attrs = ['powPercent', 'crit', 'critMult', 'potentialDam'];
+  const stats: Record<string, any> = {'pow': Math.ceil(baseProp.pow * Tables.PropertyData[Tables.GunLevelExpData[60].propertyId]["pow"] / 1000)};
+  for (const k in attrs) {
+    if (baseProp[attrs[k]]) {
+      stats[attrs[k]] = baseProp[attrs[k]];
+    }
+  }
+  return stats;
+}
+
 function loadTalent(
   keyId: number | null = null,
   propId: number | null = null
@@ -156,3 +169,9 @@ export function getTalents(
   //const finalNode = loadTalent(talentsData['fullyActiveItemId'], null);
   return [statNodes, skillNodes];
 }
+
+export const formatWeaponUrl = (name: string): string => {
+  let formatted = name.normalize('NFD').replace(/[^\w\s]/g, '');
+  formatted = formatted.replace(/\s+/g, '-').toLowerCase();
+  return formatted;
+};

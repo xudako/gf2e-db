@@ -7,6 +7,7 @@ import WeaponGrid from './pages/WeaponGrid';
 import WeaponOverlay from './pages/WeaponOverlay';
 import { Chr, Wpn } from './types';
 import { characters, weapons } from './data/data';
+import { formatWeaponUrl } from './utils/utils';
 import './index.css';
 
 const CharacterOverlayWrapper: React.FC = () => {
@@ -33,8 +34,7 @@ const WeaponOverlayWrapper: React.FC = () => {
     return null;
   }
 
-  const name = url.replace(/-/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase());
-  const weapon: Wpn | undefined = weapons.find((wpn: Wpn) => wpn.name === name);
+  const weapon: Wpn | undefined = weapons.find((wpn: Wpn) => formatWeaponUrl(wpn.name) === url);
 
   return <WeaponOverlay open={!!weapon} onClose={() => navigate('/weapons')} weapon={weapon} />;
 };
