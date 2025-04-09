@@ -143,8 +143,8 @@
                 "8603": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -254,8 +254,8 @@
                 "8603": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -311,8 +311,8 @@
                 "8603": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -367,8 +367,8 @@
                 "8603": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -478,8 +478,8 @@
                 "8602": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -590,8 +590,8 @@
                 "8601": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -644,8 +644,8 @@
                 "8602": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -922,8 +922,8 @@
                 "8601": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -976,8 +976,8 @@
                 "8602": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -1088,8 +1088,8 @@
                 "8601": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -1199,8 +1199,8 @@
                 "8603": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "characterId": 20,
             "modNum": 4,
@@ -1363,8 +1363,8 @@
                 "8601": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -1584,8 +1584,8 @@
                 "8602": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -1694,8 +1694,8 @@
                 "8602": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -1806,8 +1806,8 @@
                 "8601": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -1917,8 +1917,8 @@
                 "8603": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "characterId": 25,
             "modNum": 4,
@@ -2053,7 +2053,7 @@
         {
             "id": 10421,
             "name": "Retired G36K-KSK",
-            "description": "A cheap weapon purchased from an underground broker. It's really old and worn out, and looks like it's reaching the upper limit of it's lifespan.",
+            "description": "A cheap weapon purchased from an underground broker. It's really old and worn out, and looks like it's reaching the upper limit of its lifespan.",
             "type": 4,
             "modelstype": 1,
             "bullettype": 1,
@@ -2081,8 +2081,8 @@
                 "8601": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -2135,8 +2135,8 @@
                 "8602": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -2163,7 +2163,7 @@
         {
             "id": 10423,
             "name": "Aglaea",
-            "description": "A high-performance assault rifle assigned to Andoris. Based on the G36K-KSK. It is easy to handle, reliable, and has improved firepower. With this in hand, Andoris gains the confidence to protect those she views as important.",
+            "description": "A high-performance assault rifle assigned to Andoris. Based on the G36K-KSK. Designed for ease of handling and reliability, it features enhanced firepower, ensuring Andoris can confidently protect those she holds dear.",
             "type": 4,
             "modelstype": 1,
             "bullettype": 1,
@@ -2192,8 +2192,8 @@
                 "8603": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "characterId": 27,
             "modNum": 4,
@@ -2273,7 +2273,7 @@
         {
             "id": 10432,
             "name": "Skoda 75",
-            "description": "A firearm highly compatible with Faye. Modified based on her combat preferences, it is durable, light and easy to handle.",
+            "description": "A firearm highly compatible with Faye. Modified based on her combat preferences, it is durable, light, and easy to handle.",
             "type": 1,
             "modelstype": 1,
             "bullettype": 5,
@@ -2329,7 +2329,7 @@
         {
             "id": 10433,
             "name": "Hestia",
-            "description": "A high-performance handgun assigned to Faye. Based on the Skoda 75, it is convenient to carry, reliable, precise and accurate. In Faye's hands, Hestia becomes as fearsome as a true Goddess of Flame.",
+            "description": "A high-performance handgun assigned to Faye. Based on the Skoda 75, it is convenient to carry, reliable, precise, and accurate. In Faye's hands, Hestia becomes as fearsome as a true Goddess of Flame.",
             "type": 1,
             "modelstype": 1,
             "bullettype": 5,
@@ -2745,8 +2745,8 @@
                 "8601": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -2799,8 +2799,8 @@
                 "8602": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -2856,8 +2856,8 @@
                 "8603": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "characterId": 32,
             "modNum": 4,
@@ -2965,8 +2965,8 @@
                 "8602": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -3130,8 +3130,8 @@
                 "8602": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -3187,8 +3187,8 @@
                 "8603": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "characterId": 36,
             "modNum": 4,
@@ -3243,8 +3243,8 @@
                 "8601": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -3297,8 +3297,8 @@
                 "8602": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -3354,8 +3354,8 @@
                 "8603": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "characterId": 37,
             "modNum": 4,
@@ -3471,8 +3471,8 @@
                 "8601": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -3761,8 +3761,8 @@
                 "8603": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "characterId": 5,
             "modNum": 4,
@@ -3814,8 +3814,8 @@
                 "8601": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -3876,8 +3876,8 @@
                 "8603": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "characterId": 7,
             "modNum": 4,
@@ -4050,8 +4050,8 @@
                 "8602": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -4165,8 +4165,8 @@
                 "8602": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -4220,8 +4220,8 @@
                 "8601": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -4336,8 +4336,8 @@
                 "8601": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -4396,8 +4396,8 @@
                 "8602": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -4511,8 +4511,8 @@
                 "8601": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -4626,8 +4626,8 @@
                 "8601": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -4846,8 +4846,8 @@
                 "8602": 1
             },
             "polarityCostCustom": {
-                "8609": 1,
-                "2": 3000
+                "2": 3000,
+                "8609": 1
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -4957,8 +4957,8 @@
                 "8601": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [
@@ -5288,8 +5288,8 @@
                 "8602": 1
             },
             "polarityCostCustom": {
-                "2": 3000,
-                "8609": 1
+                "8609": 1,
+                "2": 3000
             },
             "modNum": 4,
             "modTypeGroup": [

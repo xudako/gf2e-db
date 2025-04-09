@@ -9,7 +9,7 @@
         {
             "id": 51100,
             "name": "Toxic Mist",
-            "description": "Inflicts <color=#8679e8>Corrosion weakness</color> to enemy units within the area. Deals fixed damage equal to <color=#f26c1c>50%</color> of the Inflictor's attack and inflict <color=#3487e0>{0}</color> to enemy units that remain within the area at the end of their action. lasting <color=#f26c1c>lasting 2 turns</color>. Considered a Corrosion tile.",
+            "description": "Inflicts <color=#8679e8>Corrosion</color> weakness to enemy units within the area. Deals fixed damage equal to <color=#f26c1c>50%</color> of the Inflictor's attack and inflicts <color=#3487e0>{0}</color> to enemy units that remain within the area at the end of their action. Lasting <color=#f26c1c>2 turns</color>. Considered a Corrosion tile.",
             "descriptionTips": "0:262102"
         },
         {

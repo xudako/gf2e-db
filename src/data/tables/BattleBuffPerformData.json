@@ -3159,7 +3159,7 @@
         {
             "id": 105107,
             "name": "Dream Guardian",
-            "description": "AoE damage dealt by Support Actions is increased by <color=#f26c1c>30%</color>. Buff, cannot be dispelled.",
+            "description": "AoE damage dealt by Support Attacks is increased by <color=#f26c1c>30%</color>. Considered a buff, cannot be cleansed.",
             "buffEffect": "Skill/10510701_dmgup",
             "effectPlayTime": [
                 1
@@ -3183,7 +3183,7 @@
         {
             "id": 105108,
             "name": "Nightmare Form",
-            "description": "AoE damage dealt is increased by <color=#f26c1c>10%</color>,  additionally increased by <color=#f26c1c>50%</color> for Support Actions. <color=#3487e0>{0}</color>'s damage type is changed to <color=#8679e8>Corrosion</color>. Corrosion buff, cannot be dispelled.",
+            "description": "AoE damage dealt is increased by <color=#f26c1c>10%</color> and AoE damage dealt by Support Attacks is increased by <color=#f26c1c>50%</color>. Additionally, <color=#3487e0>{0}</color>'s damage type is changed to <color=#8679e8>Corrosion damage</color>. Considered a Corrosion buff, cannot be cleansed.",
             "descriptionTips": "1:90222",
             "iconName": "Buff_PoisonUP",
             "isShow": true,
@@ -3901,7 +3901,7 @@
         {
             "id": 203200,
             "name": "Movement Up II",
-            "description": "Mobility increased by <color=#f26c1c>2 tiles</color>. Considered a buff.",
+            "description": "Mobility is increased by <color=#f26c1c>2 tiles</color>. Considered a buff.",
             "buffEffect": "Buff/SpeedU|Buff/SpeedU",
             "effectPlayTime": [
                 1,
@@ -3926,7 +3926,7 @@
         {
             "id": 203201,
             "name": "Movement Up II",
-            "description": "Mobility increased by <color=#f26c1c>2 tiles</color>. Considered a buff.",
+            "description": "Mobility is increased by <color=#f26c1c>2 tiles</color>. Considered a buff.",
             "buffEffect": "Buff/SpeedU|Buff/SpeedU",
             "effectPlayTime": [
                 1,
@@ -3951,7 +3951,7 @@
         {
             "id": 203202,
             "name": "Movement Up II",
-            "description": "Mobility increased by <color=#f26c1c>2 tiles</color>. Considered a buff.",
+            "description": "Mobility is increased by <color=#f26c1c>2 tiles</color>. Considered a buff.",
             "buffEffect": "Buff/SpeedU|Buff/SpeedU",
             "effectPlayTime": [
                 1,
@@ -3976,7 +3976,7 @@
         {
             "id": 203203,
             "name": "Movement Up II",
-            "description": "Mobility increased by <color=#f26c1c>2 tiles</color>. Considered a buff.",
+            "description": "Mobility is increased by <color=#f26c1c>2 tiles</color>. Considered a buff.",
             "buffEffect": "Buff/SpeedU|Buff/SpeedU",
             "effectPlayTime": [
                 1,
@@ -9009,7 +9009,7 @@
         {
             "id": 262201,
             "name": "Stability Loss II",
-            "description": "Increase stability damage by <color=#f26c1c>2 points</color>. This is considered a defense debuff.",
+            "description": "Stability damage taken is increased by <color=#f26c1c>2 points</color>. Considered a defense debuff.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
                 1,
@@ -9038,7 +9038,7 @@
         {
             "id": 262202,
             "name": "Stability Loss II",
-            "description": "Increase stability damage by <color=#f26c1c>2 points</color>. This is considered a defense debuff.",
+            "description": "Stability damage taken is increased by <color=#f26c1c>2 points</color>. Considered a defense debuff.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
                 1,
@@ -9067,7 +9067,7 @@
         {
             "id": 262203,
             "name": "Stability Loss II",
-            "description": "Increase stability damage by <color=#f26c1c>2 points</color>. This is considered a defense debuff.",
+            "description": "Stability damage taken is increased by <color=#f26c1c>2 points</color>. Considered a defense debuff.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
                 1,
@@ -10866,7 +10866,7 @@
         {
             "id": 310452,
             "name": "Overheat Combustion",
-            "description": "Upon gaining this effect and at the start of this unit's action, all allies in a <color=#f26c1c>1 tile radius</color> take fixed damage equal to <color=#f26c1c>20%</color> of the applier's ATK. Burn debuff.",
+            "description": "Upon gaining this effect and at the start of this unit's action, all allied units within <color=#f26c1c>1 tile</color> take fixed damage equal to <color=#f26c1c>20%</color> of the applier's attack. Considered a Burn debuff.",
             "buffEffect": "Buff/Dot_burn|Buff/Dot_burn_break",
             "effectPlayTime": [
                 1,
@@ -10928,7 +10928,7 @@
         {
             "id": 310472,
             "name": "Overheat Combustion",
-            "description": "Burn damage taken is increased by <color=#f26c1c>30%</color>. Upon gaining this effect and at the start of this unit's action, all allies within a <color=#f26c1c>3×3</color> area centered on this unit take fixed damage equal to <color=#f26c1c>30%</color> of the applier's attack. Burn debuff. When this unit's action ends, create <color=#3487e0>{0}</color> tiles in a <color=#f26c1c>1 tile radius</color> centered on this unit. Burn debuff.",
+            "description": "Burn damage taken is increased by <color=#f26c1c>30%</color>. Upon gaining this effect and at the start of this unit's action, all allied units within a <color=#f26c1c>3×3 area</color> centered on this unit take fixed damage equal to <color=#f26c1c>30%</color> of the applier's attack. At the end of this unit's action, generate <color=#3487e0>{0}</color> tiles within <color=#f26c1c>1 tile</color> centered on this unit. Considered a Burn debuff.",
             "descriptionTips": "1:51015",
             "buffEffect": "Buff/Dot_burn|Buff/Dot_burn_break",
             "effectPlayTime": [
@@ -12052,8 +12052,8 @@
         },
         {
             "id": 340601,
-            "name": "Acidic Duress",
-            "description": "At the end of the action, the applier deals AoE <color=#8679e8>Corrosive damage</color> equal to <color=#f26c1c>12%</color> of attack. For each additional <color=#f26c1c>stack</color>, the damage multiplier is increased by <color=#f26c1c>12%</color>. Upon being hit by active attacks from Klukai or <color=#8679e8>Corrosion damage</color> from other enemies, gain <color=#f26c1c>1 additional stack</color> and refresh the debuff duration, maximum of <color=#f26c1c>10 stacks</color>. Removed after the applier is killed. This is considered a Corrosion debuff, cannot be cleansed.",
+            "name": "Corrosive Infusion",
+            "description": "At the end of the action, the applier deals AoE <color=#8679e8>Corrosion damage</color> equal to <color=#f26c1c>12%</color> of attack. For each additional <color=#f26c1c>stack</color>, the damage multiplier is increased by <color=#f26c1c>12%</color>. Upon being hit by active attacks from Klukai or <color=#8679e8>Corrosion damage</color> from other enemies, gain <color=#f26c1c>1 additional stack</color> and refresh the debuff duration, maximum of <color=#f26c1c>10 stacks</color>. Removed after the applier is killed. Considered a Corrosion debuff, cannot be cleansed.",
             "buffEffect": "Buff/poisonBorn",
             "effectPlayTime": [
                 1
@@ -12076,8 +12076,8 @@
         },
         {
             "id": 340602,
-            "name": "Acidic Duress",
-            "description": "Reduce defense by <color=#f26c1c>1%</color>. At the end of the action, the applier deals AoE <color=#8679e8>Corrosive damage</color> equal to <color=#f26c1c>12%</color> of attack. For each additional <color=#f26c1c>stack</color>, the damage multiplier is increased by <color=#f26c1c>12%</color>. Upon being hit by active attacks from Klukai or <color=#8679e8>Corrosion damage</color> from other enemies, gain <color=#f26c1c>2 additional stacks</color> and refresh the debuff duration, maximum of <color=#f26c1c>15 stacks</color>. Removed after the applier is killed. This is considered a Corrosion debuff, cannot be cleansed.",
+            "name": "Corrosive Infusion",
+            "description": "Reduce defense by <color=#f26c1c>1%</color>. At the end of the action, the applier deals AoE <color=#8679e8>Corrosion damage</color> equal to <color=#f26c1c>12%</color> of attack. For each additional <color=#f26c1c>stack</color>, the damage multiplier is increased by <color=#f26c1c>12%</color>. Upon being hit by active attacks from Klukai or <color=#8679e8>Corrosion damage</color> from other enemies, gain <color=#f26c1c>2 additional stacks</color> and refresh the debuff duration, maximum of <color=#f26c1c>15 stacks</color>. Removed after the applier is killed. Considered a Corrosion debuff, cannot be cleansed.",
             "buffEffect": "Buff/poisonBorn",
             "effectPlayTime": [
                 1
@@ -12100,8 +12100,8 @@
         },
         {
             "id": 340603,
-            "name": "Acidic Duress",
-            "description": "Reduce defense by <color=#f26c1c>1%</color>. At the end of the action, the applier deals AoE <color=#8679e8>Corrosive damage</color> equal to <color=#f26c1c>12%</color> of attack. For each additional <color=#f26c1c>stack</color>, the damage multiplier is increased by <color=#f26c1c>12%</color>. Upon being hit by active attacks from Klukai or <color=#8679e8>Corrosion damage</color> from other enemies, gain <color=#f26c1c>2 additional stacks</color> and refresh the debuff duration, maximum of <color=#f26c1c>15 stacks</color>. Removed after the applier is killed. This is considered a Corrosion debuff, cannot be cleansed.",
+            "name": "Corrosive Infusion",
+            "description": "Reduce defense by <color=#f26c1c>1%</color>. At the end of the action, the applier deals AoE <color=#8679e8>Corrosion damage</color> equal to <color=#f26c1c>12%</color> of attack. For each additional <color=#f26c1c>stack</color>, the damage multiplier is increased by <color=#f26c1c>12%</color>. Upon being hit by active attacks from Klukai or <color=#8679e8>Corrosion damage</color> from other enemies, gain <color=#f26c1c>2 additional stacks</color> and refresh the debuff duration, maximum of <color=#f26c1c>15 stacks</color>. Removed after the applier is killed. Considered a Corrosion debuff, cannot be cleansed.",
             "buffEffect": "Buff/poisonBorn",
             "effectPlayTime": [
                 1
@@ -12124,8 +12124,8 @@
         },
         {
             "id": 340701,
-            "name": "Toxic Intrusion",
-            "description": "At the end of the action, gain <color=#f26c1c>1 stack</color> of <color=#3487e0>Acidic Duress</color> for <color=#f26c1c>2 turns</color>. Upon death, the applier inflicts <color=#3487e0>Toxic Intrusion</color> on the holder and all enemy units within a <color=#f26c1c>3-tile radius</color> for <color=#f26c1c>2 turns</color>, dealing AoE <color=#8679e8>Corrosion damage</color> equal to <color=#f26c1c>60%</color> of attack. This effect is removed after the applier is killed. This is considered a Corrosion debuff.",
+            "name": "Toxic Infiltration",
+            "description": "At the end of the action, gains <color=#f26c1c>1 stack</color> of <color=#3487e0>Corrosive Infusion</color> for <color=#f26c1c>2 turns</color>. Upon death, the applier inflicts <color=#3487e0>Toxic Infiltration</color> on the debuff holder and all enemy units within <color=#f26c1c>3 tiles</color> for <color=#f26c1c>2 turns</color>, dealing AoE <color=#8679e8>Corrosion damage</color> equal to <color=#f26c1c>60%</color> of attack. This effect is removed after the applier is killed. Considered a Corrosion debuff.",
             "effectFollowType": "1",
             "iconName": "Buff_ClukaySSR2",
             "isShow": true,
@@ -12146,8 +12146,8 @@
         },
         {
             "id": 340702,
-            "name": "Toxic Intrusion",
-            "description": "At the end of the action, gain <color=#f26c1c>1 stack</color> of <color=#3487e0>Acidic Duress</color> for <color=#f26c1c>2 turns</color>. Additionally, the applier applies <color=#3487e0>Toxic Intrusion</color> for <color=#f26c1c>2 turns</color> to all enemies within a <color=#f26c1c>3-tile radius</color> who do not already have <color=#3487e0>Toxic Intrusion</color>. \nUpon death, the applier applies <color=#3487e0>Toxic Intrusion</color> for <color=#f26c1c>2 turns</color> to all allies within a <color=#f26c1c>3-tile radius</color> centered on the unit with this effect, dealing AoE <color=#8679e8>Corrosion damage</color> equal to <color=#f26c1c>60%</color> of attack. This effect is removed after the applier is killed. This is considered a Corrosion debuff.",
+            "name": "Toxic Infiltration",
+            "description": "At the end of the action, gains <color=#f26c1c>1 stack</color> of <color=#3487e0>Corrosive Infusion</color> for <color=#f26c1c>2 turns</color>. Additionally, the applier inflicts <color=#3487e0>Toxic Infiltration</color> for <color=#f26c1c>2 turns</color> to all enemies within <color=#f26c1c>3 tiles</color> who do not  have <color=#3487e0>Toxic Infiltration</color>. \nUpon death, the applier inflicts <color=#3487e0>Toxic Infiltration</color> for <color=#f26c1c>2 turns</color> to all allies within <color=#f26c1c>3 tiles</color> centered on the unit with this effect, dealing AoE <color=#8679e8>Corrosion damage</color> equal to <color=#f26c1c>60%</color> of attack. This effect is removed after the applier is killed. Considered a Corrosion debuff.",
             "effectFollowType": "1",
             "iconName": "Buff_ClukaySSR2",
             "isShow": true,
@@ -12168,8 +12168,8 @@
         },
         {
             "id": 340703,
-            "name": "Toxic Intrusion",
-            "description": "At the end of the action, gain <color=#f26c1c>1 stack</color> of <color=#3487e0>Acidic Duress</color> for <color=#f26c1c>2 turns</color>. Additionally, the applier applies <color=#3487e0>Toxic Intrusion</color> for <color=#f26c1c>2 turns</color> to all enemies within a <color=#f26c1c>4-tile radius</color> who do not already have <color=#3487e0>Toxic Intrusion</color>. Upon death, the applier applies <color=#3487e0>Toxic Intrusion</color> for <color=#f26c1c>2 turns</color> to all allies within a <color=#f26c1c>4-tile radius</color> centered on the unit with this effect, dealing AoE <color=#8679e8>Corrosion damage</color> equal to <color=#f26c1c>80%</color> of attack. \nWhen attacked by Klukai's active attacks, increase damage taken by <color=#f26c1c>30%</color>. This effect is removed after the applier is killed. This is considered a Corrosion debuff.",
+            "name": "Toxic Infiltration",
+            "description": "At the end of the action, gains <color=#f26c1c>1 stack</color> of <color=#3487e0>Corrosive Infusion</color> for <color=#f26c1c>2 turns</color>. Additionally, the applier inflicts <color=#3487e0>Toxic Infiltration</color> for <color=#f26c1c>2 turns</color> to all enemies within <color=#f26c1c>4 tiles</color> who do not have <color=#3487e0>Toxic Infiltration</color>. Upon death, the applier inflicts <color=#3487e0>Toxic Infiltration</color> for <color=#f26c1c>2 turns</color> to all allies within <color=#f26c1c>4 tiles</color> centered on the unit with this effect, dealing AoE <color=#8679e8>Corrosion damage</color> equal to <color=#f26c1c>80%</color> of attack. \nWhen attacked by Klukai's active attacks, increases damage taken by <color=#f26c1c>30%</color>. This effect is removed after the applier is killed. Considered a Corrosion debuff.",
             "effectFollowType": "1",
             "iconName": "Buff_ClukaySSR2",
             "isShow": true,
@@ -12190,8 +12190,8 @@
         },
         {
             "id": 340704,
-            "name": "Toxic Intrusion",
-            "description": "At the end of the action, gain <color=#f26c1c>1 stack</color> of <color=#3487e0>Acidic Duress</color> for <color=#f26c1c>2 turns</color>. Additionally, the applier applies <color=#3487e0>Toxic Intrusion</color> for <color=#f26c1c>2 turns</color> to all enemies within a <color=#f26c1c>4-tile radius</color> who do not already have <color=#3487e0>Toxic Intrusion</color>. Upon death, the applier applies <color=#3487e0>Toxic Intrusion</color> for <color=#f26c1c>2 turns</color> to all allies within a <color=#f26c1c>4-tile radius</color> centered on the unit with this effect, dealing AoE <color=#8679e8>Corrosion damage</color> equal to <color=#f26c1c>80%</color> of attack. \nWhen attacked by Klukai's active attacks, increase damage taken by <color=#f26c1c>30%</color>. This effect is removed after the applier is killed. This is considered a Corrosion debuff.",
+            "name": "Toxic Infiltration",
+            "description": "At the end of the action, gains <color=#f26c1c>1 stack</color> of <color=#3487e0>Corrosive Infusion</color> for <color=#f26c1c>2 turns</color>. Additionally, the applier inflicts <color=#3487e0>Toxic Infiltration</color> for <color=#f26c1c>2 turns</color> to all enemies within <color=#f26c1c>4 tiles</color> who do not have <color=#3487e0>Toxic Infiltration</color>. Upon death, the applier inflicts <color=#3487e0>Toxic Infiltration</color> for <color=#f26c1c>2 turns</color> to all allies within <color=#f26c1c>4 tiles</color> centered on the unit with this effect, dealing AoE <color=#8679e8>Corrosion damage</color> equal to <color=#f26c1c>80%</color> of attack. \nWhen attacked by Klukai's active attacks, increases damage taken by <color=#f26c1c>30%</color>. This effect is removed after the applier is killed. Considered a Corrosion debuff.",
             "effectFollowType": "1",
             "iconName": "Buff_ClukaySSR2",
             "isShow": true,
@@ -12271,7 +12271,7 @@
         {
             "id": 340901,
             "name": "Acid Corrosion II",
-            "description": "Reduce defense by <color=#f26c1c>30%</color>. Considered a Corrosion defense debuff.",
+            "description": "Reduces defense by <color=#f26c1c>30%</color>. Considered a Corrosion defense debuff.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
                 1,
@@ -12300,7 +12300,7 @@
         {
             "id": 340902,
             "name": "Acid Corrosion II",
-            "description": "Reduce defense by <color=#f26c1c>30%</color>. Considered a Corrosion defense debuff.",
+            "description": "Reduces defense by <color=#f26c1c>30%</color>. Considered a Corrosion defense debuff.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
                 1,
@@ -12387,7 +12387,7 @@
         {
             "id": 341101,
             "name": "Toxin Inundation",
-            "description": "<color=#8679e8>Corrosion damage</color> taken is increased by <color=#f26c1c>25%</color>. Corrosion defensive debuff.",
+            "description": "<color=#8679e8>Corrosion damage</color> taken is increased by <color=#f26c1c>25%</color>. Considered a Corrosion defense debuff.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
                 1,
@@ -12416,7 +12416,7 @@
         {
             "id": 341102,
             "name": "Toxin Inundation",
-            "description": "<color=#8679e8>Corrosion damage</color> taken is increased by <color=#f26c1c>25%</color>. Corrosion defensive debuff.",
+            "description": "<color=#8679e8>Corrosion damage</color> taken is increased by <color=#f26c1c>25%</color>. Considered a Corrosion defense debuff.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
                 1,
@@ -12529,7 +12529,7 @@
         {
             "id": 350402,
             "name": "Ionic Shield",
-            "description": "Before receiving targeted damage, deals <color=#f26c1c>5%</color> received damage as fixed damage and <color=#f26c1c>2</color> points of true stability damage to attacker.",
+            "description": "Before receiving targeted damage, deal fixed damage equal to <color=#f26c1c>5%</color> of the received damage and <color=#f26c1c>2 points</color> of true stability damage to the attacker.",
             "buffEffect": "Buff/6706201_Buff",
             "effectPlayTime": [
                 1
@@ -12839,7 +12839,7 @@
         {
             "id": 351701,
             "name": "Negative Charge",
-            "description": "Upon receiving a targeted Electric attack, all targets with <color=#3487e0>Anion</color> take fixed damage equal to <color=#f26c1c>30%</color> of that damage. When <color=#3487e0>Anion</color>is applied again, additionally take <color=#f26c1c>1 instance</color> of fixed damage equal to <color=#f26c1c>3%</color> of the applier's ATK. Upon being attacked by units with <color=#3487e0>Cation</color>, <color=#d4ae08>Electric</color> damage taken is increased. Electric debuff.",
+            "description": "Upon taking damage from a targeted Electric attack, all targets afflicted with <color=#3487e0>Anion</color> take fixed damage equal to <color=#f26c1c>30%</color> of the damage dealt. When <color=#3487e0>Anion</color> is applied again, additionally take <color=#f26c1c>1 instance</color> of fixed damage equal to <color=#f26c1c>3%</color> of the applier's attack. Upon being attacked by units with <color=#3487e0>Cation</color>, <color=#d4ae08>Electric damage</color> taken is increased. Considered an Electric debuff.",
             "buffEffect": "Other/BattleFX/Negative",
             "effectPlayTime": [
                 1
@@ -12867,7 +12867,7 @@
         {
             "id": 351702,
             "name": "Negative Charge",
-            "description": "Upon receiving a targeted Electric attack, all targets with <color=#3487e0>Anion</color> take fixed damage equal to <color=#f26c1c>30%</color> of that damage. When <color=#3487e0>Anion</color>is applied again, additionally take <color=#f26c1c>1 instance</color> of fixed damage equal to <color=#f26c1c>3%</color> of the applier's ATK. Upon being attacked by units with <color=#3487e0>Cation</color>, <color=#d4ae08>Electric</color> damage taken is increased. Electric debuff.",
+            "description": "Upon taking damage from a targeted Electric attack, all targets afflicted with <color=#3487e0>Anion</color> take fixed damage equal to <color=#f26c1c>30%</color> of the damage dealt. When <color=#3487e0>Anion</color> is applied again, additionally take <color=#f26c1c>1 instance</color> of fixed damage equal to <color=#f26c1c>3%</color> of the applier's attack. Upon being attacked by units with <color=#3487e0>Cation</color>, <color=#d4ae08>Electric damage</color> taken is increased. Considered an Electric debuff.",
             "buffEffect": "Other/BattleFX/Negative",
             "effectPlayTime": [
                 1
@@ -14037,7 +14037,7 @@
         {
             "id": 510154,
             "name": "Self-Immolation",
-            "description": "Burn damage taken is increased by <color=#f26c1c>20%</color>. Burn debuff.",
+            "description": "Burn damage taken is increased by <color=#f26c1c>20%</color>. Considered a Burn debuff.",
             "iconName": "Buff_EnemyHurtUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -14081,7 +14081,7 @@
         {
             "id": 510521,
             "name": "Putrefaction",
-            "description": "Mobility is decreased by <color=#f26c1c>2</color>. Take fixed damage equal to <color=#f26c1c>50%</color> of Nemertea - Xenotype's ATK at the end of action.",
+            "description": "Mobility is reduced by <color=#f26c1c>2 tiles</color>. At the end of the action, take fixed damage equal to <color=#f26c1c>50%</color> of Nemertea - Xenotype's attack.",
             "iconName": "Buff_PoisonDefDown",
             "isShow": true,
             "buffHeadShow": 1,
@@ -14127,7 +14127,7 @@
         {
             "id": 511030,
             "name": "Miasma",
-            "description": "ATK is decreased by <color=#f26c1c>5%</color> and Stability damage taken is increased by <color=#f26c1c>1</color>, max <color=#f26c1c>3 stacks</color>. Cannot be dispelled.",
+            "description": "Attack is reduced by <color=#f26c1c>5%</color> and stability damage taken is increased by <color=#f26c1c>1 point</color>, maximum of <color=#f26c1c>3 stacks</color>. Cannot be cleansed.",
             "iconName": "Buff_PoisonDefDownNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -14907,7 +14907,7 @@
         {
             "id": 1051083,
             "name": "Nightmare Form",
-            "description": "AoE damage dealt is increased by <color=#f26c1c>20%</color>,  additionally increased by <color=#f26c1c>80%</color> for Support Actions. Stability damage dealt is increased by <color=#f26c1c>1</color>, and <color=#3487e0>{0}</color>'s damage type is changed to <color=#8679e8>Corrosion</color>. Corrosion buff, cannot be dispelled.",
+            "description": "AoE damage dealt is increased by <color=#f26c1c>20%</color>, AoE damage dealt by Support Attacks is increased by <color=#f26c1c>80%</color>, and stability damage dealt is increased by <color=#f26c1c>1 point</color>. Additionally, <color=#3487e0>{0}</color>'s damage type is changed to <color=#8679e8>Corrosion damage</color>. Considered a Corrosion buff, cannot be cleansed.",
             "descriptionTips": "1:90222",
             "iconName": "Buff_PoisonUP",
             "isShow": true,
@@ -14928,8 +14928,8 @@
         },
         {
             "id": 1051087,
-            "name": "Patch Mode - ATK Down",
-            "description": "ATK is decreased by <color=#f26c1c>20%</color>. Debuff, cannot be dispelled.",
+            "name": "Patch Mode - Attack Down",
+            "description": "Attack is reduced by <color=#f26c1c>20%</color>. Considered a debuff, cannot be cleansed.",
             "iconName": "Buff_AtkDown",
             "isShow": true,
             "buffHeadShow": 1,
@@ -17068,7 +17068,7 @@
         {
             "id": 6167331,
             "name": "Lethargy",
-            "description": "Mobility is decreased by <color=#f26c1c>2</color>, can stack. Mobility debuff, can be dispelled.",
+            "description": "Mobility is reduced by <color=#f26c1c>2 tiles</color>, can stack. Considered a mobility debuff, can be cleansed.",
             "buffEffect": "Buff/SpeedD|Buff/SpeedD",
             "effectPlayTime": [
                 1,
@@ -17097,7 +17097,7 @@
         {
             "id": 6167402,
             "name": "Suppression",
-            "description": "ATK is decreased by <color=#f26c1c>30%</color>， Debuff, cannot be dispelled.",
+            "description": "Attack is reduced by <color=#f26c1c>30%</color>. Considered a debuff, cannot be cleansed.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
                 1,
@@ -20823,7 +20823,7 @@
         {
             "id": 6483001,
             "name": "Dual Defense",
-            "description": "Defense is increased by <color=#f26c1c>100%</color>, damage taken is decreased by <color=#f26c1c>70%</color>. Considered a Buff, cannot be cleansed.",
+            "description": "Defense is increased by <color=#f26c1c>100%</color>, damage taken is reduced by <color=#f26c1c>70%</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -21269,7 +21269,7 @@
         {
             "id": 6552622,
             "name": "Bastion",
-            "description": "",
+            "description": "<Bastion>：Defense is increased by 25%, can be depleted by attacks, can be cleansed.",
             "descriptionTips": "",
             "buffEffect": "",
             "effectPlayTime": [],
@@ -21457,7 +21457,7 @@
         {
             "id": 6703001,
             "name": "Mark of the Hunt",
-            "description": "When the enemy turn begins, if a target has <color=#f26c1c>3 stacks</color> of <color=#3487e0>Mark of the Hunt</color>, the Machinist's targeted attack range is increased to the entire map; If there is no such target, the Machinist's range is restored to the original <color=#f26c1c>5 tiles</color>. Max <color=#f26c1c>3 stacks</color>. Cannot be dispelled.",
+            "description": "At the start of the enemy's turn, if there is a target with <color=#f26c1c>3 stacks</color> of <color=#3487e0>Mark of the Hunt</color> on the field, the Mechanist's targeted attack range is increased to the entire map. If there is no such target, the Mechanist's range is restored to the original <color=#f26c1c>5 tiles</color>. Maximum of <color=#f26c1c>3 stacks</color>. Cannot be cleansed.",
             "buffEffect": "Skill/6703301_Buff|Skill/6703301_Buff",
             "effectPlayTime": [
                 1,
@@ -21482,7 +21482,7 @@
         {
             "id": 6703002,
             "name": "Mark of the Hunt",
-            "description": "When the enemy turn begins, if a target has <color=#f26c1c>3 stacks</color> of <color=#3487e0>Mark of the Hunt</color>, the Machinist's targeted attack range is increased to the entire map; If there is no such target, the Machinist's range is restored to the original <color=#f26c1c>5 tiles</color>. Max <color=#f26c1c>3 stacks</color>. Cannot be dispelled.",
+            "description": "At the start of the enemy's turn, if there is a target with <color=#f26c1c>3 stacks</color> of <color=#3487e0>Mark of the Hunt</color> on the field, the Mechanist's targeted attack range is increased to the entire map. If there is no such target, the Mechanist's range is restored to the original <color=#f26c1c>5 tiles</color>. Maximum of <color=#f26c1c>3 stacks</color>. Cannot be cleansed.",
             "buffEffect": "Skill/6703302_Buff",
             "effectPlayTime": [
                 1
@@ -21720,8 +21720,8 @@
         },
         {
             "id": 6743351,
-            "name": "",
-            "description": "",
+            "name": "Hydrobaria",
+            "description": "Movement is increased by <color=#f26c1c>2 tiles</color>, famage taken is reduced by <color=#f26c1c>8%</color>. Stacks up to <color=#f26c1c>5 times</color>. This buff cannot be cleansed.",
             "iconName": "Buff_AllUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -23989,7 +23989,7 @@
         {
             "id": 6963003,
             "name": "Nightmarish Reenactment",
-            "description": "ATK is decreased by <color=#f26c1c>3%</color>m, can stack. Debuff, cannot be dispelled.",
+            "description": "Attack is reduced by <color=#f26c1c>3%</color>, can stack. Considered a debuff, cannot be cleansed.",
             "iconName": "Buff_AtkDown",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27108,7 +27108,7 @@
         {
             "id": 10420401,
             "name": "Fortified Stance",
-            "description": "No longer receives the protective effects of cover. Damage taken is decreased by <color=#f26c1c>20%</color>, Stability damage taken is decreased by <color=#f26c1c>2</color>. Upon receiving damage, if the attacker has an Electric debuff, damage taken is further decreased by <color=#f26c1c>15%</color>. Cannot be dispelled.",
+            "description": "No longer benefits from the effects of Cover Protection. Damage taken is reduced by <color=#f26c1c>20%</color> and stability damage taken is reduced by <color=#f26c1c>2 points</color>. Upon taking damage, if the attacker has an Electric debuff, damage taken is further reduced by <color=#f26c1c>15%</color>. Cannot be cleansed.",
             "buffEffect": "Skill/AndorisSSR01/10420401_Halo_loop",
             "effectPlayTime": [
                 1
@@ -27132,7 +27132,7 @@
         {
             "id": 10420405,
             "name": "Fortified Stance",
-            "description": "Gain Stability protection, reducing this unit's Stability damage taken by 2; Lose 1 stack upon each instance of Stability damage taken, max 3 stacks. Buff.",
+            "description": "Gains Stability Protection, reducing this unit's stability damage taken by 2 points. Each instance of stability damage taken consumes 1 stack, maximum of 3 stacks. Considered a buff.",
             "buffEffect": "Skill/AndorisSSR01/10420401_Halo_get",
             "effectPlayTime": [
                 1
@@ -27156,7 +27156,7 @@
         {
             "id": 10420406,
             "name": "Fortified Stance",
-            "description": "Gain Stability protection, reducing this unit's Stability damage taken by 2; Lose 1 stack upon each instance of Stability damage taken, max 3 stacks. Buff.",
+            "description": "Gains Stability Protection, reducing this unit's stability damage taken by 2 points. Each instance of stability damage taken consumes 1 stack, maximum of 3 stacks. Considered a buff.",
             "buffEffect": "Skill/AndorisSSR01/10420401_Halo_get",
             "effectPlayTime": [
                 1
@@ -27180,7 +27180,7 @@
         {
             "id": 10420701,
             "name": "Electro Charge",
-            "description": "Upon receiving a targeted Electric attack, Stability damage taken is increased by <color=#f26c1c>1</color> and the attacker gains HP equal to <color=#f26c1c>20%</color> of damage dealt.Electric debuff, cannot be dispelled.",
+            "description": "Upon taking damage from a targeted Electric attack, stability damage taken is increased by <color=#f26c1c>1 point</color>. The attacker gains HP equal to <color=#f26c1c>20%</color> of damage dealt. Considered an Electric debuff, cannot be cleansed.",
             "iconName": "Buff_ElectricContinuehurt",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27202,7 +27202,7 @@
         {
             "id": 10420721,
             "name": "Electro Charge",
-            "description": "Upon receiving a targeted Electric attack, Stability damage taken is increased by <color=#f26c1c>1</color>, and the attacker regains HP equal to <color=#f26c1c>20%</color> of the damage dealt. <color=#d4ae08>Electric damage</color> taken is increased by <color=#f26c1c>15%</color>. At the end of this unit's action, apply <color=#3487e0>Electro Charge</color> for <color=#f26c1c>2 turns</color> to allies without the effect within a <color=#f26c1c>3-tile radius</color>.Electric debuff, cannot be dispelled.",
+            "description": "When hit by a targeted Electric attack, stability damage taken is increased by <color=#f26c1c>1 point</color>, and restores HP equal to <color=#f26c1c>20%</color> of the damage dealt to the attacker. When hit by <color=#d4ae08>Electric damage</color>, damage taken is increased by <color=#f26c1c>15%</color>. At the end of this unit's action, apply <color=#3487e0>Electro Charge</color> for <color=#f26c1c>2 turns</color> to allied units without the effect within <color=#f26c1c>3 tiles</color>. Considered an Electric debuff, cannot be cleansed.",
             "iconName": "Buff_ElectricContinuehurt",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27224,7 +27224,7 @@
         {
             "id": 10420801,
             "name": "Blunted Nerves",
-            "description": "DEF is increased by <color=#f26c1c>10%</color>, max 5 stacks. Buff, cannot be dispelled.",
+            "description": "Defense is increased by <color=#f26c1c>10%</color>, maximum of 5 stacks. Considered a buff, cannot be cleansed.",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -27253,7 +27253,7 @@
         {
             "id": 10420802,
             "name": "Self-Diagnosis",
-            "description": "Does not die upon taking lethal damage, instead dispelling all debuffs and gaining HP equal to <color=#f26c1c>30%</color> max HP and <color=#f26c1c>5</color>Stability. Activates <color=#f26c1c>1 time</color>. Cannot be dispelled.",
+            "description": "Will not die upon taking fatal damage. Instead, cleanses all debuffs, restores HP equal to <color=#f26c1c>30%</color> of max HP, and restores 5 points of stability. Only activates <color=#f26c1c>once</color>. Cannot be cleansed.",
             "buffEffect": "Buff/10420401_avoid_death",
             "effectPlayTime": [
                 1
@@ -27360,7 +27360,7 @@
         {
             "id": 10430401,
             "name": "Abrasion",
-            "description": "",
+            "description": "At the end of this unit's action, take fixed damage equal to <color=#f26c1c>8%</color> of the inflictor's attack for <color=#f26c1c>each stack</color> of <color=#3487e0>Gouge</color> and expend <color=#f26c1c>2 stacks</color> of <color=#3487e0>Gouge</color>. Debuff.",
             "buffEffect": "Skill/FayeSSR01/10430501_buff",
             "effectPlayTime": [
                 1,
@@ -27388,8 +27388,8 @@
         },
         {
             "id": 10430501,
-            "name": "Gasj",
-            "description": "",
+            "name": "Gash",
+            "description": "Physical damage taken is increased by <color=#f26c1c>30%</color>. Up to <color=#f26c1c>8 instances</color> can be active at once (this effect does not stack). Defense-type debuff. This debuff cannot be cleansed.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
                 1,
@@ -27461,8 +27461,8 @@
         },
         {
             "id": 10430916,
-            "name": "",
-            "description": "",
+            "name": "During Brawl",
+            "description": "Attack is increased by <color=#f26c1c>4%</color>.",
             "buffEffect": "Buff/AtkU|Buff/AtkU",
             "effectPlayTime": [
                 1,
@@ -27491,7 +27491,7 @@
         {
             "id": 10440401,
             "name": "Oil to the Fire",
-            "description": "Burn damage dealt is increased by <color=#f26c1c>10%</color>. When dealing burn damage, additionally deal 1 instance of fixed damage equal to <color=#f26c1c>20%</color> ATK. Burn buff,cannot be dispelled.",
+            "description": "When dealing Burn damage, damage dealt is increased by <color=#f26c1c>10%</color>, and deals 1 additional instance of fixed damage equal to <color=#f26c1c>20%</color> of attack to the target. Considered a Burn buff, cannot be cleansed.",
             "iconName": "Buff_FireUP",
             "isShow": true,
             "buffHeadShow": 9,
@@ -27513,7 +27513,7 @@
         {
             "id": 10440402,
             "name": "Oil to the Fire",
-            "description": "Burn damage dealt is increased by <color=#f26c1c>30%</color>. When dealing burn damage, additionally deal 1 instance of fixed damage equal to <color=#f26c1c>20%</color> ATK. Burn buff,cannot be dispelled.",
+            "description": "When dealing Burn damage, damage dealt is increased by <color=#f26c1c>30%</color>, and deals 1 additional instance of fixed damage equal to <color=#f26c1c>20%</color> of attack to the target. Considered a Burn buff, cannot be cleansed.",
             "iconName": "Buff_FireUP",
             "isShow": true,
             "buffHeadShow": 9,
@@ -27535,7 +27535,7 @@
         {
             "id": 10440403,
             "name": "Oil to the Fire",
-            "description": "For every Burn buff on this unit, damage dealt is increased by <color=#f26c1c>5%</color>. When an attack deals Burn damage, damage dealt is increased by <color=#f26c1c>30%</color> crit rate is increased by <color=#f26c1c>15%</color>, and additionally deal 1 instance of fixed damage equal to <color=#f26c1c>20%</color> ATK. Burn buff, cannot be dispelled.",
+            "description": "For every Burn buff this unit possesses, damage dealt is increased by <color=#f26c1c>5%</color>. When an attack deals Burn damage, damage dealt is increased by <color=#f26c1c>30%</color>, critical rate is increased by <color=#f26c1c>15%</color>, and additionally deal 1 instance of fixed damage equal to <color=#f26c1c>20%</color> of attack. Considered a Burn buff, cannot be cleansed.",
             "iconName": "Buff_FireUP",
             "isShow": true,
             "buffHeadShow": 9,
@@ -27557,7 +27557,7 @@
         {
             "id": 10440701,
             "name": "Burning Disquiet",
-            "description": "Upon taking Burn damage, generate <color=#3487e0>{0}</color> tiles in a <color=#f26c1c>3-tile radius around this unit</color> for <color=#f26c1c>2 turns</color>. Burn debuff, cannot be dispelled.",
+            "description": "Upon taking Burn damage, generate <color=#3487e0>{0}</color> tiles within a <color=#f26c1c>3-tile radius</color> around this unit for <color=#f26c1c>2 turns</color>. Considered a Burn debuff, cannot be cleansed.",
             "descriptionTips": "1:51015",
             "buffEffect": "Skill/10440701_knife1|Skill/10440701_explosion",
             "effectPlayTime": [
@@ -27588,7 +27588,7 @@
         {
             "id": 10440702,
             "name": "Burning Disquiet",
-            "description": "For every Burn debuff, damage taken is increased <color=#f26c1c>3%</color>. Burn damage, generate <color=#3487e0>{0}</color> tiles in a <color=#f26c1c>3-tile radius around this unit</color> for <color=#f26c1c>2 turns</color>. Burn debuff, cannot be dispelled. Burn debuff, cannot be dispelled.",
+            "description": "For each Burn debuff the holder has, damage taken is increased by <color=#f26c1c>3%</color>. When taking Burn damage, generate <color=#3487e0>{0}</color> tiles within a <color=#f26c1c>3-tile radius</color> around this unit for <color=#f26c1c>2 turns</color>. Considered a Burn debuff, cannot be cleansed.",
             "descriptionTips": "1:51015",
             "buffEffect": "Skill/10440701_knife1|Skill/10440701_explosion",
             "effectPlayTime": [
@@ -27619,7 +27619,7 @@
         {
             "id": 10450401,
             "name": "Continual Release",
-            "description": "When this unit's action ends, deal <color=#f26c1c>1 instance</color> of <color=#d4ae08>Electric damage</color> equal to <color=#f26c1c>80%</color> ATK and <color=#f26c1c>2</color> Stability damage to the closest enemy in a <color=#f26c1c>8-tile radius</color>. Cannot be dispelled.",
+            "description": "At the end of this unit's action, deal <color=#f26c1c>1 instance</color> of <color=#d4ae08>Electric damage</color> equal to <color=#f26c1c>80%</color> of attack and <color=#f26c1c>2 points</color> of stability damage to the closest enemy within <color=#f26c1c>8 tiles</color>. Cannot be cleansed.",
             "iconName": "Buff_BiyocaSSR1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27641,7 +27641,7 @@
         {
             "id": 10450402,
             "name": "Continual Release",
-            "description": "When Belka's action ends, deals <color=#f26c1c>1 instance</color> of <color=#d4ae08>Electric damage</color> equal to <color=#f26c1c>80%</color> attack and <color=#f26c1c>2</color> stability damage to the closest enemy within <color=#f26c1c>8 tiles</color>. Cannot be cleansed. If the target of this skill is the same as that of the Ultimate Skill <color=#3487e0>Dancing Solstice</color>, then before the attack resolves, Belka applies <color=#3487e0>{0}</color> to the target for <color=#f26c1c>2 turns</color>. Cannot be cleansed.",
+            "description": "At the end of this unit's action, deal <color=#f26c1c>1 instance</color> of <color=#d4ae08>Electric damage</color> equal to <color=#f26c1c>80%</color> of attack and <color=#f26c1c>2 points</color> of stability damage to the closest enemy within <color=#f26c1c>8 tiles</color>. If this target is the same as the one targeted by the Ultimate skill <color=#3487e0>Dancing Solstice</color>, apply <color=#3487e0>{0}</color> to the target before the attack. This effect lasts for <color=#f26c1c>2 turns</color>. Cannot be cleansed.",
             "descriptionTips": "0:1045040221",
             "iconName": "Buff_BiyocaSSR1",
             "isShow": true,
@@ -27663,7 +27663,7 @@
         {
             "id": 10450403,
             "name": "Continual Release",
-            "description": "When this unit's action ends, deal <color=#f26c1c>1 instance</color> of <color=#d4ae08>Electric damage</color> equal to <color=#f26c1c>80%</color> ATK and <color=#f26c1c>2</color> Stability damage to the closest enemy in a <color=#f26c1c>8-tile radius</color>. If this target is also targeted by Ultimate <color=#3487e0>Leaping Arclight</color>, apply <color=#3487e0>{0}</color> for <color=#f26c1c>2 turns</color> before the attack is made. Cannot be dispelled.",
+            "description": "At the end of this unit's action, deal <color=#f26c1c>1 instance</color> of <color=#d4ae08>Electric damage</color> equal to <color=#f26c1c>110%</color> of attack and <color=#f26c1c>2 points</color> of stability damage to the closest enemy within <color=#f26c1c>8 tiles</color>. If this target is the same as the one targeted by the Ultimate skill <color=#3487e0>Dancing Solstice</color>, apply <color=#3487e0>{0}</color> to the target before the attack. This effect lasts for <color=#f26c1c>2 turns</color>. Cannot be cleansed.",
             "descriptionTips": "0:1045040321",
             "iconName": "Buff_BiyocaSSR1",
             "isShow": true,
@@ -27751,7 +27751,7 @@
         {
             "id": 10510401,
             "name": "Nightmarish Shroud",
-            "description": "Before this unit is attacked, reduce the attacker's ATK by <color=#f26c1c>5%</color> and dispel <color=#f26c1c>1</color> random debuff. If weakness is being exploited, damage taken is reduced by <color=#f26c1c>30%</color>. Activates <color=#f26c1c>1 time</color>, Corrosion buff.",
+            "description": "Before Mechty is attacked, reduces the attacker's attack by <color=#f26c1c>5%</color> and cleanses <color=#f26c1c>1</color> random debuff on self. If any weakness is being exploited by enemy, damage taken is reduced by <color=#f26c1c>30%</color>. Activates <color=#f26c1c>once</color>, considered a Corrosion buff.",
             "buffEffect": "Buff/PoisonDef",
             "effectPlayTime": [
                 1
@@ -27799,7 +27799,7 @@
         {
             "id": 10510712,
             "name": "Dream Guardian",
-            "description": "AoE damage dealt by Support Actions is increased by <color=#f26c1c>30%</color>. Buff, cannot be dispelled.",
+            "description": "AoE damage dealt by Support Attacks is increased by <color=#f26c1c>30%</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27821,7 +27821,7 @@
         {
             "id": 10510822,
             "name": "Patch Mode - Damage Increase",
-            "description": "AoE damage dealt is increased by <color=#f26c1c>10%</color>. Buff, cannot be dispelled.",
+            "description": "AoE damage dealt is increased by <color=#f26c1c>10%</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27908,8 +27908,8 @@
         },
         {
             "id": 10530411,
-            "name": "",
-            "description": "",
+            "name": "Nano Shield",
+            "description": "Withstands damage, reducing Stability damage taken by <color=#f26c1c>2 points</color>. Shield-type effect. At the end of this unit's action, apply <color=#3487e0>{0}</color> to all enemy units <color=#f26c1c>within a 2-tile radius</color> for <color=#f26c1c>2</color> turns.",
             "descriptionTips": "0:310402",
             "buffEffect": "Skill/PeiSSR01/10530401_shield",
             "effectPlayTime": [
@@ -27937,8 +27937,8 @@
         },
         {
             "id": 10530412,
-            "name": "",
-            "description": "",
+            "name": "Nano Shield",
+            "description": "Withstands damage, reducing Stability damage taken by <color=#f26c1c>2 points</color>. Before the attack resolves, the attacker's attack is reduced by <color=#f26c1c>30%</color>. Shield-type effect. At the end of this unit's action, apply <color=#3487e0>{0}</color> to all enemy units <color=#f26c1c>within a 2-tile radius</color> for <color=#f26c1c>2</color> turns.",
             "descriptionTips": "0:310402",
             "buffEffect": "Skill/PeiSSR01/10530401_shield",
             "effectPlayTime": [
@@ -27966,8 +27966,8 @@
         },
         {
             "id": 10530421,
-            "name": "",
-            "description": "",
+            "name": "Fearless",
+            "description": "Damage dealt is increased by <color=#f26c1c>30%</color>. [Enhanced Normal Attack]'s critical rate is increased by <color=#f26c1c>100%</color>.",
             "iconName": "Buff_MechaSupport5",
             "isShow": true,
             "buffHeadShow": 1,
@@ -27988,8 +27988,8 @@
         },
         {
             "id": 10530423,
-            "name": "",
-            "description": "",
+            "name": "Fearless",
+            "description": "Damage dealt is increased by <color=#f26c1c>30%</color>.[Enhanced Normal Attack]'s critical rate is increased by <color=#f26c1c>100%</color> and critical damage  is increased by <color=#f26c1c>60%</color>.",
             "iconName": "Buff_MechaSupport5",
             "isShow": true,
             "buffHeadShow": 1,
@@ -28011,7 +28011,7 @@
         {
             "id": 10530701,
             "name": "Burnt",
-            "description": "",
+            "description": "Burn damage taken is increased by <color=#f26c1c>20%</color>, Burn-type debuff.",
             "iconName": "Buff_Fire",
             "isShow": true,
             "buffHeadShow": 1,
@@ -28032,8 +28032,8 @@
         },
         {
             "id": 10530801,
-            "name": "",
-            "description": "",
+            "name": "Burning Blood",
+            "description": "Damage taken is reduced by <color=#f26c1c>15%</color>, healing received is reduced by <color=#f26c1c>15%</color>. Stacks are reduced by half at the start of the turn, rounded down. Stacks up to <color=#f26c1c>6</color>times. Burn-type debuff, cannot be cleansed.",
             "iconName": "Buff_CountUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -28054,8 +28054,8 @@
         },
         {
             "id": 10530811,
-            "name": "",
-            "description": "",
+            "name": "Fury",
+            "description": "Expends <color=#f26c1c>1</color> stack after using this skill and gain <color=#3487e0>{0}</color>.",
             "descriptionTips": "0:502000",
             "iconName": "Buff_AllUp",
             "isShow": true,
@@ -29263,7 +29263,7 @@
         {
             "id": 51045211,
             "name": "Coquettish Art",
-            "description": "Damage dealt is increased by <color=#f26c1c>5%</color>, max <color=#f26c1c>2 stacks</color>. Buff, cannot be dispelled.",
+            "description": "Damage dealt is increased by <color=#f26c1c>5%</color>, maximum of <color=#f26c1c>2 stacks</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -29285,7 +29285,7 @@
         {
             "id": 51045221,
             "name": "Coquettish Art",
-            "description": "Damage dealt is increased by <color=#f26c1c>6%</color>, max <color=#f26c1c>2 stacks</color>. Buff, cannot be dispelled.",
+            "description": "Damage dealt is increased by <color=#f26c1c>6%</color>, maximum of <color=#f26c1c>2 stacks</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -29329,7 +29329,7 @@
         {
             "id": 51045241,
             "name": "Coquettish Art",
-            "description": "Damage dealt is increased by <color=#f26c1c>8%</color>, max <color=#f26c1c>2 stacks</color>. Buff, cannot be dispelled.",
+            "description": "Damage dealt is increased by <color=#f26c1c>8%</color>, maximum of <color=#f26c1c>2 stacks</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -29351,7 +29351,7 @@
         {
             "id": 51045251,
             "name": "Coquettish Art",
-            "description": "Damage dealt is increased by <color=#f26c1c>9%</color>, max <color=#f26c1c>2 stacks</color>. Buff, cannot be dispelled.",
+            "description": "Damage dealt is increased by <color=#f26c1c>9%</color>, maximum of <color=#f26c1c>2 stacks</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -33618,7 +33618,7 @@
         {
             "id": 60005503,
             "name": "Fortress",
-            "description": "Damage taken is decreased by <color=#f26c1c>5%</color>. <color=#f26c1c>1 stack</color> is removed when this unit is affected by Stability break or its action ends, max <color=#f26c1c>10 stacks</color>. Buff, cannot be dispelled.",
+            "description": "Damage taken is reduced by <color=#f26c1c>5%</color>. maximum of <color=#f26c1c>10 stacks</color>. <color=#f26c1c>1 stack</color> is consumed at the end of the action or when the unit is in Stability Break. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -33662,7 +33662,7 @@
         {
             "id": 60005703,
             "name": "Sluggishness",
-            "description": "Mobility is decreased by <color=#f26c1c>1</color>, max <color=#f26c1c>3 stacks</color>. After reaching 3 stacks, remove all <color=#f26c1c>Sluggishness</color> and gain <color=#3487e0>{0}</color>. Debuff, cannot be dispelled.",
+            "description": "Mobility is decreased by <color=#f26c1c>1 tile</color>, maximum of <color=#f26c1c>3 stacks</color>. After reaching 3 stacks, remove all <color=#f26c1c>Sluggishness</color> and gain <color=#3487e0>{0}</color>. Considered a debuff, cannot be cleansed.",
             "descriptionTips": "0:60005704",
             "iconName": "Buff_SpeedLow",
             "isShow": true,
@@ -33684,7 +33684,7 @@
         {
             "id": 60005704,
             "name": "Coagulated",
-            "description": "Cannot move for <color=#f26c1c>1 turn</color>. Debuff, cannot be dispelled.",
+            "description": "Unable to move for <color=#f26c1c>1 turn</color>. Considered a debuff, cannot be cleansed.",
             "iconName": "Buff_Unmove",
             "isShow": true,
             "buffHeadShow": 1,
@@ -33706,7 +33706,7 @@
         {
             "id": 60006002,
             "name": "No Going Slow",
-            "description": "At the end of this unit's next action, if it has travelled less than or equal to <color=#f26c1c>3 tiles</color>, it is <color=#3487e0>{0}</color> for <color=#f26c1c>1 turn</color>. Debuff, cannot be dispelled.",
+            "description": "At the end of this unit's next action, if the unit has moved less than or equal to <color=#f26c1c>3 tiles</color>, the unit will be afflicted with <color=#3487e0>{0}</color> for <color=#f26c1c>1 turn</color>. Considered a debuff, cannot be cleansed.",
             "descriptionTips": "0:401041",
             "iconName": "Buff_SpeedLow",
             "isShow": true,
@@ -33728,7 +33728,7 @@
         {
             "id": 60006102,
             "name": "Multi-Channel Engagement",
-            "description": "Mobility is decreased by <color=#f26c1c>2</color>. Debuff, cannot be dispelled.",
+            "description": "Mobility is reduced by <color=#f26c1c>2 tiles</color>. Considered a debuff, cannot be cleansed.",
             "iconName": "Buff_SpeedLow",
             "isShow": true,
             "buffHeadShow": 1,
@@ -33750,7 +33750,7 @@
         {
             "id": 60006504,
             "name": "Meltdown",
-            "description": "Damage taken is increased by <color=#f26c1c>30%</color>, cannot stack. Debuff, can be dispelled.",
+            "description": "Damage taken is increased by <color=#f26c1c>30%</color>, cannot stack. Considered a debuff, can be cleansed.",
             "iconName": "Buff_DefLow",
             "isShow": true,
             "buffHeadShow": 1,
@@ -33823,7 +33823,7 @@
         {
             "id": 60007004,
             "name": "Oppressive Voltage",
-            "description": "Damage taken is increased by <color=#f26c1c>30%</color>, cannot stack. Debuff, can be dispelled.",
+            "description": "Damage taken is increased by <color=#f26c1c>30%</color>, cannot stack. Considered a debuff, can be cleansed.",
             "iconName": "Buff_DefLow",
             "isShow": true,
             "buffHeadShow": 1,
@@ -33911,7 +33911,7 @@
         {
             "id": 61000040,
             "name": "Spike Surge",
-            "description": "Vanguard Dolls gain <color=#f26c1c>25%</color> crit rate.",
+            "description": "Vanguard class Dolls gain <color=#f26c1c>25%</color> critical rate.",
             "iconName": "Buff_Guild_13",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -34175,7 +34175,7 @@
         {
             "id": 61000230,
             "name": "Enhanced Interception",
-            "description": "Damage dealt by Return Fire is increased by <color=#f26c1c>15%</color>.",
+            "description": "Damage dealt by Interception is increased by <color=#f26c1c>15%</color>.",
             "iconName": "Buff_Guild_26",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -34197,7 +34197,7 @@
         {
             "id": 61000240,
             "name": "Enhanced Counterattack",
-            "description": "",
+            "description": "Damage dealt by counterattack skills is increased by <color=#f26c1c>15%</color>.",
             "iconName": "Buff_Guild_27",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -34461,7 +34461,7 @@
         {
             "id": 61001040,
             "name": "Corrupting Spark",
-            "description": "Corrosion and Burn damage dealt & crit rate are increased by <color=#f26c1c>30%</color>.",
+            "description": "Increase Corrosion and Burn critical rate and damage dealt by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_42",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -34483,7 +34483,7 @@
         {
             "id": 61001050,
             "name": "Igniting Voltage",
-            "description": "Electric & Burn damage dealt and crit rate are increased by <color=#f26c1c>30%</color>.",
+            "description": "Increase Electric and Burn critical rate and damage dealt by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_43",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -34505,7 +34505,7 @@
         {
             "id": 61001060,
             "name": "Hazardous Charge",
-            "description": "Hydro and Electric damage dealt and crit rate are increased by <color=#f26c1c>30%</color>.",
+            "description": "Increase Hydro and Electric damage dealt and critical rate by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_45",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -34527,7 +34527,7 @@
         {
             "id": 61001070,
             "name": "Field Aflame",
-            "description": "Hydro and Burn damage dealt & crit rate are increased by <color=#f26c1c>30%</color>.",
+            "description": "Increase Hydro and Burn critical rate and damage dealt by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_46",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -35266,7 +35266,7 @@
         },
         {
             "id": 61751201,
-            "name": "",
+            "name": "Berserker's Mark",
             "description": "",
             "isShow": true,
             "buffHeadShow": 1,
@@ -35311,7 +35311,7 @@
         {
             "id": 61751401,
             "name": "Forcefield",
-            "description": "Stability damage taken is decreased by 4, DEF is increased by 20%, and Mobility is increased by 2. Buff, cannot be dispelled.",
+            "description": "Stability damage taken is reduced by 4 points, defense is increased by 20%, and mobility is increased by 2 tiles. Considered a buff, cannot be cleansed.",
             "buffEffect": "Skill/6175401_Loop",
             "effectPlayTime": [
                 1
@@ -35795,7 +35795,7 @@
         {
             "id": 62833700,
             "name": "Trembling",
-            "description": "DEF is decreased by <color=#f26c1c>1%</color>. Cannot be dispelled.",
+            "description": "Defense is reduced by <color=#f26c1c>1%</color>. Cannot be cleansed.",
             "iconName": "Buff_SheepsheadDinosaur1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -35817,7 +35817,7 @@
         {
             "id": 62833802,
             "name": "Reinforced Carapace",
-            "description": "Taken damage is decreased by <color=#f26c1c>100%</color> and DEF is increased by <color=#f26c1c>150%</color>. Buff, cannot be dispelled.",
+            "description": "Damage taken is reduced by <color=#f26c1c>100%</color> and defense is increased by <color=#f26c1c>150%</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_EnemyRedHurt",
             "isShow": true,
             "buffHeadShow": 1,
@@ -35839,7 +35839,7 @@
         {
             "id": 62834302,
             "name": "Retinopathy",
-            "description": "ATK is decreased by <color=#f26c1c>50%</color> and incoming healing is decreased by <color=#f26c1c>50%</color>. Debuff, can be dispelled.",
+            "description": "Attack is reduced by <color=#f26c1c>50%</color> and healing received is reduced by <color=#f26c1c>50%</color>. Considered a debuff, can be cleansed.",
             "iconName": "Buff_AtkDown",
             "isShow": true,
             "buffHeadShow": 1,
@@ -35861,7 +35861,7 @@
         {
             "id": 62834303,
             "name": "Suppress",
-            "description": "DEF is decreased by <color=#f26c1c>50%</color> and Stability damage taken is increased by <color=#f26c1c>5</color>. Debuff, can be dispelled.",
+            "description": "Defense is reduced by <color=#f26c1c>50%</color> and stability damage taken is increased by <color=#f26c1c>5 points</color>. Considered a debuff, can be cleansed.",
             "iconName": "Buff_DefLow",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36404,7 +36404,7 @@
         {
             "id": 67122011,
             "name": "Emergency Repair I",
-            "description": "Upon receiving an active attack, regain HP equal to <color=#f26c1c>60%</color> of the applier's ATK. When the applier dies, remove this effect. When this unit dies, reset the applier's <color=#f26c1c>Full Maintenance</color> cooldown. Buff, cannot be dispelled.",
+            "description": "When hit by an active attack, restores HP equal to <color=#f26c1c>60%</color> of the applier's attack. This effect is removed when the applier dies. If the buff holder dies, reset the cooldown of the applier's <color=#f26c1c>Full Maintenance</color> skill. Considered a buff, cannot be cleansed.",
             "buffEffect": "Buff/6712201_Buff",
             "effectPlayTime": [
                 1
@@ -36432,7 +36432,7 @@
         {
             "id": 67122021,
             "name": "Emergency Repair II",
-            "description": "Before receiving an active attack, gain <color=#3487e0>{0}</color>. Upon receiving an active attack, regain HP equal to <color=#f26c1c>60%</color> of the applier's ATK. When the applier dies, remove this effect. When this unit dies, reset the applier's <color=#f26c1c>Full Maintenance</color> cooldown. Buff, cannot be dispelled.",
+            "description": "Before receiving an active attack, gain <color=#3487e0>{0}</color>. Upon receiving an active attack, restore HP equal to <color=#f26c1c>60%</color> of the applier's attack. The effect is removed if the applier dies. If this unit dies, reset the cooldown of the applier's <color=#f26c1c>Full Maintenance</color> skill. Considered a buff, cannot be cleansed.",
             "descriptionTips": "0:67122024",
             "buffEffect": "Buff/6712201_Buff",
             "effectPlayTime": [
@@ -36460,7 +36460,7 @@
         {
             "id": 67122024,
             "name": "Reinforced Carapace",
-            "description": "Skill damage taken is reduced by <color=#f26c1c>40%</color>. Activates <color=#f26c1c>1 time</color>. Buff.",
+            "description": "Damage taken from skills are reduced by <color=#f26c1c>40%</color>. Activates <color=#f26c1c>once</color>. Considered a buff.",
             "iconName": "Buff_EnemyRedHurt",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36482,7 +36482,7 @@
         {
             "id": 67132011,
             "name": "Resistance",
-            "description": "Damage taken is decreased by <color=#f26c1c>80%</color>. Gain a Shield equal to <color=#f26c1c>120%</color> of this unit's ATK. Buff, cannot be dispelled.",
+            "description": "Damage taken is reduced by <color=#f26c1c>80%</color>. Gains a Shield equal to <color=#f26c1c>120%</color> of this unit's attack. Considered a buff, cannot be cleansed.",
             "buffEffect": "Buff/6713201_Buff",
             "effectPlayTime": [
                 1
@@ -36510,7 +36510,7 @@
         {
             "id": 67132021,
             "name": "Resistance",
-            "description": "Damage taken is decreased by <color=#f26c1c>80%</color>. Gain a Shield equal to <color=#f26c1c>120%</color> of this unit's ATK. Buff, cannot be dispelled.",
+            "description": "Damage taken is reduced by <color=#f26c1c>80%</color>. Gains a Shield equal to <color=#f26c1c>120%</color> of this unit's attack. Considered a buff, cannot be cleansed.",
             "buffEffect": "Buff/6713201_Buff",
             "effectPlayTime": [
                 1
@@ -36537,8 +36537,8 @@
         },
         {
             "id": 67620101,
-            "name": "",
-            "description": "Damage taken is increased by <color=#f26c1c>10%</color>, can stack. Debuff, cannot be dispelled.",
+            "name": "Shred",
+            "description": "Damage taken is increased by <color=#f26c1c>10%</color>, can stack. Considered a debuff, cannot be cleansed.",
             "iconName": "Buff_EnemyHurtUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36559,8 +36559,8 @@
         },
         {
             "id": 67620306,
-            "name": "",
-            "description": "Next skill's damage is increased by <color=#f26c1c>100%</color> and Stability damage is increased by <color=#f26c1c>4</color>. Cannot be dispelled.",
+            "name": "Criticality",
+            "description": "The next skill deals <color=#f26c1c>100%</color> increased damage and stability damage is increased by <color=#f26c1c>4 points</color>. Cannot be cleansed.",
             "iconName": "Buff_AtkUpNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36581,8 +36581,8 @@
         },
         {
             "id": 67620604,
-            "name": "",
-            "description": "",
+            "name": "Adamance",
+            "description": "Damage taken is reduced by <color=#f26c1c>100%</color>. Cannot be cleansed.",
             "iconName": "Buff_DefUpNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36628,7 +36628,7 @@
         {
             "id": 68635015,
             "name": "Neural Stimulation",
-            "description": "",
+            "description": "Damage dealt is increased by <color=#f26c1c>30%</color>, Damage taken is increased by <color=#f26c1c>50%</color>. Cannot be cleansed.",
             "buffEffect": "Buff/68630501_Damage,Buff/68630501_Break",
             "effectPlayTime": [
                 1
@@ -36746,7 +36746,7 @@
         {
             "id": 68902013,
             "name": "Emergency Defenses",
-            "description": "Damage taken is decreased by <color=#f26c1c>10%</color>, can stack. Buff, cannot be dispelled.",
+            "description": "Damage taken is reduced by <color=#f26c1c>10%</color>, can stack. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_EnemyRedHurt",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36768,7 +36768,7 @@
         {
             "id": 68903011,
             "name": "Formation Reinforcement",
-            "description": "When a Fortress Equipment is summoned, convert the same amount of <color=#3487e0>{0}</color> stacks and apply it to the Fortress Equipment. Cannot be dispelled.",
+            "description": "When a Fortress Device is summoned, convert the same amount of <color=#3487e0>{0}</color> stacks and apply it to the Fortress Device. Cannot be cleansed.",
             "descriptionTips": "0:68905022",
             "iconName": "Buff_MechaGuard3",
             "isShow": true,
@@ -36812,7 +36812,7 @@
         {
             "id": 68905022,
             "name": "Reflective Barrier",
-            "description": "Cancels out taken damage(including fixed damage). <color=#f26c1c>1 stack</color> is lost for each instance of damage cancelled out. The Fortress Equipment is destroyed when this effect is removed. Cannot be dispelled.",
+            "description": "Negates all incoming damage, including fixed damage. <color=#f26c1c>1 stack</color> will be consumed for each instance of damage negated. The Fortress Device is destroyed when all stacks are consumed. Cannot be cleansed.",
             "iconName": "Buff_InvincibleNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36856,7 +36856,7 @@
         {
             "id": 68905041,
             "name": "Core Enhanecment",
-            "description": "DEF is increased by <color=#f26c1c>20%</color>, can stack. Buff, cannot be dispelled.",
+            "description": "Defense is increased by <color=#f26c1c>20%</color>, can stack. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36878,7 +36878,7 @@
         {
             "id": 68920012,
             "name": "Relaxation",
-            "description": "Converted to <color=#3487e0>{0}</color> with an equal number of stacks for <color=#f26c1c>1 turn</color> at the start of this unit's action.",
+            "description": "At the start of the action, convert this into an equal number of <color=#3487e0>{0}</color> stacks for <color=#f26c1c>1 turn</color>.",
             "descriptionTips": "0:68920014",
             "iconName": "Buff_CountHit",
             "isShow": true,
@@ -36900,7 +36900,7 @@
         {
             "id": 68920014,
             "name": "Fragile Membrane",
-            "description": "",
+            "description": "Damage taken is increased by <color=#f26c1c>2%</color>, stacking up to <color=#f26c1c>15</color> times. This debuff cannot be cleansed.",
             "iconName": "Buff_EnemyHurtUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36922,7 +36922,7 @@
         {
             "id": 68922011,
             "name": "Digestive Saliva",
-            "description": "Damage taken is increased by <color=#f26c1c>20%</color> for <color=#f26c1c>2 turns</color>, can stack. Debuff. If dispelled, all allies gain <color=#f26c1c>1 stack</color> of <color=#3487e0>{0}</color> for <color=#f26c1c>1 turn</color>.",
+            "description": "Damage taken is increased by <color=#f26c1c>20%</color> for <color=#f26c1c>2 turns</color>, can stack. Considered a debuff. If this effect is cleansed, all allied units gain <color=#f26c1c>1 stack</color> of <color=#3487e0>{0}</color> for <color=#f26c1c>1 turn</color>.",
             "descriptionTips": "0:68922012",
             "iconName": "Buff_EnemyHurtUp",
             "isShow": true,
@@ -36944,7 +36944,7 @@
         {
             "id": 68922012,
             "name": "Saliva-Dipped",
-            "description": "",
+            "description": "Attacks ignore <color=#f26c1c>5%</color> of the target's defense. This effect stacks, This buff cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36966,7 +36966,7 @@
         {
             "id": 68923031,
             "name": "Parasitic Seed",
-            "description": "ATK is decreased by <color=#f26c1c>20%</color>, can stack. Debuff, cannot be dispelled.",
+            "description": "Attack is reduced by <color=#f26c1c>20%</color>, can stack. Considered a debuff, cannot be cleansed.",
             "iconName": "Buff_AtkDown",
             "isShow": true,
             "buffHeadShow": 1,
@@ -36988,7 +36988,7 @@
         {
             "id": 68923042,
             "name": "Brambles",
-            "description": "ATK is increased by <color=#f26c1c>10%</color>. Buff, cannot be dispelled.",
+            "description": "Attack is increased by <color=#f26c1c>10%</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -37010,7 +37010,7 @@
         {
             "id": 68924013,
             "name": "Trepidation",
-            "description": "",
+            "description": "Defense is reduced by <color=#f26c1c>20%</color>, stacking up to <color=#f26c1c>3</color> times. This debuff cannot be cleansed.",
             "iconName": "Buff_DefLow",
             "isShow": true,
             "buffHeadShow": 1,
@@ -37226,7 +37226,7 @@
         {
             "id": 69340156,
             "name": "Sufficient Energy",
-            "description": "Stability damage dealt is permanently increased by <color=#f26c1c>1</color>, can stack. Buff, cannot be dispelled.",
+            "description": "Stability damage dealt is permanently increased by <color=#f26c1c>1 point</color>, can stack. Considered a buff, cannot be cleansed.",
             "buffEffect": "Buff/AtkU|Buff/AtkU",
             "effectPlayTime": [
                 1,
@@ -37504,7 +37504,7 @@
         {
             "id": 69630022,
             "name": "Data Reconstruction",
-            "description": "Cannot die. At this start of this unit's turn, remove this effect,then regain all HP and Stability. Cannot be dispelled.",
+            "description": "Invulnerable. At this start of this unit's turn, remove this effect, then regain all HP and stability. cannot be cleansed.",
             "buffEffect": "Buff/6963_destroy",
             "effectPlayTime": [
                 1
@@ -37646,7 +37646,7 @@
         {
             "id": 69631021,
             "name": "Special Teachings",
-            "description": "Stability damage taken is increased by <color=#f26c1c>1</color>. <color=#f26c1c>1 stack</color> is removed for every instance of Stability damage taken. Max <color=#f26c1c>3 stacks</color>. Debuff, cannot be dispelled.",
+            "description": "Stability damage taken is increased by <color=#f26c1c>1 point</color>. Maximum of <color=#f26c1c>3 stacks</color>. Each point of stability damage taken consumes <color=#f26c1c>1 stack</color>. Considered a debuff, cannot be cleansed.",
             "iconName": "Buff_WillSub",
             "isShow": true,
             "buffHeadShow": 1,
@@ -38135,7 +38135,7 @@
         {
             "id": 70250012,
             "name": "Firestarter Bolt",
-            "description": "Gain 1 stack upon triggered Firework Burst. Once uses are exhausted, the Bolt is destroyed.",
+            "description": "Gain 1 stack upon triggering Firework Burst. Once uses are exhausted, the Bolt is destroyed.",
             "iconName": "Buff_CountUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -39891,8 +39891,8 @@
         },
         {
             "id": 102909085,
-            "name": "",
-            "description": "",
+            "name": "Legendary Recipe",
+            "description": "Damage taken is reduced by <color=#f26c1c>5%</color>, stacking up to <color=#f26c1c>6 times</color>. This defense-type buff cannot be cleansed.",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -40287,7 +40287,7 @@
         {
             "id": 103409082,
             "name": "Sugar Overdose",
-            "description": "Damage taken from Macchiato is increased by <color=#f26c1c>15%</color>. Debuff, cannot be dispelled.",
+            "description": "Damage taken from Makiatto is increased by <color=#f26c1c>15%</color>. Considered a debuff, cannot be cleansed.",
             "iconName": "Buff_EnemyHurtUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41260,7 +41260,7 @@
         {
             "id": 104404032,
             "name": "Apathetic Resistance",
-            "description": "Crit damage is increased by <color=#f26c1c>25%</color>. Buff, cannot be dispelled.",
+            "description": "Critical damage is increased by <color=#f26c1c>25%</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_CriDamUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41326,7 +41326,7 @@
         {
             "id": 104507011,
             "name": "Active Engagement",
-            "description": "Attacks deal Electric damage. Damage dealt is increased by <color=#f26c1c>30%</color>. Activates <color=#f26c1c>1</color> time.Buff, cannot be dispelled.",
+            "description": "Attacks deal Electric damage. Damage dealt is increased by <color=#f26c1c>30%</color>. Activates <color=#f26c1c>once</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_MosinnaganSSR1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41348,7 +41348,7 @@
         {
             "id": 104508021,
             "name": "Stored Charge",
-            "description": "<color=#d4ae08>Electric damage</color> dealt is increased by <color=#f26c1c>5%</color>, max <color=#f26c1c>6 stacks</color>. Electric debuff, cannot be dispelled.",
+            "description": "<color=#d4ae08>Electric damage</color> dealt is increased by <color=#f26c1c>5%</color>, maximum of <color=#f26c1c>6 stacks</color>. Considered an Electric debuff, cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41397,8 +41397,8 @@
         },
         {
             "id": 104704011,
-            "name": "",
-            "description": "",
+            "name": "Taryz",
+            "description": "If the target Taryz is following damages an ally, Taryz <color=#3487e0>counterattacks</color> and recovers HP for the ally. When the target that Taryz is following dies, Taryz switches to following the enemy unit with the current highest HP.",
             "cameraPlayTime": [
                 1
             ],
@@ -41424,7 +41424,7 @@
         {
             "id": 104704012,
             "name": "Buried Friendship",
-            "description": "",
+            "description": "Max HP is increased by <color=#f26c1c>100%</color> of the target's Max HP. When the duration of this effect ends, recover HP equal to <color=#f26c1c>100%</color> of the applier's attack. Cannot be cleansed.",
             "iconName": "Buff_SpringfieldSSR1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41445,8 +41445,8 @@
         },
         {
             "id": 104704021,
-            "name": "",
-            "description": "",
+            "name": "Taryz",
+            "description": "If the target Taryz is following damages an ally, Taryz <color=#3487e0>counterattacks</color> and recovers HP for the ally. If an ally unit deals <color=#2caadb>Hydro damage</color> to the target Taryz is following, Taryz performs <color=#3487e0>Action Support</color> and recovers HP for the ally. When the target that Taryz is following dies, Taryz switches to following the enemy unit with the current highest HP.",
             "cameraPlayTime": [
                 1
             ],
@@ -41471,8 +41471,8 @@
         },
         {
             "id": 104704031,
-            "name": "",
-            "description": "",
+            "name": "Taryz",
+            "description": "If the target Taryz is following damages an ally, Taryz <color=#3487e0>counterattacks</color> and recovers HP for the ally. If an ally unit deals <color=#2caadb>Hydro damage</color> to the target Taryz is following, Taryz performs <color=#3487e0>Action Support</color> and recovers HP for the ally.；When the target that Taryz is following dies, Taryz deals fixed damage to all enemy units <color=#f26c1c>within a 4-tile radius</color> equal to <color=#f26c1c>40%</color> Springfield's attack and Taryz switches to following the enemy unit with the current highest HP.",
             "cameraPlayTime": [
                 1
             ],
@@ -41498,7 +41498,7 @@
         {
             "id": 104704032,
             "name": "Buried Friendship",
-            "description": "",
+            "description": "Max HP is increased by <color=#f26c1c>100%</color> of the target's Max HP. Damage taken is reduced by <color=#f26c1c>15%</color>. When the duration of this effect ends, recover HP equal to <color=#f26c1c>100%</color> of the applier's attack. Cannot be cleansed.",
             "iconName": "Buff_SpringfieldSSR1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41519,8 +41519,8 @@
         },
         {
             "id": 104704041,
-            "name": "",
-            "description": "",
+            "name": "Assault Taryz",
+            "description": "If the target Taryz is following damages an ally, Taryz <color=#3487e0>counterattacks</color> and recovers HP for the ally. If an ally unit deals <color=#2caadb>Hydro damage</color> to the target Taryz is following, Taryz performs <color=#3487e0>Action Support</color> and recovers HP for the ally.；When the target that Taryz is following dies, Taryz deals fixed damage to all enemy units <color=#f26c1c>within a 4-tile radius</color> equal to <color=#f26c1c>40%</color> Springfield's attack and Taryz switches to following the enemy unit with the current highest HP.",
             "cameraPlayTime": [
                 1
             ],
@@ -41546,7 +41546,7 @@
         {
             "id": 104707011,
             "name": "Overflowing Care",
-            "description": "",
+            "description": "After using a command, after dealing damage or after taking damage, at the end of this unit's action, recover HP equal to <color=#f26c1c>5%</color> of the applier's attack. When HP is maxed out, all excess healing is converted to increased <color=#2caadb>Hydro damage</color>. Every <color=#f26c1c>1.5%</color> of excess healing is converted to a <color=#f26c1c>1%</color> increase in <color=#2caadb>Hydro damage</color>, to a maximum increase of <color=#f26c1c>35%</color>. This Hydro-type buff cannot be cleansed.",
             "iconName": "Buff_SelfHeal",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41568,7 +41568,7 @@
         {
             "id": 104707012,
             "name": "Shared Telepathy",
-            "description": "",
+            "description": "When active attacks deal <color=#2caadb>Hydro damage</color>, gain <color=#f26c1c>1 point</color> of Confectance Index, effective up to <color=#f26c1c>1 time</color>. This Hydro-type buff cannot be cleansed.",
             "iconName": "Buff_PotentialAdd",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41590,7 +41590,7 @@
         {
             "id": 104707021,
             "name": "Overflowing Care",
-            "description": "",
+            "description": "After using a command, after dealing damage or after taking damage, at the end of this unit's action, recover HP equal to <color=#f26c1c>15%</color> of the applier's attack. When HP is maxed out, all excess healing is converted to increased <color=#2caadb>Hydro damage</color>. Every <color=#f26c1c>1.5%</color> of excess healing is converted to a <color=#f26c1c>1%</color> increase in <color=#2caadb>Hydro damage</color>, to a maximum increase of <color=#f26c1c>70%</color>. This Hydro-type buff cannot be cleansed.",
             "iconName": "Buff_SelfHeal",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41656,7 +41656,7 @@
         {
             "id": 104709041,
             "name": "Hydro Weakness",
-            "description": "",
+            "description": "When taking <color=#2caadb>Hydro damage</color>, it is considered to exploit a weakness. Debuff.",
             "iconName": "Buff_Water",
             "isShow": true,
             "buffHeadShow": 1,
@@ -41986,7 +41986,7 @@
         {
             "id": 105104021,
             "name": "Nightmarish Shroud",
-            "description": "Before being attacked, decrease the attacker's ATK by <color=#f26c1c>10%</color> and dispel <color=#f26c1c>2</color> random debuffs. If this unit's weakness is exploited, damage taken is reduced by <color=#f26c1c>30%</color>. Activates <color=#f26c1c>1 time</color>. Corrosion buff.",
+            "description": "Before being attacked, reduces the attacker's attack by <color=#f26c1c>10%</color> and cleanses <color=#f26c1c>2</color> random debuffs on self. If any weakness is exploited by enemy, damage taken is reduced by <color=#f26c1c>30%</color>. Activates <color=#f26c1c>once</color>. Considered a Corrosion buff.",
             "buffEffect": "Buff/PoisonDef",
             "effectPlayTime": [
                 1
@@ -42009,8 +42009,8 @@
         },
         {
             "id": 105105026,
-            "name": "Pre-Bed Warmup - Enhanced",
-            "description": "Normal attacks deals <color=#f26c1c>100%</color>. Activates <color=#f26c1c>1 time</color>. Cannot be dispelled.",
+            "name": "Bedtime Warmup - Enhanced",
+            "description": "Basic attacks deal <color=#f26c1c>100%</color> more damage. Activates <color=#f26c1c>once</color>. Cannot be cleansed.",
             "iconName": "Buff_AtkUpNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42031,8 +42031,8 @@
         },
         {
             "id": 105107001,
-            "name": "Brawl Mode",
-            "description": "ATK and DEF are increased by <color=#f26c1c>30%</color>. At the end of this unit's action, gain <color=#f26c1c>2</color> Confectance Index. Cannot be dispelled.",
+            "name": "Turbo Mode",
+            "description": "Attack and defense are increased by <color=#f26c1c>30%</color>. At the end of Mechty's action, gains <color=#f26c1c>2 points</color> of Confectance Index. Cannot be cleansed.",
             "iconName": "Buff_MishtySSR1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42053,8 +42053,8 @@
         },
         {
             "id": 105107002,
-            "name": "Brawl Mode",
-            "description": "ATK, DEF, and normal attack crit rate are increased by <color=#f26c1c>30%</color>. At the end of this unit's action, gain <color=#f26c1c>2</color> Confectance Index. Cannot be dispelled.",
+            "name": "Turbo Mode",
+            "description": "Attack, defense, and critical rate of basic attacks are increased by <color=#f26c1c>30%</color>. At the end of Mechty's action, gains <color=#f26c1c>2 points</color> of Confectance Index. Cannot be cleansed.",
             "iconName": "Buff_MishtySSR1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42075,8 +42075,8 @@
         },
         {
             "id": 105107003,
-            "name": "Brawl Mode",
-            "description": "ATK, DEF, and normal attack crit rate are increased by <color=#f26c1c>30%</color>, and Mobility is increased by <color=#f26c1c>2</color>. At the end of this unit's action, gain <color=#f26c1c>2</color> Confectance Index, and apply <color=#3487e0>{0}</color> to allies without it. Cannot be dispelled.",
+            "name": "Turbo Mode",
+            "description": "Attack, defense, and critical rate of basic attacks are increased by <color=#f26c1c>30%</color>. Mobility is increased by <color=#f26c1c>2 tiles</color>. At the end of Mechty's action, gains <color=#f26c1c>3 points</color> of Confectance Index, and applies <color=#3487e0>{0}</color> to allied units without <color=#3487e0>{0}</color>. Cannot be cleansed.",
             "descriptionTips": "0:105104021",
             "iconName": "Buff_MishtySSR1",
             "isShow": true,
@@ -42098,7 +42098,7 @@
         {
             "id": 105107011,
             "name": "Sleep Aid Kit",
-            "description": "Damage dealt is increased by <color=#f26c1c>10%</color>, max <color=#f26c1c>2 stacks</color>. Buff, cannot be dispelled.",
+            "description": "Damage dealt is increased by <color=#f26c1c>10%</color>, maximum of <color=#f26c1c>2 stacks</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42120,7 +42120,7 @@
         {
             "id": 105107021,
             "name": "Sleep Aid Kit",
-            "description": "Damage dealt is increased by <color=#f26c1c>10%</color>, max <color=#f26c1c>3 stacks</color>. Buff, cannot be dispelled.",
+            "description": "Damage dealt is increased by <color=#f26c1c>10%</color>, maximum of <color=#f26c1c>3 stacks</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42142,7 +42142,7 @@
         {
             "id": 105108001,
             "name": "Patch Mode",
-            "description": "Damage taken is decreased by <color=#f26c1c>30%</color>. Stability damage taken is decreased by <color=#f26c1c>2</color>. Cannot be dispelled.",
+            "description": "Damage taken is reduced by <color=#f26c1c>30%</color>. Stability damage taken is reduced by <color=#f26c1c>2 points</color>. Cannot be cleansed.",
             "iconName": "Buff_MishtySSR2",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42164,7 +42164,7 @@
         {
             "id": 105108002,
             "name": "Patch Mode",
-            "description": "Damage taken is decreased by <color=#f26c1c>30%</color>. Stability damage taken is decreased by <color=#f26c1c>2</color>. Normal attacks deal <color=#f26c1c>50%</color> more damage. At the start of the turn, dispel <color=#f26c1c>2</color> debuffs on this unit.Cannot be dispelled.",
+            "description": "Damage taken is reduced by <color=#f26c1c>30%</color>. Stability damage taken is reduced by <color=#f26c1c>2 points</color>. Basic attacks deal <color=#f26c1c>50%</color> more damage. At the start of the turn, cleanses <color=#f26c1c>2</color> debuffs on self. Cannot be cleansed.",
             "iconName": "Buff_MishtySSR2",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42186,7 +42186,7 @@
         {
             "id": 105108003,
             "name": "Patch Mode",
-            "description": "Damage taken is decreased by <color=#f26c1c>30%</color>. Stability damage taken is decreased by <color=#f26c1c>2</color>. Normal attacks gain <color=#f26c1c>80%</color> crit damage and deal <color=#f26c1c>50%</color> more damage. Corrosion damage dealt by all allies is increased by <color=#f26c1c>25%</color>. At the start of the turn, dispel <color=#f26c1c>2</color> debuffs on this unit. Cannot be dispelled.",
+            "description": "Damage taken is reduced by <color=#f26c1c>30%</color>. Stability damage taken is reduced by <color=#f26c1c>2 points</color>. Basic attack critical damage is increased by <color=#f26c1c>80%</color> and basic attacks deal <color=#f26c1c>50%</color> more damage. Corrosion damage dealt by all allied units is increased by <color=#f26c1c>25%</color>. At the start of the turn, cleanses <color=#f26c1c>2</color> debuffs on self. Cannot be cleansed.",
             "iconName": "Buff_MishtySSR2",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42208,7 +42208,7 @@
         {
             "id": 201000041,
             "name": "Incessant Balefire",
-            "description": "",
+            "description": "Stability damage dealt is increased by <color=#f26c1c>1 point</color>, stacking up to <color=#f26c1c>6 times</color>. This buff cannot be cleansed.",
             "iconName": "Buff_SuppressAdd",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42230,7 +42230,7 @@
         {
             "id": 201000051,
             "name": "Incessant Balefire",
-            "description": "",
+            "description": "Attack is increased by <color=#f26c1c>5%</color>, stacking up to <color=#f26c1c>9 times</color>. This buff cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42252,7 +42252,7 @@
         {
             "id": 201000101,
             "name": "Defense Boost",
-            "description": "",
+            "description": "Defense is increased by <color=#f26c1c>30%</color>, stacking up to <color=#f26c1c>6 times</color>, Defense-type buff, cannot be cleansed.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42274,7 +42274,7 @@
         {
             "id": 201000121,
             "name": "Flammable I",
-            "description": "",
+            "description": "Burn damage taken is increased by <color=#f26c1c>5%</color>. Burn-type debuff, cannot be cleansed.",
             "iconName": "Buff_Fire",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42296,7 +42296,7 @@
         {
             "id": 201000131,
             "name": "Flammable II",
-            "description": "",
+            "description": "Burn damage taken is increased by <color=#f26c1c>15%</color>. Burn-type debuff, cannot be cleansed.",
             "iconName": "Buff_Fire",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42318,7 +42318,7 @@
         {
             "id": 201000141,
             "name": "Flammable III",
-            "description": "",
+            "description": "Burn damage taken is increased by <color=#f26c1c>30%</color>, stability damage taken is increased by <color=#f26c1c>2 points</color>. Burn-type debuff, cannot be cleansed.",
             "iconName": "Buff_Fire",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42340,7 +42340,7 @@
         {
             "id": 201100011,
             "name": "Thermogenesis",
-            "description": "",
+            "description": "Attack is increased by <color=#f26c1c>15%</color>, stacking up to <color=#f26c1c>10 times</color>. At maximum stacks, ignores  <color=#f26c1c>damage reduction from cover</color> and <color=#f26c1c>damage reduction from stability</color>, This buff cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42362,7 +42362,7 @@
         {
             "id": 202000001,
             "name": "Crystalline Stability I",
-            "description": "",
+            "description": "Critical damage is increased by <color=#f26c1c>5%</color>. This buff cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42384,7 +42384,7 @@
         {
             "id": 202000011,
             "name": "Crystalline Stability II",
-            "description": "",
+            "description": "Critical damage is increased by <color=#f26c1c>15%</color>, stability damage is increased by <color=#f26c1c>4 points</color>. This buff cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42406,7 +42406,7 @@
         {
             "id": 202000021,
             "name": "Crystalline Stability III",
-            "description": "",
+            "description": "Critical damage is increased by <color=#f26c1c>25%</color>, attack is increased by <color=#f26c1c>20%</color>, stability damage is increased by <color=#f26c1c>8 points</color>. This buff cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42428,7 +42428,7 @@
         {
             "id": 202000031,
             "name": "Cold Tide I",
-            "description": "",
+            "description": "Critical rate is increased by <color=#f26c1c>2%</color>, stacking up to <color=#f26c1c>6 times</color>. This buff cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42450,7 +42450,7 @@
         {
             "id": 202000041,
             "name": "Cold Tide II",
-            "description": "",
+            "description": "Defense is increased by <color=#f26c1c>10%</color>, stacking up to <color=#f26c1c>9 times</color>. Defense-type buff, cannot be cleansed.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42472,7 +42472,7 @@
         {
             "id": 202000051,
             "name": "Frost Shackles",
-            "description": "",
+            "description": "Damage taken is increased by <color=#f26c1c>15%</color>, damage dealt is increased by <color=#f26c1c>30%</color>. This debuff cannot be cleansed.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42494,7 +42494,7 @@
         {
             "id": 202000081,
             "name": "Winter Warriors",
-            "description": "",
+            "description": "Attack is increased by <color=#f26c1c>30%</color>, defense is increased by <color=#f26c1c>30%</color>, movement is increased by <color=#f26c1c>2 tiles</color>. This buff cannot be cleansed.",
             "iconName": "Buff_AllUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42516,7 +42516,7 @@
         {
             "id": 202000091,
             "name": "Aurora Guardian",
-            "description": "",
+            "description": "Effect of <color=#3487e0>{0}</color> is increased. Absorption amount becomes equal to <color=#f26c1c>100%</color> of Max HP for <color=#f26c1c>1 turn</color>. Freeze-type buff, cannot be cleansed.",
             "descriptionTips": "0:330701",
             "buffEffect": "Skill/gun_Ice_shield|Skill/gun_Ice_shield_2",
             "effectPlayTime": [
@@ -42545,7 +42545,7 @@
         {
             "id": 202000151,
             "name": "Snowfall Soldiers",
-            "description": "",
+            "description": "Critical rate is increased by <color=#f26c1c>30%</color>. This buff cannot be cleansed.",
             "iconName": "Buff_CriUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42567,7 +42567,7 @@
         {
             "id": 202100022,
             "name": "Cryo Safeguard",
-            "description": "",
+            "description": "This unit's attack cannot be decreased and it is immune to push, pull and other movement debuffs. This buff cannot be cleansed.",
             "iconName": "Buff_SpeedUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42589,7 +42589,7 @@
         {
             "id": 202100031,
             "name": "Cryo Safeguard",
-            "description": "",
+            "description": "Effect of <color=#3487e0>{0}</color> is increased. Absorption amount becomes equal to <color=#f26c1c>150%</color> of attack, to a maximum of <color=#f26c1c>300%</color> of Max HP, for <color=#f26c1c>4 turns</color>. Freeze-type buff, cannot be cleansed.",
             "descriptionTips": "0:330701",
             "buffEffect": "Skill/gun_Ice_shield|Skill/gun_Ice_shield_2",
             "effectPlayTime": [
@@ -42618,7 +42618,7 @@
         {
             "id": 202100034,
             "name": "Cryo Safeguard",
-            "description": "",
+            "description": "Attacks ignore <color=#f26c1c>100%</color> of the target's defense. This buff cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42640,7 +42640,7 @@
         {
             "id": 203000041,
             "name": "Electromagnetic Charge",
-            "description": "",
+            "description": "Attack is increased by <color=#f26c1c>3%</color>, stacking up to <color=#f26c1c>6 times</color>. This buff cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42662,7 +42662,7 @@
         {
             "id": 203000051,
             "name": "Electromagnetic Charge",
-            "description": "",
+            "description": "<color=#d4ae08>Electro damage</color> dealt is increased by <color=#f26c1c>5%</color>, stacking up to <color=#f26c1c>9 times</color>. Electro-type buff, cannot be cleansed.",
             "iconName": "Buff_Guild_22",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42684,7 +42684,7 @@
         {
             "id": 203100022,
             "name": "Conductor",
-            "description": "",
+            "description": "Electrical damage resistance is reduced by <color=#f26c1c>30%</color>, stability damage taken is increased by <color=#f26c1c>2 points</color>, movement is reduced by <color=#f26c1c>2 tiles</color>. Electric-type debuff, cannot be cleansed.",
             "iconName": "Buff_ElectricHurtUP",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42706,7 +42706,7 @@
         {
             "id": 203100031,
             "name": "Superconductivity",
-            "description": "",
+            "description": "Attacks deal <color=#d4ae08>Electro damage</color>, damage dealt is increased by <color=#f26c1c>100%</color>, effective up to <color=#f26c1c>1 time</color>. Electro-type buff, cannot be cleansed.",
             "iconName": "Buff_MosinnaganSSR1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42728,7 +42728,7 @@
         {
             "id": 203100034,
             "name": "Photovoltaic Guard",
-            "description": "",
+            "description": "Cannot be damaged by normal attacks or skills. This effect is lost after taking a normal attack or skill attack <color=#f26c1c>1 time</color>. Against boss units Electro damage dealt is increased by <color=#f26c1c>100%</color>. Electro-type buff, cannot be cleansed.",
             "buffEffect": "Buff/61152201_Invincible2|Buff/61152201_Invincible",
             "effectPlayTime": [
                 1,
@@ -42757,7 +42757,7 @@
         {
             "id": 204000041,
             "name": "Chain Reaction",
-            "description": "",
+            "description": "Area damage dealt is increased by <color=#f26c1c>5%</color>, stacking up to <color=#f26c1c>6 times</color>. This buff cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42779,7 +42779,7 @@
         {
             "id": 204000051,
             "name": "Chain Reaction",
-            "description": "",
+            "description": "Damage dealt is increased by <color=#f26c1c>5%</color>, stability damage dealt is increased by <color=#f26c1c>1 point</color>, stacking up to <color=#f26c1c>9 times</color>. This buff cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42801,7 +42801,7 @@
         {
             "id": 204100011,
             "name": "Diffuse Resonance",
-            "description": "",
+            "description": "After dealing area damage, deal <color=#f26c1c>1 additional instance</color> of fixed damage equal to <color=#f26c1c>100%</color> of that damage. This buff cannot be cleansed.",
             "iconName": "Buff_Eber2",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42823,7 +42823,7 @@
         {
             "id": 204100033,
             "name": "Wide-Area Condensation",
-            "description": "",
+            "description": "If this unit has <color=#f26c1c>5 stacks</color> of this effect after making an active attack, expend all stacks and gain <color=#f26c1c>1 instance</color> of <color=#3487e0>{0}</color>, stacking up to <color=#f26c1c>5 times</color>. This buff cannot be cleansed.",
             "descriptionTips": "0:503000",
             "iconName": "Buff_Signal",
             "isShow": true,
@@ -42845,7 +42845,7 @@
         {
             "id": 205000011,
             "name": "Tidal Resonance",
-            "description": "",
+            "description": "Damage dealt is increased by <color=#f26c1c>5%</color>, stacking up to <color=#f26c1c>6 times</color>. This buff cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42867,7 +42867,7 @@
         {
             "id": 205000021,
             "name": "Tidal Resonance",
-            "description": "",
+            "description": "Max HP is increased by <color=#f26c1c>5%</color>, stacking up to <color=#f26c1c>9 times</color>. This buff cannot be cleansed.",
             "iconName": "Buff_SelfHeal",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42889,7 +42889,7 @@
         {
             "id": 205000051,
             "name": "Tide of Battle",
-            "description": "",
+            "description": "Attack is increased by <color=#f26c1c>3%</color>, stacking up to <color=#f26c1c>10 times</color>. This buff cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42911,7 +42911,7 @@
         {
             "id": 205000061,
             "name": "Tide of Battle",
-            "description": "",
+            "description": "Attack is increased by <color=#f26c1c>6%</color>, stacking up to <color=#f26c1c>10 times</color>. This buff cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42933,7 +42933,7 @@
         {
             "id": 205000171,
             "name": "Flow of Life",
-            "description": "",
+            "description": "Max HP is increased by <color=#f26c1c>1%</color>, stacking up to <color=#f26c1c>100 times</color>. This buff cannot be cleansed.",
             "iconName": "Buff_SelfHeal",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42955,7 +42955,7 @@
         {
             "id": 205100011,
             "name": "Vortex",
-            "description": "",
+            "description": "Before active attacks resolve, generate <color=#3487e0>Tideway</color> tiles <color=#f26c1c>in a 5x5 tile area</color> around the enemy target for <color=#f26c1c>2 turns</color>, and deal fixed damage to the target equal to <color=#f26c1c>40%</color> of Max HP. This effect stacks and all stacks are cleared after this effect triggers. This buff cannot be cleansed.",
             "iconName": "Buff_WaterUP",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42976,8 +42976,8 @@
         },
         {
             "id": 205100021,
-            "name": "",
-            "description": "",
+            "name": "Fate's Vortex",
+            "description": "After being attacked, deal fixed damage to the attacker equal to <color=#f26c1c>8%</color> of Max HP and recover HP equal to <color=#f26c1c>4%</color> of Max HP. This effect stacks and all stacks are cleared after this effect triggers. This buff cannot be cleansed.",
             "iconName": "Buff_WaterUP",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42998,8 +42998,8 @@
         },
         {
             "id": 205100032,
-            "name": "",
-            "description": "",
+            "name": "Turbid Ward",
+            "description": "Defense is increased by <color=#f26c1c>10%</color>, stacking up to <color=#f26c1c>20 times</color>. Defense-type buff, cannot be cleansed.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43021,7 +43021,7 @@
         {
             "id": 206000101,
             "name": "Fire Control Sharing I",
-            "description": "",
+            "description": "Area damage dealt is increased by <color=#f26c1c>3%</color>, stacking up to <color=#f26c1c>5 times</color>. <color=#f26c1c>1 stack</color> is removed when an ally unit dies. This buff cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43043,7 +43043,7 @@
         {
             "id": 206000111,
             "name": "Fire Control Sharing II",
-            "description": "",
+            "description": "Area damage dealt is increased by <color=#f26c1c>5%</color>, stacking up to <color=#f26c1c>5 times</color>. <color=#f26c1c>1 stack</color> is removed when an ally unit dies. This buff cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43065,7 +43065,7 @@
         {
             "id": 206000121,
             "name": "Trajectory Synchronization I",
-            "description": "",
+            "description": "Targeted damage dealt is increased by <color=#f26c1c>3%</color>, stacking up to <color=#f26c1c>5 times</color>. <color=#f26c1c>1 stack</color> is removed when an ally unit dies. This buff cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43087,7 +43087,7 @@
         {
             "id": 206000131,
             "name": "Trajectory Synchronization II",
-            "description": "",
+            "description": "Targeted damage dealt is increased by <color=#f26c1c>5%</color>, stacking up to <color=#f26c1c>5 times</color>. <color=#f26c1c>1 stack</color> is removed when an ally unit dies. This buff cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43109,7 +43109,7 @@
         {
             "id": 206000171,
             "name": "Courage In Conflict",
-            "description": "",
+            "description": "Attack is increased by <color=#f26c1c>3%</color>. Stackable. This buff cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43131,7 +43131,7 @@
         {
             "id": 206000181,
             "name": "Mounting Barricade",
-            "description": "",
+            "description": "Defense is increased by <color=#f26c1c>3%</color>. Stackable. Defense-type buff, cannot be cleansed.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43153,7 +43153,7 @@
         {
             "id": 206000211,
             "name": "Tactical Drive - Defense",
-            "description": "",
+            "description": "Damage taken is reduced by <color=#f26c1c>10%</color>. This buff cannot be cleansed.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43197,7 +43197,7 @@
         {
             "id": 206000231,
             "name": "Tactical Drive - Overwhelm",
-            "description": "",
+            "description": "Stability damage dealt is increased by <color=#f26c1c>2 points</color>. This buff cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43241,7 +43241,7 @@
         {
             "id": 617514012,
             "name": "Elemental Nullification",
-            "description": "DEF is decreased by 15%. Debuff, cannot be dispelled.",
+            "description": "Defense is reduced by 15%. Considered a debuff, cannot be cleansed.",
             "isShow": true,
             "buffHeadShow": 1,
             "descriptionTips": "",
@@ -43263,7 +43263,7 @@
         {
             "id": 617515011,
             "name": "Laceration",
-            "description": "For every tile moved, take fixed damage equal to 25% of the applier's ATK and 2 Stability damage. Debuff, cannot be dispelled. If this unit gains a Shield, this effect is removed.",
+            "description": "For every tile moved, take fixed damage equal to 25% of the applier's attack and 2 points of stability damage. Considered a debuff, cannot be cleansed. If the holder gains a Shield while Laceration is active, Laceration is cleansed.",
             "isShow": true,
             "buffHeadShow": 1,
             "descriptionTips": "",
@@ -43285,7 +43285,7 @@
         {
             "id": 620017012,
             "name": "Firestarter Bolt",
-            "description": "Gain 1 stack upon triggered Firework Burst. Once uses are exhausted, the Bolt is destroyed.",
+            "description": "Gain 1 stack upon triggering Firework Burst. Once uses are exhausted, the Bolt is destroyed.",
             "iconName": "Buff_CountUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43307,7 +43307,7 @@
         {
             "id": 620017022,
             "name": "Firestarter Bolt",
-            "description": "Gain 1 stack upon triggered Firework Burst. Once uses are exhausted, the Bolt is destroyed.",
+            "description": "Gain 1 stack upon triggering Firework Burst. Once uses are exhausted, the Bolt is destroyed.",
             "iconName": "Buff_CountUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43329,7 +43329,7 @@
         {
             "id": 620017032,
             "name": "Firestarter Bolt",
-            "description": "Gain 1 stack upon triggered Firework Burst. Once uses are exhausted, the Bolt is destroyed.",
+            "description": "Gain 1 stack upon triggering Firework Burst. Once uses are exhausted, the Bolt is destroyed.",
             "iconName": "Buff_CountUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43656,7 +43656,7 @@
         {
             "id": 686350151,
             "name": "Neural Stimulation",
-            "description": "",
+            "description": "Damage dealt is increased by <color=#f26c1c>30%</color>, damage taken is increased by <color=#f26c1c>15%</color>. Cannot be cleansed.",
             "buffEffect": "Buff/68630501_Damage,Buff/68630501_Break",
             "effectPlayTime": [
                 1
@@ -43792,7 +43792,7 @@
         {
             "id": 693601012,
             "name": "Chassis Destruction Alert",
-            "description": "When <color=#ff8236>Ship Destruction Alert</color> reaches <color=#f26c1c>5 stacks</color>, <color=#3487e0>Krasnaya Avrora</color> uses <color=#3487e0>Ship Destruction I</color>. Cannot be dispelled.",
+            "description": "When <color=#ff8236>Chassis Destruction Alert</color> reaches <color=#f26c1c>5 stacks</color>, <color=#3487e0>Krasnaya Avrora</color> will use <color=#3487e0>Ship Destruction I</color>. Cannot be cleansed.",
             "iconName": "Buff_Tank5",
             "isShow": true,
             "buffHeadShow": 10,
@@ -43836,7 +43836,7 @@
         {
             "id": 693801012,
             "name": "Chassis Destruction Alert",
-            "description": "When <color=#ff8236>Ship Destruction Alert</color> reaches <color=#f26c1c>8 stacks</color>, <color=#3487e0>Krasnaya Avrora</color> uses <color=#3487e0>Ship Destruction I</color>. Cannot be dispelled.",
+            "description": "When <color=#ff8236>Chassis Destruction Alert</color> reaches <color=#f26c1c>8 stacks</color>, <color=#3487e0>Krasnaya Avrora</color> will use <color=#3487e0>Ship Destruction I</color>. Cannot be cleansed.",
             "iconName": "Buff_Tank5",
             "isShow": true,
             "buffHeadShow": 10,
@@ -43858,7 +43858,7 @@
         {
             "id": 696220013,
             "name": "Negative Temperature Boost",
-            "description": "Damage dealt is increased by <color=#f26c1c>10%</color> and Stability damage dealt is increased by <color=#f26c1c>1</color>, can stack. Buff, cannot be dispelled.",
+            "description": "Damage dealt is increased by <color=#f26c1c>10%</color> and stability damage dealt is increased by <color=#f26c1c>1 point</color>, can stack. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_DefUpNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43904,7 +43904,7 @@
         {
             "id": 696221021,
             "name": "Icy Spikes",
-            "description": "DEF is increased by <color=#f26c1c>100%</color>, can stack. Buff, cannot be dispelled.",
+            "description": "Defense is increased by <color=#f26c1c>100%</color>, can stack. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43926,7 +43926,7 @@
         {
             "id": 696223011,
             "name": "Icicle",
-            "description": "Explodes at the end of this unit's side's turn, dealing AoE Freeze damage equal to <color=#f26c1c>70%</color> of the Horn Beasteel's ATK and <color=#f26c1c>2</color> Stability damage to all units in a <color=#f26c1c>5×5 tile area</color> and applying 1 stack of <color=#3487e0>{0}</color>. This explosion deals an extra <color=#f26c1c>4</color> fixed Stability damage to the Horn Beasteel. Cannot be dispelled.",
+            "description": "Explodes at the end of the holder's faction's turn, dealing AoE Freeze damage equal to <color=#f26c1c>70%</color> of the Horn Beasteel's attack, <color=#f26c1c>2 points</color> of stability damage to all units in a <color=#f26c1c>5×5 area</color>, and apply 1 stack of <color=#3487e0>{0}</color>. This explosion deals an extra <color=#f26c1c>4 points</color> of fixed Stability damage to the Horn Beasteel. Cannot be cleansed.",
             "descriptionTips": "0:696223012",
             "buffEffect": "Skill/6761401_Ice",
             "effectPlayTime": [
@@ -43954,7 +43954,7 @@
         {
             "id": 696223012,
             "name": "Deep Freeze",
-            "description": "ATK is decreased by <color=#f26c1c>10%</color>, can stack. Debuff, cannot be dispelled.",
+            "description": "Attack is reduced by <color=#f26c1c>10%</color>, can stack. Considered a debuff, cannot be cleansed.",
             "iconName": "Buff_AtkDown",
             "isShow": true,
             "buffHeadShow": 1,
@@ -43976,7 +43976,7 @@
         {
             "id": 696300102,
             "name": "Crisis Awareness",
-            "description": "Damage dealt is increased by <color=#f26c1c>5%</color>, can stack. Buff, cannot be dispelled.",
+            "description": "Damage dealt is increased by <color=#f26c1c>5%</color>, can stack. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -44662,7 +44662,7 @@
         {
             "id": 1047040301,
             "name": "Vulnerability ANalysis",
-            "description": "",
+            "description": "Hydro damage taken is increased by <color=#f26c1c>5%</color>, stacking up to <color=#f26c1c>3 times</color>. Hydro-type debuff. This debuff cannot be cleansed.",
             "iconName": "Buff_EnemyHurtUp",
             "isShow": true,
             "buffHeadShow": 1,
