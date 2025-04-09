@@ -93,29 +93,40 @@ const TalentTree = ({ talents }: TalentTreeProps) => {
         })}
       </div>
 
-      <div className="p-6 border-2 border-gray-300 rounded-lg min-h-32 bg-background-paper">
-        <div>
-          {currentTalent.name && (
-            <h3 className="text-lg font-semibold mb-2">{currentTalent.name}</h3>
+      <div className="p-6 border-2 border-gray-300 rounded-lg min-h-32 bg-background-paper flex flex-col gap-8">
+        <div className="grid grid-cols-4 gap-8">
+          {currentTalent.icon && (
+            <div className="text-center col-span-1 m-4">
+              <img
+                src={`${import.meta.env.BASE_URL}keys/${currentTalent.icon}.png`}
+                alt="Key Icon"
+                className="block w-32 max-w-full bg-skill-bg rounded-lg"
+              />
+            </div>
           )}
-          {currentTalent.stats && (
-            <>
-              {Object.entries(currentTalent.stats).map(([name, value]) => {
-                const isPercent = name.includes('crit') || name.includes('Percent');
-                const displayValue = isPercent
-                  ? `${(value as number) / 10}.0%`
-                  : `${value as number}.0`;
-                return (
-                  <p key={name}>
-                    {statNames[name]}: {displayValue}
-                  </p>
-                );
-              })}
-            </>
-          )}
-          {currentTalent.desc && (
-            <RichText content={currentTalent.desc} descriptionTips={currentTalent.descTips} />
-          )}
+          <div className="mt-8 col-span-3">
+            {currentTalent.name && (
+              <h3 className="text-lg font-semibold mb-2">{currentTalent.name}</h3>
+            )}
+            {currentTalent.stats && (
+              <>
+                {Object.entries(currentTalent.stats).map(([name, value]) => {
+                  const isPercent = name.includes('crit') || name.includes('Percent');
+                  const displayValue = isPercent
+                    ? `${(value as number) / 10}.0%`
+                    : `${value as number}.0`;
+                  return (
+                    <p key={name}>
+                      {statNames[name]}: {displayValue}
+                    </p>
+                  );
+                })}
+              </>
+            )}
+            {currentTalent.desc && (
+              <RichText content={currentTalent.desc} descriptionTips={currentTalent.descTips} />
+            )}
+          </div>
         </div>
       </div>
 

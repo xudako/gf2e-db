@@ -8,6 +8,7 @@ import Tooltip from '../components/Tooltip';
 import Slide from '../components/Slide';
 import LevelSlider from '../components/ChrLevelSlider';
 import TalentTree from '../components/TalentTree';
+import { useNavigate } from 'react-router-dom';
 
 type SkillTypeId = '01' | '05' | '07' | '04' | '08';
 
@@ -53,6 +54,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   if (!character) {
     return <div className="text-2xl text-center">404</div>;
   }
+  const navigate = useNavigate();
 
   // Skins
   const skinData = character.skins.map((skinId) => {
@@ -140,6 +142,8 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   };
 
   const levelStats = getDollStats(character.id);
+
+  const sig = Tables.GunWeaponData[Tables.GunData[character?.id]?.weaponPrivate] || '';
 
   return (
     <Slide
@@ -301,6 +305,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                 <SkillCard skill={currentSkill} />
               </div>
 
+              {/* Talents Info */}
               <div className="mt-4 space-y-4">
                 <TalentTree talents={getTalents(character.id).flat()} />
               </div>
@@ -330,6 +335,20 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                 className="w-full object-contain max-h-[80vh]"
               />
             </div>
+
+            {/* Weapon Info */}
+            {sig && (
+              <div className="mt-4 space-y-4">
+                <img
+                  src={`${import.meta.env.BASE_URL}weapons/${sig.resCode}_1024.png`}
+                  alt="Signature weapon"
+                  onClick={() =>
+                    navigate(`/weapons/${sig.name.toLowerCase().replace(/\s+/g, '-')}`)
+                  }
+                  className="cursor-pointer hover:opacity-80"
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>
