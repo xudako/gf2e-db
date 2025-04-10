@@ -8,6 +8,7 @@ import Tooltip from '../components/Tooltip';
 import Slide from '../components/Slide';
 import LevelSlider from '../components/ChrLevelSlider';
 import TalentTree from '../components/TalentTree';
+import StatDisplay from '../components/StatDisplay';
 import { useNavigate } from 'react-router-dom';
 
 type SkillTypeId = '01' | '05' | '07' | '04' | '08';
@@ -32,13 +33,6 @@ interface SkillsByLevel {
 interface SkillTree {
   [sType: string]: SkillsByLevel;
 }
-
-const StatDisplay = ({ img, stat }: { img: string; stat: number }) => (
-  <div className="col-span-1 flex flex-col items-center">
-    <img src={`${import.meta.env.BASE_URL}icons/${img}_64.png`} className="w-12 h-12" />
-    <span className="text-center mt-1">{stat}</span>
-  </div>
-);
 
 interface CharacterOverlayProps {
   open: boolean;
@@ -142,6 +136,8 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   };
 
   const levelStats = getDollStats(character.id);
+
+  const talents = getTalents(character.id);
 
   const sig = Tables.GunWeaponData[Tables.GunData[character?.id]?.weaponPrivate] || '';
 
@@ -307,7 +303,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
 
               {/* Talents Info */}
               <div className="mt-4 space-y-4">
-                <TalentTree talents={getTalents(character.id).flat()} />
+                {talents[0].length > 0 && <TalentTree talents={talents.flat()} />}
               </div>
             </div>
           </div>

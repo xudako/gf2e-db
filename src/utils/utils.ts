@@ -138,6 +138,10 @@ export function getTalents(
   dollId: number
 ): [Array<Record<string, any>>, Array<Record<string, any>>] {
   const talentsData = Tables.SquadTalentGunData[dollId];
+  if (!talentsData) {
+    return [[], []];
+  }
+
   const treeIds = talentsData['traverseSquadTalentTreeId'].map(Number);
   const treeData = treeIds.map((tid: number) => Tables.SquadTalentTreeData[tid]);
 
