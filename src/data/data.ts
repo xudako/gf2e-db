@@ -32,6 +32,7 @@ const enDolls: string[] = [
   'Dushevnaya',
   'Papasha',
   'Klukai',
+  'Mechty',
 ];
 
 export const gunDuties: Duty[] = gunDutyData['data'].map((duty: any) => ({

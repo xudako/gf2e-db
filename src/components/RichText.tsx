@@ -11,6 +11,9 @@ const dynamicBuffs = new Map([
   [10520800, 10520801], //Klukai
   [10510700, 105107001], //Mechty
   [10510800, 105108001], //Mechty
+  [10470501, 10470501], //Springfield
+  [10470701, 104707011], //Springfield
+  [104700, 104704011], //Springfield
 ]);
 
 interface RichTextProps {
@@ -70,7 +73,7 @@ const parseUnityRichText = (content: string, descriptionTips: string): React.Rea
             : Tables.BattleBuffPerformData[parseInt(buffId[1])]
           : Tables.BattleDictionaryData[parseInt(buffId[1])];
 
-      elements.push(
+      buff ? elements.push(
         <Tooltip
           key={index}
           title={
@@ -101,7 +104,7 @@ const parseUnityRichText = (content: string, descriptionTips: string): React.Rea
           </span>
           <span style={{ color }}>{suffix}</span>
         </Tooltip>
-      );
+      ) : elements.push(<span key={index} style={{ color: '#999999' }}>[Missing Text]</span>);
     } else {
       elements.push(
         <span key={index} style={{ color }}>

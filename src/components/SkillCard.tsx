@@ -83,6 +83,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
         <div className="text-center">
           {/* Visual Indicator Placeholder */}
           <SkillGrid
+            id={skill.id}
             range={skill.range}
             shape={skill.shape}
             shapeParam={skill.shapeParam}

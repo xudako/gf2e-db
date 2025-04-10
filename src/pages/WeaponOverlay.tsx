@@ -43,7 +43,6 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
 
   const stats = getWeaponStats(weapon.id);
   const code = Tables.GunWeaponData[weapon.id].resPath.match(/(?<=Player\/)(.*?)(?=SSR|SR|R)/)?.[0] || 'null';
-  console.log(weapon.resCode)
   const imprintDoll: Chr | undefined = characters.find((chr: Chr) => chr.code.startsWith(code));
 
   return (
