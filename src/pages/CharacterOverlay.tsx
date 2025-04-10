@@ -240,25 +240,25 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                 </div>
 
                 <StatDisplay
-                  img="Icon_Pow"
+                  img="Icon_Pow_64"
                   stat={levelStats[currentLevel + currentRange / 10 - 3][1]}
                 />
                 <StatDisplay
-                  img="Icon_Armor"
+                  img="Icon_Armor_64"
                   stat={levelStats[currentLevel + currentRange / 10 - 3][2]}
                 />
                 <StatDisplay
-                  img="Icon_Hp"
+                  img="Icon_Hp_64"
                   stat={levelStats[currentLevel + currentRange / 10 - 3][3]}
                 />
                 <StatDisplay
-                  img="Icon_Will"
+                  img="Icon_Will_64"
                   stat={
                     Tables.PropertyData[Tables.GunData[character.id].propertyId]['maxWillValue']
                   }
                 />
                 <StatDisplay
-                  img="Icon_Max_Ap"
+                  img="Icon_Max_Ap_64"
                   stat={Tables.PropertyData[Tables.GunData[character.id].propertyId]['maxAp'] / 100}
                 />
                 <div className="col-span-1"></div>

@@ -10,10 +10,10 @@ import { useNavigate } from 'react-router-dom';
 import { characters } from '../data/data';
 
 const statIcon: Record<string, string> = {
-  powPercent: 'Pow',
-  crit: 'Crit',
-  critMult: 'Mult',
-  potentialDam: 'PotentialDam',
+  powPercent: 'Pow_64',
+  crit: 'Crit_64',
+  critMult: 'Mult_64',
+  potentialDam: 'potential_dam',
 };
 
 interface WeaponOverlayProps {
@@ -82,7 +82,7 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
           
           <div className="mt-4 p-6 grid grid-cols-6 gap-4 text-primary-text">
             <StatDisplay
-              img="Icon_Pow"
+              img="Icon_Pow_64"
                stat={stats.pow}
             />
             {weapon.rank === 5 && <StatDisplay
