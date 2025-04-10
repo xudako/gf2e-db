@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Skill } from '../types';
+import Tables from '../data/TableLoader.ts';
 
 type GridProps = Pick<Skill, 'range' | 'shape' | 'shapeParam' | 'skillRange'>;
 
@@ -48,6 +49,30 @@ const SkillGrid: React.FC<GridProps> = ({ range, shape, shapeParam, skillRange }
   const CENTER_COLOR = '#ffffff';
   const CELL_GAP = 1; // Gap between cells in pixels
   const GRID_BG = '#999999'; // Default grid cell color
+
+  const getShapeData = (shapeId: number) => {
+    const shapeEntry = Tables.BattleShapeData[shapeId];
+    if (!shapeEntry) return null;
+    
+    // Parse the shape string into a 2D array
+    const rows = shapeEntry.shape
+      .slice(1, -1) // Remove brackets
+      .split(';')
+      .map((row: string) => row
+        .slice(1, -1)
+        .split(',')
+        .map(Number)
+      );
+    
+    // Calculate offset from center
+    const [offsetX, offsetY] = shapeEntry.position.split(',').map(Number);
+    
+    return {
+      rows,
+      offsetX,
+      offsetY
+    };
+  };
 
   useEffect(() => {
     const container = containerRef.current;
@@ -114,32 +139,26 @@ const SkillGrid: React.FC<GridProps> = ({ range, shape, shapeParam, skillRange }
             if (distanceFromCenter <= gridRange[0]) inRange = true;
             break;
           case 7:
-            let range7 = 0;
-            switch (gridRange[0]) {
-              case 30: //Ullrid/LennaLv2
-                range7 = 5;
-                break;
-              case 32: //UllridLv2
-                range7 = 7;
-                break;
-              case 71: //Lenna
-                range7 = 3;
-                break;
-              case 107:
-                range7 = 8;
-                break;
-            }
-            if (
-              (row === center && Math.abs(center - col) <= range7) ||
-              (col === center && Math.abs(center - row) <= range7)
-            )
-              inRange = true;
-            if (gridRange[0] === 107) {
-              if (
-                (row === center && Math.abs(center - col) < 4) ||
-                (col === center && Math.abs(center - row) < 4)
-              )
-                inRange = false;
+            const rangeShape = getShapeData(gridRange[0]);
+            if (rangeShape) {
+              // Calculate the shape's dimensions
+              const shapeHeight = rangeShape.rows.length;
+              const shapeWidth = rangeShape.rows[0].length;
+              
+              // Calculate the center of the shape
+              const shapeCenterX = Math.floor((shapeWidth-1) / 2);
+              const shapeCenterY = Math.floor(shapeHeight / 2);
+              
+              // Calculate the grid position relative to the shape's center
+              const gridRow = row - center + shapeCenterY;
+              const gridCol = col - center + shapeCenterX;
+              
+              // Check if the grid position is within the shape bounds
+              if (gridRow >= 0 && gridRow < shapeHeight && 
+                  gridCol >= 0 && gridCol < shapeWidth &&
+                  rangeShape.rows[gridRow][gridCol] === 1) {
+                inRange = true;
+              }
             }
             break;
           case 8:
@@ -191,34 +210,26 @@ const SkillGrid: React.FC<GridProps> = ({ range, shape, shapeParam, skillRange }
             inShape = true;
             break;
           case 7:
-            let shape7 = [0, 0];
-            switch (gridShape[0]) {
-              case 67: //Sabrina
-                shape7 = [3, 6];
-                break;
-              case 68: //Vepley
-              case 38: //Lotta
-                shape7 = [3, 5];
-                break;
-              case 69: //VepleyKey
-                shape7 = [5, 3];
-                break;
-              case 78: //Littara
-                shape7 = [3, 8];
-                break;
-              case 80: //LittaraLv2
-                shape7 = [3, 8];
-                break;
-            }
-            if (
-              center - row > 0 &&
-              center - row <= shape7[1] &&
-              Math.abs(center - col) <= Math.floor(shape7[0] / 2)
-            )
-              inShape = true;
-            if (gridShape[0] === 78) {
-              //Littara
-              if (Math.abs(center - row) <= Math.floor(5 / 2)) inShape = false;
+            const shapeData = getShapeData(gridShape[0]);
+            if (shapeData) {
+              // Calculate the shape's dimensions
+              const shapeHeight = shapeData.rows.length;
+              const shapeWidth = shapeData.rows[0].length;
+              
+              // Calculate the center of the shape
+              const shapeCenterX = shapeWidth - 1;
+              const shapeCenterY = shapeHeight;
+              
+              // Calculate the grid position relative to the shape's center
+              const gridRow = row - center + shapeCenterY + shapeData.offsetY;
+              const gridCol = col - center + shapeCenterX + shapeData.offsetX;
+              
+              // Check if the grid position is within the shape bounds
+              if (gridRow >= 0 && gridRow < shapeHeight && 
+                  gridCol >= 0 && gridCol < shapeWidth &&
+                  shapeData.rows[gridRow][gridCol] === 1) {
+                inShape = true;
+              }
             }
             break;
         }
@@ -238,13 +249,9 @@ const SkillGrid: React.FC<GridProps> = ({ range, shape, shapeParam, skillRange }
         }
       }
     }
-  }, [range, shape, shapeParam, skillRange]);
+  }, [range, shape, shapeParam, skillRange, gridSize]);
 
-  return (
-    <div ref={containerRef} className="inline-block aspect-square">
-      <canvas ref={canvasRef} className="w-full h-full" />
-    </div>
-  );
+  return <div ref={containerRef} className="w-full h-full"><canvas ref={canvasRef} /></div>;
 };
 
 export default SkillGrid;

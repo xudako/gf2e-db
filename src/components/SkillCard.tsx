@@ -68,17 +68,15 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
 
           {/* Stability/Cost/Cooldown Info */}
           <div className="flex justify-around mt-8">
-            <p>{`Stability: ${stability}`}</p>
             <p>{`Cost: ${skill.potentialCost}`}</p>
             <p>{`Cooldown: ${skill.cdTime}`}</p>
           </div>
         </div>
 
         {/* Center Section: Description & Upgrade Buttons */}
-        <div className="text-center col-span-2">
-          <div className="mt-8">
-            <RichText content={skill.description} descriptionTips={skill.descriptionTips} />
-          </div>
+        <div className="col-span-2">
+          {stability as number > 0 && <p className="mb-4 text-secondary-main font-bold">{`Stability Damage: ${stability}`}</p>}
+          <RichText content={skill.description} descriptionTips={skill.descriptionTips} />
         </div>
 
         {/* Right Section: Range, Target & Indicators */}
