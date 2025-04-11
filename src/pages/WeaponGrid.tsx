@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Wpn } from '../types';
 import { weapons, weaponTypes } from '../data/data';
 import ToggleButton from '../components/ToggleButton';
+import ToggleButtonGroup from '../components/ToggleButtonGroup';
 import { formatWeaponUrl } from '../utils/utils';
 
 const WeaponGrid: React.FC = () => {
@@ -51,30 +52,43 @@ const WeaponGrid: React.FC = () => {
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-main bg-white/90"
         />
         {/* Rarity Filter */}
-        <div className="flex bg-primary-main border border-filter-button-border">
-          <ToggleButton selected={filterRarity === 3} onClick={() => handleRarityFilter(3)}>
+        <ToggleButtonGroup className="bg-primary-main">
+          <ToggleButton
+            selected={filterRarity === 3}
+            onClick={() => handleRarityFilter(3)}
+            className="min-w-[6rem]"
+          >
             R
           </ToggleButton>
-          <ToggleButton selected={filterRarity === 4} onClick={() => handleRarityFilter(4)}>
+          <ToggleButton
+            selected={filterRarity === 4}
+            onClick={() => handleRarityFilter(4)}
+            className="min-w-[6rem]"
+          >
             SR
           </ToggleButton>
-          <ToggleButton selected={filterRarity === 5} onClick={() => handleRarityFilter(5)}>
+          <ToggleButton
+            selected={filterRarity === 5}
+            onClick={() => handleRarityFilter(5)}
+            className="min-w-[6rem]"
+          >
             SSR
           </ToggleButton>
-        </div>
+        </ToggleButtonGroup>
 
         {/* Weapon Filter */}
-        <div className="flex bg-primary-main border border-filter-button-border">
+        <ToggleButtonGroup className="bg-primary-main">
           {weaponTypes.map((weapon) => (
             <ToggleButton
               key={weapon.id}
               selected={filterWeapon === weapon.id}
               onClick={() => handleWeaponFilter(weapon.id)}
+              className="min-w-[6rem]"
             >
               {weapon.abbr}
             </ToggleButton>
           ))}
-        </div>
+        </ToggleButtonGroup>
 
         {/* Reset Button */}
         <button

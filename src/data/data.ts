@@ -37,11 +37,11 @@ const enDolls: string[] = [
 
 const dollElements: Record<string, number> = {
   'Mosin-Nagant': 2,
-  'Qiuhua': 1,
-  'Peri': 1,
-  'Nikketa': 5,
-  'Leva': 2,
-  'Robella': 3,
+  Qiuhua: 1,
+  Peri: 1,
+  Nikketa: 5,
+  Leva: 2,
+  Robella: 3,
 };
 
 export const gunDuties: Duty[] = gunDutyData['data'].map((duty: any) => ({

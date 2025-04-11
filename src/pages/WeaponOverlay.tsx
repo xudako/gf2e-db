@@ -42,7 +42,8 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
   };
 
   const stats = getWeaponStats(weapon.id);
-  const code = Tables.GunWeaponData[weapon.id].resPath.match(/(?<=Player\/)(.*?)(?=SSR|SR|R)/)?.[0] || 'null';
+  const code =
+    Tables.GunWeaponData[weapon.id].resPath.match(/(?<=Player\/)(.*?)(?=SSR|SR|R)/)?.[0] || 'null';
   const imprintDoll: Chr | undefined = characters.find((chr: Chr) => chr.code.startsWith(code));
 
   return (
@@ -78,29 +79,28 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
               {weapon.name}
             </h1>
           </div>
-          
+
           <div className="mt-4 p-6 grid grid-cols-6 gap-4 text-primary-text">
-            <StatDisplay
-              img="Icon_Pow_64"
-               stat={stats.pow}
-            />
-            {weapon.rank === 5 && <StatDisplay
-              img={`Icon_${statIcon[Object.keys(stats)[1]]}`}
-              stat={`${Object.values(stats)[1]/10}.0%`}
-            />}
-            <div className="mt-4 space-y-4 col-span-1 col-start-6 justify-self-end">
-            {imprintDoll && (
-              <div>
-                <img
-                  src={`${import.meta.env.BASE_URL}dolls/Avatar_Bust_${imprintDoll?.code}.png`}
-                  alt="Imprinted doll"
-                  onClick={() =>
-                    navigate(`/dolls/${imprintDoll?.name.toLowerCase().replace(/\s+/g, '-')}`)
-                  }
-                  className="cursor-pointer hover:opacity-80"
-                />
-              </div>
+            <StatDisplay img="Icon_Pow_64" stat={stats.pow} />
+            {weapon.rank === 5 && (
+              <StatDisplay
+                img={`Icon_${statIcon[Object.keys(stats)[1]]}`}
+                stat={`${Object.values(stats)[1] / 10}.0%`}
+              />
             )}
+            <div className="mt-4 space-y-4 col-span-1 col-start-6 justify-self-end">
+              {imprintDoll && (
+                <div>
+                  <img
+                    src={`${import.meta.env.BASE_URL}dolls/Avatar_Bust_${imprintDoll?.code}.png`}
+                    alt="Imprinted doll"
+                    onClick={() =>
+                      navigate(`/dolls/${imprintDoll?.name.toLowerCase().replace(/\s+/g, '-')}`)
+                    }
+                    className="cursor-pointer hover:opacity-80"
+                  />
+                </div>
+              )}
             </div>
           </div>
 

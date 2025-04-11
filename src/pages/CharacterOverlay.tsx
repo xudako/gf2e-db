@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Chr, Skill, Skin } from '../types';
-import { loadDollSkill, getDollStats, getTalents } from '../utils/utils';
+import { loadDollSkill, getDollStats, getAffectStats, getTalents } from '../utils/doll-utils';
 import SkillCard from '../components/SkillCard';
 import Tables from '../data/TableLoader';
+import ToggleButtonGroup from '../components/ToggleButtonGroup';
 import ToggleButton from '../components/ToggleButton';
 import Tooltip from '../components/Tooltip';
 import Slide from '../components/Slide';
@@ -52,8 +53,8 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
 
   // Skins
   const skinData = character.skins
-    .map(skinId => Tables.ClothesData[skinId])
-    .filter(skin => skin !== undefined);
+    .map((skinId) => Tables.ClothesData[skinId])
+    .filter((skin) => skin !== undefined);
 
   if (skinData.length === 0) {
     skinData.push({ id: 0, name: 'Base', code: character.code });
@@ -74,10 +75,12 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
     (x) => character.id * 100 + x
   );
 
-  const skillIds = vertebraeIds.map((vertId) => {
-    const gunGradeData = Tables.GunGradeData[vertId];
-    return gunGradeData ? gunGradeData.abbr : null;
-  }).filter(Boolean);
+  const skillIds = vertebraeIds
+    .map((vertId) => {
+      const gunGradeData = Tables.GunGradeData[vertId];
+      return gunGradeData ? gunGradeData.abbr : null;
+    })
+    .filter(Boolean);
 
   const allSkills: SkillTree = {};
 
@@ -85,10 +88,10 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
 
   skillsToProcess.forEach((id) => {
     if (!id) return;
-    
+
     const idString = id.toString();
     if (idString.length < 8) return;
-    
+
     const type = idString.substring(4, 6);
     const level = idString.substring(6, 8);
 
@@ -163,11 +166,19 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   // Stats
   const [currentLevel, setCurrentLevel] = useState(60);
   const [currentRange, setCurrentRange] = useState(60);
+  const [currentAffect, setCurrentAffect] = useState(1);
+
+  const handleAffectChange = (newAffect: number) => {
+    setCurrentAffect(newAffect);
+  };
 
   const levelStats = getDollStats(character.id);
+  const affectStats = getAffectStats(character.id);
 
+  // Talents (Neural Helix)
   const talents = getTalents(character.id);
 
+  // Sig
   const sig = Tables.GunWeaponData[Tables.GunData[character?.id]?.weaponPrivate] || '';
 
   return (
@@ -252,37 +263,46 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                   <span>Weakness:</span>
                 </div>
                 {character.weak[0] > 0 && (
-                <div className="col-span-4 flex space-x-2">
-                  <Tooltip title={Tables.WeaponTagData[character.weak[0]]['name']}>
-                    <img
-                      src={`${import.meta.env.BASE_URL}icons/${Tables.WeaponTagData[character.weak[0]]['icon']}_S.png`}
-                      alt={`${Tables.WeaponTagData[character.weak[0]]['name']} icon`}
-                      className="h-16 align-middle"
-                    />
-                  </Tooltip>
-                  <Tooltip title={Tables.LanguageElementData[character.weak[1]]['name']}>
-                    <img
-                      src={`${import.meta.env.BASE_URL}icons/${Tables.LanguageElementData[character.weak[1]]['icon']}_S.png`}
-                      alt={`${Tables.LanguageElementData[character.weak[1]]['name']} icon`}
-                      className="h-16 align-middle"
-                    />
-                  </Tooltip>
-                </div>
+                  <div className="col-span-4 flex space-x-2">
+                    <Tooltip title={Tables.WeaponTagData[character.weak[0]]['name']}>
+                      <img
+                        src={`${import.meta.env.BASE_URL}icons/${Tables.WeaponTagData[character.weak[0]]['icon']}_S.png`}
+                        alt={`${Tables.WeaponTagData[character.weak[0]]['name']} icon`}
+                        className="h-16 align-middle"
+                      />
+                    </Tooltip>
+                    <Tooltip title={Tables.LanguageElementData[character.weak[1]]['name']}>
+                      <img
+                        src={`${import.meta.env.BASE_URL}icons/${Tables.LanguageElementData[character.weak[1]]['icon']}_S.png`}
+                        alt={`${Tables.LanguageElementData[character.weak[1]]['name']} icon`}
+                        className="h-16 align-middle"
+                      />
+                    </Tooltip>
+                  </div>
                 )}
 
                 {levelStats[0][0] > 0 && (
                   <div className="grid grid-cols-6 gap-2 col-span-6">
                     <StatDisplay
                       img="Icon_Pow_64"
-                      stat={levelStats[currentLevel + currentRange / 10 - 3][1]}
+                      stat={
+                        levelStats[currentLevel + currentRange / 10 - 3][1] +
+                        affectStats[currentAffect - 1][1]
+                      }
                     />
                     <StatDisplay
                       img="Icon_Armor_64"
-                      stat={levelStats[currentLevel + currentRange / 10 - 3][2]}
+                      stat={
+                        levelStats[currentLevel + currentRange / 10 - 3][2] +
+                        affectStats[currentAffect - 1][2]
+                      }
                     />
                     <StatDisplay
                       img="Icon_Hp_64"
-                      stat={levelStats[currentLevel + currentRange / 10 - 3][3]}
+                      stat={
+                        levelStats[currentLevel + currentRange / 10 - 3][3] +
+                        affectStats[currentAffect - 1][3]
+                      }
                     />
                     <StatDisplay
                       img="Icon_Will_64"
@@ -292,49 +312,69 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                     />
                     <StatDisplay
                       img="Icon_Max_Ap_64"
-                      stat={Tables.PropertyData[Tables.GunData[character.id].propertyId]['maxAp'] / 100}
+                      stat={
+                        Tables.PropertyData[Tables.GunData[character.id].propertyId]['maxAp'] / 100
+                      }
                     />
-                    <div className="col-span-1"></div></div>)}
-                    {levelStats[0][0] > 0 && (<div className="col-span-6">
+                    <div className="col-span-1"></div>
+                  </div>
+                )}
+                {levelStats[0][0] > 0 && (
+                  <div className="col-span-6">
                     <LevelSlider
                       currentLevel={currentLevel}
                       currentRange={currentRange}
                       onLevelChange={setCurrentLevel}
                       onRangeChange={setCurrentRange}
                     />
-                  </div>)}
+                    <span>Affection:</span>
+                    <ToggleButtonGroup>
+                      {affectStats.map((affect) => (
+                        <ToggleButton
+                          key={affect[0]}
+                          selected={currentAffect === affect[0]}
+                          onClick={() => handleAffectChange(affect[0])}
+                        >
+                          {affect[0]}
+                        </ToggleButton>
+                      ))}
+                    </ToggleButtonGroup>
+                  </div>
+                )}
               </div>
 
               {/* Skills Info */}
-              {currentSkill && <div className="mt-4 space-y-4">
-                <div className="flex flex-wrap gap-2">
-                  {skillTypes.map((skillType) => (
-                    <ToggleButton
-                      key={skillType.id}
-                      selected={currentSkillType === skillType.id}
-                      onClick={() => handleSkillTypeChange(skillType.id)}
-                    >
-                      {skillType.name}
-                    </ToggleButton>
-                  ))}
-                </div>
-
-                {currentSkillType && getSkillLevels(currentSkillType).length > 1 && (
+              {currentSkill && (
+                <div className="mt-4 space-y-4">
                   <div className="flex flex-wrap gap-2">
-                    {getSkillLevels(currentSkillType).map((level) => (
+                    {skillTypes.map((skillType) => (
                       <ToggleButton
-                        key={level}
-                        selected={currentSkillLevel === level}
-                        onClick={() => handleSkillLevelChange(level)}
+                        key={skillType.id}
+                        selected={currentSkillType === skillType.id}
+                        onClick={() => handleSkillTypeChange(skillType.id)}
                       >
-                        {level}
+                        {skillType.name}
                       </ToggleButton>
                     ))}
                   </div>
-                )}
 
-                <SkillCard skill={currentSkill} />
-              </div>}
+                  {currentSkillType && getSkillLevels(currentSkillType).length > 1 && (
+                    <div className="flex flex-wrap gap-2">
+                      {getSkillLevels(currentSkillType).map((level) => (
+                        <ToggleButton
+                          key={level}
+                          selected={currentSkillLevel === level}
+                          onClick={() => handleSkillLevelChange(level)}
+                        >
+                          {level}
+                        </ToggleButton>
+                      ))}
+                    </div>
+                  )}
+
+                  <SkillCard skill={currentSkill} />
+                </div>
+              )}
 
               {/* Talents Info */}
               <div className="mt-4 space-y-4">

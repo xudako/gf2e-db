@@ -73,38 +73,44 @@ const parseUnityRichText = (content: string, descriptionTips: string): React.Rea
             : Tables.BattleBuffPerformData[parseInt(buffId[1])]
           : Tables.BattleDictionaryData[parseInt(buffId[1])];
 
-      buff ? elements.push(
-        <Tooltip
-          key={index}
-          title={
-            <div>
-              <div className="flex items-center gap-2 pb-1">
-                {buff.iconName && (
-                  <img
-                    src={`${import.meta.env.BASE_URL}buffs/${buff.iconName}.png`}
-                    alt={buff.name}
-                    className="w-8"
+      buff
+        ? elements.push(
+            <Tooltip
+              key={index}
+              title={
+                <div>
+                  <div className="flex items-center gap-2 pb-1">
+                    {buff.iconName && (
+                      <img
+                        src={`${import.meta.env.BASE_URL}buffs/${buff.iconName}.png`}
+                        alt={buff.name}
+                        className="w-8"
+                      />
+                    )}
+                    <p className={getTextClass('subtitle1')} style={{ color }}>
+                      {buff.name}
+                    </p>
+                  </div>
+                  <hr className="border-gray-600" />
+                  <RichText
+                    content={buff.description}
+                    descriptionTips={buff.descriptionTips}
+                    variant="caption"
                   />
-                )}
-                <p className={getTextClass('subtitle1')} style={{ color }}>
-                  {buff.name}
-                </p>
-              </div>
-              <hr className="border-gray-600" />
-              <RichText
-                content={buff.description}
-                descriptionTips={buff.descriptionTips}
-                variant="caption"
-              />
-            </div>
-          }
-        >
-          <span style={{ color }} className="underline cursor-help">
-            {buff.name}
-          </span>
-          <span style={{ color }}>{suffix}</span>
-        </Tooltip>
-      ) : elements.push(<span key={index} style={{ color: '#999999' }}>[Missing Text]</span>);
+                </div>
+              }
+            >
+              <span style={{ color }} className="underline cursor-help">
+                {buff.name}
+              </span>
+              <span style={{ color }}>{suffix}</span>
+            </Tooltip>
+          )
+        : elements.push(
+            <span key={index} style={{ color: '#999999' }}>
+              [Missing Text]
+            </span>
+          );
     } else {
       elements.push(
         <span key={index} style={{ color }}>

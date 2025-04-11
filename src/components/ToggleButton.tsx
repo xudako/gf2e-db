@@ -13,8 +13,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
   children,
   className = '',
 }) => {
-  const baseClasses =
-    'px-2 py-1 min-w-[6rem] text-sm border border-primary-light transition-colors';
+  const baseClasses = 'px-2 py-1 flex-1 text-sm border border-primary-light transition-colors';
   const stateClasses = selected
     ? 'bg-primary-main text-primary-selected'
     : 'text-primary-text hover:bg-primary-light';

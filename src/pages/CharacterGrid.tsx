@@ -77,32 +77,49 @@ const CharacterGrid: React.FC = () => {
         />
 
         {/* Region Filter */}
-        <ToggleButtonGroup>
-          <ToggleButton selected={filterRegion === 0} onClick={() => handleRegionFilter(0)}>
+        <ToggleButtonGroup className="bg-primary-main">
+          <ToggleButton
+            selected={filterRegion === 0}
+            onClick={() => handleRegionFilter(0)}
+            className="min-w-[6rem]"
+          >
             CN
           </ToggleButton>
-          <ToggleButton selected={filterRegion === 1} onClick={() => handleRegionFilter(1)}>
+          <ToggleButton
+            selected={filterRegion === 1}
+            onClick={() => handleRegionFilter(1)}
+            className="min-w-[6rem]"
+          >
             EN
           </ToggleButton>
         </ToggleButtonGroup>
 
         {/* Rarity Filter */}
-        <ToggleButtonGroup>
-          <ToggleButton selected={filterRarity === 4} onClick={() => handleRarityFilter(4)}>
+        <ToggleButtonGroup className="bg-primary-main">
+          <ToggleButton
+            selected={filterRarity === 4}
+            onClick={() => handleRarityFilter(4)}
+            className="min-w-[6rem]"
+          >
             SR
           </ToggleButton>
-          <ToggleButton selected={filterRarity === 5} onClick={() => handleRarityFilter(5)}>
+          <ToggleButton
+            selected={filterRarity === 5}
+            onClick={() => handleRarityFilter(5)}
+            className="min-w-[6rem]"
+          >
             SSR
           </ToggleButton>
         </ToggleButtonGroup>
 
         {/* Weapon Filter */}
-        <ToggleButtonGroup>
+        <ToggleButtonGroup className="bg-primary-main">
           {weaponTypes.map((weapon) => (
             <ToggleButton
               key={weapon.id}
               selected={filterWeapon === weapon.id}
               onClick={() => handleWeaponFilter(weapon.id)}
+              className="min-w-[6rem]"
             >
               {weapon.abbr}
             </ToggleButton>
@@ -110,12 +127,13 @@ const CharacterGrid: React.FC = () => {
         </ToggleButtonGroup>
 
         {/* Element Filter */}
-        <ToggleButtonGroup>
+        <ToggleButtonGroup className="bg-primary-main">
           {elementTypes.slice(0, -2).map((element) => (
             <ToggleButton
               key={element.id}
               selected={filterElement === element.id}
               onClick={() => handleElementFilter(element.id)}
+              className="min-w-[6rem]"
             >
               {element.name}
             </ToggleButton>
@@ -123,12 +141,13 @@ const CharacterGrid: React.FC = () => {
         </ToggleButtonGroup>
 
         {/* Role Filter */}
-        <ToggleButtonGroup>
+        <ToggleButtonGroup className="bg-primary-main">
           {gunDuties.map((role) => (
             <ToggleButton
               key={role.id}
               selected={filterRole === role.id}
               onClick={() => handleRoleFilter(role.id)}
+              className="min-w-[6rem]"
             >
               {role.name}
             </ToggleButton>

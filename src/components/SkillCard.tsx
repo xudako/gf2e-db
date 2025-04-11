@@ -75,7 +75,9 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
 
         {/* Center Section: Description & Upgrade Buttons */}
         <div className="col-span-2">
-          {stability as number > 0 && <p className="mb-4 text-secondary-main font-bold">{`Stability Damage: ${stability}`}</p>}
+          {(stability as number) > 0 && (
+            <p className="mb-4 text-secondary-main font-bold">{`Stability Damage: ${stability}`}</p>
+          )}
           <RichText content={skill.description} descriptionTips={skill.descriptionTips} />
         </div>
 

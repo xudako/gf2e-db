@@ -16,7 +16,6 @@ const SkillGrid: React.FC<GridProps> = ({ id, range, shape, shapeParam, skillRan
     if (shapeDisplaySkill.shapeDisplay) {
       shape = shapeDisplaySkill.shape;
       shapeParam = shapeDisplaySkill.shapeParam;
-      console.log(shapeDisplaySkill);
     }
   }
 
@@ -26,8 +25,6 @@ const SkillGrid: React.FC<GridProps> = ({ id, range, shape, shapeParam, skillRan
   };
   const gridRange = processInput(range);
   const gridShape = processInput(shapeParam);
-
-  console.log(id, gridRange, gridShape, skillRange, shape);
 
   //grid - actual # of grids
 
@@ -64,7 +61,8 @@ const SkillGrid: React.FC<GridProps> = ({ id, range, shape, shapeParam, skillRan
   } else {
     gridSize =
       shape === 8 || skillRange === 8
-        ? 21 : [9, 17, 21].find((val) => val > 2 * (gridRange[0] + gridShape[0])) ?? 21;
+        ? 21
+        : [9, 17, 21].find((val) => val > 2 * (gridRange[0] + gridShape[0])) ?? 21;
   }
 
   const RANGE_COLOR = '#6979d9'; // info color
@@ -78,12 +76,10 @@ const SkillGrid: React.FC<GridProps> = ({ id, range, shape, shapeParam, skillRan
     const shapeEntry = Tables.BattleShapeData[shapeId];
     if (!shapeEntry) return null;
 
-    // Parse the shape string into a 2D array
     const rows = shapeEntry.shape
       .split(';')
       .map((row: string) => row.slice(1, -1).split(',').map(Number));
 
-    // Calculate offset from center
     const [offsetX, offsetY] = shapeEntry.position.split(',').map(Number);
 
     return {
@@ -98,7 +94,6 @@ const SkillGrid: React.FC<GridProps> = ({ id, range, shape, shapeParam, skillRan
     const canvas = canvasRef.current;
     if (!canvas || !container) return;
 
-    // Make canvas size match container size
     const size = container.clientWidth;
     canvas.width = size;
     canvas.height = size;
@@ -109,11 +104,9 @@ const SkillGrid: React.FC<GridProps> = ({ id, range, shape, shapeParam, skillRan
     const CELL_SIZE = size / gridSize;
     const center = Math.floor(gridSize / 2);
 
-    // Clear canvas with background color
     ctx.fillStyle = BG_COLOR;
     ctx.fillRect(0, 0, size, size);
 
-    // Draw grid cells with gaps
     for (let row = 0; row < gridSize; row++) {
       for (let col = 0; col < gridSize; col++) {
         ctx.fillStyle = row === center && col === center ? CENTER_COLOR : GRID_BG;
@@ -160,19 +153,15 @@ const SkillGrid: React.FC<GridProps> = ({ id, range, shape, shapeParam, skillRan
           case 7:
             const rangeShape = getShapeData(gridRange[0]);
             if (rangeShape) {
-              // Calculate the shape's dimensions
               const shapeHeight = rangeShape.rows.length;
               const shapeWidth = rangeShape.rows[0].length;
 
-              // Calculate the center of the shape
               const shapeCenterX = Math.floor((shapeWidth - 1) / 2);
               const shapeCenterY = Math.floor(shapeHeight / 2);
 
-              // Calculate the grid position relative to the shape's center
               const gridRow = row - center + shapeCenterY;
               const gridCol = col - center + shapeCenterX;
 
-              // Check if the grid position is within the shape bounds
               if (
                 gridRow >= 0 &&
                 gridRow < shapeHeight &&
@@ -236,20 +225,15 @@ const SkillGrid: React.FC<GridProps> = ({ id, range, shape, shapeParam, skillRan
           case 7:
             const shapeData = getShapeData(gridShape[0]);
             if (shapeData) {
-              // Calculate the shape's dimensions
               const shapeHeight = shapeData.rows.length;
               const shapeWidth = shapeData.rows[0].length;
 
-              // Calculate the center of the shape
               const shapeCenterX = shapeWidth - 1;
               const shapeCenterY = shapeHeight;
 
-              // Calculate the grid position relative to the shape's center
               const gridRow = row - center + shapeCenterY + shapeData.offsetY;
               const gridCol = col - center + shapeCenterX + shapeData.offsetX;
 
-              console.log(shapeParam);
-              // Check if the grid position is within the shape bounds
               if (
                 gridRow >= 0 &&
                 gridRow < shapeHeight &&
