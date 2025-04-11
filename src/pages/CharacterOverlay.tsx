@@ -251,6 +251,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                 <div className="col-span-2">
                   <span>Weakness:</span>
                 </div>
+                {character.weak[0] > 0 && (
                 <div className="col-span-4 flex space-x-2">
                   <Tooltip title={Tables.WeaponTagData[character.weak[0]]['name']}>
                     <img
@@ -267,6 +268,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                     />
                   </Tooltip>
                 </div>
+                )}
 
                 {levelStats[0][0] > 0 && (
                   <div className="grid grid-cols-6 gap-2 col-span-6">

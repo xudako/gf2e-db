@@ -18,8 +18,7 @@ const CharacterOverlayWrapper: React.FC = () => {
     return null;
   }
 
-  const name = url.replace(/\b\w/g, (char) => char.toUpperCase());
-  const character: Chr | undefined = characters.find((gun: Chr) => gun.name === name);
+  const character: Chr | undefined = characters.find((chr: Chr) => chr.name.toLowerCase() === url);
 
   return (
     <CharacterOverlay open={!!character} onClose={() => navigate('/dolls')} character={character} />

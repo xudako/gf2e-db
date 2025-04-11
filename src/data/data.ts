@@ -35,6 +35,15 @@ const enDolls: string[] = [
   'Mechty',
 ];
 
+const dollElements: Record<string, number> = {
+  'Mosin-Nagant': 2,
+  'Qiuhua': 1,
+  'Peri': 1,
+  'Nikketa': 5,
+  'Leva': 2,
+  'Robella': 3,
+};
+
 export const gunDuties: Duty[] = gunDutyData['data'].map((duty: any) => ({
   ...duty,
 }));
@@ -58,8 +67,8 @@ export const characters: Chr[] = gunData['data'].map((gun: any) => ({
   skins: gun.costumeReplace,
   region: enDolls.includes(gun.name) ? 1 : 0,
   element:
-    gun.name == 'Mosin-Nagant'
-      ? 2
+    dollElements[gun.name] !== undefined
+      ? dollElements[gun.name]
       : Math.max(
           ...Tables.GunGradeData[gun.id * 100 + 1].abbr.map(
             (skill: any) => Tables.BattleSkillData[skill].elementTag
