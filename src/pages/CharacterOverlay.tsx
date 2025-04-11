@@ -27,7 +27,7 @@ const skillTypes: SkillType[] = [
 ];
 
 interface SkillsByLevel {
-  [level: string]: Skill;
+  [level: string]: Skill | null;
 }
 
 interface SkillTree {
@@ -51,13 +51,13 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   const navigate = useNavigate();
 
   // Skins
-  const skinData = character.skins.map((skinId) => {
-    const skin = Tables.ClothesData[skinId];
-    if (!skin) throw new Error(`Skin with ID ${skinId} not found`);
-    return {
-      ...skin,
-    };
-  });
+  const skinData = character.skins
+    .map(skinId => Tables.ClothesData[skinId])
+    .filter(skin => skin !== undefined);
+
+  if (skinData.length === 0) {
+    skinData.push({ id: 0, name: 'Base', code: character.code });
+  }
 
   const [currentSkin, setCurrentSkin] = useState<Skin>(skinData[0]);
   const displayedImage = `${import.meta.env.BASE_URL}dolls/Avatar_Whole_${currentSkin.code}.png`;
@@ -74,12 +74,21 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
     (x) => character.id * 100 + x
   );
 
-  const skillIds = vertebraeIds.map((vertId) => Tables.GunGradeData[vertId].abbr);
+  const skillIds = vertebraeIds.map((vertId) => {
+    const gunGradeData = Tables.GunGradeData[vertId];
+    return gunGradeData ? gunGradeData.abbr : null;
+  }).filter(Boolean);
 
   const allSkills: SkillTree = {};
 
-  [character.skillNormalAttack].concat(skillIds.flat()).forEach((id) => {
+  const skillsToProcess = [character.skillNormalAttack].concat(skillIds.flat()).filter(Boolean);
+
+  skillsToProcess.forEach((id) => {
+    if (!id) return;
+    
     const idString = id.toString();
+    if (idString.length < 8) return;
+    
     const type = idString.substring(4, 6);
     const level = idString.substring(6, 8);
 
@@ -87,17 +96,28 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
       allSkills[type] = {};
     }
 
-    allSkills[type][level] = loadDollSkill(id, character);
+    const skill = loadDollSkill(id, character);
+    if (skill) {
+      allSkills[type][level] = skill;
+    }
   });
 
-  const [currentSkillType, setCurrentSkillType] = useState<SkillTypeId>(skillTypes[0].id);
+  if (Object.keys(allSkills).length === 0) {
+    const defaultType = '01' as SkillTypeId;
+    allSkills[defaultType] = { '01': null };
+  }
+
+  const [currentSkillType, setCurrentSkillType] = useState<SkillTypeId>(
+    (Object.keys(allSkills)[0] as SkillTypeId) || ('01' as SkillTypeId)
+  );
+
   const [currentSkillLevels, setCurrentSkillLevels] = useState<Map<SkillTypeId, string>>(
     new Map(skillTypes.map((type) => [type.id, '01']))
   );
   const [currentSkillLevel, setCurrentSkillLevel] = useState<string>('01');
-  const [currentSkill, setCurrentSkill] = useState<Skill>(allSkills['01']['01']);
-  const [currentLevel, setCurrentLevel] = useState(60);
-  const [currentRange, setCurrentRange] = useState(60);
+  const [currentSkill, setCurrentSkill] = useState<Skill | null>(
+    (allSkills[currentSkillType] && allSkills[currentSkillType]['01']) || null
+  );
 
   useEffect(() => {
     setCurrentSkillLevels((prevLevels) =>
@@ -117,23 +137,32 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
       allSkills[currentSkillType] &&
       level &&
       allSkills[currentSkillType][level]
-    )
+    ) {
       setCurrentSkill(allSkills[currentSkillType][level]);
+    } else {
+      setCurrentSkill(null);
+    }
   }, [currentSkillType, currentSkillLevels]);
 
   const handleSkillTypeChange = (newSkillTypeId: SkillTypeId) => {
-    setCurrentSkillType(newSkillTypeId);
+    if (allSkills[newSkillTypeId]) {
+      setCurrentSkillType(newSkillTypeId);
+    }
   };
 
-  // Stats
-  const getLevels = (skillType: string): string[] => {
-    const levels = allSkills[skillType] ? Object.keys(allSkills[skillType]).sort() : [];
-    return levels;
+  const getSkillLevels = (skillType: string): string[] => {
+    return allSkills[skillType] ? Object.keys(allSkills[skillType]).sort() : [];
   };
 
   const handleSkillLevelChange = (newLevel: string) => {
-    setCurrentSkillLevel(newLevel);
+    if (allSkills[currentSkillType] && allSkills[currentSkillType][newLevel] !== undefined) {
+      setCurrentSkillLevel(newLevel);
+    }
   };
+
+  // Stats
+  const [currentLevel, setCurrentLevel] = useState(60);
+  const [currentRange, setCurrentRange] = useState(60);
 
   const levelStats = getDollStats(character.id);
 
@@ -239,39 +268,43 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                   </Tooltip>
                 </div>
 
-                <StatDisplay
-                  img="Icon_Pow_64"
-                  stat={levelStats[currentLevel + currentRange / 10 - 3][1]}
-                />
-                <StatDisplay
-                  img="Icon_Armor_64"
-                  stat={levelStats[currentLevel + currentRange / 10 - 3][2]}
-                />
-                <StatDisplay
-                  img="Icon_Hp_64"
-                  stat={levelStats[currentLevel + currentRange / 10 - 3][3]}
-                />
-                <StatDisplay
-                  img="Icon_Will_64"
-                  stat={
-                    Tables.PropertyData[Tables.GunData[character.id].propertyId]['maxWillValue']
-                  }
-                />
-                <StatDisplay
-                  img="Icon_Max_Ap_64"
-                  stat={Tables.PropertyData[Tables.GunData[character.id].propertyId]['maxAp'] / 100}
-                />
-                <div className="col-span-1"></div>
-                <LevelSlider
-                  currentLevel={currentLevel}
-                  currentRange={currentRange}
-                  onLevelChange={setCurrentLevel}
-                  onRangeChange={setCurrentRange}
-                />
+                {levelStats[0][0] > 0 && (
+                  <div className="grid grid-cols-6 gap-2 col-span-6">
+                    <StatDisplay
+                      img="Icon_Pow_64"
+                      stat={levelStats[currentLevel + currentRange / 10 - 3][1]}
+                    />
+                    <StatDisplay
+                      img="Icon_Armor_64"
+                      stat={levelStats[currentLevel + currentRange / 10 - 3][2]}
+                    />
+                    <StatDisplay
+                      img="Icon_Hp_64"
+                      stat={levelStats[currentLevel + currentRange / 10 - 3][3]}
+                    />
+                    <StatDisplay
+                      img="Icon_Will_64"
+                      stat={
+                        Tables.PropertyData[Tables.GunData[character.id].propertyId]['maxWillValue']
+                      }
+                    />
+                    <StatDisplay
+                      img="Icon_Max_Ap_64"
+                      stat={Tables.PropertyData[Tables.GunData[character.id].propertyId]['maxAp'] / 100}
+                    />
+                    <div className="col-span-1"></div></div>)}
+                    {levelStats[0][0] > 0 && (<div className="col-span-6">
+                    <LevelSlider
+                      currentLevel={currentLevel}
+                      currentRange={currentRange}
+                      onLevelChange={setCurrentLevel}
+                      onRangeChange={setCurrentRange}
+                    />
+                  </div>)}
               </div>
 
               {/* Skills Info */}
-              <div className="mt-4 space-y-4">
+              {currentSkill && <div className="mt-4 space-y-4">
                 <div className="flex flex-wrap gap-2">
                   {skillTypes.map((skillType) => (
                     <ToggleButton
@@ -284,9 +317,9 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                   ))}
                 </div>
 
-                {currentSkillType && getLevels(currentSkillType).length > 1 && (
+                {currentSkillType && getSkillLevels(currentSkillType).length > 1 && (
                   <div className="flex flex-wrap gap-2">
-                    {getLevels(currentSkillType).map((level) => (
+                    {getSkillLevels(currentSkillType).map((level) => (
                       <ToggleButton
                         key={level}
                         selected={currentSkillLevel === level}
@@ -299,7 +332,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                 )}
 
                 <SkillCard skill={currentSkill} />
-              </div>
+              </div>}
 
               {/* Talents Info */}
               <div className="mt-4 space-y-4">

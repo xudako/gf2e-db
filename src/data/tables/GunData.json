@@ -3851,6 +3851,705 @@
             "shapeTerrain": 0,
             "isHide": false,
             "feature": 0
+        },
+        {
+            "id": 1048,
+            "name": "Quihua",
+            "firstName": "秋桦",
+            "secondName": "-",
+            "enName": "QiuhuaSSR",
+            "introduce": "热情直爽，豁达乐观的高能量人形。身为黄区美食猎人，为改变人们食不果腹的困境而努力开发着新食材。路见不平拔刀相助是她的日常，绝不让一个话茬子落在地上是她的信条。“虽然我对锅包肉里加番茄酱还是不能苟同，但如果合你的口味，咱也不是不能忍了。”",
+            "dialogue": "太好了，是野生香料和蛋白质……长官？您来得正是时候，今天您可有口福啦！",
+            "code": "QiuhuaSSR",
+            "type": 4,
+            "characterId": 33,
+            "getAudio": 7104822,
+            "duty": 2,
+            "secondDuty": [
+                11,
+                33,
+                16
+            ],
+            "rank": 5,
+            "roleTemplateId": 1048,
+            "coreItemId": 4048,
+            "skillNormalAttack": 10480101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "element": 1,
+            "weaponType": 6,
+            "weaponPrivate": [
+                10483
+            ],
+            "weaponPrivateShow": [
+                10481,
+                10482,
+                10483
+            ],
+            "weaponDefault": 10481,
+            "moveCode": 27,
+            "soldGet1": {
+                "4048": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1048,
+            "gunClass": 35,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1104800,
+            "costumeReplace": [
+                1104800
+            ],
+            "propertyId": 11048,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/QiuhuaSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "4",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44048
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12104805,
+            "gachaGetVoice": 71104805,
+            "weakWeaponTag": 8,
+            "BGEOPIAGBKE": "放心吧，长官！我办事，您放心！",
+            "KJLGGIDKCEM": [
+                104,
+                201,
+                304,
+                401,
+                501,
+                601,
+                801,
+                902
+            ],
+            "extra": "",
+            "skillActiveExtra": [],
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
+            "id": 1053,
+            "name": "Peri",
+            "firstName": "佩莉",
+            "enName": "PeriSSR",
+            "introduce": "体型娇小，却有着远大志向的可爱人形。追随着师父的脚步，佩莉逐渐成长为独当一面的暗商。活泼乐观的性格为她争取到许多客户的信任，精明老道的眼光也总能让她避开麻烦。一切的努力都是为了成为一个超酷的靠谱人形，所以偶尔也尝试着多依靠她一下吧？",
+            "dialogue": "佩莉前来报到！相比以前，我可是成长了很多哦！欸？您，您从暗商那听过这个名字吗？",
+            "code": "PeriSSR",
+            "type": 2,
+            "characterId": 38,
+            "getAudio": 7105322,
+            "duty": 1,
+            "secondDuty": [
+                42,
+                35
+            ],
+            "rank": 5,
+            "roleTemplateId": 1053,
+            "coreItemId": 4053,
+            "skillNormalAttack": 10530101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "element": 1,
+            "weaponType": 2,
+            "weaponPrivate": [
+                10533
+            ],
+            "weaponPrivateShow": [
+                10531,
+                10532,
+                10533
+            ],
+            "weaponDefault": 10531,
+            "moveCode": 27,
+            "soldGet1": {
+                "4053": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1053,
+            "gunClass": 34,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1105300,
+            "costumeReplace": [
+                1105300
+            ],
+            "propertyId": 11053,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/PeriSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "3",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44053
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12105305,
+            "gachaGetVoice": 71105305,
+            "weakWeaponTag": 4,
+            "BGEOPIAGBKE": "嘿呀，指令收到！这次就给指挥官免单服务吧！",
+            "KJLGGIDKCEM": [
+                103,
+                201,
+                301,
+                401,
+                601,
+                902
+            ],
+            "secondName": "",
+            "extra": "",
+            "skillActiveExtra": [],
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
+            "id": 1054,
+            "name": "YooHee",
+            "firstName": "幼熙",
+            "enName": "YooHeeSSR",
+            "introduce": "热情且有责任心，专注地投身于舞蹈的人形。追随着指挥官的称赞而成为舞者，又为了担起“前辈”的责任而组建火花舞团，向更多的流浪人形提供安身之所。在精进舞艺的路上从未懈怠，好学自律是她前进的基石，认准目标不服输是她成功的诀窍。不用怀疑，相信她就好。因为答应的事她必定说到做到。“跟上节奏，让我们引爆全场！”",
+            "dialogue": "表情、姿态……嗯，没问题，登台的时候要……诶？指、指挥官，您也来看我的舞蹈吗！",
+            "code": "YooHeeSSR",
+            "characterId": 39,
+            "getAudio": 7105422,
+            "duty": 3,
+            "secondDuty": [
+                44,
+                43
+            ],
+            "rank": 5,
+            "roleTemplateId": 1054,
+            "coreItemId": 4054,
+            "skillNormalAttack": 10540101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "weaponType": 4,
+            "weaponPrivate": [
+                10543
+            ],
+            "weaponPrivateShow": [
+                10541,
+                10542,
+                10543
+            ],
+            "weaponDefault": 10541,
+            "moveCode": 27,
+            "soldGet1": {
+                "4054": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1054,
+            "gunClass": 36,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1105400,
+            "costumeReplace": [
+                1105400,
+                1105401
+            ],
+            "propertyId": 11054,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/YooHeeSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "3",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44054
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12105405,
+            "gachaGetVoice": 71105405,
+            "weakWeaponTag": 32,
+            "BGEOPIAGBKE": "准备好了吗？让我们惊艳全场吧！",
+            "KJLGGIDKCEM": [
+                102,
+                206,
+                302,
+                402,
+                708,
+                902
+            ],
+            "secondName": "",
+            "extra": "",
+            "type": 0,
+            "skillActiveExtra": [],
+            "element": 0,
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
+            "id": 1055,
+            "name": "Nikketa",
+            "firstName": "妮基塔",
+            "enName": "NikketaSSR",
+            "introduce": "坚持正义的治安人员、爱护孩子的温柔姐姐、花钱不眨眼的月光族——谁说这些身份不能是同一个人？奋战于守护正义的一线，妮基塔冷静地践行着自己的原则，但在面对你时，她也会流露出特别的一面。“我的工作告诉我，不要完全相信任何人。不过，BOSS是例外了，我们可是一起追逐正义的伙伴呢。”",
+            "dialogue": "要和我一起守卫正义吗，BOSS？",
+            "code": "NikketaSSR",
+            "characterId": 40,
+            "getAudio": 7105541,
+            "duty": 4,
+            "secondDuty": [
+                6,
+                32,
+                17
+            ],
+            "rank": 5,
+            "roleTemplateId": 1055,
+            "coreItemId": 4055,
+            "skillNormalAttack": 10550101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "element": 5,
+            "weaponType": 3,
+            "weaponPrivate": [
+                10553
+            ],
+            "weaponPrivateShow": [
+                10551,
+                10552,
+                10553
+            ],
+            "weaponDefault": 10551,
+            "moveCode": 27,
+            "soldGet1": {
+                "4055": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1055,
+            "gunClass": 37,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1105500,
+            "costumeReplace": [
+                1105500,
+                1105501
+            ],
+            "propertyId": 11055,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/NikketaSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "2",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44055
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12105505,
+            "gachaGetVoice": 71105505,
+            "weakWeaponTag": 2,
+            "BGEOPIAGBKE": "BOSS，我办事，你放心。",
+            "KJLGGIDKCEM": [
+                101,
+                202,
+                303,
+                402,
+                502,
+                602,
+                902
+            ],
+            "secondName": "",
+            "extra": "",
+            "type": 0,
+            "skillActiveExtra": [],
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
+            "id": 1056,
+            "name": "Leva",
+            "firstName": "莱娅",
+            "enName": "LevaSSR",
+            "introduce": "如果觉得眼前的人形亲切友善，那多半已经踏入她的陷阱之中了。倘若未能及时察觉，接下来的一切损失，莱娅概不负责，除非……这个人是你。\n“指挥官，不会是故意吃亏的吧？哼哼♪那也无所谓，你想让我怎么对你负责呢？”",
+            "dialogue": "接下来，我们的合作将会更加紧密哟，期不期待呀，指挥官？",
+            "code": "LevaSSR",
+            "characterId": 41,
+            "getAudio": 7105622,
+            "duty": 4,
+            "secondDuty": [
+                5,
+                45
+            ],
+            "rank": 5,
+            "roleTemplateId": 1056,
+            "coreItemId": 4056,
+            "skillNormalAttack": 10560101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "element": 2,
+            "weaponType": 2,
+            "weaponPrivate": [
+                10563
+            ],
+            "weaponPrivateShow": [
+                10561,
+                10562,
+                10563
+            ],
+            "weaponDefault": 10561,
+            "moveCode": 27,
+            "soldGet1": {
+                "4056": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1056,
+            "gunClass": 38,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1105600,
+            "costumeReplace": [
+                1105600,
+                1105601
+            ],
+            "propertyId": 11056,
+            "barrackEffectId": [
+                105601,
+                105602
+            ],
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/LevaSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "3",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44056
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12105605,
+            "gachaGetVoice": 71105605,
+            "weakWeaponTag": 4,
+            "BGEOPIAGBKE": "我一定会尽·心·尽·力配合你哟，指挥官。",
+            "KJLGGIDKCEM": [
+                101,
+                203,
+                301,
+                402,
+                501,
+                707,
+                901,
+                902
+            ],
+            "secondName": "",
+            "extra": "",
+            "type": 0,
+            "skillActiveExtra": [],
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
+            "id": 1057,
+            "name": "Robella",
+            "firstName": "洛贝拉",
+            "enName": "RobellaSSR",
+            "introduce": "0",
+            "dialogue": "",
+            "code": "RobellaSSR",
+            "characterId": 42,
+            "duty": 4,
+            "rank": 5,
+            "roleTemplateId": 1057,
+            "coreItemId": 4057,
+            "skillNormalAttack": 10570101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "weaponType": 2,
+            "weaponPrivate": [
+                10573
+            ],
+            "weaponPrivateShow": [
+                10571,
+                10572,
+                10573
+            ],
+            "weaponDefault": 10571,
+            "moveCode": 27,
+            "soldGet1": {
+                "4057": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1057,
+            "gunClass": 5,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1105700,
+            "costumeReplace": [
+                1105700
+            ],
+            "propertyId": 11017,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/RobellaSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "isHide": true,
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44057
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "BGEOPIAGBKE": "",
+            "secondName": "",
+            "extra": "",
+            "type": 0,
+            "getAudio": 0,
+            "secondDuty": [],
+            "skillActiveExtra": [],
+            "element": 0,
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "weakTag": "",
+            "gachaGetAudio": 0,
+            "gachaGetVoice": 0,
+            "weakWeaponTag": 0,
+            "feature": 0,
+            "KJLGGIDKCEM": []
         }
     ]
 }

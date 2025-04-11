@@ -24,7 +24,7 @@ const attrs = [
 
 export const loadDollSkill = (skillId: number, character: Chr) => {
   const [data, display] = [Tables.BattleSkillData[skillId], Tables.BattleSkillDisplayData[skillId]];
-  if (!data || !display) throw new Error(`Skill with ID ${skillId} not found`);
+  if (!data || !display) return;
   return {
     ...data,
     ...display,
@@ -37,7 +37,7 @@ export const loadDollSkill = (skillId: number, character: Chr) => {
 
 export const loadSkill = (skillId: number) => {
   const display = Tables.BattleSkillDisplayData[skillId];
-  if (!display) throw new Error(`Skill with ID ${skillId} not found`);
+  if (!display) return;
   return {
     ...display,
   };
@@ -47,6 +47,7 @@ export function getDollStats(dollId: number): number[][] {
   const doll = Tables.GunData[dollId];
 
   const group = Tables.GunClassByGunClassGroupIdData[doll.gunClass];
+  if (!group) return [[0, 0, 0, 0]];
   let classes = group.id.map((cid: number) => Tables.GunClassData[cid]);
 
   const baseProp = Tables.PropertyData[doll.propertyId];
