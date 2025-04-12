@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Chr, Skill, Skin } from '../types';
 import { loadDollSkill, getDollStats, getAffectStats, getTalents } from '../utils/doll-utils';
+import { formatWeaponUrl } from '../utils/utils';
 import SkillCard from '../components/SkillCard';
 import Tables from '../data/TableLoader';
 import ToggleButtonGroup from '../components/ToggleButtonGroup';
@@ -28,11 +29,18 @@ const skillTypes: SkillType[] = [
 ];
 
 interface SkillsByLevel {
-  [level: string]: Skill | null;
+  [level: string]: { skill: Skill | null; vertebrae: number };
 }
 
 interface SkillTree {
   [sType: string]: SkillsByLevel;
+}
+
+interface VertebraeMapping {
+  [vertebrae: number]: {
+    skillType: SkillTypeId;
+    skillLevel: string;
+  };
 }
 
 interface CharacterOverlayProps {
@@ -83,10 +91,10 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
     .filter(Boolean);
 
   const allSkills: SkillTree = {};
+  const vertebraeToSkillMapping: VertebraeMapping = {};
 
   const skillsToProcess = [character.skillNormalAttack].concat(skillIds.flat()).filter(Boolean);
-
-  skillsToProcess.forEach((id) => {
+  skillsToProcess.forEach((id, index) => {
     if (!id) return;
 
     const idString = id.toString();
@@ -94,6 +102,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
 
     const type = idString.substring(4, 6);
     const level = idString.substring(6, 8);
+    const vertebrae = Math.max(0, index - 4);
 
     if (!allSkills[type]) {
       allSkills[type] = {};
@@ -101,66 +110,102 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
 
     const skill = loadDollSkill(id, character);
     if (skill) {
-      allSkills[type][level] = skill;
+      allSkills[type][level] = { skill, vertebrae };
+      vertebraeToSkillMapping[vertebrae] = {
+        skillType: type as SkillTypeId,
+        skillLevel: level
+      };
     }
   });
 
   if (Object.keys(allSkills).length === 0) {
     const defaultType = '01' as SkillTypeId;
-    allSkills[defaultType] = { '01': null };
+    allSkills[defaultType] = { '01': { skill: null, vertebrae: 0 } };
+    vertebraeToSkillMapping[0] = {
+      skillType: defaultType,
+      skillLevel: '01'
+    };
   }
 
   const [currentSkillType, setCurrentSkillType] = useState<SkillTypeId>(
     (Object.keys(allSkills)[0] as SkillTypeId) || ('01' as SkillTypeId)
   );
 
-  const [currentSkillLevels, setCurrentSkillLevels] = useState<Map<SkillTypeId, string>>(
-    new Map(skillTypes.map((type) => [type.id, '01']))
+  const initialSkillLevels = new Map<SkillTypeId, string>();
+  skillTypes.forEach(type => {
+    if (allSkills[type.id]) {
+      initialSkillLevels.set(type.id, Object.keys(allSkills[type.id])[0] || '01');
+    } else {
+      initialSkillLevels.set(type.id, '01');
+    }
+  });
+  
+  const [skillLevelMemory, setSkillLevelMemory] = useState<Map<SkillTypeId, string>>(initialSkillLevels);
+  const [currentSkillLevel, setCurrentSkillLevel] = useState<string>(
+    skillLevelMemory.get(currentSkillType) || '01'
   );
-  const [currentSkillLevel, setCurrentSkillLevel] = useState<string>('01');
   const [currentSkill, setCurrentSkill] = useState<Skill | null>(
-    (allSkills[currentSkillType] && allSkills[currentSkillType]['01']) || null
+    (allSkills[currentSkillType] && allSkills[currentSkillType][currentSkillLevel] && 
+     allSkills[currentSkillType][currentSkillLevel].skill) || null
   );
+  const [currentVertebrae, setCurrentVertebrae] = useState<number>(0);
 
   useEffect(() => {
-    setCurrentSkillLevels((prevLevels) =>
-      new Map(prevLevels).set(currentSkillType, currentSkillLevel)
-    );
-  }, [currentSkillLevel]);
-
-  useEffect(() => {
-    setCurrentSkillLevel(currentSkillLevels.get(currentSkillType) ?? '01');
-  }, [currentSkillType]);
-
-  useEffect(() => {
-    const level = currentSkillLevels.get(currentSkillType);
     if (
       currentSkillType &&
-      currentSkillLevels &&
       allSkills[currentSkillType] &&
-      level &&
-      allSkills[currentSkillType][level]
+      currentSkillLevel &&
+      allSkills[currentSkillType][currentSkillLevel]
     ) {
-      setCurrentSkill(allSkills[currentSkillType][level]);
+      setCurrentSkill(allSkills[currentSkillType][currentSkillLevel].skill);
+      
+      const vertebrae = allSkills[currentSkillType][currentSkillLevel].vertebrae;
+      if (vertebrae !== currentVertebrae) {
+        setCurrentVertebrae(vertebrae);
+      }
     } else {
       setCurrentSkill(null);
     }
-  }, [currentSkillType, currentSkillLevels]);
+  }, [currentSkillType, currentSkillLevel]);
+
+  const handleVertebraeChange = (newVertebrae: number) => {
+    setCurrentVertebrae(newVertebrae);
+    
+    const mapping = vertebraeToSkillMapping[newVertebrae];
+    if (mapping) {
+      setCurrentSkillType(mapping.skillType);
+      setCurrentSkillLevel(mapping.skillLevel);
+      
+      setSkillLevelMemory(prev => new Map(prev).set(mapping.skillType, mapping.skillLevel));
+    }
+  };
 
   const handleSkillTypeChange = (newSkillTypeId: SkillTypeId) => {
     if (allSkills[newSkillTypeId]) {
       setCurrentSkillType(newSkillTypeId);
+      
+      const rememberedLevel = skillLevelMemory.get(newSkillTypeId);
+      if (rememberedLevel && allSkills[newSkillTypeId][rememberedLevel]) {
+        setCurrentSkillLevel(rememberedLevel);
+      } else {
+        const firstLevel = Object.keys(allSkills[newSkillTypeId]).sort()[0];
+        if (firstLevel) {
+          setCurrentSkillLevel(firstLevel);
+          setSkillLevelMemory(prev => new Map(prev).set(newSkillTypeId, firstLevel));
+        }
+      }
     }
-  };
-
-  const getSkillLevels = (skillType: string): string[] => {
-    return allSkills[skillType] ? Object.keys(allSkills[skillType]).sort() : [];
   };
 
   const handleSkillLevelChange = (newLevel: string) => {
     if (allSkills[currentSkillType] && allSkills[currentSkillType][newLevel] !== undefined) {
       setCurrentSkillLevel(newLevel);
+      setSkillLevelMemory(prev => new Map(prev).set(currentSkillType, newLevel));
     }
+  };
+
+  const getSkillLevels = (skillType: string): string[] => {
+    return allSkills[skillType] ? Object.keys(allSkills[skillType]).sort() : [];
   };
 
   // Stats
@@ -285,24 +330,15 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                   <div className="grid grid-cols-6 gap-2 col-span-6">
                     <StatDisplay
                       img="Icon_Pow_64"
-                      stat={
-                        levelStats[currentLevel + currentRange / 10 - 3][1] +
-                        affectStats[currentAffect - 1][1]
-                      }
+                      stat={levelStats[currentLevel + currentRange / 10 - 3][1] + affectStats[currentAffect - 1][1]}
                     />
                     <StatDisplay
                       img="Icon_Armor_64"
-                      stat={
-                        levelStats[currentLevel + currentRange / 10 - 3][2] +
-                        affectStats[currentAffect - 1][2]
-                      }
+                      stat={levelStats[currentLevel + currentRange / 10 - 3][2] + affectStats[currentAffect - 1][2]}
                     />
                     <StatDisplay
                       img="Icon_Hp_64"
-                      stat={
-                        levelStats[currentLevel + currentRange / 10 - 3][3] +
-                        affectStats[currentAffect - 1][3]
-                      }
+                      stat={levelStats[currentLevel + currentRange / 10 - 3][3] + affectStats[currentAffect - 1][3]}
                     />
                     <StatDisplay
                       img="Icon_Will_64"
@@ -328,7 +364,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                       onRangeChange={setCurrentRange}
                     />
                     <span>Affection:</span>
-                    <ToggleButtonGroup>
+                    <ToggleButtonGroup className="mt-2">
                       {affectStats.map((affect) => (
                         <ToggleButton
                           key={affect[0]}
@@ -338,6 +374,14 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                           {affect[0]}
                         </ToggleButton>
                       ))}
+                      <ToggleButton
+                        key={6}
+                        selected={currentAffect === 6}
+                        onClick={() => handleAffectChange(6)}
+                        className={"pointer-events-none select-none opacity-50 cursor-not-allowed"}
+                      >
+                        Oath
+                      </ToggleButton>
                     </ToggleButtonGroup>
                   </div>
                 )}
@@ -345,8 +389,10 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
 
               {/* Skills Info */}
               {currentSkill && (
-                <div className="mt-4 space-y-4">
-                  <div className="flex flex-wrap gap-2">
+                <div>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 my-4">
+                  <div className="col-span-2">
+                    <ToggleButtonGroup>
                     {skillTypes.map((skillType) => (
                       <ToggleButton
                         key={skillType.id}
@@ -356,10 +402,12 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                         {skillType.name}
                       </ToggleButton>
                     ))}
+                    </ToggleButtonGroup>
                   </div>
 
-                  {currentSkillType && getSkillLevels(currentSkillType).length > 1 && (
-                    <div className="flex flex-wrap gap-2">
+                  <div className="col-span-1">
+                    {currentSkillType && getSkillLevels(currentSkillType).length > 1 && (
+                      <ToggleButtonGroup>
                       {getSkillLevels(currentSkillType).map((level) => (
                         <ToggleButton
                           key={level}
@@ -369,9 +417,22 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                           {level}
                         </ToggleButton>
                       ))}
-                    </div>
-                  )}
-
+                      </ToggleButtonGroup>
+                    )}
+                  </div>
+                  </div>
+                  <span className="text-primary-text">Vertebrae:</span>
+                  <ToggleButtonGroup className="mb-4 mt-2">
+                    {Array.from({ length: 7 }, (_, i) => i).map((i) => (
+                      <ToggleButton
+                        key={i}
+                        selected={currentVertebrae === i}
+                        onClick={() => handleVertebraeChange(i)}
+                      >
+                        {i}
+                      </ToggleButton>
+                    ))}
+                  </ToggleButtonGroup>
                   <SkillCard skill={currentSkill} />
                 </div>
               )}
@@ -414,7 +475,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                   src={`${import.meta.env.BASE_URL}weapons/${sig.resCode}_1024.png`}
                   alt="Signature weapon"
                   onClick={() =>
-                    navigate(`/weapons/${sig.name.toLowerCase().replace(/\s+/g, '-')}`)
+                    navigate(`/weapons/${formatWeaponUrl(sig.name)}`)
                   }
                   className="cursor-pointer hover:opacity-80"
                 />

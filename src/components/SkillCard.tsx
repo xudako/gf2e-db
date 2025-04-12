@@ -68,8 +68,26 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
 
           {/* Stability/Cost/Cooldown Info */}
           <div className="flex justify-around mt-8">
-            <p>{`Cost: ${skill.potentialCost}`}</p>
-            <p>{`Cooldown: ${skill.cdTime}`}</p>
+            {skill.cdTime > 0 && (
+              <div className="bg-primary-main text-primary-text px-2 py-1 rounded inline-flex items-center gap-1 min-w-fit">
+                <img
+                  className="h-[1em] w-auto"
+                  src={`${import.meta.env.BASE_URL}icons/Icon_CD.png`}
+                  alt="Cooldown"
+                />
+                <span className="hidden 2xl:inline">Cooldown </span>{skill.cdTime}
+              </div>
+            )}
+            {skill.potentialCost > 0 && (
+              <div className="bg-primary-main text-primary-text px-2 py-1 rounded inline-flex items-center gap-1 min-w-fit">
+                <img
+                  className="h-[1em] w-auto"
+                  src={`${import.meta.env.BASE_URL}icons/Icon_Combat_Consume.png`}
+                  alt="Cost"
+                />
+                <span className="hidden 2xl:inline">Confectance </span>{skill.potentialCost}
+              </div>
+            )}
           </div>
         </div>
 
