@@ -4,6 +4,7 @@ import { characters, gunDuties, weaponTypes, elementTypes } from '../data/data';
 import { useNavigate } from 'react-router-dom';
 import ToggleButtonGroup from '../components/ToggleButtonGroup';
 import ToggleButton from '../components/ToggleButton';
+import { asset } from '../utils/utils';
 
 function stripCode(input: string): string {
   return input.replace(/ssr$/i, '').replace(/sr$/i, '');
@@ -69,6 +70,7 @@ const CharacterGrid: React.FC = () => {
     <div>
       <div className="flex flex-wrap gap-4 mb-4">
         <input
+          id="search"
           type="text"
           placeholder="Search"
           value={searchQuery}
@@ -185,12 +187,12 @@ const CharacterGrid: React.FC = () => {
             <img
               src={
                 character === hoveredCharacter
-                  ? `${import.meta.env.BASE_URL}dolls/Img_KittyCafe_Cat_${stripCode(character.code)}.png`
-                  : `${import.meta.env.BASE_URL}dolls/Avatar_Head_${character.code}_Spine.png`
+                  ? asset(`dolls/Img_KittyCafe_Cat_${stripCode(character.code)}.png`)
+                  : asset(`dolls/Avatar_Head_${character.code}_Spine.png`)
               }
               alt={character.name}
               onError={(e) =>
-                (e.currentTarget.src = `${import.meta.env.BASE_URL}images/default.png`)
+                (e.currentTarget.src = asset('images/default.png'))
               }
               className={`w-full aspect-square object-cover rounded-lg 
                 ${character.rank === 5 ? 'bg-rarity-ssr' : 'bg-rarity-sr'}`}

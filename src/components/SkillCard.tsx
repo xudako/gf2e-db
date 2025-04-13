@@ -3,6 +3,7 @@ import SkillGrid from './SkillGrid';
 import RichText from './RichText';
 import SkillIcon from './SkillIcon';
 import Tables from '../data/TableLoader';
+import { asset } from '../utils/utils';
 
 const SkillCard = ({ skill }: { skill: Skill }) => {
   if (!skill) return;
@@ -54,30 +55,28 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
 
   return (
     <div className="p-6 rounded-lg bg-background-paper w-full">
-      <div className="grid grid-cols-12 gap-4 p-4">
+      <div className="grid sm:grid-cols-6 lg:grid-cols-12 gap-4 p-4">
         {/* Top row: Icon, Name/Tags, Element/Weapon */}
-        <div className="col-span-1 self-start">
+        <div className="sm:col-span-2 lg:col-span-1 self-start">
           {/* Icon aligned with name */}
           <SkillIcon skill={skill.icon} className="h-16 w-16" />
         </div>
 
-        <div className="col-span-8 mx-4">
+        <div className="sm:col-span-3 lg:col-span-8 mx-4">
           {/* Name and Tags */}
           <h5 className="text-secondary text-xl font-bold">{skill.name}</h5>
           <div className="flex flex-wrap gap-2 mt-2 text-gray-500">{skill.skillTag}</div>
         </div>
 
         {/* Element/Weapon icons */}
-        <div className="col-span-3 flex items-end justify-end">
+        <div className="sm:col-span-1 lg:col-span-3 flex items-end sm:justify-end">
           <div className="flex items-center">
             {skill.weaponTag > 0 && (
               <div className="flex items-center ml-2">
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-element-bg">
                   <img
-                    src={`${import.meta.env.BASE_URL}icons/${
-                      Tables.WeaponTagData[skill.weaponTag].icon
-                    }_Weakpoint.png`}
-                    alt={'Weapon Icon'}
+                    src={asset(`icons/${Tables.WeaponTagData[skill.weaponTag].icon}_Weakpoint.png`)}
+                    alt="Weapon Icon"
                     className="w-6 h-6"
                   />
                 </div>
@@ -90,10 +89,8 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
               <div className="flex items-center ml-2">
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-element-bg">
                   <img
-                    src={`${import.meta.env.BASE_URL}icons/${
-                      Tables.LanguageElementData[skill.elementTag].icon
-                    }_Weakpoint.png`}
-                    alt={'Element Icon'}
+                    src={asset(`icons/${Tables.LanguageElementData[skill.elementTag].icon}_Weakpoint.png`)}
+                    alt="Element Icon"
                     className="w-6 h-6"
                   />
                 </div>
@@ -106,7 +103,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
         </div>
 
         {/* Middle row: Description */}
-        <div className="col-span-9">
+        <div className="sm:col-span-5 lg:col-span-9">
           {(stability as number) > 0 && (
             <p className="mb-2 text-secondary-main font-bold">{`Stability Damage: ${stability}`}</p>
           )}
@@ -114,7 +111,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
         </div>
 
         {/* Grid area */}
-        <div className="col-span-3">
+        <div className="sm:col-span-1 lg:col-span-3">
           <SkillGrid
             id={skill.id}
             range={skill.range}
@@ -124,14 +121,14 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
           />
         </div>
         {/* Cooldown/Cost */}
-        <div className="col-span-9">
+        <div className="sm:col-span-5 lg:col-span-9">
           <div className="flex gap-2 mt-4 items-end">
             {skill.cdTime > 0 && (
               <div className="bg-gray-500 text-primary-text px-2 py-1 rounded inline-flex items-center justify-between w-40">
                 <div className="flex items-center gap-1">
                   <img
                     className="h-[1em] w-auto"
-                    src={`${import.meta.env.BASE_URL}icons/Icon_CD.png`}
+                    src={asset('icons/Icon_CD.png')}
                     alt="Cooldown"
                   />
                   <span>Cooldown</span>
@@ -144,7 +141,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
                 <div className="flex items-center gap-1">
                   <img
                     className="h-[1em] w-auto"
-                    src={`${import.meta.env.BASE_URL}icons/Icon_Combat_Consume.png`}
+                    src={asset('icons/Icon_Combat_Consume.png')}
                     alt="Cost"
                   />
                   <span>Confectance</span>
@@ -154,7 +151,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
             )}
           </div>
         </div>
-        <div className="col-span-3">
+        <div className="sm:col-span-1 lg:col-span-3">
           <div className="flex justify-between mt-2">
             <p>Range</p>
             <p>{dispRange}</p>

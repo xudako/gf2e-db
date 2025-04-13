@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { asset } from '../utils/utils';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ const Header = () => {
           <div className="flex items-center">
             <NavLink to="/" className="flex items-center">
               <img
-                src={`${import.meta.env.BASE_URL}images/default.png`}
+                src={asset('images/default.png')}
                 alt="Logo"
                 className="h-10 w-10 mr-4"
               />

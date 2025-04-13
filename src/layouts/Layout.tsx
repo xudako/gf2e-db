@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { asset } from '../utils/utils';
 import Header from './Header';
 import Footer from './Footer';
 
 const getRandomBackground = () => {
   const totalImages = 5;
   const randomIndex = Math.floor(Math.random() * totalImages) + 1;
-  return `${import.meta.env.BASE_URL}bg/BG_None_Carriage_03_0${randomIndex}.png`;
+  return asset(`bg/BG_None_Carriage_03_0${randomIndex}.png`);
 };
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {

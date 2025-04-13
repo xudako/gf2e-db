@@ -1,3 +1,5 @@
+import { asset } from '../utils/utils';
+
 type TableData = Record<string | number, any>;
 
 export class PubTableLoader {
@@ -5,7 +7,7 @@ export class PubTableLoader {
 
   static async load(tablesToLoad: string[]): Promise<void> {
     const promises = tablesToLoad.map(async (name) => {
-      const response = await fetch(`/tables/${name}.json`);
+      const response = await fetch(asset(`tables/${name}.json`));
       if (!response.ok) throw new Error(`Failed to load ${name}.json`);
       const json = await response.json();
 

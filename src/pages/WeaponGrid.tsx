@@ -4,7 +4,8 @@ import { Wpn } from '../types';
 import { weapons, weaponTypes } from '../data/data';
 import ToggleButton from '../components/ToggleButton';
 import ToggleButtonGroup from '../components/ToggleButtonGroup';
-import { formatWeaponUrl } from '../utils/utils';
+import { asset } from '../utils/utils';
+import { formatWeaponUrl } from '../utils/wpn-utils';
 
 const WeaponGrid: React.FC = () => {
   const [filterRarity, setFilterRarity] = useState<number>(-1);
@@ -45,6 +46,7 @@ const WeaponGrid: React.FC = () => {
     <div>
       <div className="flex flex-wrap gap-4 mb-4">
         <input
+          id="search"
           type="text"
           placeholder="Search"
           value={searchQuery}
@@ -111,10 +113,10 @@ const WeaponGrid: React.FC = () => {
             className={`relative p-4 transition-colors cursor-pointer hover:bg-secondary-main hover:text-white group`}
           >
             <img
-              src={`${import.meta.env.BASE_URL}weapons/${weapon.resCode}_256.png`}
+              src={asset(`weapons/${weapon.resCode}_256.png`)}
               alt={weapon.name}
               onError={(e) =>
-                (e.currentTarget.src = `${import.meta.env.BASE_URL}images/default.png`)
+                (e.currentTarget.src = asset('images/default.png'))
               }
               className={`w-full aspect-square object-cover rounded-lg 
                 ${weapon.rank === 5 ? 'bg-rarity-ssr' : weapon.rank === 4 ? 'bg-rarity-sr' : 'bg-rarity-r'}`}

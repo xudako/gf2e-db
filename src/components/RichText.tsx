@@ -1,6 +1,7 @@
 import Tables from '../data/TableLoader';
 import { Buff } from '../types';
 import Tooltip from './Tooltip';
+import { asset } from '../utils/utils';
 
 const dynamicBuffs = new Map([
   [1022, 102204013], //Sharkry
@@ -24,10 +25,10 @@ interface RichTextProps {
 
 const RichText: React.FC<RichTextProps> = ({ content, descriptionTips, variant = 'body1' }) => {
   if (!content) {
-    return <p className={getTextClass(variant)}>No description available.</p>;
+    return <span className={getTextClass(variant)}>No description available.</span>;
   }
   return (
-    <p className={getTextClass(variant)}>{parseUnityRichText(content, descriptionTips ?? '')}</p>
+    <span className={getTextClass(variant)}>{parseUnityRichText(content, descriptionTips ?? '')}</span>
   );
 };
 
@@ -81,15 +82,11 @@ const parseUnityRichText = (content: string, descriptionTips: string): React.Rea
                 <div>
                   <div className="flex items-center gap-2 pb-1">
                     {buff.iconName && (
-                      <img
-                        src={`${import.meta.env.BASE_URL}buffs/${buff.iconName}.png`}
-                        alt={buff.name}
-                        className="w-8"
-                      />
+                      <img src={asset(`buffs/${buff.iconName}.png`)} alt={buff.name} className="w-8" />
                     )}
-                    <p className={getTextClass('subtitle1')} style={{ color }}>
+                    <span className={getTextClass('subtitle1')} style={{ color }}>
                       {buff.name}
-                    </p>
+                    </span>
                   </div>
                   <hr className="border-gray-600" />
                   <RichText

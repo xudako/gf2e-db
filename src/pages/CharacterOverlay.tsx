@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Chr, Skill, Skin } from '../types';
+import { asset } from '../utils/utils';
 import { loadDollSkill, getDollStats, getAffectStats, getTalents } from '../utils/doll-utils';
-import { formatWeaponUrl } from '../utils/utils';
+import { formatWeaponUrl } from '../utils/wpn-utils';
 import SkillCard from '../components/SkillCard';
 import Tables from '../data/TableLoader';
 import { PubTableLoader, PubTables } from '../data/PubTableLoader';
@@ -72,7 +73,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   }
 
   const [currentSkin, setCurrentSkin] = useState<Skin>(skinData[0]);
-  const displayedImage = `${import.meta.env.BASE_URL}dolls/Avatar_Whole_${currentSkin.code}.png`;
+  const displayedImage = asset(`dolls/Avatar_Whole_${currentSkin.code}.png`);
 
   const handleSkinChange = (newSkinId: number) => {
     const newSkin = skinData.find((skin) => skin.id === newSkinId);
@@ -256,7 +257,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
           </svg>
         </button>
 
-        <div className="grid grid-cols-1 sm:grid-cols-6 md:grid-cols-12 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-6 lg:grid-cols-12 gap-4">
           {/* Character Info */}
           <div className="col-span-6">
             <div className="p-4">
@@ -277,7 +278,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                 <div className="col-span-4">
                   <Tooltip title={Tables.GunDutyData[character.duty].name}>
                     <img
-                      src={`${import.meta.env.BASE_URL}icons/${Tables.GunDutyData[character.duty].icon}_W.png`}
+                      src={asset(`icons/${Tables.GunDutyData[character.duty].icon}_W.png`)}
                       alt={`${Tables.GunDutyData[character.duty].name} icon`}
                       className="h-16 align-middle"
                     />
@@ -290,7 +291,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                 <div className="col-span-4">
                   <Tooltip title={Tables.GunWeaponTypeData[character.weaponType]['name']}>
                     <img
-                      src={`${import.meta.env.BASE_URL}icons/${Tables.GunWeaponTypeData[character.weaponType]['skinIcon']}.png`}
+                      src={asset(`icons/${Tables.GunWeaponTypeData[character.weaponType]['skinIcon']}.png`)}
                       alt={`${Tables.GunWeaponTypeData[character.weaponType]['name']} icon`}
                       className="h-16 align-middle"
                     />
@@ -303,7 +304,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                 <div className="col-span-4">
                   <Tooltip title={Tables.LanguageElementData[character.element]['name']}>
                     <img
-                      src={`${import.meta.env.BASE_URL}icons/${Tables.LanguageElementData[character.element]['icon']}_S.png`}
+                      src={asset(`icons/${Tables.LanguageElementData[character.element]['icon']}_S.png`)}
                       alt={`${Tables.LanguageElementData[character.element]['name']} icon`}
                       className="h-16 align-middle"
                     />
@@ -317,14 +318,14 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                   <div className="col-span-4 flex space-x-2">
                     <Tooltip title={Tables.WeaponTagData[character.weak[0]]['name']}>
                       <img
-                        src={`${import.meta.env.BASE_URL}icons/${Tables.WeaponTagData[character.weak[0]]['icon']}_S.png`}
+                        src={asset(`icons/${Tables.WeaponTagData[character.weak[0]]['icon']}_S.png`)}
                         alt={`${Tables.WeaponTagData[character.weak[0]]['name']} icon`}
                         className="h-16 align-middle"
                       />
                     </Tooltip>
                     <Tooltip title={Tables.LanguageElementData[character.weak[1]]['name']}>
                       <img
-                        src={`${import.meta.env.BASE_URL}icons/${Tables.LanguageElementData[character.weak[1]]['icon']}_S.png`}
+                        src={asset(`icons/${Tables.LanguageElementData[character.weak[1]]['icon']}_S.png`)}
                         alt={`${Tables.LanguageElementData[character.weak[1]]['name']} icon`}
                         className="h-16 align-middle"
                       />
@@ -490,7 +491,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
             {sig && (
               <div className="mt-4 space-y-4">
                 <img
-                  src={`${import.meta.env.BASE_URL}weapons/${sig.resCode}_1024.png`}
+                  src={asset(`weapons/${sig.resCode}_1024.png`)}
                   alt="Signature weapon"
                   onClick={() => navigate(`/weapons/${formatWeaponUrl(sig.name)}`)}
                   className="cursor-pointer hover:opacity-80"

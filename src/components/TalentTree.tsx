@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import RichText from './RichText';
+import { asset } from '../utils/utils';
 
 const gridAreas = [
   'A2',
@@ -80,10 +81,10 @@ const TalentTree = ({ talents }: TalentTreeProps) => {
                            }`}
               >
                 {talent.icon ? (
-                  <img src={`${import.meta.env.BASE_URL}keys/${talent.icon}.png`} alt={'talent'} />
+                  <img src={asset(`keys/${talent.icon}.png`)} alt={'talent'} />
                 ) : (
                   <img
-                    src={`${import.meta.env.BASE_URL}icons/Icon_${statIcons[index]}_64.png`}
+                    src={asset(`icons/Icon_${statIcons[index]}_64.png`)}
                     alt={'talent'}
                   />
                 )}
@@ -98,7 +99,7 @@ const TalentTree = ({ talents }: TalentTreeProps) => {
           {currentTalent.icon && (
             <div className="text-center col-span-1 m-4">
               <img
-                src={`${import.meta.env.BASE_URL}keys/${currentTalent.icon}.png`}
+                src={asset(`keys/${currentTalent.icon}.png`)}
                 alt="Key Icon"
                 className="block w-32 max-w-full bg-skill-bg rounded-lg"
               />

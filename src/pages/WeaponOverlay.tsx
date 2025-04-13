@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Skill, Wpn, Chr } from '../types';
-import { getWeaponStats, loadSkill } from '../utils/utils';
+import { asset } from '../utils/utils';
+import { getWeaponStats, loadSkill } from '../utils/wpn-utils';
 import Slide from '../components/Slide';
 import ToggleButton from '../components/ToggleButton';
 import RichText from '../components/RichText';
@@ -92,7 +93,7 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
               {imprintDoll && (
                 <div>
                   <img
-                    src={`${import.meta.env.BASE_URL}dolls/Avatar_Bust_${imprintDoll?.code}.png`}
+                    src={asset(`dolls/Avatar_Bust_${imprintDoll?.code}.png`)}
                     alt="Imprinted doll"
                     onClick={() =>
                       navigate(`/dolls/${imprintDoll?.name.toLowerCase().replace(/\s+/g, '-')}`)
@@ -145,7 +146,7 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
         <div className="col-span-6">
           <div className="p-4">
             <img
-              src={`${import.meta.env.BASE_URL}weapons/${weapon.resCode}_1024.png`}
+              src={asset(`weapons/${weapon.resCode}_1024.png`)}
               alt={weapon.name}
               className="w-full object-contain max-h-[80vh]"
             />
