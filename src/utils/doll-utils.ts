@@ -1,5 +1,8 @@
 import { Chr } from '../types';
 import Tables from '../data/TableLoader';
+import { PubTableLoader, PubTables } from '../data/PubTableLoader';
+
+await PubTableLoader.load(['PropertyData'])
 
 const ammoType = new Map([
   [1, 2],
@@ -42,7 +45,7 @@ export function getDollStats(dollId: number): number[][] {
   if (!group) return [[0, 0, 0, 0]];
   let classes = group.id.map((cid: number) => Tables.GunClassData[cid]);
 
-  const baseProp = Tables.PropertyData[doll.propertyId];
+  const baseProp = PubTables.PropertyData[doll.propertyId];
 
   let breakStats = [0, 0, 0];
   let stats = null;
@@ -51,7 +54,7 @@ export function getDollStats(dollId: number): number[][] {
 
   for (let level = 1; level <= 60; level++) {
     const propId = Tables.GunLevelExpData[level].propertyId;
-    const levelProp = Tables.PropertyData[propId];
+    const levelProp = PubTables.PropertyData[propId];
     stats = [...breakStats];
 
     for (let i = 0; i < attrs.length; i++) {
@@ -63,7 +66,7 @@ export function getDollStats(dollId: number): number[][] {
     if (level === classes[0].gunLevelMax) {
       classes = classes.slice(1);
       if (classes.length) {
-        const breakProp = Tables.PropertyData[classes[0].propertyId];
+        const breakProp = PubTables.PropertyData[classes[0].propertyId];
         for (let i = 0; i < attrs.length; i++) {
           breakStats[i] += breakProp[attrs[i]];
           stats[i] += breakProp[attrs[i]];
@@ -77,12 +80,12 @@ export function getDollStats(dollId: number): number[][] {
 
 export function getAffectStats(dollId: number): number[][] {
   const affectProps = Array.from({ length: 4 }, (_, i) => 655 * 100000 + dollId * 10 + i + 1);
-  if (!Tables.PropertyData[affectProps[0]]) return [[0, 0, 0, 0]];
+  if (!PubTables.PropertyData[affectProps[0]]) return [[0, 0, 0, 0]];
   let stats = [0, 0, 0];
   const attrs = ['pow', 'shieldArmor', 'maxHp'];
   const finalStats = [[1, ...stats]];
   for (let affect = 1; affect < 5; affect++) {
-    const affectProp = Tables.PropertyData[affectProps[affect - 1]];
+    const affectProp = PubTables.PropertyData[affectProps[affect - 1]];
     for (let i = 0; i < attrs.length; i++) {
       stats[i] += affectProp[attrs[i]];
     }
@@ -114,7 +117,7 @@ function loadTalent(
   }
 
   if (propId) {
-    const stats = { ...Tables.PropertyData[propId] };
+    const stats = { ...PubTables.PropertyData[propId] };
 
     const orderedStats: Record<string, any> = {};
     for (const k in attrs) {
