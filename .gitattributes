@@ -1,1 +1,1 @@
-PropertyData.json filter=lfs diff=lfs merge=lfs -text
+tables/PropertyData.json filter=lfs diff=lfs merge=lfs -text
