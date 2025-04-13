@@ -2,13 +2,14 @@ import Tables from '../data/TableLoader';
 
 interface SkillIconProps {
   skill: string;
-  element: number;
-  weapon: number;
+  element?: number;
+  weapon?: number;
+  className?: string;
 }
 
-const SkillIcon: React.FC<SkillIconProps> = ({ skill, element, weapon }) => {
+const SkillIcon: React.FC<SkillIconProps> = ({ skill, element=0, weapon=0, className='' }) => {
   return (
-    <div className="relative inline-block mt-8">
+    <div className={`relative inline-block ${className}`}>
       <img
         src={`${import.meta.env.BASE_URL}skills/${skill}.png`}
         alt="Skill Icon"

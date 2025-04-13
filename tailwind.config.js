@@ -16,6 +16,9 @@ export default {
           main: colors.orange[500],
           text: colors.white,
         },
+        skill: {
+          tag: "#cccccc",
+        },
         link: {
           hover: colors.gray[300],
         },

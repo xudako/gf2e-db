@@ -2,6 +2,7 @@ import { Skill } from '../types';
 import SkillGrid from './SkillGrid';
 import RichText from './RichText';
 import SkillIcon from './SkillIcon';
+import Tables from '../data/TableLoader';
 
 const SkillCard = ({ skill }: { skill: Skill }) => {
   if (!skill) return;
@@ -52,56 +53,68 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
   }
 
   return (
-    <div className="p-12 rounded-lg bg-background-paper flex flex-col gap-8 w-full">
-      <div className="grid grid-cols-4 gap-8">
-        {/* Left Section: Image, Name, and Tags */}
-        <div className="text-center">
-          <h5 className="text-secondary text-lg font-medium">{skill.name}</h5>
-          <SkillIcon skill={skill.icon} element={skill.elementTag} weapon={skill.weaponTag} />
-          <div className="flex flex-wrap justify-center gap-2 mt-4">
-            {skill.skillTag.split('/').map((tag) => (
-              <span key={tag} className="px-3 py-1 rounded-full bg-skill-bg text-white text-sm">
-                {tag}
-              </span>
-            ))}
+    <div className="p-6 rounded-lg bg-background-paper w-full">
+      <div className="grid grid-cols-12 gap-4 p-4">
+        {/* Top row: Icon, Name/Tags, Element/Weapon */}
+        <div className="col-span-1 self-start">
+          {/* Icon aligned with name */}
+          <SkillIcon skill={skill.icon} className="h-16 w-16" />
+        </div>
+        
+        <div className="col-span-8 mx-4">
+          {/* Name and Tags */}
+          <h5 className="text-secondary text-xl font-bold">{skill.name}</h5>
+          <div className="flex flex-wrap gap-2 mt-2 text-gray-500">
+            {skill.skillTag}
           </div>
-
-          {/* Stability/Cost/Cooldown Info */}
-          <div className="flex justify-around mt-8">
-            {skill.cdTime > 0 && (
-              <div className="bg-primary-main text-primary-text px-2 py-1 rounded inline-flex items-center gap-1 min-w-fit">
-                <img
-                  className="h-[1em] w-auto"
-                  src={`${import.meta.env.BASE_URL}icons/Icon_CD.png`}
-                  alt="Cooldown"
-                />
-                <span className="hidden 2xl:inline">Cooldown </span>{skill.cdTime}
+        </div>
+        
+        {/* Element/Weapon icons */}
+        <div className="col-span-3 flex items-end justify-end">
+          <div className="flex items-center">
+            {skill.weaponTag > 0 && (
+              <div className="flex items-center ml-2">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-element-bg">
+                  <img
+                    src={`${import.meta.env.BASE_URL}icons/${
+                      Tables.WeaponTagData[skill.weaponTag].icon
+                    }_Weakpoint.png`}
+                    alt={"Weapon Icon"}
+                    className="w-6 h-6"
+                  />
+                </div>
+                <p className="-ml-2 whitespace-nowrap">{Tables.WeaponTagData[skill.weaponTag].name}</p>
               </div>
             )}
-            {skill.potentialCost > 0 && (
-              <div className="bg-primary-main text-primary-text px-2 py-1 rounded inline-flex items-center gap-1 min-w-fit">
-                <img
-                  className="h-[1em] w-auto"
-                  src={`${import.meta.env.BASE_URL}icons/Icon_Combat_Consume.png`}
-                  alt="Cost"
-                />
-                <span className="hidden 2xl:inline">Confectance </span>{skill.potentialCost}
+            {skill.elementTag > 0 && (
+              <div className="flex items-center ml-2">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-element-bg">
+                  <img
+                    src={`${import.meta.env.BASE_URL}icons/${
+                      Tables.LanguageElementData[skill.elementTag].icon
+                    }_Weakpoint.png`}
+                    alt={"Element Icon"}
+                    className="w-6 h-6"
+                  />
+                </div>
+                <p className="-ml-2 whitespace-nowrap">{Tables.LanguageElementData[skill.elementTag].name}</p>
               </div>
             )}
           </div>
         </div>
-
-        {/* Center Section: Description & Upgrade Buttons */}
-        <div className="col-span-2">
+        
+        {/* Middle row: Description */}
+        <div className="col-span-9">
           {(stability as number) > 0 && (
-            <p className="mb-4 text-secondary-main font-bold">{`Stability Damage: ${stability}`}</p>
+            <p className="mb-2 text-secondary-main font-bold">{`Stability Damage: ${stability}`}</p>
           )}
           <RichText content={skill.description} descriptionTips={skill.descriptionTips} />
+          
+          
         </div>
-
-        {/* Right Section: Range, Target & Indicators */}
-        <div className="text-center">
-          {/* Visual Indicator Placeholder */}
+        
+        {/* Grid area */}
+        <div className="col-span-3">
           <SkillGrid
             id={skill.id}
             range={skill.range}
@@ -109,16 +122,49 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
             shapeParam={skill.shapeParam}
             skillRange={skill.skillRange}
           />
-          <div className="flex justify-between">
-            <p className="mt-8">Range</p>
-            <p className="mt-8 text-right">{dispRange}</p>
+        </div>
+        {/* Cooldown/Cost */}
+        <div className="col-span-9">
+          <div className="flex gap-2 mt-4 items-end">
+            {skill.cdTime > 0 && (
+              <div className="bg-gray-500 text-primary-text px-2 py-1 rounded inline-flex items-center justify-between w-40">
+                <div className="flex items-center gap-1">
+                  <img
+                    className="h-[1em] w-auto"
+                    src={`${import.meta.env.BASE_URL}icons/Icon_CD.png`}
+                    alt="Cooldown"
+                  />
+                  <span>Cooldown</span>
+                </div>
+                <span>{skill.cdTime}</span>
+              </div>
+            )}
+            {skill.potentialCost > 0 && (
+              <div className="bg-gray-500 text-primary-text px-2 py-1 rounded inline-flex items-center justify-between w-40">
+                <div className="flex items-center gap-1">
+                  <img
+                    className="h-[1em] w-auto"
+                    src={`${import.meta.env.BASE_URL}icons/Icon_Combat_Consume.png`}
+                    alt="Cost"
+                  />
+                  <span>Confectance</span>
+                </div>
+                <span>{skill.potentialCost}</span>
+              </div>
+            )}
           </div>
-          <hr className="border-b-[5px] border-grid-bg my-2" />
-          <div className="flex justify-between">
-            <p className="mt-8">Area of Effect</p>
-            <p className="mt-8">{dispShape}</p>
+        </div>
+        <div className="col-span-3">
+          <div className="flex justify-between mt-2">
+            <p>Range</p>
+            <p>{dispRange}</p>
           </div>
-          <hr className="border-b-[5px] border-grid-bg my-2" />
+          <hr className="border-b-2 border-grid-bg my-1" />
+          <div className="flex justify-between">
+            <p>Area of Effect</p>
+            <p>{dispShape}</p>
+          </div>
+          <hr className="border-b-2 border-grid-bg my-1" />
         </div>
       </div>
     </div>
