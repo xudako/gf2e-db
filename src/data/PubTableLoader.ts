@@ -36,8 +36,11 @@ export class PubTableLoader {
   }
 }
 
-export const PubTables: Record<string, TableData> = new Proxy({}, {
-  get: (_target, prop: string) => {
-    return PubTableLoader.get(prop);
-  },
-});
+export const PubTables: Record<string, TableData> = new Proxy(
+  {},
+  {
+    get: (_target, prop: string) => {
+      return PubTableLoader.get(prop);
+    },
+  }
+);

@@ -7,7 +7,12 @@ interface SkillIconProps {
   className?: string;
 }
 
-const SkillIcon: React.FC<SkillIconProps> = ({ skill, element=0, weapon=0, className='' }) => {
+const SkillIcon: React.FC<SkillIconProps> = ({
+  skill,
+  element = 0,
+  weapon = 0,
+  className = '',
+}) => {
   return (
     <div className={`relative inline-block ${className}`}>
       <img

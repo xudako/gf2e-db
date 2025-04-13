@@ -2,7 +2,7 @@ import { Chr } from '../types';
 import Tables from '../data/TableLoader';
 import { PubTableLoader, PubTables } from '../data/PubTableLoader';
 
-await PubTableLoader.load(['PropertyData'])
+await PubTableLoader.load(['PropertyData']);
 
 const ammoType = new Map([
   [1, 2],

@@ -1,7 +1,7 @@
 import Tables from '../data/TableLoader';
 import { PubTableLoader, PubTables } from '../data/PubTableLoader';
 
-await PubTableLoader.load(['PropertyData'])
+await PubTableLoader.load(['PropertyData']);
 
 export const loadSkill = (skillId: number) => {
   const display = Tables.BattleSkillDisplayData[skillId];

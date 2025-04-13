@@ -60,15 +60,13 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
           {/* Icon aligned with name */}
           <SkillIcon skill={skill.icon} className="h-16 w-16" />
         </div>
-        
+
         <div className="col-span-8 mx-4">
           {/* Name and Tags */}
           <h5 className="text-secondary text-xl font-bold">{skill.name}</h5>
-          <div className="flex flex-wrap gap-2 mt-2 text-gray-500">
-            {skill.skillTag}
-          </div>
+          <div className="flex flex-wrap gap-2 mt-2 text-gray-500">{skill.skillTag}</div>
         </div>
-        
+
         {/* Element/Weapon icons */}
         <div className="col-span-3 flex items-end justify-end">
           <div className="flex items-center">
@@ -79,11 +77,13 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
                     src={`${import.meta.env.BASE_URL}icons/${
                       Tables.WeaponTagData[skill.weaponTag].icon
                     }_Weakpoint.png`}
-                    alt={"Weapon Icon"}
+                    alt={'Weapon Icon'}
                     className="w-6 h-6"
                   />
                 </div>
-                <p className="-ml-2 whitespace-nowrap">{Tables.WeaponTagData[skill.weaponTag].name}</p>
+                <p className="-ml-2 whitespace-nowrap">
+                  {Tables.WeaponTagData[skill.weaponTag].name}
+                </p>
               </div>
             )}
             {skill.elementTag > 0 && (
@@ -93,26 +93,26 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
                     src={`${import.meta.env.BASE_URL}icons/${
                       Tables.LanguageElementData[skill.elementTag].icon
                     }_Weakpoint.png`}
-                    alt={"Element Icon"}
+                    alt={'Element Icon'}
                     className="w-6 h-6"
                   />
                 </div>
-                <p className="-ml-2 whitespace-nowrap">{Tables.LanguageElementData[skill.elementTag].name}</p>
+                <p className="-ml-2 whitespace-nowrap">
+                  {Tables.LanguageElementData[skill.elementTag].name}
+                </p>
               </div>
             )}
           </div>
         </div>
-        
+
         {/* Middle row: Description */}
         <div className="col-span-9">
           {(stability as number) > 0 && (
             <p className="mb-2 text-secondary-main font-bold">{`Stability Damage: ${stability}`}</p>
           )}
           <RichText content={skill.description} descriptionTips={skill.descriptionTips} />
-          
-          
         </div>
-        
+
         {/* Grid area */}
         <div className="col-span-3">
           <SkillGrid
