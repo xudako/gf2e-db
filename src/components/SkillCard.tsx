@@ -89,7 +89,9 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
               <div className="flex items-center ml-2">
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-element-bg">
                   <img
-                    src={asset(`icons/${Tables.LanguageElementData[skill.elementTag].icon}_Weakpoint.png`)}
+                    src={asset(
+                      `icons/${Tables.LanguageElementData[skill.elementTag].icon}_Weakpoint.png`
+                    )}
                     alt="Element Icon"
                     className="w-6 h-6"
                   />
@@ -126,11 +128,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
             {skill.cdTime > 0 && (
               <div className="bg-gray-500 text-primary-text px-2 py-1 rounded inline-flex items-center justify-between w-40">
                 <div className="flex items-center gap-1">
-                  <img
-                    className="h-[1em] w-auto"
-                    src={asset('icons/Icon_CD.png')}
-                    alt="Cooldown"
-                  />
+                  <img className="h-[1em] w-auto" src={asset('icons/Icon_CD.png')} alt="Cooldown" />
                   <span>Cooldown</span>
                 </div>
                 <span>{skill.cdTime}</span>

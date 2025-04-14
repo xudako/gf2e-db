@@ -85,7 +85,7 @@ const WeaponGrid: React.FC = () => {
               key={weapon.id}
               selected={filterWeapon === weapon.id}
               onClick={() => handleWeaponFilter(weapon.id)}
-              className="min-w-[6rem]"
+              className="min-w-[3rem] sm:min-w-[6rem]"
             >
               {weapon.abbr}
             </ToggleButton>
@@ -115,9 +115,7 @@ const WeaponGrid: React.FC = () => {
             <img
               src={asset(`weapons/${weapon.resCode}_256.png`)}
               alt={weapon.name}
-              onError={(e) =>
-                (e.currentTarget.src = asset('images/default.png'))
-              }
+              onError={(e) => (e.currentTarget.src = asset('images/default.png'))}
               className={`w-full aspect-square object-cover rounded-lg 
                 ${weapon.rank === 5 ? 'bg-rarity-ssr' : weapon.rank === 4 ? 'bg-rarity-sr' : 'bg-rarity-r'}`}
             />

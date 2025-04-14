@@ -24,11 +24,7 @@ const Header = () => {
           {/* Logo/Home */}
           <div className="flex items-center">
             <NavLink to="/" className="flex items-center">
-              <img
-                src={asset('images/default.png')}
-                alt="Logo"
-                className="h-10 w-10 mr-4"
-              />
+              <img src={asset('images/default.png')} alt="Logo" className="h-10 w-10 mr-4" />
               <span className="text-xl font-bold">GF2E-DB</span>
             </NavLink>
           </div>
@@ -75,7 +71,7 @@ const Header = () => {
                   <NavLink
                     to="/calculator"
                     className={({ isActive }) =>
-                      `block px-4 py-2 hover:bg-nav-hover ${isActive ? 'bg-nav-hover text-secondary-main' : ''}`
+                      `block px-4 py-2 hover:bg-nav-hover ${isActive ? 'bg-nav-hover text-secondary-main' : ''} pointer-events-none select-none opacity-50 cursor-not-allowed`
                     }
                     onClick={() => setMenuOpen(false)}
                   >
@@ -84,7 +80,7 @@ const Header = () => {
                   <NavLink
                     to="/stages"
                     className={({ isActive }) =>
-                      `block px-4 py-2 hover:bg-nav-hover ${isActive ? 'bg-nav-hover text-secondary-main' : ''}`
+                      `block px-4 py-2 hover:bg-nav-hover ${isActive ? 'bg-nav-hover text-secondary-main' : ''} pointer-events-none select-none opacity-50 cursor-not-allowed`
                     }
                     onClick={() => setMenuOpen(false)}
                   >
@@ -93,7 +89,7 @@ const Header = () => {
                   <NavLink
                     to="/story"
                     className={({ isActive }) =>
-                      `block px-4 py-2 hover:bg-nav-hover ${isActive ? 'bg-nav-hover text-secondary-main' : ''}`
+                      `block px-4 py-2 hover:bg-nav-hover ${isActive ? 'bg-nav-hover text-secondary-main' : ''} pointer-events-none select-none opacity-50 cursor-not-allowed`
                     }
                     onClick={() => setMenuOpen(false)}
                   >
@@ -163,7 +159,7 @@ const Header = () => {
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md ${
                   isActive ? 'bg-nav-hover text-secondary-main' : 'hover:bg-nav-hover'
-                }`
+                } pointer-events-none select-none opacity-50 cursor-not-allowed`
               }
               onClick={() => setMobileOpen(false)}
             >
@@ -174,7 +170,7 @@ const Header = () => {
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md ${
                   isActive ? 'bg-nav-hover text-secondary-main' : 'hover:bg-nav-hover'
-                }`
+                } pointer-events-none select-none opacity-50 cursor-not-allowed`
               }
               onClick={() => setMobileOpen(false)}
             >
@@ -185,7 +181,7 @@ const Header = () => {
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md ${
                   isActive ? 'bg-nav-hover text-secondary-main' : 'hover:bg-nav-hover'
-                }`
+                } pointer-events-none select-none opacity-50 cursor-not-allowed`
               }
               onClick={() => setMobileOpen(false)}
             >

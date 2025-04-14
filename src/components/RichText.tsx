@@ -28,7 +28,9 @@ const RichText: React.FC<RichTextProps> = ({ content, descriptionTips, variant =
     return <span className={getTextClass(variant)}>No description available.</span>;
   }
   return (
-    <span className={getTextClass(variant)}>{parseUnityRichText(content, descriptionTips ?? '')}</span>
+    <span className={getTextClass(variant)}>
+      {parseUnityRichText(content, descriptionTips ?? '')}
+    </span>
   );
 };
 
@@ -82,7 +84,11 @@ const parseUnityRichText = (content: string, descriptionTips: string): React.Rea
                 <div>
                   <div className="flex items-center gap-2 pb-1">
                     {buff.iconName && (
-                      <img src={asset(`buffs/${buff.iconName}.png`)} alt={buff.name} className="w-8" />
+                      <img
+                        src={asset(`buffs/${buff.iconName}.png`)}
+                        alt={buff.name}
+                        className="w-8"
+                      />
                     )}
                     <span className={getTextClass('subtitle1')} style={{ color }}>
                       {buff.name}

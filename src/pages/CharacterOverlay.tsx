@@ -291,7 +291,9 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                 <div className="col-span-4">
                   <Tooltip title={Tables.GunWeaponTypeData[character.weaponType]['name']}>
                     <img
-                      src={asset(`icons/${Tables.GunWeaponTypeData[character.weaponType]['skinIcon']}.png`)}
+                      src={asset(
+                        `icons/${Tables.GunWeaponTypeData[character.weaponType]['skinIcon']}.png`
+                      )}
                       alt={`${Tables.GunWeaponTypeData[character.weaponType]['name']} icon`}
                       className="h-16 align-middle"
                     />
@@ -304,7 +306,9 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                 <div className="col-span-4">
                   <Tooltip title={Tables.LanguageElementData[character.element]['name']}>
                     <img
-                      src={asset(`icons/${Tables.LanguageElementData[character.element]['icon']}_S.png`)}
+                      src={asset(
+                        `icons/${Tables.LanguageElementData[character.element]['icon']}_S.png`
+                      )}
                       alt={`${Tables.LanguageElementData[character.element]['name']} icon`}
                       className="h-16 align-middle"
                     />
@@ -318,14 +322,18 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                   <div className="col-span-4 flex space-x-2">
                     <Tooltip title={Tables.WeaponTagData[character.weak[0]]['name']}>
                       <img
-                        src={asset(`icons/${Tables.WeaponTagData[character.weak[0]]['icon']}_S.png`)}
+                        src={asset(
+                          `icons/${Tables.WeaponTagData[character.weak[0]]['icon']}_S.png`
+                        )}
                         alt={`${Tables.WeaponTagData[character.weak[0]]['name']} icon`}
                         className="h-16 align-middle"
                       />
                     </Tooltip>
                     <Tooltip title={Tables.LanguageElementData[character.weak[1]]['name']}>
                       <img
-                        src={asset(`icons/${Tables.LanguageElementData[character.weak[1]]['icon']}_S.png`)}
+                        src={asset(
+                          `icons/${Tables.LanguageElementData[character.weak[1]]['icon']}_S.png`
+                        )}
                         alt={`${Tables.LanguageElementData[character.weak[1]]['name']} icon`}
                         className="h-16 align-middle"
                       />
@@ -359,16 +367,13 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                     <StatDisplay
                       img="Icon_Will_64"
                       stat={
-                        PubTables.PropData[Tables.GunData[character.id].propertyId][
-                          'maxWillValue'
-                        ]
+                        PubTables.PropData[Tables.GunData[character.id].propertyId]['maxWillValue']
                       }
                     />
                     <StatDisplay
                       img="Icon_Max_Ap_64"
                       stat={
-                        PubTables.PropData[Tables.GunData[character.id].propertyId]['maxAp'] /
-                        100
+                        PubTables.PropData[Tables.GunData[character.id].propertyId]['maxAp'] / 100
                       }
                     />
                     <div className="col-span-1"></div>

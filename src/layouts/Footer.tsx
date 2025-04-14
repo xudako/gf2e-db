@@ -7,7 +7,7 @@ function Footer() {
           assets © MICA Team (Sunborn Network Technology).
         </p>
         <p className="text-sm">
-          Powered by{' '}
+          Powered by:{' '}
           <a
             href="https://react.dev"
             target="_blank"
@@ -16,7 +16,6 @@ function Footer() {
           >
             React
           </a>{' '}
-          &{' '}
           <a
             href="https://vite.dev"
             target="_blank"
@@ -24,8 +23,15 @@ function Footer() {
             className="text-primary-text underline hover:text-link-hover transition-colors"
           >
             Vite
+          </a>{' '}
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary-text underline hover:text-link-hover transition-colors"
+          >
+            Tailwind
           </a>
-          .
         </p>
       </div>
     </footer>

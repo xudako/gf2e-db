@@ -83,10 +83,7 @@ const TalentTree = ({ talents }: TalentTreeProps) => {
                 {talent.icon ? (
                   <img src={asset(`keys/${talent.icon}.png`)} alt={'talent'} />
                 ) : (
-                  <img
-                    src={asset(`icons/Icon_${statIcons[index]}_64.png`)}
-                    alt={'talent'}
-                  />
+                  <img src={asset(`icons/Icon_${statIcons[index]}_64.png`)} alt={'talent'} />
                 )}
               </button>
             </div>

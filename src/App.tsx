@@ -5,6 +5,7 @@ import CharacterGrid from './pages/CharacterGrid';
 import CharacterOverlay from './pages/CharacterOverlay';
 import WeaponGrid from './pages/WeaponGrid';
 import WeaponOverlay from './pages/WeaponOverlay';
+import EnemyGrid from './pages/EnemyGrid';
 import { Chr, Wpn } from './types';
 import { characters, weapons } from './data/data';
 import { formatWeaponUrl } from './utils/wpn-utils';
@@ -49,6 +50,7 @@ const App: React.FC = () => {
             <Route path="/dolls/:url" element={<CharacterOverlayWrapper />} />
             <Route path="/weapons" element={<WeaponGrid />} />
             <Route path="/weapons/:url" element={<WeaponOverlayWrapper />} />
+            <Route path="/enemies" element={<EnemyGrid />} />
           </Routes>
         </Layout>
       </Router>

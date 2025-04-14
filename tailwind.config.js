@@ -7,9 +7,9 @@ export default {
     extend: {
       colors: {
         primary: {
-          main: colors.slate[700],
+          main: colors.zinc[700],
           text: colors.white,
-          light: colors.slate[600],
+          light: colors.zinc[600],
           selected: colors.orange[500],
         },
         secondary: {

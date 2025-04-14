@@ -121,7 +121,7 @@ const CharacterGrid: React.FC = () => {
               key={weapon.id}
               selected={filterWeapon === weapon.id}
               onClick={() => handleWeaponFilter(weapon.id)}
-              className="min-w-[6rem]"
+              className="min-w-[3rem] sm:min-w-[6rem]"
             >
               {weapon.abbr}
             </ToggleButton>
@@ -135,7 +135,7 @@ const CharacterGrid: React.FC = () => {
               key={element.id}
               selected={filterElement === element.id}
               onClick={() => handleElementFilter(element.id)}
-              className="min-w-[6rem]"
+              className="sm:min-w-[6rem]"
             >
               {element.name}
             </ToggleButton>
@@ -191,9 +191,7 @@ const CharacterGrid: React.FC = () => {
                   : asset(`dolls/Avatar_Head_${character.code}_Spine.png`)
               }
               alt={character.name}
-              onError={(e) =>
-                (e.currentTarget.src = asset('images/default.png'))
-              }
+              onError={(e) => (e.currentTarget.src = asset('images/default.png'))}
               className={`w-full aspect-square object-cover rounded-lg 
                 ${character.rank === 5 ? 'bg-rarity-ssr' : 'bg-rarity-sr'}`}
             />
