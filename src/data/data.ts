@@ -1,11 +1,25 @@
-import gunData from './tables/GunData.json';
-import gunDutyData from './tables/GunDutyData.json';
-import gunWeaponTypeData from './tables/GunWeaponTypeData.json';
-import gunGradeData from './tables/GunGradeData.json';
-import elementTypeData from './tables/LanguageElementData.json';
-import gunWeaponData from './tables/GunWeaponData.json';
-import { Chr, Wpn, Duty, WeaponType, ElementType, GunGrade } from '../types';
-import Tables from './TableLoader';
+import { Chr, Wpn, Duty, WeaponType, ElementType } from '../types';
+import { asset } from '../utils/utils';
+import { TableLoader, Tables } from '../data/TableLoader';
+
+await TableLoader.load(['GunGradeData', 'BattleSkillData']);
+
+const loadJson = async (path: string) => {
+  const response = await fetch(path);
+  if (!response.ok) throw new Error(`Failed to load ${path}`);
+  return response.json();
+};
+
+const paths = [
+  asset('tables/GunData.json'),
+  asset('tables/GunDutyData.json'),
+  asset('tables/GunWeaponTypeData.json'),
+  asset('tables/LanguageElementData.json'),
+  asset('tables/GunWeaponData.json'),
+];
+
+const [gunData, gunDutyData, gunWeaponTypeData, elementTypeData, gunWeaponData] =
+  await Promise.all(paths.map(loadJson));
 
 const enDolls: string[] = [
   'Groza',
@@ -55,11 +69,6 @@ export const weaponTypes: WeaponType[] = gunWeaponTypeData['data'].map((wtype: a
 
 export const elementTypes: ElementType[] = elementTypeData['data'].map((etype: any) => ({
   ...etype,
-}));
-
-export const gunGrades: GunGrade[] = gunGradeData['data'].map((grade: any) => ({
-  ...grade,
-  skillIds: grade.abbr,
 }));
 
 export const characters: Chr[] = gunData['data'].map((gun: any) => ({

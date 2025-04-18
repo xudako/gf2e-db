@@ -1,7 +1,9 @@
-import Tables from '../data/TableLoader';
+import { TableLoader, Tables } from '../data/TableLoader';
 import { Buff } from '../types';
 import Tooltip from './Tooltip';
 import { asset } from '../utils/utils';
+
+await TableLoader.load(['BattleBuffPerformData', 'BattleDictionaryData']);
 
 const dynamicBuffs = new Map([
   [1022, 102204013], //Sharkry

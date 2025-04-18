@@ -1,5 +1,7 @@
-import Tables from '../data/TableLoader';
+import { TableLoader, Tables } from '../data/TableLoader';
 import { asset } from '../utils/utils';
+
+await TableLoader.load(['LanguageElementData', 'WeaponTagData']);
 
 interface SkillIconProps {
   skill: string;

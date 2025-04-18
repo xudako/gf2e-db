@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { Skill } from '../types';
-import Tables from '../data/TableLoader.ts';
+import { TableLoader, Tables } from '../data/TableLoader';
+
+await TableLoader.load(['BattleSkillData', 'BattleShapeData']);
 
 type GridProps = Pick<Skill, 'id' | 'range' | 'shape' | 'shapeParam' | 'skillRange'>;
 

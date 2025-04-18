@@ -82,11 +82,6 @@ export interface Buff {
   iconName?: string;
 }
 
-export interface GunGrade {
-  id: number;
-  skillIds: number[];
-}
-
 export interface Wpn {
   id: number;
   name: string;
@@ -96,13 +91,4 @@ export interface Wpn {
   skill: number;
   imprint?: number; //privateSkill
   trait?: number; //weaponSkill
-}
-
-export interface TableItem {
-  Id: number;
-  Content: string;
-}
-
-export interface Table {
-  Data: TableItem[];
 }

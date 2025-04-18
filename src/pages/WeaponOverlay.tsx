@@ -5,11 +5,16 @@ import { getWeaponStats, loadSkill } from '../utils/wpn-utils';
 import Slide from '../components/Slide';
 import ToggleButton from '../components/ToggleButton';
 import RichText from '../components/RichText';
-import Tables from '../data/TableLoader';
+import { TableLoader, Tables } from '../data/TableLoader';
 import StatDisplay from '../components/StatDisplay';
 import Tooltip from '../components/Tooltip';
 import { useNavigate } from 'react-router-dom';
 import { characters } from '../data/data';
+
+await TableLoader.load([
+  'GunWeaponData',
+  'GunWeaponTypeData',
+]);
 
 const statIcon: Record<string, string> = {
   powPercent: 'Pow_64',
@@ -92,16 +97,14 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
             )}
             <div></div>
             <div className="col-span-2">
-                  <Tooltip title={Tables.GunWeaponTypeData[weapon.type]['name']}>
-                    <img
-                      src={asset(
-                        `icons/${Tables.GunWeaponTypeData[weapon.type]['skinIcon']}.png`
-                      )}
-                      alt={`${Tables.GunWeaponTypeData[weapon.type]['name']} icon`}
-                      className="h-16 align-middle"
-                    />
-                  </Tooltip>
-                </div>
+              <Tooltip title={Tables.GunWeaponTypeData[weapon.type]['name']}>
+                <img
+                  src={asset(`icons/${Tables.GunWeaponTypeData[weapon.type]['skinIcon']}.png`)}
+                  alt={`${Tables.GunWeaponTypeData[weapon.type]['name']} icon`}
+                  className="h-16 align-middle"
+                />
+              </Tooltip>
+            </div>
             <div className="mt-4 space-y-4 col-span-1 col-start-6 justify-self-end">
               {imprintDoll && (
                 <div>

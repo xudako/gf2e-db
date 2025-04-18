@@ -2,8 +2,10 @@ import { Skill } from '../types';
 import SkillGrid from './SkillGrid';
 import RichText from './RichText';
 import SkillIcon from './SkillIcon';
-import Tables from '../data/TableLoader';
+import { TableLoader, Tables } from '../data/TableLoader';
 import { asset } from '../utils/utils';
+
+await TableLoader.load(['WeaponTagData', 'LanguageElementData']);
 
 const SkillCard = ({ skill }: { skill: Skill }) => {
   if (!skill) return;

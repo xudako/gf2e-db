@@ -1,7 +1,6 @@
-import Tables from '../data/TableLoader';
-import { PubTableLoader, PubTables } from '../data/PubTableLoader';
+import { TableLoader, Tables } from '../data/TableLoader';
 
-await PubTableLoader.load(['PropData']);
+await TableLoader.load(['PropData', 'BattleSkillDisplayData', 'GunWeaponData', 'GunLevelExpData']);
 
 export const loadSkill = (skillId: number) => {
   const display = Tables.BattleSkillDisplayData[skillId];
@@ -13,11 +12,11 @@ export const loadSkill = (skillId: number) => {
 
 export function getWeaponStats(weaponId: number): Record<string, any> {
   const weapon = Tables.GunWeaponData[weaponId];
-  const baseProp = PubTables.PropData[weapon.propertyId];
+  const baseProp = Tables.PropData[weapon.propertyId];
   const attrs = ['powPercent', 'crit', 'critMult', 'potentialDam'];
   const stats: Record<string, any> = {
     pow: Math.ceil(
-      (baseProp.pow * PubTables.PropData[Tables.GunLevelExpData[60].propertyId]['pow']) / 1000
+      (baseProp.pow * Tables.PropData[Tables.GunLevelExpData[60].propertyId]['pow']) / 1000
     ),
   };
   for (const k in attrs) {

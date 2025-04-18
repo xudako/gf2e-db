@@ -1,43 +1,52 @@
-class TableLoader {
-  private cache: Record<string, any> = {};
+import { asset } from '../utils/utils';
 
-  private tables: Record<string, any> = import.meta.glob('./tables/*.json', {
-    eager: true,
-  });
+type TableData = Record<string | number, any>;
 
-  constructor() {
-    Object.entries(this.tables).forEach(([key, value]) => {
-      const tableName = key.replace('./tables/', '').replace('.json', '');
-      this.cache[tableName] = this.transformData(value);
-    });
-  }
+export class TableLoader {
+  private static tables: Record<string, TableData> = {};
 
-  private transformData(data: any): Record<string, any> {
-    return data.data.reduce((acc: Record<string, any>, item: any) => {
-      const firstKey = Object.keys(item)[0];
-      if (firstKey) {
-        acc[item[firstKey]] = item;
+  static async load(tablesToLoad: string[]): Promise<void> {
+    const promises = tablesToLoad.map(async (name) => {
+      const response = await fetch(asset(`tables/${name}.json`));
+      if (!response.ok) throw new Error(`Failed to load ${name}.json`);
+      const json = await response.json();
+
+      const tableArray = json.data;
+      const tableObject: TableData = {};
+
+      if (!Array.isArray(tableArray) || tableArray.length === 0) {
+        throw new Error(`No data found in ${name}.json`);
       }
-      return acc;
-    }, {});
+      const firstKey = Object.keys(tableArray[0])[0];
+      for (const entry of tableArray) {
+        const id = entry[firstKey];
+        if (id === undefined) {
+          console.warn(`No value for key "${firstKey}" in entry in ${name}:`, entry);
+          continue;
+        }
+        tableObject[id] = entry;
+      }
+
+      this.tables[name] = tableObject;
+    });
+
+    await Promise.all(promises);
   }
 
-  public getTable(name: string): Record<string, any> {
-    if (this.cache[name]) {
-      return this.cache[name];
+  static get(tableName: string): TableData {
+    const table = this.tables[tableName];
+    if (!table) {
+      throw new Error(`Table ${tableName} not loaded`);
     }
-    throw new Error(`Table ${name} not found`);
+    return table;
   }
 }
 
-type TablesProxy = {
-  [key: string]: any;
-};
-
-const Tables = new Proxy(new TableLoader(), {
-  get(target: TableLoader, prop: string) {
-    return target.getTable(prop);
-  },
-}) as TablesProxy;
-
-export default Tables;
+export const Tables: Record<string, TableData> = new Proxy(
+  {},
+  {
+    get: (_target, prop: string) => {
+      return TableLoader.get(prop);
+    },
+  }
+);

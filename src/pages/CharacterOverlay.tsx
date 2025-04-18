@@ -4,8 +4,7 @@ import { asset } from '../utils/utils';
 import { loadDollSkill, getDollStats, getAffectStats, getTalents } from '../utils/doll-utils';
 import { formatWeaponUrl } from '../utils/wpn-utils';
 import SkillCard from '../components/SkillCard';
-import Tables from '../data/TableLoader';
-import { PubTableLoader, PubTables } from '../data/PubTableLoader';
+import { TableLoader, Tables } from '../data/TableLoader';
 import ToggleButtonGroup from '../components/ToggleButtonGroup';
 import ToggleButton from '../components/ToggleButton';
 import Tooltip from '../components/Tooltip';
@@ -15,7 +14,17 @@ import TalentTree from '../components/TalentTree';
 import StatDisplay from '../components/StatDisplay';
 import { useNavigate } from 'react-router-dom';
 
-await PubTableLoader.load(['PropData']);
+await TableLoader.load([
+  'ClothesData',
+  'GunGradeData',
+  'GunWeaponData',
+  'GunData',
+  'LanguageElementData',
+  'GunDutyData',
+  'GunWeaponTypeData',
+  'WeaponTagData',
+  'PropData',
+]);
 
 type SkillTypeId = '01' | '05' | '07' | '04' | '08';
 
@@ -367,14 +376,12 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                     <StatDisplay
                       img="Icon_Will_64"
                       stat={
-                        PubTables.PropData[Tables.GunData[character.id].propertyId]['maxWillValue']
+                        Tables.PropData[Tables.GunData[character.id].propertyId]['maxWillValue']
                       }
                     />
                     <StatDisplay
                       img="Icon_Max_Ap_64"
-                      stat={
-                        PubTables.PropData[Tables.GunData[character.id].propertyId]['maxAp'] / 100
-                      }
+                      stat={Tables.PropData[Tables.GunData[character.id].propertyId]['maxAp'] / 100}
                     />
                     <div className="col-span-1"></div>
                   </div>
