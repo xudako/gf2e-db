@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { asset } from '../utils/utils';
 
@@ -13,6 +13,21 @@ const Header = () => {
   const isMenuActive = ['/calculator', '/stages', '/story'].some((path) =>
     location.pathname.startsWith(path)
   );
+
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    function handleClickOutside(event: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setMenuOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuOpen]);
 
   const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
     `text-primary-text hover:text-link-hover transition-colors ${isActive ? 'text-secondary-main font-bold' : ''}`;
@@ -40,7 +55,7 @@ const Header = () => {
             <NavLink to="/enemies" className={navLinkClasses}>
               Enemies
             </NavLink>
-            <div className="relative">
+            <div className="relative" ref={menuRef}>
               <button
                 onClick={handleMenuToggle}
                 className={`flex items-center text-primary-text hover:text-link-hover transition-colors ${
