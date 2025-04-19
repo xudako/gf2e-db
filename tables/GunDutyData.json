@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Bulwark",
+            "enName": "Guard",
+            "abbr": "Guard",
+            "description": "Have great survivability and can provide buffs for the team, usually have the ability to counterattack.",
+            "icon": "Icon_Professional_Guard"
+        },
+        {
+            "id": 2,
+            "name": "Vanguard",
+            "enName": "Scout",
+            "abbr": "Scout",
+            "description": "Have exceptional mobility and high burst damage, ideal for flanking enemies.",
+            "icon": "Icon_Professional_Scout"
+        },
+        {
+            "id": 3,
+            "name": "Support",
+            "enName": "Assist",
+            "abbr": "Assist",
+            "description": "Enhance the team's survivability or damage output depending on the individual Doll's specialties, which may include: ability to deal high stability damage, support attacks, healing, stability regen, damage buffs, cleanse and so on.",
+            "icon": "Icon_Professional_Assist"
+        },
+        {
+            "id": 4,
+            "name": "Sentinel",
+            "enName": "Suppress",
+            "abbr": "Suppress",
+            "description": "Has high damage output and can deal large amounts of targeted or AoE damage, depending on the individual Doll's specialties. They are the core of the team's offensive power.",
+            "icon": "Icon_Professional_Suppress"
+        }
+    ]
+}

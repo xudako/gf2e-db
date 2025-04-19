@@ -1,0 +1,5372 @@
+{
+    "data": [
+        {
+            "id": 10001,
+            "name": "Papa-Figo",
+            "description": "A high-performance handgun with an ingenious, elegant design. Named after a mythical monster said to devour disobedient children, according to its creator.",
+            "type": 1,
+            "modelstype": 1,
+            "bullettype": 5,
+            "element": 1,
+            "resCode": "Weapon_BpHRssr001_5",
+            "resPath": "Player/BpHRssr001/BpHRssr001_WL",
+            "rank": 5,
+            "skill": 5100011,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41057,
+            "unlockCost": {
+                "12056": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2041,
+                1032,
+                9012,
+                11012
+            ],
+            "audio": 103,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5100019
+            ],
+            "brand": "",
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10002,
+            "name": "Classified Manuscript",
+            "description": "A high-performance SMG, a powerful and unique weapon. When he gave it this name, the designer probably intended it to be a secret weapon.",
+            "type": 2,
+            "modelstype": 2,
+            "bullettype": 3,
+            "element": 1,
+            "resCode": "Weapon_BpSMGssr001_5",
+            "resPath": "Player/BpSMGssr001/BpSMGssr001_WL",
+            "rank": 5,
+            "skill": 5100021,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41058,
+            "unlockCost": {
+                "12056": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 401,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5100029
+            ],
+            "brand": "",
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10003,
+            "name": "Arcana",
+            "description": "High-performance sniper rifle with a cold and technological appearance. Does the bullet's trajectory also embody the principles of the universe's operation?",
+            "type": 3,
+            "modelstype": 1,
+            "bullettype": 6,
+            "element": 1,
+            "resCode": "Weapon_BpRFssr001_5",
+            "resPath": "Player/BpRFssr001/BpRFssr001_WL",
+            "rank": 5,
+            "skill": 5100031,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41059,
+            "unlockCost": {
+                "12056": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2022,
+                1021,
+                13012,
+                3014
+            ],
+            "audio": 201,
+            "weaponTag": 8,
+            "weaponSkill": [
+                5110149
+            ],
+            "brand": "",
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10004,
+            "name": "Guerno",
+            "description": "A high-performance assault rifle capable of easily adapting to various combat scenarios. Named after the Valkyrie Guerno, it likely yearns to be wielded by those of noble character.",
+            "type": 4,
+            "modelstype": 2,
+            "bullettype": 2,
+            "element": 1,
+            "resCode": "Weapon_BpARssr001_5",
+            "resPath": "Player/BpARssr001/BpARssr001_WL",
+            "rank": 5,
+            "skill": 5100041,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41060,
+            "unlockCost": {
+                "12056": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 301,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5110379
+            ],
+            "brand": "",
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10005,
+            "name": "Crowned Jackalope",
+            "description": "A high-performance melee weapon, immensely powerful with an artistic design. Battles fought with this weapon would undoubtedly be a spectacle to behold.",
+            "type": 7,
+            "modelstype": 1,
+            "element": 1,
+            "resCode": "Weapon_BpKnifessr001_5",
+            "resPath": "Player/BpKnifessr001/BpKnifessr001_WL",
+            "rank": 5,
+            "skill": 5100051,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41061,
+            "unlockCost": {
+                "12056": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                4011,
+                8011,
+                9013,
+                11013
+            ],
+            "audio": 1,
+            "weaponTag": 16,
+            "weaponSkill": [
+                5110079
+            ],
+            "bullettype": 0,
+            "brand": "",
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10006,
+            "name": "Mjölnir",
+            "description": "A high-performance machine gun notable for its exceptional capacity and formidable power. The designer's choice of name suggests a hope that users might wield its power with the aptitude of Thor himself.",
+            "type": 5,
+            "modelstype": 1,
+            "bullettype": 2,
+            "element": 1,
+            "resCode": "Weapon_BpMGssr001_5",
+            "resPath": "Player/BpMGssr001/BpMGssr001_WL",
+            "rank": 5,
+            "skill": 5100061,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41062,
+            "unlockCost": {
+                "12056": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2021,
+                1013,
+                13011,
+                3013
+            ],
+            "audio": 501,
+            "weaponTag": 8,
+            "weaponSkill": [
+                5100069
+            ],
+            "brand": "",
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10007,
+            "name": "Expeditionary Pigeon",
+            "description": "A powerful shotgun with sleek lines and tremendous force. With such power, even timid young pigeons might regain their courage and bravely protect their companions.",
+            "type": 6,
+            "modelstype": 2,
+            "bullettype": 4,
+            "element": 1,
+            "resCode": "Weapon_BpSGssr001_5",
+            "resPath": "Player/BpSGssr001/BpSGssr001_WL",
+            "rank": 5,
+            "skill": 5100071,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41063,
+            "unlockCost": {
+                "12056": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2031,
+                1031,
+                9011,
+                11011
+            ],
+            "audio": 601,
+            "weaponTag": 32,
+            "weaponSkill": [
+                5110479
+            ],
+            "brand": "",
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10131,
+            "name": "Retired UMP9",
+            "description": "A low-cost weapon commonly found in contamination zones. Its stock shows some damage, and numerous welding marks are visible across the gun's frame.",
+            "type": 2,
+            "modelstype": 1,
+            "bullettype": 3,
+            "element": 1,
+            "resCode": "Weapon_UMP9_3",
+            "resPath": "Player/LennaR01/LennaR01_WL",
+            "brand": "brand_icon17",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41071,
+            "unlockCost": {
+                "15341": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 403,
+            "weaponTag": 2,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10132,
+            "name": "UMP9",
+            "description": "A firearm highly compatible with Lenna. Modified based on her combat preferences. Ensures high shooting accuracy despite the increased rate of fire.",
+            "type": 2,
+            "modelstype": 1,
+            "bullettype": 3,
+            "element": 1,
+            "resCode": "Weapon_UMP9_4",
+            "resPath": "Player/LennaSR01/LennaSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 4,
+            "skill": 5101321,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41072,
+            "unlockCost": {
+                "15342": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 403,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5101329
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10133,
+            "name": "Löwenjunges",
+            "description": "A high-performance submachine gun assigned to Lenna. Its modifications are based on the UMP9. Leva's opinions were also considered during the modification process, and Lenna likes this gun very much.",
+            "type": 2,
+            "modelstype": 1,
+            "bullettype": 3,
+            "element": 1,
+            "resCode": "Weapon_UMP9_5",
+            "resPath": "Player/LennaSSR01/LennaSSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 5,
+            "skill": 5101331,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41073,
+            "unlockCost": {
+                "15343": 60
+            },
+            "privateSkill": 5101330,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "characterId": 6,
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 403,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5101329
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 10231,
+            "name": "Retired KSVK",
+            "description": "A cheap weapon purchased from an underground broker. Poor maintenance has affected its shooting accuracy, so this gun can only be used in a pinch.",
+            "type": 3,
+            "modelstype": 2,
+            "bullettype": 6,
+            "element": 1,
+            "resCode": "Weapon_KSVK_3",
+            "resPath": "Player/DusevnyjR01/DusevnyjR01_WL",
+            "brand": "brand_icon17",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41088,
+            "unlockCost": {
+                "15341": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2022,
+                1021,
+                13012,
+                3014
+            ],
+            "audio": 201,
+            "weaponTag": 8,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10232,
+            "name": "KSVK",
+            "description": "A firearm highly compatible with Dushevnaya. Modified based on her preferences in combat. Features varying degrees of improvement to both penetration and shooting accuracy.",
+            "type": 3,
+            "modelstype": 2,
+            "bullettype": 6,
+            "element": 1,
+            "resCode": "Weapon_KSVK_4",
+            "resPath": "Player/DusevnyjSR01/DusevnyjSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 4,
+            "skill": 5102321,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41089,
+            "unlockCost": {
+                "15342": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2022,
+                1021,
+                13012,
+                3014
+            ],
+            "audio": 201,
+            "weaponTag": 8,
+            "weaponSkill": [
+                5102339
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10233,
+            "name": "Eulogistic Verse",
+            "description": "A high-performance rifle assigned to Dushevnaya. Based on the KSVK, reducing recoil without compromising power. \"It speaks to me in a profound way, perhaps as a heroic verse that continues to shine even after a thousand years,\" says Dushevnaya.",
+            "type": 3,
+            "modelstype": 2,
+            "bullettype": 6,
+            "element": 1,
+            "resCode": "Weapon_KSVK_5",
+            "resPath": "Player/DusevnyjSSR01/DusevnyjSSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 5,
+            "skill": 5102331,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41090,
+            "unlockCost": {
+                "15343": 60
+            },
+            "privateSkill": 5102330,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 9,
+            "modNum": 4,
+            "modTypeGroup": [
+                2022,
+                1021,
+                13012,
+                3014
+            ],
+            "audio": 201,
+            "weaponTag": 8,
+            "weaponSkill": [
+                5102339
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 10331,
+            "name": "Retired Three-Line Rifle M1891",
+            "description": "A cheap weapon purchased from an underground broker. Its style is outdated, but it is still sturdy and functional.",
+            "type": 3,
+            "modelstype": 1,
+            "bullettype": 2,
+            "element": 1,
+            "resCode": "Weapon_M1891_3",
+            "resPath": "Player/MosinnagantR01/MosinnagantR01_WL",
+            "brand": "brand_icon17",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41064,
+            "unlockCost": {
+                "15331": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2022,
+                1021,
+                13012,
+                3014
+            ],
+            "audio": 202,
+            "weaponTag": 8,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10332,
+            "name": "Three-Line Rifle M1891",
+            "description": "A firearm highly compatible with Mosin-Nagant. Modified based on her combat preferences. Its streamlined design facilitates easy maintenance and handling.",
+            "type": 3,
+            "modelstype": 1,
+            "bullettype": 2,
+            "element": 1,
+            "resCode": "Weapon_M1891_4",
+            "resPath": "Player/MosinnagantSR01/MosinnagantSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 4,
+            "skill": 5103321,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41065,
+            "unlockCost": {
+                "15332": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2022,
+                1021,
+                13012,
+                3014
+            ],
+            "audio": 202,
+            "weaponTag": 8,
+            "weaponSkill": [
+                5110149
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10333,
+            "name": "Samosek",
+            "description": "A high-performance rifle assigned to Mosin-Nagant. Based on the original Three-line Rifle M1891. While retaining its versatility, its power has been pushed to the limit. When Mosin-Nagant raises the rifle and takes aim at the enemy, is she also examining her own heart?",
+            "type": 3,
+            "modelstype": 1,
+            "bullettype": 2,
+            "element": 1,
+            "resCode": "Weapon_M1891_5",
+            "resPath": "Player/MosinnagantSSR01/MosinnagantSSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 5,
+            "skill": 5103331,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41066,
+            "unlockCost": {
+                "15333": 60
+            },
+            "privateSkill": 5110330,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 18,
+            "modNum": 4,
+            "modTypeGroup": [
+                2022,
+                1021,
+                13012,
+                3014
+            ],
+            "audio": 202,
+            "weaponTag": 8,
+            "weaponSkill": [
+                5110149
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 10341,
+            "name": "Retired W 2000",
+            "description": "A cheap weapon purchased from an underground broker. Its frame has some dents, but it doesn't affect the firing efficiency.",
+            "type": 3,
+            "modelstype": 2,
+            "bullettype": 2,
+            "element": 1,
+            "resCode": "Weapon_WA2000_3",
+            "resPath": "Player/MacqiatoR01/MacqiatoR01_WL",
+            "brand": "brand_icon17",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41074,
+            "unlockCost": {
+                "15341": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2022,
+                1021,
+                13012,
+                3014
+            ],
+            "audio": 203,
+            "weaponTag": 8,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10342,
+            "name": "W 2000",
+            "description": "A firearm highly compatible with Makiatto. Modified based on her combat preferences. Features include lighter weight and improved shooting accuracy.",
+            "type": 3,
+            "modelstype": 2,
+            "bullettype": 2,
+            "element": 1,
+            "resCode": "Weapon_WA2000_4",
+            "resPath": "Player/MacqiatoSR01/MacqiatoSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 4,
+            "skill": 5103421,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41075,
+            "unlockCost": {
+                "15342": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2022,
+                1021,
+                13012,
+                3014
+            ],
+            "audio": 203,
+            "weaponTag": 8,
+            "weaponSkill": [
+                5103439
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10343,
+            "name": "Bittersweet Caramel",
+            "description": "A high-performance rifle assigned to Makiatto. Based on the W 2000. It has undergone countless adjustments to achieve ultimate precision and power. Makiatto wields this weapon to break through all obstacles, infusing her simmering emotions into each bullet.",
+            "type": 3,
+            "modelstype": 2,
+            "bullettype": 2,
+            "element": 1,
+            "resCode": "Weapon_WA2000_5",
+            "resPath": "Player/MacqiatoSSR01/MacqiatoSSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 5,
+            "skill": 5103431,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41076,
+            "unlockCost": {
+                "15343": 60
+            },
+            "privateSkill": 5103430,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 19,
+            "modNum": 4,
+            "modTypeGroup": [
+                2022,
+                1021,
+                13012,
+                3014
+            ],
+            "audio": 203,
+            "weaponTag": 8,
+            "weaponSkill": [
+                5103439
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 10351,
+            "name": "Retired Type 97",
+            "description": "A cheap weapon purchased from an underground broker. Appears worn-out, as if it could break at any moment if not handled with care.",
+            "type": 4,
+            "modelstype": 2,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_QBZ97_3",
+            "resPath": "Player/JiangyuR01/JiangyuR01_WL",
+            "brand": "brand_icon17",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41077,
+            "unlockCost": {
+                "15351": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 301,
+            "weaponTag": 4,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10352,
+            "name": "Type 97",
+            "description": "A firearm highly compatible with Jiangyu. Modified based on her combat preferences. The reinforced body structure and significant power boost have made it more robust and potent.",
+            "type": 4,
+            "modelstype": 2,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_QBZ97_4",
+            "resPath": "Player/JiangyuSR01/JiangyuSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 4,
+            "skill": 5103521,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41078,
+            "unlockCost": {
+                "15352": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 301,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5103529
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10353,
+            "name": "Leaping Tiger",
+            "description": "A high-performance assault rifle assigned to Jiangyu, based on the Type 97, is an exceptionally reliable weapon. The sound of bullets leaving the barrel is sharp and lively, reminiscent of rousing drumbeats in a musical piece, making it one of Jiangyu's favorites.",
+            "type": 4,
+            "modelstype": 2,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_QBZ97_5",
+            "resPath": "Player/JiangyuSSR01/JiangyuSSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 5,
+            "skill": 5103531,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41079,
+            "unlockCost": {
+                "15353": 60
+            },
+            "privateSkill": 5103530,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 20,
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 301,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5103539
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 10361,
+            "name": "Retired Stechkin",
+            "description": "A cheap weapon purchased from an underground broker. This gun is a bit old and can barely hit the target.",
+            "type": 1,
+            "modelstype": 1,
+            "bullettype": 3,
+            "element": 1,
+            "resCode": "Weapon_APS_3",
+            "resPath": "Player/KseniaR01/KseniaR01_WL",
+            "brand": "brand_icon17",
+            "rank": 3,
+            "skill": 5110081,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41067,
+            "unlockCost": {
+                "15361": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2041,
+                1032,
+                9012,
+                11012
+            ],
+            "audio": 102,
+            "weaponTag": 2,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10362,
+            "name": "Stechkin",
+            "description": "A firearm highly compatible with Ksenia. Modified based on her combat preferences. Features a lighter frame and improved accuracy.",
+            "type": 1,
+            "modelstype": 1,
+            "bullettype": 3,
+            "element": 1,
+            "resCode": "Weapon_APS_4",
+            "resPath": "Player/KseniaSR01/KseniaSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 4,
+            "skill": 5103621,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41068,
+            "unlockCost": {
+                "15362": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2041,
+                1032,
+                9012,
+                11012
+            ],
+            "audio": 102,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5100019
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10371,
+            "name": "Retired Pluma Edge",
+            "description": "A cheap weapon purchased from an underground broker. While plain and old-fashioned in appearance, it can still be frequently encountered in the contamination zones.",
+            "type": 7,
+            "modelstype": 1,
+            "element": 1,
+            "resCode": "Weapon_Ullr_3",
+            "resPath": "Player/UllridR01/UllridR01_WL",
+            "brand": "brand_icon17",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41080,
+            "unlockCost": {
+                "15341": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                4011,
+                8011,
+                9013,
+                11013
+            ],
+            "audio": 1,
+            "weaponTag": 16,
+            "bullettype": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10372,
+            "name": "Pluma Edge",
+            "description": "A melee weapon, highly compatible with Ullrid. It has been modified in accordance with her preferences in combat, and is exceedingly sharp and durable.",
+            "type": 7,
+            "modelstype": 1,
+            "element": 1,
+            "resCode": "Weapon_Ullr_4",
+            "resPath": "Player/UllridSR01/UllridSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 4,
+            "skill": 5103721,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41081,
+            "unlockCost": {
+                "15342": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                4011,
+                8011,
+                9013,
+                11013
+            ],
+            "audio": 1,
+            "weaponTag": 16,
+            "weaponSkill": [
+                5103729
+            ],
+            "bullettype": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10373,
+            "name": "Rectrix",
+            "description": "A high-performance melee weapon assigned to Ullrid. Exquisitely forged out of high-quality steel whilst adorned with simple floral decorations, this weapon's appearance appears both keen and swift.",
+            "type": 7,
+            "modelstype": 1,
+            "element": 1,
+            "resCode": "Weapon_Ullr_5",
+            "resPath": "Player/UllridSSR01/UllridSSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 5,
+            "skill": 5103731,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41082,
+            "unlockCost": {
+                "15343": 60
+            },
+            "privateSkill": 5103730,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 22,
+            "modNum": 4,
+            "modTypeGroup": [
+                4011,
+                8011,
+                9013,
+                11013
+            ],
+            "audio": 1,
+            "weaponTag": 16,
+            "weaponSkill": [
+                5103729
+            ],
+            "bullettype": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 10381,
+            "name": "Retired Model ARM",
+            "description": "A cheap weapon purchased from an underground broker. Somewhat heavy, but overall still reasonably easy to carry.",
+            "type": 5,
+            "modelstype": 1,
+            "bullettype": 2,
+            "element": 1,
+            "resCode": "Weapon_Galil_3",
+            "resPath": "Player/LittaraR01/LittaraR01_WL",
+            "brand": "brand_icon17",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41069,
+            "unlockCost": {
+                "15371": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2021,
+                1013,
+                13011,
+                3013
+            ],
+            "audio": 501,
+            "weaponTag": 8,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10382,
+            "name": "Model ARM",
+            "description": "A firearm highly compatible with Littara. Modified based on her combat preferences, making it more suitable for harsh environments and comfortable to use.",
+            "type": 5,
+            "modelstype": 1,
+            "bullettype": 2,
+            "element": 1,
+            "resCode": "Weapon_Galil_4",
+            "resPath": "Player/LittaraSR01/LittaraSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 4,
+            "skill": 5103821,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41070,
+            "unlockCost": {
+                "15372": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2021,
+                1013,
+                13011,
+                3013
+            ],
+            "audio": 501,
+            "weaponTag": 8,
+            "weaponSkill": [
+                5100069
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10391,
+            "name": "Retired Suomi",
+            "description": "A cheap weapon from an underground broker. It is scratched and worn all over its frame, but it doesn't affect the gun's function.",
+            "type": 2,
+            "modelstype": 1,
+            "bullettype": 3,
+            "element": 1,
+            "resCode": "Weapon_M1931_3",
+            "resPath": "Player/SuomiR01/SuomiR01_WL",
+            "brand": "brand_icon17",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41085,
+            "unlockCost": {
+                "15341": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 404,
+            "weaponTag": 2,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10392,
+            "name": "Suomi",
+            "description": "A firearm that is highly compatible with Suomi. It has been modified to suit Suomi's fighting style. Reducing the gun's weight has also increased its durability and firepower.",
+            "type": 2,
+            "modelstype": 1,
+            "bullettype": 3,
+            "element": 1,
+            "resCode": "Weapon_M1931_4",
+            "resPath": "Player/SuomiSR01/SuomiSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 4,
+            "skill": 5103921,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41086,
+            "unlockCost": {
+                "15342": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 404,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5100029
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10393,
+            "name": "Unspoken Calling",
+            "description": "A high-performance submachine gun issued to Suomi. Modelled after the Suomi, it is both lighter and more powerful than its original, and it is suitable for various complex combat conditions. With this gun, Suomi will accomplish all the missions given to her.",
+            "type": 2,
+            "modelstype": 1,
+            "bullettype": 3,
+            "element": 1,
+            "resCode": "Weapon_M1931_5",
+            "resPath": "Player/SuomiSSR01/SuomiSSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 5,
+            "skill": 5103931,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41087,
+            "unlockCost": {
+                "15343": 60
+            },
+            "privateSkill": 5103930,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 24,
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 404,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5100029
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 10401,
+            "name": "Retired PPSh-41",
+            "description": "A cheap weapon from an underground broker. The frame is mottled and discolored, but it's still solid and reliable.",
+            "type": 2,
+            "modelstype": 1,
+            "bullettype": 3,
+            "element": 1,
+            "resCode": "Weapon_PPSh41_3",
+            "resPath": "Player/PapashaR01/PapashaR01_WL",
+            "brand": "brand_icon17",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41094,
+            "unlockCost": {
+                "15341": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 404,
+            "weaponTag": 2,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10402,
+            "name": "PPSh-41",
+            "description": "A firearm that is highly compatible with Papasha. It has been modified to suit Papasha's fighting style. While the material is still the same, its frame is more solid.",
+            "type": 2,
+            "modelstype": 1,
+            "bullettype": 3,
+            "element": 1,
+            "resCode": "Weapon_PPSh41_4",
+            "resPath": "Player/PapashaSR01/PapashaSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 4,
+            "skill": 5104021,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41095,
+            "unlockCost": {
+                "15342": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 404,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5101329
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10403,
+            "name": "Svarog",
+            "description": "A high-performance submachine gun issued to Papasha. Modelled after the PPSh, it is lighter than the original while still retaining its predecessor's firepower and low recoil. Papasha holds it high, showing its glorious light off to all.",
+            "type": 2,
+            "modelstype": 1,
+            "bullettype": 3,
+            "element": 1,
+            "resCode": "Weapon_PPSh41_5",
+            "resPath": "Player/PapashaSSR01/PapashaSSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 5,
+            "skill": 5104031,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41096,
+            "unlockCost": {
+                "15342": 60
+            },
+            "privateSkill": 5104030,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "characterId": 25,
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 404,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5101329
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 10411,
+            "name": "Retired M1 Super 90",
+            "description": "A cheap weapon purchased from an underground broker. Its performance and appearance are both equally unremarkable.",
+            "type": 6,
+            "modelstype": 2,
+            "bullettype": 4,
+            "element": 1,
+            "resCode": "Weapon_M1_3",
+            "resPath": "Player/LottaR01/LottaR01_WL",
+            "brand": "brand_icon17",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41083,
+            "unlockCost": {
+                "15341": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2031,
+                1031,
+                9011,
+                11011
+            ],
+            "audio": 602,
+            "weaponTag": 32,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10412,
+            "name": "M1 Super 90",
+            "description": "A firearm highly compatible with Lotta, it has been modified to suit Lotta's fighting style. The power and endurance has been significantly boosted.",
+            "type": 6,
+            "modelstype": 2,
+            "bullettype": 4,
+            "element": 1,
+            "resCode": "Weapon_M1_4",
+            "resPath": "Player/LottaSR01/LottaSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 4,
+            "skill": 5104121,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41084,
+            "unlockCost": {
+                "15342": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2031,
+                1031,
+                9011,
+                11011
+            ],
+            "audio": 602,
+            "weaponTag": 32,
+            "weaponSkill": [
+                5110479
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10421,
+            "name": "Retired G36K-KSK",
+            "description": "A cheap weapon purchased from an underground broker. It's really old and worn out, and looks like it's reaching the upper limit of its lifespan.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "resCode": "Weapon_G36KKSK_3",
+            "resPath": "Player/AndorisR01/AndorisR01_WL",
+            "brand": "G36KKSK",
+            "rank": 3,
+            "skill": 5110101,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41110,
+            "unlockCost": {
+                "15341": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 306,
+            "weaponTag": 4,
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10422,
+            "name": "G36K-KSK",
+            "description": "A firearm highly compatible with Andoris. Modified based on her combat preferences, it features improved firepower and error correction.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "resCode": "Weapon_G36KKSK_4",
+            "resPath": "Player/AndorisSR01/AndorisSR01_WL",
+            "brand": "G36KKSK",
+            "rank": 4,
+            "skill": 5104221,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41111,
+            "unlockCost": {
+                "15342": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 306,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5104229
+            ],
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10423,
+            "name": "Aglaea",
+            "description": "A high-performance assault rifle assigned to Andoris. Based on the G36K-KSK. Designed for ease of handling and reliability, it features enhanced firepower, ensuring Andoris can confidently protect those she holds dear.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "resCode": "Weapon_G36KKSK_5",
+            "resPath": "Player/AndorisSSR01/AndorisSSR01_WL",
+            "brand": "G36KKSK",
+            "rank": 5,
+            "skill": 5104231,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41112,
+            "unlockCost": {
+                "15343": 60
+            },
+            "privateSkill": 5104230,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "characterId": 27,
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 306,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5104229
+            ],
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 10431,
+            "name": "Retired Skoda 75",
+            "description": "A cheap weapon purchased from an underground broker. There are some problems with the firing mechanism, but one must make do with what they have.",
+            "type": 1,
+            "modelstype": 1,
+            "bullettype": 5,
+            "resCode": "Weapon_CZ75_3",
+            "resPath": "Player/FayeR01/FayeR01_WL",
+            "brand": "CZ75",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41116,
+            "unlockCost": {
+                "15341": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2041,
+                1032,
+                9012,
+                11012
+            ],
+            "audio": 101,
+            "weaponTag": 2,
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10432,
+            "name": "Skoda 75",
+            "description": "A firearm highly compatible with Faye. Modified based on her combat preferences, it is durable, light, and easy to handle.",
+            "type": 1,
+            "modelstype": 1,
+            "bullettype": 5,
+            "resCode": "Weapon_CZ75_4",
+            "resPath": "Player/FayeSR01/FayeSR01_WL",
+            "brand": "CZ75",
+            "rank": 4,
+            "skill": 5104321,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41117,
+            "unlockCost": {
+                "15342": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2041,
+                1032,
+                9012,
+                11012
+            ],
+            "audio": 101,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5104329
+            ],
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10433,
+            "name": "Hestia",
+            "description": "A high-performance handgun assigned to Faye. Based on the Skoda 75, it is convenient to carry, reliable, precise, and accurate. In Faye's hands, Hestia becomes as fearsome as a true Goddess of Flame.",
+            "type": 1,
+            "modelstype": 1,
+            "bullettype": 5,
+            "resCode": "Weapon_CZ75_5",
+            "resPath": "Player/FayeSSR01/FayeSSR01_WL",
+            "brand": "CZ75",
+            "rank": 5,
+            "skill": 5104331,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41118,
+            "unlockCost": {
+                "15343": 60
+            },
+            "privateSkill": 5104330,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 28,
+            "modNum": 4,
+            "modTypeGroup": [
+                2041,
+                1032,
+                9012,
+                11012
+            ],
+            "audio": 101,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5104329
+            ],
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 10441,
+            "name": "Retired Ksvec .45 ACP",
+            "description": "An old weapon commonly seen in the contaminated zones. It's about to completely fall apart, but can still be used if you are careful enough.",
+            "type": 2,
+            "modelstype": 1,
+            "bullettype": 3,
+            "resCode": "Weapon_Vector_3",
+            "resPath": "Player/VectorR01/VectorR01_WL",
+            "brand": "Vector",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41104,
+            "unlockCost": {
+                "15341": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 401,
+            "weaponTag": 2,
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10442,
+            "name": "Ksvec .45 ACP",
+            "description": "A firearm highly compatible with Vector. Modified based on her combat preferences, it is highly maneuverable and stable.",
+            "type": 2,
+            "modelstype": 1,
+            "bullettype": 3,
+            "resCode": "Weapon_Vector_4",
+            "resPath": "Player/VectorSR01/VectorSR01_WL",
+            "brand": "Vector",
+            "rank": 4,
+            "skill": 5104421,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41105,
+            "unlockCost": {
+                "15342": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 401,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5110379
+            ],
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10443,
+            "name": "Banshee's Whisper",
+            "description": "A high-performance submachine gun assigned to Vector. Based on the Ksvec .45 ACP, it has been completely overhauled. Pull the trigger, and let death whisper a song into the ears of enemies.",
+            "type": 2,
+            "modelstype": 1,
+            "bullettype": 3,
+            "resCode": "Weapon_Vector_5",
+            "resPath": "Player/VectorSSR01/VectorSSR01_WL",
+            "brand": "Vector",
+            "rank": 5,
+            "skill": 5104431,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41106,
+            "unlockCost": {
+                "15343": 60
+            },
+            "privateSkill": 5104430,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 29,
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 401,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5110379
+            ],
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 10451,
+            "name": "Retired Sturmgewehr 28",
+            "description": "An old weapon commonly seen in the contaminated zones. It shows a high degree of erosion by the elements.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 2,
+            "resCode": "Weapon_G28_3",
+            "resPath": "Player/BiyocaR01/BiyocaR01_WL",
+            "brand": "G28",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41107,
+            "unlockCost": {
+                "15341": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 308,
+            "weaponTag": 4,
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10452,
+            "name": "Sturmgewehr 28",
+            "description": "A firearm highly compatible with Belka. Modified based on her combat preferences, it is now even more suited for long-range shooting.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 2,
+            "resCode": "Weapon_G28_4",
+            "resPath": "Player/BiyocaSR01/BiyocaSR01_WL",
+            "brand": "G28",
+            "rank": 4,
+            "skill": 5104521,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41108,
+            "unlockCost": {
+                "15342": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 308,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5104529
+            ],
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10453,
+            "name": "Sylvan Elf",
+            "description": "A high-performance assault rifle assigned to Belka. Based on the Sturmgewehr 28, it has been further improved in terms of shooting accuracy, precision and firepower. She bounces around the battlefield like an elf in a forest, pushing back intruders with agility and precision.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 2,
+            "resCode": "Weapon_G28_5",
+            "resPath": "Player/BiyocaSSR01/BiyocaSSR01_WL",
+            "brand": "G28",
+            "rank": 5,
+            "skill": 5104531,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41109,
+            "unlockCost": {
+                "15343": 60
+            },
+            "privateSkill": 5104530,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 30,
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 308,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5104539
+            ],
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 10471,
+            "name": "Retired Springfield",
+            "description": "A cheap weapon purchased from an underground broker. It’s not very stable or reliable, but can still be used, more or less.",
+            "type": 3,
+            "modelstype": 1,
+            "bullettype": 2,
+            "resCode": "Weapon_M1903_3",
+            "resPath": "Player/SpringfieldR01/SpringfieldR01_WL",
+            "brand": "M1903",
+            "rank": 3,
+            "skill": 5110081,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41113,
+            "unlockCost": {
+                "15341": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2022,
+                1021,
+                13012,
+                3014
+            ],
+            "audio": 201,
+            "weaponTag": 8,
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10472,
+            "name": "Springfield",
+            "description": "A firearm highly compatible with Springfield. Modified based on her combat preferences, it provides increased bullet velocity, hence improving firepower.",
+            "type": 3,
+            "modelstype": 1,
+            "bullettype": 2,
+            "resCode": "Weapon_M1903_4",
+            "resPath": "Player/SpringfieldSR01/SpringfieldSR01_WL",
+            "brand": "M1903",
+            "rank": 4,
+            "skill": 5104721,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41114,
+            "unlockCost": {
+                "15342": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2022,
+                1021,
+                13012,
+                3014
+            ],
+            "audio": 201,
+            "weaponTag": 8,
+            "weaponSkill": [
+                5110569
+            ],
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10473,
+            "name": "Radiance",
+            "description": "A high-performance rifle assigned to Springfield. Based on the Springfield, it has been further improved in terms of carrying convenience and firing speed. Pierce through all adversity, to carve out a brighter future for those you deem important.",
+            "type": 3,
+            "modelstype": 1,
+            "bullettype": 2,
+            "resCode": "Weapon_M1903_5",
+            "resPath": "Player/SpringfieldSSR01/SpringfieldSSR01_WL",
+            "brand": "M1903",
+            "rank": 5,
+            "skill": 5104731,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41115,
+            "unlockCost": {
+                "15343": 60
+            },
+            "privateSkill": 5104730,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "characterId": 32,
+            "modNum": 4,
+            "modTypeGroup": [
+                2022,
+                1021,
+                13012,
+                3014
+            ],
+            "audio": 201,
+            "weaponTag": 8,
+            "weaponSkill": [
+                5110569
+            ],
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 10501,
+            "name": "Retired CS/LS06",
+            "description": "A cheap weapon from an underground broker. Its barrel is a little rusty, and its lethality is in question.",
+            "type": 2,
+            "modelstype": 2,
+            "bullettype": 3,
+            "resCode": "Weapon_CSLS06_3",
+            "resPath": "Player/ZhaohuiR01/ZhaohuiR01_WL",
+            "brand": "CSLS06",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41091,
+            "unlockCost": {
+                "15341": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 402,
+            "weaponTag": 2,
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10502,
+            "name": "CS/LS06",
+            "description": "A firearm that is highly compatible with Zhaohui. It has been modified to suit Zhaohui's fighting style. It's lighter and handier, improving its accuracy on the move.",
+            "type": 2,
+            "modelstype": 2,
+            "bullettype": 3,
+            "resCode": "Weapon_CSLS06_4",
+            "resPath": "Player/ZhaohuiSR01/ZhaohuiSR01_WL",
+            "brand": "CSLS06",
+            "rank": 4,
+            "skill": 5105021,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41092,
+            "unlockCost": {
+                "15342": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 402,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5100029
+            ],
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10503,
+            "name": "Juggernaut",
+            "description": "A high-performance submachine gun issued to Zhaohui. Modelled after the CS/LS06, its lethality has been greatly increased, making it a blade of righteousness for a chivalrous warrior. \"A man slain with but a step and slash, A journey unending for a thousand miles.\"",
+            "type": 2,
+            "modelstype": 2,
+            "bullettype": 3,
+            "resCode": "Weapon_CSLS06_5",
+            "resPath": "Player/ZhaohuiSSR01/ZhaohuiSSR01_WL",
+            "brand": "CSLS06",
+            "rank": 5,
+            "skill": 5105031,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41093,
+            "unlockCost": {
+                "15343": 60
+            },
+            "privateSkill": 5105030,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 35,
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 402,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5100029
+            ],
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 10511,
+            "name": "Retired G11",
+            "description": "An old weapon commonly seen in the contaminated zones. It is tattered and worn, but can still be used.",
+            "type": 4,
+            "modelstype": 2,
+            "resCode": "Weapon_G11_3",
+            "resPath": "Player/MishtyR01/MishtyR01_WL",
+            "brand": "G11",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41100,
+            "unlockCost": {
+                "15341": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 307,
+            "weaponTag": 4,
+            "bullettype": 0,
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10512,
+            "name": "G11",
+            "description": "A firearm highly compatible with Mechty. Modified based on her combat preferences, it has improved rate of fire, precision and accuracy.",
+            "type": 4,
+            "modelstype": 2,
+            "resCode": "Weapon_G11_4",
+            "resPath": "Player/MishtySR01/MishtySR01_WL",
+            "brand": "G11",
+            "rank": 4,
+            "skill": 5105121,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41102,
+            "unlockCost": {
+                "15342": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 307,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5110449
+            ],
+            "bullettype": 0,
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10513,
+            "name": "Daydream",
+            "description": "A high-performance assault rifle assigned to Mechty. Based on the G11, its firepower has been further improved. A gun that complements Mechty's burst-firing nature, it is dedicated to shattering the daydreams of enemies.",
+            "type": 4,
+            "modelstype": 2,
+            "resCode": "Weapon_G11_5",
+            "resPath": "Player/MishtySSR01/MishtySSR01_WL",
+            "brand": "G11",
+            "rank": 5,
+            "skill": 5105131,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41103,
+            "unlockCost": {
+                "15343": 60
+            },
+            "privateSkill": 5105130,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 36,
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 307,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5105139
+            ],
+            "bullettype": 0,
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 10521,
+            "name": "Retired 416",
+            "description": "An old weapon commonly seen in the contaminated zones. It looks old, but the damage to it is minimal and it can be used normally.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "resCode": "Weapon_HK416_3",
+            "resPath": "Player/ClukayR01/ClukayR01_WL",
+            "brand": "HK416",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41097,
+            "unlockCost": {
+                "15341": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 306,
+            "weaponTag": 4,
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 10522,
+            "name": "416",
+            "description": "A firearm that is highly compatible with Klukai. It has been modified to suit Klukai's fighting style, granting it a significant increase in reliability and accuracy.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "resCode": "Weapon_HK416_4",
+            "resPath": "Player/ClukaySR01/ClukaySR01_WL",
+            "brand": "HK416",
+            "rank": 4,
+            "skill": 5105221,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41098,
+            "unlockCost": {
+                "15342": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 306,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5105239
+            ],
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 10523,
+            "name": "Skylla",
+            "description": "A high-performance assault rifle issued to Klukai, modelled after the 416. Its flexibility has been greatly increased, making it suitable for various combat tactics. Its perfect appearance and performance belies its rampant ambition, and its fangs will tear all foes to shreds.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "resCode": "Weapon_HK416_5",
+            "resPath": "Player/ClukaySSR01/ClukaySSR01_WL",
+            "brand": "HK416",
+            "rank": 5,
+            "skill": 5105231,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41099,
+            "unlockCost": {
+                "15343": 60
+            },
+            "privateSkill": 5105230,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 37,
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 306,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5105239
+            ],
+            "element": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 11007,
+            "name": "Hare",
+            "description": "A melee weapon highly compatible with Krolik. Modified based on her combat preferences and painted with a skin that matches Krolik's colors.",
+            "type": 7,
+            "modelstype": 1,
+            "element": 1,
+            "resCode": "Weapon_Blade_4",
+            "resPath": "Player/CharolicSR01/CharolicSR01_WL",
+            "brand": "brand_icon01",
+            "rank": 4,
+            "skill": 5110071,
+            "slot": [
+                6,
+                7,
+                8,
+                9
+            ],
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41007,
+            "unlockCost": {
+                "12007": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                4011,
+                8011,
+                9013,
+                11013
+            ],
+            "audio": 1,
+            "weaponTag": 16,
+            "weaponSkill": [
+                5110079
+            ],
+            "bullettype": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 11008,
+            "name": "Retired .380 Curva",
+            "description": "Colphne's designated training weapon. Frequently used in team coordination drills as well as for basic combat operations when necessary.",
+            "type": 1,
+            "modelstype": 1,
+            "bullettype": 5,
+            "element": 1,
+            "resCode": "Weapon_TaurusCurve_3",
+            "resPath": "Player/ColphneR01/ColphneR01_WL",
+            "brand": "brand_icon01",
+            "rank": 3,
+            "skill": 5110081,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41008,
+            "unlockCost": {
+                "12008": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2041,
+                1032,
+                9012,
+                11012
+            ],
+            "audio": 101,
+            "weaponTag": 2,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 11009,
+            "name": "Retired .50 Nemesis",
+            "description": "Nemesis' designated training weapon. Frequently used in team coordination drills as well as for basic combat operations when necessary.",
+            "type": 3,
+            "modelstype": 1,
+            "bullettype": 6,
+            "element": 1,
+            "resCode": "Weapon_OM50_3",
+            "resPath": "Player/NemesisR01/NemesisR01_WL",
+            "brand": "brand_icon02",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41009,
+            "unlockCost": {
+                "12009": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2022,
+                1021,
+                13012,
+                3014
+            ],
+            "audio": 201,
+            "weaponTag": 8,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 11010,
+            "name": "Retired OTs-14",
+            "description": "Groza's designated training weapon. Frequently used in team coordination drills as well as for basic combat operations when necessary.",
+            "type": 4,
+            "modelstype": 2,
+            "bullettype": 2,
+            "element": 1,
+            "resCode": "Weapon_OTS14_3",
+            "resPath": "Player/GrozaR01/GrozaR01_WL",
+            "brand": "brand_icon01",
+            "rank": 3,
+            "skill": 5110101,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41010,
+            "unlockCost": {
+                "12010": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 301,
+            "weaponTag": 4,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 11014,
+            "name": ".50 Nemesis",
+            "description": "A firearm highly compatible with Nemesis. Modified based on her combat preferences. Features further improved firepower and accuracy.",
+            "type": 3,
+            "modelstype": 1,
+            "bullettype": 6,
+            "element": 1,
+            "resCode": "Weapon_OM50_4",
+            "resPath": "Player/NemesisSR01/NemesisSR01_WL",
+            "brand": "brand_icon01",
+            "rank": 4,
+            "skill": 5110141,
+            "slot": [
+                1,
+                2,
+                4,
+                5
+            ],
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41014,
+            "unlockCost": {
+                "12014": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2022,
+                1021,
+                13012,
+                3014
+            ],
+            "audio": 201,
+            "weaponTag": 8,
+            "weaponSkill": [
+                5110149
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 11015,
+            "name": ".380 Curva",
+            "description": "A firearm highly compatible with Colphne. Modified based on her combat preferences. The modifications make it practical, compact, and easy to use, while also enhancing its power.",
+            "type": 1,
+            "modelstype": 1,
+            "bullettype": 5,
+            "element": 1,
+            "resCode": "Weapon_TaurusCurve_4",
+            "resPath": "Player/ColphneSR01/ColphneSR01_WL",
+            "brand": "brand_icon02",
+            "rank": 4,
+            "skill": 5110151,
+            "slot": [
+                1,
+                2
+            ],
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41015,
+            "unlockCost": {
+                "12015": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2041,
+                1032,
+                9012,
+                11012
+            ],
+            "audio": 602,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5100019
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 11016,
+            "name": "Heart Seeker",
+            "description": "A high-performance shotgun assigned to Vepley. Based on the Vepr-12. Designed to protect the audience in case of unexpected incidents during her performances. However, as a professional idol, Vepley might use this gun to secretly capture the hearts of her fans.",
+            "type": 6,
+            "modelstype": 1,
+            "bullettype": 4,
+            "element": 1,
+            "resCode": "Weapon_Vepr12_5",
+            "resPath": "Player/VepleySSR01/VepleySSR01_WL",
+            "brand": "brand_icon03",
+            "rank": 5,
+            "elemenSkill": 5101020,
+            "skill": 5110161,
+            "slot": [
+                1,
+                2,
+                4,
+                5
+            ],
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41016,
+            "unlockCost": {
+                "12016": 60
+            },
+            "privateSkill": 5110160,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 5,
+            "modNum": 4,
+            "modTypeGroup": [
+                2031,
+                1031,
+                9011,
+                11011
+            ],
+            "audio": 602,
+            "weaponTag": 32,
+            "weaponSkill": [
+                5110479
+            ],
+            "buffSkill": 0,
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 11017,
+            "name": "Retired Vepr-12",
+            "description": "Vepley's designated training weapon. Frequently used in team coordination drills as well as for basic combat operations when necessary.",
+            "type": 6,
+            "modelstype": 1,
+            "bullettype": 4,
+            "element": 1,
+            "resCode": "Weapon_Vepr12_3",
+            "resPath": "Player/VepleyR01/VepleyR01_WL",
+            "brand": "brand_icon01",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41017,
+            "unlockCost": {
+                "12017": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2031,
+                1031,
+                9011,
+                11011
+            ],
+            "audio": 201,
+            "weaponTag": 32,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 11020,
+            "name": "Optical Illusion",
+            "description": "A high-performance machine gun assigned to Peritya. Based on the Pecheneg-SP. After modifications, its power has been significantly enhanced. Will the one wielding this weapon also vanish like an illusion?",
+            "type": 5,
+            "modelstype": 1,
+            "bullettype": 2,
+            "element": 1,
+            "resCode": "Weapon_Pecheng_5",
+            "resPath": "Player/PerityaSSR01/PerityaSSR01_WL",
+            "brand": "brand_icon03",
+            "rank": 5,
+            "elemenSkill": 5101420,
+            "skill": 5110201,
+            "slot": [
+                1,
+                2,
+                3,
+                5
+            ],
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41020,
+            "unlockCost": {
+                "12020": 60
+            },
+            "privateSkill": 5110200,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 7,
+            "modNum": 4,
+            "modTypeGroup": [
+                2021,
+                1013,
+                13011,
+                3013
+            ],
+            "audio": 501,
+            "weaponTag": 8,
+            "weaponSkill": [
+                5110209
+            ],
+            "buffSkill": 0,
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 11021,
+            "name": "Vepr-12",
+            "description": "A firearm highly compatible with Vepley. Modified based on her combat preferences, making it a \"performance prop\" more suitable for cute and energetic idols.",
+            "type": 6,
+            "modelstype": 1,
+            "bullettype": 4,
+            "element": 1,
+            "resCode": "Weapon_Vepr12_4",
+            "resPath": "Player/VepleySR01/VepleySR01_WL",
+            "brand": "brand_icon01",
+            "rank": 4,
+            "skill": 5110211,
+            "slot": [
+                1,
+                2,
+                4,
+                5
+            ],
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41021,
+            "unlockCost": {
+                "12021": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2031,
+                1031,
+                9011,
+                11011
+            ],
+            "audio": 201,
+            "weaponTag": 32,
+            "weaponSkill": [
+                5110479
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 11022,
+            "name": "Retired Hare",
+            "description": "Krolik's designated training weapon. Frequently used in team coordination drills as well as for basic combat operations when necessary.",
+            "type": 7,
+            "modelstype": 1,
+            "element": 1,
+            "resCode": "Weapon_Blade_3",
+            "resPath": "Player/CharolicR01/CharolicR01_WL",
+            "brand": "brand_icon01",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41022,
+            "unlockCost": {
+                "12022": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                4011,
+                8011,
+                9013,
+                11013
+            ],
+            "audio": 1,
+            "weaponTag": 16,
+            "bullettype": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 11023,
+            "name": "OTs-14",
+            "description": "A firearm highly compatible with Groza. Modified based on her combat preferences. Features improved firepower and burst fire effectiveness while ensuring that it's still easy to carry.",
+            "type": 4,
+            "modelstype": 2,
+            "bullettype": 2,
+            "element": 1,
+            "resCode": "Weapon_OTS14_4",
+            "resPath": "Player/GrozaSR01/GrozaSR01_WL",
+            "brand": "brand_icon01",
+            "rank": 4,
+            "skill": 5110231,
+            "slot": [
+                1,
+                2,
+                3,
+                5
+            ],
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41023,
+            "unlockCost": {
+                "12023": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 301,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5110239
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 11024,
+            "name": "Retired Pecheneg-SP",
+            "description": "Peritya's designated training weapon. Frequently used in team coordination drills as well as for basic combat operations when necessary.",
+            "type": 5,
+            "modelstype": 1,
+            "bullettype": 2,
+            "element": 1,
+            "resCode": "Weapon_Pecheng_3",
+            "resPath": "Player/PerityaR01/PerityaR01_WL",
+            "brand": "brand_icon01",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41024,
+            "unlockCost": {
+                "12024": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2021,
+                1013,
+                13011,
+                3013
+            ],
+            "audio": 501,
+            "weaponTag": 8,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 11026,
+            "name": "Pecheneg-SP",
+            "description": "A firearm highly compatible with Peritya. Modified based on her combat preferences. Features improved firepower and portability, becoming more potent in Peritya's hands.",
+            "type": 5,
+            "modelstype": 1,
+            "bullettype": 2,
+            "element": 1,
+            "resCode": "Weapon_Pecheng_4",
+            "resPath": "Player/PerityaSR01/PerityaSR01_WL",
+            "brand": "brand_icon01",
+            "rank": 4,
+            "skill": 5110261,
+            "slot": [
+                1,
+                2,
+                3,
+                5
+            ],
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41026,
+            "unlockCost": {
+                "12026": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2021,
+                1013,
+                13011,
+                3013
+            ],
+            "audio": 501,
+            "weaponTag": 8,
+            "weaponSkill": [
+                5100069
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 11030,
+            "name": "Retired Robinson Modular Rifle",
+            "description": "Sharkry's designated training weapon. Frequently used in team coordination drills as well as for basic combat operations when necessary.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_ROBINSONXCR_3",
+            "resPath": "Player/SharkryR01/SharkryR01_WL",
+            "brand": "brand_icon01",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41030,
+            "unlockCost": {
+                "12030": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 302,
+            "weaponTag": 4,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 11031,
+            "name": "Robinson Modular Rifle",
+            "description": "A firearm highly compatible with Sharkry. Modified based on her combat preferences. Features improved overall balance and enhanced shooting precision.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_ROBINSONXCR_4",
+            "resPath": "Player/SharkrySR01/SharkrySR01_WL",
+            "brand": "brand_icon01",
+            "rank": 4,
+            "skill": 5110311,
+            "slot": [
+                1,
+                2,
+                3,
+                5
+            ],
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41031,
+            "unlockCost": {
+                "12031": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 302,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5110379
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 11036,
+            "name": "Retired Model Alpha",
+            "description": "Tololo's designated training weapon. Frequently used in team coordination drills as well as for basic combat operations when necessary.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_AK-Alfa_3",
+            "resPath": "Player/TololoR01/TololoR01_WL",
+            "brand": "brand_icon01",
+            "rank": 3,
+            "elemenSkill": 5100720,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41036,
+            "unlockCost": {
+                "12036": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 304,
+            "weaponTag": 4,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 11037,
+            "name": "Model Alpha",
+            "description": "A firearm highly compatible with Tololo. Modified based on her combat preferences. improving shooting accuracy and adapting it to various combat environments.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_AK-Alfa_4",
+            "resPath": "Player/TololoSR01/TololoSR01_WL",
+            "brand": "brand_icon01",
+            "rank": 4,
+            "elemenSkill": 5100720,
+            "skill": 5110371,
+            "slot": [
+                1,
+                2,
+                3,
+                5
+            ],
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41037,
+            "unlockCost": {
+                "12037": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 304,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5110379
+            ],
+            "buffSkill": 0,
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 11038,
+            "name": "Planeta",
+            "description": "A high-performance assault rifle assigned to Tololo. Based on the Model Alpha. Features include lighter frame and higher shooting accuracy. Its lightweight, innovative design combines pragmatic rationality with the romance of exploring the unknown, much like its owner.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_AK-Alfa_5",
+            "resPath": "Player/TololoSSR01/TololoSSR01_WL",
+            "brand": "brand_icon01",
+            "rank": 5,
+            "elemenSkill": 5100720,
+            "skill": 5110381,
+            "slot": [
+                1,
+                2,
+                3,
+                5
+            ],
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41038,
+            "unlockCost": {
+                "12038": 60
+            },
+            "privateSkill": 5110380,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 11,
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 304,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5110389
+            ],
+            "buffSkill": 0,
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 11039,
+            "name": "Retired MP7H1",
+            "description": "Cheeta's designated training weapon. Frequently used in team coordination drills as well as for basic combat operations when necessary.",
+            "type": 2,
+            "modelstype": 2,
+            "bullettype": 3,
+            "element": 1,
+            "resCode": "Weapon_MP7_3",
+            "resPath": "Player/CheetaR01/CheetaR01_WL",
+            "brand": "brand_icon01",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41039,
+            "unlockCost": {
+                "12039": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 401,
+            "weaponTag": 2,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 11040,
+            "name": "MP7H1",
+            "description": "A firearm highly compatible with Cheeta. Modified based on her combat preferences. Offers substantial firepower despite featuring a small and extremely light frame.",
+            "type": 2,
+            "modelstype": 2,
+            "bullettype": 3,
+            "element": 1,
+            "resCode": "Weapon_MP7_4",
+            "resPath": "Player/CheetaSR01/CheetaSR01_WL",
+            "brand": "brand_icon01",
+            "rank": 4,
+            "skill": 5110401,
+            "slot": [
+                1,
+                2,
+                3,
+                5
+            ],
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41040,
+            "unlockCost": {
+                "12040": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2012,
+                1012,
+                12012,
+                3012
+            ],
+            "audio": 401,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5100029
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 11042,
+            "name": "Retired QBZ-191",
+            "description": "A cheap weapon purchased from an underground broker. It's covered in scratches, as if it had weathered many storms.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_QBZ-191_3",
+            "resPath": "Player/QiongjiuR01/QiongjiuR01_WL",
+            "brand": "brand_icon03",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41042,
+            "unlockCost": {
+                "12042": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 303,
+            "weaponTag": 4,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 11043,
+            "name": "QBZ-191",
+            "description": "A firearm highly compatible with Qiongjiu. Modified based on her combat preferences. Features increased firing stability and accuracy.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_QBZ-191_4",
+            "resPath": "Player/QiongjiuSR01/QiongjiuSR01_WL",
+            "brand": "brand_icon04",
+            "rank": 4,
+            "skill": 5110431,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41043,
+            "unlockCost": {
+                "12043": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 303,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5110449
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 11044,
+            "name": "Golden Melody",
+            "description": "A high-performance assault rifle assigned to Qiongjiu. Based on the QBZ-191. The adjustments ensure its versatility in various environments while enhancing its power and stability. Beneath its steady rhythm lies an unchanged purpose.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_QBZ-191_5",
+            "resPath": "Player/QiongjiuSSR01/QiongjiuSSR01_WL",
+            "brand": "brand_icon05",
+            "rank": 5,
+            "skill": 5110441,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41044,
+            "unlockCost": {
+                "12044": 60
+            },
+            "privateSkill": 5110440,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 14,
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 303,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5110449
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 11045,
+            "name": "Retired Sportivo Calibro 12",
+            "description": "A cheap weapon purchased from an underground broker. Severely worn out, it appears close to complete disrepair.",
+            "type": 6,
+            "modelstype": 2,
+            "bullettype": 4,
+            "element": 1,
+            "resCode": "Weapon_SPAS-12_3",
+            "resPath": "Player/SabrinaR01/SabrinaR01_WL",
+            "brand": "brand_icon06",
+            "rank": 3,
+            "skill": 5110101,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41045,
+            "unlockCost": {
+                "12045": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2031,
+                1031,
+                9011,
+                11011
+            ],
+            "audio": 601,
+            "weaponTag": 32,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 11046,
+            "name": "Sportivo Calibro 12",
+            "description": "A firearm highly compatible with Sabrina. Modified based on her combat preferences. Features lighter weight, making it easier to carry and use.",
+            "type": 6,
+            "modelstype": 2,
+            "bullettype": 4,
+            "element": 1,
+            "resCode": "Weapon_SPAS-12_4",
+            "resPath": "Player/SabrinaSR01/SabrinaSR01_WL",
+            "brand": "brand_icon07",
+            "rank": 4,
+            "skill": 5110461,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41046,
+            "unlockCost": {
+                "12046": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "2": 3000,
+                "8609": 1
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2031,
+                1031,
+                9011,
+                11011
+            ],
+            "audio": 601,
+            "weaponTag": 32,
+            "weaponSkill": [
+                5110479
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 11047,
+            "name": "Mezzaluna",
+            "description": "A high-performance shotgun assigned to Sabrina. Based on the Sportivo Calibro 12. Features a unique design that improves stability and makes the gun easier to store and carry while maintaining an intimidating appearance. To avoid frightening others, Sabrina named it after a common kitchen utensil from Italian cuisine.",
+            "type": 6,
+            "modelstype": 2,
+            "bullettype": 4,
+            "element": 1,
+            "resCode": "Weapon_SPAS-12_5",
+            "resPath": "Player/SabrinaSSR01/SabrinaSSR01_WL",
+            "brand": "brand_icon08",
+            "rank": 5,
+            "skill": 5110471,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41047,
+            "unlockCost": {
+                "12047": 60
+            },
+            "privateSkill": 5110470,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 12,
+            "modNum": 4,
+            "modTypeGroup": [
+                2031,
+                1031,
+                9011,
+                11011
+            ],
+            "audio": 601,
+            "weaponTag": 32,
+            "weaponSkill": [
+                5110479
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 11048,
+            "name": "Retired Nagant M1895",
+            "description": "A cheap weapon purchased from an underground broker. Its surface is covered in rust, but it can still function after thorough maintenance.",
+            "type": 1,
+            "modelstype": 1,
+            "element": 1,
+            "resCode": "Weapon_M1895_3",
+            "resPath": "Player/NagantR01/NagantR01_WL",
+            "brand": "brand_icon09",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41048,
+            "unlockCost": {
+                "12048": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2041,
+                1032,
+                9012,
+                11012
+            ],
+            "audio": 102,
+            "weaponTag": 2,
+            "bullettype": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 11049,
+            "name": "Nagant M1895",
+            "description": "A firearm highly compatible with Nagant. Modified based on her combat preferences. Offers higher initial bullet velocity and improved durability.",
+            "type": 1,
+            "modelstype": 1,
+            "element": 1,
+            "resCode": "Weapon_M1895_4",
+            "resPath": "Player/NagantSR01/NagantSR01_WL",
+            "brand": "brand_icon10",
+            "rank": 4,
+            "skill": 5110491,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41049,
+            "unlockCost": {
+                "12049": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2041,
+                1032,
+                9012,
+                11012
+            ],
+            "audio": 102,
+            "weaponTag": 2,
+            "weaponSkill": [
+                5110499
+            ],
+            "bullettype": 0,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 11051,
+            "name": "Retired Type 95",
+            "description": "A cheap weapon purchased from an underground broker. Its frame shows numerous repair marks but it still fires normally.",
+            "type": 4,
+            "modelstype": 2,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_QBZ-95_3",
+            "resPath": "Player/DaiyanR01/DaiyanR01_WL",
+            "brand": "brand_icon12",
+            "rank": 3,
+            "skill": 5110091,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41051,
+            "unlockCost": {
+                "12051": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 301,
+            "weaponTag": 4,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 11052,
+            "name": "Type 95",
+            "description": "A firearm highly compatible with Daiyan. Modified based on her combat preferences. Features lighter weight and improved stability.",
+            "type": 4,
+            "modelstype": 2,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_QBZ-95_4",
+            "resPath": "Player/DaiyanSR01/DaiyanSR01_WL",
+            "brand": "brand_icon13",
+            "rank": 4,
+            "skill": 5110521,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41052,
+            "unlockCost": {
+                "12052": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 301,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5110379
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 11053,
+            "name": "Heavy Strings",
+            "description": "A high-performance assault rifle assigned to Daiyan. Based on the Type 95. Combines elegant appearance with destructive power. In Daiyan's hands, this \"Heavy String\" resonates like a deadly musical instrument.",
+            "type": 4,
+            "modelstype": 2,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_QBZ-95_5",
+            "resPath": "Player/DaiyanSSR01/DaiyanSSR01_WL",
+            "brand": "brand_icon14",
+            "rank": 5,
+            "skill": 5110531,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41053,
+            "unlockCost": {
+                "12053": 60
+            },
+            "privateSkill": 5110530,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 16,
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 301,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5110379
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        },
+        {
+            "id": 11054,
+            "name": "Retired Sturmgewehr 36",
+            "description": "A cheap weapon purchased from an underground broker. Poorly maintained, requiring a thorough inspection before use.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_G36_3",
+            "resPath": "Player/CentaureissiR01/CentaureissiR01_WL",
+            "brand": "brand_icon15",
+            "rank": 3,
+            "skill": 5110081,
+            "expRate": 1000,
+            "weaponOfferExp": 400,
+            "weaponNeedCash": 1200,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 2
+            },
+            "propertyId": 41054,
+            "unlockCost": {
+                "12054": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8601": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 301,
+            "weaponTag": 4,
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false,
+            "weaponSkill": []
+        },
+        {
+            "id": 11055,
+            "name": "Sturmgewehr 36",
+            "description": "A firearm highly compatible with Centaureissi. Modified based on her combat preferences. Features further reduced weight.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_G36_4",
+            "resPath": "Player/CentaureissiSR01/CentaureissiSR01_WL",
+            "brand": "brand_icon16",
+            "rank": 4,
+            "skill": 5110551,
+            "expRate": 1000,
+            "weaponOfferExp": 1000,
+            "weaponNeedCash": 3000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 3
+            },
+            "propertyId": 41055,
+            "unlockCost": {
+                "12055": 60
+            },
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8602": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 301,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5110569
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "privateSkill": 0,
+            "advanceWeapon": [],
+            "characterId": 0,
+            "isHide": false
+        },
+        {
+            "id": 11056,
+            "name": "Maid's Rules",
+            "description": "A high-performance assault rifle assigned to Centaureissi. Based on the Sturmgewehr 36 and crafted with materials of exceptional quality. As precise and refined as its owner, perfectly suited for its duties. It embodies the wielder's convictions and principles.",
+            "type": 4,
+            "modelstype": 1,
+            "bullettype": 1,
+            "element": 1,
+            "resCode": "Weapon_G36_5",
+            "resPath": "Player/CentaureissiSSR01/CentaureissiSSR01_WL",
+            "brand": "brand_icon17",
+            "rank": 5,
+            "skill": 5110561,
+            "expRate": 1000,
+            "weaponOfferExp": 2000,
+            "weaponNeedCash": 6000,
+            "defaultMaxlv": 60,
+            "maxBreak": 6,
+            "soldGet": {
+                "2": 4
+            },
+            "propertyId": 41056,
+            "unlockCost": {
+                "12056": 60
+            },
+            "privateSkill": 5110560,
+            "capacityMax": 30,
+            "weaponPolarityId": 1,
+            "polarityCostRandom": {
+                "2": 3000,
+                "8603": 1
+            },
+            "polarityCostCustom": {
+                "8609": 1,
+                "2": 3000
+            },
+            "characterId": 15,
+            "modNum": 4,
+            "modTypeGroup": [
+                2011,
+                1011,
+                12011,
+                3011
+            ],
+            "audio": 301,
+            "weaponTag": 4,
+            "weaponSkill": [
+                5110569
+            ],
+            "elemenSkill": 0,
+            "buffSkill": 0,
+            "slot": [],
+            "soldDrop": [],
+            "advanceWeapon": [],
+            "isHide": false
+        }
+    ]
+}
