@@ -80,6 +80,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   if (skinData.length === 0) {
     skinData.push({ id: 0, name: 'Base', code: character.code });
   }
+  console.log(skinData);
 
   const [currentSkin, setCurrentSkin] = useState<Skin>(skinData[0]);
   const displayedImage = asset(`dolls/Avatar_Whole_${currentSkin.code}.png`);
@@ -271,7 +272,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
           <div className="col-span-6">
             <div className="p-4">
               <h1
-                className="text-4xl"
+                className="text-4xl flex justify-center"
                 style={{
                   color: `#${Tables.LanguageElementData[character.element]['color'].slice(0, -2)}`,
                 }}
@@ -478,7 +479,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
           {/* Character Image */}
           <div className="col-span-6">
             <div className="p-4">
-              {character.skins.length > 1 && (
+              {skinData.length > 1 && (
                 <div className="flex flex-wrap gap-2 mb-4">
                   {skinData.map((skin) => (
                     <ToggleButton

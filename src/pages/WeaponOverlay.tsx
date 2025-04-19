@@ -80,7 +80,7 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
         <div className="col-span-6">
           <div className="p-4">
             <h1
-              className={`text-4xl
+              className={`text-4xl flex justify-center
                 ${weapon.rank === 5 ? 'text-rarity-ssr' : weapon.rank === 4 ? 'text-rarity-sr' : 'text-rarity-r'}`}
             >
               {weapon.name}
