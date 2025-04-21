@@ -11,6 +11,8 @@ import { characters, weapons } from './data/data';
 import { formatWeaponUrl } from './utils/wpn-utils';
 import './index.css';
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const CharacterOverlayWrapper: React.FC = () => {
   const { url } = useParams<{ url: string }>();
   const navigate = useNavigate();
@@ -42,7 +44,7 @@ const WeaponOverlayWrapper: React.FC = () => {
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-neutral-200 text-neutral-700">
-      <Router>
+      <Router basename={baseUrl}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />

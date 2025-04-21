@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="refresh" content="0; URL=%BASE_URL%" />
-  </head>
-  <body>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      var repoName = '/gf2e-db';
+      
+      if (path.indexOf(repoName) !== 0) {
+        window.location.replace(repoName + path);
+      } else {
+        window.location.replace(repoName);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
 </html>
