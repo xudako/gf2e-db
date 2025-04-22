@@ -13,6 +13,7 @@ import LevelSlider from '../components/ChrLevelSlider';
 import TalentTree from '../components/TalentTree';
 import StatDisplay from '../components/StatDisplay';
 import { useNavigate } from 'react-router-dom';
+import { VertProvider } from '../utils/VertContext';
 
 await TableLoader.load([
   'ClothesData',
@@ -32,14 +33,6 @@ interface SkillType {
   id: SkillTypeId;
   name: string;
 }
-
-const skillTypes: SkillType[] = [
-  { id: '01', name: 'Basic' },
-  { id: '05', name: 'Skill 1' },
-  { id: '07', name: 'Skill 2' },
-  { id: '04', name: 'Ultimate' },
-  { id: '08', name: 'Passive' },
-];
 
 interface SkillsByLevel {
   [level: string]: { skill: Skill | null; vertebrae: number };
@@ -80,7 +73,6 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   if (skinData.length === 0) {
     skinData.push({ id: 0, name: 'Base', code: character.code });
   }
-  console.log(skinData);
 
   const [currentSkin, setCurrentSkin] = useState<Skin>(skinData[0]);
   const displayedImage = asset(`dolls/Avatar_Whole_${currentSkin.code}.png`);
@@ -93,6 +85,21 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   };
 
   // Skills
+
+  const skillTypes: SkillType[] = [
+    { id: '01', name: 'Basic' },
+    { id: '05', name: 'Skill 1' },
+    { id: '07', name: 'Skill 2' },
+    { id: '04', name: 'Ultimate' },
+    { id: '08', name: 'Passive' },
+  ];
+  if (character.id === 1027) {
+    const ult = skillTypes.find(skill => skill.name === 'Ultimate');
+    if (ult) {
+      ult.name = 'Imada';
+    }
+  }
+
   const vertebraeIds = [...Array.from({ length: 7 }, (_, i) => i + 1)].map(
     (x) => character.id * 100 + x
   );
@@ -465,7 +472,9 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                       </ToggleButton>
                     ))}
                   </ToggleButtonGroup>
-                  <SkillCard skill={currentSkill} />
+                  <VertProvider vertebrae={currentVertebrae}>
+                    <SkillCard skill={currentSkill} />
+                  </VertProvider>
                 </div>
               )}
 

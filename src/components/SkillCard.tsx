@@ -126,6 +126,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
         </div>
         {/* Cooldown/Cost */}
         <div className="sm:col-span-5 lg:col-span-9">
+          <p className="italic">{skill.descriptionLiterary}</p>
           <div className="flex gap-2 mt-4 items-end">
             {skill.cdTime > 0 && (
               <div className="bg-gray-500 text-primary-text px-2 py-1 rounded inline-flex items-center justify-between w-40">

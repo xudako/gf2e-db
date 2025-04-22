@@ -2,22 +2,9 @@ import { TableLoader, Tables } from '../data/TableLoader';
 import { Buff } from '../types';
 import Tooltip from './Tooltip';
 import { asset } from '../utils/utils';
+import { useVertebrae } from '../utils/VertContext';
 
-await TableLoader.load(['BattleBuffPerformData', 'BattleDictionaryData']);
-
-const dynamicBuffs = new Map([
-  [1022, 102204013], //Sharkry
-  [103209, 10320981], //Daiyan
-  [104400, 310452], //Vector
-  [340600, 340601], //Klukai
-  [340700, 340701], //Klukai
-  [10520800, 10520801], //Klukai
-  [10510700, 105107001], //Mechty
-  [10510800, 105108001], //Mechty
-  [10470501, 10470501], //Springfield
-  [10470701, 104707011], //Springfield
-  [104700, 104704011], //Springfield
-]);
+await TableLoader.load(['BuffShareLimitByGroupData', 'BuffShareLimitData','BattleBuffPerformData', 'BattleDictionaryData']);
 
 interface RichTextProps {
   content: string | undefined;
@@ -53,6 +40,7 @@ const getTextClass = (variant: RichTextProps['variant'] = 'body1') => {
 };
 
 const parseUnityRichText = (content: string, descriptionTips: string): React.ReactNode => {
+  const { vertebrae } = useVertebrae();
   const buffIds = descriptionTips.split(';').map((buffId) => buffId.split(':'));
 
   const regex = /<color=([#a-fA-F0-9]+)>(\{(\d+)\}(?:\([^)]*\))?|.*?)<\/color>/g;
@@ -73,8 +61,8 @@ const parseUnityRichText = (content: string, descriptionTips: string): React.Rea
         buffId[0] == '0'
           ? buffId[1].startsWith('-') &&
             parseInt(buffId[1].slice(3)) &&
-            dynamicBuffs.has(parseInt(buffId[1].slice(3)))
-            ? Tables.BattleBuffPerformData[dynamicBuffs.get(parseInt(buffId[1].slice(3)))!]
+            Tables.BuffShareLimitByGroupData[parseInt(buffId[1].slice(3))]
+            ? Tables.BattleBuffPerformData[Tables.BuffShareLimitData[Tables.BuffShareLimitByGroupData[parseInt(buffId[1].slice(3))].id[0]].buffList.split(',')[vertebrae].split(';')[0].split('-')[0]]
             : Tables.BattleBuffPerformData[parseInt(buffId[1])]
           : Tables.BattleDictionaryData[parseInt(buffId[1])];
 
