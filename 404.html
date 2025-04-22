@@ -8,10 +8,16 @@
       var path = window.location.pathname;
       var repoName = '/gf2e-db';
       
+      var pathToSave = path;
+      var search = window.location.search;
+      
       if (path.indexOf(repoName) !== 0) {
-        window.location.replace(repoName + path);
-      } else {
-        window.location.replace(repoName);
+        sessionStorage.setItem('redirectPath', path + search);
+        window.location.replace(repoName + '/');
+      } else if (path !== repoName && path !== repoName + '/') {
+        var routePart = path.substring(repoName.length);
+        sessionStorage.setItem('redirectPath', routePart + search);
+        window.location.replace(repoName + '/');
       }
     })();
   </script>
