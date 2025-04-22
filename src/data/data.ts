@@ -18,8 +18,9 @@ const paths = [
   asset('tables/GunWeaponData.json'),
 ];
 
-const [gunData, gunDutyData, gunWeaponTypeData, elementTypeData, gunWeaponData] =
-  await Promise.all(paths.map(loadJson));
+const [gunData, gunDutyData, gunWeaponTypeData, elementTypeData, gunWeaponData] = await Promise.all(
+  paths.map(loadJson)
+);
 
 const enDolls: string[] = [
   'Groza',

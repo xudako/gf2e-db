@@ -4,7 +4,12 @@ import Tooltip from './Tooltip';
 import { asset } from '../utils/utils';
 import { useVertebrae } from '../utils/VertContext';
 
-await TableLoader.load(['BuffShareLimitByGroupData', 'BuffShareLimitData','BattleBuffPerformData', 'BattleDictionaryData']);
+await TableLoader.load([
+  'BuffShareLimitByGroupData',
+  'BuffShareLimitData',
+  'BattleBuffPerformData',
+  'BattleDictionaryData',
+]);
 
 interface RichTextProps {
   content: string | undefined;
@@ -62,7 +67,14 @@ const parseUnityRichText = (content: string, descriptionTips: string): React.Rea
           ? buffId[1].startsWith('-') &&
             parseInt(buffId[1].slice(3)) &&
             Tables.BuffShareLimitByGroupData[parseInt(buffId[1].slice(3))]
-            ? Tables.BattleBuffPerformData[Tables.BuffShareLimitData[Tables.BuffShareLimitByGroupData[parseInt(buffId[1].slice(3))].id[0]].buffList.split(',')[vertebrae].split(';')[0].split('-')[0]]
+            ? Tables.BattleBuffPerformData[
+                Tables.BuffShareLimitData[
+                  Tables.BuffShareLimitByGroupData[parseInt(buffId[1].slice(3))].id[0]
+                ].buffList
+                  .split(',')
+                  [vertebrae].split(';')[0]
+                  .split('-')[0]
+              ]
             : Tables.BattleBuffPerformData[parseInt(buffId[1])]
           : Tables.BattleDictionaryData[parseInt(buffId[1])];
 

@@ -11,10 +11,7 @@ import Tooltip from '../components/Tooltip';
 import { useNavigate } from 'react-router-dom';
 import { characters } from '../data/data';
 
-await TableLoader.load([
-  'GunWeaponData',
-  'GunWeaponTypeData',
-]);
+await TableLoader.load(['GunWeaponData', 'GunWeaponTypeData']);
 
 const statIcon: Record<string, string> = {
   powPercent: 'Pow_64',

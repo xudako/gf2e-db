@@ -94,7 +94,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
     { id: '08', name: 'Passive' },
   ];
   if (character.id === 1027) {
-    const ult = skillTypes.find(skill => skill.name === 'Ultimate');
+    const ult = skillTypes.find((skill) => skill.name === 'Ultimate');
     if (ult) {
       ult.name = 'Imada';
     }
