@@ -8,7 +8,7 @@ import RichText from '../components/RichText';
 import { TableLoader, Tables } from '../data/TableLoader';
 import StatDisplay from '../components/StatDisplay';
 import Tooltip from '../components/Tooltip';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { characters } from '../data/data';
 
 await TableLoader.load(['GunWeaponData', 'GunWeaponTypeData']);
@@ -30,7 +30,6 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
   if (!weapon) {
     return <div className="text-2xl text-center">404</div>;
   }
-  const navigate = useNavigate();
 
   const trait = weapon.trait ? loadSkill(weapon.trait) : undefined;
   const imprint = weapon.imprint ? loadSkill(weapon.imprint) : undefined;
@@ -104,16 +103,13 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
             </div>
             <div className="mt-4 space-y-4 col-span-1 col-start-6 justify-self-end">
               {imprintDoll && (
-                <div>
+                <Link to={`/dolls/${imprintDoll?.name.toLowerCase()}`}>
                   <img
                     src={asset(`dolls/Avatar_Bust_${imprintDoll?.code}.png`)}
                     alt="Imprinted doll"
-                    onClick={() =>
-                      navigate(`/dolls/${imprintDoll?.name.toLowerCase().replace(/\s+/g, '-')}`)
-                    }
                     className="cursor-pointer hover:opacity-80"
                   />
-                </div>
+                </Link>
               )}
             </div>
           </div>

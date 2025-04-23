@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Chr } from '../types';
 import { characters, gunDuties, weaponTypes, elementTypes } from '../data/data';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ToggleButtonGroup from '../components/ToggleButtonGroup';
 import ToggleButton from '../components/ToggleButton';
 import { asset } from '../utils/utils';
@@ -11,7 +11,6 @@ function stripCode(input: string): string {
 }
 
 const CharacterGrid: React.FC = () => {
-  const [selectedCharacter, setSelectedCharacter] = useState<Chr | null>(null);
   const [hoveredCharacter, setHoveredCharacter] = useState<Chr | null>(null);
   const [filterRegion, setFilterRegion] = useState<number>(-1);
   const [filterRarity, setFilterRarity] = useState<number>(-1);
@@ -19,13 +18,6 @@ const CharacterGrid: React.FC = () => {
   const [filterWeapon, setFilterWeapon] = useState<number>(-1);
   const [filterElement, setFilterElement] = useState<number>(-1);
   const [searchQuery, setSearchQuery] = useState('');
-  const navigate = useNavigate();
-
-  const handleCharacterSelect = (character: Chr) => {
-    setSelectedCharacter(character);
-    const url = character.name.toLowerCase();
-    navigate(`/dolls/${url}`);
-  };
 
   const handleRegionFilter = (newRegion: number) => {
     setFilterRegion(filterRegion === newRegion ? -1 : newRegion);
@@ -175,13 +167,12 @@ const CharacterGrid: React.FC = () => {
       {/* Character Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 gap-4">
         {filteredCharacters.map((character) => (
-          <div
+          <Link
             key={character.name}
-            onClick={() => handleCharacterSelect(character)}
+            to={`/dolls/${character.name.toLowerCase()}`}
             onMouseEnter={() => setHoveredCharacter(character)}
             onMouseLeave={() => setHoveredCharacter(null)}
             className={`p-4 transition-colors cursor-pointer
-              ${selectedCharacter?.name === character.name ? 'bg-primary-light' : ''}
               hover:bg-secondary-main hover:text-white`}
           >
             <img
@@ -198,7 +189,7 @@ const CharacterGrid: React.FC = () => {
             <div className="mt-2 text-center font-medium bg-black/50 text-white rounded">
               {character.name}
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

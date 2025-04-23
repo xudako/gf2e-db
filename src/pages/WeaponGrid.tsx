@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Wpn } from '../types';
+import { Link } from 'react-router-dom';
 import { weapons, weaponTypes } from '../data/data';
 import ToggleButton from '../components/ToggleButton';
 import ToggleButtonGroup from '../components/ToggleButtonGroup';
@@ -11,12 +10,6 @@ const WeaponGrid: React.FC = () => {
   const [filterRarity, setFilterRarity] = useState<number>(-1);
   const [filterWeapon, setFilterWeapon] = useState<number>(-1);
   const [searchQuery, setSearchQuery] = useState('');
-  const navigate = useNavigate();
-
-  const handleWeaponSelect = (weapon: Wpn) => {
-    const url = formatWeaponUrl(weapon.name);
-    navigate(`/weapons/${url}`);
-  };
 
   const handleRarityFilter = (newRarity: number) => {
     setFilterRarity(filterRarity === newRarity ? -1 : newRarity);
@@ -107,9 +100,9 @@ const WeaponGrid: React.FC = () => {
       {/* Weapon Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 gap-4">
         {filteredWeapons.map((weapon) => (
-          <div
+          <Link
             key={weapon.name}
-            onClick={() => handleWeaponSelect(weapon)}
+            to={`/weapons/${formatWeaponUrl(weapon.name)}`}
             className={`relative p-4 transition-colors cursor-pointer hover:bg-secondary-main hover:text-white group`}
           >
             <img
@@ -122,7 +115,7 @@ const WeaponGrid: React.FC = () => {
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-2 text-center">
               <p className="text-white text-sm truncate">{weapon.name}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

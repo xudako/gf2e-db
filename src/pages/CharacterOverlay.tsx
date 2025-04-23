@@ -12,7 +12,7 @@ import Slide from '../components/Slide';
 import LevelSlider from '../components/ChrLevelSlider';
 import TalentTree from '../components/TalentTree';
 import StatDisplay from '../components/StatDisplay';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { VertProvider } from '../utils/VertContext';
 
 await TableLoader.load([
@@ -26,6 +26,12 @@ await TableLoader.load([
   'WeaponTagData',
   'PropData',
 ]);
+
+interface CharacterOverlayProps {
+  open: boolean;
+  onClose: () => void;
+  character?: Chr;
+}
 
 type SkillTypeId = '01' | '05' | '07' | '04' | '08';
 
@@ -49,12 +55,6 @@ interface VertebraeMapping {
   };
 }
 
-interface CharacterOverlayProps {
-  open: boolean;
-  onClose: () => void;
-  character?: Chr;
-}
-
 const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   open,
   onClose,
@@ -63,7 +63,6 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   if (!character) {
     return <div className="text-2xl text-center">404</div>;
   }
-  const navigate = useNavigate();
 
   // Skins
   const skinData = character.skins
@@ -511,14 +510,13 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
 
             {/* Weapon Info */}
             {sig && (
-              <div className="mt-4 space-y-4">
+              <Link to={`/weapons/${formatWeaponUrl(sig.name)}`} className="mt-4 space-y-4">
                 <img
                   src={asset(`weapons/${sig.resCode}_1024.png`)}
                   alt="Signature weapon"
-                  onClick={() => navigate(`/weapons/${formatWeaponUrl(sig.name)}`)}
                   className="cursor-pointer hover:opacity-80"
                 />
-              </div>
+              </Link>
             )}
           </div>
         </div>
