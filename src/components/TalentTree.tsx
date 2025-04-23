@@ -91,7 +91,7 @@ const TalentTree = ({ talents }: TalentTreeProps) => {
         })}
       </div>
 
-      <div className="p-6 border-2 border-gray-300 rounded-lg min-h-32 bg-background-paper flex flex-col gap-8">
+      <div className="p-6 border-2 border-gray-300 min-h-32 bg-background-paper flex flex-col gap-8">
         <div className="grid grid-cols-4 gap-8">
           {currentTalent.icon && (
             <div className="text-center col-span-1 m-4">

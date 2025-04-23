@@ -70,54 +70,43 @@ const WeaponGrid: React.FC = () => {
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-main bg-white/90"
         />
         {/* Rarity Filter */}
-        <ToggleButtonGroup className="bg-primary-main">
-          <ToggleButton
-            selected={filterRarity === 3}
-            onClick={() => handleRarityFilter(3)}
-            className="min-w-[6rem]"
-          >
-            R
-          </ToggleButton>
-          <ToggleButton
-            selected={filterRarity === 4}
-            onClick={() => handleRarityFilter(4)}
-            className="min-w-[6rem]"
-          >
-            SR
-          </ToggleButton>
-          <ToggleButton
-            selected={filterRarity === 5}
-            onClick={() => handleRarityFilter(5)}
-            className="min-w-[6rem]"
-          >
-            SSR
-          </ToggleButton>
-        </ToggleButtonGroup>
-
-        {/* Weapon Filter */}
-        <ToggleButtonGroup className="bg-primary-main">
-          {weaponTypes.map((weapon) => (
-            <ToggleButton
-              key={weapon.id}
-              selected={filterWeapon === weapon.id}
-              onClick={() => handleWeaponFilter(weapon.id)}
-              className="min-w-[3rem] sm:min-w-[6rem]"
-            >
-              {weapon.abbr}
+        <div className="grid lg:grid-cols-11 w-full gap-2">
+          <ToggleButtonGroup className="lg:col-span-3 bg-primary-main">
+            <ToggleButton selected={filterRarity === 3} onClick={() => handleRarityFilter(3)}>
+              R
             </ToggleButton>
-          ))}
-        </ToggleButtonGroup>
+            <ToggleButton selected={filterRarity === 4} onClick={() => handleRarityFilter(4)}>
+              SR
+            </ToggleButton>
+            <ToggleButton selected={filterRarity === 5} onClick={() => handleRarityFilter(5)}>
+              SSR
+            </ToggleButton>
+          </ToggleButtonGroup>
 
-        {/* Reset Button */}
-        <button
-          onClick={() => {
-            setFilterRarity(-1);
-            setFilterWeapon(-1);
-          }}
-          className="px-2 py-1 min-w-[6rem] text-sm border border-filter-button-border transition-colors bg-primary-main text-primary-text hover:bg-primary-light"
-        >
-          Reset
-        </button>
+          {/* Weapon Filter */}
+          <ToggleButtonGroup className="lg:col-span-7 bg-primary-main">
+            {weaponTypes.map((weapon) => (
+              <ToggleButton
+                key={weapon.id}
+                selected={filterWeapon === weapon.id}
+                onClick={() => handleWeaponFilter(weapon.id)}
+              >
+                {weapon.abbr}
+              </ToggleButton>
+            ))}
+          </ToggleButtonGroup>
+
+          {/* Reset Button */}
+          <button
+            onClick={() => {
+              setFilterRarity(-1);
+              setFilterWeapon(-1);
+            }}
+            className="lg:col-span-1 px-2 py-1 text-sm border border-filter-button-border transition-colors bg-primary-main text-primary-text hover:bg-primary-light"
+          >
+            Reset
+          </button>
+        </div>
       </div>
 
       {/* Weapon Grid */}
@@ -133,7 +122,7 @@ const WeaponGrid: React.FC = () => {
               src={asset(`weapons/${weapon.resCode}_256.png`)}
               alt={weapon.name}
               onError={(e) => (e.currentTarget.src = asset('images/default.png'))}
-              className={`w-full aspect-square object-cover rounded-lg 
+              className={`w-full aspect-square object-cover rounded
                 ${weapon.rank === 5 ? 'bg-rarity-ssr' : weapon.rank === 4 ? 'bg-rarity-sr' : 'bg-rarity-r'}`}
             />
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-2 text-center">

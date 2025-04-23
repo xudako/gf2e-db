@@ -56,7 +56,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
   }
 
   return (
-    <div className="p-6 rounded-lg bg-background-paper w-full">
+    <div className="p-6 bg-background-paper w-full">
       <div className="grid sm:grid-cols-6 lg:grid-cols-12 gap-4 p-4">
         {/* Top row: Icon, Name/Tags, Element/Weapon */}
         <div className="sm:col-span-2 lg:col-span-1 self-start">

@@ -106,97 +106,80 @@ const CharacterGrid: React.FC = () => {
         />
 
         {/* Region Filter */}
-        <ToggleButtonGroup className="bg-primary-main">
-          <ToggleButton
-            selected={filterRegion === 0}
-            onClick={() => handleRegionFilter(0)}
-            className="min-w-[6rem]"
-          >
-            CN
-          </ToggleButton>
-          <ToggleButton
-            selected={filterRegion === 1}
-            onClick={() => handleRegionFilter(1)}
-            className="min-w-[6rem]"
-          >
-            EN
-          </ToggleButton>
-        </ToggleButtonGroup>
-
-        {/* Rarity Filter */}
-        <ToggleButtonGroup className="bg-primary-main">
-          <ToggleButton
-            selected={filterRarity === 4}
-            onClick={() => handleRarityFilter(4)}
-            className="min-w-[6rem]"
-          >
-            SR
-          </ToggleButton>
-          <ToggleButton
-            selected={filterRarity === 5}
-            onClick={() => handleRarityFilter(5)}
-            className="min-w-[6rem]"
-          >
-            SSR
-          </ToggleButton>
-        </ToggleButtonGroup>
-
-        {/* Weapon Filter */}
-        <ToggleButtonGroup className="bg-primary-main">
-          {weaponTypes.map((weapon) => (
-            <ToggleButton
-              key={weapon.id}
-              selected={filterWeapon === weapon.id}
-              onClick={() => handleWeaponFilter(weapon.id)}
-              className="min-w-[3rem] sm:min-w-[6rem]"
-            >
-              {weapon.abbr}
+        <div className="grid grid-cols-4 lg:grid-cols-11 w-full gap-2">
+          <ToggleButtonGroup className="col-span-2 lg:col-span-2 bg-primary-main">
+            <ToggleButton selected={filterRegion === 0} onClick={() => handleRegionFilter(0)}>
+              CN
             </ToggleButton>
-          ))}
-        </ToggleButtonGroup>
-
-        {/* Element Filter */}
-        <ToggleButtonGroup className="bg-primary-main">
-          {elementTypes.slice(0, -2).map((element) => (
-            <ToggleButton
-              key={element.id}
-              selected={filterElement === element.id}
-              onClick={() => handleElementFilter(element.id)}
-              className="sm:min-w-[6rem]"
-            >
-              {element.name}
+            <ToggleButton selected={filterRegion === 1} onClick={() => handleRegionFilter(1)}>
+              EN
             </ToggleButton>
-          ))}
-        </ToggleButtonGroup>
+          </ToggleButtonGroup>
 
-        {/* Role Filter */}
-        <ToggleButtonGroup className="bg-primary-main">
-          {gunDuties.map((role) => (
-            <ToggleButton
-              key={role.id}
-              selected={filterRole === role.id}
-              onClick={() => handleRoleFilter(role.id)}
-              className="min-w-[6rem]"
-            >
-              {role.name}
+          {/* Rarity Filter */}
+          <ToggleButtonGroup className="col-span-2 lg:col-span-2 bg-primary-main">
+            <ToggleButton selected={filterRarity === 4} onClick={() => handleRarityFilter(4)}>
+              SR
             </ToggleButton>
-          ))}
-        </ToggleButtonGroup>
+            <ToggleButton selected={filterRarity === 5} onClick={() => handleRarityFilter(5)}>
+              SSR
+            </ToggleButton>
+          </ToggleButtonGroup>
 
-        {/* Reset Button */}
-        <button
-          onClick={() => {
-            setFilterRegion(-1);
-            setFilterRarity(-1);
-            setFilterRole(-1);
-            setFilterWeapon(-1);
-            setFilterElement(-1);
-            setSearchQuery('');
-          }}
-          className="px-2 py-1 min-w-[6rem] text-sm border border-filter-button-border transition-colors bg-primary-main text-primary-text hover:bg-primary-light"
-        >
-          Reset
-        </button>
+          {/* Weapon Filter */}
+          <ToggleButtonGroup className="col-span-4 lg:col-span-7 bg-primary-main">
+            {weaponTypes.map((weapon) => (
+              <ToggleButton
+                key={weapon.id}
+                selected={filterWeapon === weapon.id}
+                onClick={() => handleWeaponFilter(weapon.id)}
+              >
+                {weapon.abbr}
+              </ToggleButton>
+            ))}
+          </ToggleButtonGroup>
+
+          {/* Element Filter */}
+          <ToggleButtonGroup className="col-span-4 lg:col-span-6 bg-primary-main">
+            {elementTypes.slice(0, -2).map((element) => (
+              <ToggleButton
+                key={element.id}
+                selected={filterElement === element.id}
+                onClick={() => handleElementFilter(element.id)}
+              >
+                {element.name}
+              </ToggleButton>
+            ))}
+          </ToggleButtonGroup>
+
+          {/* Role Filter */}
+          <ToggleButtonGroup className="col-span-3 lg:col-span-4 bg-primary-main">
+            {gunDuties.map((role) => (
+              <ToggleButton
+                key={role.id}
+                selected={filterRole === role.id}
+                onClick={() => handleRoleFilter(role.id)}
+              >
+                {role.name}
+              </ToggleButton>
+            ))}
+          </ToggleButtonGroup>
+
+          {/* Reset Button */}
+          <button
+            onClick={() => {
+              setFilterRegion(-1);
+              setFilterRarity(-1);
+              setFilterRole(-1);
+              setFilterWeapon(-1);
+              setFilterElement(-1);
+              setSearchQuery('');
+            }}
+            className="px-2 py-1 text-sm border border-filter-button-border transition-colors bg-primary-main text-primary-text hover:bg-primary-light"
+          >
+            Reset
+          </button>
+        </div>
       </div>
 
       {/* Character Grid */}
@@ -219,10 +202,10 @@ const CharacterGrid: React.FC = () => {
               }
               alt={character.name}
               onError={(e) => (e.currentTarget.src = asset('images/default.png'))}
-              className={`w-full aspect-square object-cover rounded-lg 
+              className={`w-full aspect-square object-cover rounded-t
                 ${character.rank === 5 ? 'bg-rarity-ssr' : 'bg-rarity-sr'}`}
             />
-            <div className="mt-2 text-center font-medium bg-black/50 text-white rounded">
+            <div className="text-center font-medium bg-black/50 text-white rounded-b">
               {character.name}
             </div>
           </Link>

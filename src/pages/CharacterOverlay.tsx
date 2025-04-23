@@ -477,7 +477,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                   <VertProvider vertebrae={currentVertebrae}>
                     <SkillCard skill={currentSkill} />
                   </VertProvider>
-                  <div className="grid grid-cols-4 border rounded overflow-hidden">
+                  <div className="grid grid-cols-4 border overflow-hidden">
                     {skillUpgrades.map((id, index) => (
                       <React.Fragment key={index}>
                         <div className="flex items-center justify-center p-4 font-medium bg-background-paper border-r border-b">

@@ -117,7 +117,7 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, weapon }) => {
           </div>
 
           {(trait || imprint) && (
-            <div className="mt-8 p-12 rounded-lg bg-background-paper flex flex-col gap-8 w-full">
+            <div className="mt-8 p-12 bg-background-paper flex flex-col gap-8 w-full">
               {trait && (
                 <RichText
                   content={`Trait: ${trait.description}`}
@@ -146,7 +146,7 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, weapon }) => {
               ))}
             </div>
           </div>
-          <div className="mt-4 p-12 rounded-lg bg-background-paper flex flex-col gap-8 w-full">
+          <div className="mt-4 p-12 bg-background-paper flex flex-col gap-8 w-full">
             <RichText
               content={`${currentSkill.name}: ${currentSkill.description}`}
               descriptionTips={currentSkill.descriptionTips}
