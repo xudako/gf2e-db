@@ -1,15 +1,32 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { weapons, weaponTypes } from '../data/data';
 import ToggleButton from '../components/ToggleButton';
 import ToggleButtonGroup from '../components/ToggleButtonGroup';
 import { asset } from '../utils/utils';
 import { formatWeaponUrl } from '../utils/wpn-utils';
 
+const defaultFilters = {
+  rarity: -1,
+  weapon: -1,
+  search: '',
+};
+
 const WeaponGrid: React.FC = () => {
-  const [filterRarity, setFilterRarity] = useState<number>(-1);
-  const [filterWeapon, setFilterWeapon] = useState<number>(-1);
-  const [searchQuery, setSearchQuery] = useState('');
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [filterRarity, setFilterRarity] = useState<number>(location.state?.filters?.rarity ?? defaultFilters.rarity);
+  const [filterWeapon, setFilterWeapon] = useState<number>(location.state?.filters?.weapon ?? defaultFilters.weapon);
+  const [searchQuery, setSearchQuery] = useState(location.state?.filters?.search ?? defaultFilters.search);
+
+  useEffect(() => {
+      const filters = {
+        rarity: filterRarity,
+        weapon: filterWeapon,
+        search: searchQuery,
+      };
+      navigate(location.pathname, { state: { ...location.state, filters }, replace: true });
+    }, [filterRarity, filterWeapon, searchQuery]);
 
   const handleRarityFilter = (newRarity: number) => {
     setFilterRarity(filterRarity === newRarity ? -1 : newRarity);
@@ -103,6 +120,7 @@ const WeaponGrid: React.FC = () => {
           <Link
             key={weapon.name}
             to={`/weapons/${formatWeaponUrl(weapon.name)}`}
+            state={location.state}
             className={`relative p-4 transition-colors cursor-pointer hover:bg-secondary-main hover:text-white group`}
           >
             <img

@@ -8,7 +8,7 @@ import RichText from '../components/RichText';
 import { TableLoader, Tables } from '../data/TableLoader';
 import StatDisplay from '../components/StatDisplay';
 import Tooltip from '../components/Tooltip';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { characters } from '../data/data';
 
 await TableLoader.load(['GunWeaponData', 'GunWeaponTypeData']);
@@ -22,14 +22,15 @@ const statIcon: Record<string, string> = {
 
 interface WeaponOverlayProps {
   open: boolean;
-  onClose: () => void;
   weapon?: Wpn;
 }
 
-const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) => {
+const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, weapon }) => {
   if (!weapon) {
     return <div className="text-2xl text-center">404</div>;
   }
+
+  const location = useLocation();
 
   const trait = weapon.trait ? loadSkill(weapon.trait) : undefined;
   const imprint = weapon.imprint ? loadSkill(weapon.imprint) : undefined;
@@ -58,8 +59,9 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
       className="p-8 overflow-auto"
       containerClassName="fixed inset-0 bg-background-overlay z-50"
     >
-      <button
-        onClick={onClose}
+      <Link
+        to="/weapons"
+        state={location.state}
         className="absolute top-4 right-4 p-2 text-primary-text hover:text-secondary-main transition-colors"
       >
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -70,7 +72,7 @@ const WeaponOverlay: React.FC<WeaponOverlayProps> = ({ open, onClose, weapon }) 
             d="M6 18L18 6M6 6l12 12"
           />
         </svg>
-      </button>
+      </Link>
 
       <div className="grid grid-cols-1 sm:grid-cols-6 md:grid-cols-12 gap-4">
         <div className="col-span-6">

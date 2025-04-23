@@ -39,7 +39,6 @@ const RedirectionHandler: React.FC<{ children: React.ReactNode }> = ({ children 
 
 const CharacterOverlayWrapper: React.FC = () => {
   const { url } = useParams<{ url: string }>();
-  const navigate = useNavigate();
 
   if (!url) {
     return null;
@@ -48,13 +47,12 @@ const CharacterOverlayWrapper: React.FC = () => {
   const character: Chr | undefined = characters.find((chr: Chr) => chr.name.toLowerCase() === url);
 
   return (
-    <CharacterOverlay open={!!character} onClose={() => navigate('/dolls')} character={character} />
+    <CharacterOverlay open={!!character} character={character} />
   );
 };
 
 const WeaponOverlayWrapper: React.FC = () => {
   const { url } = useParams<{ url: string }>();
-  const navigate = useNavigate();
 
   if (!url) {
     return null;
@@ -62,7 +60,7 @@ const WeaponOverlayWrapper: React.FC = () => {
 
   const weapon: Wpn | undefined = weapons.find((wpn: Wpn) => formatWeaponUrl(wpn.name) === url);
 
-  return <WeaponOverlay open={!!weapon} onClose={() => navigate('/weapons')} weapon={weapon} />;
+  return <WeaponOverlay open={!!weapon} weapon={weapon} />;
 };
 
 const App: React.FC = () => {

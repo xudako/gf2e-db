@@ -12,7 +12,7 @@ import Slide from '../components/Slide';
 import LevelSlider from '../components/ChrLevelSlider';
 import TalentTree from '../components/TalentTree';
 import StatDisplay from '../components/StatDisplay';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { VertProvider } from '../utils/VertContext';
 
 await TableLoader.load([
@@ -29,7 +29,6 @@ await TableLoader.load([
 
 interface CharacterOverlayProps {
   open: boolean;
-  onClose: () => void;
   character?: Chr;
 }
 
@@ -57,12 +56,13 @@ interface VertebraeMapping {
 
 const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
   open,
-  onClose,
   character,
 }): JSX.Element => {
   if (!character) {
     return <div className="text-2xl text-center">404</div>;
   }
+
+  const location = useLocation();
 
   // Skins
   const skinData = character.skins
@@ -259,8 +259,9 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
       containerClassName="fixed inset-0 bg-background-overlay z-50"
     >
       <div className="max-h-[calc(100vh-2rem)] overflow-auto">
-        <button
-          onClick={onClose}
+        <Link
+          to="/dolls"
+          state={location.state}
           className="absolute top-4 right-4 p-2 text-primary-text hover:text-secondary-main transition-colors"
         >
           <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -271,7 +272,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
               d="M6 18L18 6M6 6l12 12"
             />
           </svg>
-        </button>
+        </Link>
 
         <div className="grid grid-cols-1 sm:grid-cols-6 lg:grid-cols-12 gap-4">
           {/* Character Info */}

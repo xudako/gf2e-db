@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Chr } from '../types';
 import { characters, gunDuties, weaponTypes, elementTypes } from '../data/data';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import ToggleButtonGroup from '../components/ToggleButtonGroup';
 import ToggleButton from '../components/ToggleButton';
 import { asset } from '../utils/utils';
@@ -10,14 +10,37 @@ function stripCode(input: string): string {
   return input.replace(/ssr$/i, '').replace(/sr$/i, '');
 }
 
+const defaultFilters = {
+  region: -1,
+  rarity: -1,
+  role: -1,
+  weapon: -1,
+  element: -1,
+  search: '',
+};
+
 const CharacterGrid: React.FC = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
   const [hoveredCharacter, setHoveredCharacter] = useState<Chr | null>(null);
-  const [filterRegion, setFilterRegion] = useState<number>(-1);
-  const [filterRarity, setFilterRarity] = useState<number>(-1);
-  const [filterRole, setFilterRole] = useState<number>(-1);
-  const [filterWeapon, setFilterWeapon] = useState<number>(-1);
-  const [filterElement, setFilterElement] = useState<number>(-1);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [filterRegion, setFilterRegion] = useState<number>(location.state?.filters?.region ?? defaultFilters.region);
+  const [filterRarity, setFilterRarity] = useState<number>(location.state?.filters?.rarity ?? defaultFilters.rarity);
+  const [filterRole, setFilterRole] = useState<number>(location.state?.filters?.role ?? defaultFilters.role);
+  const [filterWeapon, setFilterWeapon] = useState<number>(location.state?.filters?.weapon ?? defaultFilters.weapon);
+  const [filterElement, setFilterElement] = useState<number>(location.state?.filters?.element ?? defaultFilters.element);
+  const [searchQuery, setSearchQuery] = useState(location.state?.filters?.search ?? defaultFilters.search);
+
+  useEffect(() => {
+    const filters = {
+      region: filterRegion,
+      rarity: filterRarity,
+      role: filterRole,
+      weapon: filterWeapon,
+      element: filterElement,
+      search: searchQuery,
+    };
+    navigate(location.pathname, { state: { ...location.state, filters }, replace: true });
+  }, [filterRegion, filterRarity, filterRole, filterWeapon, filterElement, searchQuery]);
 
   const handleRegionFilter = (newRegion: number) => {
     setFilterRegion(filterRegion === newRegion ? -1 : newRegion);
@@ -170,6 +193,7 @@ const CharacterGrid: React.FC = () => {
           <Link
             key={character.name}
             to={`/dolls/${character.name.toLowerCase()}`}
+            state={location.state}
             onMouseEnter={() => setHoveredCharacter(character)}
             onMouseLeave={() => setHoveredCharacter(null)}
             className={`p-4 transition-colors cursor-pointer
