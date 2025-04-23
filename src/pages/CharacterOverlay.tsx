@@ -12,6 +12,7 @@ import Slide from '../components/Slide';
 import LevelSlider from '../components/ChrLevelSlider';
 import TalentTree from '../components/TalentTree';
 import StatDisplay from '../components/StatDisplay';
+import RichText from '../components/RichText';
 import { Link, useLocation } from 'react-router-dom';
 import { VertProvider } from '../utils/VertContext';
 
@@ -54,10 +55,7 @@ interface VertebraeMapping {
   };
 }
 
-const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
-  open,
-  character,
-}): JSX.Element => {
+const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }): JSX.Element => {
   if (!character) {
     return <div className="text-2xl text-center">404</div>;
   }
@@ -112,6 +110,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
 
   const allSkills: SkillTree = {};
   const vertebraeToSkillMapping: VertebraeMapping = {};
+  const skillUpgrades: number[] = [];
 
   const skillsToProcess = [character.skillNormalAttack].concat(skillIds.flat()).filter(Boolean);
   skillsToProcess.forEach((id, index) => {
@@ -135,6 +134,9 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
         skillType: type as SkillTypeId,
         skillLevel: level,
       };
+      if (skill.upgradeDescription) {
+        skillUpgrades.push(skill.id);
+      }
     }
   });
 
@@ -274,9 +276,9 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
           </svg>
         </Link>
 
-        <div className="grid grid-cols-1 sm:grid-cols-6 lg:grid-cols-12 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-8 lg:grid-cols-12 gap-4">
           {/* Character Info */}
-          <div className="col-span-6">
+          <div className="col-span-8">
             <div className="p-4">
               <h1
                 className="text-4xl flex justify-center"
@@ -475,6 +477,24 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
                   <VertProvider vertebrae={currentVertebrae}>
                     <SkillCard skill={currentSkill} />
                   </VertProvider>
+                  <div className="grid grid-cols-4 border rounded overflow-hidden">
+                    {skillUpgrades.map((id, index) => (
+                      <React.Fragment key={index}>
+                        <div className="flex items-center justify-center p-4 font-medium bg-background-paper border-r border-b">
+                          {`Segment ${index + 1}`}
+                        </div>
+                        <div className="flex items-center justify-center p-4 font-medium bg-background-paper border-r border-b">
+                          {`${Tables.BattleSkillDisplayData[id].name} Lv. ${Tables.BattleSkillDisplayData[id].level}`}
+                        </div>
+                        <div className="flex items-center justify-center col-span-2 p-4 bg-background-paper border-r border-b">
+                          <RichText
+                            content={Tables.BattleSkillDisplayData[id].upgradeDescription}
+                            descriptionTips={Tables.BattleSkillDisplayData[id].descriptionTips}
+                          />
+                        </div>
+                      </React.Fragment>
+                    ))}
+                  </div>
                 </div>
               )}
 
@@ -486,7 +506,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({
           </div>
 
           {/* Character Image */}
-          <div className="col-span-6">
+          <div className="col-span-8 lg:col-span-4">
             <div className="p-4">
               {skinData.length > 1 && (
                 <div className="flex flex-wrap gap-2 mb-4">

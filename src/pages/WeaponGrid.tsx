@@ -15,18 +15,24 @@ const defaultFilters = {
 const WeaponGrid: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const [filterRarity, setFilterRarity] = useState<number>(location.state?.filters?.rarity ?? defaultFilters.rarity);
-  const [filterWeapon, setFilterWeapon] = useState<number>(location.state?.filters?.weapon ?? defaultFilters.weapon);
-  const [searchQuery, setSearchQuery] = useState(location.state?.filters?.search ?? defaultFilters.search);
+  const [filterRarity, setFilterRarity] = useState<number>(
+    location.state?.filters?.rarity ?? defaultFilters.rarity
+  );
+  const [filterWeapon, setFilterWeapon] = useState<number>(
+    location.state?.filters?.weapon ?? defaultFilters.weapon
+  );
+  const [searchQuery, setSearchQuery] = useState(
+    location.state?.filters?.search ?? defaultFilters.search
+  );
 
   useEffect(() => {
-      const filters = {
-        rarity: filterRarity,
-        weapon: filterWeapon,
-        search: searchQuery,
-      };
-      navigate(location.pathname, { state: { ...location.state, filters }, replace: true });
-    }, [filterRarity, filterWeapon, searchQuery]);
+    const filters = {
+      rarity: filterRarity,
+      weapon: filterWeapon,
+      search: searchQuery,
+    };
+    navigate(location.pathname, { state: { ...location.state, filters }, replace: true });
+  }, [filterRarity, filterWeapon, searchQuery]);
 
   const handleRarityFilter = (newRarity: number) => {
     setFilterRarity(filterRarity === newRarity ? -1 : newRarity);

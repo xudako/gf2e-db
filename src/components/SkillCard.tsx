@@ -66,7 +66,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
 
         <div className="sm:col-span-3 lg:col-span-8 mx-4">
           {/* Name and Tags */}
-          <h5 className="text-secondary text-xl font-bold">{skill.name}</h5>
+          <h5 className="text-secondary text-xl font-bold">{`${skill.name} Lv.${skill.level}`}</h5>
           <div className="flex flex-wrap gap-2 mt-2 text-gray-500">{skill.skillTag}</div>
         </div>
 

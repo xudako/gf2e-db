@@ -68,6 +68,7 @@ export interface Skill {
   skillTag: string;
   descriptionLiterary: string;
   upgradeDescription: string;
+  level: number;
 
   range: string;
   shape: number;

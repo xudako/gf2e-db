@@ -23,12 +23,24 @@ const CharacterGrid: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [hoveredCharacter, setHoveredCharacter] = useState<Chr | null>(null);
-  const [filterRegion, setFilterRegion] = useState<number>(location.state?.filters?.region ?? defaultFilters.region);
-  const [filterRarity, setFilterRarity] = useState<number>(location.state?.filters?.rarity ?? defaultFilters.rarity);
-  const [filterRole, setFilterRole] = useState<number>(location.state?.filters?.role ?? defaultFilters.role);
-  const [filterWeapon, setFilterWeapon] = useState<number>(location.state?.filters?.weapon ?? defaultFilters.weapon);
-  const [filterElement, setFilterElement] = useState<number>(location.state?.filters?.element ?? defaultFilters.element);
-  const [searchQuery, setSearchQuery] = useState(location.state?.filters?.search ?? defaultFilters.search);
+  const [filterRegion, setFilterRegion] = useState<number>(
+    location.state?.filters?.region ?? defaultFilters.region
+  );
+  const [filterRarity, setFilterRarity] = useState<number>(
+    location.state?.filters?.rarity ?? defaultFilters.rarity
+  );
+  const [filterRole, setFilterRole] = useState<number>(
+    location.state?.filters?.role ?? defaultFilters.role
+  );
+  const [filterWeapon, setFilterWeapon] = useState<number>(
+    location.state?.filters?.weapon ?? defaultFilters.weapon
+  );
+  const [filterElement, setFilterElement] = useState<number>(
+    location.state?.filters?.element ?? defaultFilters.element
+  );
+  const [searchQuery, setSearchQuery] = useState(
+    location.state?.filters?.search ?? defaultFilters.search
+  );
 
   useEffect(() => {
     const filters = {

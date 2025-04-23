@@ -46,9 +46,7 @@ const CharacterOverlayWrapper: React.FC = () => {
 
   const character: Chr | undefined = characters.find((chr: Chr) => chr.name.toLowerCase() === url);
 
-  return (
-    <CharacterOverlay open={!!character} character={character} />
-  );
+  return <CharacterOverlay open={!!character} character={character} />;
 };
 
 const WeaponOverlayWrapper: React.FC = () => {
