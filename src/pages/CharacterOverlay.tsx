@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Chr, Skill, Skin } from '../types';
 import { asset } from '../utils/utils';
-import { loadDollSkill, getDollStats, getAffectStats, getTalents } from '../utils/doll-utils';
+import {
+  loadDollSkill,
+  getDollStats,
+  getAffectStats,
+  getTalents,
+  getNeuralStats,
+} from '../utils/doll-utils';
 import { formatWeaponUrl } from '../utils/wpn-utils';
 import SkillCard from '../components/SkillCard';
 import { TableLoader, Tables } from '../data/TableLoader';
@@ -13,6 +19,7 @@ import LevelSlider from '../components/ChrLevelSlider';
 import TalentTree from '../components/TalentTree';
 import StatDisplay from '../components/StatDisplay';
 import RichText from '../components/RichText';
+import { oath } from '../data/data';
 import { Link, useLocation } from 'react-router-dom';
 import { VertProvider } from '../utils/VertContext';
 
@@ -21,6 +28,7 @@ await TableLoader.load([
   'GunGradeData',
   'GunWeaponData',
   'GunData',
+  'GunCharacterData',
   'LanguageElementData',
   'GunDutyData',
   'GunWeaponTypeData',
@@ -61,6 +69,13 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
   }
 
   const location = useLocation();
+
+  // Accent Color
+  const accent =
+    Tables.GunCharacterData[character.characterId] &&
+    Tables.GunCharacterData[character.characterId]['color']
+      ? `#${Tables.GunCharacterData[character.characterId]['color'].slice(0, -2)}`
+      : `#${Tables.LanguageElementData[character.element]['color'].slice(0, -2)}`;
 
   // Skins
   const skinData = character.skins
@@ -237,9 +252,14 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
   const [currentLevel, setCurrentLevel] = useState(60);
   const [currentRange, setCurrentRange] = useState(60);
   const [currentAffect, setCurrentAffect] = useState(1);
+  const [currentNeural, setCurrentNeural] = useState(0);
 
   const handleAffectChange = (newAffect: number) => {
     setCurrentAffect(newAffect);
+  };
+
+  const handleNeuralChange = (newNeural: number) => {
+    setCurrentNeural(newNeural);
   };
 
   const levelStats = getDollStats(character.id);
@@ -247,6 +267,16 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
 
   // Talents (Neural Helix)
   const talents = getTalents(character.id);
+  const neuralStats = getNeuralStats(talents[0]);
+
+  useEffect(() => {
+    if (affectStats.length > 1) {
+      setCurrentAffect(5);
+    }
+    if (neuralStats.length > 1) {
+      setCurrentNeural(6);
+    }
+  }, []);
 
   // Sig
   const sig = Tables.GunWeaponData[Tables.GunData[character?.id]?.weaponPrivate] || '';
@@ -291,10 +321,10 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
 
               {/* Stats Info */}
               <div className="mt-4 p-6 grid grid-cols-6 lg:grid-cols-12 gap-4 text-primary-text">
-                <div className="col-span-2">
+                <div className="col-span-1">
                   <span>Class:</span>
                 </div>
-                <div className="col-span-4">
+                <div className="col-span-2">
                   <Tooltip title={Tables.GunDutyData[character.duty].name}>
                     <img
                       src={asset(`icons/${Tables.GunDutyData[character.duty].icon}_W.png`)}
@@ -304,10 +334,10 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                   </Tooltip>
                 </div>
 
-                <div className="col-span-2">
+                <div className="col-span-1">
                   <span>Weapon:</span>
                 </div>
-                <div className="col-span-4">
+                <div className="col-span-2">
                   <Tooltip title={Tables.GunWeaponTypeData[character.weaponType]['name']}>
                     <img
                       src={asset(
@@ -319,10 +349,10 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                   </Tooltip>
                 </div>
 
-                <div className="col-span-2">
-                  <span>Element:</span>
+                <div className="col-span-1">
+                  <span className="flex items-center justify-center">Element:</span>
                 </div>
-                <div className="col-span-4">
+                <div className="col-span-2">
                   <Tooltip title={Tables.LanguageElementData[character.element]['name']}>
                     <img
                       src={asset(
@@ -334,11 +364,11 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                   </Tooltip>
                 </div>
 
-                <div className="col-span-2">
+                <div className="col-span-1">
                   <span>Weakness:</span>
                 </div>
                 {character.weak[0] > 0 && (
-                  <div className="col-span-4 flex space-x-2">
+                  <div className="col-span-2 flex space-x-2">
                     <Tooltip title={Tables.WeaponTagData[character.weak[0]]['name']}>
                       <img
                         src={asset(
@@ -361,26 +391,32 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                 )}
 
                 {levelStats[0][0] > 0 && (
-                  <div className="grid grid-cols-6 gap-2 col-span-6">
+                  <div
+                    className="grid grid-cols-6 gap-2 col-span-6 border-l border-l-4"
+                    style={{ borderColor: accent }}
+                  >
                     <StatDisplay
                       img="Icon_Pow_64"
                       stat={
                         levelStats[currentLevel + currentRange / 10 - 3][1] +
-                        affectStats[currentAffect - 1][1]
+                        affectStats[currentAffect - 1][1] +
+                        neuralStats[currentNeural][0]
                       }
                     />
                     <StatDisplay
                       img="Icon_Armor_64"
                       stat={
                         levelStats[currentLevel + currentRange / 10 - 3][2] +
-                        affectStats[currentAffect - 1][2]
+                        affectStats[currentAffect - 1][2] +
+                        neuralStats[currentNeural][1]
                       }
                     />
                     <StatDisplay
                       img="Icon_Hp_64"
                       stat={
                         levelStats[currentLevel + currentRange / 10 - 3][3] +
-                        affectStats[currentAffect - 1][3]
+                        affectStats[currentAffect - 1][3] +
+                        neuralStats[currentNeural][2]
                       }
                     />
                     <StatDisplay
@@ -393,37 +429,78 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                       img="Icon_Max_Ap_64"
                       stat={Tables.PropData[Tables.GunData[character.id].propertyId]['maxAp'] / 100}
                     />
-                    <div className="col-span-1"></div>
+                    <div></div>
+                    <StatDisplay
+                      img="Icon_Pow_64"
+                      stat={`${neuralStats[currentNeural][3] / 10 + (currentAffect === 6 ? 5 : 0)}.0%`}
+                    />
+                    <StatDisplay
+                      img="Icon_Armor_64"
+                      stat={`${neuralStats[currentNeural][4] / 10 + (currentAffect === 6 ? 5 : 0)}.0%`}
+                    />
+                    <StatDisplay
+                      img="Icon_Hp_64"
+                      stat={`${neuralStats[currentNeural][5] / 10 + (currentAffect === 6 ? 5 : 0)}.0%`}
+                    />
+                    <StatDisplay
+                      img="Icon_Crit_64"
+                      stat={`${neuralStats[currentNeural][6] / 10 + Tables.PropData[Tables.GunData[character.id].propertyId]['crit'] / 10}.0%`}
+                    />
+                    <StatDisplay
+                      img="Icon_Mult_64"
+                      stat={`${neuralStats[currentNeural][7] / 10 + Tables.PropData[Tables.GunData[character.id].propertyId]['critMult'] / 10}.0%`}
+                    />
+                    <div></div>
                   </div>
                 )}
                 {levelStats[0][0] > 0 && (
-                  <div className="col-span-6">
-                    <LevelSlider
-                      currentLevel={currentLevel}
-                      currentRange={currentRange}
-                      onLevelChange={setCurrentLevel}
-                      onRangeChange={setCurrentRange}
-                    />
-                    <span>Affection:</span>
-                    <ToggleButtonGroup className="mt-2">
-                      {affectStats.map((affect) => (
-                        <ToggleButton
-                          key={affect[0]}
-                          selected={currentAffect === affect[0]}
-                          onClick={() => handleAffectChange(affect[0])}
-                        >
-                          {affect[0]}
-                        </ToggleButton>
-                      ))}
-                      <ToggleButton
-                        key={6}
-                        selected={currentAffect === 6}
-                        onClick={() => handleAffectChange(6)}
-                        className={'pointer-events-none select-none opacity-50 cursor-not-allowed'}
-                      >
-                        Oath
-                      </ToggleButton>
-                    </ToggleButtonGroup>
+                  <div className="col-span-6 grid grid-cols-6">
+                    <div className="col-span-4">
+                      <LevelSlider
+                        currentLevel={currentLevel}
+                        currentRange={currentRange}
+                        onLevelChange={setCurrentLevel}
+                        onRangeChange={setCurrentRange}
+                      />
+                    </div>
+                    <div></div>
+                    <div className="col-span-3">
+                      <span>Affection:</span>
+                      <ToggleButtonGroup className="mt-2 mr-6">
+                        {affectStats.map((affect) => (
+                          <ToggleButton
+                            key={affect[0]}
+                            selected={currentAffect === affect[0]}
+                            onClick={() => handleAffectChange(affect[0])}
+                            className={
+                              affect[0] === 6 && !oath.includes(character.name)
+                                ? 'pointer-events-none select-none opacity-50 cursor-not-allowed'
+                                : ''
+                            }
+                          >
+                            {affect[0] === 6 ? 'C' : affect[0]}
+                          </ToggleButton>
+                        ))}
+                      </ToggleButtonGroup>
+                    </div>
+                    <div className="col-span-3">
+                      {neuralStats.length > 1 && (
+                        <div>
+                          <span>Neurals:</span>
+                          <ToggleButtonGroup className="mt-2">
+                            {neuralStats.map((_neural, index) => (
+                              <ToggleButton
+                                key={index}
+                                selected={currentNeural === index}
+                                onClick={() => handleNeuralChange(index)}
+                              >
+                                {index}
+                              </ToggleButton>
+                            ))}
+                          </ToggleButtonGroup>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 )}
               </div>
@@ -477,20 +554,20 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                   <VertProvider vertebrae={currentVertebrae}>
                     <SkillCard skill={currentSkill} />
                   </VertProvider>
-                  <div className="grid grid-cols-4 border overflow-hidden">
+                  <div className="grid grid-cols-12 grid-rows-12 border border-t-slate-700 overflow-hidden">
                     {skillUpgrades.map((id, index) => (
                       <React.Fragment key={index}>
-                        <div className="flex items-center justify-center p-4 font-medium bg-background-paper border-r border-b">
+                        <div className="flex items-center justify-center text-center col-span-3 row-span-1 p-4 font-medium bg-background-paper border-r border-b border-r-slate-700">
                           {`Segment ${index + 1}`}
                         </div>
-                        <div className="flex items-center justify-center p-4 font-medium bg-background-paper border-r border-b">
-                          {`${Tables.BattleSkillDisplayData[id].name} Lv. ${Tables.BattleSkillDisplayData[id].level}`}
-                        </div>
-                        <div className="flex items-center justify-center col-span-2 p-4 bg-background-paper border-r border-b">
+                        <div className="flex items-center justify-center col-span-9 row-span-2 p-4 bg-background-paper border-r border-b border-b-slate-700">
                           <RichText
                             content={Tables.BattleSkillDisplayData[id].upgradeDescription}
                             descriptionTips={Tables.BattleSkillDisplayData[id].descriptionTips}
                           />
+                        </div>
+                        <div className="flex items-center justify-center text-center col-span-3 row-span-1 p-4 font-medium bg-background-paper border-r border-b border-r-slate-700 border-b-slate-700">
+                          {`${Tables.BattleSkillDisplayData[id].name} Lv. ${Tables.BattleSkillDisplayData[id].level}`}
                         </div>
                       </React.Fragment>
                     ))}

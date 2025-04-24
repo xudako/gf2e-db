@@ -50,6 +50,18 @@ const enDolls: string[] = [
   'Mechty',
 ];
 
+export const oath: string[] = [
+  'Qiongjiu',
+  'Tololo',
+  'Vepley',
+  'Daiyan',
+  'Makiatto',
+  'Suomi',
+  'Papasha',
+  'Klukai',
+  'Mechty',
+];
+
 const dollElements: Record<string, number> = {
   'Mosin-Nagant': 2,
   Qiuhua: 1,

@@ -93,16 +93,34 @@ export function getDollStats(dollId: number): number[][] {
 
 export function getAffectStats(dollId: number): number[][] {
   const affectProps = Array.from({ length: 4 }, (_, i) => 655 * 100000 + dollId * 10 + i + 1);
-  if (!Tables.PropData[affectProps[0]]) return [[0, 0, 0, 0]];
   let stats = [0, 0, 0];
   const attrs = ['pow', 'shieldArmor', 'maxHp'];
   const finalStats = [[1, ...stats]];
-  for (let affect = 1; affect < 5; affect++) {
-    const affectProp = Tables.PropData[affectProps[affect - 1]];
-    for (let i = 0; i < attrs.length; i++) {
-      stats[i] += affectProp[attrs[i]];
+  if (Tables.PropData[affectProps[0]]) {
+    for (let affect = 1; affect < 5; affect++) {
+      const affectProp = Tables.PropData[affectProps[affect - 1]];
+      for (let i = 0; i < attrs.length; i++) {
+        stats[i] += affectProp[attrs[i]];
+      }
+      finalStats.push([affect + 1, ...stats]);
     }
-    finalStats.push([affect + 1, ...stats]);
+    finalStats.push([6, ...stats]);
+  }
+  return finalStats;
+}
+
+export function getNeuralStats(neurals: Array<Record<string, any>>): number[][] {
+  let stats = [0, 0, 0, 0, 0, 0, 0, 0];
+  const finalStats = [[...stats]];
+  if (neurals) {
+    for (const neural of neurals) {
+      for (let i = 0; i < attrs.length; i++) {
+        if (neural['stats'][attrs[i]]) {
+          stats[i] += neural['stats'][attrs[i]];
+        }
+      }
+      finalStats.push([...stats]);
+    }
   }
   return finalStats;
 }

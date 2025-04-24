@@ -10,6 +10,7 @@ export interface Chr {
   region: number;
   element: number;
   weak: number[];
+  characterId: number;
   // move: number;
   // stability: number;
   // weakness: string[];
