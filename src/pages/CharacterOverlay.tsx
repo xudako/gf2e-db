@@ -306,7 +306,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
           </svg>
         </Link>
 
-        <div className="grid grid-cols-1 sm:grid-cols-8 lg:grid-cols-12 gap-4">
+        <div className="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-4">
           {/* Character Info */}
           <div className="col-span-8">
             <div className="p-4">
@@ -320,7 +320,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
               </h1>
 
               {/* Stats Info */}
-              <div className="mt-4 p-6 grid grid-cols-6 lg:grid-cols-12 gap-4 text-primary-text">
+              <div className="mt-4 p-6 grid grid-cols-3 lg:grid-cols-6 xl:grid-cols-12 gap-4 text-primary-text">
                 <div className="col-span-1">
                   <span>Class:</span>
                 </div>
@@ -350,7 +350,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                 </div>
 
                 <div className="col-span-1">
-                  <span className="flex items-center justify-center">Element:</span>
+                  <span>Element:</span>
                 </div>
                 <div className="col-span-2">
                   <Tooltip title={Tables.LanguageElementData[character.element]['name']}>
@@ -392,7 +392,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
 
                 {levelStats[0][0] > 0 && (
                   <div
-                    className="grid grid-cols-6 gap-2 col-span-6 border-l border-l-4"
+                    className="grid grid-cols-5 lg:grid-cols-6 gap-2 col-span-6 border-l border-l-4"
                     style={{ borderColor: accent }}
                   >
                     <StatDisplay
@@ -429,7 +429,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                       img="Icon_Max_Ap_64"
                       stat={Tables.PropData[Tables.GunData[character.id].propertyId]['maxAp'] / 100}
                     />
-                    <div></div>
+                    <div className="hidden lg:block"></div>
                     <StatDisplay
                       img="Icon_Pow_64"
                       stat={`${neuralStats[currentNeural][3] / 10 + (currentAffect === 6 ? 5 : 0)}.0%`}
@@ -450,12 +450,12 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                       img="Icon_Mult_64"
                       stat={`${neuralStats[currentNeural][7] / 10 + Tables.PropData[Tables.GunData[character.id].propertyId]['critMult'] / 10}.0%`}
                     />
-                    <div></div>
+                    <div className="hidden lg:block"></div>
                   </div>
                 )}
                 {levelStats[0][0] > 0 && (
                   <div className="col-span-6 grid grid-cols-6">
-                    <div className="col-span-4">
+                    <div className="col-span-3 lg:col-span-4">
                       <LevelSlider
                         currentLevel={currentLevel}
                         currentRange={currentRange}
@@ -463,10 +463,10 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                         onRangeChange={setCurrentRange}
                       />
                     </div>
-                    <div></div>
+                    <div className="hidden lg:block"></div>
                     <div className="col-span-3">
-                      <span>Affection:</span>
-                      <ToggleButtonGroup className="mt-2 mr-6">
+                      <span className="ml-6 lg:ml-0">Affection:</span>
+                      <ToggleButtonGroup className="mt-2 ml-6 lg:ml-0 mr-6">
                         {affectStats.map((affect) => (
                           <ToggleButton
                             key={affect[0]}
@@ -483,11 +483,12 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                         ))}
                       </ToggleButtonGroup>
                     </div>
+                    <div className="col-span-3 block lg:hidden"></div>
                     <div className="col-span-3">
                       {neuralStats.length > 1 && (
                         <div>
-                          <span>Neurals:</span>
-                          <ToggleButtonGroup className="mt-2">
+                          <span className="ml-6 lg:ml-0">Neurals:</span>
+                          <ToggleButtonGroup className="mt-2 ml-6 lg:ml-0 ">
                             {neuralStats.map((_neural, index) => (
                               <ToggleButton
                                 key={index}
