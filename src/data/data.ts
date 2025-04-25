@@ -48,6 +48,7 @@ const enDolls: string[] = [
   'Papasha',
   'Klukai',
   'Mechty',
+  'Vector',
 ];
 
 export const oath: string[] = [
@@ -60,6 +61,9 @@ export const oath: string[] = [
   'Papasha',
   'Klukai',
   'Mechty',
+  'Vector',
+  'Groza',
+  'Dushevnaya',
 ];
 
 const dollElements: Record<string, number> = {
