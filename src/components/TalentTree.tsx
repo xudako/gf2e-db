@@ -72,7 +72,7 @@ const TalentTree = ({ talents }: TalentTreeProps) => {
               <button
                 onClick={() => handleTalentClick(talent)}
                 className={`w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center text-xs md:text-sm
-                           border-2 transition-all duration-300
+                           border-2 transition-all duration-300 overflow-hidden
                            md:aspect-square
                            ${
                              currentTalent === talent
@@ -81,9 +81,9 @@ const TalentTree = ({ talents }: TalentTreeProps) => {
                            }`}
               >
                 {talent.icon ? (
-                  <img src={asset(`keys/${talent.icon}.png`)} alt={'talent'} />
+                  <img src={asset(`keys/${talent.icon}.png`)} alt={'key'} />
                 ) : (
-                  <img src={asset(`icons/Icon_${statIcons[index]}_64.png`)} alt={'talent'} />
+                  <img src={asset(`icons/Icon_${statIcons[index]}_64.png`)} alt={'stat'} />
                 )}
               </button>
             </div>

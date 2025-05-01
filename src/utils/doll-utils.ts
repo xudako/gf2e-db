@@ -59,6 +59,7 @@ export function getDollStats(dollId: number): number[][] {
   let classes = group.id.map((cid: number) => Tables.GunClassData[cid]);
 
   const baseProp = Tables.PropData[doll.propertyId];
+  if (!baseProp) return [[0, 0, 0, 0]];
 
   let breakStats = [0, 0, 0];
   let stats = null;
@@ -134,7 +135,8 @@ function loadTalent(
   if (keyId) {
     const key = Tables.TalentKeyData[keyId];
     talent['name'] = key['keyName'];
-    talent['icon'] = Tables.ItemData[keyId]['icon'];
+    // talent['icon'] = Tables.ItemData[keyId]['icon'];
+    talent['icon'] = Tables.ItemData[keyId]?.['icon'] ?? 'default';
     const skillId = key['battleSkillId'];
 
     if (skillId) {
@@ -184,13 +186,15 @@ export function getTalents(
   const skillNodes: Array<Record<string, any>> = [];
 
   for (const node of nodes) {
-    const geneId = parseInt(node['traverseTalentEffectGeneGroup'][0]);
+    //const geneId = parseInt(node['traverseTalentEffectGeneGroup'][0]);
+    const geneId = node['talentEffectGeneGroup']; //temp, revert after tables fix
     if (!(geneId in Tables.GroupTalentEffectGeneData)) {
       continue;
     }
 
     const gene = Tables.GroupTalentEffectGeneData[geneId];
     if (gene['itemId']) {
+      console.log(gene['itemId']);
       const talent = loadTalent(gene['itemId'], null);
       skillNodes.push(talent);
     } else {
