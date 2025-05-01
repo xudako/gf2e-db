@@ -21,7 +21,6 @@ import StatDisplay from '../components/StatDisplay';
 import RichText from '../components/RichText';
 import { oath } from '../data/data';
 import { Link, useLocation } from 'react-router-dom';
-import { VertProvider } from '../utils/VertContext';
 
 await TableLoader.load([
   'ClothesData',
@@ -41,26 +40,11 @@ interface CharacterOverlayProps {
   character?: Chr;
 }
 
-type SkillTypeId = '01' | '05' | '07' | '04' | '08';
+type SkillTypeId = 1 | 5 | 7 | 4 | 8;
 
 interface SkillType {
   id: SkillTypeId;
   name: string;
-}
-
-interface SkillsByLevel {
-  [level: string]: { skill: Skill | null; vertebrae: number };
-}
-
-interface SkillTree {
-  [sType: string]: SkillsByLevel;
-}
-
-interface VertebraeMapping {
-  [vertebrae: number]: {
-    skillType: SkillTypeId;
-    skillLevel: string;
-  };
 }
 
 const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }): JSX.Element => {
@@ -99,11 +83,11 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
   // Skills
 
   const skillTypes: SkillType[] = [
-    { id: '01', name: 'Basic' },
-    { id: '05', name: 'Skill 1' },
-    { id: '07', name: 'Skill 2' },
-    { id: '04', name: 'Ultimate' },
-    { id: '08', name: 'Passive' },
+    { id: 1, name: 'Basic' },
+    { id: 5, name: 'Skill 1' },
+    { id: 7, name: 'Skill 2' },
+    { id: 4, name: 'Ultimate' },
+    { id: 8, name: 'Passive' },
   ];
   if (character.id === 1027) {
     const ult = skillTypes.find((skill) => skill.name === 'Ultimate');
@@ -123,112 +107,48 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
     })
     .filter(Boolean);
 
-  const allSkills: SkillTree = {};
-  const vertebraeToSkillMapping: VertebraeMapping = {};
-  const skillUpgrades: number[] = [];
-
-  const skillsToProcess = [character.skillNormalAttack].concat(skillIds.flat()).filter(Boolean);
-  skillsToProcess.forEach((id, index) => {
-    if (!id) return;
-
-    const idString = id.toString();
-    if (idString.length < 8) return;
-
-    const type = idString.substring(4, 6);
-    const level = idString.substring(6, 8);
-    const vertebrae = Math.max(0, index - 4);
-
-    if (!allSkills[type]) {
-      allSkills[type] = {};
-    }
-
-    const skill = loadDollSkill(id, character);
-    if (skill) {
-      allSkills[type][level] = { skill, vertebrae };
-      vertebraeToSkillMapping[vertebrae] = {
-        skillType: type as SkillTypeId,
-        skillLevel: level,
-      };
-      if (skill.upgradeDescription) {
-        skillUpgrades.push(skill.id);
-      }
-    }
-  });
-
-  if (Object.keys(allSkills).length === 0) {
-    const defaultType = '01' as SkillTypeId;
-    allSkills[defaultType] = { '01': { skill: null, vertebrae: 0 } };
-    vertebraeToSkillMapping[0] = {
-      skillType: defaultType,
-      skillLevel: '01',
-    };
-  }
-
-  const [currentSkillType, setCurrentSkillType] = useState<SkillTypeId>(
-    (Object.keys(allSkills)[0] as SkillTypeId) || ('01' as SkillTypeId)
-  );
-
-  const initialSkillLevels = new Map<SkillTypeId, string>();
+  const allSkillIds = [character.skillNormalAttack].concat(skillIds.flat()).filter(Boolean);
+  const initialSkillLevels = new Map<SkillTypeId, number>();
   skillTypes.forEach((type) => {
-    if (allSkills[type.id]) {
-      initialSkillLevels.set(type.id, Object.keys(allSkills[type.id])[0] || '01');
-    } else {
-      initialSkillLevels.set(type.id, '01');
+    if (
+      allSkillIds.filter((id) =>
+        id.toString().startsWith((character.id * 100 + type.id).toString())
+      ).length > 0
+    ) {
+      initialSkillLevels.set(type.id, 1);
     }
   });
 
+  const [currentSkillType, setCurrentSkillType] = useState<SkillTypeId>(1);
   const [skillLevelMemory, setSkillLevelMemory] =
-    useState<Map<SkillTypeId, string>>(initialSkillLevels);
-  const [currentSkillLevel, setCurrentSkillLevel] = useState<string>(
-    skillLevelMemory.get(currentSkillType) || '01'
+    useState<Map<SkillTypeId, number>>(initialSkillLevels);
+  const [currentSkillLevel, setCurrentSkillLevel] = useState<number>(
+    skillLevelMemory.get(currentSkillType) || 1
   );
-  const [currentSkill, setCurrentSkill] = useState<Skill | null>(
-    (allSkills[currentSkillType] &&
-      allSkills[currentSkillType][currentSkillLevel] &&
-      allSkills[currentSkillType][currentSkillLevel].skill) ||
-      null
+  const [currentSkill, setCurrentSkill] = useState<Skill>(
+    loadDollSkill(character.id * 10000 + currentSkillType * 100 + currentSkillLevel, character)
   );
-  const [currentVertebrae, setCurrentVertebrae] = useState<number>(0);
 
   useEffect(() => {
-    if (
-      currentSkillType &&
-      allSkills[currentSkillType] &&
-      currentSkillLevel &&
-      allSkills[currentSkillType][currentSkillLevel]
-    ) {
-      setCurrentSkill(allSkills[currentSkillType][currentSkillLevel].skill);
-
-      const vertebrae = allSkills[currentSkillType][currentSkillLevel].vertebrae;
-      if (vertebrae !== currentVertebrae) {
-        setCurrentVertebrae(vertebrae);
-      }
-    } else {
-      setCurrentSkill(null);
-    }
+    setCurrentSkill(
+      loadDollSkill(character.id * 10000 + currentSkillType * 100 + currentSkillLevel, character)
+    );
   }, [currentSkillType, currentSkillLevel]);
 
-  const handleVertebraeChange = (newVertebrae: number) => {
-    setCurrentVertebrae(newVertebrae);
-
-    const mapping = vertebraeToSkillMapping[newVertebrae];
-    if (mapping) {
-      setCurrentSkillType(mapping.skillType);
-      setCurrentSkillLevel(mapping.skillLevel);
-
-      setSkillLevelMemory((prev) => new Map(prev).set(mapping.skillType, mapping.skillLevel));
-    }
+  const getSkillLevels = (skillType: SkillTypeId): number[] => {
+    return allSkillIds
+      .filter((id) => id.toString().startsWith((character.id * 100 + skillType).toString()))
+      .map((id) => id % 10);
   };
 
   const handleSkillTypeChange = (newSkillTypeId: SkillTypeId) => {
-    if (allSkills[newSkillTypeId]) {
+    if (getSkillLevels(newSkillTypeId).length > 0) {
       setCurrentSkillType(newSkillTypeId);
-
       const rememberedLevel = skillLevelMemory.get(newSkillTypeId);
-      if (rememberedLevel && allSkills[newSkillTypeId][rememberedLevel]) {
+      if (rememberedLevel && getSkillLevels(newSkillTypeId).includes(rememberedLevel)) {
         setCurrentSkillLevel(rememberedLevel);
       } else {
-        const firstLevel = Object.keys(allSkills[newSkillTypeId]).sort()[0];
+        const firstLevel = getSkillLevels(newSkillTypeId)[0];
         if (firstLevel) {
           setCurrentSkillLevel(firstLevel);
           setSkillLevelMemory((prev) => new Map(prev).set(newSkillTypeId, firstLevel));
@@ -237,15 +157,11 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
     }
   };
 
-  const handleSkillLevelChange = (newLevel: string) => {
-    if (allSkills[currentSkillType] && allSkills[currentSkillType][newLevel] !== undefined) {
+  const handleSkillLevelChange = (newLevel: number) => {
+    if (getSkillLevels(currentSkillType).includes(newLevel)) {
       setCurrentSkillLevel(newLevel);
       setSkillLevelMemory((prev) => new Map(prev).set(currentSkillType, newLevel));
     }
-  };
-
-  const getSkillLevels = (skillType: string): string[] => {
-    return allSkills[skillType] ? Object.keys(allSkills[skillType]).sort() : [];
   };
 
   // Stats
@@ -525,7 +441,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                     </div>
 
                     <div className="col-span-1">
-                      {currentSkillType && getSkillLevels(currentSkillType).length > 1 && (
+                      {getSkillLevels(currentSkillType).length > 1 && (
                         <ToggleButtonGroup>
                           {getSkillLevels(currentSkillType).map((level) => (
                             <ToggleButton
@@ -533,30 +449,16 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                               selected={currentSkillLevel === level}
                               onClick={() => handleSkillLevelChange(level)}
                             >
-                              {level}
+                              {`Level ${level} ${allSkillIds.slice(-6).indexOf(character.id * 10000 + currentSkillType * 100 + level) + 1 > 0 ? `(V${allSkillIds.slice(-6).indexOf(character.id * 10000 + currentSkillType * 100 + level) + 1})` : ''}`}
                             </ToggleButton>
                           ))}
                         </ToggleButtonGroup>
                       )}
                     </div>
                   </div>
-                  <span className="text-primary-text">Vertebrae:</span>
-                  <ToggleButtonGroup className="mb-4 mt-2">
-                    {Array.from({ length: 7 }, (_, i) => i).map((i) => (
-                      <ToggleButton
-                        key={i}
-                        selected={currentVertebrae === i}
-                        onClick={() => handleVertebraeChange(i)}
-                      >
-                        {i}
-                      </ToggleButton>
-                    ))}
-                  </ToggleButtonGroup>
-                  <VertProvider vertebrae={currentVertebrae}>
-                    <SkillCard skill={currentSkill} />
-                  </VertProvider>
+                  <SkillCard skill={currentSkill} />
                   <div className="grid grid-cols-12 grid-rows-12 border border-t-slate-700 overflow-hidden">
-                    {skillUpgrades.map((id, index) => (
+                    {allSkillIds.slice(-6).map((id, index) => (
                       <React.Fragment key={index}>
                         <div className="flex items-center justify-center text-center col-span-3 row-span-1 p-4 font-medium bg-background-paper border-r border-b border-r-slate-700">
                           {`Segment ${index + 1}`}
