@@ -278,6 +278,7 @@
             "costumeId": 1100900,
             "costumeReplace": [
                 1100900,
+                1100901,
                 1100903
             ],
             "propertyId": 11009,
@@ -559,6 +560,7 @@
             "BGEOPIAGBKE": "Vepley's travelling live show☆ is about to start!",
             "KJLGGIDKCEM": [
                 104,
+                206,
                 304,
                 401,
                 802,
@@ -673,6 +675,7 @@
             "BGEOPIAGBKE": "Target confirmed. Commander, I can set out at any time.",
             "KJLGGIDKCEM": [
                 103,
+                206,
                 302,
                 402,
                 502
@@ -863,7 +866,8 @@
             "avatar": 21008,
             "costumeId": 1102200,
             "costumeReplace": [
-                1102200
+                1102200,
+                1102201
             ],
             "propertyId": 11022,
             "weight": 2,
@@ -1142,7 +1146,8 @@
                 301,
                 401,
                 501,
-                601
+                601,
+                705
             ],
             "extra": "",
             "skillActiveExtra": [],
@@ -1488,6 +1493,7 @@
                 402,
                 501,
                 601,
+                705,
                 902
             ],
             "extra": "",
@@ -1606,7 +1612,8 @@
                 402,
                 501,
                 601,
-                702
+                702,
+                705
             ],
             "extra": "",
             "skillActiveExtra": [],
@@ -1840,6 +1847,7 @@
             "BGEOPIAGBKE": "All preparations are complete, Commander. There's no need to worry.",
             "KJLGGIDKCEM": [
                 104,
+                206,
                 301,
                 302,
                 401,
@@ -2036,7 +2044,8 @@
             "costumeId": 1103400,
             "costumeReplace": [
                 1103400,
-                1103401
+                1103401,
+                1103402
             ],
             "propertyId": 11034,
             "weight": 2,
@@ -2314,6 +2323,7 @@
                 501,
                 601,
                 702,
+                705,
                 902
             ],
             "extra": "",
@@ -2427,6 +2437,7 @@
             "BGEOPIAGBKE": "Hunting, is it? Alright, I'm in.",
             "KJLGGIDKCEM": [
                 104,
+                206,
                 301,
                 305,
                 401,
@@ -2540,6 +2551,7 @@
             "BGEOPIAGBKE": "[Mission data has been logged. Please sit back and wait for my good news.] - Littara",
             "KJLGGIDKCEM": [
                 101,
+                206,
                 303,
                 402,
                 901
@@ -2772,6 +2784,7 @@
             "BGEOPIAGBKE": "Order received! For honor and mission!",
             "KJLGGIDKCEM": [
                 101,
+                206,
                 301,
                 401,
                 501,
@@ -3009,7 +3022,7 @@
                 302,
                 402,
                 603,
-                705,
+                707,
                 902
             ],
             "extra": "",
@@ -3083,7 +3096,8 @@
             "barrackCameraSetting": "0.3,0,0.5,1.9",
             "costumeId": 1104300,
             "costumeReplace": [
-                1104300
+                1104300,
+                1104301
             ],
             "propertyId": 11043,
             "weight": 2,
@@ -3123,6 +3137,7 @@
             "BGEOPIAGBKE": "Tsk. If you've got something to say, hurry... Ahem, I mean—I'm listening.",
             "KJLGGIDKCEM": [
                 104,
+                206,
                 301,
                 305,
                 401,
@@ -3149,8 +3164,8 @@
             "firstName": "Vector",
             "secondName": "-",
             "enName": "VectorSSR",
-            "introduce": "A regularly pessimistic Doll. However, as the leader of H.I.D.E. 404's second squad, Vector will absolutely push through and endure till the very last moment with her squadmates in the face of adversity, no matter how depressing the outcomes of her calculations.",
-            "dialogue": "C-Commander? Didn't expect our paths would cross once more. Still... I'm glad to see you again.",
+            "introduce": "A regularly pessimistic Doll. However, as the leader of H.I.D.E. 404's Team B, Vector will absolutely push through and endure till the very last moment with her teammates in the face of adversity, no matter how depressing the outcomes of her calculations.",
+            "dialogue": "Commander...? I never thought we'd meet again. I'm a little... happy... I guess.",
             "code": "VectorSSR",
             "type": 4,
             "characterId": 29,
@@ -3200,7 +3215,9 @@
             "barrackCameraSetting": "0.3,0,0.5,1.9",
             "costumeId": 1104400,
             "costumeReplace": [
-                1104400
+                1104400,
+                1104401,
+                1104402
             ],
             "propertyId": 11044,
             "weight": 2,
@@ -3243,7 +3260,8 @@
                 201,
                 301,
                 402,
-                601
+                601,
+                705
             ],
             "extra": "",
             "skillActiveExtra": [],
@@ -3481,6 +3499,125 @@
                 501,
                 602,
                 704,
+                902
+            ],
+            "extra": "",
+            "skillActiveExtra": [],
+            "element": 0,
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
+            "id": 1048,
+            "name": "Qiuhua",
+            "firstName": "Qiuhua",
+            "secondName": "-",
+            "enName": "QiuhuaSSR",
+            "introduce": "A passionate, high-energy Doll with an optimistic outlook on life. As a gourmet hunter in the Yellow Zone, she's made it her mission to develop new ingredients to tackle food shortages. Standing against injustice is a way of life for her and her credo is to never let a conversation trail off. \"While I can't say I approve of adding ketchup to deep fried pork, if that's how you like it, then I suppose I can live with it.\"",
+            "dialogue": "Awesome, wild herbs and protein... Commander? You're just in time! Tonight, our mouths rejoice!",
+            "code": "QiuhuaSSR",
+            "type": 4,
+            "characterId": 33,
+            "getAudio": 7104822,
+            "duty": 2,
+            "secondDuty": [
+                11,
+                33,
+                16
+            ],
+            "rank": 5,
+            "roleTemplateId": 1048,
+            "coreItemId": 4048,
+            "skillNormalAttack": 10480101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "weaponType": 6,
+            "weaponPrivate": [
+                10483
+            ],
+            "weaponPrivateShow": [
+                10481,
+                10482,
+                10483
+            ],
+            "weaponDefault": 10481,
+            "moveCode": 27,
+            "soldGet1": {
+                "4048": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1048,
+            "gunClass": 35,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1104800,
+            "costumeReplace": [
+                1104800
+            ],
+            "propertyId": 11048,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/QiuhuaSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "4",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44048
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12104805,
+            "gachaGetVoice": 71104805,
+            "weakWeaponTag": 8,
+            "BGEOPIAGBKE": "Relax, Commander, I'm on the job!",
+            "KJLGGIDKCEM": [
+                104,
+                201,
+                304,
+                401,
+                501,
+                601,
+                801,
                 902
             ],
             "extra": "",
@@ -3853,131 +3990,12 @@
             "feature": 0
         },
         {
-            "id": 1048,
-            "name": "Quihua",
-            "firstName": "秋桦",
-            "secondName": "-",
-            "enName": "QiuhuaSSR",
-            "introduce": "热情直爽，豁达乐观的高能量人形。身为黄区美食猎人，为改变人们食不果腹的困境而努力开发着新食材。路见不平拔刀相助是她的日常，绝不让一个话茬子落在地上是她的信条。“虽然我对锅包肉里加番茄酱还是不能苟同，但如果合你的口味，咱也不是不能忍了。”",
-            "dialogue": "太好了，是野生香料和蛋白质……长官？您来得正是时候，今天您可有口福啦！",
-            "code": "QiuhuaSSR",
-            "type": 4,
-            "characterId": 33,
-            "getAudio": 7104822,
-            "duty": 2,
-            "secondDuty": [
-                11,
-                33,
-                16
-            ],
-            "rank": 5,
-            "roleTemplateId": 1048,
-            "coreItemId": 4048,
-            "skillNormalAttack": 10480101,
-            "skillTalentExtra": [
-                10000
-            ],
-            "aiList": [
-                101701,
-                101702,
-                101703,
-                101704,
-                101705,
-                101706,
-                101707
-            ],
-            "element": 1,
-            "weaponType": 6,
-            "weaponPrivate": [
-                10483
-            ],
-            "weaponPrivateShow": [
-                10481,
-                10482,
-                10483
-            ],
-            "weaponDefault": 10481,
-            "moveCode": 27,
-            "soldGet1": {
-                "4048": 30
-            },
-            "systemSwitch": 63,
-            "useFakeAttack": true,
-            "camp": 2001,
-            "unlockCost": 30,
-            "grade": 1048,
-            "gunClass": 35,
-            "barrackCameraSetting": "0.3,0,0.5,1.9",
-            "costumeId": 1104800,
-            "costumeReplace": [
-                1104800
-            ],
-            "propertyId": 11048,
-            "weight": 2,
-            "shieldType": 1,
-            "maxGrade": 6,
-            "supplyTypeBanList": [
-                0,
-                2
-            ],
-            "attackType": 1,
-            "gachaGetTimeline": "GunGet/QiuhuaSSR01_GunGetShow",
-            "beSuppressedConfig": [
-                80000001,
-                9999,
-                0,
-                0,
-                8
-            ],
-            "idleType": 1,
-            "displacement": 1,
-            "weakTag": "4",
-            "suppressGroup": [
-                2,
-                5,
-                8,
-                7
-            ],
-            "unlockHint": 160045,
-            "unlockDorm": [
-                44048
-            ],
-            "guardRadius": 500,
-            "guardRadiusShow": 1,
-            "gachaGetAudio": 12104805,
-            "gachaGetVoice": 71104805,
-            "weakWeaponTag": 8,
-            "BGEOPIAGBKE": "放心吧，长官！我办事，您放心！",
-            "KJLGGIDKCEM": [
-                104,
-                201,
-                304,
-                401,
-                501,
-                601,
-                801,
-                902
-            ],
-            "extra": "",
-            "skillActiveExtra": [],
-            "defaultGrade": 0,
-            "avatar": 0,
-            "barrackEffectId": [],
-            "barrackAudioId": 0,
-            "shape": 0,
-            "shapeParam": "",
-            "shapeIcon": "",
-            "shapeTerrain": 0,
-            "isHide": false,
-            "feature": 0
-        },
-        {
             "id": 1053,
             "name": "Peri",
-            "firstName": "佩莉",
+            "firstName": "Peri",
             "enName": "PeriSSR",
-            "introduce": "体型娇小，却有着远大志向的可爱人形。追随着师父的脚步，佩莉逐渐成长为独当一面的暗商。活泼乐观的性格为她争取到许多客户的信任，精明老道的眼光也总能让她避开麻烦。一切的努力都是为了成为一个超酷的靠谱人形，所以偶尔也尝试着多依靠她一下吧？",
-            "dialogue": "佩莉前来报到！相比以前，我可是成长了很多哦！欸？您，您从暗商那听过这个名字吗？",
+            "introduce": "A cute little Doll with big dreams, Peri has grown into a strong, independent Doll while following in the footsteps of her master. Her cheerful and lively personality has won the trust of many clients while her wits and experience have allowed her to avoid many pitfalls. All her efforts are to become a super cool and reliable Doll, so why not try relying on her a little?",
+            "dialogue": "This is Peri, reporting in! I've grown a lot compared to before! Huh? Y-You heard about me from an underground broker?",
             "code": "PeriSSR",
             "type": 2,
             "characterId": 38,
@@ -4003,7 +4021,6 @@
                 101706,
                 101707
             ],
-            "element": 1,
             "weaponType": 2,
             "weaponPrivate": [
                 10533
@@ -4064,7 +4081,7 @@
             "gachaGetAudio": 12105305,
             "gachaGetVoice": 71105305,
             "weakWeaponTag": 4,
-            "BGEOPIAGBKE": "嘿呀，指令收到！这次就给指挥官免单服务吧！",
+            "BGEOPIAGBKE": "Yup, order received! This one's a freebie for you, Commander!",
             "KJLGGIDKCEM": [
                 103,
                 201,
@@ -4076,6 +4093,7 @@
             "secondName": "",
             "extra": "",
             "skillActiveExtra": [],
+            "element": 0,
             "defaultGrade": 0,
             "avatar": 0,
             "barrackEffectId": [],
@@ -4089,11 +4107,11 @@
         },
         {
             "id": 1054,
-            "name": "YooHee",
-            "firstName": "幼熙",
+            "name": "Yoohee",
+            "firstName": "Yoohee",
             "enName": "YooHeeSSR",
-            "introduce": "热情且有责任心，专注地投身于舞蹈的人形。追随着指挥官的称赞而成为舞者，又为了担起“前辈”的责任而组建火花舞团，向更多的流浪人形提供安身之所。在精进舞艺的路上从未懈怠，好学自律是她前进的基石，认准目标不服输是她成功的诀窍。不用怀疑，相信她就好。因为答应的事她必定说到做到。“跟上节奏，让我们引爆全场！”",
-            "dialogue": "表情、姿态……嗯，没问题，登台的时候要……诶？指、指挥官，您也来看我的舞蹈吗！",
+            "introduce": "A passionate and responsible Doll who's devoted to the art of dancing. A compliment from the Commander set her on the path to becoming a dancer, and she founded the dancing troupe called \"Sparkle Squad\" to provide wandering Dolls with a place to call home and thus do justice to her position as a veteran Doll. She has never slacked off in her quest to perfect her art; diligence and willingness to learn are the cornerstones of her efforts while never giving up and keeping her eyes on the goals are the secret of her success. Don't question it, just trust her, because when she says she'll do it, she means it. \"Keep up with the beat! Let's blow the roof off this place!\"",
+            "dialogue": "Expression, check. Posture, check. Today's stage is... Huh? C-Commander? You're going to watch my performance?!",
             "code": "YooHeeSSR",
             "characterId": 39,
             "getAudio": 7105422,
@@ -4179,7 +4197,7 @@
             "gachaGetAudio": 12105405,
             "gachaGetVoice": 71105405,
             "weakWeaponTag": 32,
-            "BGEOPIAGBKE": "准备好了吗？让我们惊艳全场吧！",
+            "BGEOPIAGBKE": "Are you ready? Let's take this place by storm!",
             "KJLGGIDKCEM": [
                 102,
                 206,
@@ -4207,10 +4225,10 @@
         {
             "id": 1055,
             "name": "Nikketa",
-            "firstName": "妮基塔",
+            "firstName": "Nikketa",
             "enName": "NikketaSSR",
-            "introduce": "坚持正义的治安人员、爱护孩子的温柔姐姐、花钱不眨眼的月光族——谁说这些身份不能是同一个人？奋战于守护正义的一线，妮基塔冷静地践行着自己的原则，但在面对你时，她也会流露出特别的一面。“我的工作告诉我，不要完全相信任何人。不过，BOSS是例外了，我们可是一起追逐正义的伙伴呢。”",
-            "dialogue": "要和我一起守卫正义吗，BOSS？",
+            "introduce": "A security officer who upholds justice, a kind older sister figure who cherishes children, a big spender who uses up all her monthly earnings— Who is to say that these three identities can't belong to the same person? Nikketa fights in the frontlines of justice, calmly demonstrating her values and beliefs. Yet when she faces you, another side of her emerges. \"My work has taught me not to trust anyone. Boss is the exception though. We are fellow partners in the pursuit of justice.\"",
+            "dialogue": "Want to join me in defending justice, Boss?",
             "code": "NikketaSSR",
             "characterId": 40,
             "getAudio": 7105541,
@@ -4236,7 +4254,6 @@
                 101706,
                 101707
             ],
-            "element": 5,
             "weaponType": 3,
             "weaponPrivate": [
                 10553
@@ -4298,7 +4315,7 @@
             "gachaGetAudio": 12105505,
             "gachaGetVoice": 71105505,
             "weakWeaponTag": 2,
-            "BGEOPIAGBKE": "BOSS，我办事，你放心。",
+            "BGEOPIAGBKE": "Boss, leave it to me. Don't worry.",
             "KJLGGIDKCEM": [
                 101,
                 202,
@@ -4312,131 +4329,10 @@
             "extra": "",
             "type": 0,
             "skillActiveExtra": [],
+            "element": 0,
             "defaultGrade": 0,
             "avatar": 0,
             "barrackEffectId": [],
-            "barrackAudioId": 0,
-            "shape": 0,
-            "shapeParam": "",
-            "shapeIcon": "",
-            "shapeTerrain": 0,
-            "isHide": false,
-            "feature": 0
-        },
-        {
-            "id": 1056,
-            "name": "Leva",
-            "firstName": "莱娅",
-            "enName": "LevaSSR",
-            "introduce": "如果觉得眼前的人形亲切友善，那多半已经踏入她的陷阱之中了。倘若未能及时察觉，接下来的一切损失，莱娅概不负责，除非……这个人是你。\n“指挥官，不会是故意吃亏的吧？哼哼♪那也无所谓，你想让我怎么对你负责呢？”",
-            "dialogue": "接下来，我们的合作将会更加紧密哟，期不期待呀，指挥官？",
-            "code": "LevaSSR",
-            "characterId": 41,
-            "getAudio": 7105622,
-            "duty": 4,
-            "secondDuty": [
-                5,
-                45
-            ],
-            "rank": 5,
-            "roleTemplateId": 1056,
-            "coreItemId": 4056,
-            "skillNormalAttack": 10560101,
-            "skillTalentExtra": [
-                10000
-            ],
-            "aiList": [
-                101701,
-                101702,
-                101703,
-                101704,
-                101705,
-                101706,
-                101707
-            ],
-            "element": 2,
-            "weaponType": 2,
-            "weaponPrivate": [
-                10563
-            ],
-            "weaponPrivateShow": [
-                10561,
-                10562,
-                10563
-            ],
-            "weaponDefault": 10561,
-            "moveCode": 27,
-            "soldGet1": {
-                "4056": 30
-            },
-            "systemSwitch": 63,
-            "useFakeAttack": true,
-            "camp": 2001,
-            "unlockCost": 30,
-            "grade": 1056,
-            "gunClass": 38,
-            "barrackCameraSetting": "0.3,0,0.5,1.9",
-            "costumeId": 1105600,
-            "costumeReplace": [
-                1105600,
-                1105601
-            ],
-            "propertyId": 11056,
-            "barrackEffectId": [
-                105601,
-                105602
-            ],
-            "weight": 2,
-            "shieldType": 1,
-            "maxGrade": 6,
-            "supplyTypeBanList": [
-                0,
-                2
-            ],
-            "attackType": 1,
-            "gachaGetTimeline": "GunGet/LevaSSR01_GunGetShow",
-            "beSuppressedConfig": [
-                80000001,
-                9999,
-                0,
-                0,
-                8
-            ],
-            "idleType": 1,
-            "displacement": 1,
-            "weakTag": "3",
-            "suppressGroup": [
-                2,
-                5,
-                8,
-                7
-            ],
-            "unlockHint": 160045,
-            "unlockDorm": [
-                44056
-            ],
-            "guardRadius": 500,
-            "guardRadiusShow": 1,
-            "gachaGetAudio": 12105605,
-            "gachaGetVoice": 71105605,
-            "weakWeaponTag": 4,
-            "BGEOPIAGBKE": "我一定会尽·心·尽·力配合你哟，指挥官。",
-            "KJLGGIDKCEM": [
-                101,
-                203,
-                301,
-                402,
-                501,
-                707,
-                901,
-                902
-            ],
-            "secondName": "",
-            "extra": "",
-            "type": 0,
-            "skillActiveExtra": [],
-            "defaultGrade": 0,
-            "avatar": 0,
             "barrackAudioId": 0,
             "shape": 0,
             "shapeParam": "",

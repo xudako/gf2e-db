@@ -16,7 +16,8 @@
                 "1001004",
                 "1001005",
                 "1001006",
-                "1001007"
+                "1001007",
+                "1001008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -25,156 +26,6 @@
             "talentBonusGroup": 1001,
             "privateSlotNumber": 3,
             "publicSlotNumber": 3
-        },
-        {
-            "id": 1002,
-            "talentName": "Colphne - ETs",
-            "gunType": 3,
-            "talentTips": "Exclusive Doll Talent",
-            "achievementDetailId": 29000,
-            "tpItemId": 9003,
-            "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
-            "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
-            ],
-            "initialTalentKeyId": 10000,
-            "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
-            "talentBonusGroup": 1001,
-            "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
-        },
-        {
-            "id": 1003,
-            "talentName": "Nemesis - ETs",
-            "gunType": 4,
-            "talentTips": "Exclusive Doll Talent",
-            "achievementDetailId": 29000,
-            "tpItemId": 9002,
-            "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
-            "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
-            ],
-            "initialTalentKeyId": 10000,
-            "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
-            "talentBonusGroup": 1001,
-            "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
-        },
-        {
-            "id": 1004,
-            "talentName": "Groza - ETs",
-            "gunType": 1,
-            "talentTips": "Exclusive Doll Talent",
-            "achievementDetailId": 29000,
-            "tpItemId": 9000,
-            "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
-            "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
-            ],
-            "initialTalentKeyId": 10000,
-            "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
-            "talentBonusGroup": 1001,
-            "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
-        },
-        {
-            "id": 1005,
-            "talentName": "Krolik - Flash",
-            "gunType": 2,
-            "talentTips": "Exclusive Doll Talent",
-            "achievementDetailId": 29000,
-            "tpItemId": 9002,
-            "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
-            "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
-            ],
-            "initialTalentKeyId": 10000,
-            "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
-            "talentBonusGroup": 1001,
-            "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
-        },
-        {
-            "id": 1006,
-            "talentName": "Nemesis - Variable Star",
-            "gunType": 4,
-            "talentTips": "Exclusive Doll Talent",
-            "achievementDetailId": 29000,
-            "tpItemId": 9000,
-            "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
-            "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
-            ],
-            "initialTalentKeyId": 10000,
-            "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
-            "talentBonusGroup": 1001,
-            "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
-        },
-        {
-            "id": 1007,
-            "talentName": "Groza - Specialized",
-            "gunType": 4,
-            "talentTips": "Exclusive Doll Talent",
-            "achievementDetailId": 29000,
-            "tpItemId": 9000,
-            "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
-            "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
-            ],
-            "initialTalentKeyId": 10000,
-            "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
-            "talentBonusGroup": 1001,
-            "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
         },
         {
             "id": 1008,
@@ -218,7 +69,8 @@
                 "1003004",
                 "1003005",
                 "1003006",
-                "1003007"
+                "1003007",
+                "1003008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -227,81 +79,6 @@
             "talentBonusGroup": 1001,
             "privateSlotNumber": 3,
             "publicSlotNumber": 3
-        },
-        {
-            "id": 1010,
-            "talentName": "Vepley - Specialized",
-            "gunType": 3,
-            "talentTips": "Exclusive Doll Talent",
-            "achievementDetailId": 29000,
-            "tpItemId": 9000,
-            "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
-            "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
-            ],
-            "initialTalentKeyId": 10000,
-            "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
-            "talentBonusGroup": 1001,
-            "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
-        },
-        {
-            "id": 1011,
-            "talentName": "Vepley - ETs",
-            "gunType": 2,
-            "talentTips": "Exclusive Doll Talent",
-            "achievementDetailId": 29000,
-            "tpItemId": 9000,
-            "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
-            "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
-            ],
-            "initialTalentKeyId": 10000,
-            "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
-            "talentBonusGroup": 1001,
-            "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
-        },
-        {
-            "id": 1012,
-            "talentName": "Colphne - Silent Chain",
-            "gunType": 3,
-            "talentTips": "Exclusive Doll Talent",
-            "achievementDetailId": 29000,
-            "tpItemId": 9003,
-            "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
-            "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
-            ],
-            "initialTalentKeyId": 10000,
-            "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
-            "talentBonusGroup": 1001,
-            "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
         },
         {
             "id": 1013,
@@ -330,31 +107,6 @@
             "publicSlotNumber": 3
         },
         {
-            "id": 1014,
-            "talentName": "Peritya - Convergence Field",
-            "gunType": 1,
-            "talentTips": "Exclusive Doll Talent",
-            "achievementDetailId": 29000,
-            "tpItemId": 9000,
-            "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
-            "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
-            ],
-            "initialTalentKeyId": 10000,
-            "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
-            "talentBonusGroup": 1001,
-            "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
-        },
-        {
             "id": 1015,
             "talentName": "Vepley",
             "gunType": 1,
@@ -370,7 +122,8 @@
                 "1004004",
                 "1004005",
                 "1004006",
-                "1004007"
+                "1004007",
+                "1004008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -379,31 +132,6 @@
             "talentBonusGroup": 1001,
             "privateSlotNumber": 3,
             "publicSlotNumber": 3
-        },
-        {
-            "id": 1016,
-            "talentName": "Krolik - ETs",
-            "gunType": 2,
-            "talentTips": "Exclusive Doll Talent",
-            "achievementDetailId": 29000,
-            "tpItemId": 9002,
-            "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
-            "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
-            ],
-            "initialTalentKeyId": 10000,
-            "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
-            "talentBonusGroup": 1001,
-            "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
         },
         {
             "id": 1017,
@@ -421,7 +149,8 @@
                 "1005004",
                 "1005005",
                 "1005006",
-                "1005007"
+                "1005007",
+                "1005008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -430,31 +159,6 @@
             "talentBonusGroup": 1001,
             "privateSlotNumber": 3,
             "publicSlotNumber": 3
-        },
-        {
-            "id": 1019,
-            "talentName": "Peritya - ETs",
-            "gunType": 4,
-            "talentTips": "Exclusive Doll Talent",
-            "achievementDetailId": 29000,
-            "tpItemId": 9000,
-            "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
-            "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
-            ],
-            "initialTalentKeyId": 10000,
-            "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
-            "talentBonusGroup": 1001,
-            "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
         },
         {
             "id": 1021,
@@ -498,7 +202,8 @@
                 "1006004",
                 "1006005",
                 "1006006",
-                "1006007"
+                "1006007",
+                "1006008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -524,7 +229,8 @@
                 "1007004",
                 "1007005",
                 "1007006",
-                "1007007"
+                "1007007",
+                "1007008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -576,7 +282,8 @@
                 "1011004",
                 "1011005",
                 "1011006",
-                "1011007"
+                "1011007",
+                "1011008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -602,7 +309,8 @@
                 "1012004",
                 "1012005",
                 "1012006",
-                "1012007"
+                "1012007",
+                "1012008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -628,7 +336,8 @@
                 "1013004",
                 "1013005",
                 "1013006",
-                "1013007"
+                "1013007",
+                "1013008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -654,7 +363,8 @@
                 "1014004",
                 "1014005",
                 "1014006",
-                "1014007"
+                "1014007",
+                "1014008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -680,7 +390,8 @@
                 "1015004",
                 "1015005",
                 "1015006",
-                "1015007"
+                "1015007",
+                "1015008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -706,7 +417,8 @@
                 "1016004",
                 "1016005",
                 "1016006",
-                "1016007"
+                "1016007",
+                "1016008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -758,7 +470,8 @@
                 "1020004",
                 "1020005",
                 "1020006",
-                "1020007"
+                "1020007",
+                "1020008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -784,7 +497,8 @@
                 "1021004",
                 "1021005",
                 "1021006",
-                "1021007"
+                "1021007",
+                "1021008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -810,7 +524,8 @@
                 "1018004",
                 "1018005",
                 "1018006",
-                "1018007"
+                "1018007",
+                "1018008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -836,7 +551,8 @@
                 "1022004",
                 "1022005",
                 "1022006",
-                "1022007"
+                "1022007",
+                "1022008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -862,7 +578,8 @@
                 "1019004",
                 "1019005",
                 "1019006",
-                "1019007"
+                "1019007",
+                "1019008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -940,7 +657,8 @@
                 "1023004",
                 "1023005",
                 "1023006",
-                "1023007"
+                "1023007",
+                "1023008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -958,22 +676,23 @@
             "achievementDetailId": 29000,
             "tpItemId": 9000,
             "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
+            "squadTalentTreeId": 1031,
             "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
+                "1031001",
+                "1031002",
+                "1031003",
+                "1031004",
+                "1031005",
+                "1031006",
+                "1031007"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
+            "unlockId": 44,
+            "fullyActiveItemId": 901042,
             "talentBonusGroup": 1001,
             "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
+            "publicSlotNumber": 3
         },
         {
             "id": 1043,
@@ -983,22 +702,49 @@
             "achievementDetailId": 29000,
             "tpItemId": 9000,
             "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
+            "squadTalentTreeId": 1033,
             "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
+                "1033001",
+                "1033002",
+                "1033003",
+                "1033004",
+                "1033005",
+                "1033006",
+                "1033007"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
+            "unlockId": 46,
+            "fullyActiveItemId": 901043,
             "talentBonusGroup": 1001,
             "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
+            "publicSlotNumber": 3
+        },
+        {
+            "id": 1044,
+            "talentName": "Vector",
+            "gunType": 1,
+            "talentTips": "Exclusive Doll Talent",
+            "achievementDetailId": 29000,
+            "tpItemId": 9000,
+            "maxTpNum": 32,
+            "squadTalentTreeId": 1029,
+            "traverseSquadTalentTreeId": [
+                "1029001",
+                "1029002",
+                "1029003",
+                "1029004",
+                "1029005",
+                "1029006",
+                "1029007"
+            ],
+            "initialTalentKeyId": 10000,
+            "unlockSheet": 2,
+            "unlockId": 42,
+            "fullyActiveItemId": 901044,
+            "talentBonusGroup": 1001,
+            "privateSlotNumber": 3,
+            "publicSlotNumber": 3
         },
         {
             "id": 1045,
@@ -1008,47 +754,23 @@
             "achievementDetailId": 29000,
             "tpItemId": 9000,
             "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
+            "squadTalentTreeId": 1030,
             "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
+                "1030001",
+                "1030002",
+                "1030003",
+                "1030004",
+                "1030005",
+                "1030006",
+                "1030007"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
+            "unlockId": 43,
+            "fullyActiveItemId": 901045,
             "talentBonusGroup": 1001,
             "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
-        },
-        {
-            "id": 1046,
-            "talentName": "Ruchey",
-            "gunType": 1,
-            "talentTips": "Exclusive Doll Talent",
-            "achievementDetailId": 29000,
-            "tpItemId": 9000,
-            "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
-            "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
-            ],
-            "initialTalentKeyId": 10000,
-            "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
-            "talentBonusGroup": 1001,
-            "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
+            "publicSlotNumber": 3
         },
         {
             "id": 1047,
@@ -1058,72 +780,49 @@
             "achievementDetailId": 29000,
             "tpItemId": 9000,
             "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
+            "squadTalentTreeId": 1032,
             "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
+                "1032001",
+                "1032002",
+                "1032003",
+                "1032004",
+                "1032005",
+                "1032006",
+                "1032007"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
+            "unlockId": 45,
+            "fullyActiveItemId": 901047,
             "talentBonusGroup": 1001,
             "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
+            "publicSlotNumber": 3
         },
         {
             "id": 1048,
-            "talentName": "Type 64 Rifle",
+            "talentName": "Qiuhua",
             "gunType": 1,
             "talentTips": "Exclusive Doll Talent",
             "achievementDetailId": 29000,
             "tpItemId": 9000,
             "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
+            "squadTalentTreeId": 1035,
             "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
+                "1035001",
+                "1035002",
+                "1035003",
+                "1035004",
+                "1035005",
+                "1035006",
+                "1035007"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
+            "unlockId": 48,
+            "fullyActiveItemId": 901048,
             "talentBonusGroup": 1001,
             "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
-        },
-        {
-            "id": 1049,
-            "talentName": "Harpsy",
-            "gunType": 1,
-            "talentTips": "Exclusive Doll Talent",
-            "achievementDetailId": 29000,
-            "tpItemId": 9000,
-            "maxTpNum": 32,
-            "squadTalentTreeId": 1001,
-            "traverseSquadTalentTreeId": [
-                "1001001",
-                "1001002",
-                "1001003",
-                "1001004",
-                "1001005",
-                "1001006"
-            ],
-            "initialTalentKeyId": 10000,
-            "unlockSheet": 2,
-            "fullyActiveItemId": 901001,
-            "talentBonusGroup": 1001,
-            "privateSlotNumber": 3,
-            "publicSlotNumber": 3,
-            "unlockId": 0
+            "publicSlotNumber": 3
         },
         {
             "id": 1050,
@@ -1141,12 +840,39 @@
                 "1025004",
                 "1025005",
                 "1025006",
-                "1025007"
+                "1025007",
+                "1025008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
             "unlockId": 38,
             "fullyActiveItemId": 901050,
+            "talentBonusGroup": 1001,
+            "privateSlotNumber": 3,
+            "publicSlotNumber": 3
+        },
+        {
+            "id": 1051,
+            "talentName": "Mechty",
+            "gunType": 1,
+            "talentTips": "Exclusive Doll Talent",
+            "achievementDetailId": 29000,
+            "tpItemId": 9000,
+            "maxTpNum": 32,
+            "squadTalentTreeId": 1028,
+            "traverseSquadTalentTreeId": [
+                "1028001",
+                "1028002",
+                "1028003",
+                "1028004",
+                "1028005",
+                "1028006",
+                "1028007"
+            ],
+            "initialTalentKeyId": 10000,
+            "unlockSheet": 2,
+            "unlockId": 41,
+            "fullyActiveItemId": 901051,
             "talentBonusGroup": 1001,
             "privateSlotNumber": 3,
             "publicSlotNumber": 3
@@ -1173,6 +899,84 @@
             "unlockSheet": 2,
             "unlockId": 40,
             "fullyActiveItemId": 901052,
+            "talentBonusGroup": 1001,
+            "privateSlotNumber": 3,
+            "publicSlotNumber": 3
+        },
+        {
+            "id": 1053,
+            "talentName": "Peri",
+            "gunType": 1,
+            "talentTips": "Exclusive Doll Talent",
+            "achievementDetailId": 29000,
+            "tpItemId": 9000,
+            "maxTpNum": 32,
+            "squadTalentTreeId": 1034,
+            "traverseSquadTalentTreeId": [
+                "1034001",
+                "1034002",
+                "1034003",
+                "1034004",
+                "1034005",
+                "1034006",
+                "1034007"
+            ],
+            "initialTalentKeyId": 10000,
+            "unlockSheet": 2,
+            "unlockId": 47,
+            "fullyActiveItemId": 901053,
+            "talentBonusGroup": 1001,
+            "privateSlotNumber": 3,
+            "publicSlotNumber": 3
+        },
+        {
+            "id": 1054,
+            "talentName": "Yoohee",
+            "gunType": 1,
+            "talentTips": "Exclusive Doll Talent",
+            "achievementDetailId": 29000,
+            "tpItemId": 9000,
+            "maxTpNum": 32,
+            "squadTalentTreeId": 1036,
+            "traverseSquadTalentTreeId": [
+                "1036001",
+                "1036002",
+                "1036003",
+                "1036004",
+                "1036005",
+                "1036006",
+                "1036007"
+            ],
+            "initialTalentKeyId": 10000,
+            "unlockSheet": 2,
+            "unlockId": 49,
+            "fullyActiveItemId": 901054,
+            "talentBonusGroup": 1001,
+            "privateSlotNumber": 3,
+            "publicSlotNumber": 3
+        },
+        {
+            "id": 1055,
+            "talentName": "Nikketa",
+            "gunType": 1,
+            "talentTips": "Exclusive Doll Talent",
+            "achievementDetailId": 29000,
+            "tpItemId": 9000,
+            "maxTpNum": 32,
+            "squadTalentTreeId": 1037,
+            "traverseSquadTalentTreeId": [
+                "1037001",
+                "1037002",
+                "1037003",
+                "1037004",
+                "1037005",
+                "1037006",
+                "1037007"
+            ],
+            "initialTalentKeyId": 10000,
+            "unlockSheet": 2,
+            "unlockId": 50,
+            "fullyActiveItemId": 901055,
             "talentBonusGroup": 1001,
             "privateSlotNumber": 3,
             "publicSlotNumber": 3
