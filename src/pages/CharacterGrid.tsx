@@ -196,10 +196,14 @@ const CharacterGrid: React.FC = () => {
           >
             <div className="relative overflow-hidden aspect-square">
               <div className="absolute p-4 inset-0">
-                <img src={asset(`decor/Icon_Gashapon_${character.rank === 5 ? 'Golden' : 'Purple'}.png`)} 
-                className="w-full h-full object-cover object-center"/>
+                <img
+                  src={asset(
+                    `decor/Icon_Gashapon_${character.rank === 5 ? 'Golden' : 'Purple'}.png`
+                  )}
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
-              <div className='absolute inset-0 p-4 flex items-center justify-center'>
+              <div className="absolute inset-0 p-4 flex items-center justify-center">
                 <img
                   src={
                     character === hoveredCharacter
@@ -212,14 +216,14 @@ const CharacterGrid: React.FC = () => {
                 />
               </div>
             </div>
-            <div className='relative -mt-4'>
+            <div className="relative -mt-4">
               <img
                 src={asset(`decor/Img_Title_GunGet_${stripCode(character.code)}.png`)}
                 alt={character.name}
                 onError={(e) => (e.currentTarget.src = asset('images/default.png'))}
                 className="w-full"
               />
-              <div className='absolute inset-0 flex items-center justify-center text-center font-medium text-white text-shadow-outline'>
+              <div className="absolute inset-0 flex items-center justify-center text-center font-medium text-white text-shadow-outline">
                 {character.name}
               </div>
             </div>

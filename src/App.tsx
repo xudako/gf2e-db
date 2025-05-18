@@ -63,7 +63,7 @@ const WeaponOverlayWrapper: React.FC = () => {
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-neutral-200 text-neutral-700">
+    <div className="min-h-screen bg-zinc-950 text-neutral-700">
       <Router basename={baseUrl}>
         <RedirectionHandler>
           <Layout>
