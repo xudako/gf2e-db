@@ -7,7 +7,7 @@ import ToggleButton from '../components/ToggleButton';
 import { asset } from '../utils/utils';
 
 function stripCode(input: string): string {
-  return input.replace(/ssr$/i, '').replace(/sr$/i, '');
+  return input.replace(/SSR$/, '').replace(/SR$/, '');
 }
 
 const defaultFilters = {
@@ -183,7 +183,7 @@ const CharacterGrid: React.FC = () => {
       </div>
 
       {/* Character Grid */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 gap-4">
+      <div className="grid grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
         {filteredCharacters.map((character) => (
           <Link
             key={character.name}
@@ -191,22 +191,37 @@ const CharacterGrid: React.FC = () => {
             state={location.state}
             onMouseEnter={() => setHoveredCharacter(character)}
             onMouseLeave={() => setHoveredCharacter(null)}
-            className={`p-4 transition-colors cursor-pointer
+            className={`transition-colors cursor-pointer
               hover:bg-secondary-main hover:text-white`}
           >
-            <img
-              src={
-                character === hoveredCharacter
-                  ? asset(`dolls/Img_KittyCafe_Cat_${stripCode(character.code)}.png`)
-                  : asset(`dolls/Avatar_Head_${character.code}_Spine.png`)
-              }
-              alt={character.name}
-              onError={(e) => (e.currentTarget.src = asset('images/default.png'))}
-              className={`w-full aspect-square object-cover rounded-t
-                ${character.rank === 5 ? 'bg-rarity-ssr' : 'bg-rarity-sr'}`}
-            />
-            <div className="text-center font-medium bg-black/50 text-white rounded-b">
-              {character.name}
+            <div className="relative overflow-hidden aspect-square">
+              <div className="absolute p-4 inset-0">
+                <img src={asset(`decor/Icon_Gashapon_${character.rank === 5 ? 'Golden' : 'Purple'}.png`)} 
+                className="w-full h-full object-cover object-center"/>
+              </div>
+              <div className='absolute inset-0 p-4 flex items-center justify-center'>
+                <img
+                  src={
+                    character === hoveredCharacter
+                      ? asset(`dolls/Avatar_Head_${character.code}_Spine.png`)
+                      : asset(`dolls/Avatar_Head_${character.code}UP.png`)
+                  }
+                  alt={character.name}
+                  onError={(e) => (e.currentTarget.src = asset('images/default.png'))}
+                  className={`w-full h-full object-contain`}
+                />
+              </div>
+            </div>
+            <div className='relative -mt-4'>
+              <img
+                src={asset(`decor/Img_Title_GunGet_${stripCode(character.code)}.png`)}
+                alt={character.name}
+                onError={(e) => (e.currentTarget.src = asset('images/default.png'))}
+                className="w-full"
+              />
+              <div className='absolute inset-0 flex items-center justify-center text-center font-medium text-white text-shadow-outline'>
+                {character.name}
+              </div>
             </div>
           </Link>
         ))}
