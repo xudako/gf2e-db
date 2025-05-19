@@ -65,6 +65,12 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
   const skinData = character.skins
     .map((skinId) => Tables.ClothesData[skinId])
     .filter((skin) => skin !== undefined);
+  if (character.id === 1001) {
+    const bnuuy = skinData.find((skin) => skin.name === 'Prancing Bunny');
+    if (bnuuy) {
+      bnuuy.name = 'Prancing Bnuuy';
+    }
+  }
 
   if (skinData.length === 0) {
     skinData.push({ id: 0, name: 'Base', code: character.code });
