@@ -194,7 +194,7 @@ export function getTalents(
 
     const gene = Tables.GroupTalentEffectGeneData[geneId];
     if (gene['itemId']) {
-      console.log(gene['itemId']);
+      //console.log(gene['itemId']);
       const talent = loadTalent(gene['itemId'], null);
       skillNodes.push(talent);
     } else {
