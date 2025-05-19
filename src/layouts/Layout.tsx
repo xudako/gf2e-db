@@ -5,7 +5,7 @@ import Footer from './Footer';
 //import bgImages from '../bgImagesList.json';
 
 const getRandomBackground = () => {
-  const totalImages = 7;
+  const totalImages = 5;
   const randomIndex = Math.floor(Math.random() * totalImages) + 1;
   return asset(`bg/BG_None_Carriage_03_0${randomIndex}.png`);
   // if (!bgImages || bgImages.length === 0) {
