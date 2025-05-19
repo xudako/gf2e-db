@@ -489,7 +489,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
           <div className="col-span-8 lg:col-span-4">
             <div className="p-4">
               {skinData.length > 1 && (
-                <div className="flex flex-wrap gap-2 mb-4">
+                <ToggleButtonGroup className="mt-2 mb-8">
                   {skinData.map((skin) => (
                     <ToggleButton
                       key={skin.id}
@@ -500,7 +500,7 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                       {skin.name}
                     </ToggleButton>
                   ))}
-                </div>
+                </ToggleButtonGroup>
               )}
               <img
                 src={displayedImage}
