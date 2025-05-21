@@ -802,8 +802,8 @@
         },
         {
             "id": 331,
-            "name": "",
-            "description": "",
+            "name": "Test object buff",
+            "description": "Test object buff, applied to the attacker, spawns Ego behind the attacker",
             "buffEffect": "Buff/Recover",
             "effectPlayTime": [
                 1
@@ -830,8 +830,8 @@
         },
         {
             "id": 332,
-            "name": "",
-            "description": "",
+            "name": "Test object buff2",
+            "description": "Test object buff2, applied to the attacker, spawns Ego behind the attacker",
             "buffEffect": "Buff/StableHPRecover",
             "effectPlayTime": [
                 1
@@ -2829,7 +2829,7 @@
         {
             "id": 51020,
             "name": "Burn Weakness",
-            "description": "When receiving <color=#42cce0>Burn damage</color>, considered to have a phase weakness that has been exploited. Cannot be cleansed.",
+            "description": "When receiving <color=#e67129>Burn damage</color>, considered to have a phase weakness that has been exploited. Cannot be cleansed.",
             "iconName": "Buff_AegisElement1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -2961,7 +2961,7 @@
         {
             "id": 52001,
             "name": "Burn Weakness",
-            "description": "When receiving <color=#42cce0>Burn damage</color>, considered to have a phase weakness that has been exploited. Cannot be cleansed.",
+            "description": "When receiving <color=#e67129>Burn damage</color>, considered to have a phase weakness that has been exploited. Cannot be cleansed.",
             "iconName": "Buff_AegisElement1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -3292,7 +3292,7 @@
         {
             "id": 201201,
             "name": "Attack Up II",
-            "description": "Increase attack by <color=#f26c1c>15%</color>. Considered a buff.",
+            "description": "Attack is increased by <color=#f26c1c>15%</color>. Considered a buff.",
             "buffEffect": "Buff/AtkU|Buff/AtkU",
             "effectPlayTime": [
                 1,
@@ -3321,7 +3321,7 @@
         {
             "id": 201202,
             "name": "Attack Up II",
-            "description": "Increase attack by <color=#f26c1c>15%</color>. Considered a buff.",
+            "description": "Attack is increased by <color=#f26c1c>15%</color>. Considered a buff.",
             "buffEffect": "Buff/AtkU|Buff/AtkU",
             "effectPlayTime": [
                 1,
@@ -3350,7 +3350,7 @@
         {
             "id": 201203,
             "name": "Attack Up II",
-            "description": "Increase attack by <color=#f26c1c>15%</color>. Considered a buff.",
+            "description": "Attack is increased by <color=#f26c1c>15%</color>. Considered a buff.",
             "buffEffect": "Buff/AtkU|Buff/AtkU",
             "effectPlayTime": [
                 1,
@@ -6064,7 +6064,7 @@
         {
             "id": 212101,
             "name": "Stability Offensive I",
-            "description": "Stability Damage dealt increased by <color=#f26c1c>1 point</color>. Considered a buff.",
+            "description": "Stability damage dealt is increased by <color=#f26c1c>1 point</color>. Considered a buff.",
             "buffEffect": "Buff/AtkU|Buff/AtkU",
             "effectPlayTime": [
                 1,
@@ -6093,7 +6093,7 @@
         {
             "id": 212102,
             "name": "Stability Offensive I",
-            "description": "Stability Damage dealt increased by <color=#f26c1c>1 point</color>. Considered a buff.",
+            "description": "Stability damage dealt is increased by <color=#f26c1c>1 point</color>. Considered a buff.",
             "buffEffect": "Buff/AtkU|Buff/AtkU",
             "effectPlayTime": [
                 1,
@@ -6122,7 +6122,7 @@
         {
             "id": 212103,
             "name": "Stability Offensive I",
-            "description": "Stability Damage dealt increased by <color=#f26c1c>1 point</color>. Considered a buff.",
+            "description": "Stability damage dealt is increased by <color=#f26c1c>1 point</color>. Considered a buff.",
             "buffEffect": "Buff/AtkU|Buff/AtkU",
             "effectPlayTime": [
                 1,
@@ -6151,7 +6151,7 @@
         {
             "id": 212201,
             "name": "Stability Offensive II",
-            "description": "Stability damage dealt increased by <color=#f26c1c>2 points</color>. Considered a buff.",
+            "description": "Stability damage dealt is increased by <color=#f26c1c>2 points</color>. Considered a buff.",
             "buffEffect": "Buff/AtkU|Buff/AtkU",
             "effectPlayTime": [
                 1,
@@ -6180,7 +6180,7 @@
         {
             "id": 212202,
             "name": "Stability Offensive II",
-            "description": "Stability damage dealt increased by <color=#f26c1c>2 points</color>. Considered a buff.",
+            "description": "Stability damage dealt is increased by <color=#f26c1c>2 points</color>. Considered a buff.",
             "buffEffect": "Buff/AtkU|Buff/AtkU",
             "effectPlayTime": [
                 1,
@@ -6209,7 +6209,7 @@
         {
             "id": 212203,
             "name": "Stability Offensive II",
-            "description": "Stability damage dealt increased by <color=#f26c1c>2 points</color>. Considered a buff.",
+            "description": "Stability damage dealt is increased by <color=#f26c1c>2 points</color>. Considered a buff.",
             "buffEffect": "Buff/AtkU|Buff/AtkU",
             "effectPlayTime": [
                 1,
@@ -7369,7 +7369,7 @@
         {
             "id": 221101,
             "name": "Impact Response I",
-            "description": "After being attacked, Suomi gains <color=#f26c1c>10%</color> of maximum HP. Considered a buff.",
+            "description": "After being attacked, the holder gains <color=#f26c1c>10%</color> of max HP. Considered a buff.",
             "buffEffect": "Buff/Recover",
             "effectPlayTime": [
                 3
@@ -7397,7 +7397,7 @@
         {
             "id": 221102,
             "name": "Impact Response I",
-            "description": "After being attacked, Suomi gains <color=#f26c1c>10%</color> of maximum HP. Considered a buff.",
+            "description": "After being attacked, the holder gains <color=#f26c1c>10%</color> of max HP. Considered a buff.",
             "buffEffect": "Buff/Recover",
             "effectPlayTime": [
                 3
@@ -7425,7 +7425,7 @@
         {
             "id": 221103,
             "name": "Impact Response I",
-            "description": "After being attacked, Suomi gains <color=#f26c1c>10%</color> of maximum HP. Considered a buff.",
+            "description": "After being attacked, the holder gains <color=#f26c1c>10%</color> of max HP. Considered a buff.",
             "buffEffect": "Buff/Recover",
             "effectPlayTime": [
                 3
@@ -7733,7 +7733,7 @@
         {
             "id": 252201,
             "name": "Defense Down II",
-            "description": "Reduce defense by <color=#f26c1c>30%</color>. Considered a defense debuff.",
+            "description": "Defense is reduced by <color=#f26c1c>30%</color>. Considered a defense debuff.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
                 1,
@@ -7762,7 +7762,7 @@
         {
             "id": 252202,
             "name": "Defense Down II",
-            "description": "Reduce defense by <color=#f26c1c>30%</color>. Considered a defense debuff.",
+            "description": "Defense is reduced by <color=#f26c1c>30%</color>. Considered a defense debuff.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
                 1,
@@ -7791,7 +7791,7 @@
         {
             "id": 252203,
             "name": "Defense Down II",
-            "description": "Reduce defense by <color=#f26c1c>30%</color>. Considered a defense debuff.",
+            "description": "Defense is reduced by <color=#f26c1c>30%</color>. Considered a defense debuff.",
             "buffEffect": "Buff/AccD|Buff/AccD",
             "effectPlayTime": [
                 1,
@@ -9183,7 +9183,7 @@
         {
             "id": 262403,
             "name": "Defense Shredding",
-            "description": "When dealing Physical damage to the target, if its defense has been reduced by <color=#f26c1c>more than 100%</color>, for every additional <color=#f26c1c>1%</color> reduction of defense will increase damage dealt to the target by an equivalent amount. This buff cannot be cleansed. The ratios are as follows：\nDamage reduction percentage <color=#f26c1c><100%</color>: <color=#f26c1c>0.5%</color>;\n<color=#f26c1c>100%≤</color> Damage reduction percentage <color=#f26c1c><200%</color>: <color=#f26c1c>0.75%</color>；\n<color=#f26c1c>200%≤</color> Damage reduction percentage <color=#f26c1c><300%</color>: <color=#f26c1c>1%</color>;\nDamage reduction percentage <color=#f26c1c>≥300%</color>: <color=#f26c1c>1.5%</color>.",
+            "description": "When dealing Physical damage to the target, if its defense has been reduced by <color=#f26c1c>more than 100%</color>, for every additional <color=#f26c1c>1%</color> reduction of defense, damage dealt is increased to the target by an equivalent amount. Considered a buff, cannot be cleansed. The ratios are as follows：\nAdditional defense reduction percentage <color=#f26c1c><100%</color>: <color=#f26c1c>0.5%</color>;\n<color=#f26c1c>100%≤</color> Additional defense reduction percentage <color=#f26c1c><200%</color>: <color=#f26c1c>0.75%</color>；\n<color=#f26c1c>200%≤</color> Additional defense reduction percentage <color=#f26c1c><300%</color>: <color=#f26c1c>1%</color>;\nAdditional defense reduction percentage <color=#f26c1c>≥300%</color>: <color=#f26c1c>1.5%</color>.",
             "buffEffect": "Buff/AtkU|Buff/AtkU",
             "effectPlayTime": [
                 1,
@@ -9328,7 +9328,7 @@
         {
             "id": 265101,
             "name": "Targeted Attack Defense I",
-            "description": "Targeted damage taken is reduced by <color=#f26c1c>10%</color>. This is considered a buff.",
+            "description": "Targeted damage taken is reduced by <color=#f26c1c>10%</color>. Considered a buff.",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -9357,7 +9357,7 @@
         {
             "id": 265102,
             "name": "Targeted Attack Defense I",
-            "description": "Targeted damage taken is reduced by <color=#f26c1c>10%</color>. This is considered a buff.",
+            "description": "Targeted damage taken is reduced by <color=#f26c1c>10%</color>. Considered a buff.",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -9386,7 +9386,7 @@
         {
             "id": 265103,
             "name": "Targeted Attack Defense I",
-            "description": "Targeted damage taken is reduced by <color=#f26c1c>10%</color>. This is considered a buff.",
+            "description": "Targeted damage taken is reduced by <color=#f26c1c>10%</color>. Considered a buff.",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -9415,7 +9415,7 @@
         {
             "id": 265201,
             "name": "Targeted Attack Defense II",
-            "description": "Reduce targeted damage taken by <color=#f26c1c>20%</color>. This is considered a buff.",
+            "description": "Targeted damage taken is reduced by <color=#f26c1c>20%</color>. Considered a buff.",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -9444,7 +9444,7 @@
         {
             "id": 265202,
             "name": "Targeted Attack Defense II",
-            "description": "Reduce targeted damage taken by <color=#f26c1c>20%</color>. This is considered a buff.",
+            "description": "Targeted damage taken is reduced by <color=#f26c1c>20%</color>. Considered a buff.",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -9473,7 +9473,7 @@
         {
             "id": 265203,
             "name": "Targeted Attack Defense II",
-            "description": "Reduce targeted damage taken by <color=#f26c1c>20%</color>. This is considered a buff.",
+            "description": "Targeted damage taken is reduced by <color=#f26c1c>20%</color>. Considered a buff.",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -9772,7 +9772,7 @@
         {
             "id": 300601,
             "name": "Movement Denied",
-            "description": "Unable to move. This is considered a movement debuff.",
+            "description": "Unable to move. Considered a movement debuff.",
             "buffEffect": "Buff/Unmove_1",
             "effectPlayTime": [
                 1
@@ -9796,7 +9796,7 @@
         {
             "id": 300602,
             "name": "Movement Denied",
-            "description": "Unable to move. This is considered a movement debuff.",
+            "description": "Unable to move. Considered a movement debuff.",
             "buffEffect": "Buff/Unmove_1",
             "effectPlayTime": [
                 1
@@ -9820,7 +9820,7 @@
         {
             "id": 300603,
             "name": "Movement Denied",
-            "description": "Unable to move. This is considered a movement debuff.",
+            "description": "Unable to move. Considered a movement debuff.",
             "buffEffect": "Buff/Unmove_1",
             "effectPlayTime": [
                 1
@@ -13545,7 +13545,7 @@
         {
             "id": 401021,
             "name": "Fear",
-            "description": "Uncontrollable, actively moves away from the caster. This is removed when the caster dies.",
+            "description": "Uncontrollable, actively moves away from the user. This is removed when the user dies.",
             "buffEffect": "Buff/Fear|Buff/Fear",
             "effectPlayTime": [
                 1,
@@ -13574,7 +13574,7 @@
         {
             "id": 401022,
             "name": "Fear",
-            "description": "Uncontrollable, actively moves away from the caster. This is removed when the caster dies.",
+            "description": "Uncontrollable, actively moves away from the user. This is removed when the user dies.",
             "buffEffect": "Buff/Fear|Buff/Fear",
             "effectPlayTime": [
                 1,
@@ -13603,7 +13603,7 @@
         {
             "id": 401023,
             "name": "Fear",
-            "description": "Uncontrollable, actively moves away from the caster. This is removed when the caster dies.",
+            "description": "Uncontrollable, actively moves away from the user. This is removed when the user dies.",
             "buffEffect": "Buff/Fear|Buff/Fear",
             "effectPlayTime": [
                 1,
@@ -13632,7 +13632,7 @@
         {
             "id": 401031,
             "name": "Infatuated",
-            "description": "Uncontrollable, actively moves toward from the caster. This is removed when the caster dies.",
+            "description": "Uncontrollable, actively moves toward the user. This is removed when the user dies.",
             "buffEffect": "Buff/Taunt_Dance|Buff/Taunt_Dance",
             "effectPlayTime": [
                 1,
@@ -13661,7 +13661,7 @@
         {
             "id": 401032,
             "name": "Infatuated",
-            "description": "Uncontrollable, actively moves toward from the caster. This is removed when the caster dies.",
+            "description": "Uncontrollable, actively moves toward the user. This is removed when the user dies.",
             "buffEffect": "Buff/Taunt_Dance|Buff/Taunt_Dance",
             "effectPlayTime": [
                 1,
@@ -13690,7 +13690,7 @@
         {
             "id": 401033,
             "name": "Infatuated",
-            "description": "Uncontrollable, actively moves toward from the caster. This is removed when the caster dies.",
+            "description": "Uncontrollable, actively moves toward the user. This is removed when the user dies.",
             "buffEffect": "Buff/Taunt_Dance|Buff/Taunt_Dance",
             "effectPlayTime": [
                 1,
@@ -14233,7 +14233,7 @@
         {
             "id": 510102,
             "name": "Burn Weakness",
-            "description": "When receiving <color=#42cce0>Burn damage</color>, considered to have a phase weakness that has been exploited. Cannot be cleansed.",
+            "description": "When receiving <color=#e67129>Burn damage</color>, considered to have a phase weakness that has been exploited. Cannot be cleansed.",
             "iconName": "Buff_AegisElement1",
             "isShow": true,
             "buffHeadShow": 1,
@@ -18194,7 +18194,7 @@
         {
             "id": 6176102,
             "name": "Caloric Burn I",
-            "description": "When this status is gained and at the end of this unit's turn, take fixed damage equal to <color=#f26c1c>12%</color> of the inflictor's attack, stacking up to <color=#f26c1c>5 times</color>. Debuff.",
+            "description": "When this status is gained and at the end of this unit's turn, take fixed damage equal to <color=#f26c1c>12%</color> of the inflictor's attack, maximum of <color=#f26c1c>5 stacks</color>. Considered a debuff.",
             "buffEffect": "Buff/Dot_burn|Buff/Dot_burn_break",
             "effectPlayTime": [
                 1,
@@ -18225,7 +18225,7 @@
         {
             "id": 6177102,
             "name": "Caloric Burn II",
-            "description": "When this status is gained and at the end of this unit's turn, take fixed damage equal to <color=#f26c1c>20%</color> of the inflictor's attack, stacking up to <color=#f26c1c>6 times</color>. Debuff.",
+            "description": "When this status is gained and at the end of this unit's turn, take fixed damage equal to <color=#f26c1c>20%</color> of the inflictor's attack, stacking up to <color=#f26c1c>6 times</color>. Considered a debuff.",
             "buffEffect": "Buff/Dot_burn|Buff/Dot_burn_break",
             "effectPlayTime": [
                 1,
@@ -23959,7 +23959,7 @@
         {
             "id": 6894301,
             "name": "Keen Carving",
-            "description": "At the end of this unit's turn, take damage equal to <color=#f26c1c>10%</color> of the inflictor's attack. Stackable (effect does not stack). Debuff. If cleansed, all ally units gain <color=#3487e0>{0}</color> for <color=#f26c1c>2 turns</color>.",
+            "description": "At the end of this unit's turn, take damage equal to <color=#f26c1c>10%</color> of the inflictor's attack. Can be stacked (effect does not stack), considered a debuff. If cleansed, all allied units gain <color=#3487e0>{0}</color> for <color=#f26c1c>2 turns</color>.",
             "descriptionTips": "0:6894302",
             "iconName": "Buff_ContinueHurt",
             "isShow": true,
@@ -23981,7 +23981,7 @@
         {
             "id": 6894302,
             "name": "Critical Cascade",
-            "description": "Critical damage is increased by <color=#f26c1c>10%</color>. Stacks up to <color=#f26c1c>10 times</color>. Buff. Cannot be cleansed.",
+            "description": "Critical damage is increased by <color=#f26c1c>10%</color>. Maximum of <color=#f26c1c>10 stacks</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_CriDamUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -24003,7 +24003,7 @@
         {
             "id": 6894401,
             "name": "Rock Solid",
-            "description": "Stability damage taken is reduced by <color=#f26c1c>2 points</color> and defence is increased by <color=#f26c1c>30%</color>. Buff. If cleansed, it is converted to <color=#3487e0>{0}</color> for <color=#f26c1c>2 turns</color>.",
+            "description": "Stability damage taken is reduced by <color=#f26c1c>2 points</color> and defense is increased by <color=#f26c1c>30%</color>. Considered a buff. If the buff is cleansed, it is converted to <color=#3487e0>{0}</color> for <color=#f26c1c>2 turns</color>.",
             "descriptionTips": "0:68944012",
             "iconName": "Buff_DefUp",
             "isShow": true,
@@ -28539,7 +28539,7 @@
         {
             "id": 10440401,
             "name": "Accelerant",
-            "description": "Damage dealt is increased by <color=#f26c1c>10%</color> when dealing Burn damage, additionally deals 1 instance of fixed damage equal to <color=#f26c1c>20%</color> of attack. Considered a Burn debuff, cannot be cleansed.",
+            "description": "Damage dealt is increased by <color=#f26c1c>10%</color> when dealing Burn damage, additionally deals 1 instance of fixed damage equal to <color=#f26c1c>20%</color> of attack. Considered a Burn buff, cannot be cleansed.",
             "iconName": "Buff_FireUP",
             "isShow": true,
             "buffHeadShow": 9,
@@ -28561,7 +28561,7 @@
         {
             "id": 10440402,
             "name": "Accelerant",
-            "description": "Damage dealt is increased by <color=#f26c1c>30%</color> when dealing Burn damage, additionally deals 1 instance of fixed damage equal to <color=#f26c1c>20%</color> of attack. Considered a Burn debuff, cannot be cleansed.",
+            "description": "Damage dealt is increased by <color=#f26c1c>30%</color> when dealing Burn damage, additionally deals 1 instance of fixed damage equal to <color=#f26c1c>20%</color> of attack. Considered a Burn buff, cannot be cleansed.",
             "iconName": "Buff_FireUP",
             "isShow": true,
             "buffHeadShow": 9,
@@ -28883,7 +28883,7 @@
         {
             "id": 10510401,
             "name": "Nightmarish Shroud",
-            "description": "Before Mechty is attacked, reduces the attacker's attack by <color=#f26c1c>5%</color> and cleanses <color=#f26c1c>1</color> random debuff on self. If any weakness is being exploited by enemy, damage taken is reduced by <color=#f26c1c>30%</color>. Activates <color=#f26c1c>once</color>, considered a Corrosion buff.",
+            "description": "Before being attacked, reduces the attacker's attack by <color=#f26c1c>5%</color> and cleanses <color=#f26c1c>1</color> random debuff on the buff holder. If any weakness is being exploited by the enemy, damage taken is reduced by <color=#f26c1c>30%</color>. Activates <color=#f26c1c>once</color>, considered a Corrosion buff.",
             "buffEffect": "Buff/PoisonDef",
             "effectPlayTime": [
                 1
@@ -29231,7 +29231,7 @@
         {
             "id": 10540401,
             "name": "Troupe's Core",
-            "description": "When Yoohee applies <color=#3487e0>{0}</color> or <color=#3487e0>{1}</color> to an ally unit (not including Yoohee herself), they gain an extra stack of that effect. Cannot be cleansed.",
+            "description": "When Yoohee applies <color=#3487e0>{0}</color> or <color=#3487e0>{1}</color> to an allied unit (excluding Yoohee), Yoohee gains one stack of that effect. Cannot be cleansed.",
             "descriptionTips": "1:900235;0:262403",
             "buffEffect": "Skill/YooHeeSSR01/10540401_Buff",
             "effectPlayTime": [
@@ -29259,7 +29259,7 @@
         {
             "id": 10540403,
             "name": "Troupe's Core",
-            "description": "When attacking, <color=#f26c1c>50%</color> of the target's defence. When Yoohee applies <color=#3487e0>{0}</color> or <color=#3487e0>{1}</color> to an ally unit (not including Yoohee herself), they gain an extra stack of that effect. After triggering <color=#3487e0>{2}</color> use the active skill<color=#3487e0>Improv</color> on the enemy unit within range with the highest HP. This effect can trigger up to <color=#f26c1c>1 time</color> per turn and this skill cannot be followed up with the active skill <color=#3487e0>Graceful Spin</color> or the active skill <color=#3487e0>Passionate Resonance</color>. Cannot be cleansed.",
+            "description": "When attacking, ignores <color=#f26c1c>50%</color> of the target's defense. When Yoohee applies <color=#3487e0>{0}</color> or <color=#3487e0>{1}</color> to an allied unit (excluding Yoohee), Yoohee gains one stack of that effect. After triggering the effects of <color=#3487e0>{2}</color>, the active skill <color=#3487e0>Improv</color> is triggered on the enemy unit with the highest HP within attack range. This effect can be triggered up to <color=#f26c1c>once</color> per turn. <color=#3487e0>Graceful Pirouette</color> and <color=#3487e0>Passionate Resonance</color> cannot be used after that instance of the skill. Cannot be cleansed.",
             "descriptionTips": "1:900235;0:262403;1:900234",
             "buffEffect": "Skill/YooHeeSSR01/10540401_Buff",
             "effectPlayTime": [
@@ -29287,7 +29287,7 @@
         {
             "id": 10540542,
             "name": "Fantastic Conception",
-            "description": "On the next turn, the active skill <color=#3487e0>Improv</color> gains improved effectivess. Critical rate is increased by <color=#f26c1c>15%</color> and it ignores <color=#f26c1c>10%</color> of the target's defence, stacking up to <color=#f26c1c>3 times</color>. Cannot be cleansed.",
+            "description": "On the next turn, the active skill <color=#3487e0>Improv</color> is improved. Critical rate is increased by <color=#f26c1c>15%</color>, and it ignores <color=#f26c1c>10%</color> of the target's defense, maximum of <color=#f26c1c>3 stacks</color>. Cannot be cleansed.",
             "iconName": "Buff_CriUpNetral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -29309,7 +29309,7 @@
         {
             "id": 10540822,
             "name": "Never Give Up",
-            "description": "Damage taken by ally units is reduced by <color=#f26c1c>30%</color>. Cannot be cleansed.",
+            "description": "Damage taken by allied units is reduced by <color=#f26c1c>30%</color>. Cannot be cleansed.",
             "iconName": "Buff_DefUpNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -29331,7 +29331,7 @@
         {
             "id": 10540823,
             "name": "Preshow Warmup",
-            "description": "When dealing physical damage, critical damage is increased by <color=#f26c1c>25%</color>. Buff. Cannot be cleansed.",
+            "description": "When dealing Physical damage, critical damage is increased by <color=#f26c1c>25%</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_CriDamUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -29396,7 +29396,7 @@
         },
         {
             "id": 10540871,
-            "name": "Counter - Passionate Resonance",
+            "name": "Counter - Passionate Spin",
             "description": "Number of <color=#3487e0>{0}</color> stacks. Cannot be cleansed.",
             "descriptionTips": "0:105408012",
             "iconName": "Buff_CountUp",
@@ -29419,7 +29419,7 @@
         {
             "id": 10541821,
             "name": "Never Give Up",
-            "description": "Ally units ignore <color=#f26c1c>15%</color> of the target's defence when attacking. Stacks up to <color=#f26c1c>4 times</color>. When ally units deal Phase damage this effect ends for <color=#f26c1c>2 rounds</color>. Cannot be cleansed.",
+            "description": "When allied units deal Physical damage by active attacks, ignore <color=#f26c1c>15%</color> of the target's defense. Maximum of <color=#f26c1c>4 stacks</color>. When allied units deal Phase damage, this effect will be ineffective for <color=#f26c1c>2 rounds</color>. Cannot be cleansed.",
             "iconName": "Buff_AtkUpNeutral",
             "isShow": true,
             "buffHeadShow": 1,
@@ -35846,7 +35846,7 @@
         },
         {
             "id": 61000330,
-            "name": "After being subjected by an attack which does not exploit any weakness, enemy units' attack is increased by 100%. This effect lasts 2 turns and does not stack.",
+            "name": "Hydro Drain",
             "description": "When this unit has a <color=#2caadb>Hydro</color> buff, damage dealt is increased by <color=#f26c1c>20%</color>.",
             "iconName": "Buff_Guild_44",
             "showPriorityIcon": 10,
@@ -35957,7 +35957,7 @@
         {
             "id": 61000380,
             "name": "Limit-Breaking Strike",
-            "description": "physical damageis increased by <color=#f26c1c>30%</color>.",
+            "description": "Physical damage is increased by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_48",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -35979,7 +35979,7 @@
         {
             "id": 61000390,
             "name": "Staggering Blows",
-            "description": "When dealing physical damage to enemy units, critical damage is increased by <color=#f26c1c>20%</color> and the attack deals an additional <color=#f26c1c>5 points</color> of stability damage.",
+            "description": "When dealing Physical damage to enemy units, critical damage is increased by <color=#f26c1c>20%</color> and the attack deals an additional <color=#f26c1c>5 points</color> of stability damage.",
             "iconName": "Buff_Guild_49",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -36155,7 +36155,7 @@
         {
             "id": 61001080,
             "name": "Necrotic Torrent",
-            "description": "Hydro and Corrosion damage is increased by <color=#f26c1c>30%</color>, critical rate of Hydro and Corrosion damage is increased by <color=#f26c1c>30%</color>.",
+            "description": "Increase Hydro and Corrosion damage and critical rate by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_50",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -36177,7 +36177,7 @@
         {
             "id": 61001090,
             "name": "Corrupt Arc",
-            "description": "Electric and Corrosion damage is increased by <color=#f26c1c>30%</color>, critical rate of Electric and Corrosion damage is increased by <color=#f26c1c>30%</color>.",
+            "description": "Increase Electric and Corrosion damage and critical rate by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_51",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -36199,7 +36199,7 @@
         {
             "id": 61001100,
             "name": "Ice Burn",
-            "description": "Freeze and Burn damage is increased by <color=#f26c1c>30%</color>, critical rate of Freeze and Burn damage is increased by <color=#f26c1c>30%</color>.",
+            "description": "Increase Freeze and Burn damage and critical rate by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_52",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -36221,7 +36221,7 @@
         {
             "id": 61001110,
             "name": "Frozen Arc",
-            "description": "Freeze and Electric damage is increased by <color=#f26c1c>30%</color>, critical rate of Freeze and Electric damage is increased by <color=#f26c1c>30%</color>.",
+            "description": "Increase Freeze and Electric damage and critical rate by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_53",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -36243,7 +36243,7 @@
         {
             "id": 61001120,
             "name": "Blaze Hammer",
-            "description": "Physical and Burn damage is increased by <color=#f26c1c>30%</color>, critical rate of Physical and Burn damage is increased by <color=#f26c1c>30%</color>.",
+            "description": "Increase Physical and Burn damage and critical rate by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_54",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -36265,7 +36265,7 @@
         {
             "id": 61001130,
             "name": "Water Hammer",
-            "description": "Physical and Hydro damage is increased by <color=#f26c1c>30%</color>, critical rate of Physical and Hydro damage is increased by <color=#f26c1c>30%</color>.",
+            "description": "Increase Physical and Hydro damage and critical rate by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_55",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -36287,7 +36287,7 @@
         {
             "id": 61001140,
             "name": "Arc Hammer",
-            "description": "Physical and Electric damage is increased by <color=#f26c1c>30%</color>, critical rate of Physical and Electric damage is increased by <color=#f26c1c>30%</color>.",
+            "description": "Increase Physical and Electric damage and critical rate by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_56",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -36309,7 +36309,7 @@
         {
             "id": 61001150,
             "name": "Rot Hammer",
-            "description": "Physical and Corrosion damage is increased by <color=#f26c1c>30%</color>, critical rate of Physical and Corrosion damage is increased by <color=#f26c1c>30%</color>.",
+            "description": "Increase Physical and Corrosion damage and critical rate by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_57",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -36331,7 +36331,7 @@
         {
             "id": 61001160,
             "name": "Frost Hammer",
-            "description": "Physical and Freeze damage is increased by <color=#f26c1c>30%</color>, critical rate of Physical and Freeze damage is increased by <color=#f26c1c>30%</color>.",
+            "description": "Increase Physical and Freeze damage and critical rate by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_58",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -36353,7 +36353,7 @@
         {
             "id": 61001170,
             "name": "Precision Blow",
-            "description": "Physical damage is increased by <color=#f26c1c>30%</color>, targeted damage is increased by <color=#f26c1c>25%</color>.",
+            "description": "Physical damage is increased by <color=#f26c1c>30%</color> and targeted damage is increased by <color=#f26c1c>25%</color>.",
             "iconName": "Buff_Guild_59",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -37324,8 +37324,8 @@
         },
         {
             "id": 61776021,
-            "name": "Defence Boost",
-            "description": "This unit's defence increases by 200%. Stackable. Buff.",
+            "name": "Defense Boost",
+            "description": "This unit's defense is increased by 200%. Can be stacked, considered a buff.",
             "iconName": "Buff_DefUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -37496,7 +37496,7 @@
         {
             "id": 62004401,
             "name": "Phase Reduction",
-            "description": "Corrosion, Electric and Freeze elemental damage is reduced by <color=#f26c1c>20%</color>. Buff.",
+            "description": "Corrosion, Electric, and Freeze elemental damage is reduced by <color=#f26c1c>20%</color>. Considered a buff.",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -37521,7 +37521,7 @@
         {
             "id": 62004402,
             "name": "Phase Reduction",
-            "description": "Corrosion, Electric and Freeze elemental damage is reduced by <color=#f26c1c>30%</color>. Buff.",
+            "description": "Corrosion, Electric, and Freeze elemental damage is reduced by <color=#f26c1c>30%</color>. Considered a buff.",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -37546,7 +37546,7 @@
         {
             "id": 62004403,
             "name": "Phase Reduction",
-            "description": "Corrosion, Electric and Freeze elemental damage is reduced by <color=#f26c1c>50%</color>. Buff.",
+            "description": "Corrosion, Electric, and Freeze elemental damage is reduced by <color=#f26c1c>50%</color>. Considered a buff.",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -39175,7 +39175,7 @@
         {
             "id": 68922011,
             "name": "Digestive Saliva",
-            "description": "Damage taken is increased by <color=#f26c1c>20%</color>. Stackable. Lasts <color=#f26c1c>2 turns</color>. Debuff. If cleansed, all ally units gain <color=#f26c1c>1 stack</color> of <color=#3487e0>{0}</color> for <color=#f26c1c>2 turns</color>.",
+            "description": "Damage taken is increased by <color=#f26c1c>20%</color>. Can be stacked, lasts for <color=#f26c1c>2 turns</color>, considered a debuff. If the debuff is cleansed, all allied units gain <color=#f26c1c>1 stack</color> of <color=#3487e0>{0}</color> for <color=#f26c1c>2 turns</color>.",
             "descriptionTips": "0:68922012",
             "iconName": "Buff_EnemyHurtUp",
             "isShow": true,
@@ -39285,7 +39285,7 @@
         {
             "id": 68940013,
             "name": "Shock and Awe",
-            "description": "Damage taken is increased by <color=#f26c1c>10%</color>. Stackable. Debuff. Cannot be cleansed.",
+            "description": "Damage taken is increased by <color=#f26c1c>10%</color>. Can be stacked, considered a debuff, cannot be cleansed.",
             "iconName": "Buff_EnemyHurtUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -39307,7 +39307,7 @@
         {
             "id": 68944012,
             "name": "Splintered Defense α",
-            "description": "Stability damage taken is increased by <color=#f26c1c>2 points</color>, defence is reduced by <color=#f26c1c>30%</color>. Debuff. Cannot be cleansed.",
+            "description": "Stability damage taken is increased by <color=#f26c1c>2 points</color> and defense is reduced by <color=#f26c1c>30%</color>. Considered a debuff, cannot be cleansed.",
             "iconName": "Buff_DefLow",
             "isShow": true,
             "buffHeadShow": 1,
@@ -39329,7 +39329,7 @@
         {
             "id": 68944022,
             "name": "Splintered Defense β",
-            "description": "Defence is reduced by <color=#f26c1c>10%</color>. Debuff. Cannot be cleansed.",
+            "description": "Defense is reduced by <color=#f26c1c>10%</color>. Considered a debuff, cannot be cleansed.",
             "iconName": "Buff_DefLow",
             "isShow": true,
             "buffHeadShow": 1,
@@ -44871,7 +44871,7 @@
         {
             "id": 105408011,
             "name": "Graceful Spin",
-            "description": "Critical damage is increased by <color=#f26c1c>10%</color>, after attacking, recover HP equal to <color=#f26c1c>20%</color> of Max HP. Mutually eexclusive with <color=#3487e0>Passionate Resonance</color>. Buff. Cannot be cleansed.",
+            "description": "Critical damage is increased by <color=#f26c1c>10%</color>. After attacking, restores HP equal to <color=#f26c1c>20%</color> of attack. Mutually exclusive with <color=#3487e0>Passionate Spin</color>. Considered a buff, cannot be cleansed.",
             "buffEffect": "Skill/YooHeeSSR01/10540801_Buff|Buff/Recover",
             "effectPlayTime": [
                 1,
@@ -44899,8 +44899,8 @@
         },
         {
             "id": 105408012,
-            "name": "Passionate Resonance",
-            "description": "Critical damage is increased by <color=#f26c1c>10%</color>, At the end of this unit's turn, gain <color=#f26c1c>2 times</color> of <color=#3487e0>{0}</color>. Mutually exclusive with <color=#3487e0>Graceful Spin</color>. Buff. Cannot be cleansed.",
+            "name": "Passionate Spin",
+            "description": "Critical damage is increased by <color=#f26c1c>10%</color>. At the end of this unit's turn, gains <color=#f26c1c>2 stacks</color> of <color=#3487e0>{0}</color>. Mutually exclusive with <color=#3487e0>Graceful Spin</color>. Considered a buff, cannot be cleansed.",
             "descriptionTips": "0:301300",
             "buffEffect": "Skill/YooHeeSSR01/10540802_Buff",
             "effectPlayTime": [
@@ -46847,7 +46847,7 @@
         {
             "id": 617660121,
             "name": "Fireproof",
-            "description": "Immune to damage. Stackable. Buff. Cannot be cleansed.",
+            "description": "Immune to damage. Can be stacked, considered a buff, cannot be cleansed.",
             "iconName": "Buff_Invincible",
             "isShow": true,
             "buffHeadShow": 1,
@@ -46869,7 +46869,7 @@
         {
             "id": 617660122,
             "name": "Fireproof",
-            "description": "Immune to damage. Stackable. Buff. Cannot be cleansed.",
+            "description": "Immune to damage. Can be stacked, considered a buff, cannot be cleansed.",
             "iconName": "Buff_Invincible",
             "isShow": true,
             "buffHeadShow": 1,
@@ -47124,7 +47124,7 @@
         {
             "id": 620043030,
             "name": "Targeted Attack Boost",
-            "description": "Targeted damage is increased by <color=#f26c1c>50%</color>. Buff.",
+            "description": "Targeted damage is increased by <color=#f26c1c>50%</color>. Considered a buff.",
             "buffEffect": "Buff/AtkU|Buff/AtkU",
             "effectPlayTime": [
                 1,
@@ -47153,7 +47153,7 @@
         {
             "id": 620043040,
             "name": "Targeted Attack Boost",
-            "description": "Targeted-type damage is increased by <color=#f26c1c>80%</color>. Buff.",
+            "description": "Damage dealt by targeted active skills is increased by <color=#f26c1c>80%</color>. Considered a buff.",
             "buffEffect": "Buff/AtkU|Buff/AtkU",
             "effectPlayTime": [
                 1,
@@ -47182,7 +47182,7 @@
         {
             "id": 620045018,
             "name": "Defense Up",
-            "description": "Defence is increased by <color=#f26c1c>30%</color>",
+            "description": "Defense is increased by <color=#f26c1c>30%</color>",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -47229,7 +47229,7 @@
         {
             "id": 620045028,
             "name": "Defense Up",
-            "description": "Defence is increased by <color=#f26c1c>40%</color>",
+            "description": "Defense is increased by <color=#f26c1c>40%</color>",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -47276,7 +47276,7 @@
         {
             "id": 620045038,
             "name": "Defense Up",
-            "description": "Defence is increased by <color=#f26c1c>50%</color>",
+            "description": "Defense is increased by <color=#f26c1c>50%</color>",
             "buffEffect": "Buff/DefU|Buff/DefU",
             "effectPlayTime": [
                 1,
@@ -47527,7 +47527,7 @@
         {
             "id": 628346012,
             "name": "Herd Senses",
-            "description": "Damage dealt is increased by <color=#f26c1c>25%</color>, damage taken is reduced by <color=#f26c1c>50%</color>, 造成stability damageis increased by <color=#f26c1c>2 points</color> of , 受到stability damage is reduced by <color=#f26c1c>1 point</color> of , Cannot be cleansed.",
+            "description": "Damage dealt is increased by <color=#f26c1c>25%</color>, damage taken is reduced by <color=#f26c1c>50%</color>, stability damage dealt is increased by <color=#f26c1c>2 points</color>, and stability damage taken is reduced by <color=#f26c1c>1 point</color>. Cannot be cleansed.",
             "iconName": "Buff_AtkUp",
             "isShow": true,
             "buffHeadShow": 1,
