@@ -317,22 +317,27 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                     className="grid grid-cols-5 lg:grid-cols-6 gap-2 col-span-6 border-l border-l-4"
                     style={{ borderColor: accent }}
                   >
-                    <StatDisplay
-                      img="Icon_Pow_64"
-                      stat={
-                        levelStats[currentLevel + currentRange / 10 - 3][1] +
-                        affectStats[currentAffect - 1][1] +
-                        neuralStats[currentNeural][0]
+                    <Tooltip title="Attack">
+                      <StatDisplay
+                        img="Icon_Pow_64"
+                        stat={
+                          levelStats[currentLevel + currentRange / 10 - 3][1] +
+                          affectStats[currentAffect - 1][1] +
+                          neuralStats[currentNeural][0]
+                        }
+                      />
+                    </Tooltip>
+                    <Tooltip title="Defense">
+                      <StatDisplay
+                        img="Icon_Armor_64"
+                        stat={
+                          levelStats[currentLevel + currentRange / 10 - 3][2] +
+                          affectStats[currentAffect - 1][2] +
+                          neuralStats[currentNeural][1]
                       }
                     />
-                    <StatDisplay
-                      img="Icon_Armor_64"
-                      stat={
-                        levelStats[currentLevel + currentRange / 10 - 3][2] +
-                        affectStats[currentAffect - 1][2] +
-                        neuralStats[currentNeural][1]
-                      }
-                    />
+                    </Tooltip>
+                    <Tooltip title="Health">
                     <StatDisplay
                       img="Icon_Hp_64"
                       stat={
@@ -341,37 +346,52 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                         neuralStats[currentNeural][2]
                       }
                     />
+                    </Tooltip>
+                    <Tooltip title="Stability">
                     <StatDisplay
                       img="Icon_Will_64"
                       stat={
                         Tables.PropData[Tables.GunData[character.id].propertyId]['maxWillValue']
                       }
                     />
+                    </Tooltip>
+                    <Tooltip title="Mobility">
                     <StatDisplay
                       img="Icon_Max_Ap_64"
                       stat={Tables.PropData[Tables.GunData[character.id].propertyId]['maxAp'] / 100}
                     />
+                    </Tooltip>
                     <div className="hidden lg:block"></div>
+                    <Tooltip title="Attack Boost">
                     <StatDisplay
                       img="Icon_Pow_64"
                       stat={`${neuralStats[currentNeural][3] / 10 + (currentAffect === 6 ? 5 : 0)}.0%`}
                     />
+                    </Tooltip>
+                    <Tooltip title="Defense Boost">
                     <StatDisplay
                       img="Icon_Armor_64"
                       stat={`${neuralStats[currentNeural][4] / 10 + (currentAffect === 6 ? 5 : 0)}.0%`}
                     />
+                    </Tooltip>
+                    <Tooltip title="Health Boost">
                     <StatDisplay
                       img="Icon_Hp_64"
                       stat={`${neuralStats[currentNeural][5] / 10 + (currentAffect === 6 ? 5 : 0)}.0%`}
                     />
+                    </Tooltip>
+                    <Tooltip title="Crit Rate">
                     <StatDisplay
                       img="Icon_Crit_64"
                       stat={`${neuralStats[currentNeural][6] / 10 + Tables.PropData[Tables.GunData[character.id].propertyId]['crit'] / 10}.0%`}
                     />
+                    </Tooltip>
+                    <Tooltip title="Crit DMG">
                     <StatDisplay
                       img="Icon_Mult_64"
                       stat={`${neuralStats[currentNeural][7] / 10 + Tables.PropData[Tables.GunData[character.id].propertyId]['critMult'] / 10}.0%`}
                     />
+                    </Tooltip>
                     <div className="hidden lg:block"></div>
                   </div>
                 )}

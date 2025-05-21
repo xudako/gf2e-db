@@ -40,6 +40,7 @@ export default {
           paper: "#dddddd",
           hover: "rgba(255, 255, 255, 0.08)",
           overlay: "#2b2b2b",
+          tooltip: "#333333",
         },
         rarity: {
           ssr: "#de9e01",

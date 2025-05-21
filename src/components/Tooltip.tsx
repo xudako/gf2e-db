@@ -122,7 +122,7 @@ const Tooltip: React.FC<TooltipProps> = ({
       {isVisible && (
         <div
           ref={tooltipRef}
-          className="fixed p-2 bg-background-overlay text-primary-text rounded shadow-lg"
+          className="fixed p-2 bg-background-tooltip text-primary-text rounded shadow-lg"
           style={{
             visibility: isPositioned ? 'visible' : 'hidden',
             top: `${position.top}px`,
