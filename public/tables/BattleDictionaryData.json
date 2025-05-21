@@ -854,38 +854,38 @@
         },
         {
             "id": 900230,
-            "name": "Graceful Spin",
-            "description": "Apply <color=#3487e0>{0}</color> and <color=#3487e0>{1}</color> to an ally unit (not including Yoohee).",
+            "name": "Graceful Pirouette",
+            "description": "Applies <color=#3487e0>{0}</color> and <color=#3487e0>{1}</color> to 1 allied unit (excluding Yoohee).",
             "descriptionTips": "0:105408011;0:262403"
         },
         {
             "id": 900231,
-            "name": "Graceful Spin",
-            "description": "Apply <color=#3487e0>{0}</color> and <color=#3487e0>{1}</color> to an ally unit (not including Yoohee). and it recovers HP.",
+            "name": "Graceful Pirouette",
+            "description": "Applies <color=#3487e0>{0}</color> and <color=#3487e0>{1}</color> to 1 allied unit (excluding Yoohee). In addition, restores HP to the selected allied unit.",
             "descriptionTips": "0:105408011;0:262403"
         },
         {
             "id": 900232,
             "name": "Passionate Resonance",
-            "description": "Applies <color=#3487e0>{0}</color> or <color=#3487e0>{1}</color> to ally units (not including Yoohee).",
+            "description": "Applies <color=#3487e0>{0}</color> and <color=#3487e0>{1}</color> to allied units (excluding Yoohee).",
             "descriptionTips": "0:105408012;0:262403"
         },
         {
             "id": 900233,
             "name": "Passionate Resonance",
-            "description": "Applies <color=#3487e0>{0}</color> or <color=#3487e0>{1}</color> to ally units (not including Yoohee) and also cleanses debuffs.",
+            "description": "Applies <color=#3487e0>{0}</color> and <color=#3487e0>{1}</color> to allied units (excluding Yoohee) and also cleanses debuffs.",
             "descriptionTips": "0:105408012;0:262403"
         },
         {
             "id": 900234,
             "name": "Best Dancer",
-            "description": "Effect depends on the last <color=#f26c1c>3</color> <color=#3487e0>{0}</color>; <color=#f26c1c>Each</color> <color=#3487e0>Graceful Spin</color> heal all ally units on the battlefield for <color=#f26c1c>15%</color> of Max HP, <color=#f26c1c>each</color><color=#3487e0>Passionate Resonance</color>, cleanses <color=#f26c1c>1</color> debuff from all ally units on the battlefield (If <color=#3487e0>Best Dancer</color> has already been triggered this turn, Yoohee will not play the dancing animation but the skill effect will still take place).",
+            "description": "Effect depends on the firstly applied <color=#f26c1c>3</color> <color=#3487e0>{0}</color>; <color=#f26c1c>Each</color> <color=#3487e0>Graceful Spin</color> heals all allied units on the battlefield for <color=#f26c1c>15%</color> of max HP, <color=#f26c1c>each</color> <color=#3487e0>Passionate Spin</color> cleanses <color=#f26c1c>1</color> debuff from all allied units on the battlefield (If <color=#3487e0>Best Dancer</color> has already been triggered this turn, Yoohee will not play the dancing animation but the skill effect will still take place).",
             "descriptionTips": "1:900235"
         },
         {
             "id": 900235,
             "name": "Dance Steps",
-            "description": "Includes <color=#3487e0>Graceful Spin</color> and <color=#3487e0>Passionate Resonance</color>.",
+            "description": "Includes <color=#3487e0>Graceful Spin</color> and <color=#3487e0>Passionate Spin</color>.",
             "descriptionTips": ""
         },
         {
@@ -921,25 +921,25 @@
         {
             "id": 901031,
             "name": "Gas Reservoir",
-            "description": "Applies 1 stack of <color=#3487e0>{0}</color> for <color=#f26c1c>2 turns</color> to all enemy units who end their turn on this tile. Applies<color=#e67129>Burn</color> weakness to units standing on this tile. Burn-type tile.",
+            "description": "Applies 1 stack of <color=#3487e0>{0}</color> for <color=#f26c1c>2 turns</color> to all enemy units who end their turn on this tile. Applies <color=#e67129>Burn weakness</color> to units standing on this tile. Considered a Burn tile.",
             "descriptionTips": "0:6176102"
         },
         {
             "id": 901032,
             "name": "Gas Reservoir",
-            "description": "Applies 1 stack of <color=#3487e0>{0}</color> for <color=#f26c1c>2 turns</color> to all enemy units who end their turn on this tile. Applies<color=#e67129>Burn</color> weakness to units standing on this tile. Burn-type tile.",
+            "description": "Applies 1 stack of <color=#3487e0>{0}</color> for <color=#f26c1c>2 turns</color> to all enemy units who end their turn on this tile. Applies <color=#e67129>Burn weakness</color> to units standing on this tile. Considered a Burn tile.",
             "descriptionTips": "0:6177102"
         },
         {
             "id": 901041,
             "name": "Flow Basin",
-            "description": "Cleanses 2 stacks of <color=#3487e0>{0}</color> from enemy units who end their turn on this tile and and applied <color=#3487e0>{1}</color> for <color=#f26c1c>2 turns</color>. Applies <color=#2caadb>Hydro</color> weakness to units standing on this tile. Hydro-type terrain tile.",
+            "description": "Cleanses 2 stacks of <color=#3487e0>{0}</color> from enemy units who end their turn on this tile and applies <color=#3487e0>{1}</color> for <color=#f26c1c>2 turns</color>. Applies <color=#2caadb>Hydro weakness</color> to units standing on this tile. Considered a Hydro terrain tile.",
             "descriptionTips": "0:6176102;0:320001"
         },
         {
             "id": 901042,
             "name": "Flow Basin",
-            "description": "Cleanses 2 stacks of <color=#3487e0>{0}</color> from enemy units who end their turn on this tile and and applied <color=#3487e0>{1}</color> for <color=#f26c1c>2 turns</color>. Applies <color=#2caadb>Hydro</color> weakness to units standing on this tile. Hydro-type terrain tile.",
+            "description": "Cleanses 2 stacks of <color=#3487e0>{0}</color> from enemy units who end their turn on this tile and applies <color=#3487e0>{1}</color> for <color=#f26c1c>2 turns</color>. Applies <color=#2caadb>Hydro weakness</color> to units standing on this tile. Considered a Hydro terrain tile.",
             "descriptionTips": "0:6177102;0:320001"
         }
     ]
