@@ -32,7 +32,7 @@ await TableLoader.load([
   'GunDutyData',
   'GunWeaponTypeData',
   'WeaponTagData',
-  'PropData',
+  'PropertyData',
 ]);
 
 interface CharacterOverlayProps {
@@ -351,14 +351,14 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                     <StatDisplay
                       img="Icon_Will_64"
                       stat={
-                        Tables.PropData[Tables.GunData[character.id].propertyId]['maxWillValue']
+                        Tables.PropertyData[Tables.GunData[character.id].propertyId]['maxWillValue']
                       }
                     />
                     </Tooltip>
                     <Tooltip title="Mobility">
                     <StatDisplay
                       img="Icon_Max_Ap_64"
-                      stat={Tables.PropData[Tables.GunData[character.id].propertyId]['maxAp'] / 100}
+                      stat={Tables.PropertyData[Tables.GunData[character.id].propertyId]['maxAp'] / 100}
                     />
                     </Tooltip>
                     <div className="hidden lg:block"></div>
@@ -383,13 +383,13 @@ const CharacterOverlay: React.FC<CharacterOverlayProps> = ({ open, character }):
                     <Tooltip title="Crit Rate">
                     <StatDisplay
                       img="Icon_Crit_64"
-                      stat={`${neuralStats[currentNeural][6] / 10 + Tables.PropData[Tables.GunData[character.id].propertyId]['crit'] / 10}.0%`}
+                      stat={`${neuralStats[currentNeural][6] / 10 + Tables.PropertyData[Tables.GunData[character.id].propertyId]['crit'] / 10}.0%`}
                     />
                     </Tooltip>
                     <Tooltip title="Crit DMG">
                     <StatDisplay
                       img="Icon_Mult_64"
-                      stat={`${neuralStats[currentNeural][7] / 10 + Tables.PropData[Tables.GunData[character.id].propertyId]['critMult'] / 10}.0%`}
+                      stat={`${neuralStats[currentNeural][7] / 10 + Tables.PropertyData[Tables.GunData[character.id].propertyId]['critMult'] / 10}.0%`}
                     />
                     </Tooltip>
                     <div className="hidden lg:block"></div>
