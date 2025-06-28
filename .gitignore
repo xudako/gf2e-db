@@ -24,6 +24,7 @@ dist-ssr
 *.sw?
 
 # Other
+public/tables/PropertyData.json
 TODO.md
 not_code/
 scripts/
