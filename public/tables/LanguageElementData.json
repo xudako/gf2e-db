@@ -1,84 +1,84 @@
 {
     "data": [
         {
-            "id": 0,
             "name": "Physical",
             "nameEn": "Physical",
             "icon": "Icon_BulletHit_Physical",
-            "color": "c9c8ceFF",
-            "barrackAvailable": 1,
-            "increase": 40,
-            "resist": 48
+            "color": "Icon_BulletHit_Physical_S",
+            "resist": 1,
+            "id": 0,
+            "barrackAvailable": 0,
+            "increase": 0
         },
         {
             "id": 1,
             "name": "Burn",
             "nameEn": "Fire",
             "icon": "Icon_BulletHit_Fire",
-            "color": "e56829FF",
-            "barrackAvailable": 1,
-            "increase": 36,
-            "resist": 44
+            "color": "Icon_BulletHit_Fire_S",
+            "resist": 1,
+            "barrackAvailable": 0,
+            "increase": 0
         },
         {
             "id": 2,
             "name": "Electric",
             "nameEn": "Electric",
             "icon": "Icon_BulletHit_Electric",
-            "color": "ebbf21FF",
-            "barrackAvailable": 1,
-            "increase": 37,
-            "resist": 45
+            "color": "Icon_BulletHit_Electric_S",
+            "resist": 1,
+            "barrackAvailable": 0,
+            "increase": 0
         },
         {
             "id": 3,
             "name": "Freeze",
             "nameEn": "Ice",
             "icon": "Icon_BulletHit_Ice",
-            "color": "42cce0FF",
-            "barrackAvailable": 1,
-            "increase": 38,
-            "resist": 46
+            "color": "Icon_BulletHit_Ice_S",
+            "resist": 1,
+            "barrackAvailable": 0,
+            "increase": 0
         },
         {
             "id": 4,
             "name": "Corrosion",
             "nameEn": "Poison",
             "icon": "Icon_BulletHit_Poison",
-            "color": "877aebFF",
-            "barrackAvailable": 1,
-            "increase": 39,
-            "resist": 47
+            "color": "Icon_BulletHit_Poison_S",
+            "resist": 1,
+            "barrackAvailable": 0,
+            "increase": 0
         },
         {
             "id": 5,
             "name": "Hydro",
             "nameEn": "Water",
             "icon": "Icon_BulletHit_Water",
-            "color": "2caadbFF",
-            "barrackAvailable": 1,
-            "increase": 43,
-            "resist": 51
+            "color": "Icon_BulletHit_Water_S",
+            "resist": 1,
+            "barrackAvailable": 0,
+            "increase": 0
         },
         {
             "id": 6,
             "name": "Momentum",
             "nameEn": "Soil",
             "icon": "Icon_BulletHit_Soil",
-            "color": "a57833FF",
-            "barrackAvailable": 1,
-            "increase": 41,
-            "resist": 49
+            "color": "Icon_BulletHit_Soil_S",
+            "resist": 1,
+            "barrackAvailable": 0,
+            "increase": 0
         },
         {
             "id": 7,
             "name": "Parasitic",
             "nameEn": "Grass",
             "icon": "Icon_BulletHit_Grass",
-            "color": "95cc43FF",
-            "barrackAvailable": 1,
-            "increase": 42,
-            "resist": 50
+            "color": "Icon_BulletHit_Grass_S",
+            "resist": 1,
+            "barrackAvailable": 0,
+            "increase": 0
         }
     ]
 }

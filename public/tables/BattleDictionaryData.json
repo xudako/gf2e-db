@@ -13,6 +13,12 @@
             "descriptionTips": "0:262102"
         },
         {
+            "id": 51111,
+            "name": "Backwash",
+            "description": "Applies <color=#2caadb>Hydro</color> weakness to enemy units within the area. Applies <color=#3487e0>{0}</color> to allied units who end their turn within the area for <color=#f26c1c>2 turns</color>. Hydro tile.",
+            "descriptionTips": "0:511113"
+        },
+        {
             "id": 90001,
             "name": "Extra Action",
             "description": "Can move multiple times in an allied turn.",
@@ -633,7 +639,7 @@
         {
             "id": 90104,
             "name": "Tideway",
-            "description": "Applies <color=#3487e0>{0}</color> to units which end their movement in this area for <color=#f26c1c>2 turns</color>. Enemy units in this area gain a weakness to <color=#e67129>Hydro</color> damage and Hydro tiles.",
+            "description": "Applies <color=#3487e0>{0}</color> to units which end their movement in this area for <color=#f26c1c>2 turns</color>. Enemy units in this area gain a weakness to <color=#e67129>Hydro</color> damage. Considered a Hydro tile.",
             "descriptionTips": "0:320001"
         },
         {
@@ -669,13 +675,13 @@
         {
             "id": 90110,
             "name": "Counterattack",
-            "description": "Performs an attack; cannot be triggered by Interceptions, Counterattacks or Action Supports.",
+            "description": "Performs an attack; cannot be triggered by Interceptions, Counterattacks or Support Attacks.",
             "descriptionTips": ""
         },
         {
             "id": 90111,
             "name": "Interception",
-            "description": "Performs an attack; cannot be triggered by Interceptions, Counterattacks or Action Supports.",
+            "description": "Performs an attack; cannot be triggered by Interceptions, Counterattacks or Support Attacks.",
             "descriptionTips": ""
         },
         {
@@ -704,7 +710,7 @@
         },
         {
             "id": 90116,
-            "name": "Stop-Hit",
+            "name": "Incapaciation",
             "description": "Performs an attack which ends the target's movement. Cannot trigger Action Supports, Interceptions, or Counterattacks.",
             "descriptionTips": ""
         },
@@ -717,7 +723,7 @@
         {
             "id": 90118,
             "name": "Shield",
-            "description": "Absorbs a certain amount of damage. Shields do not stack, but they can overlap. When the most recently-applied shield expires or takes more damage than the previous one(s), they overlap. Shields include <color=#3487e0>Frost Barrier</color>, <color=#3487e0>Capital Protection</color> and other effects.",
+            "description": "Absorbs a certain amount of damage. Shields do not stack, but they can overlap. When the most recently-applied shield has a longer duration or takes more damage than the previous one(s), it replaces the previous one(s). Shields include <color=#3487e0>Frost Barrier</color>, <color=#3487e0>Capital Protection</color> and other effects.",
             "descriptionTips": ""
         },
         {
@@ -831,7 +837,7 @@
         {
             "id": 90226,
             "name": "Toxic Bubble",
-            "description": "Cannot die. At the end of the round, triggers a self detonation and deals <color=#f26c1c>40%</color> of HP lost to all allied units as AOE <color=#8679e8>Corrosion Damage</color> that ignores cover.",
+            "description": "Cannot die. At the end of the round, triggers a self detonation and deals AoE <color=#8679e8>Corrosion Damage</color> that ignores Cover equal to <color=#f26c1c>40%</color> of HP lost to all allied units.",
             "descriptionTips": ""
         },
         {
@@ -843,8 +849,152 @@
         {
             "id": 90228,
             "name": "Out-of-Turn Attack",
-            "description": "Includes <color=#3487e0>{0}</color>, <color=#3487e0>{1}</color>, <color=#3487e0>{2}</color>, <color=#3487e0>{3}</color> and other such attacks made outside of this unit's turn.",
+            "description": "Includes <color=#3487e0>{0}</color>, <color=#3487e0>{1}</color>, <color=#3487e0>{2}</color>, <color=#3487e0>{3}</color> and other such attacks made outside of the buff holder's turn.",
             "descriptionTips": "1:90109;1:90112;1:90111;1:90110"
+        },
+        {
+            "id": 90229,
+            "name": "Retorhynchus",
+            "description": "Possess the passive skills <color=#3487e0>{0}</color> and <color=#3487e0>{1}</color>.",
+            "descriptionTips": "1:90230;1:90231"
+        },
+        {
+            "id": 90230,
+            "name": "Stress Response",
+            "description": "After being attacked, gains <color=#f26c1c>1</color> stack of <color=#3487e0>{0}</color>. If this unit is standing on a <color=#3487e0>{1}</color> tile, gains an additional <color=#f26c1c>2 stacks</color> of <color=#3487e0>{0}</color>.",
+            "descriptionTips": "0:697610461;1:90106"
+        },
+        {
+            "id": 90231,
+            "name": "Toxic Honey",
+            "description": "After launching an attack, applies <color=#f26c1c>1 stack</color> of <color=#3487e0>{0}</color> to the target. If this unit's HP is higher than <color=#f26c1c>80%</color>, applies an additional <color=#f26c1c>3 stacks</color> of <color=#3487e0>{0}</color>.",
+            "descriptionTips": "0:697610431"
+        },
+        {
+            "id": 90232,
+            "name": "Superconductive Strike",
+            "description": "Treated as an instance of <color=#3487e0>Wise Support</color>. If it kills the target, applies <color=#3487e0>{0}</color> to the enemy target nearest to Leva.",
+            "descriptionTips": "0:351701"
+        },
+        {
+            "id": 90233,
+            "name": "Support Attack",
+            "description": "Includes <color=#3487e0>{0}</color> and <color=#3487e0>{1}</color>.",
+            "descriptionTips": "1:90109;1:90112"
+        },
+        {
+            "id": 90234,
+            "name": "Pathcutter Bomb I",
+            "description": "When this unit stops moving or at the end of this unit's action, deals corresponding phase damage equal to <color=#f26c1c>120%</color> of attack to all enemy units within <color=#f26c1c>a cross-shaped area 5 tiles wide</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90235,
+            "name": "Pathcutter Bomb II",
+            "description": "When this unit stops moving or at the end of this unit's action, deals corresponding phase damage equal to <color=#f26c1c>180%</color> of attack to all enemy units within <color=#f26c1c>a cross-shaped area 8 tiles wide</color>, and also applies 1 stack of <color=#3487e0>{0}</color> and <color=#3487e0>{1}</color> for <color=#f26c1c>1 turn</color>.",
+            "descriptionTips": "0:209100021;0:209100022"
+        },
+        {
+            "id": 90236,
+            "name": "Phase Demolition",
+            "description": "Deals 1 additional instance of <color=#e67129>Burn</color>, <color=#3487e0>Freeze</color>, <color=#d4ae08>Electric</color>, <color=#8679e8>Corrosion</color>, <color=#2caadb>Hydro</color> and Physical damage based on this unit's attack. (Does not trigger support attacks or other such effects)",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90237,
+            "name": "All-Range Pathcutter Bomb",
+            "description": "Inherits <color=#f26c1c>300%</color> of the summoner's current attack. When the summoner's side's turn ends, deals AoE fixed damage equal to <color=#f26c1c>3000%</color> of attack to all enemy units on the battlefield.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90238,
+            "name": "Fertilizer Scholar",
+            "description": "Considered a summoned unit. Inherits <color=#f26c1c>200%</color> of the summoner's attack and <color=#f26c1c>100%</color> of the summoner's other base stats.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90239,
+            "name": "Production Expert",
+            "description": "Considered a summoned unit. Inherits <color=#f26c1c>2000%</color> of the summoner's HP and <color=#f26c1c>100%</color> of the summoner's other base stats.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90240,
+            "name": "Patrol Supervisor",
+            "description": "Considered a summoned unit. Its initial HP is <color=#f26c1c>1000 points</color>, initial attack and defense are <color=#f26c1c>1</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90241,
+            "name": "Victory Protocol",
+            "description": "Deals Physical damage. If <color=#3487e0>Simulacrum</color> is on the field, after this skill, <color=#3487e0>Simulacrum</color> performs the basic attack <color=#3487e0>Perplexed Reflex</color> on the target.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90242,
+            "name": "Perplexed Reflex",
+            "description": "Deals Physical damage. After using this skill, Lainie will perform the basic attack <color=#3487e0>Victory Protocol</color> on the target.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90243,
+            "name": "Combat Algorithm",
+            "description": "Deals Physical damage. If <color=#3487e0>Simulacrum</color> is on the field, after usage of this skill, <color=#3487e0>Simulacrum</color> uses the active skill <color=#3487e0>Offense Simulation</color> centered on itself. If it does not hit the target of <color=#3487e0>Combat Algorithm</color>, it ignores part of the target's defense.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90244,
+            "name": "Offense Simulation",
+            "description": "Selects 1 enemy target within <color=#f26c1c>7 tiles</color> and deals AoE Physical damage to the target and all enemy units within <color=#f26c1c>3 tiles</color> of it. The damage multiplier is reduced depending on the number of targets hit. If an enemy target's defense is <color=#f26c1c>0 or less</color> and Lainie used the skill <color=#3487e0>Combat Algorithm</color> on the current turn, it ignores part of the target's defense. After using this skill, Lainie uses the active skill <color=#3487e0>Combat Algorithm</color> on the selected target.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90245,
+            "name": "Combat Algorithm",
+            "description": "Deals physical damage. If the enemy target's defense is <color=#f26c1c>0 or less</color>, critical damage dealt is increased. Before the attack resolves, applies <color=#3487e0>Parapluie's Penetration</color>. If <color=#3487e0>Simulacrum</color> is on the field, after using this skill, the <color=#3487e0>Simulacrum</color> uses the active skill <color=#3487e0>Offense Simulation</color> centered on itself. If it does not hit the target of <color=#3487e0>Combat Algorithm</color>, it ignores part of the target's defense.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90246,
+            "name": "Offense Simulation",
+            "description": "Selects 1 enemy target within <color=#f26c1c>7 tiles</color> and deals AoE Physical damage to the target and all enemy units within <color=#f26c1c>3 tiles</color> of it. The damage multiplier is reduced depending on the number of targets hit. Before the attack resolves, applies <color=#3487e0>Parapluie's Penetration</color> to the target. If an enemy target's defense is <color=#f26c1c>0 or less</color>, then any critical damage dealt to it is increased, and when Lainie uses <color=#3487e0>Combat Algorithm</color>, it ignores part of the target's defense. After using this skill, Lainie uses the active skill <color=#3487e0>Combat Algorithm</color> on the selected target.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90247,
+            "name": "Combat Algorithm",
+            "description": "Deals physical damage. If the enemy target's defense is <color=#f26c1c>0 or less</color>, critical damage dealt is increased. Before the attack resolves, applies <color=#3487e0>Parapluie's Penetration</color>. If <color=#3487e0>Simulacrum</color> is on the field, after using this skill, the <color=#3487e0>Simulacrum</color> uses the active skill <color=#3487e0>Offense Simulation</color> centered on itself. If it does not hit the target of <color=#3487e0>Combat Algorithm</color>, it ignores part of the target's defense.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90248,
+            "name": "Offense Simulation",
+            "description": "Selects 1 enemy target within <color=#f26c1c>7 tiles</color> and deals AoE Physical damage to the target and all enemy units within <color=#f26c1c>3 tiles</color> of it. The damage multiplier is reduced depending on the number of targets hit. Before the attack resolves, applies <color=#3487e0>Parapluie's Penetration</color> to the target. If an enemy target's defense is <color=#f26c1c>0 or less</color>, then any critical damage dealt to it is increased, and when Lainie uses <color=#3487e0>Combat Algorithm</color>, it ignores part of the target's defense. After using this skill, Lainie uses the active skill <color=#3487e0>Combat Algorithm</color> on the selected target.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90249,
+            "name": "Computational Crush",
+            "description": "Deals AoE Physical damage to the target and all enemy units within <color=#f26c1c>3 tiles</color> of it. \nIf <color=#3487e0>Simulacrum</color> is on the field, after using this skill, <color=#3487e0>Simulacrum</color> performs the active skill <color=#3487e0>Hashrate Overclock</color> centered on herself and applies <color=#3487e0>Movement Down I</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90250,
+            "name": "Hashrate Overclock",
+            "description": "Deals AoE Physical damage to all enemy units within <color=#f26c1c>3 tiles</color> of the target tile. If <color=#f26c1c>2 or fewer</color> enemy units are hit, stability damage dealt is increased when Lainie uses the active skill <color=#3487e0>Computational Crush</color> on this turn. After using this skill, Lainie uses the active skill <color=#3487e0>Computational Crush</color> on the selected tile.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90251,
+            "name": "Simulacrum",
+            "description": "A clone of Lainie that can be independently controlled. Inherits all of Lainie's stats and equipment effects. When directing Lainie or her Simulacrum to make an active attack, the other will automatically use the corresponding skill to attack the selected target. If the auto-targeting fails, then the other can use the corresponding skill once on their action. This does not trigger loops.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90252,
+            "name": "Arios",
+            "description": "Considered a Summoned Creature. Inherits <color=#f26c1c>120%</color> of Florence's initial max HP, <color=#f26c1c>100%</color> of her initial attack, and <color=#f26c1c>120%</color> of her initial defense. Can apply <color=#3487e0>{0}</color> to enemy units, take damage in Florence's place, and after it or Florence is damaged, it will perform a <color=#3487e0>{1}</color>.",
+            "descriptionTips": "0:401011;1:90110"
         },
         {
             "id": 900229,
@@ -891,31 +1041,43 @@
         {
             "id": 900236,
             "name": "Kulich",
-            "description": "Considered a summon. Inherits <color=#f26c1c>80%</color> of Nikketa's base HP, <color=#f26c1c>80%</color> of her base attack, and <color=#f26c1c>100%</color> of her base defense. It is unable to move and has the passive skill <color=#3487e0>{0}</color>.",
+            "description": "Considered a summon. Inherits <color=#f26c1c>80%</color> of Nikketa's initial HP, <color=#f26c1c>80%</color> of her initial attack, and <color=#f26c1c>100%</color> of her initial defense. It is unable to move and has the passive skill <color=#3487e0>{0}</color>.",
             "descriptionTips": "1:900238"
         },
         {
             "id": 900237,
             "name": "Kulich",
-            "description": "Considered a summon. Inherits <color=#f26c1c>100%</color> of Nikketa's base HP, <color=#f26c1c>80%</color> of her base attack, and <color=#f26c1c>100%</color> of her base defense. It is unable to move and has the passive skills <color=#3487e0>{0}</color> and <color=#3487e0>{1}</color>.",
+            "description": "Considered a summon. Inherits <color=#f26c1c>100%</color> of Nikketa's initial HP, <color=#f26c1c>80%</color> of her initial attack, and <color=#f26c1c>100%</color> of her initial defense. It is unable to move and has the passive skills <color=#3487e0>{0}</color> and <color=#3487e0>{1}</color>.",
             "descriptionTips": "1:900238;1:900239"
         },
         {
             "id": 900238,
             "name": "Kulich's Loyalty",
-            "description": "If an enemy target within this unit's range deals damage, launches a <color=#3487e0>Counterattack</color> against it.",
+            "description": "If an enemy target within certain tiles of Kulich deals damage, launches a <color=#3487e0>Counterattack</color> against it.",
             "descriptionTips": ""
         },
         {
             "id": 900239,
             "name": "Kulich's Intimidation",
-            "description": "Reduces attack of enemy units around the user.",
+            "description": "Reduces attack of enemy units around Kulich.",
             "descriptionTips": ""
         },
         {
             "id": 900240,
             "name": "Physical Summon",
-            "description": "A summon that inherits its summoner's stats and has a physical presence on the battlefield (like Papasha's City Defender, Andoris' Auto-Turrets and Nikketa's Kulich, among others).",
+            "description": "A summon that inherits its summoner's stats and has a physical presence on the battlefield (like Papasha's City Warden, Andoris' Auto-Turrets and Nikketa's Kulich, among others).",
+            "descriptionTips": ""
+        },
+        {
+            "id": 900241,
+            "name": "Frigid Infiltration",
+            "description": "Deals <color=#42cce0>Freeze Damage</color> equal to <color=#f26c1c>150%</color> of attack to the target and <color=#f26c1c>2 points</color> of stability damage.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 900242,
+            "name": "Shield Pierce Rate",
+            "description": "When dealing damage against a shielded target, the attack ignores the stated percentage of shield strength and directly damages the target's HP",
             "descriptionTips": ""
         },
         {

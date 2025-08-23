@@ -43,7 +43,8 @@
                 "1002004",
                 "1002005",
                 "1002006",
-                "1002007"
+                "1002007",
+                "1002008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -96,7 +97,8 @@
                 "1008004",
                 "1008005",
                 "1008006",
-                "1008007"
+                "1008007",
+                "1008008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -444,7 +446,8 @@
                 "1017004",
                 "1017005",
                 "1017006",
-                "1017007"
+                "1017007",
+                "1017008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -605,7 +608,8 @@
                 "1024004",
                 "1024005",
                 "1024006",
-                "1024007"
+                "1024007",
+                "1024008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -684,7 +688,8 @@
                 "1031004",
                 "1031005",
                 "1031006",
-                "1031007"
+                "1031007",
+                "1031008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -710,7 +715,8 @@
                 "1033004",
                 "1033005",
                 "1033006",
-                "1033007"
+                "1033007",
+                "1033008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -977,6 +983,110 @@
             "unlockSheet": 2,
             "unlockId": 50,
             "fullyActiveItemId": 901055,
+            "talentBonusGroup": 1001,
+            "privateSlotNumber": 3,
+            "publicSlotNumber": 3
+        },
+        {
+            "id": 1056,
+            "talentName": "Leva",
+            "gunType": 1,
+            "talentTips": "Exclusive Doll Talent",
+            "achievementDetailId": 29000,
+            "tpItemId": 9000,
+            "maxTpNum": 32,
+            "squadTalentTreeId": 1038,
+            "traverseSquadTalentTreeId": [
+                "1038001",
+                "1038002",
+                "1038003",
+                "1038004",
+                "1038005",
+                "1038006",
+                "1038007"
+            ],
+            "initialTalentKeyId": 10000,
+            "unlockSheet": 2,
+            "unlockId": 51,
+            "fullyActiveItemId": 901056,
+            "talentBonusGroup": 1001,
+            "privateSlotNumber": 3,
+            "publicSlotNumber": 3
+        },
+        {
+            "id": 1057,
+            "talentName": "Robella",
+            "gunType": 1,
+            "talentTips": "Exclusive Doll Talent",
+            "achievementDetailId": 29000,
+            "tpItemId": 9000,
+            "maxTpNum": 32,
+            "squadTalentTreeId": 1039,
+            "traverseSquadTalentTreeId": [
+                "1039001",
+                "1039002",
+                "1039003",
+                "1039004",
+                "1039005",
+                "1039006",
+                "1039007"
+            ],
+            "initialTalentKeyId": 10000,
+            "unlockSheet": 2,
+            "unlockId": 52,
+            "fullyActiveItemId": 901057,
+            "talentBonusGroup": 1001,
+            "privateSlotNumber": 3,
+            "publicSlotNumber": 3
+        },
+        {
+            "id": 1058,
+            "talentName": "Lainie",
+            "gunType": 1,
+            "talentTips": "Exclusive Doll Talent",
+            "achievementDetailId": 29000,
+            "tpItemId": 9000,
+            "maxTpNum": 32,
+            "squadTalentTreeId": 1040,
+            "traverseSquadTalentTreeId": [
+                "1040001",
+                "1040002",
+                "1040003",
+                "1040004",
+                "1040005",
+                "1040006",
+                "1040007"
+            ],
+            "initialTalentKeyId": 10000,
+            "unlockSheet": 2,
+            "unlockId": 53,
+            "fullyActiveItemId": 901058,
+            "talentBonusGroup": 1001,
+            "privateSlotNumber": 3,
+            "publicSlotNumber": 3
+        },
+        {
+            "id": 1064,
+            "talentName": "Florence",
+            "gunType": 1,
+            "talentTips": "Exclusive Doll Talent",
+            "achievementDetailId": 29000,
+            "tpItemId": 9000,
+            "maxTpNum": 32,
+            "squadTalentTreeId": 1041,
+            "traverseSquadTalentTreeId": [
+                "1041001",
+                "1041002",
+                "1041003",
+                "1041004",
+                "1041005",
+                "1041006",
+                "1041007"
+            ],
+            "initialTalentKeyId": 10000,
+            "unlockSheet": 2,
+            "unlockId": 54,
+            "fullyActiveItemId": 901064,
             "talentBonusGroup": 1001,
             "privateSlotNumber": 3,
             "publicSlotNumber": 3

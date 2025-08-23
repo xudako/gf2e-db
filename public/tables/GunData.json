@@ -33,6 +33,7 @@
                 100106,
                 100107
             ],
+            "element": 1,
             "weaponType": 7,
             "weaponPrivateShow": [
                 11007,
@@ -103,7 +104,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "weaponPrivate": [],
             "useFakeAttack": false,
             "defaultGrade": 0,
@@ -140,6 +140,7 @@
             "skillTalentExtra": [
                 10000
             ],
+            "element": 4,
             "weaponType": 3,
             "weaponPrivateShow": [
                 11009,
@@ -211,7 +212,6 @@
             "extra": "",
             "skillActiveExtra": [],
             "aiList": [],
-            "element": 0,
             "weaponPrivate": [],
             "defaultGrade": 0,
             "barrackEffectId": [],
@@ -257,6 +257,7 @@
                 100906,
                 100907
             ],
+            "element": 5,
             "weaponType": 1,
             "weaponPrivateShow": [
                 11015,
@@ -326,7 +327,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "weaponPrivate": [],
             "defaultGrade": 0,
             "barrackEffectId": [],
@@ -372,6 +372,7 @@
                 101306,
                 101307
             ],
+            "element": 2,
             "weaponType": 2,
             "weaponPrivate": [
                 10133
@@ -449,7 +450,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "avatar": 0,
             "barrackAudioId": 0,
@@ -728,6 +728,7 @@
                 102106,
                 102107
             ],
+            "element": 4,
             "weaponType": 5,
             "weaponPrivate": [
                 11020
@@ -803,7 +804,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
@@ -847,6 +847,7 @@
                 102206,
                 102207
             ],
+            "element": 1,
             "weaponType": 4,
             "weaponPrivateShow": [
                 11031,
@@ -916,7 +917,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "weaponPrivate": [],
             "defaultGrade": 0,
             "barrackEffectId": [],
@@ -962,6 +962,7 @@
                 102306,
                 102307
             ],
+            "element": 3,
             "weaponType": 3,
             "weaponPrivate": [
                 10233
@@ -1033,7 +1034,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "avatar": 0,
             "barrackEffectId": [],
@@ -1079,6 +1079,7 @@
                 102406,
                 102407
             ],
+            "element": 1,
             "weaponType": 2,
             "weaponPrivateShow": [
                 11040,
@@ -1152,7 +1153,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "weaponPrivate": [],
             "defaultGrade": 0,
             "barrackAudioId": 0,
@@ -1196,6 +1196,7 @@
                 102506,
                 102507
             ],
+            "element": 5,
             "weaponType": 4,
             "weaponPrivate": [
                 11038
@@ -1267,7 +1268,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
@@ -1312,6 +1312,7 @@
                 102306,
                 102307
             ],
+            "element": 4,
             "weaponType": 1,
             "weaponPrivateShow": [
                 11049,
@@ -1380,7 +1381,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "weaponPrivate": [],
             "defaultGrade": 0,
             "barrackEffectId": [],
@@ -1425,6 +1425,7 @@
                 101306,
                 101307
             ],
+            "element": 1,
             "weaponType": 4,
             "weaponPrivate": [
                 11044
@@ -1500,7 +1501,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
@@ -1545,6 +1545,7 @@
                 102206,
                 102207
             ],
+            "element": 1,
             "weaponType": 4,
             "weaponPrivate": [
                 11056
@@ -1619,7 +1620,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
@@ -1664,6 +1664,7 @@
                 102406,
                 102407
             ],
+            "element": 5,
             "weaponType": 6,
             "weaponPrivate": [
                 11047
@@ -1741,7 +1742,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "barrackAudioId": 0,
             "shape": 0,
@@ -1903,6 +1903,7 @@
                 101706,
                 101707
             ],
+            "element": 2,
             "weaponType": 3,
             "weaponPrivate": [
                 10333
@@ -1980,7 +1981,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "barrackAudioId": 0,
             "shape": 0,
@@ -2023,6 +2023,7 @@
                 101706,
                 101707
             ],
+            "element": 3,
             "weaponType": 3,
             "weaponPrivate": [
                 10343
@@ -2098,7 +2099,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "avatar": 0,
             "barrackEffectId": [],
@@ -2117,7 +2117,7 @@
             "secondName": "-",
             "enName": "JiangyuSSR",
             "introduce": "A lively and enthusiastic Doll who follows in her older sister's footsteps with a carefree spirit. She roams the lands with her bandmates, bringing fresh and fiery notes to \"Monsoon\".",
-            "dialogue": "Ran into trouble, Commander? Leave it to me, I've got this!",
+            "dialogue": "Commander, running into trouble? Leave it to me, I've got this!",
             "code": "JiangyuSSR",
             "type": 4,
             "characterId": 20,
@@ -2143,6 +2143,7 @@
                 101706,
                 101707
             ],
+            "element": 2,
             "weaponType": 4,
             "weaponPrivate": [
                 10353
@@ -2215,7 +2216,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "avatar": 0,
             "barrackEffectId": [],
@@ -2260,6 +2260,7 @@
                 101706,
                 101707
             ],
+            "element": 1,
             "weaponType": 1,
             "weaponPrivateShow": [
                 10362,
@@ -2331,7 +2332,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "weaponPrivate": [],
             "defaultGrade": 0,
             "barrackEffectId": [],
@@ -2606,6 +2606,7 @@
                 101706,
                 101707
             ],
+            "element": 3,
             "weaponType": 2,
             "weaponPrivate": [
                 10393
@@ -2679,7 +2680,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "avatar": 0,
             "barrackEffectId": [],
@@ -2842,6 +2842,7 @@
                 101706,
                 101707
             ],
+            "element": 3,
             "weaponType": 6,
             "weaponPrivateShow": [
                 10411,
@@ -2911,7 +2912,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "weaponPrivate": [],
             "defaultGrade": 0,
             "avatar": 0,
@@ -2958,6 +2958,7 @@
                 101706,
                 101707
             ],
+            "element": 2,
             "weaponType": 4,
             "weaponPrivate": [
                 10423
@@ -3030,7 +3031,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "avatar": 0,
             "barrackEffectId": [],
@@ -3048,7 +3048,7 @@
             "firstName": "Faye",
             "secondName": "-",
             "enName": "FayeSSR",
-            "introduce": "A Doll whose appearance contrasts greatly with her personality. Small in stature yet imposing, she carries a gun on one hand and an axe in another, creating a presence that would scare off most people. However, if you are willing to look past her appearance and get to understand her better, you will find that, behind her intolerant expression and irritable tone lies a delicate, sensitive soul. She too, is awaiting your warmth.",
+            "introduce": "A Doll whose appearance contrasts greatly with her personality. Small in stature yet imposing, she carries a gun in one hand and an axe in another, creating a presence that would scare off most people. However, if you are willing to look past her appearance and get to understand her better, you will find that, behind her intolerant expression and irritable tone lies a delicate, sensitive soul. She too, is awaiting your warmth.",
             "dialogue": "I'll get rid of everything that stands in the Commander's way.",
             "code": "FayeSSR",
             "type": 4,
@@ -3195,6 +3195,7 @@
                 101706,
                 101707
             ],
+            "element": 1,
             "weaponType": 2,
             "weaponPrivate": [
                 10443
@@ -3268,7 +3269,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "avatar": 0,
             "barrackEffectId": [],
@@ -3287,7 +3287,7 @@
             "secondName": "-",
             "enName": "BiyocaSSR",
             "introduce": "Her innocence, liveliness and considerate personality is written on her face. Absolutely loyal to the Commander and her big sister, she is a Doll who strives to become an elite Doll loved by everyone. With her around, awkward silences are no longer a thing!",
-            "dialogue": "Hi, Commander~ Remember me? I'm... hehe. Big Sis gave me a new name, you can call me Belka now~!",
+            "dialogue": "Commander~ Do you remember me? Big Sis gave me this name. My name is Belka now!",
             "code": "BiyocaSSR",
             "type": 4,
             "characterId": 30,
@@ -3313,6 +3313,7 @@
                 101706,
                 101707
             ],
+            "element": 2,
             "weaponType": 4,
             "weaponPrivate": [
                 10453
@@ -3386,7 +3387,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "avatar": 0,
             "barrackEffectId": [],
@@ -3404,8 +3404,8 @@
             "firstName": "Springfield",
             "secondName": "-",
             "enName": "SpringfieldSSR",
-            "introduce": "Gentle, strong and understanding of others, she is a tactful and witty Doll who mingles well with different groups of people without allowing anyone to take advantage of her. Behind her tolerance lies an adherence to principles, that being Springfield's one and only principle— She shall always protect her friends and those who are important to her.",
-            "dialogue": "Commander, I'm very glad to be fighting by your side again. Is this the Elmo? I've always wanted to take a look around it.",
+            "introduce": "Gentle, strong, and understanding of others, she is a tactful and witty Doll who mingles well with different groups of people without allowing anyone to take advantage of her. Behind her tolerance lies an adherence to principles, that being Springfield's one and only principle—She shall always protect her friends and those who are important to her.",
+            "dialogue": "To think the day would come when I could fight alongside the Commander again... So this is the fabled Elmo? I finally get to see it in person.",
             "code": "SpringfieldSSR",
             "type": 4,
             "characterId": 32,
@@ -3432,6 +3432,7 @@
                 101706,
                 101707
             ],
+            "element": 5,
             "weaponType": 3,
             "weaponPrivate": [
                 10473
@@ -3506,7 +3507,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "avatar": 0,
             "barrackEffectId": [],
@@ -3524,8 +3524,8 @@
             "firstName": "Qiuhua",
             "secondName": "-",
             "enName": "QiuhuaSSR",
-            "introduce": "A passionate, high-energy Doll with an optimistic outlook on life. As a gourmet hunter in the Yellow Zone, she's made it her mission to develop new ingredients to tackle food shortages. Standing against injustice is a way of life for her and her credo is to never let a conversation trail off. \"While I can't say I approve of adding ketchup to deep fried pork, if that's how you like it, then I suppose I can live with it.\"",
-            "dialogue": "Awesome, wild herbs and protein... Commander? You're just in time! Tonight, our mouths rejoice!",
+            "introduce": "A passionate, high-energy Doll with an optimistic outlook on life. As a gourmet hunter in the Yellow Zones, she's made it her mission to develop new ingredients to tackle food shortages. Standing against injustice is a way of life for her and her credo is to never let a conversation trail off. \"While I can't say I approve of adding ketchup to Guo Bao Rou, if that's how you like it, then I suppose I can live with it.\"",
+            "dialogue": "Yay! It's wild herbs and protein... Oh, Commander, perfect timing. We've got a feast today~!",
             "code": "QiuhuaSSR",
             "type": 4,
             "characterId": 33,
@@ -3552,6 +3552,7 @@
                 101706,
                 101707
             ],
+            "element": 1,
             "weaponType": 6,
             "weaponPrivate": [
                 10483
@@ -3575,7 +3576,8 @@
             "barrackCameraSetting": "0.3,0,0.5,1.9",
             "costumeId": 1104800,
             "costumeReplace": [
-                1104800
+                1104800,
+                1104801
             ],
             "propertyId": 11048,
             "weight": 2,
@@ -3625,7 +3627,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "avatar": 0,
             "barrackEffectId": [],
@@ -3670,6 +3671,7 @@
                 101706,
                 101707
             ],
+            "element": 5,
             "weaponType": 2,
             "weaponPrivate": [
                 10503
@@ -3744,7 +3746,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
@@ -3789,6 +3790,7 @@
                 101706,
                 101707
             ],
+            "element": 4,
             "weaponType": 4,
             "weaponPrivate": [
                 10513
@@ -3861,7 +3863,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
@@ -3906,6 +3907,7 @@
                 101706,
                 101707
             ],
+            "element": 4,
             "weaponType": 4,
             "weaponPrivate": [
                 10523
@@ -3981,7 +3983,6 @@
             ],
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "barrackEffectId": [],
             "barrackAudioId": 0,
@@ -3998,7 +3999,7 @@
             "firstName": "Peri",
             "enName": "PeriSSR",
             "introduce": "A cute little Doll with big dreams, Peri has grown into a strong, independent Doll while following in the footsteps of her master. Her cheerful and lively personality has won the trust of many clients while her wits and experience have allowed her to avoid many pitfalls. All her efforts are to become a super cool and reliable Doll, so why not try relying on her a little?",
-            "dialogue": "This is Peri, reporting in! I've grown a lot compared to before! Huh? Y-You heard about me from an underground broker?",
+            "dialogue": "I'm Peri! I'm a lot more grown up now! Huh? You heard my name from underground brokers?",
             "code": "PeriSSR",
             "type": 2,
             "characterId": 38,
@@ -4024,6 +4025,7 @@
                 101706,
                 101707
             ],
+            "element": 1,
             "weaponType": 2,
             "weaponPrivate": [
                 10533
@@ -4096,7 +4098,6 @@
             "secondName": "",
             "extra": "",
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "avatar": 0,
             "barrackEffectId": [],
@@ -4230,7 +4231,7 @@
             "name": "Nikketa",
             "firstName": "Nikketa",
             "enName": "NikketaSSR",
-            "introduce": "A security officer who upholds justice, a kind older sister figure who cherishes children, a big spender who uses up all her monthly earnings— Who is to say that these three identities can't belong to the same person? Nikketa fights in the frontlines of justice, calmly demonstrating her values and beliefs. Yet when she faces you, another side of her emerges. \"My work has taught me not to trust anyone. Boss is the exception though. We are fellow partners in the pursuit of justice.\"",
+            "introduce": "A security officer who upholds justice, a kind older sister figure who cherishes children, a big spender who uses up all her monthly earnings—Who is to say that these three identities can't belong to the same person? Nikketa fights on the frontlines of justice, calmly demonstrating her values and beliefs. Yet when she faces you, another side of her emerges. \"My work has taught me not to trust anyone. Boss is the exception though. We are fellow partners in the pursuit of justice.\"",
             "dialogue": "Want to join me in defending justice, Boss?",
             "code": "NikketaSSR",
             "characterId": 40,
@@ -4257,6 +4258,7 @@
                 101706,
                 101707
             ],
+            "element": 5,
             "weaponType": 3,
             "weaponPrivate": [
                 10553
@@ -4332,7 +4334,6 @@
             "extra": "",
             "type": 0,
             "skillActiveExtra": [],
-            "element": 0,
             "defaultGrade": 0,
             "avatar": 0,
             "barrackEffectId": [],
@@ -4347,10 +4348,10 @@
         {
             "id": 1056,
             "name": "Leva",
-            "firstName": "莱娅",
+            "firstName": "Leva",
             "enName": "LevaSSR",
-            "introduce": "如果觉得眼前的人形亲切友善，那多半已经踏入她的陷阱之中了。倘若未能及时察觉，接下来的一切损失，莱娅概不负责，除非……这个人是你。\n“指挥官，不会是故意吃亏的吧？哼哼♪那也无所谓，你想让我怎么对你负责呢？”",
-            "dialogue": "接下来，我们的合作将会更加紧密哟，期不期待呀，指挥官？",
+            "introduce": "If you think the Doll you're looking at is kind and friendly, then you're one foot into her trap already. If you don't realize it in time, then Leva's not going to take responsibility for anything you lose as a result... Unless it's you.\n\"Commander, are you trying to set yourself up for a loss here? Hehe♪ I don't mind, though. So how do you intend to have me take responsibility for you, hm?\"",
+            "dialogue": "We'll be working closer and closer together from now on. Looking forward to it, Commander?",
             "code": "LevaSSR",
             "characterId": 41,
             "getAudio": 7105622,
@@ -4441,7 +4442,7 @@
             "gachaGetAudio": 12105605,
             "gachaGetVoice": 71105605,
             "weakWeaponTag": 4,
-            "BGEOPIAGBKE": "我一定会尽·心·尽·力配合你哟，指挥官。",
+            "BGEOPIAGBKE": "I'll make sure I do. Everything. I. Can. to match your pace, Commander.",
             "KJLGGIDKCEM": [
                 101,
                 203,
@@ -4469,10 +4470,10 @@
         {
             "id": 1057,
             "name": "Robella",
-            "firstName": "洛贝拉",
+            "firstName": "Robella",
             "enName": "RobellaSSR",
-            "introduce": "表面上抉择果断，做事雷厉风行的洛贝拉，其实在看不见的地方，已经独自一人纠结很久了。她的敏感、温柔和纤细，是只有你能看见的东西。\n“太累的话，接下来的工作就交给我吧……我可不希望，指挥官缺席一会的作战会议。”",
-            "dialogue": "终于再见到您了。请您下令，指挥官，洛贝拉听候您的差遣，一如从前。",
+            "introduce": "Robella is the very picture of decisiveness and swift action, but the truth is, she has been struggling with herself for a long time now, although it is not something others would see. Witnessing her sensitivity, kindness and delicacy are a privilege for you and you alone. \n“If you're tired, you can leave the rest of the work to me... I don't want you to have to miss our briefing afterwards, Commander.”",
+            "dialogue": "At last, we meet again. Please give me the order, Commander. Robella is ready to serve, just like before.",
             "code": "RobellaSSR",
             "characterId": 42,
             "getAudio": 7105722,
@@ -4559,7 +4560,7 @@
             "gachaGetAudio": 12105705,
             "gachaGetVoice": 71105705,
             "weakWeaponTag": 4,
-            "BGEOPIAGBKE": "收到，是时候拯救世界了。",
+            "BGEOPIAGBKE": "Roger that. Time to save the world.",
             "KJLGGIDKCEM": [
                 101,
                 205,
@@ -4586,10 +4587,10 @@
         {
             "id": 1058,
             "name": "Lainie",
-            "firstName": "莱妮",
+            "firstName": "Lainie",
             "enName": "LeneSSR",
-            "introduce": "从心智记录中重新“诞生”出的人形，是活泼开朗的小太阳，也是坚强果断的战士。虽然外貌与性格看似和从前别无二致，但莱妮清楚，模拟出的过去并不是她的全部，眼前的未来还有着无限可能。心智中的大量空白，正等待她用新的体验填满；而已经写入数据的那部分，她好好记录着她和莱娅、和你、和大家的羁绊。\n“指挥官，今天也来一起晒太阳吧~”",
-            "dialogue": "指挥官，这可是我第一次加入人类的队伍，接下来的日子，就请您多多关照咯！",
+            "introduce": "A Doll who was \"reborn\" from Leva's neural logs, she's a little ball of sunshine and a decisive, resilient fighter. While her looks and personality are practically the same as the person she was modeled on, Lainie knows that her simulated past doesn't define her, and her future holds limitless possibilities. There is plenty of empty space in her neural cloud, just waiting to be filled with new experiences. She wants to cherish her bonds with Leva, you, and everyone else.\n\"Commander, let's go out and get some sun today~\"",
+            "dialogue": "Commander, this is my first time joining a human team! I'll be in your care from now on!",
             "code": "LeneSSR",
             "characterId": 43,
             "getAudio": 7105822,
@@ -4675,7 +4676,7 @@
             "gachaGetAudio": 12105805,
             "gachaGetVoice": 71105805,
             "weakWeaponTag": 4,
-            "BGEOPIAGBKE": "是新任务吗？好诶~咻——的一下，全部做好！",
+            "BGEOPIAGBKE": "Is it a new mission? Woohoo~ We'll get it all done, just like that!",
             "KJLGGIDKCEM": [
                 101,
                 206,
@@ -4689,6 +4690,125 @@
             "type": 0,
             "skillActiveExtra": [],
             "element": 0,
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
+            "id": 1064,
+            "name": "Florence",
+            "firstName": "Florence",
+            "enName": "FlorenceSSR",
+            "introduce": "A medical Doll who craves excitement and amusement, she's extremely forward and given to coquetry. Both her medical and pharmaceutical techniques are top-notch, but her personality often makes her passion hard to bear.\n\"Now, which would you prefer? This pill, this syringe, or my punishment? All of them will make you feel reeeeeally good~\"",
+            "dialogue": "Bonjour, Commander! Florence reporting; I'm here to bring you the ultimate in enjoyment and excitement, so how about cheering up a little?",
+            "code": "FlorenceSSR",
+            "characterId": 49,
+            "getAudio": 7106422,
+            "duty": 3,
+            "secondDuty": [
+                13,
+                32
+            ],
+            "rank": 5,
+            "roleTemplateId": 1064,
+            "coreItemId": 4064,
+            "skillNormalAttack": 10640101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "element": 5,
+            "weaponType": 1,
+            "weaponPrivate": [
+                10643
+            ],
+            "weaponPrivateShow": [
+                10641,
+                10642,
+                10643
+            ],
+            "weaponDefault": 10641,
+            "moveCode": 27,
+            "soldGet1": {
+                "4064": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1064,
+            "gunClass": 41,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1106400,
+            "costumeReplace": [
+                1106400,
+                1106401
+            ],
+            "propertyId": 11064,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/FlorenceSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "4",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44064
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12106405,
+            "gachaGetVoice": 71106405,
+            "weakWeaponTag": 32,
+            "BGEOPIAGBKE": "I wonder what we'll encounter next... How thrilling.",
+            "KJLGGIDKCEM": [
+                102,
+                202,
+                301,
+                401,
+                502,
+                602,
+                704,
+                901
+            ],
+            "secondName": "",
+            "extra": "",
+            "type": 0,
+            "skillActiveExtra": [],
             "defaultGrade": 0,
             "avatar": 0,
             "barrackEffectId": [],
