@@ -243,6 +243,17 @@
             "cost": {}
         },
         {
+            "id": 210040501,
+            "talentEffectGeneGroup": 2100405,
+            "level": 1,
+            "propertyId": 8100405,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
             "id": 210040601,
             "talentEffectGeneGroup": 2100406,
             "level": 1,
@@ -2696,6 +2707,204 @@
             "cost": {}
         },
         {
+            "id": 210420101,
+            "talentEffectGeneGroup": 2104201,
+            "level": 1,
+            "propertyId": 8104201,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210420201,
+            "talentEffectGeneGroup": 2104202,
+            "level": 1,
+            "propertyId": 8104202,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210420301,
+            "talentEffectGeneGroup": 2104203,
+            "level": 1,
+            "propertyId": 8104203,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210420401,
+            "talentEffectGeneGroup": 2104204,
+            "level": 1,
+            "propertyId": 8104204,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210420501,
+            "talentEffectGeneGroup": 2104205,
+            "level": 1,
+            "propertyId": 8104205,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210420601,
+            "talentEffectGeneGroup": 2104206,
+            "level": 1,
+            "propertyId": 8104206,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210430101,
+            "talentEffectGeneGroup": 2104301,
+            "level": 1,
+            "propertyId": 8104301,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210430201,
+            "talentEffectGeneGroup": 2104302,
+            "level": 1,
+            "propertyId": 8104302,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210430301,
+            "talentEffectGeneGroup": 2104303,
+            "level": 1,
+            "propertyId": 8104303,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210430401,
+            "talentEffectGeneGroup": 2104304,
+            "level": 1,
+            "propertyId": 8104304,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210430501,
+            "talentEffectGeneGroup": 2104305,
+            "level": 1,
+            "propertyId": 8104305,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210430601,
+            "talentEffectGeneGroup": 2104306,
+            "level": 1,
+            "propertyId": 8104306,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210440101,
+            "talentEffectGeneGroup": 2104401,
+            "level": 1,
+            "propertyId": 8104401,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210440201,
+            "talentEffectGeneGroup": 2104402,
+            "level": 1,
+            "propertyId": 8104402,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210440301,
+            "talentEffectGeneGroup": 2104403,
+            "level": 1,
+            "propertyId": 8104403,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210440401,
+            "talentEffectGeneGroup": 2104404,
+            "level": 1,
+            "propertyId": 8104404,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210440501,
+            "talentEffectGeneGroup": 2104405,
+            "level": 1,
+            "propertyId": 8104405,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
+            "id": 210440601,
+            "talentEffectGeneGroup": 2104406,
+            "level": 1,
+            "propertyId": 8104406,
+            "tpItemCost": 100,
+            "skillId": 0,
+            "itemId": 0,
+            "geneIcon": "",
+            "cost": {}
+        },
+        {
             "id": 310010101,
             "talentEffectGeneGroup": 3100101,
             "level": 1,
@@ -3578,6 +3787,17 @@
             "talentEffectGeneGroup": 3100907,
             "level": 1,
             "itemId": 901021,
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0,
+            "cost": {}
+        },
+        {
+            "id": 310090801,
+            "talentEffectGeneGroup": 3100908,
+            "level": 1,
+            "itemId": 921021,
             "propertyId": 0,
             "skillId": 0,
             "geneIcon": "",
@@ -5441,6 +5661,17 @@
             "cost": {}
         },
         {
+            "id": 310280801,
+            "talentEffectGeneGroup": 3102808,
+            "level": 1,
+            "itemId": 921051,
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0,
+            "cost": {}
+        },
+        {
             "id": 310290101,
             "talentEffectGeneGroup": 3102901,
             "level": 1,
@@ -5612,6 +5843,17 @@
             "talentEffectGeneGroup": 3103007,
             "level": 1,
             "itemId": 901045,
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0,
+            "cost": {}
+        },
+        {
+            "id": 310300801,
+            "talentEffectGeneGroup": 3103008,
+            "level": 1,
+            "itemId": 921045,
             "propertyId": 0,
             "skillId": 0,
             "geneIcon": "",
@@ -6613,6 +6855,273 @@
             "talentEffectGeneGroup": 3104107,
             "level": 1,
             "itemId": 901064,
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0,
+            "cost": {}
+        },
+        {
+            "id": 310420101,
+            "talentEffectGeneGroup": 3104201,
+            "level": 1,
+            "itemId": 205901,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310420201,
+            "talentEffectGeneGroup": 3104202,
+            "level": 1,
+            "itemId": 205902,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310420301,
+            "talentEffectGeneGroup": 3104203,
+            "level": 1,
+            "itemId": 205903,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310420401,
+            "talentEffectGeneGroup": 3104204,
+            "level": 1,
+            "itemId": 205904,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310420501,
+            "talentEffectGeneGroup": 3104205,
+            "level": 1,
+            "itemId": 205905,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310420601,
+            "talentEffectGeneGroup": 3104206,
+            "level": 1,
+            "itemId": 205906,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310420701,
+            "talentEffectGeneGroup": 3104207,
+            "level": 1,
+            "itemId": 901059,
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0,
+            "cost": {}
+        },
+        {
+            "id": 310430101,
+            "talentEffectGeneGroup": 3104301,
+            "level": 1,
+            "itemId": 206501,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310430201,
+            "talentEffectGeneGroup": 3104302,
+            "level": 1,
+            "itemId": 206502,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310430301,
+            "talentEffectGeneGroup": 3104303,
+            "level": 1,
+            "itemId": 206503,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310430401,
+            "talentEffectGeneGroup": 3104304,
+            "level": 1,
+            "itemId": 206504,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310430501,
+            "talentEffectGeneGroup": 3104305,
+            "level": 1,
+            "itemId": 206505,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310430601,
+            "talentEffectGeneGroup": 3104306,
+            "level": 1,
+            "itemId": 206506,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310430701,
+            "talentEffectGeneGroup": 3104307,
+            "level": 1,
+            "itemId": 901065,
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0,
+            "cost": {}
+        },
+        {
+            "id": 310440101,
+            "talentEffectGeneGroup": 3104401,
+            "level": 1,
+            "itemId": 206101,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310440201,
+            "talentEffectGeneGroup": 3104402,
+            "level": 1,
+            "itemId": 206102,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310440301,
+            "talentEffectGeneGroup": 3104403,
+            "level": 1,
+            "itemId": 206103,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310440401,
+            "talentEffectGeneGroup": 3104404,
+            "level": 1,
+            "itemId": 206104,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310440501,
+            "talentEffectGeneGroup": 3104405,
+            "level": 1,
+            "itemId": 206105,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310440601,
+            "talentEffectGeneGroup": 3104406,
+            "level": 1,
+            "itemId": 206106,
+            "cost": {
+                "9004": 1
+            },
+            "propertyId": 0,
+            "skillId": 0,
+            "geneIcon": "",
+            "tpItemCost": 0
+        },
+        {
+            "id": 310440701,
+            "talentEffectGeneGroup": 3104407,
+            "level": 1,
+            "itemId": 901061,
             "propertyId": 0,
             "skillId": 0,
             "geneIcon": "",

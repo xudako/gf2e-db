@@ -2664,6 +2664,201 @@
             "gunLevelMax": 60,
             "propertyId": 10004104,
             "itemCost": {}
+        },
+        {
+            "id": 206,
+            "gunClassGroupId": 42,
+            "classLevel": 1,
+            "className": "Ⅰ",
+            "icon": "Img_Mental_number_1",
+            "gunLevelMax": 20,
+            "itemCost": {
+                "2": 1000,
+                "8328": 4
+            },
+            "propertyId": 99999999
+        },
+        {
+            "id": 207,
+            "gunClassGroupId": 42,
+            "classLevel": 2,
+            "className": "Ⅱ",
+            "icon": "Img_Mental_number_2",
+            "gunLevelMax": 30,
+            "itemCost": {
+                "2": 2000,
+                "8328": 6,
+                "8329": 8
+            },
+            "propertyId": 10004201
+        },
+        {
+            "id": 208,
+            "gunClassGroupId": 42,
+            "classLevel": 3,
+            "className": "Ⅲ",
+            "icon": "Img_Mental_number_3",
+            "gunLevelMax": 40,
+            "itemCost": {
+                "2": 4000,
+                "8330": 8,
+                "8329": 16
+            },
+            "propertyId": 10004202
+        },
+        {
+            "id": 209,
+            "gunClassGroupId": 42,
+            "classLevel": 4,
+            "className": "Ⅳ",
+            "icon": "Img_Mental_number_4",
+            "gunLevelMax": 50,
+            "itemCost": {
+                "2": 12000,
+                "8330": 12,
+                "8331": 5
+            },
+            "propertyId": 10004203
+        },
+        {
+            "id": 210,
+            "gunClassGroupId": 42,
+            "classLevel": 5,
+            "className": "Ⅴ",
+            "icon": "Img_Mental_number_5",
+            "gunLevelMax": 60,
+            "propertyId": 10004204,
+            "itemCost": {}
+        },
+        {
+            "id": 211,
+            "gunClassGroupId": 43,
+            "classLevel": 1,
+            "className": "Ⅰ",
+            "icon": "Img_Mental_number_1",
+            "gunLevelMax": 20,
+            "itemCost": {
+                "2": 1000,
+                "8328": 4
+            },
+            "propertyId": 99999999
+        },
+        {
+            "id": 212,
+            "gunClassGroupId": 43,
+            "classLevel": 2,
+            "className": "Ⅱ",
+            "icon": "Img_Mental_number_2",
+            "gunLevelMax": 30,
+            "itemCost": {
+                "2": 2000,
+                "8328": 6,
+                "8329": 8
+            },
+            "propertyId": 10004301
+        },
+        {
+            "id": 213,
+            "gunClassGroupId": 43,
+            "classLevel": 3,
+            "className": "Ⅲ",
+            "icon": "Img_Mental_number_3",
+            "gunLevelMax": 40,
+            "itemCost": {
+                "2": 4000,
+                "8330": 8,
+                "8329": 16
+            },
+            "propertyId": 10004302
+        },
+        {
+            "id": 214,
+            "gunClassGroupId": 43,
+            "classLevel": 4,
+            "className": "Ⅳ",
+            "icon": "Img_Mental_number_4",
+            "gunLevelMax": 50,
+            "itemCost": {
+                "2": 12000,
+                "8330": 12,
+                "8331": 5
+            },
+            "propertyId": 10004303
+        },
+        {
+            "id": 215,
+            "gunClassGroupId": 43,
+            "classLevel": 5,
+            "className": "Ⅴ",
+            "icon": "Img_Mental_number_5",
+            "gunLevelMax": 60,
+            "propertyId": 10004304,
+            "itemCost": {}
+        },
+        {
+            "id": 216,
+            "gunClassGroupId": 44,
+            "classLevel": 1,
+            "className": "Ⅰ",
+            "icon": "Img_Mental_number_1",
+            "gunLevelMax": 20,
+            "itemCost": {
+                "2": 1000,
+                "8328": 4
+            },
+            "propertyId": 99999999
+        },
+        {
+            "id": 217,
+            "gunClassGroupId": 44,
+            "classLevel": 2,
+            "className": "Ⅱ",
+            "icon": "Img_Mental_number_2",
+            "gunLevelMax": 30,
+            "itemCost": {
+                "2": 2000,
+                "8328": 6,
+                "8329": 8
+            },
+            "propertyId": 10004401
+        },
+        {
+            "id": 218,
+            "gunClassGroupId": 44,
+            "classLevel": 3,
+            "className": "Ⅲ",
+            "icon": "Img_Mental_number_3",
+            "gunLevelMax": 40,
+            "itemCost": {
+                "2": 4000,
+                "8330": 8,
+                "8329": 16
+            },
+            "propertyId": 10004402
+        },
+        {
+            "id": 219,
+            "gunClassGroupId": 44,
+            "classLevel": 4,
+            "className": "Ⅳ",
+            "icon": "Img_Mental_number_4",
+            "gunLevelMax": 50,
+            "itemCost": {
+                "2": 12000,
+                "8330": 12,
+                "8331": 5
+            },
+            "propertyId": 10004403
+        },
+        {
+            "id": 220,
+            "gunClassGroupId": 44,
+            "classLevel": 5,
+            "className": "Ⅴ",
+            "icon": "Img_Mental_number_5",
+            "gunLevelMax": 60,
+            "propertyId": 10004404,
+            "itemCost": {}
         }
     ]
 }

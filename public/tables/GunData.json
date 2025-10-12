@@ -1222,7 +1222,8 @@
             "costumeId": 1102500,
             "costumeReplace": [
                 1102500,
-                1102501
+                1102501,
+                1102502
             ],
             "propertyId": 11025,
             "weight": 2,
@@ -1570,7 +1571,8 @@
             "avatar": 21013,
             "costumeId": 1102800,
             "costumeReplace": [
-                1102800
+                1102800,
+                1102801
             ],
             "propertyId": 11028,
             "weight": 2,
@@ -2122,10 +2124,11 @@
             "type": 4,
             "characterId": 20,
             "getAudio": 71035041,
-            "duty": 4,
+            "duty": 3,
             "secondDuty": [
-                14,
-                20
+                52,
+                30,
+                16
             ],
             "rank": 5,
             "roleTemplateId": 1035,
@@ -2167,7 +2170,8 @@
             "barrackCameraSetting": "0.3,0,0.5,1.9",
             "costumeId": 1103500,
             "costumeReplace": [
-                1103500
+                1103500,
+                1103501
             ],
             "propertyId": 11035,
             "weight": 2,
@@ -2210,8 +2214,9 @@
                 203,
                 302,
                 402,
-                503,
+                501,
                 603,
+                707,
                 902
             ],
             "extra": "",
@@ -2930,7 +2935,7 @@
             "firstName": "Andoris",
             "secondName": "-",
             "enName": "AndorisSSR",
-            "introduce": "A gentle, approachable Doll. Although she has performance limitations, she does not indulge in self pity, but instead proactively searches for a place she can call home. A Doll who embraces and accomodates everyone around her, she has become a source of refuge for others without realizing it.",
+            "introduce": "A gentle, approachable Doll. Although she has performance limitations, she does not indulge in self-pity, but instead proactively searches for a place she can call home. A Doll who embraces and accommodates everyone around her, she has become a source of refuge for others without realizing it.",
             "dialogue": "We've finally met, Commander. Everyone at H.I.D.E. 404 spoke of you. I look forward... to our partnership.",
             "code": "AndorisSSR",
             "type": 4,
@@ -3286,7 +3291,7 @@
             "firstName": "Belka",
             "secondName": "-",
             "enName": "BiyocaSSR",
-            "introduce": "Her innocence, liveliness and considerate personality is written on her face. Absolutely loyal to the Commander and her big sister, she is a Doll who strives to become an elite Doll loved by everyone. With her around, awkward silences are no longer a thing!",
+            "introduce": "Her innocence, liveliness, and harmless little scheming are written on her face. Absolutely loyal to the Commander and her big sister, she is a Doll who strives to become an elite Doll loved by everyone. With her around, awkward silences are no longer a thing!",
             "dialogue": "Commander~ Do you remember me? Big Sis gave me this name. My name is Belka now!",
             "code": "BiyocaSSR",
             "type": 4,
@@ -4702,12 +4707,248 @@
             "feature": 0
         },
         {
+            "id": 1059,
+            "name": "Lind",
+            "firstName": "Lind",
+            "enName": "LindSSR",
+            "introduce": "A Doll with a prickly exterior but who has a sensitive soul. She often ends up forcing herself to do things she's poor at and hating herself as a result. She enjoys listening to late-night radio channels, and gets extremely irritable if she doesn't replenish her sugar levels in time. She hates violence, but considers weapons to be civilized and effective problem-solving tools, so using a gun doesn't fall under that definition.\n\"Consuming too much sugar will make me malfunction, but I'll scrap myself on the spot if I don't get any right now, so I guess I should have some... Nom. Want some too, Commander?\"",
+            "dialogue": "Can we pass on those excessively formal introductions? They make me want to puke. Besides, it's not like this is our first time meeting anyway... My name? Just call me Lind.",
+            "code": "LindSSR",
+            "characterId": 44,
+            "getAudio": 7105922,
+            "duty": 4,
+            "secondDuty": [
+                12,
+                49,
+                33
+            ],
+            "rank": 5,
+            "roleTemplateId": 1059,
+            "coreItemId": 4059,
+            "skillNormalAttack": 10590101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "element": 4,
+            "weaponType": 6,
+            "weaponPrivate": [
+                10593
+            ],
+            "weaponPrivateShow": [
+                10591,
+                10592,
+                10593
+            ],
+            "weaponDefault": 10591,
+            "moveCode": 27,
+            "soldGet1": {
+                "4059": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1059,
+            "gunClass": 42,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1105900,
+            "costumeReplace": [
+                1105900,
+                1105901
+            ],
+            "propertyId": 11059,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/LindSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "2",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44059
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12105905,
+            "gachaGetVoice": 71105905,
+            "weakWeaponTag": 8,
+            "BGEOPIAGBKE": "Tsk... I'll show you just how an advanced Doll solves problems.",
+            "KJLGGIDKCEM": [
+                101,
+                204,
+                304,
+                401,
+                604,
+                901
+            ],
+            "secondName": "",
+            "extra": "",
+            "type": 0,
+            "skillActiveExtra": [],
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
+            "id": 1061,
+            "name": "Bathilde",
+            "firstName": "Bathilde",
+            "enName": "BalthildeSSR",
+            "introduce": "The first impression she makes on others is being an impatient Doll, often getting anxious when communicating with others. This only gets more obvious after her words end up getting misunderstood, which tends to lead to her hyperfocusing on irrelevant issues after being driven to her wits' end. However, this is simply  because she doesn't know how to properly express herself. Those who take the time to understand her will come to realize how sensitive and careful she is, as well as her perfectionist attitude toward her work.\n“...Keep smiling, don't glare at people, keep smiling... I must look really fierce now, don't I? I'm still learning how to smile, so please be patient.”",
+            "dialogue": "What you see as scrap metal isn't necessarily trash to me, but treasure.",
+            "code": "BalthildeSSR",
+            "characterId": 46,
+            "getAudio": 7106122,
+            "duty": 3,
+            "secondDuty": [
+                32,
+                51
+            ],
+            "rank": 5,
+            "roleTemplateId": 1061,
+            "coreItemId": 4061,
+            "skillNormalAttack": 10610101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "weaponType": 5,
+            "weaponPrivate": [
+                10613
+            ],
+            "weaponPrivateShow": [
+                10611,
+                10612,
+                10613
+            ],
+            "weaponDefault": 10611,
+            "moveCode": 27,
+            "soldGet1": {
+                "4061": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1061,
+            "gunClass": 44,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1106100,
+            "costumeReplace": [
+                1106100
+            ],
+            "propertyId": 11061,
+            "barrackEffectId": [
+                106101
+            ],
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/BalthildeSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "5",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 901084,
+            "unlockDorm": [
+                44061
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12106105,
+            "gachaGetVoice": 71106105,
+            "weakWeaponTag": 2,
+            "BGEOPIAGBKE": "Leave anything repair-related to me, Commander.",
+            "KJLGGIDKCEM": [
+                102,
+                206,
+                303,
+                402,
+                708,
+                901
+            ],
+            "secondName": "",
+            "extra": "",
+            "type": 0,
+            "skillActiveExtra": [],
+            "element": 0,
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
             "id": 1064,
             "name": "Florence",
             "firstName": "Florence",
             "enName": "FlorenceSSR",
             "introduce": "A medical Doll who craves excitement and amusement, she's extremely forward and given to coquetry. Both her medical and pharmaceutical techniques are top-notch, but her personality often makes her passion hard to bear.\n\"Now, which would you prefer? This pill, this syringe, or my punishment? All of them will make you feel reeeeeally good~\"",
-            "dialogue": "Bonjour, Commander! Florence reporting; I'm here to bring you the ultimate in enjoyment and excitement, so how about cheering up a little?",
+            "dialogue": "Bonjour Commander! Florence reporting. I'll be delivering the most exhilarating and delightful experience you've ever had. So—come on, show a little more excitement, won't you?",
             "code": "FlorenceSSR",
             "characterId": 49,
             "getAudio": 7106422,
@@ -4819,6 +5060,232 @@
             "shapeTerrain": 0,
             "isHide": false,
             "feature": 0
+        },
+        {
+            "id": 1065,
+            "name": "Alva",
+            "firstName": "Alva",
+            "enName": "AlvaSSR",
+            "introduce": "A tactical Doll who is outwardly cold, but who has a delicate heart. While she might seem to agree with others without much thought, the truth is that she takes their opinions to heart and tries her best to satisfy them. She notices little details and reactions that are otherwise overlooked and she is quite sensitive to her surroundings. However, this also leads to her being influenced easily by her environment. \n“I once thought time would change many things... However, it seems you haven't changed, and neither have we... It is only the world which changes every day,”",
+            "dialogue": "Alva reporting, Commander. THe AN-94 of the past isn't here any more, but I will use my new name and my new identity to fight for you and what is right.",
+            "code": "AlvaSSR",
+            "characterId": 50,
+            "getAudio": 7106522,
+            "duty": 3,
+            "secondDuty": [
+                29,
+                50,
+                20
+            ],
+            "rank": 5,
+            "roleTemplateId": 1065,
+            "coreItemId": 4065,
+            "skillNormalAttack": 10650101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "element": 3,
+            "weaponType": 4,
+            "weaponPrivate": [
+                10653
+            ],
+            "weaponPrivateShow": [
+                10651,
+                10652,
+                10653
+            ],
+            "weaponDefault": 10651,
+            "moveCode": 27,
+            "soldGet1": {
+                "4065": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1065,
+            "gunClass": 43,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1106500,
+            "costumeReplace": [
+                1106500,
+                1106501
+            ],
+            "propertyId": 11065,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/AlvaSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "weakTag": "4",
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44065
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12106505,
+            "gachaGetVoice": 71106505,
+            "weakWeaponTag": 32,
+            "BGEOPIAGBKE": "Snow Wolf is in position... Give the order, Commander.",
+            "KJLGGIDKCEM": [
+                102,
+                205,
+                302,
+                402,
+                503,
+                605,
+                706,
+                902
+            ],
+            "secondName": "",
+            "extra": "",
+            "type": 0,
+            "skillActiveExtra": [],
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "isHide": false,
+            "feature": 0
+        },
+        {
+            "id": 1066,
+            "name": "Voymastina",
+            "firstName": "Voymastina",
+            "enName": "VoymastinaSSR",
+            "introduce": "",
+            "dialogue": "",
+            "code": "VoymastinaSSR",
+            "characterId": 51,
+            "getAudio": 7106622,
+            "duty": 4,
+            "rank": 5,
+            "roleTemplateId": 1066,
+            "coreItemId": 4066,
+            "skillNormalAttack": 10660101,
+            "skillTalentExtra": [
+                10000
+            ],
+            "aiList": [
+                101701,
+                101702,
+                101703,
+                101704,
+                101705,
+                101706,
+                101707
+            ],
+            "weaponType": 4,
+            "weaponPrivate": [
+                10663
+            ],
+            "weaponPrivateShow": [
+                10661,
+                10662,
+                10663
+            ],
+            "weaponDefault": 10661,
+            "moveCode": 27,
+            "soldGet1": {
+                "4066": 30
+            },
+            "systemSwitch": 63,
+            "useFakeAttack": true,
+            "camp": 2001,
+            "unlockCost": 30,
+            "grade": 1066,
+            "gunClass": 5,
+            "barrackCameraSetting": "0.3,0,0.5,1.9",
+            "costumeId": 1106600,
+            "costumeReplace": [
+                1106600
+            ],
+            "propertyId": 11017,
+            "weight": 2,
+            "shieldType": 1,
+            "maxGrade": 6,
+            "supplyTypeBanList": [
+                0,
+                2
+            ],
+            "attackType": 1,
+            "gachaGetTimeline": "GunGet/VoymastinaSSR01_GunGetShow",
+            "beSuppressedConfig": [
+                80000001,
+                9999,
+                0,
+                0,
+                8
+            ],
+            "idleType": 1,
+            "displacement": 1,
+            "isHide": true,
+            "suppressGroup": [
+                2,
+                5,
+                8,
+                7
+            ],
+            "unlockHint": 160045,
+            "unlockDorm": [
+                44066
+            ],
+            "guardRadius": 500,
+            "guardRadiusShow": 1,
+            "gachaGetAudio": 12106605,
+            "gachaGetVoice": 71106605,
+            "BGEOPIAGBKE": "",
+            "secondName": "",
+            "extra": "",
+            "type": 0,
+            "secondDuty": [],
+            "skillActiveExtra": [],
+            "element": 0,
+            "defaultGrade": 0,
+            "avatar": 0,
+            "barrackEffectId": [],
+            "barrackAudioId": 0,
+            "shape": 0,
+            "shapeParam": "",
+            "shapeIcon": "",
+            "shapeTerrain": 0,
+            "weakTag": "",
+            "weakWeaponTag": 0,
+            "feature": 0,
+            "KJLGGIDKCEM": []
         }
     ]
 }

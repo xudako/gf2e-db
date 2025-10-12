@@ -178,7 +178,8 @@
                 "1009004",
                 "1009005",
                 "1009006",
-                "1009007"
+                "1009007",
+                "1009008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -768,7 +769,8 @@
                 "1030004",
                 "1030005",
                 "1030006",
-                "1030007"
+                "1030007",
+                "1030008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -873,7 +875,8 @@
                 "1028004",
                 "1028005",
                 "1028006",
-                "1028007"
+                "1028007",
+                "1028008"
             ],
             "initialTalentKeyId": 10000,
             "unlockSheet": 2,
@@ -1066,6 +1069,58 @@
             "publicSlotNumber": 3
         },
         {
+            "id": 1059,
+            "talentName": "Lind",
+            "gunType": 1,
+            "talentTips": "Exclusive Doll Talent",
+            "achievementDetailId": 29000,
+            "tpItemId": 9000,
+            "maxTpNum": 32,
+            "squadTalentTreeId": 1042,
+            "traverseSquadTalentTreeId": [
+                "1042001",
+                "1042002",
+                "1042003",
+                "1042004",
+                "1042005",
+                "1042006",
+                "1042007"
+            ],
+            "initialTalentKeyId": 10000,
+            "unlockSheet": 2,
+            "unlockId": 55,
+            "fullyActiveItemId": 901059,
+            "talentBonusGroup": 1001,
+            "privateSlotNumber": 3,
+            "publicSlotNumber": 3
+        },
+        {
+            "id": 1061,
+            "talentName": "Bathilde",
+            "gunType": 1,
+            "talentTips": "Exclusive Doll Talent",
+            "achievementDetailId": 29000,
+            "tpItemId": 9000,
+            "maxTpNum": 32,
+            "squadTalentTreeId": 1044,
+            "traverseSquadTalentTreeId": [
+                "1044001",
+                "1044002",
+                "1044003",
+                "1044004",
+                "1044005",
+                "1044006",
+                "1044007"
+            ],
+            "initialTalentKeyId": 10000,
+            "unlockSheet": 2,
+            "unlockId": 57,
+            "fullyActiveItemId": 901061,
+            "talentBonusGroup": 1001,
+            "privateSlotNumber": 3,
+            "publicSlotNumber": 3
+        },
+        {
             "id": 1064,
             "talentName": "Florence",
             "gunType": 1,
@@ -1087,6 +1142,32 @@
             "unlockSheet": 2,
             "unlockId": 54,
             "fullyActiveItemId": 901064,
+            "talentBonusGroup": 1001,
+            "privateSlotNumber": 3,
+            "publicSlotNumber": 3
+        },
+        {
+            "id": 1065,
+            "talentName": "Alva",
+            "gunType": 1,
+            "talentTips": "Exclusive Doll Talent",
+            "achievementDetailId": 29000,
+            "tpItemId": 9000,
+            "maxTpNum": 32,
+            "squadTalentTreeId": 1043,
+            "traverseSquadTalentTreeId": [
+                "1043001",
+                "1043002",
+                "1043003",
+                "1043004",
+                "1043005",
+                "1043006",
+                "1043007"
+            ],
+            "initialTalentKeyId": 10000,
+            "unlockSheet": 2,
+            "unlockId": 56,
+            "fullyActiveItemId": 901065,
             "talentBonusGroup": 1001,
             "privateSlotNumber": 3,
             "publicSlotNumber": 3

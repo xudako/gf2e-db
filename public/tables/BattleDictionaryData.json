@@ -1,6 +1,96 @@
 {
     "data": [
         {
+            "id": 21100,
+            "name": "Cryometeor",
+            "description": "Considered a neutral unit. Inherits <color=#f26c1c>200%</color> of the summoner's attack. After being attacked, it moves continuously in the opposite direction from the attacker until it hits an obstacle. If it is not attacked, it charges toward random targets. If it collides with an obstacle, it deals AoE <color=#42cce0>Freeze damage</color> equal to <color=#f26c1c>300%</color> of attack to all targets within  <color=#f26c1c>3 tiles</color> of itself, and applies <color=#3487e0>{0}</color> for <color=#f26c1c>1 turn</color>. If it collides with another <color=#3487e0>Cryometeor</color>, they fuse together into a <color=#3487e0>{1}</color>. Dies after collision.",
+            "descriptionTips": "0:2111000108;1:21102"
+        },
+        {
+            "id": 21101,
+            "name": "Cryometeor",
+            "description": "Considered a neutral unit. Inherits <color=#f26c1c>200%</color> of the summoner's attack. After being attacked, it moves continuously in the opposite direction from the attacker until it hits an obstacle. If it is not attacked, it charges toward random targets. If it collides with an obstacle, it deals AoE <color=#42cce0>Freeze damage</color> equal to <color=#f26c1c>300%</color> of attack to all targets within <color=#f26c1c>3 tiles</color> of itself, and applies <color=#3487e0>{0}</color> for <color=#f26c1c>1 turn</color>. If it collides with another <color=#3487e0>Cryometeor</color>, they fuse together into a <color=#3487e0>{1}</color>. Dies after colliding <color=#f26c1c>3 times</color>.",
+            "descriptionTips": "0:2111000108;1:21103"
+        },
+        {
+            "id": 21102,
+            "name": "Megacryometeor",
+            "description": "Considered a neutral unit. Inherits <color=#f26c1c>300%</color> of the summoner's attack. After being attacked, it moves continuously in the opposite direction from the attacker until it hits an obstacle. If it is not attacked, it charges toward random targets. If it collides with an obstacle, it deals AoE <color=#42cce0>Freeze damage</color> equal to <color=#f26c1c>300%</color> of attack to all targets within <color=#f26c1c>3 tiles</color> of itself, and apply <color=#3487e0>{0}</color> for <color=#f26c1c>1 turn</color>. Dies after collision.",
+            "descriptionTips": "0:2111000108"
+        },
+        {
+            "id": 21103,
+            "name": "Megacryometeor",
+            "description": "Considered an allied unit. Inherits <color=#f26c1c>400%</color> of the summoner's attack. At the end of this unit's action, it charges toward random enemy units. If it collides with an obstacle, it deals AoE <color=#42cce0>Freeze damage</color> equal to <color=#f26c1c>300%</color> of attack to all targets within <color=#f26c1c>3 tiles</color> of itself, and applies <color=#3487e0>{0}</color> for <color=#f26c1c>1 turn</color>. Dies after colliding <color=#f26c1c>3 times</color>.",
+            "descriptionTips": "0:2111000108"
+        },
+        {
+            "id": 21104,
+            "name": "Frostgorge Tile",
+            "description": "When attacking enemy units on this tile, critical rate is increased by <color=#f26c1c>30%</color> and Freeze damage taken is increased by <color=#f26c1c>30%</color>. Applies <color=#3487e0>{0}</color> for <color=#f26c1c>2 turns</color> to enemy units which end their action on it. Applies <color=#42cce0>Freeze</color> weakness to enemy units on it. Considered a Freeze terrain tile.",
+            "descriptionTips": "0:330102"
+        },
+        {
+            "id": 21200,
+            "name": "Turbocharge",
+            "description": "When allied units deal Burn damage or out-of-turn damage, gains <color=#f26c1c>1 point</color> of energy.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 21210,
+            "name": "Pyroclasm I",
+            "description": "Applies <color=#e67129>Burn</color> weakness to enemy units on it. Burn damage dealt to them is increased by <color=#f26c1c>25%</color>, defense is reduced by <color=#f26c1c>15%</color> and applies <color=#3487e0>{0}</color> to enemy units which end their action on it. For allied units on this tile, their damage dealt is increased by <color=#f26c1c>25%</color> and defense is increased by <color=#f26c1c>15%</color>. If they are a Burn-element Doll, their attack is further increased by <color=#f26c1c>25%</color> and Burn damage dealt is further increased by <color=#f26c1c>15%</color>. Considered a Burn terrain tile.",
+            "descriptionTips": "0:21210001"
+        },
+        {
+            "id": 21213,
+            "name": "Caelum Cadit",
+            "description": "Deal AoE <color=#e67129>Burn damage</color> to all enemy units on the battlefield equal to <color=#f26c1c>500%</color> of attack and deal additional fixed damage to the target equal to  (<color=#3487e0>{0}</color>)<color=#f26c1c>stacks x0.3%</color> of the target's Max HP.",
+            "descriptionTips": "0:21210002"
+        },
+        {
+            "id": 21220,
+            "name": "Pyroclasm II",
+            "description": "Applies <color=#e67129>Burn</color> weakness to enemy units on it. Burn damage dealt to them is increased by <color=#f26c1c>45%</color>, defense is reduced by <color=#f26c1c>30%</color>, and applies <color=#3487e0>{0}</color> to enemy units which end their action on it. For allied units on this tile, their damage dealt is increased by <color=#f26c1c>45%</color> and defense is increased by <color=#f26c1c>30%</color>. If they are a Burn-element Doll, their attack is further increased by <color=#f26c1c>45%</color> and Burn damage dealt is further increased by <color=#f26c1c>30%</color>. Considered a Burn terrain tile.",
+            "descriptionTips": "0:21210002"
+        },
+        {
+            "id": 21230,
+            "name": "Pyroclasm III",
+            "description": "Applies <color=#e67129>Burn</color> weakness to enemy units on it. Burn damage dealt to them is increased by <color=#f26c1c>75%</color>, defense is reduced by <color=#f26c1c>45%</color> and applies <color=#3487e0>{0}</color> to enemy units which end their action on it. For allied units on this tile, their damage dealt is increased by <color=#f26c1c>75%</color> and defense is increased by <color=#f26c1c>45%</color>. If they are a Burn-element Doll, their attack is further increased by <color=#f26c1c>75%</color> and Burn damage dealt is further increased by <color=#f26c1c>45%</color>. Considered a Burn terrain tile.",
+            "descriptionTips": "0:21210002"
+        },
+        {
+            "id": 21300,
+            "name": "Toxocyte",
+            "description": "Attacks with various summons. Its summons instantly die after attacking. Immune to damage, control and Command Prohibition effects..",
+            "descriptionTips": ""
+        },
+        {
+            "id": 21301,
+            "name": "Enhanced Morass",
+            "description": "Deals fixed damage equal to <color=#f26c1c>20%</color> of the creator's attack to enemy units that end their action on it. Applies <color=#8679e8>Corrosion</color> weakness to enemy units on it. At the start of each turn, <color=#3487e0>Morass</color> tiles will spread <color=#f26c1c>1 tile</color> in each direction. Considered a Corrosion terrain tile.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 21302,
+            "name": "Erosion",
+            "description": "Deals targeted <color=#8679e8>Corrosion Damage</color> equal to <color=#f26c1c>200%</color> of attack to the target.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 21303,
+            "name": "Tumorhynchus",
+            "description": "Inherits <color=#f26c1c>20%</color> of the summoner's max HP. Cannot move or attack. When it takes <color=#8679e8>Corrosion Damage</color>, it deals fixed damage equal to <color=#f26c1c>100%</color> of the damage taken to its summoner.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 21401,
+            "name": "Humidity",
+            "description": "When Humidity reaches <color=#f26c1c>60</color>, all units take fixed damage equal to <color=#f26c1c>15%</color> of their initial max HP at the end of the round. \nWhen Humidity reaches <color=#f26c1c>120</color>, all units' max HP is reduced by <color=#f26c1c>30%</color>. \nWhen Humidity reaches <color=#f26c1c>180</color>, all units' defense is reduced by <color=#f26c1c>30%</color> and attack is increased by <color=#f26c1c>30%</color>.",
+            "descriptionTips": ""
+        },
+        {
             "id": 51015,
             "name": "Incineration",
             "description": "Inflicts Burn weakness to enemy units within the area. Inflicts <color=#3487e0>{0}</color> and <color=#3487e0>{1}</color> to enemy units that remain within the area at the end of their action, lasting 2 turns. Considered a Burn tile.",
@@ -668,7 +758,7 @@
         },
         {
             "id": 90109,
-            "name": "Action Support",
+            "name": "Support Action",
             "description": "Performs a Support Attack; cannot be triggered by another Support Attack.",
             "descriptionTips": ""
         },
@@ -705,13 +795,13 @@
         {
             "id": 90115,
             "name": "Voltage",
-            "description": "Adds <color=#d4ae08>Electric</color> weakness to enemy units in the area. When enemy units on the affected tiles suffer AoE damage, it triggers a reaction, dealing fixed damage equal to <color=#f26c1c>30%</color> of Attack, and clears the tile. If the damage is <color=#d4ae08>Electric</color> or <color=#2caadb>Hydro</color>, the fixed damage increases to <color=#f26c1c>60%</color> of attack. Deals <color=#f26c1c>double</color> damage to large targets. This is an Electric tile.",
+            "description": "Adds <color=#d4ae08>Electric</color> weakness to enemy units in the area. When enemy units on the affected tiles suffer AoE damage, a tile reaction is triggered, dealing fixed damage equal to <color=#f26c1c>30%</color> of attack, and removes the tile effect. If the AoE damage is <color=#d4ae08>Electric</color> or <color=#2caadb>Hydro</color>, the fixed damage increases to <color=#f26c1c>60%</color> of attack. Deals <color=#f26c1c>double</color> damage to large targets. Considered an Electric tile.",
             "descriptionTips": ""
         },
         {
             "id": 90116,
             "name": "Incapaciation",
-            "description": "Performs an attack which ends the target's movement. Cannot trigger Action Supports, Interceptions, or Counterattacks.",
+            "description": "Performs an attack which ends the target's movement. Cannot trigger Support Action, Interception, or Counterattack.",
             "descriptionTips": ""
         },
         {
@@ -800,8 +890,8 @@
         },
         {
             "id": 90220,
-            "name": "Control-type",
-            "description": "Includes the effects <color=#3487e0>Taunt</color>, <color=#3487e0>Fear</color>, <color=#3487e0>Attract</color> and <color=#3487e0>Stun</color>.",
+            "name": "Crowd Control",
+            "description": "Includes the effects <color=#3487e0>Taunt</color>, <color=#3487e0>Fear</color>, <color=#3487e0>Infatuated</color> and <color=#3487e0>Stun</color>.",
             "descriptionTips": ""
         },
         {
@@ -819,7 +909,7 @@
         {
             "id": 90223,
             "name": "Auto-Turret",
-            "description": "Summon. Inherits <color=#f26c1c>50%</color> of Andoris' initial HP, <color=#f26c1c>50%</color> of initial attack, and <color=#f26c1c>100%</color> of initial defense. Cannot move. Can apply <color=#3487e0>Negative Charge</color>.",
+            "description": "Summon. Inherits <color=#f26c1c>50%</color> of Andoris' initial HP, <color=#f26c1c>50%</color> of Andoris' initial attack, and <color=#f26c1c>100%</color> of Andoris' initial defense. Cannot move. Can apply <color=#3487e0>Negative Charge</color>.",
             "descriptionTips": ""
         },
         {
@@ -997,6 +1087,42 @@
             "descriptionTips": "0:401011;1:90110"
         },
         {
+            "id": 90253,
+            "name": "Gravity Oscillation",
+            "description": "Deals AoE physical damage equal to <color=#f26c1c>90%</color> of attack to all enemy targets and knocks them back by <color=#f26c1c>4 tiles</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 90254,
+            "name": "Sentry Mode",
+            "description": "Final damage taken is reduced by <color=#f26c1c>60%</color>.\nAt the start of the turn, summons <color=#f26c1c>2 sentries</color>. Selects the enemy target with <color=#f26c1c>the highest attack</color> and applies <color=#3487e0>{0}</color> to it for <color=#f26c1c>2 turns</color>.",
+            "descriptionTips": "0:401022"
+        },
+        {
+            "id": 90255,
+            "name": "Leap Mode",
+            "description": "Final damage taken is reduced by <color=#f26c1c>99%</color>.\nAt the start of the round, summons <color=#f26c1c>2 sentries</color>. At the start of the turn, cleanses <color=#f26c1c>1 debuff</color>, gains a Shield with an absorption strength equal to <color=#f26c1c>100%</color> of max HP. At the end of the turn, performs <color=#3487e0>{0}</color>.\nAfter the mission, switches from <color=#f26c1c>Leap Mode</color> to <color=#f26c1c>Sentry Mode</color>.",
+            "descriptionTips": "1:90253"
+        },
+        {
+            "id": 90256,
+            "name": "Gravity Oscillation",
+            "description": "Deals AoE physical damage to all enemy targets equal to <color=#f26c1c>120%</color> of attack, applies <color=#3487e0>{0}</color> and <color=#3487e0>{1}</color> for 2 <color=#f26c1c>2</color> turns, and knocks the target back by <color=#f26c1c>4</color> tiles.",
+            "descriptionTips": "0:6897101;0:6897102"
+        },
+        {
+            "id": 90257,
+            "name": "Sentry Mode",
+            "description": "Final damage taken is reduced by <color=#f26c1c>80%</color> and mobility is increased by <color=#f26c1c>1 tile</color>.\nAt the start of the turn, summons <color=#f26c1c>3 sentries</color>. Selects the enemy target with <color=#f26c1c>the highest attack</color> and applies <color=#3487e0>{0}</color> to it for <color=#f26c1c>2 turns</color>.",
+            "descriptionTips": "0:401022"
+        },
+        {
+            "id": 90258,
+            "name": "Leap Mode",
+            "description": "Final damage taken is reduced by <color=#f26c1c>99%</color> and mobility is increased by <color=#f26c1c>1 tile</color>.\nAt the start of the round, summons <color=#f26c1c>3 Fortress Devices</color>. At the start of the turn, cleanses <color=#f26c1c>2 debuffs</color> from self and gains a Shield equal to <color=#f26c1c>100%</color> of max HP. At the end of the turn, performs <color=#3487e0>{0}</color>.\nWhen the mission is complete, switches from <color=#f26c1c>Leap Mode</color> to <color=#f26c1c>Sentry Mode</color>.",
+            "descriptionTips": "1:90256"
+        },
+        {
             "id": 900229,
             "name": "Backtrack Code",
             "description": "Damage taken is reduced by <color=#f26c1c>90%</color>. At the start of the turn, recover HP equal to <color=#f26c1c>8%</color> of max HP. This buff cannot be cleansed.",
@@ -1078,6 +1204,78 @@
             "id": 900242,
             "name": "Shield Pierce Rate",
             "description": "When dealing damage against a shielded target, the attack ignores the stated percentage of shield strength and directly damages the target's HP",
+            "descriptionTips": ""
+        },
+        {
+            "id": 900243,
+            "name": "Awakening Command",
+            "description": "Removes <color=#3487e0>{0}</color> and gains <color=#f26c1c>5 tiles</color> of Extra Movement.",
+            "descriptionTips": "0:10510908"
+        },
+        {
+            "id": 900244,
+            "name": "Waking Ricochet",
+            "description": "Alternately triggers the active skill <color=#3487e0>Dreamquake</color> and the basic attack <color=#3487e0>Bedtime Warmup</color>. Before the attack, applies <color=#3487e0>{0}</color> to all enemy units within range for <color=#f26c1c>1 turn</color>. The range of <color=#3487e0>Dreamquake</color> is increased by 2 tiles and the damage multiplier of <color=#3487e0>Bedtime Warmup</color> is increased to <color=#f26c1c>130%</color>.",
+            "descriptionTips": "0:341101"
+        },
+        {
+            "id": 900245,
+            "name": "Dreamquake",
+            "description": "Effects are identical to the active skill <color=#3487e0>Dreamquake</color>, but the area-of-effect is increased to <color=#f26c1c>3 tiles</color>. Counts as the active skill <color=#3487e0>Dreamquake</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 900246,
+            "name": "Bedtime Warmup",
+            "description": "Effects are identical to the basic attack <color=#3487e0>Bedtime Warmup</color>, but the damage multiplier is increased to <color=#f26c1c>130%</color>. Counts as the basic attack <color=#3487e0>Bedtime Warmup</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 900247,
+            "name": "Liquid N2 Fang",
+            "description": "Applies <color=#3487e0>{1}</color> to enemy units within <color=#f26c1c>4 tiles</color> of it. Before enemy units within its range are attacked, if they do not have <color=#3487e0>{0}</color>, removes an amount of their HP equal to <color=#f26c1c>500%</color> of Alva's attack and convert it to an equal amount of <color=#3487e0>{0}</color>. This cannot reduce their HP below <color=#f26c1c>1 point</color> and it can be triggered up to <color=#f26c1c>1 time</color> per enemy unit per round. A maximum of <color=#f26c1c>1</color> Liquid N2 Fang can exist at any one time. When an enemy unit within its range has its Shield broken and it is within <color=#f26c1c>8 tiles</color> of Alva, Alva launches <color=#f26c1c>1 attack</color> against it, dealing <color=#42cce0>Freeze damage</color> equal to <color=#f26c1c>40%</color> of the Shield's total absorption strength.",
+            "descriptionTips": "0:106507215;0:106507212"
+        },
+        {
+            "id": 900248,
+            "name": "Liquid N2 Fang",
+            "description": "Applies <color=#3487e0>{1}</color> to enemy units within <color=#f26c1c>4 tiles</color> of it. Before enemy units within its range are attacked, if they do not have <color=#3487e0>{0}</color>, removes an amount of their HP equal to <color=#f26c1c>500%</color> of Alva's attack and convert it to an equal amount of <color=#3487e0>{0}</color>. This cannot reduce their HP below <color=#f26c1c>1 point</color> and it can be triggered up to <color=#f26c1c>1 time</color> per enemy unit per round. A maximum of <color=#f26c1c>1</color> Liquid N2 Fang can exist at any one time. When an enemy unit within its range has its Shield broken and it is within <color=#f26c1c>8 tiles</color> of Alva, Alva launches <color=#f26c1c>1 attack</color> against it, dealing <color=#42cce0>Freeze damage</color> equal to <color=#f26c1c>60%</color> of the Shield's total absorption strength.",
+            "descriptionTips": "0:106507215;0:106507232"
+        },
+        {
+            "id": 900249,
+            "name": "Defense Constructs",
+            "description": "Considered a summoned creature. Inherits <color=#f26c1c>100%</color> of Bathilde's initial max HP, <color=#f26c1c>80%</color> of her initial defense, and <color=#f26c1c>80%</color> of her initial attack. Can protect allied units and cover within <color=#f26c1c>3 tiles</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 900250,
+            "name": "Defense Constructs",
+            "description": "Considered a summoned creature. Inherits <color=#f26c1c>100%</color> of Bathilde's initial max HP, <color=#f26c1c>80%</color> of her initial defense, and <color=#f26c1c>80%</color> of her initial attack. Can protect allied units and cover within <color=#f26c1c>5 tiles</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 900251,
+            "name": "Defense Constructs",
+            "description": "Considered a summoned creature. Inherits <color=#f26c1c>100%</color> of Bathilde's initial max HP, <color=#f26c1c>100%</color> of her initial defense, and <color=#f26c1c>100%</color> of her initial attack. Can protect allied units and cover within <color=#f26c1c>5 tiles</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 900252,
+            "name": "Offense Constructs",
+            "description": "Considered a summoned creature. Inherits <color=#f26c1c>100%</color> of Bathilde's initial max HP, <color=#f26c1c>80%</color> of her initial defense and <color=#f26c1c>80%</color> of her initial attack. Can deal damage to the nearest enemy unit within <color=#f26c1c>3 tiles</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 900253,
+            "name": "Offense Constructs",
+            "description": "Considered a summoned creature. Inherits <color=#f26c1c>100%</color> of Bathilde's initial max HP, <color=#f26c1c>80%</color> of her initial defense and <color=#f26c1c>80%</color> of her initial attack. Can deal damage to the nearest enemy unit within <color=#f26c1c>5 tiles</color>.",
+            "descriptionTips": ""
+        },
+        {
+            "id": 900254,
+            "name": "Offense Constructs",
+            "description": "Considered a summoned creature. Inherits <color=#f26c1c>100%</color> of Bathilde's initial max HP, <color=#f26c1c>100%</color> of her initial defense and <color=#f26c1c>100%</color> of her initial attack. Can deal damage to the nearest enemy unit within <color=#f26c1c>5 tiles</color>.",
             "descriptionTips": ""
         },
         {
