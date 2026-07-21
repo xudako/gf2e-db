@@ -763,12 +763,6 @@
             "descriptionTips": ""
         },
         {
-            "id": 90110,
-            "name": "Counterattack",
-            "description": "Performs an attack; cannot be triggered by Interceptions, Counterattacks or Support Attacks.",
-            "descriptionTips": ""
-        },
-        {
             "id": 90111,
             "name": "Interception",
             "description": "Performs an attack; cannot be triggered by Interceptions, Counterattacks or Support Attacks.",
@@ -1083,7 +1077,7 @@
         {
             "id": 90252,
             "name": "Arios",
-            "description": "Considered a Summoned Creature. Inherits <color=#f26c1c>120%</color> of Florence's initial max HP, <color=#f26c1c>100%</color> of her initial attack, and <color=#f26c1c>120%</color> of her initial defense. Can apply <color=#3487e0>{0}</color> to enemy units, take damage in Florence's place, and after it or Florence is damaged, it will perform a <color=#3487e0>{1}</color>.",
+            "description": "Considered a physical summon. Arios inherits <color=#f26c1c>120%</color> of Florence's initial max HP, <color=#f26c1c>100%</color> of her initial attack, and <color=#f26c1c>120%</color> of her initial defense. Arios can apply <color=#3487e0>{0}</color> to enemy units, take damage in Florence's place, and after it or Florence is damaged, it will perform a <color=#3487e0>{1}</color>.",
             "descriptionTips": "0:401011;1:90110"
         },
         {

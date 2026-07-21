@@ -1226,6 +1226,9 @@
                 1102502
             ],
             "propertyId": 11025,
+            "barrackEffectId": [
+                102503
+            ],
             "weight": 2,
             "shieldType": 2,
             "maxGrade": 6,
@@ -1270,7 +1273,6 @@
             "extra": "",
             "skillActiveExtra": [],
             "defaultGrade": 0,
-            "barrackEffectId": [],
             "barrackAudioId": 0,
             "shape": 0,
             "shapeParam": "",
@@ -2210,7 +2212,7 @@
             "weakWeaponTag": 8,
             "BGEOPIAGBKE": "Yo, I'll make sure I do a good job this time!",
             "KJLGGIDKCEM": [
-                101,
+                102,
                 203,
                 302,
                 402,
@@ -4712,7 +4714,7 @@
             "firstName": "Lind",
             "enName": "LindSSR",
             "introduce": "A Doll with a prickly exterior but who has a sensitive soul. She often ends up forcing herself to do things she's poor at and hating herself as a result. She enjoys listening to late-night radio channels, and gets extremely irritable if she doesn't replenish her sugar levels in time. She hates violence, but considers weapons to be civilized and effective problem-solving tools, so using a gun doesn't fall under that definition.\n\"Consuming too much sugar will make me malfunction, but I'll scrap myself on the spot if I don't get any right now, so I guess I should have some... Nom. Want some too, Commander?\"",
-            "dialogue": "Can we pass on those excessively formal introductions? They make me want to puke. Besides, it's not like this is our first time meeting anyway... My name? Just call me Lind.",
+            "dialogue": "Spare me the overly formal intro, will you? It's not like we just met... My name? Just call me Lind.",
             "code": "LindSSR",
             "characterId": 44,
             "getAudio": 7105922,

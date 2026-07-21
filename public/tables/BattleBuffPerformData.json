@@ -25268,7 +25268,7 @@
         {
             "id": 6773201,
             "name": "Nightmare",
-            "description": "All attacks deal additional fixed damage equal to <color=#f26c1c>50%</color> of attack, and this unit becomes immune to Physical damage. This effect is nullified during Stability Break. Considered a buff, cannot be cleansed.",
+            "description": "All attacks deal additional fixed damage equal to <color=#f26c1c>50%</color> of attack, and this unit becomes immune to Physical damage. This effect is removed during Stability Break. Considered a buff, cannot be cleansed.",
             "buffEffect": "Skill/6773201_Warning_Armor4_L,Skill/6773201_Warning_Armor4_R,Skill/6773201_Warning_Chest_M,Skill/6773201_Warning_Elbow2Part1_L,Skill/6773201_Warning_Elbow2Part1_R,Skill/6773201_Warning_Hip_L,Skill/6773201_Warning_Hip_R,Skill/6773201_Warning_Shoulder2Part1_L,Skill/6773201_Warning_Shoulder2Part1_R",
             "effectPlayTime": [
                 1
@@ -25292,7 +25292,7 @@
         {
             "id": 6773221,
             "name": "Error Signal",
-            "description": "Movement is reduced by <color=#f26c1c>1 tile</color>. Considered a debuff, can be stacked. When this effect reaches <color=#f26c1c>3 stacks</color>, remove them and gains <color=#3487e0>{0}</color>.",
+            "description": "Mobility is reduced by <color=#f26c1c>1 tile</color>. Considered a debuff, can be stacked. When this effect reaches <color=#f26c1c>3 stacks</color>, removes them and gains <color=#3487e0>{0}</color>.",
             "descriptionTips": "0:401022",
             "iconName": "Buff_SpeedLow",
             "isShow": true,
@@ -25314,7 +25314,7 @@
         {
             "id": 6773222,
             "name": "Error Signal",
-            "description": "Movement is reduced by <color=#f26c1c>2 tiles</color>. Considered a debuff, can be stacked. When this effect reaches <color=#f26c1c>3 stacks</color>, remove them and gains <color=#3487e0>{0}</color>.",
+            "description": "Mobility is reduced by <color=#f26c1c>2 tiles</color>. Considered a debuff, can be stacked. When this effect reaches <color=#f26c1c>3 stacks</color>, removes them and gains <color=#3487e0>{0}</color>.",
             "descriptionTips": "0:401022",
             "iconName": "Buff_SpeedLow",
             "isShow": true,
@@ -25336,7 +25336,7 @@
         {
             "id": 6773223,
             "name": "Error Signal",
-            "description": "Movement is reduced by <color=#f26c1c>3 tiles</color>. Considered a debuff, can be stacked. When this effect reaches <color=#f26c1c>3 stacks</color>, remove them and gains <color=#3487e0>{0}</color>.",
+            "description": "Mobility is reduced by <color=#f26c1c>3 tiles</color>. Considered a debuff, can be stacked. When this effect reaches <color=#f26c1c>3 stacks</color>, removes them and gains <color=#3487e0>{0}</color>.",
             "descriptionTips": "0:401022",
             "iconName": "Buff_SpeedLow",
             "isShow": true,
@@ -25358,7 +25358,7 @@
         {
             "id": 6773224,
             "name": "Error Signal",
-            "description": "Movement is reduced by <color=#f26c1c>4 tiles</color>. Considered a debuff, can be stacked. When this effect reaches <color=#f26c1c>3 stacks</color>, remove them and gains <color=#3487e0>{0}</color>.",
+            "description": "Mobility is reduced by <color=#f26c1c>4 tiles</color>. Considered a debuff, can be stacked. When this effect reaches <color=#f26c1c>3 stacks</color>, removes them and gains <color=#3487e0>{0}</color>.",
             "descriptionTips": "0:401022",
             "iconName": "Buff_SpeedLow",
             "isShow": true,
@@ -35007,7 +35007,7 @@
         {
             "id": 10640702,
             "name": "Stimulant",
-            "description": "At the end of the buff holder's action, consumes HP equal to <color=#f26c1c>20%</color> of the buff holder's initial max HP. If the buff holder's HP is below <color=#f26c1c>30%</color>, Florence recovers HP equal to <color=#f26c1c>100%</color> of attack. This effect can be triggered <color=#f26c1c>once</color> while this buff is in effect. While the buff is active, for every <color=#f26c1c>1%</color> of initial max HP consumed, damage dealt is increased by <color=#f26c1c>0.5%</color> and <color=#2caadb>Hydro damage</color> dealt is increased by <color=#f26c1c>0.5%</color>, to a maximum increase of <color=#f26c1c>20%</color> each. Considered a Hydro buff, cannot be cleansed.",
+            "description": "At the end of the buff holder's action, consumes HP equal to <color=#f26c1c>20%</color> of the buff holder's initial max HP. If the buff holder's HP is below <color=#f26c1c>30%</color>, recovers HP equal to <color=#f26c1c>100%</color> of Florence's attack. This effect can be triggered <color=#f26c1c>once</color> while this buff is in effect. While the buff is active, for every <color=#f26c1c>1%</color> of initial max HP consumed, damage dealt is increased by <color=#f26c1c>0.5%</color> and <color=#2caadb>Hydro damage</color> dealt is increased by <color=#f26c1c>0.5%</color>, to a maximum increase of <color=#f26c1c>20%</color> each. Considered a Hydro buff, cannot be cleansed.",
             "iconName": "Buff_DamageUp",
             "isShow": true,
             "buffHeadShow": 1,
@@ -42313,7 +42313,7 @@
         },
         {
             "id": 61000380,
-            "name": "Strike Enhancement",
+            "name": "Overwhelming Smash",
             "description": "Physical damage is increased by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_48",
             "showPriorityIcon": 10,
@@ -42864,7 +42864,7 @@
         {
             "id": 61001060,
             "name": "Hazardous Charge",
-            "description": "Increase Hydro and Electric damage dealt and critical rate by <color=#f26c1c>30%</color>.",
+            "description": "Hydro and Electric damage dealt is increased by <color=#f26c1c>30%</color>, critical rate of Hydro and Electric damage is increased by <color=#f26c1c>30%</color>.",
             "iconName": "Buff_Guild_45",
             "showPriorityIcon": 10,
             "descriptionTips": "",
@@ -54529,7 +54529,7 @@
         {
             "id": 106410800,
             "name": "Mark of Shame",
-            "description": "Gains <color=#f26c1c>1 stack</color> for every <color=#f26c1c>1 instance</color> of damage taken. Upon reaching <color=#f26c1c>5 stacks</color>, they are converted to <color=#3487e0>{0}</color>. Cannot be cleansed.",
+            "description": "Gains <color=#f26c1c>1 stack</color> for <color=#f26c1c>every instance</color> of damage taken. Upon reaching <color=#f26c1c>5 stacks</color>, they are converted to <color=#3487e0>{0}</color>. Cannot be cleansed.",
             "descriptionTips": "0:106410810",
             "buffEffect": "Skill/FlorenceSSR01/1064Summon_Behit|Skill/FlorenceSSR01/1064Summon_Behit",
             "effectPlayTime": [
@@ -54615,7 +54615,7 @@
         {
             "id": 106410830,
             "name": "Mark of Shame",
-            "description": "Gains <color=#f26c1c>1 stack</color> for every <color=#f26c1c>1 instance</color> of damage taken. Upon reaching <color=#f26c1c>5 stacks</color>, they are converted to <color=#3487e0>{0}</color>. Cannot be cleansed.",
+            "description": "Gains <color=#f26c1c>1 stack</color> for <color=#f26c1c>every instance</color> of damage taken. Upon reaching <color=#f26c1c>5 stacks</color>, they are converted to <color=#3487e0>{0}</color>. Cannot be cleansed.",
             "descriptionTips": "0:106410840",
             "buffEffect": "Skill/FlorenceSSR01/1064Summon_Behit|Skill/FlorenceSSR01/1064Summon_Behit",
             "effectPlayTime": [
@@ -54644,7 +54644,7 @@
         {
             "id": 106410840,
             "name": "Tremor of Despair",
-            "description": "Attack is increased by <color=#f26c1c>35%</color>. All damage multipliers are doubled. Damage dealt to targets afflicted by Infatuated is increased by <color=#f26c1c>10%</color>. After this damage is dealt, recovers HP equal to <color=#f26c1c>30%</color> of the damage dealt by the attack. Cannot be cleansed.",
+            "description": "Attack is increased by <color=#f26c1c>35%</color>. All damage multipliers are doubled. Damage dealt to targets afflicted by Infatuated is increased by <color=#f26c1c>10%</color>. After dealing damage, recovers HP equal to <color=#f26c1c>30%</color> of the damage dealt by the attack. Cannot be cleansed.",
             "buffEffect": "Skill/FlorenceSSR01/1064Summon_idle,Skill/FlorenceSSR01/1064Summon_Midle",
             "effectPlayTime": [
                 1
@@ -59110,7 +59110,7 @@
         },
         {
             "id": 689803001,
-            "name": "Predetection",
+            "name": "Pre-detection",
             "description": "Targeted damage taken is reduced by <color=#f26c1c>90%</color>. Considered a buff, cannot be cleansed.",
             "iconName": "Buff_EnemyRedHurt",
             "isShow": true,
@@ -61283,7 +61283,7 @@
         {
             "id": 2111000321,
             "name": "Transfixed",
-            "description": "",
+            "description": "Mobility is reduced by <color=#f26c1c>1 tile</color>. <color=#42cce0>Freeze damage</color> taken is increased by <color=#f26c1c>100%</color>. At the end of the turn, deals fixed damage equal to <color=#f26c1c>3%</color> of max HP to the holder. Can be stacked, considered a Freeze-type debuff.",
             "buffEffect": "Buff/Rouge11_Cold",
             "effectPlayTime": [
                 1
